@@ -1,0 +1,41 @@
+{
+	"googleOAuthAccessToken": "",
+	"stringsFiles": [
+		{
+			"lang": "en",
+			"name": "English",
+			"fileId": "1mZH66DoV1F3f1k2cP1jo5t7ApcaSIzl5Xycw_oUSPNo",
+			"enabled": true
+		},
+		{
+			"lang": "es",
+			"name": "Español",
+			"fileId": "1hAUdEMZ-Hddx7BFKtpcp6gqSSH-owFrqYGbBBtYYTdQ",
+			"enabled": true
+		},
+		{
+			"lang": "it",
+			"name": "Italiano",
+			"fileId": "1cyzAGH-onmF6nvR5Ud7EWW__2GbcWbbm0i-FoWNM1Fw",
+			"enabled": true
+		},
+		{
+			"lang": "de",
+			"name": "Deutsch",
+			"fileId": "1aNIITx0p-8TWcvsh4ZomX-tWZob1qC4Z1aLP5iJ-dfw",
+			"enabled": true
+		},
+		{
+			"lang": "pt",
+			"name": "Português",
+			"fileId": "1PxzvFaBaWgY4_rMsUYlgcG1yhMTAaSY9euQ07jP404Q",
+			"enabled": true
+		},
+		{
+			"lang": "fr",
+			"name": "Français",
+			"fileId": "1ChI1VtXsJo764t9rvC9wfmPaR6halxDc66pLwjEr5fk",
+			"enabled": true
+		}
+	]
+}
