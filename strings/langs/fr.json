@@ -1030,6 +1030,7 @@
     [
         {
             "key": "fear_continent_header",
+            "value": "Peur",
             "englishValue": "Fear"
         },
         {
@@ -1038,10 +1039,12 @@
         },
         {
             "key": "fear_continent_body",
+            "value": "Notre peur du danger nous permet d'anticiper les menaces à notre sécurité.",
             "englishValue": "Our fear of danger lets us anticipate threats to our safety."
         },
         {
             "key": "fear_continent_body_mobile",
+            "value": "Nous ressentons de la peur lorsque notre sécurité ou notre bien-être est menacé. La peur varie en force et en fréquence dans nos vies.",
             "mobileCharacterCount": "160 max (max 4 lines, 40 characters per line)",
             "englishValue": "We feel fear when our safety or wellbeing is threatened. Fear varies in strength and frequency in our lives."
         },
@@ -1276,7 +1279,7 @@
         },
         {
             "key": "fear_timeline_trigger_event",
-            "value": "un ami est en colère contre nous",
+            "value": "un ami a été en colère contre toi",
             "englishValue": "reminds you of abandonment"
         },
         {
@@ -1520,7 +1523,7 @@
         },
         {
             "key": "disgust_timeline_trigger_event",
-            "value": "un ami est en colère contre toi",
+            "value": "un ami a été en colère contre toi",
             "englishValue": "a friend gets angry with you"
         },
         {
@@ -1825,7 +1828,7 @@
         },
         {
             "key": "sadness_timeline_trigger_event",
-            "value": "un ami est en colère contre nous",
+            "value": "un ami a été en colère contre toi",
             "englishValue": "a friend gets angry with you"
         },
         {
@@ -2169,7 +2172,7 @@
         },
         {
             "key": "enjoyment_timeline_trigger_event",
-            "value": "un ami se met en colère contre toi",
+            "value": "un ami a été en colère contre toi",
             "englishValue": "a friend gets angry with you"
         },
         {
