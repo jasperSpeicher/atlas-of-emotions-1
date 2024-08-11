@@ -7,8 +7,10 @@ $section-text-background-color: #eee;
 $top-nav-background: rgba(255, 255, 255, 0.9);
 $top-nav-padding-top: 15px;
 $mobile-split-height: 300;
-$mobile-section-text-top: #{$ui-header-mobile-nav-target-height + $mobile-split-height}px;
-$mobile-section-graphics-height: #{$mobile-split-height - $ui-mobile-emotion-nav-height}px;
+$mobile-section-text-top: #{$ui-header-mobile-nav-target-height +
+	$mobile-split-height}px;
+$mobile-section-graphics-height: #{$mobile-split-height -
+	$ui-mobile-emotion-nav-height}px;
 $more-content-transition: transform 700ms ease;
 
 body,
@@ -17,10 +19,9 @@ html {
 	overflow: auto;
 
 	background-color: #fff;
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	color: $text-color;
 	font-size: 18px;
-
 }
 
 * {
@@ -36,9 +37,9 @@ body {
 	&.rotated {
 		pointer-events: none;
 		&:after {
-			content: ' ';
+			content: " ";
 			display: block;
-			background-image: url('./img/rotate.svg');
+			background-image: url("./img/rotate.svg");
 			background-size: contain;
 			position: absolute;
 			top: 0;
@@ -52,16 +53,16 @@ body {
 		}
 	}
 
-	&[class*=fp-viewing-experience],
-	&[class*=fp-viewing-strategies],
-	&[class*=fp-viewing-response] {
+	&[class*="fp-viewing-experience"],
+	&[class*="fp-viewing-strategies"],
+	&[class*="fp-viewing-response"] {
 		// allows interaction by default, js passes swipes to scroller
 		// other sections drop this back behind the scroller content
 		.original-content {
 			z-index: 100;
 		}
 	}
-	&[class*=fp-viewing-introduction] {
+	&[class*="fp-viewing-introduction"] {
 		//mute the calm graphics in the intro
 		.original-content {
 			opacity: 0.65;
@@ -91,7 +92,7 @@ body {
 		}
 	}
 
-	&[class*=fp-viewing-timeline] {
+	&[class*="fp-viewing-timeline"] {
 		background-color: #454545;
 		.original-content {
 			opacity: 0;
@@ -101,7 +102,8 @@ body {
 			a {
 				color: #aaa;
 			}
-			a.active, a:hover {
+			a.active,
+			a:hover {
 				color: #aaa;
 			}
 			ul {
@@ -115,7 +117,6 @@ body {
 			}
 		}
 	}
-
 }
 
 svg {
@@ -158,7 +159,7 @@ svg {
 
 		font-size: 65px !important;
 		font-weight: 300;
-		content: '×';
+		content: "×";
 	}
 }
 
@@ -199,7 +200,8 @@ svg {
 }
 
 %menus {
-	a, h4 {
+	a,
+	h4 {
 		@extend %button-link;
 		color: rgba(#000, 0.5);
 		&.active {
@@ -241,7 +243,7 @@ svg {
 	pointer-events: none;
 }
 
-[class*=fp-viewing-introduction] {
+[class*="fp-viewing-introduction"] {
 	.logo {
 		background-color: transparent;
 	}
@@ -281,7 +283,7 @@ svg {
 		top: #{$ui-header-height}px;
 		min-width: 0;
 		padding: 0;
-		margin-top: -1*$top-nav-padding-top;
+		margin-top: -1 * $top-nav-padding-top;
 		text-align: right;
 		font-size: 1em;
 		border: none;
@@ -301,11 +303,11 @@ svg {
 		h4 {
 			&:before {
 				display: inline;
-				content: '(';
+				content: "(";
 			}
 			&:after {
 				display: inline;
-				content: ')';
+				content: ")";
 			}
 		}
 	}
@@ -403,7 +405,6 @@ svg {
 	left: 0;
 	right: 0;
 	bottom: 0;
-
 }
 
 .opt-in-modal__content {
@@ -423,8 +424,10 @@ svg {
 			padding-left: 0;
 			padding-bottom: 0;
 			input {
-				&.button, &.email {
-					&, &.mce_inline_error {
+				&.button,
+				&.email {
+					&,
+					&.mce_inline_error {
 						display: inline-block;
 						margin: 0 5px 0 0;
 					}
@@ -511,7 +514,6 @@ svg {
 }
 
 .section.introduction-hero {
-
 	color: #000;
 
 	&.fp-completely {
@@ -597,19 +599,18 @@ svg {
 			border: 1px solid #000;
 
 			&::after {
-				content: '';
+				content: "";
 				right: 15px;
 				display: inline-block;
 				width: 40px;
 				height: 22px;
 				//transform: rotate(180deg);
-				background: url('./img/downArrowDark.png');
+				background: url("./img/downArrowDark.png");
 				background-size: 100%;
 				background-position: center;
 				background-repeat: no-repeat;
 			}
 		}
-
 	}
 
 	.fp-slidesNav.top {
@@ -632,14 +633,13 @@ svg {
 		visibility: hidden;
 		opacity: 0;
 		z-index: 0;
-		transition: all .7s ease-in-out;
+		transition: all 0.7s ease-in-out;
 	}
 	.fp-slide.active {
 		visibility: visible;
 		opacity: 1;
 		z-index: 1;
 	}
-
 }
 
 .section {
@@ -657,7 +657,6 @@ svg {
 			transform: translateX(0);
 		}
 	}
-
 }
 
 .section-text {
@@ -681,7 +680,7 @@ svg {
 
 	&.visible {
 		transition-duration: #{$ui-overlays-duration-in}s;
-		opacity: 1.0;
+		opacity: 1;
 	}
 
 	.section-heading {
@@ -702,14 +701,27 @@ svg {
 		padding: 0.3em 0;
 		border-radius: 5px;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefefe+0,fefefe+100&1+0,0+100 */
-		background: -moz-linear-gradient(top, rgba($button-color, $button-color, $button-color, 1) 0%, rgba($button-color, $button-color, $button-color, 0) 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(top, rgba($button-color, $button-color, $button-color, 1) 0%, rgba($button-color, $button-color, $button-color, 0) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to bottom, rgba($button-color, $button-color, $button-color, 1) 0%, rgba($button-color, $button-color, $button-color, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background: -moz-linear-gradient(
+			top,
+			rgba($button-color, $button-color, $button-color, 1) 0%,
+			rgba($button-color, $button-color, $button-color, 0) 100%
+		); /* FF3.6-15 */
+		background: -webkit-linear-gradient(
+			top,
+			rgba($button-color, $button-color, $button-color, 1) 0%,
+			rgba($button-color, $button-color, $button-color, 0) 100%
+		); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(
+			to bottom,
+			rgba($button-color, $button-color, $button-color, 1) 0%,
+			rgba($button-color, $button-color, $button-color, 0) 100%
+		); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#00fefefe', GradientType=0); /* IE6-9 */
 		&:hover {
 			font-weight: 700;
 		}
-		&:active, &:focus {
+		&:active,
+		&:focus {
 			outline: none;
 			box-shadow: none;
 		}
@@ -732,7 +744,7 @@ svg {
 
 	p {
 		margin-top: 0;
-		font-size: 1.0em;
+		font-size: 1em;
 	}
 
 	a {
@@ -814,14 +826,13 @@ svg {
 	}
 }
 
-[class*=fp-viewing-timeline] {
+[class*="fp-viewing-timeline"] {
 	.section-text__scroller {
 		margin: 0 -10px;
 		// fix button shadow
 		& > div > div {
 			padding: 0 10px;
 		}
-
 	}
 }
 
@@ -831,7 +842,7 @@ svg {
 	bottom: 0;
 
 	padding: $section-text-padding;
-	padding-top: $section-text-padding*0.75;
+	padding-top: $section-text-padding * 0.75;
 	@extend %raleway-light;
 	color: #000;
 	text-align: center; //for the close button at the bottom
@@ -839,24 +850,22 @@ svg {
 	z-index: 10;
 	width: 100%;
 	transform: translateX(-100%);
-	background-color:transparent;
+	background-color: transparent;
 	transition: $more-content-transition;
 	pointer-events: auto;
-
 
 	&:after {
 		top: 0;
 		bottom: 0;
 		left: $section-text-width;
 		right: 0;
-		content: '';
+		content: "";
 		display: block;
 		position: absolute;
 		border: 55px solid #000000;
-		border-image: url('./img/frame.png') 55 repeat;
+		border-image: url("./img/frame.png") 55 repeat;
 		pointer-events: none;
 	}
-
 
 	.close-button {
 		@extend %close-button;
@@ -872,7 +881,7 @@ svg {
 		pointer-events: auto;
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch;
-		background-color: rgba(255,255,255,0.8);
+		background-color: rgba(255, 255, 255, 0.8);
 
 		.close-button {
 			position: static;
@@ -906,7 +915,7 @@ svg {
 	width: $section-text-width;
 	text-align: left;
 
-	&:after{
+	&:after {
 		display: none;
 	}
 
@@ -929,7 +938,7 @@ svg {
 	.more-content__scroller {
 		top: 130px;
 		padding: 1.5em;
-		left:0;
+		left: 0;
 	}
 }
 
@@ -937,7 +946,8 @@ svg {
 	@extend %button-link;
 	cursor: pointer;
 
-	&, &:hover {
+	&,
+	&:hover {
 		text-decoration: underline;
 	}
 }
@@ -962,13 +972,13 @@ svg {
 
 %right-arrow {
 	&:after {
-		content: '';
+		content: "";
 		position: absolute;
 		right: 0;
 		top: 0;
 		bottom: 0;
 		width: 50px;
-		background-image: url('./img/rightArrow.png');
+		background-image: url("./img/rightArrow.png");
 		background-position: center;
 		background-repeat: no-repeat;
 	}
@@ -976,13 +986,13 @@ svg {
 
 %left-arrow {
 	&:after {
-		content: '';
+		content: "";
 		position: absolute;
 		left: 0;
 		top: 0;
 		bottom: 0;
 		width: 50px;
-		background-image: url('./img/leftArrow.png');
+		background-image: url("./img/leftArrow.png");
 		background-position: center;
 		background-repeat: no-repeat;
 	}
@@ -1050,14 +1060,15 @@ svg {
 		max-width: 1100px;
 		overflow: hidden;
 	}
-	.embed-container iframe, .embed-container object, .embed-container embed {
+	.embed-container iframe,
+	.embed-container object,
+	.embed-container embed {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
 	}
-
 }
 
 #calm {
@@ -1076,7 +1087,7 @@ svg {
 .action-arrow path {
 	mix-blend-mode: multiply;
 	cursor: pointer;
-	opacity: 1.0;
+	opacity: 1;
 	//-webkit-transition: opacity 0.2s ease-out;
 	transition: opacity 0.2s ease-out;
 }
@@ -1266,7 +1277,7 @@ svg {
 				top: #{$ui-header-height}px;
 				min-width: 0;
 				padding: 0;
-				margin-top: -1*$top-nav-padding-top;
+				margin-top: -1 * $top-nav-padding-top;
 				text-align: left;
 				font-size: 1em;
 				border: none;
@@ -1283,11 +1294,11 @@ svg {
 				h4 {
 					&:before {
 						display: inline;
-						content: '(';
+						content: "(";
 					}
 					&:after {
 						display: inline;
-						content: ')';
+						content: ")";
 					}
 				}
 			}
@@ -1309,7 +1320,7 @@ svg {
 		top: 0;
 		width: #{$ui-header-mobile-nav-target-width}px;
 		height: #{$ui-header-mobile-nav-target-height}px;
-		background-image: url('./img/hamburger.png');
+		background-image: url("./img/hamburger.png");
 		background-size: #{$ui-header-mobile-nav-width}px;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -1318,7 +1329,8 @@ svg {
 		top: $mobile-section-text-top;
 		width: 100%;
 		bottom: 0;
-		padding: 0.8em $section-text-padding-mobile 2em $section-text-padding-mobile;
+		padding: 0.8em $section-text-padding-mobile 2em
+			$section-text-padding-mobile;
 		z-index: 200;
 
 		button {
@@ -1371,6 +1383,10 @@ svg {
 					//color: #000;
 					//font-size: 0.9em;
 					font-weight: 400;
+				}
+				.headline {
+					font-weight: 500;
+					text-transform: capitalize;
 				}
 				button {
 					font-weight: 500;
@@ -1467,19 +1483,19 @@ svg {
 	.logo {
 		display: none;
 	}
-	&[class*=fp-viewing-introduction] {
+	&[class*="fp-viewing-introduction"] {
 		.logo {
 			display: block;
 		}
 	}
 }
 
-body[class*=fp-viewing-timeline].small-screen .emotion-nav ul li.all {
+body[class*="fp-viewing-timeline"].small-screen .emotion-nav ul li.all {
 	display: none;
 }
 
 .small-screen .emotion-nav,
-body[class*=fp-viewing-timeline].small-screen .emotion-nav {
+body[class*="fp-viewing-timeline"].small-screen .emotion-nav {
 	bottom: initial;
 	top: $mobile-section-text-top;
 	left: 0;
@@ -1513,14 +1529,14 @@ body[class*=fp-viewing-timeline].small-screen .emotion-nav {
 		}
 
 		&:before {
-			content: '';
+			content: "";
 			display: block;
 			width: 100%;
 			margin-bottom: -1.2em;
 		}
 
 		&:after {
-			content: '';
+			content: "";
 			display: inline-block;
 			width: 100%;
 		}

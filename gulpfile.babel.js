@@ -192,7 +192,7 @@ function copyTask(options) {
 	console.log("Copying files: " + options.src);
 	if (options.watchfiles) {
 		gulp.watch(options.watchfiles, function () {
-			gulp.src(options.src).pipe().pipe(gulp.dest(options.dest));
+			gulp.src(options.src).pipe(gulp.dest(options.dest));
 		});
 	}
 	return gulp.src(options.src).pipe(gulp.dest(options.dest));
