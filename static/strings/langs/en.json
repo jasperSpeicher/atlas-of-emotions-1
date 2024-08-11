@@ -197,7 +197,7 @@
         },
         {
             "key": "hero_about_body_1",
-            "value": "The Dalai Lama imagined \"a map of our emotions to develop a calm mind.\" He asked his longtime friend and renowned emotion scientist Dr. Paul Ekman to realize his idea. Ekman took on the creation of the Atlas alongside his daughter, Eve Ekman, a second-generation emotion researcher and trainer. The Atlas represents what researchers have learned from the psychological study of emotion. "
+            "value": "The Dalai Lama imagined \"a map of our emotions to develop a calm mind.\" He asked his longtime friend and renowned emotion scientist Dr. Paul Ekman to realize his idea. Ekman took on the creation of the Atlas alongside his daughter, Eve Ekman, a second-generation emotion researcher and teacher. The Dalai Lama requested the Atlas represent the science of Emotions from what researchers have learned from the psychological study of emotion."
         },
         {
             "key": "hero_call_to_action_button",
@@ -249,7 +249,7 @@
         },
         {
             "key": "actions_body",
-            "value": "We respond to emotional states with our actions. Our responses to the same emotion may differ depending on the circumstances."
+            "value": "We respond to emotional states with our actions. Our responses to the same emotion may differ depending on the circumstances. We may have a primary, more immediate response, and a secondary more thoughtful response. Any response can be constructive and helpful to ourselves, others and the situation, or destructive and not helpful."
         },
         {
             "key": "actions_body_mobile",
@@ -1049,7 +1049,7 @@
         },
         {
             "key": "fear_timeline_response_ambiguous_response",
-            "value": "you become defensive"
+            "value": "you withdraw"
         }
     ],
     [
