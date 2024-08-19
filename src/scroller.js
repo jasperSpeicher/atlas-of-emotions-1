@@ -1,4 +1,5 @@
 import { TweenMax, TimelineMax } from "gsap";
+import { Power1 } from "gsap/gsap-core";
 import dispatcher from './dispatcher';
 import moreInfo from './moreInfo.js';
 import timeline from './timeline/timeline';
@@ -83,7 +84,7 @@ const scroller = {
         let pulseTimeline = new TimelineMax();
         pulseTimeline
             .add( 'start' )
-            .staggerTo( $links, 0.1, { css: { 'transform': 'scale(1.1)' } }, 0.1 )
+            .staggerTo( $links, 0.1, { css: { 'transform': 'scale(1.123)' } }, 0.1 )
             .staggerTo( $links, 0.1, { css: { 'transform': 'scale(1)' } }, 0.1, 'start+=0.2' );
     },
 
@@ -263,7 +264,7 @@ const scroller = {
                     autoAlpha: 0,
                     ease: Power1.easeOut
                 }, { autoAlpha: 1 } )
-                .addCallback( function () {
+                .call( function () {
                     _self.initSlideInterval();
                 } )
                 .add( 'end' );

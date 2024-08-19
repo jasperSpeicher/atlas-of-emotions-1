@@ -1,5 +1,5 @@
 import d3 from "d3";
-import { TweenMax, TimelineMax, Power2, Power1, Linear } from "gsap";
+import { TweenMax, TimelineMax, gsap } from "gsap";
 
 import Episode from "./Episode.js";
 import Continent from "../Continent.js";
@@ -138,7 +138,96 @@ export default class EpisodeAddAwareness extends Episode {
 	moveIllumination(position, duration = 4) {
 		return TweenMax.to(this.illuminationBlock, duration, {
 			css: { right: 100 - position + "%" },
-			ease: Power2.easeInOut,
+			ease: "power2.inOut",
+		});
+	}
+
+	addStateEmergence() {
+		let minStartingRadius = 0;
+		let maxStartingRadius = 20;
+		const initialRadii = this.stateCircles.map(
+			(c) => c.getBoundingClientRect().width / 2
+		);
+		this.stateCircles.forEach((circle, i) => {
+			let startingRadius =
+				minStartingRadius +
+				((maxStartingRadius - minStartingRadius) * i) /
+					(this.stateCircles.length - 1);
+			const emergeId = `emerge-${i}`;
+			// this could have been added already
+			if (!this.episodeTimeline.getById(emergeId)) {
+				this.episodeTimeline.from(
+					circle,
+					0.5,
+					{
+						attr: { rx: startingRadius, ry: startingRadius },
+						autoAlpha: 0,
+						ease: "power2.in",
+						id: emergeId,
+					},
+					"state"
+				);
+			}
+			const refractoryId = `refractory-${i}`;
+			if (!this.episodeTimeline.getById(refractoryId)) {
+				this.episodeTimeline.to(
+					circle,
+					1,
+					{
+						attr: {
+							rx: initialRadii[i] * 20,
+							ry: initialRadii[i] * 20,
+						},
+						ease: "power2.out",
+						id: refractoryId,
+					},
+					"experience"
+				);
+			}
+		});
+		this.episodeTimeline.addLabel("response");
+		this.stateCircles.forEach((circle, i) => {
+			const decenteringId = `decentering-${i}`;
+			if (!this.episodeTimeline.getById(decenteringId)) {
+				this.episodeTimeline.to(
+					circle,
+					7,
+					{
+						attr: {
+							rx: initialRadii[i],
+							ry: initialRadii[i],
+						},
+						ease: "power2.inOut",
+						id: decenteringId,
+					},
+					"decentering"
+				);
+			}
+		});
+		this.episodeTimeline.addLabel("pulsate");
+	}
+
+	removeRefractoryAndDecentering() {
+		this.stateCircles.forEach((circle, i) => {
+			this.episodeTimeline.remove(
+				this.episodeTimeline.getById(`refractory-${i}`)
+			);
+			this.episodeTimeline.remove(
+				this.episodeTimeline.getById(`decentering-${i}`)
+			);
+		});
+	}
+
+	rewind(onComplete) {
+		if (this.episodeTimeline.labels["end"] < this.episodeTimeline.time()) {
+			this.removeRefractoryAndDecentering();
+			this.episodeTimeline.seek("experience", true);
+		} else {
+			this.episodeTimeline.tweenTo("experience");
+		}
+		super.rewind(() => {
+			this.addStateEmergence();
+			onComplete();
 		});
 	}
 
@@ -175,7 +264,7 @@ export default class EpisodeAddAwareness extends Episode {
 			this.content = timeline.episodeContent;
 
 			// hide elements and prepare for animation
-			TweenMax.allTo(
+			gsap.globalTimeline.to(
 				timeline.getChildren(
 					timeline.select("#state", timelineWithExamples)
 				),
@@ -247,7 +336,7 @@ export default class EpisodeAddAwareness extends Episode {
 				);
 
 			//hide first and third lines and arrowheads
-			TweenMax.allTo(
+			gsap.globalTimeline.to(
 				timeline.selectAll(
 					'[id*="response-line-1"]',
 					timelineWithExamples
@@ -255,7 +344,7 @@ export default class EpisodeAddAwareness extends Episode {
 				0,
 				{ autoAlpha: 0 }
 			);
-			TweenMax.allTo(
+			gsap.globalTimeline.to(
 				timeline.selectAll(
 					'[id*="response-line-3"]',
 					timelineWithExamples
@@ -446,7 +535,7 @@ export default class EpisodeAddAwareness extends Episode {
 						setResponseLineColor(i, true);
 					}
 					//show all lines and arrowheads
-					TweenMax.allTo(
+					gsap.globalTimeline.to(
 						timeline.selectAll(
 							'[id*="response-line-"]',
 							timelineWithExamples
@@ -500,10 +589,10 @@ export default class EpisodeAddAwareness extends Episode {
 						.add("start")
 						.add(this.moveIllumination(illuminationPosition))
 						.add("finished")
-						.addCallback(() => {
+						.call(() => {
 							TweenMax.to(this.refractoryPeriodButton, 1, {
 								autoAlpha: 1,
-								ease: Power2.easeOut,
+								ease: "power2.out",
 							});
 						});
 					//if ( this.screenIsSmall ) {
@@ -513,7 +602,7 @@ export default class EpisodeAddAwareness extends Episode {
 						{ css: { backgroundColor: "rgba(255,255,255,0)" } },
 						{
 							css: { backgroundColor: "rgba(255,255,255,1)" },
-							ease: Power0.easeIn,
+							ease: "none",
 						},
 						"finished"
 					);
@@ -566,7 +655,7 @@ export default class EpisodeAddAwareness extends Episode {
 
 			//pulsate illumination
 			let pulsateIllumination = function () {
-				TweenMax.allTo(
+				gsap.globalTimeline.to(
 					[this.illuminationBlock /*, glow */],
 					1.9,
 					{
@@ -574,7 +663,7 @@ export default class EpisodeAddAwareness extends Episode {
 						repeat: -1,
 						yoyo: true,
 						repeatDelay: 0,
-						ease: Power1.easeInOut,
+						ease: "power1.inOut",
 					},
 					"pulsate-illumination"
 				);
@@ -588,7 +677,7 @@ export default class EpisodeAddAwareness extends Episode {
 				) {
 					TweenMax.to(this.addAwarenessButtonExperience, 1, {
 						autoAlpha: 1,
-						ease: Power2.easeOut,
+						ease: "power2.out",
 					});
 				}
 				if (
@@ -597,7 +686,7 @@ export default class EpisodeAddAwareness extends Episode {
 				) {
 					TweenMax.to(this.addAwarenessButtonResponse, 1, {
 						autoAlpha: 1,
-						ease: Power2.easeOut,
+						ease: "power2.out",
 					});
 				}
 				if (
@@ -606,7 +695,7 @@ export default class EpisodeAddAwareness extends Episode {
 				) {
 					TweenMax.to(this.blockDiagramButton, 1, {
 						autoAlpha: 1,
-						ease: Power2.easeOut,
+						ease: "power2.out",
 					});
 				}
 			};
@@ -647,7 +736,7 @@ export default class EpisodeAddAwareness extends Episode {
 						darkenTime,
 						{
 							autoAlpha: 0,
-							ease: Power3.easeInOut,
+							ease: "power3.inOut",
 
 							onComplete: () => {
 								TweenMax.to(
@@ -655,7 +744,7 @@ export default class EpisodeAddAwareness extends Episode {
 									refractoryPeriodTime,
 									{
 										autoAlpha: 1,
-										ease: Power3.easeInOut,
+										ease: "power3.inOut",
 
 										onComplete: () => {
 											scroller.pulseEmotionNav();
@@ -683,7 +772,7 @@ export default class EpisodeAddAwareness extends Episode {
 					this.illuminationBlock,
 					2,
 					{ autoAlpha: 0 },
-					{ autoAlpha: 1, ease: Power1.easeInOut }
+					{ autoAlpha: 1, ease: "power1.inOut" }
 				)
 				.add(
 					this.moveIllumination(
@@ -702,18 +791,18 @@ export default class EpisodeAddAwareness extends Episode {
 			this.episodeTimeline
 				//show event
 				.add("event")
-				.from(trigger, 0.5, { autoAlpha: 0, ease: Power1.easeOut })
+				.from(trigger, 0.5, { autoAlpha: 0, ease: "power1.out" })
 
 				.add("event-pulse")
 				.to(timeline.select("#event-text", timelineWithExamples), 0.1, {
 					scale: 1.1,
 					transformOrigin: "50% 50%",
-					ease: Power1.easeOut,
+					ease: "power1.out",
 				})
 				.to(timeline.select("#event-text", timelineWithExamples), 0.2, {
 					scale: 1,
 					transformOrigin: "50% 50%",
-					ease: Power1.easeOut,
+					ease: "power1.out",
 				})
 				.to(
 					timeline.select(
@@ -724,7 +813,7 @@ export default class EpisodeAddAwareness extends Episode {
 					{
 						scale: 1.1,
 						transformOrigin: "50% 50%",
-						ease: Power1.easeOut,
+						ease: "power1.out" ,
 					},
 					"-=0.25"
 				)
@@ -737,20 +826,19 @@ export default class EpisodeAddAwareness extends Episode {
 					{
 						scale: 1,
 						transformOrigin: "50% 50%",
-						ease: Power1.easeOut,
+						ease: "power1.out",
 					}
 				)
 				.add("event-lines")
 				.from(
 					eventLineGroup,
 					0.5,
-					{ autoAlpha: 0, ease: Power1.easeOut },
+					{ autoAlpha: 0, ease: "power1.out" },
 					this.screenIsSmall ? "event-lines+=1.5" : "event-lines"
 				)
 
 				// show emo state
-				.add("experience")
-				.addCallback(() => {
+				.call(() => {
 					if (!this.rewindActive && this.screenIsSmall) {
 						this.scrollSvgToStage("experience");
 					}
@@ -759,15 +847,12 @@ export default class EpisodeAddAwareness extends Episode {
 			this.addStateEmergence();
 
 			this.episodeTimeline
-				.addCallback(addExperienceAwareness.bind(this), "experience")
-				.addCallback(
-					this.triggerRefractoryEffects.bind(this),
-					"experience"
-				)
+				.call(addExperienceAwareness.bind(this), null, "experience")
+				.call(this.triggerRefractoryEffects.bind(this), null, "experience")
 				.from(
 					changes,
 					2,
-					{ autoAlpha: 0, ease: Power1.easeOut },
+					{ autoAlpha: 0, ease: "power1.out" },
 					"experience"
 				)
 				.from(
@@ -775,45 +860,46 @@ export default class EpisodeAddAwareness extends Episode {
 					2,
 					{
 						autoAlpha: 0,
-						ease: Power1.easeOut,
+						ease: "power1.out",
 					},
 					"experience"
 				)
-				.add("pulsate")
 				//show response
-				.add("response-lines", "-=0.5")
-				.addCallback(
-					addResponseLineAwareness.bind(this),
-					"response-lines"
-				)
 				.from(
 					responseLineGroup,
 					0.5,
-					{ autoAlpha: 0, ease: Power1.easeOut },
-					"response-lines"
+					{
+						autoAlpha: 0,
+						ease: "power1.out",
+						onStart: addResponseLineAwareness.bind(this),
+						onComplete: () => {
+							if (!this.rewindActive && this.screenIsSmall) {
+								this.scrollSvgToStage("response");
+							}
+							addResponseAwareness.bind(this)();
+						},
+					},
+					"experience"
 				)
-
-				.add("responses")
-				.addCallback(() => {
-					if (!this.rewindActive && this.screenIsSmall) {
-						this.scrollSvgToStage("response");
-					}
-				})
-				.addCallback(addResponseAwareness.bind(this))
-				.from(responses, 1, { autoAlpha: 0, ease: Power1.easeOut })
+				.from(
+					responses,
+					1,
+					{ autoAlpha: 0, ease: "power1.out" },
+					"response"
+				)
 
 				.add("end");
 
 			this.episodeTimeline
 				.add("add-awareness-button")
-				.addCallback(showAddAwarenessButton.bind(this));
+				.call(showAddAwarenessButton.bind(this));
 
 			this.addStatePulsation();
 
 			let hideButton = function (button) {
 				TweenMax.to(button, 1, {
 					autoAlpha: 0,
-					ease: Power2.easeOut,
+					ease: "power2.out",
 					//onComplete: function () {
 					//	button.style.display = 'none';
 					//}

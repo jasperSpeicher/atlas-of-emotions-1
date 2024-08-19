@@ -1,12 +1,23 @@
 import _ from 'lodash';
 import d3 from 'd3';
-import { TweenMax, TimelineMax, Power2, Power1, Elastic, Bounce, Back } from "gsap";
+import { TweenMax, TimelineMax, gsap } from "gsap";
 
 import Continent from '../Continent.js';
 import timeline from './timeline.js';
 import scroller from '../scroller.js';
 import dispatcher from '../dispatcher.js';
 
+
+function killChildTweensOf(ancestor) {
+    ancestor = gsap.utils.toArray(ancestor)[0];
+    gsap.globalTimeline
+      .getChildren(true, true, false)
+      .forEach((tween) =>
+        tween
+          .targets()
+          .forEach((e) => e.nodeType && ancestor.contains(e) && tween.kill(e))
+      );
+}
 export default class Episode {
 
     setActive( val ) {
@@ -19,7 +30,7 @@ export default class Episode {
 
         this.episodeTimeline.timeScale( 3 );
         this.episodeTimeline.pause();
-        if ( this.episodeTimeline.getLabelTime( 'end' ) < this.episodeTimeline.time() ) {
+        if ( this.episodeTimeline.labels['end'] < this.episodeTimeline.time() ) {
             this.episodeTimeline.seek( 'end', true );
         }
         this.episodeTimeline.tweenTo( 'event-lines', {
@@ -27,7 +38,7 @@ export default class Episode {
                 this.rewindActive = false;
                 onComplete();
             },
-            ease: Power2.easeOut
+            ease: "power2.out"
         } );
         if ( this.screenIsSmall ) {
             this.scrollSvgToStage( 'trigger' );
@@ -149,7 +160,7 @@ export default class Episode {
                     repeat: -1,
                     yoyo: true,
                     repeatDelay: 0,
-                    ease: Power1.easeInOut
+                    ease: "power1.inOut"
                 }, 'pulsate' );
         } );
     }
@@ -163,7 +174,7 @@ export default class Episode {
                 .from( circle, 2, {
                     attr: { rx: startingRadius, ry: startingRadius },
                     autoAlpha: 0,
-                    ease: Back.easeOut
+                    ease: "back.out"
                 }, 'state' );
         } );
     }
@@ -393,8 +404,7 @@ export default class Episode {
 
     destroy() {
         this.episodeTimeline.kill();
-        //TweenMax.killAll();
-        TweenMax.killChildTweensOf( this.parent );
+        killChildTweensOf( this.parent );
         scroller.resetEmotionNav();
         timeline.remove( this.parent );
         this.episodeTimeline = null;
@@ -438,7 +448,7 @@ export default class Episode {
             } );
 
 
-            TweenMax.allTo( timeline.getChildren( timeline.select( '#state', this.parent ) ), 0, { visibility: 'hidden' } );
+            gsap.globalTimeline.to( timeline.getChildren( timeline.select( '#state', this.parent ) ), 0, { visibility: 'hidden' } );
 
             //state
             let state = timeline.select( '#state', this.parent ),
@@ -496,25 +506,25 @@ export default class Episode {
             this.episodeTimeline
                 //show event
                 .add( 'event' )
-                .from( event, 0.5, { autoAlpha: 0, ease: Power1.easeOut } )
+                .from( event, 0.5, { autoAlpha: 0, ease: "power1.out" } )
 
                 .add( 'event-pulse' )
                 .to( event, 0.1, {
                     scale: 1.1,
                     transformOrigin: '50% 50%',
-                    ease: Power1.easeOut
+                    ease: "power1.out"
                 } )
                 .to( event, 0.2, {
                     scale: 1,
                     transformOrigin: '50% 50%',
-                    ease: Power1.easeOut
+                    ease: "power1.out"
                 } )
                 .add( 'event-lines' )
-                .from( eventLines, 0.5, { autoAlpha: 0, ease: Power1.easeOut }, 'event-lines' )
+                .from( eventLines, 0.5, { autoAlpha: 0, ease: "power1.out" }, 'event-lines' )
 
                 // show emo state
                 .add( 'state' )
-                .addCallback( ()=> {
+                .call( ()=> {
                     if ( !this.rewindActive && this.screenIsSmall ) {
                         this.scrollSvgToStage( 'experience' );
                     }
@@ -523,21 +533,21 @@ export default class Episode {
             this.addStateEmergence();
 
             this.episodeTimeline
-                .from( stateLabel, 2, { autoAlpha: 0, ease: Power1.easeOut }, 'state' )
+                .from( stateLabel, 2, { autoAlpha: 0, ease: "power1.out" }, 'state' )
                 .add( 'pulsate' )
                 //show response
                 .add( 'response-line', '-=1' )
-                .from( responseLines, 0.5, { autoAlpha: 0, ease: Power1.easeOut }, 'response-line' )
+                .from( responseLines, 0.5, { autoAlpha: 0, ease: "power1.out" }, 'response-line' )
 
                 .add( 'responses', '-=0.5' )
-                .addCallback( ()=> {
+                .call( ()=> {
                     if ( !this.rewindActive && this.screenIsSmall ) {
                         this.scrollSvgToStage( 'response' );
                     }
                 } )
-                .from( responses, 1, { autoAlpha: 0, ease: Power1.easeOut } )
+                .from( responses, 1, { autoAlpha: 0, ease: "power1.out" } )
 
-                .addCallback( function () {
+                .call( function () {
                     if ( !this.rewindActive && this.isActive ) {
                         scroller.pulseEmotionNav();
                     }
