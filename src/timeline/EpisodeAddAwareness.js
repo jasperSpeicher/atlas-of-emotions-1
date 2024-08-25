@@ -142,93 +142,89 @@ export default class EpisodeAddAwareness extends Episode {
 		});
 	}
 
-	addStateEmergence() {
-		let minStartingRadius = 0;
-		let maxStartingRadius = 20;
-		const initialRadii = this.stateCircles.map(
-			(c) => c.getBoundingClientRect().width / 2
-		);
+	rewindState(onComplete) {
+		this.stateCircles.forEach((circle, i) => {
+			gsap.globalTimeline.to(circle, {
+				attr: {
+					rx: 0,
+					ry: 0,
+					opacity: 0,
+				},
+				ease: this.stateCircleTimeline.time() >= this.stateCircleTimeline.labels["pulsate"]? "back.in": "power1.out",
+				duration: 0.5,
+				onComplete,
+			});
+		});
+	}
+
+	rewind(onComplete) {
+		super.rewind(() => {
+			this.stateCircleTimeline.seek(0);
+			if (onComplete) onComplete();
+		});
+	}
+
+	setupStateCircleTimeline() {
+		this.stateCircleTimeline = gsap.timeline({ paused: true });
+
+		const minStartingRadius = 0;
+		const maxStartingRadius = 20;
+
 		this.stateCircles.forEach((circle, i) => {
 			let startingRadius =
 				minStartingRadius +
 				((maxStartingRadius - minStartingRadius) * i) /
 					(this.stateCircles.length - 1);
-			const emergeId = `emerge-${i}`;
-			// this could have been added already
-			if (!this.episodeTimeline.getById(emergeId)) {
-				this.episodeTimeline.from(
+
+			this.stateCircleTimeline
+				.set(
 					circle,
-					0.5,
 					{
 						attr: { rx: startingRadius, ry: startingRadius },
 						autoAlpha: 0,
-						ease: "power2.in",
-						id: emergeId,
 					},
-					"state"
-				);
-			}
-			const refractoryId = `refractory-${i}`;
-			if (!this.episodeTimeline.getById(refractoryId)) {
-				this.episodeTimeline.to(
+					"emerge"
+				)
+				.to(
 					circle,
-					1,
 					{
+						duration: 0.5,
 						attr: {
-							rx: initialRadii[i] * 20,
-							ry: initialRadii[i] * 20,
+							rx: this.initialRadii[i],
+							ry: this.initialRadii[i],
+						},
+						autoAlpha: 1,
+						ease: "power2.in",
+					},
+					"emerge"
+				)
+				.to(
+					circle,
+					{
+						duration: 1,
+						attr: {
+							rx: this.initialRadii[i] * 20,
+							ry: this.initialRadii[i] * 20,
 						},
 						ease: "power2.out",
-						id: refractoryId,
 					},
-					"experience"
-				);
-			}
-		});
-		this.episodeTimeline.addLabel("response");
-		this.stateCircles.forEach((circle, i) => {
-			const decenteringId = `decentering-${i}`;
-			if (!this.episodeTimeline.getById(decenteringId)) {
-				this.episodeTimeline.to(
+					"expand"
+				)
+				.to(
 					circle,
-					7,
 					{
+						duration: 7,
 						attr: {
-							rx: initialRadii[i],
-							ry: initialRadii[i],
+							rx: this.initialRadii[i],
+							ry: this.initialRadii[i],
 						},
 						ease: "power2.inOut",
-						id: decenteringId,
 					},
-					"decentering"
+					"contract"
 				);
-			}
 		});
-		this.episodeTimeline.addLabel("pulsate");
-	}
-
-	removeRefractoryAndDecentering() {
-		this.stateCircles.forEach((circle, i) => {
-			this.episodeTimeline.remove(
-				this.episodeTimeline.getById(`refractory-${i}`)
-			);
-			this.episodeTimeline.remove(
-				this.episodeTimeline.getById(`decentering-${i}`)
-			);
-		});
-	}
-
-	rewind(onComplete) {
-		if (this.episodeTimeline.labels["end"] < this.episodeTimeline.time()) {
-			this.removeRefractoryAndDecentering();
-			this.episodeTimeline.seek("experience", true);
-		} else {
-			this.episodeTimeline.tweenTo("experience");
-		}
-		super.rewind(() => {
-			this.addStateEmergence();
-			onComplete();
-		});
+		this.stateCircleTimeline.addLabel("pulsate");
+		this.addStatePulsation(this.stateCircleTimeline);
 	}
 
 	constructor(svg, container, emotion, screenIsSmall) {
@@ -290,6 +286,7 @@ export default class EpisodeAddAwareness extends Episode {
 			}
 
 			this.initStateCircles();
+			this.setupStateCircleTimeline();
 
 			//changes
 			let physicalChanges = timeline.select(
@@ -813,7 +810,7 @@ export default class EpisodeAddAwareness extends Episode {
 					{
 						scale: 1.1,
 						transformOrigin: "50% 50%",
-						ease: "power1.out" ,
+						ease: "power1.out",
 					},
 					"-=0.25"
 				)
@@ -836,6 +833,20 @@ export default class EpisodeAddAwareness extends Episode {
 					{ autoAlpha: 0, ease: "power1.out" },
 					this.screenIsSmall ? "event-lines+=1.5" : "event-lines"
 				)
+				.call(
+					() => {
+						if (!this.rewindActive) {
+							this.stateCircleTimeline.play();
+						} else {
+							this.stateCircleTimeline.pause();
+							gsap.killTweensOf(this.stateCircleTimeline);
+							this.episodeTimeline.pause();
+							this.rewindState(()=>this.episodeTimeline.resume());
+						}
+					},
+					null,
+					"experience"
+				)
 
 				// show emo state
 				.call(() => {
@@ -844,11 +855,13 @@ export default class EpisodeAddAwareness extends Episode {
 					}
 				});
 
-			this.addStateEmergence();
-
 			this.episodeTimeline
 				.call(addExperienceAwareness.bind(this), null, "experience")
-				.call(this.triggerRefractoryEffects.bind(this), null, "experience")
+				.call(
+					this.triggerRefractoryEffects.bind(this),
+					null,
+					"experience"
+				)
 				.from(
 					changes,
 					2,
@@ -893,8 +906,6 @@ export default class EpisodeAddAwareness extends Episode {
 			this.episodeTimeline
 				.add("add-awareness-button")
 				.call(showAddAwarenessButton.bind(this));
-
-			this.addStatePulsation();
 
 			let hideButton = function (button) {
 				TweenMax.to(button, 1, {

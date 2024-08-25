@@ -160,7 +160,7 @@ export default class Episode {
 		);
 	}
 
-	addStatePulsation() {
+	addStatePulsation(timeline) {
 		//pulsate state
 		this.stateCircles.forEach((circle, i) => {
 			// make the circles overlap as they change size
@@ -173,7 +173,7 @@ export default class Episode {
 			radiusDelta *= 1 - i / (this.stateCircles.length - 1);
 			// don't pass in a float
 			radiusDelta = Math.round(radiusDelta);
-			this.episodeTimeline.to(
+			timeline.to(
 				circle,
 				6 - (3 * i) / (this.stateCircles.length - 1),
 				{
@@ -643,7 +643,7 @@ export default class Episode {
 
 				.add("end");
 
-			this.addStatePulsation();
+			this.addStatePulsation(this.episodeTimeline);
 
 			this.episodeTimeline.pause();
 
