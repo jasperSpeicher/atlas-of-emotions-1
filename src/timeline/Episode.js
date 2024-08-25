@@ -44,7 +44,7 @@ export default class Episode {
 		}
 	}
 
-	start(animateReplaceContent = false) {
+    start(animateReplaceContent = false) {
 		//go to start
 		this.episodeTimeline.timeScale(1);
 
@@ -191,7 +191,7 @@ export default class Episode {
 		});
 	}
 
-	addStateEmergence() {
+	addStateEmergence(timeline) {
 		let minStartingRadius = 0;
 		let maxStartingRadius = 20;
 		this.stateCircles.forEach((circle, i) => {
@@ -199,7 +199,7 @@ export default class Episode {
 				minStartingRadius +
 				((maxStartingRadius - minStartingRadius) * i) /
 					(this.stateCircles.length - 1);
-			this.episodeTimeline.from(
+			timeline.from(
 				circle,
 				2,
 				{
@@ -606,7 +606,7 @@ export default class Episode {
 					}
 				});
 
-			this.addStateEmergence();
+			this.addStateEmergence(this.episodeTimeline);
 
 			this.episodeTimeline
 				.from(

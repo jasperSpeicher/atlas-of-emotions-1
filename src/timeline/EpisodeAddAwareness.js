@@ -12,17 +12,6 @@ export default class EpisodeAddAwareness extends Episode {
 	//overload with additional content changes
 	replaceContent(emotion, animate = false) {
 		super.replaceContent(emotion, animate);
-
-		let textColor = this.configsByEmotion[emotion].colorPalette[0];
-
-		this.responseTextUnawareColor =
-			"rgba(" +
-			Math.min(textColor[0] + 80, 255) +
-			"," +
-			Math.min(textColor[1] + 80, 255) +
-			"," +
-			Math.min(textColor[2] + 80, 255) +
-			", 0.9)";
 	}
 
 	destroy() {
@@ -142,7 +131,7 @@ export default class EpisodeAddAwareness extends Episode {
 		});
 	}
 
-	rewindState(onComplete) {
+	rewindState(timeline, onComplete) {
 		this.stateCircles.forEach((circle, i) => {
 			gsap.globalTimeline.to(circle, {
 				attr: {
@@ -150,7 +139,10 @@ export default class EpisodeAddAwareness extends Episode {
 					ry: 0,
 					opacity: 0,
 				},
-				ease: this.stateCircleTimeline.time() >= this.stateCircleTimeline.labels["pulsate"]? "back.in": "power1.out",
+				ease:
+					timeline.time() >= timeline.labels["pulsate"]
+						? "back.in"
+						: "power1.out",
 				duration: 0.5,
 				onComplete,
 			});
@@ -159,13 +151,13 @@ export default class EpisodeAddAwareness extends Episode {
 
 	rewind(onComplete) {
 		super.rewind(() => {
-			this.stateCircleTimeline.seek(0);
+			this.refractoryCirclesTimeline.seek(0);
 			if (onComplete) onComplete();
 		});
 	}
 
-	setupStateCircleTimeline() {
-		this.stateCircleTimeline = gsap.timeline({ paused: true });
+	setupCirclesTimelines() {
+		this.refractoryCirclesTimeline = gsap.timeline({ paused: true });
 
 		const minStartingRadius = 0;
 		const maxStartingRadius = 20;
@@ -176,7 +168,7 @@ export default class EpisodeAddAwareness extends Episode {
 				((maxStartingRadius - minStartingRadius) * i) /
 					(this.stateCircles.length - 1);
 
-			this.stateCircleTimeline
+			this.refractoryCirclesTimeline
 				.set(
 					circle,
 					{
@@ -223,12 +215,251 @@ export default class EpisodeAddAwareness extends Episode {
 					"contract"
 				);
 		});
-		this.stateCircleTimeline.addLabel("pulsate");
-		this.addStatePulsation(this.stateCircleTimeline);
+		this.addStatePulsation(this.refractoryCirclesTimeline);
 	}
 
 	constructor(svg, container, emotion, screenIsSmall) {
 		super(svg, container, emotion, screenIsSmall);
+	}
+
+	setupTimeline({ withRefractoryPeriod }) {
+		if (this.episodeTimeline) {
+			gsap.killTweensOf(this.episodeTimeline);
+			this.episodeTimeline.seek("end").pause();
+			this.episodeTimeline.kill();
+			this.stateCircles.forEach((circle, i) => {
+				gsap.set(circle, {
+					attr: {
+						rx: 0,
+						ry: 0,
+						opacity: 0,
+					},
+				});
+			});
+		}
+
+		let trigger = timeline.select("#trigger", this.timelineWithExamples);
+		let responses = timeline.select(
+			"#responses",
+			this.timelineWithExamples
+		);
+
+		this.episodeTimeline = new gsap.timeline();
+
+		let addResponseLineAwareness = function () {
+			if (this.awarenessStage == "experience") {
+				//reset center line color
+				this.setResponseLineColor(1, true);
+			}
+			if (this.awarenessStage == "response") {
+				for (let i = 0; i < this.responseLines.length; i++) {
+					this.setResponseLinestyle(i, true);
+					this.setResponseLinestyle(i, true);
+					this.setResponseLineColor(i, true);
+				}
+				//show all lines and arrowheads
+				gsap.globalTimeline.to(
+					timeline.selectAll(
+						'[id*="response-line-"]',
+						this.timelineWithExamples
+					),
+					0,
+					{ autoAlpha: 1 }
+				);
+			}
+		};
+
+		let addExperienceAwareness = function () {
+			if (this.awarenessStage == "experience") {
+				this.physicalChanges.style.visibility = "visible";
+				this.mentalChanges.style.visibility = "visible";
+			}
+		};
+
+		let addResponseAwareness = function () {
+			if (this.awarenessStage == "response") {
+				this.setTextColor(this.destructiveResponse, true);
+			}
+		};
+
+		let showAddAwarenessButton = function () {
+			if (
+				this.awarenessStage == "trigger" &&
+				this.addAwarenessButtonExperience.style.visibility == "hidden"
+			) {
+				TweenMax.to(this.addAwarenessButtonExperience, 1, {
+					autoAlpha: 1,
+					ease: "power2.out",
+				});
+			}
+			if (
+				this.awarenessStage == "experience" &&
+				this.addAwarenessButtonResponse.style.visibility == "hidden"
+			) {
+				TweenMax.to(this.addAwarenessButtonResponse, 1, {
+					autoAlpha: 1,
+					ease: "power2.out",
+				});
+			}
+			if (
+				this.awarenessStage == "refractory" &&
+				this.blockDiagramButton.style.visibility == "hidden"
+			) {
+				TweenMax.to(this.blockDiagramButton, 1, {
+					autoAlpha: 1,
+					ease: "power2.out",
+				});
+			}
+		};
+
+		//start the timeline
+		this.episodeTimeline
+			//show event
+			.add("event")
+			.from(trigger, 0.5, { autoAlpha: 0, ease: "power1.out" })
+
+			.add("event-pulse")
+			.to(
+				timeline.select("#event-text", this.timelineWithExamples),
+				0.1,
+				{
+					scale: 1.1,
+					transformOrigin: "50% 50%",
+					ease: "power1.out",
+				}
+			)
+			.to(
+				timeline.select("#event-text", this.timelineWithExamples),
+				0.2,
+				{
+					scale: 1,
+					transformOrigin: "50% 50%",
+					ease: "power1.out",
+				}
+			)
+			.to(
+				timeline.select(
+					"#perceptual-database-text",
+					this.timelineWithExamples
+				),
+				0.1,
+				{
+					scale: 1.1,
+					transformOrigin: "50% 50%",
+					ease: "power1.out",
+				},
+				"-=0.25"
+			)
+			.to(
+				timeline.select(
+					"#perceptual-database-text",
+					this.timelineWithExamples
+				),
+				0.2,
+				{
+					scale: 1,
+					transformOrigin: "50% 50%",
+					ease: "power1.out",
+				}
+			)
+			.add("event-lines")
+			.from(
+				this.eventLineGroup,
+				0.5,
+				{ autoAlpha: 0, ease: "power1.out" },
+				this.screenIsSmall ? "event-lines+=1.5" : "event-lines"
+			);
+
+		if (withRefractoryPeriod) {
+			this.episodeTimeline.call(
+				() => {
+					if (!this.rewindActive) {
+						this.refractoryCirclesTimeline.play();
+					}
+				},
+				null,
+				"state"
+			);
+		} else {
+			this.addStateEmergence(this.episodeTimeline);
+			this.episodeTimeline.addLabel("pulsate");
+		}
+
+		// show emo state
+		this.episodeTimeline.call(() => {
+			if (!this.rewindActive && this.screenIsSmall) {
+				this.scrollSvgToStage("experience");
+			}
+		});
+
+		this.episodeTimeline
+			.call(addExperienceAwareness.bind(this), null, "state")
+			.call(this.triggerRefractoryEffects.bind(this), null, "state")
+			.from(changes, 2, { autoAlpha: 0, ease: "power1.out" }, "state")
+			.from(
+				this.stateLabel,
+				2,
+				{
+					autoAlpha: 0,
+					ease: "power1.out",
+				},
+				"state"
+			);
+
+		if (withRefractoryPeriod) {
+			this.episodeTimeline.call(
+				() => {
+					if (this.rewindActive) {
+						this.refractoryCirclesTimeline.pause();
+						gsap.killTweensOf(this.refractoryCirclesTimeline);
+						// this.episodeTimeline.pause();
+						this.rewindState(
+							this.refractoryCirclesTimeline
+							// () => this.episodeTimeline.resume()
+						);
+					}
+				},
+				null,
+				"state"
+			);
+		}
+
+		this.episodeTimeline
+			//show response
+			.from(
+				this.responseLineGroup,
+				0.5,
+				{
+					autoAlpha: 0,
+					ease: "power1.out",
+					onStart: addResponseLineAwareness.bind(this),
+					onComplete: () => {
+						if (!this.rewindActive && this.screenIsSmall) {
+							this.scrollSvgToStage("response");
+						}
+						addResponseAwareness.bind(this)();
+					},
+				},
+				"-=1"
+			)
+			.from(
+				responses,
+				1,
+				{ autoAlpha: 0, ease: "power1.out" },
+				"response"
+			)
+
+			.add("end");
+
+		if (withRefractoryPeriod) {
+			this.episodeTimeline.seek(0);
+		} else {
+			this.addStatePulsation(this.episodeTimeline);
+		}
+
+		this.episodeTimeline
+			.add("add-awareness-button")
+			.call(showAddAwarenessButton.bind(this));
 	}
 
 	initialize(svg, container, emotion, screenIsSmall) {
@@ -246,7 +477,7 @@ export default class EpisodeAddAwareness extends Episode {
 			this.initializeIllumination(svg);
 
 			//timeline with examples
-			let timelineWithExamples = timeline.select(
+			this.timelineWithExamples = timeline.select(
 				"#timeline-with-examples",
 				this.parent
 			);
@@ -262,81 +493,91 @@ export default class EpisodeAddAwareness extends Episode {
 			// hide elements and prepare for animation
 			gsap.globalTimeline.to(
 				timeline.getChildren(
-					timeline.select("#state", timelineWithExamples)
+					timeline.select("#state", this.timelineWithExamples)
 				),
 				0,
 				{ visibility: "hidden" }
 			);
 
 			//state
-			let state = timeline.select("#state", timelineWithExamples),
-				stateLabel = timeline.select(
-					"#state-label",
-					timelineWithExamples
-				);
+			this.state = timeline.select("#state", this.timelineWithExamples);
+			this.stateLabel = timeline.select(
+				"#state-label",
+				this.timelineWithExamples
+			);
 			let bBox = state.getBBox();
-			let stateLabelCenter = bBox.x + bBox.width / 2;
-			let stateLabelChildren = timeline.getChildren(stateLabel);
-			for (let i = 0; i < stateLabelChildren.length; i++) {
-				stateLabelChildren[i].setAttribute("x", stateLabelCenter);
-				stateLabelChildren[i].setAttribute("text-anchor", "middle");
+			this.stateLabelCenter = bBox.x + bBox.width / 2;
+			this.stateLabelChildren = timeline.getChildren(this.stateLabel);
+			for (let i = 0; i < this.stateLabelChildren.length; i++) {
+				this.stateLabelChildren[i].setAttribute(
+					"x",
+					this.stateLabelCenter
+				);
+				this.stateLabelChildren[i].setAttribute(
+					"text-anchor",
+					"middle"
+				);
 				if (i == 1) {
-					stateLabelChildren[i].style.textTransform = "uppercase";
+					this.stateLabelChildren[i].style.textTransform =
+						"uppercase";
 				}
 			}
 
 			this.initStateCircles();
-			this.setupStateCircleTimeline();
+			this.setupCirclesTimelines();
 
 			//changes
-			let physicalChanges = timeline.select(
-					"#physical-changes",
-					timelineWithExamples
-				),
-				mentalChanges = timeline.select(
-					"#mental-changes",
-					timelineWithExamples
-				),
-				changes = timeline.select("#changes", timelineWithExamples);
-			physicalChanges.style.visibility = "hidden";
-			mentalChanges.style.visibility = "hidden";
+			this.physicalChanges = timeline.select(
+				"#physical-changes",
+				this.timelineWithExamples
+			);
+			this.mentalChanges = timeline.select(
+				"#mental-changes",
+				this.timelineWithExamples
+			);
+			this.changes = timeline.select(
+				"#changes",
+				this.timelineWithExamples
+			);
+			this.physicalChanges.style.visibility = "hidden";
+			this.mentalChanges.style.visibility = "hidden";
 
 			//lines
-			let eventLineGroup = timeline.select(
-					"#event-lines",
-					timelineWithExamples
+			this.eventLineGroup = timeline.select(
+				"#event-lines",
+				this.timelineWithExamples
+			);
+			this.eventLines = [
+				//timeline.select( "path#precondition-line", this.eventLineGroup ),
+				timeline.select("path#event-line", this.eventLineGroup),
+				//timeline.select( "path#perceptual-database-line", this.eventLineGroup )
+			];
+			this.eventLineDecorations = [
+				//timeline.select( "path#precondition-line-decoration-1", this.eventLineGroup ),
+				timeline.select(
+					"path#event-line-decoration-1",
+					this.eventLineGroup
 				),
-				eventLines = [
-					//timeline.select( "path#precondition-line", eventLineGroup ),
-					timeline.select("path#event-line", eventLineGroup),
-					//timeline.select( "path#perceptual-database-line", eventLineGroup )
-				],
-				eventLineDecorations = [
-					//timeline.select( "path#precondition-line-decoration-1", eventLineGroup ),
-					timeline.select(
-						"path#event-line-decoration-1",
-						eventLineGroup
-					),
-					//timeline.select( "path#perceptual-database-line-decoration-1", eventLineGroup )
-				],
-				responseLineGroup = timeline.select(
-					"#response-lines",
-					timelineWithExamples
-				),
-				responseLines = timeline.selectAll(
-					"path:not([id*='decoration'])",
-					responseLineGroup
-				),
-				responseLineDecorations = timeline.selectAll(
-					"[id*='decoration']",
-					responseLineGroup
-				);
+				//timeline.select( "path#perceptual-database-line-decoration-1", this.eventLineGroup )
+			];
+			this.responseLineGroup = timeline.select(
+				"#response-lines",
+				this.timelineWithExamples
+			);
+			this.responseLines = timeline.selectAll(
+				"path:not([id*='decoration'])",
+				this.responseLineGroup
+			);
+			this.responseLineDecorations = timeline.selectAll(
+				"[id*='decoration']",
+				this.responseLineGroup
+			);
 
 			//hide first and third lines and arrowheads
 			gsap.globalTimeline.to(
 				timeline.selectAll(
 					'[id*="response-line-1"]',
-					timelineWithExamples
+					this.timelineWithExamples
 				),
 				0,
 				{ autoAlpha: 0 }
@@ -344,52 +585,50 @@ export default class EpisodeAddAwareness extends Episode {
 			gsap.globalTimeline.to(
 				timeline.selectAll(
 					'[id*="response-line-3"]',
-					timelineWithExamples
+					this.timelineWithExamples
 				),
 				0,
 				{ autoAlpha: 0 }
 			);
 
-			let trigger = timeline.select("#trigger", timelineWithExamples),
-				event = timeline.select("#event", timelineWithExamples),
-				precondition = timeline.select(
-					"#precondition",
-					timelineWithExamples
-				),
-				perceptualDatabase = timeline.select(
-					"#perceptual-database",
-					timelineWithExamples
-				),
-				constructiveResponse = timeline.select(
-					"#constructive-response",
-					timelineWithExamples
-				),
-				destructiveResponse = timeline.select(
-					"#destructive-response",
-					timelineWithExamples
-				),
-				ambiguousResponse = timeline.select(
-					"#ambiguous-response",
-					timelineWithExamples
-				),
-				responses = timeline.select("#responses", timelineWithExamples);
+			this.event = timeline.select("#event", this.timelineWithExamples);
+			this.precondition = timeline.select(
+				"#precondition",
+				this.timelineWithExamples
+			);
+			this.perceptualDatabase = timeline.select(
+				"#perceptual-database",
+				this.timelineWithExamples
+			);
+			this.constructiveResponse = timeline.select(
+				"#constructive-response",
+				this.timelineWithExamples
+			);
+			this.destructiveResponse = timeline.select(
+				"#destructive-response",
+				this.timelineWithExamples
+			);
+			this.ambiguousResponse = timeline.select(
+				"#ambiguous-response",
+				this.timelineWithExamples
+			);
 
 			//text
 			this.triggerText = [
-				timeline.select("tspan", precondition),
-				timeline.select("tspan", event),
-				timeline.select("tspan", perceptualDatabase),
+				timeline.select("tspan", this.precondition),
+				timeline.select("tspan", this.event),
+				timeline.select("tspan", this.perceptualDatabase),
 			];
-			this.statePhraseText = [stateLabelChildren[0]];
+			this.statePhraseText = [this.stateLabelChildren[0]];
 			this.stateNameText = [
-				timeline.select("tspan", physicalChanges),
-				stateLabelChildren[1],
-				timeline.select("tspan", mentalChanges),
+				timeline.select("tspan", this.physicalChanges),
+				this.stateLabelChildren[1],
+				timeline.select("tspan", this.mentalChanges),
 			];
 			this.responseText = [
-				timeline.select("tspan", constructiveResponse),
-				timeline.select("tspan", destructiveResponse),
-				timeline.select("tspan", ambiguousResponse),
+				timeline.select("tspan", this.constructiveResponse),
+				timeline.select("tspan", this.destructiveResponse),
+				timeline.select("tspan", this.ambiguousResponse),
 			];
 
 			//center diagram text for proper placement in translations
@@ -398,11 +637,15 @@ export default class EpisodeAddAwareness extends Episode {
 				tspan.setAttribute("x", triggerTextCenter);
 				tspan.setAttribute("text-anchor", "middle");
 			});
-			let textElements = [precondition, event, perceptualDatabase];
+			let textElements = [
+				this.precondition,
+				this.event,
+				this.perceptualDatabase,
+			];
 			textElements.forEach(function (element) {
 				TweenMax.set(element, { x: 0 });
 			});
-			bBox = changes.getBBox();
+			bBox = this.changes.getBBox();
 			let changesCenter = bBox.x + bBox.width / 2;
 			[this.stateNameText[0], this.stateNameText[2]].forEach(function (
 				tspan
@@ -448,111 +691,78 @@ export default class EpisodeAddAwareness extends Episode {
 			);
 			this.blockDiagramButton.style.visibility = "hidden";
 
-			this.episodeTimeline = new TimelineMax({});
 			let illuminationTimeline = new TimelineMax({});
 
 			this.playFromStart = true; //TODO shared code with Episode
 
 			let lineUnawareColor = timeline
-				.select("#response-line-2", timelineWithExamples)
+				.select("#response-line-2", this.timelineWithExamples)
 				.getAttribute("stroke");
 			let lineAwareColor = timeline
-				.select("#response-line-1", timelineWithExamples)
+				.select("#response-line-1", this.timelineWithExamples)
 				.getAttribute("stroke");
 			let textUnawareColor = "#fff";
 			this.responseTextUnawareColor = textUnawareColor;
 			let textAwareColor = timeline
-				.select("#constructive-response", timelineWithExamples)
+				.select("#constructive-response", this.timelineWithExamples)
 				.getAttribute("fill");
 
 			let refractoryIlluminationTween = null;
 			let refractoryColorsTween = null;
 
-			let setLineColor = function (line, decoration, color, time = 0) {
+			this.setLineColor = function (line, decoration, color, time = 0) {
 				TweenMax.to(line, time, { attr: { stroke: color } });
 				//TweenMax.to( decoration, time, { attr: { fill: color } } );
 				TweenMax.to(decoration, time, { attr: { stroke: color } });
 			};
 
-			let setResponseLineColor = function (lineIndex, aware, time = 0) {
+			this.setResponseLineColor = function (lineIndex, aware, time = 0) {
 				let color = aware ? lineAwareColor : lineUnawareColor;
-				setLineColor(
-					responseLines[lineIndex],
-					responseLineDecorations[lineIndex],
+				this.setLineColor(
+					this.responseLines[lineIndex],
+					this.responseLineDecorations[lineIndex],
 					color,
 					time
 				);
 			};
 
-			let setEventLineColor = function (lineIndex, aware, time = 0) {
+			this.setEventLineColor = function (lineIndex, aware, time = 0) {
 				let color = aware ? lineAwareColor : lineUnawareColor;
-				setLineColor(
-					eventLines[lineIndex],
-					eventLineDecorations[lineIndex],
+				this.setLineColor(
+					this.eventLines[lineIndex],
+					this.eventLineDecorations[lineIndex],
 					color,
 					time
 				);
 			};
 
-			let setTextColor = function (textElement, aware, time = 0) {
+			this.setTextColor = function (textElement, aware, time = 0) {
 				let color = aware ? textAwareColor : textUnawareColor;
 				TweenMax.to(textElement, time, { attr: { fill: color } });
 			};
 
-			let setResponseTextColor = function (textElement, aware, time = 0) {
+			this.setResponseTextColor = function (
+				textElement,
+				aware,
+				time = 0
+			) {
 				let color = aware
 					? textAwareColor
 					: this.responseTextUnawareColor;
 				TweenMax.to(textElement, time, { attr: { fill: color } });
 			}.bind(this);
 
-			let setResponseLineStyle = function (lineIndex, aware) {
+			this.setResponseLinestyle = function (lineIndex, aware) {
 				//solid if unaware
 				if (aware) {
-					responseLines[lineIndex].setAttribute(
+					this.responseLines[lineIndex].setAttribute(
 						"stroke-dasharray",
 						"3,8"
 					);
 				} else {
-					responseLines[lineIndex].removeAttribute(
+					this.responseLines[lineIndex].removeAttribute(
 						"stroke-dasharray"
 					);
-				}
-			};
-
-			let addResponseLineAwareness = function () {
-				if (this.awarenessStage == "experience") {
-					//reset center line color
-					setResponseLineColor(1, true);
-				}
-				if (this.awarenessStage == "response") {
-					for (let i = 0; i < responseLines.length; i++) {
-						setResponseLineStyle(i, true);
-						setResponseLineStyle(i, true);
-						setResponseLineColor(i, true);
-					}
-					//show all lines and arrowheads
-					gsap.globalTimeline.to(
-						timeline.selectAll(
-							'[id*="response-line-"]',
-							timelineWithExamples
-						),
-						0,
-						{ autoAlpha: 1 }
-					);
-				}
-			};
-
-			let addExperienceAwareness = function () {
-				if (this.awarenessStage == "experience") {
-					physicalChanges.style.visibility = "visible";
-					mentalChanges.style.visibility = "visible";
-				}
-			};
-
-			let addResponseAwareness = function () {
-				if (this.awarenessStage == "response") {
-					setTextColor(destructiveResponse, true);
 				}
 			};
 
@@ -560,12 +770,16 @@ export default class EpisodeAddAwareness extends Episode {
 				aware,
 				time = 0
 			) {
-				setResponseLineColor(1, aware, time);
-				setResponseLineStyle(1, aware, time);
-				setEventLineColor(0, aware, time);
+				this.setResponseLineColor(1, aware, time);
+				this.setResponseLinestyle(1, aware, time);
+				this.setEventLineColor(0, aware, time);
 
-				setTextColor(event, aware, time);
-				setResponseTextColor(destructiveResponse, aware, time);
+				this.setTextColor(this.event, aware, time);
+				this.setResponseTextColor(
+					this.destructiveResponse,
+					aware,
+					time
+				);
 			};
 
 			this.awarenessStage = "trigger";
@@ -633,15 +847,15 @@ export default class EpisodeAddAwareness extends Episode {
 
 			let enableBlockDiagram = function () {
 				let clickableElements = [
-					precondition,
-					event,
-					perceptualDatabase,
-					physicalChanges,
+					this.precondition,
+					this.event,
+					this.perceptualDatabase,
+					this.physicalChanges,
 					state,
-					mentalChanges,
-					constructiveResponse,
-					destructiveResponse,
-					ambiguousResponse,
+					this.mentalChanges,
+					this.constructiveResponse,
+					this.destructiveResponse,
+					this.ambiguousResponse,
 				];
 				blockDiagram.addMouseHandlers(clickableElements);
 				this.refractoryBlocks = blockDiagram.getRefractoryBlocks();
@@ -664,37 +878,6 @@ export default class EpisodeAddAwareness extends Episode {
 					},
 					"pulsate-illumination"
 				);
-			};
-
-			let showAddAwarenessButton = function () {
-				if (
-					this.awarenessStage == "trigger" &&
-					this.addAwarenessButtonExperience.style.visibility ==
-						"hidden"
-				) {
-					TweenMax.to(this.addAwarenessButtonExperience, 1, {
-						autoAlpha: 1,
-						ease: "power2.out",
-					});
-				}
-				if (
-					this.awarenessStage == "experience" &&
-					this.addAwarenessButtonResponse.style.visibility == "hidden"
-				) {
-					TweenMax.to(this.addAwarenessButtonResponse, 1, {
-						autoAlpha: 1,
-						ease: "power2.out",
-					});
-				}
-				if (
-					this.awarenessStage == "refractory" &&
-					this.blockDiagramButton.style.visibility == "hidden"
-				) {
-					TweenMax.to(this.blockDiagramButton, 1, {
-						autoAlpha: 1,
-						ease: "power2.out",
-					});
-				}
 			};
 
 			this.hideAddAwarenessButtons = function () {
@@ -784,128 +967,10 @@ export default class EpisodeAddAwareness extends Episode {
 				)
 				.add("pulsate-illumination");
 
-			//start the timeline
-			this.episodeTimeline
-				//show event
-				.add("event")
-				.from(trigger, 0.5, { autoAlpha: 0, ease: "power1.out" })
-
-				.add("event-pulse")
-				.to(timeline.select("#event-text", timelineWithExamples), 0.1, {
-					scale: 1.1,
-					transformOrigin: "50% 50%",
-					ease: "power1.out",
-				})
-				.to(timeline.select("#event-text", timelineWithExamples), 0.2, {
-					scale: 1,
-					transformOrigin: "50% 50%",
-					ease: "power1.out",
-				})
-				.to(
-					timeline.select(
-						"#perceptual-database-text",
-						timelineWithExamples
-					),
-					0.1,
-					{
-						scale: 1.1,
-						transformOrigin: "50% 50%",
-						ease: "power1.out",
-					},
-					"-=0.25"
-				)
-				.to(
-					timeline.select(
-						"#perceptual-database-text",
-						timelineWithExamples
-					),
-					0.2,
-					{
-						scale: 1,
-						transformOrigin: "50% 50%",
-						ease: "power1.out",
-					}
-				)
-				.add("event-lines")
-				.from(
-					eventLineGroup,
-					0.5,
-					{ autoAlpha: 0, ease: "power1.out" },
-					this.screenIsSmall ? "event-lines+=1.5" : "event-lines"
-				)
-				.call(
-					() => {
-						if (!this.rewindActive) {
-							this.stateCircleTimeline.play();
-						} else {
-							this.stateCircleTimeline.pause();
-							gsap.killTweensOf(this.stateCircleTimeline);
-							this.episodeTimeline.pause();
-							this.rewindState(()=>this.episodeTimeline.resume());
-						}
-					},
-					null,
-					"experience"
-				)
-
-				// show emo state
-				.call(() => {
-					if (!this.rewindActive && this.screenIsSmall) {
-						this.scrollSvgToStage("experience");
-					}
-				});
-
-			this.episodeTimeline
-				.call(addExperienceAwareness.bind(this), null, "experience")
-				.call(
-					this.triggerRefractoryEffects.bind(this),
-					null,
-					"experience"
-				)
-				.from(
-					changes,
-					2,
-					{ autoAlpha: 0, ease: "power1.out" },
-					"experience"
-				)
-				.from(
-					stateLabel,
-					2,
-					{
-						autoAlpha: 0,
-						ease: "power1.out",
-					},
-					"experience"
-				)
-				//show response
-				.from(
-					responseLineGroup,
-					0.5,
-					{
-						autoAlpha: 0,
-						ease: "power1.out",
-						onStart: addResponseLineAwareness.bind(this),
-						onComplete: () => {
-							if (!this.rewindActive && this.screenIsSmall) {
-								this.scrollSvgToStage("response");
-							}
-							addResponseAwareness.bind(this)();
-						},
-					},
-					"experience"
-				)
-				.from(
-					responses,
-					1,
-					{ autoAlpha: 0, ease: "power1.out" },
-					"response"
-				)
-
-				.add("end");
-
-			this.episodeTimeline
-				.add("add-awareness-button")
-				.call(showAddAwarenessButton.bind(this));
+			this.setupCirclesTimelines();
+			this.setupTimeline({
+				withRefractoryPeriod: false,
+			});
 
 			let hideButton = function (button) {
 				TweenMax.to(button, 1, {
@@ -923,6 +988,11 @@ export default class EpisodeAddAwareness extends Episode {
 				hideButton(e.currentTarget);
 				//reset and advance at start
 				this.rewind(() => {
+					if (this.awarenessStage === "response") {
+						this.setupTimeline({
+							withRefractoryPeriod: true,
+						});
+					}
 					TweenMax.delayedCall(0.5, () => {
 						this.advanceAndStart();
 					});
@@ -953,7 +1023,7 @@ export default class EpisodeAddAwareness extends Episode {
 			TweenMax.set(state, { visibility: "visible" });
 
 			this.replaceContent(this.currentEmotion, false);
-			this.fixEventLineOverlap(event, eventLines[0], timeline);
+			this.fixEventLineOverlap(this.event, this.eventLines[0], timeline);
 
 			TweenMax.set(this.parent, { visibility: "visible" });
 
