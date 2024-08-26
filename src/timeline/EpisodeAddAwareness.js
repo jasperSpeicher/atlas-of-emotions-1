@@ -463,7 +463,7 @@ export default class EpisodeAddAwareness extends Episode {
 	}
 
 	initialize(svg, container, emotion, screenIsSmall) {
-		let refractoryPeriodTime = 15;
+		this.refractoryPeriodTime = 15;
 		this.refractoryPeriodEnabled = false;
 		//this.refractoryBlocks = [];
 
@@ -695,9 +695,7 @@ export default class EpisodeAddAwareness extends Episode {
 
 			this.playFromStart = true; //TODO shared code with Episode
 
-			let lineUnawareColor = timeline
-				.select("#response-line-2", this.timelineWithExamples)
-				.getAttribute("stroke");
+			let lineUnawareColor = "#fff";
 			let lineAwareColor = timeline
 				.select("#response-line-1", this.timelineWithExamples)
 				.getAttribute("stroke");
@@ -708,12 +706,22 @@ export default class EpisodeAddAwareness extends Episode {
 				.getAttribute("fill");
 
 			let refractoryIlluminationTween = null;
-			let refractoryColorsTween = null;
+			this.refractoryColorsTween = null;
 
 			this.setLineColor = function (line, decoration, color, time = 0) {
 				TweenMax.to(line, time, { attr: { stroke: color } });
 				//TweenMax.to( decoration, time, { attr: { fill: color } } );
 				TweenMax.to(decoration, time, { attr: { stroke: color } });
+			};
+
+			this.setLineOpacity = function (
+				line,
+				decoration,
+				autoAlpha,
+				duration = 0
+			) {
+				gsap.to(line, { duration, autoAlpha });
+				gsap.to(decoration, { duration, autoAlpha });
 			};
 
 			this.setResponseLineColor = function (lineIndex, aware, time = 0) {
@@ -766,19 +774,64 @@ export default class EpisodeAddAwareness extends Episode {
 				}
 			};
 
-			this.toggleTriggerAndResponseAwareness = function (
-				aware,
-				time = 0
-			) {
-				this.setResponseLineColor(1, aware, time);
-				this.setResponseLinestyle(1, aware, time);
-				this.setEventLineColor(0, aware, time);
+			this.toggleTriggerAndResponseAwareness = function (time = 0) {
+				// these elements should not be visible during refractory period
+				const unawareTextElements = [
+					this.precondition,
+					this.perceptualDatabase,
+					this.physicalChanges,
+					this.mentalChanges,
+					this.constructiveResponse,
+					this.ambiguousResponse,
+					document.querySelector("#plus-1"),
+					document.querySelector("#plus-2"),
+				];
 
-				this.setTextColor(this.event, aware, time);
-				this.setResponseTextColor(
-					this.destructiveResponse,
-					aware,
-					time
+				const setCentralElementColors = (aware) => {
+					this.setResponseLineColor(1, aware, time);
+					this.setResponseLinestyle(1, aware, time);
+					this.setEventLineColor(0, aware, time);
+					this.setTextColor(this.event, aware, time);
+					this.setResponseTextColor(
+						this.destructiveResponse,
+						aware,
+						time
+					);
+				};
+
+				const setOtherElementColors = (aware, duration) => {
+					this.setLineOpacity(
+						this.responseLines[0],
+						this.responseLineDecorations[0],
+						aware ? 1 : 0,
+						duration
+					);
+					this.setLineOpacity(
+						this.responseLines[2],
+						this.responseLineDecorations[2],
+						aware ? 1 : 0,
+						duration
+					);
+					unawareTextElements.forEach((textElement) => {
+						gsap.globalTimeline.to(textElement, {
+							duration,
+							autoAlpha: aware ? 1 : 0,
+						});
+					});
+				};
+
+				setCentralElementColors(false);
+				setOtherElementColors(false, time);
+
+				//change central elements back early with a slow fade
+				this.refractoryColorsTween = gsap.delayedCall(
+					this.refractoryPeriodTime / 4,
+					() => setOtherElementColors(true, time * 10)
+				);
+				//change central elements back mid way through
+				this.refractoryColorsTween = gsap.delayedCall(
+					this.refractoryPeriodTime / 3,
+					() => setCentralElementColors(true)
 				);
 			};
 
@@ -898,8 +951,8 @@ export default class EpisodeAddAwareness extends Episode {
 				if (!this.rewindActive && this.refractoryPeriodEnabled) {
 					// prevent awaiting changes from happening
 					// now that we are resetting the tween
-					if (refractoryColorsTween) {
-						refractoryColorsTween.kill();
+					if (this.refractoryColorsTween) {
+						this.refractoryColorsTween.kill();
 					}
 					if (refractoryIlluminationTween) {
 						refractoryIlluminationTween.kill();
@@ -908,7 +961,7 @@ export default class EpisodeAddAwareness extends Episode {
 					//	refractoryBlocksTween.kill();
 					//}
 					//
-					this.toggleTriggerAndResponseAwareness(false, darkenTime);
+					this.toggleTriggerAndResponseAwareness(darkenTime*4);
 
 					//prepare the refractory period
 					refractoryIlluminationTween = TweenMax.to(
@@ -921,7 +974,7 @@ export default class EpisodeAddAwareness extends Episode {
 							onComplete: () => {
 								TweenMax.to(
 									this.illuminationBlock,
-									refractoryPeriodTime,
+									this.refractoryPeriodTime,
 									{
 										autoAlpha: 1,
 										ease: "power3.inOut",
@@ -933,13 +986,6 @@ export default class EpisodeAddAwareness extends Episode {
 								);
 							},
 						}
-					);
-
-					//change the text colors mid way through the illumination change
-					refractoryColorsTween = TweenMax.delayedCall(
-						refractoryPeriodTime / 2,
-						this.toggleTriggerAndResponseAwareness.bind(this),
-						[true, darkenTime]
 					);
 				}
 			};

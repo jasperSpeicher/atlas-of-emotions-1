@@ -59,10 +59,10 @@
                             <tspan x="13.5014844" y="19">he reminds you of a bully</tspan>
                         </text>
                     </g>
-                    <text id="+" opacity="0.527796649" font-size="36">
+                    <text id="plus-1" opacity="0.527796649" font-size="36">
                         <tspan x="127.13144" y="115">+</tspan>
                     </text>
-                    <text id="+" opacity="0.527796649" font-size="36">
+                    <text id="plus-2" opacity="0.527796649" font-size="36">
                         <tspan x="127.13144" y="56">+</tspan>
                     </text>
                 </g>
