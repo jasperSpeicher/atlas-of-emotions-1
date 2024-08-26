@@ -149,7 +149,11 @@ export default class EpisodeAddAwareness extends Episode {
 	}
 
 	rewind(onComplete) {
-		if (this.triggerAndResponseAwarenessTimeline) {
+		if (
+			this.triggerAndResponseAwarenessTimeline &&
+			this.awarenessStage !== "trigger" &&
+			this.awarenessStage !== "experience"
+		) {
 			this.triggerAndResponseAwarenessTimeline.pause();
 			this.triggerAndResponseAwarenessTimeline.seek("start");
 		}
@@ -284,7 +288,6 @@ export default class EpisodeAddAwareness extends Episode {
 		};
 
 		let addResponseAwareness = function () {
-			debugger;
 			if (this.awarenessStage == "response") {
 				this.setTextColor(this.destructiveResponse, true);
 			}
