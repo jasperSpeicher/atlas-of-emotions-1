@@ -16,9 +16,6 @@ export default class EpisodeAddAwareness extends Episode {
 
 	destroy() {
 		super.destroy();
-		//TweenMax.killDelayedCallsTo( this.toggleTriggerAndResponseAwareness );
-		//TweenMax.killDelayedCallsTo( this.advanceAndStart );
-		//TweenMax.killTweensOf( this.illuminationBlock );
 		this.addAwarenessButtonExperience.onclick = null;
 		this.addAwarenessButtonResponse.onclick = null;
 		this.refractoryPeriodButton.onclick = null;
@@ -150,6 +147,14 @@ export default class EpisodeAddAwareness extends Episode {
 	}
 
 	rewind(onComplete) {
+		if (this.triggerAndResponseAwarenessTimeline) {
+			this.triggerAndResponseAwarenessTimeline.pause();
+			this.triggerAndResponseAwarenessTimeline.seek("start");
+		}
+		if (this.refractoryIlluminationTimeline) {
+			this.refractoryIlluminationTimeline.pause();
+			this.refractoryIlluminationTimeline.seek(0);
+		}
 		super.rewind(() => {
 			this.refractoryCirclesTimeline.seek(0);
 			if (onComplete) onComplete();
@@ -705,76 +710,115 @@ export default class EpisodeAddAwareness extends Episode {
 				.select("#constructive-response", this.timelineWithExamples)
 				.getAttribute("fill");
 
-			let refractoryIlluminationTween = null;
-			this.refractoryColorsTween = null;
-
-			this.setLineColor = function (line, decoration, color, time = 0) {
-				TweenMax.to(line, time, { attr: { stroke: color } });
-				//TweenMax.to( decoration, time, { attr: { fill: color } } );
-				TweenMax.to(decoration, time, { attr: { stroke: color } });
+			this.setLineColor = function (
+				line,
+				decoration,
+				color,
+				duration = 0,
+				timeline = gsap
+			) {
+				timeline.to(line, { duration, attr: { stroke: color } });
+				timeline.to(decoration, { duration, attr: { stroke: color } });
 			};
 
 			this.setLineOpacity = function (
 				line,
 				decoration,
 				autoAlpha,
-				duration = 0
+				duration = 0,
+				timeline = gsap
 			) {
-				gsap.to(line, { duration, autoAlpha });
-				gsap.to(decoration, { duration, autoAlpha });
+				timeline.to(line, { duration, autoAlpha });
+				timeline.to(decoration, { duration, autoAlpha });
 			};
 
-			this.setResponseLineColor = function (lineIndex, aware, time = 0) {
+			this.setResponseLineColor = function (
+				lineIndex,
+				aware,
+				time = 0,
+				timeline = gsap
+			) {
 				let color = aware ? lineAwareColor : lineUnawareColor;
 				this.setLineColor(
 					this.responseLines[lineIndex],
 					this.responseLineDecorations[lineIndex],
 					color,
-					time
+					time,
+					timeline
 				);
 			};
 
-			this.setEventLineColor = function (lineIndex, aware, time = 0) {
+			this.setEventLineColor = function (
+				lineIndex,
+				aware,
+				time = 0,
+				timeline = gsap
+			) {
 				let color = aware ? lineAwareColor : lineUnawareColor;
 				this.setLineColor(
 					this.eventLines[lineIndex],
 					this.eventLineDecorations[lineIndex],
 					color,
-					time
+					time,
+					timeline
 				);
 			};
 
-			this.setTextColor = function (textElement, aware, time = 0) {
+			this.setTextColor = function (
+				textElement,
+				aware,
+				duration = 0,
+				timeline = gsap
+			) {
 				let color = aware ? textAwareColor : textUnawareColor;
-				TweenMax.to(textElement, time, { attr: { fill: color } });
+				timeline.to(textElement, { duration, attr: { fill: color } });
 			};
 
 			this.setResponseTextColor = function (
 				textElement,
 				aware,
-				time = 0
+				duration = 0,
+				timeline = gsap
 			) {
 				let color = aware
 					? textAwareColor
 					: this.responseTextUnawareColor;
-				TweenMax.to(textElement, time, { attr: { fill: color } });
+				timeline.to(textElement, { duration, attr: { fill: color } });
 			}.bind(this);
 
-			this.setResponseLinestyle = function (lineIndex, aware) {
+			this.setResponseLinestyle = function (
+				lineIndex,
+				aware,
+				timeline = gsap
+			) {
 				//solid if unaware
 				if (aware) {
-					this.responseLines[lineIndex].setAttribute(
-						"stroke-dasharray",
-						"3,8"
-					);
+					timeline.set(this.responseLines[lineIndex], {
+						attr: {
+							"stroke-dasharray": "3,8",
+						},
+					});
 				} else {
-					this.responseLines[lineIndex].removeAttribute(
-						"stroke-dasharray"
-					);
+					timeline.set(this.responseLines[lineIndex], {
+						attr: {
+							"stroke-dasharray": "",
+						},
+					});
 				}
 			};
 
-			this.toggleTriggerAndResponseAwareness = function (time = 0) {
+			this.playTriggerAndResponseAwareness = function () {
+				if (!this.triggerAndResponseAwarenessTimeline) {
+					return;
+				}
+				this.triggerAndResponseAwarenessTimeline.play("start");
+			};
+
+			this.setupTriggerAndResponseAwareness = function (duration = 0) {
+				if (this.triggerAndResponseAwarenessTimeline) {
+					return;
+				}
+
 				// these elements should not be visible during refractory period
 				const unawareTextElements = [
 					this.precondition,
@@ -787,52 +831,131 @@ export default class EpisodeAddAwareness extends Episode {
 					document.querySelector("#plus-2"),
 				];
 
-				const setCentralElementColors = (aware) => {
-					this.setResponseLineColor(1, aware, time);
-					this.setResponseLinestyle(1, aware, time);
-					this.setEventLineColor(0, aware, time);
-					this.setTextColor(this.event, aware, time);
-					this.setResponseTextColor(
+				this.triggerAndResponseAwarenessTimeline = gsap.timeline({
+					paused: true,
+				});
+
+				const setCentralElementColors = (
+					aware,
+					duration,
+					labelOrPosition
+				) => {
+					let color = aware ? lineAwareColor : lineUnawareColor;
+					// center response line color
+					this.triggerAndResponseAwarenessTimeline.to(
+						this.responseLines[1],
+						{ duration, attr: { stroke: color } },
+						labelOrPosition
+					);
+					this.triggerAndResponseAwarenessTimeline.to(
+						this.responseLineDecorations[1],
+						{ duration, attr: { stroke: color } },
+						labelOrPosition
+					);
+					// center line style
+					if (aware) {
+						this.triggerAndResponseAwarenessTimeline.set(
+							this.responseLines[1],
+							{
+								attr: {
+									"stroke-dasharray": "3,8",
+								},
+							},
+							labelOrPosition
+						);
+					} else {
+						this.triggerAndResponseAwarenessTimeline.set(
+							this.responseLines[1],
+							{
+								attr: {
+									"stroke-dasharray": "",
+								},
+							},
+							labelOrPosition
+						);
+					}
+					// center event line color
+					this.triggerAndResponseAwarenessTimeline.to(
+						this.eventLines[0],
+						{ duration, attr: { stroke: color } },
+						labelOrPosition
+					);
+					this.triggerAndResponseAwarenessTimeline.to(
+						this.eventLineDecorations[0],
+						{ duration, attr: { stroke: color } },
+						labelOrPosition
+					);
+					// text colors
+					const textColor = aware ? textAwareColor : textUnawareColor;
+					this.triggerAndResponseAwarenessTimeline.to(
+						this.event,
+						{
+							duration,
+							attr: { fill: textColor },
+						},
+						labelOrPosition
+					);
+					this.triggerAndResponseAwarenessTimeline.to(
 						this.destructiveResponse,
-						aware,
-						time
+						{
+							duration,
+							attr: { fill: textColor },
+						},
+						labelOrPosition
 					);
 				};
 
-				const setOtherElementColors = (aware, duration) => {
-					this.setLineOpacity(
-						this.responseLines[0],
-						this.responseLineDecorations[0],
-						aware ? 1 : 0,
-						duration
-					);
-					this.setLineOpacity(
-						this.responseLines[2],
-						this.responseLineDecorations[2],
-						aware ? 1 : 0,
-						duration
-					);
+				const setOtherElementColors = (
+					aware,
+					duration,
+					labelOrPosition
+				) => {
+					// outer lines
+					[0, 2].forEach((i) => {
+						this.triggerAndResponseAwarenessTimeline.to(
+							this.responseLines[i],
+							{ duration, autoAlpha: aware ? 1 : 0 },
+							labelOrPosition
+						);
+						this.triggerAndResponseAwarenessTimeline.to(
+							this.responseLineDecorations[i],
+							{
+								duration,
+								autoAlpha: aware ? 1 : 0,
+							},
+							labelOrPosition
+						);
+					});
+
 					unawareTextElements.forEach((textElement) => {
-						gsap.globalTimeline.to(textElement, {
-							duration,
-							autoAlpha: aware ? 1 : 0,
-						});
+						this.triggerAndResponseAwarenessTimeline.to(
+							textElement,
+							{
+								duration,
+								autoAlpha: aware ? 1 : 0,
+							},
+							labelOrPosition
+						);
 					});
 				};
 
-				setCentralElementColors(false);
-				setOtherElementColors(false, time);
+				setCentralElementColors(true, 0.1, "prerole");
+				setOtherElementColors(true, 0.1, "prerole");
 
+				setCentralElementColors(false, duration, "start");
+				setOtherElementColors(false, duration, "start");
 				//change central elements back early with a slow fade
-				this.refractoryColorsTween = gsap.delayedCall(
-					this.refractoryPeriodTime / 4,
-					() => setOtherElementColors(true, time * 10)
+				this.triggerAndResponseAwarenessTimeline.addLabel(
+					"central-awareness",
+					this.refractoryPeriodTime * 0.25
 				);
+				setOtherElementColors(true, duration * 10, "central-awareness");
 				//change central elements back mid way through
-				this.refractoryColorsTween = gsap.delayedCall(
-					this.refractoryPeriodTime / 3,
-					() => setCentralElementColors(true)
+				this.triggerAndResponseAwarenessTimeline.addLabel(
+					"outer-awareness",
+					this.refractoryPeriodTime * 0.5
 				);
+				setCentralElementColors(true, duration, "outer-awareness");
 			};
 
 			this.awarenessStage = "trigger";
@@ -945,48 +1068,35 @@ export default class EpisodeAddAwareness extends Episode {
 				});
 			};
 
-			this.triggerRefractoryEffects = function () {
-				let darkenTime = 0.25;
+			let darkenTime = 0.25;
 
+			this.setupTriggerAndResponseAwareness(darkenTime * 4);
+
+			this.triggerRefractoryEffects = function () {
 				if (!this.rewindActive && this.refractoryPeriodEnabled) {
-					// prevent awaiting changes from happening
-					// now that we are resetting the tween
-					if (this.refractoryColorsTween) {
-						this.refractoryColorsTween.kill();
-					}
-					if (refractoryIlluminationTween) {
-						refractoryIlluminationTween.kill();
-					}
-					//if ( refractoryBlocksTween ) {
-					//	refractoryBlocksTween.kill();
-					//}
-					//
-					this.toggleTriggerAndResponseAwareness(darkenTime*4);
+					this.playTriggerAndResponseAwareness();
 
 					//prepare the refractory period
-					refractoryIlluminationTween = TweenMax.to(
-						this.illuminationBlock,
-						darkenTime,
-						{
-							autoAlpha: 0,
-							ease: "power3.inOut",
-
-							onComplete: () => {
-								TweenMax.to(
-									this.illuminationBlock,
-									this.refractoryPeriodTime,
-									{
-										autoAlpha: 1,
-										ease: "power3.inOut",
-
-										onComplete: () => {
-											scroller.pulseEmotionNav();
-										},
-									}
-								);
-							},
-						}
-					);
+					if (!this.refractoryIlluminationTimeline) {
+						this.refractoryIlluminationTimeline = gsap.timeline({
+							paused: true,
+						});
+						this.refractoryIlluminationTimeline
+							.to(this.illuminationBlock, {
+								duration: darkenTime,
+								autoAlpha: 0,
+								ease: "power3.inOut",
+							})
+							.to(this.illuminationBlock, {
+								autoAlpha: 1,
+								ease: "power3.inOut",
+								duration: this.refractoryPeriodTime,
+								onComplete: () => {
+									scroller.pulseEmotionNav();
+								},
+							});
+					}
+					this.refractoryIlluminationTimeline.play(0);
 				}
 			};
 
