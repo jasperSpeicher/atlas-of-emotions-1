@@ -22,6 +22,8 @@ export default class EpisodeAddAwareness extends Episode {
 		this.blockDiagramButton.onclick = null;
 
 		this.hideAddAwarenessButtons();
+		this.triggerAndResponseAwarenessTimeline.pause();
+		this.triggerAndResponseAwarenessTimeline.seek(0);
 		this.illuminationBlock.setAttribute("style", null);
 	}
 
@@ -282,6 +284,7 @@ export default class EpisodeAddAwareness extends Episode {
 		};
 
 		let addResponseAwareness = function () {
+			debugger;
 			if (this.awarenessStage == "response") {
 				this.setTextColor(this.destructiveResponse, true);
 			}
