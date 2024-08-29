@@ -288,13 +288,13 @@ const timeline = {
 		};
 		if (!this.episodeAddAwareness) {
 			if (this.screenIsSmall) {
-				dispatcher.minimizeSectionText();
 				dispatcher.once(
 					dispatcher.EVENTS.SECTION_TEXT_MINIMIZE_COMPLETE,
 					() => {
 						makeAwarenessChanges();
 					}
 				);
+				dispatcher.minimizeSectionText();
 			} else {
 				makeAwarenessChanges();
 			}
