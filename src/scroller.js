@@ -70,9 +70,7 @@ const scroller = {
         //let $sections = $( '.section' );
         this.$sections.removeClass( 'more-visible' );
         $( 'body' ).removeClass( 'more-visible' );
-        if ( !this.screenIsSmall ) {
-            $.fn.fullpage.setAllowScrolling( true );
-        }
+        $.fn.fullpage.setAllowScrolling( false );
     },
 
     toggleEmotionNav: function ( visible ) {
@@ -352,7 +350,7 @@ const scroller = {
             $section.toggleClass( 'more-visible' );
             $( 'body' ).toggleClass( 'more-visible' );
             let moreVisible = $section.hasClass( 'more-visible' );
-            $.fn.fullpage.setAllowScrolling( !moreVisible );
+            $.fn.fullpage.setAllowScrolling( false );
             //TODO properly hide emotion nav and bring back if section has it
             //_self.toggleEmotionNav( !moreVisible );
         } );
@@ -503,9 +501,7 @@ const scroller = {
             normalScrollElements: normalScrollElements
         } );
 
-        if ( this.screenIsSmall ) {
-            $.fn.fullpage.setAllowScrolling( false );
-        }
+        $.fn.fullpage.setAllowScrolling( false );
 
         let $originalContent = $( '.original-content' );
 
