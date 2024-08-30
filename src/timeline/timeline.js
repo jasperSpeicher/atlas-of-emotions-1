@@ -54,7 +54,7 @@ const timeline = {
 	},
 
 	onSectionTextMaximizeComplete() {
-		this.activeEpisode && this.activeEpisode.maximizeComplete();
+		this.activeEpisode && this.activeEpisode.minimizeComplete();
 	},
 
 	onSectionTextMinimizeStart(duration) {
@@ -62,7 +62,7 @@ const timeline = {
 	},
 
 	onSectionTextMinimizeComplete() {
-		this.activeEpisode && this.activeEpisode.minimizeComplete();
+		this.activeEpisode && this.activeEpisode.maximizeComplete();
 	},
 
 	toggleEmotionNav(state) {
@@ -175,7 +175,7 @@ const timeline = {
 				this.currentEmotion,
 				this.screenIsSmall
 			);
-			this.activeEpisode = this.episodeAddAwareness;
+            this.activeEpisode = this.episodeAddAwareness;
 			this.episodeAddAwareness.maximized = this.episode.maximized;
 			this.episodeAddAwareness.minimizing = this.episode.minimizing;
 			this.episodeAddAwareness.setInteractive(

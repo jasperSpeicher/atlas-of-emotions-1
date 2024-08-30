@@ -1,11 +1,8 @@
-import d3 from "d3";
 import { TweenMax, TimelineMax, gsap } from "gsap";
 
 import Episode from "./Episode.js";
-import Continent from "../Continent.js";
 import scroller from "../scroller.js";
 import timeline from "./timeline.js";
-import dispatcher from "../dispatcher.js";
 import BlockDiagram from "./BlockDiagram";
 
 export default class EpisodeAddAwareness extends Episode {
@@ -36,8 +33,6 @@ export default class EpisodeAddAwareness extends Episode {
 		let illumination = svg.getElementById("illumination");
 		timeline.remove(illumination);
 
-		let event = timeline.select("#event", svg);
-		let eventRect = event.getBoundingClientRect();
 		this.illuminationBlock = document.createElement("div");
 		this.illuminationBlock.id = "illumination-block";
 		if (this.screenIsSmall) {
@@ -397,11 +392,15 @@ export default class EpisodeAddAwareness extends Episode {
 		}
 
 		// show emo state
-		this.episodeTimeline.call(() => {
-			if (!this.rewindActive && this.screenIsSmall) {
-				this.scrollSvgToStage("experience");
-			}
-		});
+		this.episodeTimeline.call(
+			() => {
+				if (!this.rewindActive && this.screenIsSmall) {
+					this.scrollSvgToStage("experience");
+				}
+			},
+			[],
+			"state"
+		);
 
 		this.episodeTimeline
 			.call(addExperienceAwareness.bind(this), null, "state")
