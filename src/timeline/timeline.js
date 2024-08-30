@@ -1,6 +1,7 @@
 //TODO this file contains a bunch of low level stuff that probably belongs elsewhere or is in d3 etc
 //TODO should regular and add-awareness versions be running at the same time?
-import { TweenMax, gsap, ScrollToPlugin } from "gsap/all";
+import { ScrollToPlugin } from "gsap/all";
+import { gsap } from "gsap";
 
 import Episode from "./Episode.js";
 import EpisodeAddAwareness from "./EpisodeAddAwareness.js";
@@ -175,7 +176,7 @@ const timeline = {
 				this.currentEmotion,
 				this.screenIsSmall
 			);
-            this.activeEpisode = this.episodeAddAwareness;
+			this.activeEpisode = this.episodeAddAwareness;
 			this.episodeAddAwareness.maximized = this.episode.maximized;
 			this.episodeAddAwareness.minimizing = this.episode.minimizing;
 			this.episodeAddAwareness.setInteractive(
@@ -190,13 +191,13 @@ const timeline = {
 	},
 
 	showAwarenessEpisode: function () {
-		TweenMax.to(this.sectionContainer, 1, {
+		gsap.to(this.sectionContainer, 1, {
 			autoAlpha: 0,
 			onComplete: () => {
 				this.remove(this.episode.getParentElement());
 				this.episode.setActive(false);
 				this.loadEpisodeAddAwareness();
-				TweenMax.set(this.sectionContainer, {
+				gsap.set(this.sectionContainer, {
 					autoAlpha: 1,
 				});
 			},
@@ -246,32 +247,32 @@ const timeline = {
 		});
 		openStage.classList.remove("closed");
 
-		TweenMax.set(showButtons, { css: { display: "block" } });
-		TweenMax.set(hideButtons, { css: { display: "none" } });
+		gsap.set(showButtons, { css: { display: "block" } });
+		gsap.set(hideButtons, { css: { display: "none" } });
 
-		TweenMax.set(showCopy, { css: { display: "block" } });
-		TweenMax.to(showCopy, 1, { autoAlpha: 1 });
+		gsap.set(showCopy, { css: { display: "block" } });
+		gsap.to(showCopy, 1, { autoAlpha: 1 });
 
 		if (this.screenIsSmall) {
-			TweenMax.to(".section-text__scroller", 0.7, {
+			gsap.to(".section-text__scroller", 0.7, {
 				scrollTo: openStage.offsetTop,
 			});
 		}
 	},
 
 	hideIntroCopy: function (onComplete) {
-		TweenMax.to(this.sectionTextBodyIntro, 1, {
+		gsap.to(this.sectionTextBodyIntro, 1, {
 			autoAlpha: 0,
 			onComplete: onComplete,
 		});
 	},
 
 	showIntroCopy: function (onComplete) {
-		TweenMax.to(this.sectionTextBodyIntro, 1, {
+		gsap.to(this.sectionTextBodyIntro, 1, {
 			autoAlpha: 1,
 			onComplete: onComplete,
 		});
-		TweenMax.set(this.sectionTextBodyIntro, { css: { display: "" } });
+		gsap.set(this.sectionTextBodyIntro, { css: { display: "" } });
 	},
 
 	addAwareness: function () {
@@ -279,7 +280,7 @@ const timeline = {
 			this.showAwarenessEpisode();
 			this.hideIntroCopy(
 				function () {
-					TweenMax.set(this.sectionTextBodyIntro, {
+					gsap.set(this.sectionTextBodyIntro, {
 						css: { display: "none" },
 					});
 					this.showAwarenessCopy("trigger");
@@ -303,7 +304,7 @@ const timeline = {
 
 	hideAwarenessCopy: function () {
 		for (let paragraph of this.sectionTextBodyAwareness) {
-			TweenMax.set(paragraph, { autoAlpha: 0 });
+			gsap.set(paragraph, { autoAlpha: 0 });
 		}
 	},
 
