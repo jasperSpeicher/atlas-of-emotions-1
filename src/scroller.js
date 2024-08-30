@@ -1,5 +1,4 @@
-import { TweenMax, TimelineMax } from "gsap";
-import { Power1 } from "gsap/gsap-core";
+import { gsap } from "gsap";
 import dispatcher from './dispatcher';
 import moreInfo from './moreInfo.js';
 import timeline from './timeline/timeline';
@@ -79,7 +78,7 @@ const scroller = {
 
     pulseEmotionNav: function () { //TODO should this have an event in the dispatcher?
         let $links = $( '.emotion-nav li' );
-        let pulseTimeline = new TimelineMax();
+        let pulseTimeline = new gsap.timeline();
         pulseTimeline
             .add( 'start' )
             .staggerTo( $links, 0.1, { css: { 'transform': 'scale(1.123)' } }, 0.1 )
@@ -157,21 +156,21 @@ const scroller = {
 
                 if ( !pulseActive && scrollingEnded ) {
                     pulseActive = true;
-                    TweenMax.to( $( '.more-content>.close-button' ),
-                        growTime,
+                    gsap.to( $( '.more-content>.close-button' ),
                         {
+                            duration: growTime,
                             scale: 1.5,
                             onComplete: function () {
-                                TweenMax.to(
+                                gsap.to(
                                     $( '.more-content>.close-button' ),
-                                    returnTime,
                                     {
+                                        duration: returnTime,
                                         scale: 1
                                     }
                                 );
                             }
                         } );
-                    TweenMax.delayedCall( growTime + returnTime, function () {
+                    gsap.delayedCall( growTime + returnTime, function () {
                         pulseActive = false;
                     } );
                 }
@@ -244,7 +243,7 @@ const scroller = {
 
             //init animations for intro section
             let $intro = $( '#introduction-section' );
-            this.introTimeline = new TimelineMax( {} );
+            this.introTimeline = new gsap.timeline();
 
             $.fn.fullpage.moveTo( 'introduction', 0 );
 
@@ -252,15 +251,15 @@ const scroller = {
                 .add( 'start' )
                 .fromTo( $intro.find( '.intro-heading' ), 2, {
                     autoAlpha: 0,
-                    ease: Power1.easeOut
+                    ease: "power1.out"
                 }, { autoAlpha: 1 }, 'start+=1' )
                 .fromTo( $intro.find( '.fp-slides, .fp-slidesNav' ), 2, {
                     autoAlpha: 0,
-                    ease: Power1.easeOut
+                    ease: "power1.out"
                 }, { autoAlpha: 1 } )
                 .fromTo( $intro.find( '.cta' ), 2, {
                     autoAlpha: 0,
-                    ease: Power1.easeOut
+                    ease: "power1.out"
                 }, { autoAlpha: 1 } )
                 .call( function () {
                     _self.initSlideInterval();
@@ -449,13 +448,13 @@ const scroller = {
     fadeAboutImage: function ( i ) {
         let nextIndex = (i + 1) % (this.aboutImages.length);
         if ( !this.fadeImages ) {
-            TweenMax.set( this.aboutImages[ i ], { autoAlpha: 1 } );
-            TweenMax.set( this.aboutImages[ nextIndex ], { autoAlpha: 0 } );
+            gsap.set( this.aboutImages[ i ], { autoAlpha: 1 } );
+            gsap.set( this.aboutImages[ nextIndex ], { autoAlpha: 0 } );
         }
         this.fadeImages = true;
-        this.fadeTweens[ 0 ] = TweenMax.delayedCall( this.ABOUT_IMAGE_INTERVAL_DELAY, ()=> {
-            this.fadeTweens[ 1 ] = TweenMax.fromTo( this.aboutImages[ i ], this.ABOUT_IMAGE_INTERVAL_DELAY / 2, { autoAlpha: 1 }, { autoAlpha: 0 } );
-            this.fadeTweens[ 2 ] = TweenMax.fromTo( this.aboutImages[ nextIndex ], this.ABOUT_IMAGE_INTERVAL_DELAY / 2, { autoAlpha: 0 }, { autoAlpha: 1 } );
+        this.fadeTweens[ 0 ] = gsap.delayedCall( this.ABOUT_IMAGE_INTERVAL_DELAY, ()=> {
+            this.fadeTweens[ 1 ] = gsap.fromTo( this.aboutImages[ i ], this.ABOUT_IMAGE_INTERVAL_DELAY / 2, { autoAlpha: 1 }, { autoAlpha: 0 } );
+            this.fadeTweens[ 2 ] = gsap.fromTo( this.aboutImages[ nextIndex ], this.ABOUT_IMAGE_INTERVAL_DELAY / 2, { autoAlpha: 0 }, { autoAlpha: 1 } );
             this.fadeAboutImage( nextIndex );
         } );
     },
@@ -514,7 +513,7 @@ const scroller = {
             let thresh = 0;
 
             let returnTranslation = ( element ) => {
-                TweenMax.to( element, 0.7, { y: 0 } );
+                gsap.to( element, 0.7, { y: 0 } );
             };
             $elements.on( 'touchstart', ( e ) => {
                 height = $( '.section.active' ).height();
@@ -532,7 +531,7 @@ const scroller = {
                 distance = e.originalEvent.touches[ 0 ].pageY - swipeStart;
                 if ( !swipeComplete ) {
                     let $sectionText = $( '.section.active .section-text' );
-                    TweenMax.set( $sectionText[ 0 ], { y: distance } );
+                    gsap.set( $sectionText[ 0 ], { y: distance } );
                     if ( Math.abs( distance ) > thresh ) {
                         returnTranslation( $sectionText[ 0 ] );
                         if ( e.currentTarget == $originalContent[ 0 ] ) {
@@ -598,7 +597,7 @@ const scroller = {
                 $sectionTextContent[ 0 ].scrollTop = 0;
                 $sectionTextContent[ 0 ].style.overflowY = 'hidden';
                 $sectionTextContent.off( 'scroll' );
-                TweenMax.to( [ $sectionText[ 0 ], $emotionNav[ 0 ] ], transitionDuration, {
+                gsap.to( [ $sectionText[ 0 ], $emotionNav[ 0 ] ], transitionDuration, {
                     top: minimumDistance,
                     onUpdate: ()=> {
                         this.sectionGraphicsResize( anchorLink );
@@ -611,7 +610,7 @@ const scroller = {
                     }
                 } );
                 const emotionNavHeight = this.currentAnchor === 'strategies' ? 0 : sassVars[ 'ui' ][ 'mobile-emotion-nav' ][ 'height' ];
-                TweenMax.to( [ $originalContent[ 0 ], $sectionGraphics[ 0 ] ], transitionDuration, { height: minimumDistance - emotionNavHeight - $sectionGraphics[ 0 ].offsetTop } );
+                gsap.to( [ $originalContent[ 0 ], $sectionGraphics[ 0 ] ], transitionDuration, { height: minimumDistance - emotionNavHeight - $sectionGraphics[ 0 ].offsetTop } );
                 dispatcher.sectionTextMinimizeStart( transitionDuration );
             };
 
@@ -630,7 +629,7 @@ const scroller = {
                     return;
                 }
                 sectionTextMaximizing = true;
-                TweenMax.to( [ $sectionText[ 0 ], $emotionNav[ 0 ] ], transitionDuration, {
+                gsap.to( [ $sectionText[ 0 ], $emotionNav[ 0 ] ], transitionDuration, {
                     top: maximumDistance,
                     onUpdate: ()=> {
                         this.sectionGraphicsResize( anchorLink );
@@ -650,7 +649,7 @@ const scroller = {
                     }
                 } );
 				const emotionNavHeight = this.currentAnchor === 'strategies' ? 0 : sassVars[ 'ui' ][ 'mobile-emotion-nav' ][ 'height' ];
-				TweenMax.to( [ $originalContent[ 0 ], $sectionGraphics[ 0 ] ], transitionDuration, { height: maximumDistance - emotionNavHeight - $sectionGraphics[ 0 ].offsetTop } );
+				gsap.to( [ $originalContent[ 0 ], $sectionGraphics[ 0 ] ], transitionDuration, { height: maximumDistance - emotionNavHeight - $sectionGraphics[ 0 ].offsetTop } );
                 dispatcher.sectionTextMaximizeStart( transitionDuration );
             };
 
