@@ -1,0 +1,84 @@
+{
+	"navigating": {
+		"header": "Strategies for Navigating Emotions",
+		"description": "To navigate a life filled with emotions, we need to create space for them, so they don’t throw us too far off course. There are two methods for us to create that space, and both are very important.",
+		"reflecting": "<strong>Reflecting</strong> – we can take some time to reflect on our emotions, sort of like looking back on them, to get ready for next time.",
+		"in_the_moment": "<strong>In the moment<strong> – we can learn to handle our emotions right when they happen, like tools to create space between us and our feelings right when we need it.",
+		"keep_reading": "Keep reading or browse the menu to learn more about these strategies..."
+	},
+	"reflecting": {
+		"header": "How to Reflect",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.",
+		"labeling": {
+			"header": "Labeling",
+			"description": "What is happening? Developing language to describe our emotions.",
+			"how": {
+				"body": "<strong>How</strong> -- In using the Atlas of Emotion site we can explore, with specificity, what emotion we are feeling. Instead of “I feel bad,” or “I feel stressed” we can identify what emotion we may be experiencing through the families of universal emotions listed or the non universal emotions found here."
+			},
+			"why": {
+				"body": "<strong>Why</strong> -- Naming, or labeling our emotions creates a moment of “de-centering.” De-centering means we can re-focus on a bigger perspective by identifying our feelings instead of being caught up in the arousal of an emotion which can saturate our body and mind. Applying a word to identify our emotion supports an ‘emotion granularity.’ We practice our granularity by taking a moment to pause and consider our experience and then label, “Right now I am aware of feeling disappointed.” This simple label doesn’t have to carry any judgment or agenda, just naming can serve to help us see ourselves and the situation more clearly.",
+				"insight": "Naming an emotion can help us see ourselves and the situation more clearly."
+			}
+		},
+		"triggers": {
+			"header": "Understanding Triggers",
+			"description": "What is making me feel this emotion? Learning about how triggers work.",
+			"how": {
+				"body": "<strong>How</strong> -- When we look at the timeline of emotion we learn that our trigger is comprised of both our immediate state and context, as well as older stories and perceptions. We can choose an emotion episode when we felt we reacted too strongly and then consider what was going on in our immediate experience, our pre-condition, of hunger, fatigue, stress, etc. which might influence how we become emotional. We then explore what might be in the database, the storehouse of past experiences that we may impose on to  this current experience."
+			},
+			"why": {
+				"body": "<strong>Why</strong> -- We are triggered to an emotion in a 25th of a second and rarely can identify all the facts which contribute to that emotion. When we start exploring the pre-condition and database we develop greater insight about our role in our emotions, it isn’t just the outside world–it is our current state and past stories that create an emotional episode. This understanding can contribute to our reappraisal, to remember that when we become emotional it is often a complex process which needs space and reflection. We could say to ourselves, “I am feeling worried and there are many factors that are contributing to this worry, I am tired and have often had difficulty with transitions.”",
+				"insight": "It isn't just the outside world--it is our current state and past stories that create an emotional episode."
+			}
+		},
+		"body": {
+			"header": "The body",
+			"description": "What does an emotion feel like? Learning to be an observer of emotions in the body.",
+			"how": {
+				"body": "How -- For some of us feeling emotion in the body is quite clear, we recognize areas in the face, chest, or belly where there is increased sensations, such has heavy heat in our face when angry, or a hollow feeling in the chest when lonely. For others access to sensations of emotion in the body is less available, or the focus is more caught up in thoughts. Just as we recognize and apply labels to the type of emotion we are feeling, we can identify the types of sensations in our body and where we are feeling them. Consider where in your body you feel worried, and what are the qualities of this sensation, light, heavy, tingling, throbbing, pointy etc."
+			},
+			"why": {
+				"body": "Why -- Our emotions are an embodied experience, they are not just a mental phenomenon. Our entire nervous system rallies in response to our emotion to help us prepare for the opportunities and challenges which the emotion is alerting us to. When we develop a closer relationship to our embodied experience of emotion we are developing 'interoception'. Interoception is a trainable skill, a way to recognize our experience of emotions in the body which can help with de-centering, self soothing and reappraisal . For example if we feel a lot of bright, intense, energy in the chest with annoyance we can say to ourselves \"I am noticing this bright, intense energy in my chest, this makes senes because I am feeling annoyed and my body is responding.\"",
+				"insight": "A closer relationship to our embodied experience can help with de-centering, self soothing and reappraisal"
+			}
+		},
+		"choice": {
+			"header": "Creating Choice",
+			"description": "Where did that reaction come from? Creating choice in our responses.",
+			"how": {
+				"body": "How -- Many of us only become aware of our emotions during or right after we have behaved in a way we regret. The intensity, and rapidity of emotion can prevent us from recognizing the trigger and experience, but once we feel that urgency to respond or difficulty in suppressing we become aware we are emotional. Recognizing we are emotional is an incomparably valuable skill. Once we have recognized our emotions are acting through us, we can pause and get very curious about the momentum of our response, which can be ebullient joy or blinding anger.",
+				"insight": "Once we have recognized our emotions are acting through us, we can pause and get very curious about the momentum of our response"
+			},
+			"why": {
+				"body": "Why -- Our emotions prepare us to respond to the threats and opportunities in our world, a surprise visit from a friend or an unforeseen loss of work. Our responses often occur before we have time to recognize we are emotional and are intended to help us. Responses can be very functional, but sometimes we react in ways that are challenging -- usually because we misread the trigger -- we project something from our past on to what is happening now and respond to that fabricated reality. Our responses include external such as raising our voice in frustration, slinking away in anxiety, and rejoicing in gratitude. Some of our responses are internal, trying to prevent the emotion from being seen or fully expressed such as avoidance and distraction."
+			}
+		}
+	},
+	"in_the_moment": {
+		"header": "In the Moment",
+		"description": "In-the-moment strategies use executive functioning to move from the embodied arousal of our emotion to clear understanding about what is happening, a calm mind that allows for choice.",
+		"mindfulness": {
+			"header": "Mindfulness and Intention Setting",
+			"description": "In each moment, we can stay aware of our thoughts and feelings and make decisions in the present about how we wish to behave in the future.",
+			"mindfulness": {
+				"body": "Mindfulness -- Mindfulness is the practice of paying full attention to the present moment, without judgment. Practicing mindfulness consistently helps us be more conscious of what is going on around us in the present and less caught in thoughts and projections from the past. When we are more mindful, we develop a higher level of self-awareness called “meta-awareness” that helps us understand and manage our reactions and behaviors better. We become naturally more aware of our thoughts, feelings, and surroundings, accepting them as they are, which can help reduce stress and improve overall well-being. Although mindfulness always happens in the present moment, there are daily practices that increase the amount of mindfulness we tend to bring to each moment, such as meditation."
+			},
+			"intention": {
+				"body": "Intention Setting -- Much as a mediation practice can increase meta-awareness, a daily practice of setting clear intentions for peace of mind, kindness, clarity can create a supportive mindset for whatever we encounter. Intention setting is especially helpful before we go in to an anticipated ‘challenging’ experience. We prospectively, in the future, set an intention for kindness at the start of our day before we encounter a person, place, or experience.",
+				"insight": "create a supportive mindset for whatever we encounter"
+			}
+		},
+		"pausing": {
+			"header": "Pausing and feeling",
+			"description": "Pausing to feel the body is a powerful strategy for keeping our mind open to all that happened before a trigger, and all that might follow--it can prevent a temporary emotional state from dominating how we interpret what just happened and the possible future.",
+			"breath": {
+				"body": "<strong>Breath</strong> -- A deep breath is one very helpful way to pause. It brings more oxygen to our nervous system and help us process the physical arousal in our body. A big part of our emotional state is the physical changes we experience, and our breath is a way to physically assist our body during the pause."
+			},
+			"why": {
+				"body": "<strong>Sensations</strong> -- Bringing attention and awareness to physical sensations in the body can prevent an emotion from escalating. While we are sensing the body, we think less about what seemed to cause the emotion, just feeling and sensing the experience in the body. It helps to be specific–what sensations are we feeling and where, how are they changing? When we focus on the physical reality of being in our body, emotions distort our perception less.",
+				"insight": "When we focus on the physical reality of being in our body, emotions distort our perception less."
+			},
+			"trauma": "Note that everyone's relationship with their body is unique, and sometimes a history of trauma can affect our ability to use the body and breath as effective strategies. For more information on alternative strategies for \"grounding\", see this article."
+		}
+	}
+}
