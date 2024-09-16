@@ -8,8 +8,6 @@ import states from './states.js';
 import actions from './actions.js';
 import calm from './calm.js';
 import popupManager from './popupManager.js';
-import emotionsData from '../static/emotionsData.json';
-import secondaryData from '../static/secondaryData.json';
 import appStrings from './appStrings.js';
 import stringsConfig from '../static/strings/stringsConfig.json';
 import sassVars from '../scss/variables.json';
