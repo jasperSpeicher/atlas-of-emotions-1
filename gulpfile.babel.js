@@ -332,12 +332,11 @@ gulp.task("default", async () => {
 		// const reload = true;
 
 		// Copy static html files
-		dest: dest,
-			copyTask({
-				src: "./src/*.html",
-				dest: dest,
-				watchfiles: "./src/*.html",
-			});
+		copyTask({
+			src: "./src/*.html",
+			dest: dest,
+			watchfiles: "./src/*.html",
+		});
 
 		// Copy static assets
 		copyTask({
@@ -401,7 +400,7 @@ gulp.task("dist", async () => {
 
 		// Bundle
 		browserifyTask({
-			development: false,
+			development: true,
 			src: "./src/main.js",
 			dest: dest,
 		});

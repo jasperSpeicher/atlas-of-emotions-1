@@ -67,7 +67,7 @@
 		"gulp-uglify": "^3.0.2",
 		"gulp-util": "^3.0.6",
 		"rimraf": "^3.0.2",
-		"sass": "^1.52.1",
+		"sass": "^1.79.3",
 		"serve": "^13.0.2",
 		"spreadsheet-to-json": "^2.0.0",
 		"vinyl-buffer": "^1.0.1",

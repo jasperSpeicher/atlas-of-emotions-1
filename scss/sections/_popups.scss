@@ -10,33 +10,34 @@ $horiz-padding: 20px;
 [data-popuptarget] {
 	border-width: 1px;
 	border-style: solid;
-	@include emotion-border-color(0.0);
 
-	transition:
-		background #{$ui-popups-duration-close}s ease-in,
+	transition: background #{$ui-popups-duration-close}s ease-in,
 		padding #{$ui-popups-duration-close}s ease-in,
 		opacity #{$ui-popups-duration-close}s ease-in,
 		border-color #{$ui-popups-duration-close}s ease-in;
 
+	@include emotion-border-color(0);
 	&.popped {
-		@include emotion-border-color();
 		background: $popup-background-color;
 		padding: $vert-padding $horiz-padding;
+		@include emotion-border-color();
 
 		&.show-only {
-			opacity: 1.0;
+			opacity: 1;
 		}
 
 		&.no-body {
-			.body {display: none;}
+			.body {
+				display: none;
+			}
 		}
 	}
 
 	// &.default-interactive-helper,
 	&.highlighted,
 	&.selected {
+		transition: border-color #{$ui-popups-duration-border-open}s ease-out; // add highlight borders a bit more quickly
 		@include emotion-border-color();
-		transition: border-color #{$ui-popups-duration-border-open}s ease-out;	// add highlight borders a bit more quickly
 	}
 
 	&[data-clip] {
@@ -48,8 +49,8 @@ $horiz-padding: 20px;
 
 	// &.muted.default-interactive-helper,
 	&.muted {
-		@include emotion-border-color(0.0);
 		opacity: 0.5 !important;
+		@include emotion-border-color(0);
 	}
 
 	.secondary {
@@ -57,27 +58,32 @@ $horiz-padding: 20px;
 		display: block;
 		box-sizing: border-box;
 		width: 0px;
-		top: -1px;		// account for some box measurement problem i can't figure out
+		top: -1px; // account for some box measurement problem i can't figure out
 
-		padding: calc(#{$vert-padding}) $horiz-padding $vert-padding $horiz-padding;
-		opacity: 0.0;
+		padding: calc(#{$vert-padding}) $horiz-padding $vert-padding
+			$horiz-padding;
+		opacity: 0;
 		overflow: hidden;
+
+		border-width: 1px;
+		border-style: solid;
+
+		transition: width #{$ui-popups-duration-open}s ease,
+			opacity #{$ui-popups-duration-open}s ease;
 
 		@include emotion-background-color(0.5);
 		&.constructive {
 			@include emotion-background-color(0.75);
-		}
+		}	
 		&.destructive {
 			@include emotion-background-color(0.25);
-		}
+		}	
 
-		border-width: 1px;
-		border-style: solid;
-		@include emotion-border-color(1.0);
+		@include emotion-border-color(1);
 
-		transition: width #{$ui-popups-duration-open}s ease, opacity #{$ui-popups-duration-open}s ease;
 		&.closing {
-			transition: width #{0.5 * $ui-popups-duration-open}s ease-out, opacity #{0.5 * $ui-popups-duration-open}s ease-out;
+			transition: width #{0.5 * $ui-popups-duration-open}s ease-out,
+				opacity #{0.5 * $ui-popups-duration-open}s ease-out;
 		}
 
 		&.constructive {
@@ -93,7 +99,7 @@ $horiz-padding: 20px;
 			height: inherit;
 			left: 0;
 			top: 0;
-			content: ' ';
+			content: " ";
 			background-color: $popup-background-color;
 			opacity: inherit;
 			transition: inherit;
@@ -113,7 +119,7 @@ $horiz-padding: 20px;
 	display: block;
 	top: 0;
 	left: 0;
-    padding: 0;
+	padding: 0;
 	border: 0;
 	text-align: left;
 	z-index: 0;
@@ -131,7 +137,7 @@ $horiz-padding: 20px;
 	&.fade-out {
 		height: 0 !important;
 		width: 0 !important;
-		opacity: 0 !important
+		opacity: 0 !important;
 	}
 
 	/* Children */
@@ -157,10 +163,10 @@ $horiz-padding: 20px;
 		cursor: pointer;
 
 		&:before {
-			content: '×';
+			content: "×";
 			font-weight: 200;
-		    font-size: 2.55em;
-		    line-height: 18px;
+			font-size: 2.55em;
+			line-height: 18px;
 		}
 	}
 
