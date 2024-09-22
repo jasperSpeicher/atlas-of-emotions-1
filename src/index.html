@@ -549,46 +549,33 @@
                         </div>
 
                         <div class="strategy-details">
-                            <h2>{{ reflecting.labeling.header }}</h2>
-                            <p>{{ reflecting.labeling.description }}</p>
+                            {{# for(let subSection of reflecting.sub_sections) { }}
+                            <h2>{{ subSection.header }}</h2>
+                            <p>{{ subSection.description }}</p>
+                            {{# for(let paragraph of subSection.paragraphs) { }}
                             <div class="strategy-details__columns">
                                 <div class="strategy-details__left">
-                                    <p>{{ reflecting.labeling.how.body }}</p>
+                                    <p>{{ paragraph.body }}</p>
                                 </div>
-                                {{# if(reflecting.labeling.how.image) { }}
+                                {{# if(paragraph.image) { }}
                                 <div class="strategy-details__right">
-                                    <img class="strategy-details__illustration" src="{{ reflecting.labeling.how.image }}" />
+                                    <img class="strategy-details__illustration"
+                                        src="{{ paragraph.image }}" />
                                 </div>
                                 {{# } }}
-                                {{# if(reflecting.labeling.how.insight) { }}
+                                {{# if(paragraph.insight) { }}
                                 <div class="strategy-details__right strategy-details__insight">
-                                    <img class="strategy-details__insight-icon" src="{{ reflecting.labeling.how.insight_image }}" />
+                                    <img class="strategy-details__insight-icon"
+                                        src="{{ paragraph.insight_image }}" />
                                     <div>
                                         <h3>Key Insight</h3>
-                                        <p>{{ reflecting.labeling.how.insight }}</p>
+                                        <p>{{ paragraph.insight }}</p>
                                     </div>
                                 </div>
                                 {{# } }}
                             </div>
-                            <div class=" strategy-details__columns">
-                                <div class="strategy-details__left">
-                                    <p>{{ reflecting.labeling.why.body }}</p>
-                                </div>
-                                {{# if(reflecting.labeling.why.image) { }}
-                                <div class="strategy-details__right">
-                                    <img class="strategy-details__illustration" src="{{ reflecting.labeling.why.image }}" />
-                                </div>
-                                {{# } }}
-                                {{# if(reflecting.labeling.why.insight) { }}
-                                <div class="strategy-details__right strategy-details__insight">
-                                    <img class="strategy-details__insight-icon" src="{{ reflecting.labeling.why.insight_image }}" />
-                                    <div>
-                                        <h3>Key Insight</h3>
-                                        <p>{{ reflecting.labeling.why.insight }}</p>
-                                    </div>
-                                </div>
-                                {{# } }}
-                            </div>
+                            {{# } }}
+                            {{# } }}
                         </div>
                     </div>
                 </div>
