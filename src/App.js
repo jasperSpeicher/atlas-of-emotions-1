@@ -138,11 +138,16 @@ export default function (...initArgs) {
 
 		let templateElements = [].slice.call(
 			document.querySelectorAll("[data-template]")
-		);
+        );
 
 		templateElements.forEach(function (element) {
+			let isStrategies =
+				element.dataset.template.match(/(strategiesData)/) != null;
+			// if (isStrategies) {
+			// 	debugger;
+			// }
 			let isDerived = element.dataset.template.match(/(derived)/) != null,
-				prefix = isDerived ? "" : "emotionsData.",
+				prefix = isDerived || isStrategies ? "" : "emotionsData.",
 				data = appStrings().getStr(prefix + element.dataset.template),
 				compiled = _.template(element.innerHTML);
 			element.innerHTML = compiled(data);

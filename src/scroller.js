@@ -468,7 +468,8 @@ const scroller = {
 
         let touchSensitivity = 15;
 
-        this.$sections = $( '.section' );
+        this.$sections = $('.section');
+        console.log("initFullpageSections", this.$sections);
 
         this.sectionTextAnimators = {};
 

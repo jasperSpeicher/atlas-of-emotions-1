@@ -54,7 +54,6 @@ body {
 	}
 
 	&[class*="fp-viewing-experience"],
-	&[class*="fp-viewing-strategies"],
 	&[class*="fp-viewing-response"] {
 		// allows interaction by default, js passes swipes to scroller
 		// other sections drop this back behind the scroller content
@@ -125,6 +124,8 @@ svg {
 
 %button-link {
 	color: #000;
+	cursor: pointer;
+	user-select: none;
 	&:hover {
 		color: #000;
 		text-decoration: none;
@@ -137,8 +138,6 @@ svg {
 		font-weight: bold;
 		text-decoration: none;
 	}
-	cursor: pointer;
-	user-select: none;
 }
 
 %close-button {
@@ -1044,30 +1043,85 @@ svg {
 }
 
 #strategies-section {
-	.embed-padding {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		padding: 10%;
+	.section-graphics {
+		overflow: scroll;
 	}
-	.embed-container {
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-		padding-bottom: 56.25%;
-		height: 0;
-		width: 100%;
-		max-width: 1100px;
-		overflow: hidden;
+	.strategies-text {
+		font-family: Raleway, sans-serif;
+		font-size: 15px;
+		line-height: 1.5;
+		padding: 50px;
+		margin: 0 auto;
 	}
-	.embed-container iframe,
-	.embed-container object,
-	.embed-container embed {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
+
+	h1 {
+		font-weight: 400;
+		font-size: 32px;
+		margin-bottom: 12px;
+	}
+
+	h2 {
+		font-weight: 400;
+		font-size: 22px;
+	}
+
+	h3 {
+		font-weight: 700;
+		font-size: 11px;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	p {
+		margin-bottom: 30px;
+		margin-top: 0;
+	}
+
+	strong {
+		font-weight: 500;
+	}
+
+	.strategies-intro {
+	}
+
+	.strategies-intro__columns {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.strategies-intro__left img {
+		width: 200px;
+		margin-right: 50px;
+	}
+
+	.strategy-details__columns {
+		display: grid;
+		grid-template-columns: 1fr 200px;
+		column-gap: 60px;
+	}
+
+	.strategy-details__right .strategy-details__illustration {
+		width: 88px;
+		height: auto;
+	}
+
+	.strategy-details__insight {
+		display: grid;
+		grid-template-columns: 0fr 1fr;
+		column-gap: 10px;
+	}
+
+	.strategy-details__right .strategy-details__insight-icon {
+		width: 40px;
+		height: auto;
+	}
+
+	.strategy-details__right p {
+		font-style: italic;
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 18px;
 	}
 }
 

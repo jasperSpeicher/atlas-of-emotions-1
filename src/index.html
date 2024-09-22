@@ -527,7 +527,70 @@
 
             <div class="section" id="strategies-section">
                 <div class="section-graphics">
+                    <div class="strategies-text" data-template="strategiesData.text">
+                        <div class="strategies-intro">
+                            <h1>{{ navigating.header }}</h1>
+                            <p>{{ navigating.description }}</p>
+                            <div class="strategies-intro__columns">
+                                <div class="strategies-intro__left">
+                                    <img src="{{ navigating.image }}" />
+                                </div>
+                                <div class="strategies-intro__right">
+                                    <p>{{ navigating.reflecting }}</p>
+                                    <p>{{ navigating.in_the_moment }}</p>
+                                    <p>{{ navigating.keep_reading }}</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="strategies-subsection">
+                            <h1>{{ reflecting.header }}</h1>
+                            <p>{{ reflecting.description }}</p>
+                        </div>
+
+                        <div class="strategy-details">
+                            <h2>{{ reflecting.labeling.header }}</h2>
+                            <p>{{ reflecting.labeling.description }}</p>
+                            <div class="strategy-details__columns">
+                                <div class="strategy-details__left">
+                                    <p>{{ reflecting.labeling.how.body }}</p>
+                                </div>
+                                {{# if(reflecting.labeling.how.image) { }}
+                                <div class="strategy-details__right">
+                                    <img class="strategy-details__illustration" src="{{ reflecting.labeling.how.image }}" />
+                                </div>
+                                {{# } }}
+                                {{# if(reflecting.labeling.how.insight) { }}
+                                <div class="strategy-details__right strategy-details__insight">
+                                    <img class="strategy-details__insight-icon" src="{{ reflecting.labeling.how.insight_image }}" />
+                                    <div>
+                                        <h3>Key Insight</h3>
+                                        <p>{{ reflecting.labeling.how.insight }}</p>
+                                    </div>
+                                </div>
+                                {{# } }}
+                            </div>
+                            <div class=" strategy-details__columns">
+                                <div class="strategy-details__left">
+                                    <p>{{ reflecting.labeling.why.body }}</p>
+                                </div>
+                                {{# if(reflecting.labeling.why.image) { }}
+                                <div class="strategy-details__right">
+                                    <img class="strategy-details__illustration" src="{{ reflecting.labeling.why.image }}" />
+                                </div>
+                                {{# } }}
+                                {{# if(reflecting.labeling.why.insight) { }}
+                                <div class="strategy-details__right strategy-details__insight">
+                                    <img class="strategy-details__insight-icon" src="{{ reflecting.labeling.why.insight_image }}" />
+                                    <div>
+                                        <h3>Key Insight</h3>
+                                        <p>{{ reflecting.labeling.why.insight }}</p>
+                                    </div>
+                                </div>
+                                {{# } }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="section-text">
                     <h2 class="section-heading" data-template="metadata.navigation">{{ strategies.heading }}</h2>

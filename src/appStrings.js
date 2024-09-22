@@ -34,7 +34,10 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 		return strings[key];
 	}
 
-	function getStr(key, failQuietly) {
+	function getStr(key, failQuietly, debug) {
+		if (debug) {
+			debugger;
+		}
 		// Strings not yet loaded; fail silently
 		if (!strings) {
 			return "";
@@ -126,7 +129,7 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 						if (typeof parsedKey[k] == "number") {
 							acc[k] = parsedKey[k];
 						} else {
-							acc[k] = getStr(`${key}.${k}`);
+							acc[k] = getStr(`${key}.${k}`, failQuietly, debug);
 						}
 						return acc;
 					}, {});
