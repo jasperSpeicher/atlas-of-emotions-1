@@ -143,7 +143,7 @@ function sassVariablesTask(options) {
 	let run = function () {
 		let start = new Date();
 		console.log("Building Sass variables");
-		gulp.src(options.src)
+		return gulp.src(options.src)
 			.pipe($.jsonSass())
 			.pipe($.concat("./variables-derived.scss"))
 			.pipe(gulp.dest(options.dest))
@@ -161,7 +161,7 @@ function cssTask(options) {
 		let run = function () {
 			let start = new Date();
 			console.log("Building CSS bundle");
-			gulp.src(options.src)
+			return gulp.src(options.src)
 				.pipe(sass.sync())
 				.pipe($.autoprefixer())
 				.pipe(gulp.dest(options.dest))
@@ -175,10 +175,10 @@ function cssTask(options) {
 						},
 						notifier: function () {},
 					})
-				);
+			);
 		};
-		run();
 		gulp.watch(options.watchfiles, run);
+		run();
 	} else {
 		gulp.src(options.src)
 			.pipe(sass.sync())
@@ -192,7 +192,7 @@ function copyTask(options) {
 	console.log("Copying files: " + options.src);
 	if (options.watchfiles) {
 		gulp.watch(options.watchfiles, function () {
-			gulp.src(options.src).pipe(gulp.dest(options.dest));
+			return gulp.src(options.src).pipe(gulp.dest(options.dest));
 		});
 	}
 	return gulp.src(options.src).pipe(gulp.dest(options.dest));
