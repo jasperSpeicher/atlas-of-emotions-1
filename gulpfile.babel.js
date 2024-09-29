@@ -54,7 +54,7 @@ function browserifyTask(options) {
 		console.log("Building APP bundle");
 		if (options.development) {
 			// lintTask(options);
-			appBundler
+			return appBundler
 				.bundle()
 				.on("error", $.util.log)
 				.pipe(source("main.js"))
@@ -73,7 +73,7 @@ function browserifyTask(options) {
 					})
 				);
 		} else {
-			appBundler
+			return appBundler
 				.bundle()
 				.on("error", $.util.log)
 				.pipe(source("main.js"))
@@ -143,7 +143,8 @@ function sassVariablesTask(options) {
 	let run = function () {
 		let start = new Date();
 		console.log("Building Sass variables");
-		return gulp.src(options.src)
+		return gulp
+			.src(options.src)
 			.pipe($.jsonSass())
 			.pipe($.concat("./variables-derived.scss"))
 			.pipe(gulp.dest(options.dest))
@@ -161,7 +162,8 @@ function cssTask(options) {
 		let run = function () {
 			let start = new Date();
 			console.log("Building CSS bundle");
-			return gulp.src(options.src)
+			return gulp
+				.src(options.src)
 				.pipe(sass.sync())
 				.pipe($.autoprefixer())
 				.pipe(gulp.dest(options.dest))
@@ -175,7 +177,7 @@ function cssTask(options) {
 						},
 						notifier: function () {},
 					})
-			);
+				);
 		};
 		gulp.watch(options.watchfiles, run);
 		run();
