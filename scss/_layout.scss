@@ -349,7 +349,7 @@ svg {
 	right: 0;
 	.menu {
 		position: absolute;
-		right: 1.5em;
+		left: 1.5em;
 		height: 40px;
 		text-align: right;
 		ul {
@@ -1050,14 +1050,14 @@ svg {
 		font-family: Raleway, sans-serif;
 		font-size: 15px;
 		line-height: 1.5;
-		padding: 50px;
-		margin: 0 auto;
+		padding: 90px 100px;
+		max-width: 1000px;
 	}
 
 	h1 {
 		font-weight: 400;
 		font-size: 32px;
-		margin-bottom: 12px;
+		margin-bottom: 5px;
 	}
 
 	h2 {
@@ -1103,7 +1103,6 @@ svg {
 	}
 
 	.strategy-details__right .strategy-details__illustration {
-		width: 88px;
 		height: auto;
 	}
 

@@ -148,7 +148,7 @@ export default function (...initArgs) {
 			// }
 			let isDerived = element.dataset.template.match(/(derived)/) != null,
 				prefix = isDerived || isStrategies ? "" : "emotionsData.",
-				data = appStrings().getStr(prefix + element.dataset.template),
+                data = appStrings().getStr(prefix + element.dataset.template),
 				compiled = _.template(element.innerHTML);
 			element.innerHTML = compiled(data);
 		});
