@@ -526,7 +526,7 @@
             </div>
 
             <div class="section" id="strategies-section">
-                <div class="section-graphics">
+                <div class="section-graphics scroll-parent">
                     <div class="strategies-text" data-template="strategiesData.text">
                         <div class="strategies-intro">
                             <h1>{{ navigating.header }}</h1>
@@ -544,13 +544,13 @@
                         </div>
 
                         <div class="strategies-subsection">
-                            <h1>{{ reflecting.header }}</h1>
+                            <h1 id="{{ reflecting.id }}">{{ reflecting.header }}</h1>
                             <p>{{ reflecting.description }}</p>
                         </div>
 
                         <div class="strategy-details">
                             {{# for(let subSection of reflecting.sub_sections) { }}
-                            <h2>{{ subSection.header }}</h2>
+                            <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
                             <p>{{ subSection.description }}</p>
                             {{# for(let paragraph of subSection.paragraphs) { }}
                             <div class="strategy-details__columns">
@@ -578,13 +578,13 @@
                         </div>
 
                         <div class="strategies-subsection">
-                            <h1>{{ in_the_moment.header }}</h1>
+                            <h1 id="{{ in_the_moment.id }}">{{ in_the_moment.header }}</h1>
                             <p>{{ in_the_moment.description }}</p>
                         </div>
 
                         <div class="strategy-details">
                             {{# for(let subSection of in_the_moment.sub_sections) { }}
-                            <h2>{{ subSection.header }}</h2>
+                            <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
                             <p>{{ subSection.description }}</p>
                             {{# for(let paragraph of subSection.paragraphs) { }}
                             <div class="strategy-details__columns">
@@ -616,17 +616,18 @@
                     <h2 class="section-heading" data-template="metadata.navigation">{{ strategies.heading }}</h2>
                     <div class="section-text__scroller">
                         <div>
-                            <div data-template="metadata.calm">
-                                {{ body }}
-                                <br />
-                                <br />
-                                Here are a selection of resources that address the development of emotion awareness
-                                through contemplative practices, education, and embodiment.
-                                <br />
-                                <ol id="links-sidebar">
-                                </ol>
-                            </div>
-
+                            <ul data-template="strategiesData.toc" id="strategies-toc">
+                                {{# for(let section of sections) { if(Array.isArray(section)) { }} 
+                                    <ul>
+                                        {{# for(let subSection of section) { }}
+                                        <li data-scroll-to="#{{ subSection.id }}">{{ subSection.title }}</li>
+                                        {{# } }}
+                                    </ul>
+                                    {{# } else { }}
+                                        <li data-scroll-to="#{{ section.id }}">{{ section.title }}</li>
+                                    {{# } }}
+                                {{# } }}
+                            </ul>
                             <a class="more-link more-link__scrollable" data-template="metadata.site">
                                 {{ learn_more_button }}
                             </a>

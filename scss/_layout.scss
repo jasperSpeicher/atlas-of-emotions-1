@@ -1042,8 +1042,29 @@ svg {
 	}
 }
 
+#strategies-toc {
+	padding: 0;
+	& > li {
+		font-weight: 400;
+	}
+	ul {
+		padding-left: 30px;
+		padding-bottom: 10px;
+	}
+	li {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		line-height: 2;
+		cursor: pointer;
+		&:hover {
+			font-weight: 400;
+		}
+	}
+}
+
 #strategies-section {
-	.section-graphics {
+	.scroll-parent {
 		overflow: scroll;
 	}
 	.strategies-text {

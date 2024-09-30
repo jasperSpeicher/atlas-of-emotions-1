@@ -1,15 +1,23 @@
 {
-	"toc": [
-		"How to Reflect",
-		[
-			"Labeling",
-			"Understanding Triggers",
-			"Embodying Emotion",
-			"Creating Choice"
-		],
-		"In the Moment",
-		["Mindfulness & Intentions", "Pausing & Feeling"]
-	],
+	"toc": {
+		"sections": [
+			{ "title": "How to Reflect", "id": "how-to-reflect" },
+			[
+				{ "title": "Labeling", "id": "labeling" },
+				{
+					"title": "Understanding Triggers",
+					"id": "understanding-triggers"
+				},
+				{ "title": "Embodying Emotion", "id": "the-body" },
+				{ "title": "Creating Choice", "id": "creating-choice" }
+			],
+			{ "title": "In the Moment", "id": "in-the-moment" },
+			[
+				{ "title": "Mindfulness & Intentions", "id": "mindfulness" },
+				{ "title": "Pausing & Feeling", "id": "pausing" }
+			]
+		]
+	},
 	"text": {
 		"navigating": {
 			"header": "Strategies for Navigating Emotions",
@@ -21,17 +29,19 @@
 		},
 		"reflecting": {
 			"header": "How to Reflect",
+			"id": "how-to-reflect",
 			"description": "Reflecting is an essential aspect of developing emotion awareness. Through the strategies listed below you can both learn more about your emotions and the important messages they have to share with you and practice ways to find a ‘pause’ and slow down reactivity.",
 			"sub_sections": [
 				{
 					"header": "Labeling",
+					"id": "labeling",
 					"description": "What is happening? Developing language to describe our emotions.",
 					"paragraphs": [
 						{
 							"body": "<strong>How</strong> -- In using the Atlas of Emotion site we can explore, with specificity, what emotion we are feeling. Instead of “I feel bad,” or “I feel stressed” we can identify what emotion we may be experiencing through the families of universal emotions listed or the non universal emotions found here.",
 							"image": "img/label.png",
-                            "image_width": "88px"
-                        },
+							"image_width": "88px"
+						},
 						{
 							"body": "<strong>Why</strong> -- Naming, or labeling our emotions creates a moment of “de-centering.” De-centering means we can re-focus on a bigger perspective by identifying our feelings instead of being caught up in the arousal of an emotion which can saturate our body and mind. Applying a word to identify our emotion supports an ‘emotion granularity.’ We practice our granularity by taking a moment to pause and consider our experience and then label, “Right now I am aware of feeling disappointed.” This simple label doesn’t have to carry any judgment or agenda, just naming can serve to help us see ourselves and the situation more clearly.",
 							"insight": "Naming an emotion can help us see ourselves and the situation more clearly.",
@@ -41,6 +51,7 @@
 				},
 				{
 					"header": "Understanding Triggers",
+					"id": "understanding-triggers",
 					"description": "What is making me feel this emotion? Learning about how triggers work.",
 					"paragraphs": [
 						{
@@ -57,6 +68,7 @@
 				},
 				{
 					"header": "The body",
+					"id": "the-body",
 					"description": "What does an emotion feel like? Learning to be an observer of emotions in the body.",
 					"paragraphs": [
 						{
@@ -73,6 +85,7 @@
 				},
 				{
 					"header": "Creating Choice",
+					"id": "creating-choice",
 					"description": "Where did that reaction come from? Creating choice in our responses.",
 					"paragraphs": [
 						{
@@ -91,10 +104,12 @@
 		},
 		"in_the_moment": {
 			"header": "In the Moment",
+			"id": "in-the-moment",
 			"description": "In-the-moment strategies use executive functioning to move from the embodied arousal of our emotion to clear understanding about what is happening, a calm mind that allows for choice.",
 			"sub_sections": [
 				{
 					"header": "Mindfulness and Intention Setting",
+					"id": "mindfulness",
 					"description": "In each moment, we can stay aware of our thoughts and feelings and make decisions in the present about how we wish to behave in the future.",
 					"paragraphs": [
 						{
@@ -111,6 +126,7 @@
 				},
 				{
 					"header": "Pausing and feeling",
+					"id": "pausing",
 					"description": "Pausing to feel the body is a powerful strategy for keeping our mind open to all that happened before a trigger, and all that might follow--it can prevent a temporary emotional state from dominating how we interpret what just happened and the possible future.",
 					"paragraphs": [
 						{
