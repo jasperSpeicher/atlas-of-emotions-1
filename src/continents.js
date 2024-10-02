@@ -713,17 +713,17 @@ export default class ContinentsSection {
 			}
 
 			this.addTween( targetCenter, { 'x': targetX }, durationX, funcX )
-				.onUpdate( function () {
-					this.continents.forEach( continent => {
-						continent.centerX = this.x;
+				.onUpdate(() => {
+					this.continents.forEach(continent => {
+						continent.centerX = targetCenter.x;
 					} );
 				} )
 				.start();
 
 			this.addTween( targetCenter, { 'y': targetY }, durationY, funcY )
-				.onUpdate( function () {
+				.onUpdate( () => {
 					this.continents.forEach( continent => {
-						continent.centerY = this.y;
+						continent.centerY = targetCenter.y;
 					} );
 				} )
 				.start();
