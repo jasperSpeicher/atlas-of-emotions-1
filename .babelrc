@@ -5,6 +5,14 @@
 		]
 	],
 	"plugins": [
-		"transform-object-assign"
+		"transform-object-assign",
+		[
+			"inline-svg",
+			{
+				"ignorePattern": "icons",
+				"disableNamespaceIds": true,
+				"disableSVGO": true
+			}
+		]
 	]
 }
