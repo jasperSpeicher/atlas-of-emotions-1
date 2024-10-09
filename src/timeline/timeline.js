@@ -8,6 +8,8 @@ import EpisodeAddAwareness from "./EpisodeAddAwareness.js";
 import dispatcher from "../dispatcher";
 import scroller from "../scroller";
 import appStrings from "../appStrings.js";
+import episodeSvg from "./episode.svg";
+import episodeAddAwarenessSvg from "./episode--add-awareness.svg";
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -147,47 +149,37 @@ const timeline = {
 
 	loadEpisode: function () {
 		// no awareness version
-		let ajax = new XMLHttpRequest();
-		ajax.open("GET", "./img/episode.svg", true);
-		ajax.send();
-		ajax.onload = (e) => {
-			this.episode = new Episode(
-				e.currentTarget.responseXML.documentElement,
-				this.sectionContainer,
-				this.currentEmotion,
-				this.screenIsSmall
-			);
-			this.activeEpisode = this.episode;
-			if (this.isActive) {
-				this.episode.setEmotion(this.currentEmotion);
-			}
-		};
+		const svg = $.parseHTML(episodeSvg)[2];
+		this.episode = new Episode(
+			svg,
+			this.sectionContainer,
+			this.currentEmotion,
+			this.screenIsSmall
+		);
+		this.activeEpisode = this.episode;
+		if (this.isActive) {
+			this.episode.setEmotion(this.currentEmotion);
+		}
 	},
 
 	loadEpisodeAddAwareness: function () {
 		// awareness version
-		let ajax = new XMLHttpRequest();
-		ajax.open("GET", "./img/episode--add-awareness.svg", true);
-		ajax.send();
-		ajax.onload = (e) => {
-			this.episodeAddAwareness = new EpisodeAddAwareness(
-				e.currentTarget.responseXML.documentElement,
-				this.sectionContainer,
-				this.currentEmotion,
-				this.screenIsSmall
-			);
-			this.activeEpisode = this.episodeAddAwareness;
-			this.episodeAddAwareness.maximized = this.episode.maximized;
-			this.episodeAddAwareness.minimizing = this.episode.minimizing;
-			this.episodeAddAwareness.setInteractive(
-				this.episode.getInteractive()
-			);
-			if (this.isActive) {
-				this.episodeAddAwareness.setEmotion(this.currentEmotion);
-			}
-			this.episode.destroy();
-			this.episode = null;
-		};
+		const svg = $.parseHTML(episodeAddAwarenessSvg)[2];
+		this.episodeAddAwareness = new EpisodeAddAwareness(
+			svg,
+			this.sectionContainer,
+			this.currentEmotion,
+			this.screenIsSmall
+		);
+		this.activeEpisode = this.episodeAddAwareness;
+		this.episodeAddAwareness.maximized = this.episode.maximized;
+		this.episodeAddAwareness.minimizing = this.episode.minimizing;
+		this.episodeAddAwareness.setInteractive(this.episode.getInteractive());
+		if (this.isActive) {
+			this.episodeAddAwareness.setEmotion(this.currentEmotion);
+		}
+		this.episode.destroy();
+		this.episode = null;
 	},
 
 	showAwarenessEpisode: function () {
