@@ -2,7 +2,7 @@ import ContinentsSection from "./continents";
 import dispatcher from "./dispatcher";
 import d3 from "d3";
 
-class LinksSection {
+class StrategiesSection {
 	init(containerNode, screenIsSmall) {
 		const scrollParent = $("#strategies-section .scroll-parent");
 		$("[data-scroll-to]").on("click", (e) => {
@@ -25,5 +25,5 @@ class LinksSection {
 	onResize() {}
 }
 
-const linksSection = new LinksSection();
-export default linksSection;
+const strategiesSection = new StrategiesSection();
+export default strategiesSection;

@@ -12,7 +12,7 @@ import appStrings from "./appStrings.js";
 import stringsConfig from "../static/strings/stringsConfig.json";
 import sassVars from "../scss/variables.json";
 import d3 from "d3";
-import links from "./links";
+import strategies from "./strategies";
 
 export default function (...initArgs) {
 	const MIN_ALLOWED_WIDTH = 1200,
@@ -189,7 +189,7 @@ export default function (...initArgs) {
 		sections.actions = actions;
 		sections.triggers = timeline;
 		sections.calm = calm;
-		sections.links = links;
+		sections.strategies = strategies;
 
 		// use this without a container, so the info
 		// can be spread out across sections
