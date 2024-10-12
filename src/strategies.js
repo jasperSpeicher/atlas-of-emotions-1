@@ -1,7 +1,3 @@
-import ContinentsSection from "./continents";
-import dispatcher from "./dispatcher";
-import d3 from "d3";
-
 class StrategiesSection {
 	init(containerNode, screenIsSmall) {
 		const scrollParent = $("#strategies-section .scroll-parent");
