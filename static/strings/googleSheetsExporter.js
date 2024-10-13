@@ -129,7 +129,8 @@ function parseMetadataSheet( sheet ) {
             if ( currentLabel ) {
                 // parse everything aggregated up to this next label,
                 // if a parser exists; else, discard aggregated data.
-                if ( metadataSectionParsers[ currentLabel ] ) {
+                if (metadataSectionParsers[currentLabel]) {
+                    debugger;
                     metadata[ currentLabel ] = metadataSectionParsers[ currentLabel ]( sectionData );
                 }
             }
@@ -195,6 +196,10 @@ var metadataSectionParsers = (function () {
                 strategies: {
                     menu: data[ 4 ][ 0 ],
                     heading: data[ 4 ][ 1 ]
+                },
+                learn_more: {
+                    menu: data[ 6 ][ 0 ],
+                    heading: data[ 6 ][ 1 ]
                 },
                 emotions: {
                     all: data[ 5 ][ 0 ]

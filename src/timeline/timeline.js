@@ -363,11 +363,11 @@ const timeline = {
 		this.sectionContainer = containerNode;
 		this.beginAwarenessButton = document.getElementById("begin-awareness");
 		this.sectionTextBodyIntro = Array.prototype.slice.call(
-			document.querySelectorAll("#timeline-section .body-intro")
+			document.querySelectorAll("#timeline-fp-section .body-intro")
 		);
 		this.sectionTextBodyAwareness = Array.prototype.slice.call(
 			document.querySelectorAll(
-				'#timeline-section [class*="body-awareness"]'
+				'#timeline-fp-section [class*="body-awareness"]'
 			)
 		);
 

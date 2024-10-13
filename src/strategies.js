@@ -1,8 +1,7 @@
 class StrategiesSection {
 	init(containerNode, screenIsSmall) {
-		const scrollParent = $("#strategies-section .scroll-parent");
+		const scrollParent = $("#strategies-fp-section .scroll-parent");
 		$("[data-scroll-to]").on("click", (e) => {
-			console.log(e.target);
 			const link = $(e.target);
 			const selector = link.data("scroll-to");
 			const destination = $(selector);

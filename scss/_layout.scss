@@ -76,7 +76,7 @@ body {
 
 	&.more-visible {
 		.original-content,
-		#timeline-section .section-graphics,
+		#timeline-fp-section .section-graphics,
 		.section-text {
 			& > * {
 				filter: blur(10px);
@@ -1042,7 +1042,7 @@ svg {
 	pointer-events: all;
 }
 
-#timeline-section {
+#timeline-fp-section {
 	svg tspan {
 		font-weight: 400;
 	}
@@ -1069,7 +1069,7 @@ svg {
 	}
 }
 
-#strategies-section {
+#strategies-fp-section {
 	.scroll-parent {
 		overflow: scroll;
 	}

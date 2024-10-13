@@ -280,7 +280,7 @@
 
         <div class="page-body">
 
-            <div class="section introduction-hero" id="introduction-section" data-template="metadata.hero">
+            <div class="section introduction-hero" id="introduction-fp-section" data-template="metadata.hero">
 
                 {{# slides.forEach( function(slide, i){ }}
 
@@ -334,7 +334,7 @@
             </div>
 
 
-            <div class="section" id="timeline-section" data-has-emotion-state="true">
+            <div class="section" id="timeline-fp-section" data-has-emotion-state="true">
                 <div class="section-graphics">
                     <div id="timeline-graphics" data-template="metadata.timeline.secondary.blocks.captions">
                         <div class="diagram-caption" id="constructive-response-caption">
@@ -473,7 +473,7 @@
                 </div>
             </div>
 
-            <div class="section" id="experience-section" data-has-emotion-state="true">
+            <div class="section" id="experience-fp-section" data-has-emotion-state="true">
                 <div class="section-graphics">
                 </div>
                 <div class="section-text">
@@ -499,7 +499,7 @@
                 </div>
             </div>
 
-            <div class="section" id="response-section" data-has-emotion-state="true">
+            <div class="section" id="response-fp-section" data-has-emotion-state="true">
                 <div class="section-graphics">
                 </div>
                 <div class="section-text">
@@ -525,7 +525,7 @@
                 </div>
             </div>
 
-            <div class="section" id="strategies-section">
+            <div class="section" id="strategies-fp-section">
                 <div class="section-graphics scroll-parent">
                     <div class="strategies-text" data-template="strategiesData.text">
                         <div class="strategies-intro">
@@ -643,6 +643,33 @@
                 </div>
             </div>
 
+            <div class="section" id="learn_more-fp-section">
+                <div class="section-graphics scroll-parent">
+                </div>
+                <div class="section-text">
+                    <h2 class="section-heading" data-template="metadata.navigation">{{ strategies.heading }}</h2>
+                    <div class="section-text__scroller">
+                        <div>
+                            <ul data-template="strategiesData.toc" id="strategies-toc">
+                                {{# for(let section of sections) { if(Array.isArray(section)) { }} 
+                                    <ul>
+                                        {{# for(let subSection of section) { }}
+                                        <li data-scroll-to="#{{ subSection.id }}">{{ subSection.title }}</li>
+                                        {{# } }}
+                                    </ul>
+                                    {{# } else { }}
+                                        <li data-scroll-to="#{{ section.id }}">{{ section.title }}</li>
+                                    {{# } }}
+                                {{# } }}
+                            </ul>
+                            <a class="more-link more-link__scrollable" data-template="metadata.site">
+                                {{ learn_more_button }}
+                            </a>
+                        </div>
+                    </div>
+                    <a class="more-link more-link__fixed" data-template="metadata.site">{{ learn_more_button }}</a>
+                </div>
+            </div>
         </div>
 
         <div class="site-header hidden-for-intro">
@@ -674,6 +701,7 @@
                     <li><a href="#actions/" id="response-menu-link">{{ response.menu }}</a>
                     </li>
                     <li><a href="#strategies/" id="strategies-menu-link">{{ strategies.menu }}</a></li>
+                    <li><a href="#learn-more/" id="learn-more-menu-link">{{ learn_more.menu }}</a></li>
                     <li>
                         <a id="opt-in-link" class="opt-in-button">
                             <img src="img/mail.svg">
