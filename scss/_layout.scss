@@ -736,7 +736,7 @@ svg {
 		margin-top: 0;
 		padding-bottom: 17px;
 		text-transform: none;
-		margin-bottom: 15px;
+		margin-bottom: 18px;
 		border-bottom: 1px solid #000;
 		line-height: 1;
 	}
@@ -809,6 +809,7 @@ svg {
 		left: $section-text-padding;
 		right: $section-text-padding;
 		padding-bottom: 50px;
+		padding-top: 5px;
 		overflow-y: auto;
 		p {
 			a {

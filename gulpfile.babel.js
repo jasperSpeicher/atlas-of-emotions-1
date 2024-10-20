@@ -313,6 +313,9 @@ function webserverTask(options) {
 	const opts = {
 		root: "./build/",
 		port: port,
+		// the loopback address was configured to this ip on my development machine
+		// if the server fails to listen, try removing the "host" property from these options
+		host: "192.168.1.88",
 	};
 
 	if (options.reload) opts.livereload = true;
