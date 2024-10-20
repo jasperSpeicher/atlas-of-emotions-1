@@ -465,6 +465,12 @@ export default class ContinentsSection {
 			this.setContinentIntroPositions(true);
 		}
 
+		dispatcher.changeSectionText(
+			null,
+			appStrings().getStr("emotionsData.metadata.continents.header"),
+			appStrings().getStr("emotionsData.metadata.continents.body")
+		);
+
 		this.update();
 	}
 
