@@ -20,7 +20,6 @@ const dispatcher = {
 		SECTION_TEXT_MINIMIZE_COMPLETE: 'sectionTextMinimizeComplete',
 		MAXIMIZE_SECTION_TEXT: 'maximizeSectionText',
 		MINIMIZE_SECTION_TEXT: 'minimizeSectionText',
-		ALLOW_MORE_CONTENT: 'allowMoreContent'
 	},
 
 	SECTIONS: {
@@ -172,12 +171,6 @@ const dispatcher = {
 	minimizeSectionText: function () {
 
 		this.emit( this.EVENTS.MINIMIZE_SECTION_TEXT );
-
-	},
-
-	allowMoreContent: function ( allow, section ) {
-
-		this.emit( this.EVENTS.ALLOW_MORE_CONTENT );
 
 	},
 

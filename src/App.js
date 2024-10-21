@@ -101,10 +101,6 @@ export default function (...initArgs) {
 					dispatcher.EVENTS.MINIMIZE_SECTION_TEXT,
 					onMinimizeSectionText
 				);
-				dispatcher.addListener(
-					dispatcher.EVENTS.ALLOW_MORE_CONTENT,
-					onAllowMoreContent
-				);
 
 				window.addEventListener("hashchange", onHashChange);
 
@@ -583,10 +579,6 @@ export default function (...initArgs) {
 
 	function onMinimizeSectionText() {
 		scroller.minimizeSectionText();
-	}
-
-	function onAllowMoreContent(allow, section) {
-		scroller.allowMoreContent(allow, section);
 	}
 
 	function onPopupChange(section, emotionState, desc, secondaryData) {

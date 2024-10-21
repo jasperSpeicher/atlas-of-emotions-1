@@ -74,20 +74,22 @@ body {
 		}
 	}
 
-	&.more-visible {
-		.original-content,
-		#timeline-fp-section .section-graphics,
-		.section-text {
-			& > * {
-				filter: blur(10px);
+	&[class*="fp-viewing-introduction"] {
+		&.more-visible {
+			.original-content,
+			#timeline-fp-section .section-graphics,
+			.section-text {
+				& > * {
+					filter: blur(10px);
+				}
 			}
-		}
-		.original-content {
-			z-index: auto;
-		}
-		.emotion-nav {
-			opacity: 0;
-			pointer-events: none;
+			.original-content {
+				z-index: auto;
+			}
+			.emotion-nav {
+				opacity: 0;
+				pointer-events: none;
+			}
 		}
 	}
 

@@ -1013,7 +1013,6 @@ export default class EpisodeAddAwareness extends Episode {
 					this.awarenessStage = "refractory";
 				} else if (this.awarenessStage == "refractory") {
 					this.awarenessStage = "blocks";
-					timeline.allowMoreContent();
 				}
 
 				timeline.advanceAwarenessStage(this.awarenessStage);

@@ -73,10 +73,6 @@ const timeline = {
 		this.emotionNavVisible = state;
 	},
 
-	allowMoreContent() {
-		dispatcher.allowMoreContent(true, dispatcher.SECTIONS.TIMELINE);
-	},
-
 	//work around safari missing children property in svg nodes
 	getChildren: function (element) {
 		let svgChildren = element.children || element.childNodes;

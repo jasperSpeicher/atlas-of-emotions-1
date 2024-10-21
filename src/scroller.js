@@ -69,13 +69,6 @@ const scroller = {
 		);
 	},
 
-	hideAllMoreContent: function () {
-		//let $sections = $( '.section' );
-		this.$sections.removeClass("more-visible");
-		$("body").removeClass("more-visible");
-		$.fn.fullpage.setAllowScrolling(false);
-	},
-
 	toggleEmotionNav: function (visible) {
 		$(".emotion-nav").toggleClass("visible", visible);
 	},
@@ -154,43 +147,6 @@ const scroller = {
 		return distanceFromBottom == 0 && e.deltaY < 0;
 	},
 
-	getBounceCallback: function (overscrollFunction) {
-		let scrollingEnded = true;
-		let pulseActive = false;
-		let lastOverscrollEventTime = 0;
-		let growTime = 0.1;
-		let returnTime = 0.5;
-
-		return function (e) {
-			let now = new Date().getTime();
-			let overScroll = overscrollFunction(e);
-
-			if (overScroll) {
-				let timeElapsed = now - lastOverscrollEventTime;
-				scrollingEnded = timeElapsed > 500;
-
-				if (!pulseActive && scrollingEnded) {
-					pulseActive = true;
-					gsap.to($(".more-content>.close-button"), {
-						duration: growTime,
-						scale: 1.5,
-						onComplete: function () {
-							gsap.to($(".more-content>.close-button"), {
-								duration: returnTime,
-								scale: 1,
-							});
-						},
-					});
-					gsap.delayedCall(growTime + returnTime, function () {
-						pulseActive = false;
-					});
-				}
-
-				lastOverscrollEventTime = now;
-			}
-		};
-	},
-
 	getLoadedSection: function (anchorLink) {
 		return $("#" + anchorLink + "-section");
 	},
@@ -218,9 +174,6 @@ const scroller = {
 		//if ( this.hasEmotionState( anchorLink ) && emotion ) {
 		//    this.selectedEmotionState = emotion;
 		//}
-
-		//hide the more-content areas in all sections
-		this.hideAllMoreContent();
 
 		//if the hash is not correct for the next section, change the hash
 		let nextAtlasSection = hash[0];
@@ -362,94 +315,6 @@ const scroller = {
 		}
 	},
 
-	allowMoreContent: function (allow, section) {
-		let $sectionElement = $(this.getFullpageSectionId(section));
-		let $link = $sectionElement.find(".more-link");
-		$link.toggleClass("allowed", allow);
-	},
-
-	initMoreContentLinks: function () {
-		let _self = this;
-		// show additional content in the sections
-		$(".more-link, .more-content .close-button").click(function (e) {
-			e.preventDefault();
-			let $section = $(this).parents(".section");
-			$section.toggleClass("more-visible");
-			$("body").toggleClass("more-visible");
-			let moreVisible = $section.hasClass("more-visible");
-			$.fn.fullpage.setAllowScrolling(false);
-			//TODO properly hide emotion nav and bring back if section has it
-			//_self.toggleEmotionNav( !moreVisible );
-		});
-		// pulse close button on 'more' when scrolled past end of more content
-		if (!this.screenIsSmall) {
-			let $moreContentScrollers = $(".more-content__scroller");
-			$moreContentScrollers.mousewheel(
-				this.getBounceCallback(this.bottomOverscroll)
-			);
-			$moreContentScrollers.mousewheel(
-				this.getBounceCallback(this.topOverscroll)
-			);
-		}
-
-		let moreInfoElements = {};
-		let morePageNames = [
-			"annex-episode-timeline",
-			"annex-partially-charted",
-			"annex-traits",
-			"annex-moods",
-			"annex-signals",
-			"annex-psychopathologies",
-			"annex-scientific-basis",
-			"annex-intrinsic-remedial",
-			"annex-impediment-antidote",
-		];
-
-		morePageNames.forEach((item) => {
-			moreInfoElements[item] = moreInfo
-				.getPageElement(item)
-				.querySelector(".wrapper")
-				.cloneNode(true);
-			let title = moreInfo.getPageTitle(item);
-			$(moreInfoElements[item]).prepend($(`<h2>${title}</h2>`));
-		});
-
-		let $timelineMoreContent = $("#timeline-fp-section").find(
-			".more-content__scroller"
-		);
-		let $experienceMoreContent = $("#experience-fp-section").find(
-			".more-content__scroller"
-		);
-		let $responseMoreContent = $("#response-fp-section").find(
-			".more-content__scroller"
-		);
-
-		$timelineMoreContent.prepend(
-			moreInfoElements["annex-episode-timeline"]
-		);
-		$experienceMoreContent.prepend(moreInfoElements["annex-signals"]);
-		$experienceMoreContent.prepend(
-			moreInfoElements["annex-partially-charted"]
-		);
-		$experienceMoreContent.prepend(
-			moreInfoElements["annex-scientific-basis"]
-		);
-		$responseMoreContent.prepend(
-			moreInfoElements["annex-intrinsic-remedial"]
-		);
-		$responseMoreContent.prepend(
-			moreInfoElements["annex-psychopathologies"]
-		);
-		$responseMoreContent.prepend(moreInfoElements["annex-traits"]);
-		$responseMoreContent.prepend(moreInfoElements["annex-moods"]);
-		$("#strategies-fp-section")
-			.find(".more-content__scroller")
-			.prepend(moreInfoElements["annex-impediment-antidote"]);
-
-		this.allowMoreContent(true, "actions");
-		this.allowMoreContent(true, "continents");
-	},
-
 	toggleAboutSection: function (visibility) {
 		let $hero = $(".introduction-hero");
 		let body = $("body");
@@ -543,7 +408,7 @@ const scroller = {
 			})
 			.get();
 
-		let normalScrollElements = ".more-content, .section-text";
+		let normalScrollElements = ".section-text";
 		if (this.screenIsSmall) {
 			normalScrollElements += ", .episode-parent";
 		}
@@ -874,7 +739,6 @@ const scroller = {
 		//this.hashChange();
 
 		this.initAboutLink();
-		this.initMoreContentLinks();
 		this.initOptInModal();
 		this.showApp();
 	},
