@@ -53,8 +53,9 @@ body {
 		}
 	}
 
-	&[class*="fp-viewing-experience"],
-	&[class*="fp-viewing-response"] {
+	&[class*="fp-viewing-experience-fp"],
+	&[class*="fp-viewing-learn_more-fp"],
+	&[class*="fp-viewing-response-fp"] {
 		// allows interaction by default, js passes swipes to scroller
 		// other sections drop this back behind the scroller content
 		.original-content {
@@ -1072,7 +1073,7 @@ svg {
 	}
 }
 
-#strategies-fp-section {
+#strategies-fp-section, #learn_more {
 	.scroll-parent {
 		overflow: scroll;
 	}

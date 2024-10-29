@@ -35,9 +35,6 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 	}
 
 	function getStr(key, failQuietly, debug) {
-		if (debug) {
-			debugger;
-		}
 		// Strings not yet loaded; fail silently
 		if (!strings) {
 			return "";
@@ -57,7 +54,6 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 				: source === "strategiesData"
 				? strategiesData
 				: null;
-
 		if (!source) {
 			throw new Error(`Invalid source specified at key '${key}'`);
 		}
@@ -87,6 +83,9 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 			source = emotionsData;
 		} else if (source === secondaryData || source === strategiesData) {
 			parsedKey = _.get(source, path.join("."));
+			if (!parsedKey) { 
+				return source;
+			}
 		}
 
 		// this weirdness is an artifact of implementing localization long after the content spreadsheets and parsers were all set up.

@@ -1,6 +1,5 @@
 import { gsap } from "gsap";
 import dispatcher from "./dispatcher";
-import moreInfo from "./moreInfo.js";
 import timeline from "./timeline/timeline";
 import sassVars from "../scss/variables.json";
 import d3 from "d3";
@@ -398,7 +397,6 @@ const scroller = {
 		let touchSensitivity = 15;
 
 		this.$sections = $(".section");
-		console.log("initFullpageSections", this.$sections);
 
 		this.sectionTextAnimators = {};
 
@@ -435,48 +433,6 @@ const scroller = {
 		$.fn.fullpage.setAllowScrolling(false);
 
 		let $originalContent = $(".original-content");
-
-		let addDesktopTabletTouchEffects = ($elements) => {
-			let swipeStart = 0;
-			let swipeComplete = false;
-			let distance = 0;
-			let height = 0;
-			let thresh = 0;
-
-			let returnTranslation = (element) => {
-				gsap.to(element, 0.7, { y: 0 });
-			};
-			$elements.on("touchstart", (e) => {
-				height = $(".section.active").height();
-				thresh = 0.01 * touchSensitivity * height;
-
-				swipeStart = e.originalEvent.touches[0].pageY;
-
-				swipeComplete = false;
-			});
-			$elements.on("touchend", (e) => {
-				let $sectionText = $(".section.active .section-text");
-				returnTranslation($sectionText[0]);
-			});
-			$elements.on("touchmove", (e) => {
-				distance = e.originalEvent.touches[0].pageY - swipeStart;
-				if (!swipeComplete) {
-					let $sectionText = $(".section.active .section-text");
-					gsap.set($sectionText[0], { y: distance });
-					if (Math.abs(distance) > thresh) {
-						returnTranslation($sectionText[0]);
-						if (e.currentTarget == $originalContent[0]) {
-							if (distance > 0) {
-								$.fn.fullpage.moveSectionUp();
-							} else {
-								$.fn.fullpage.moveSectionDown();
-							}
-						}
-						swipeComplete = true;
-					}
-				}
-			});
-		};
 
 		let addMobileTextTouchEffects = ($element) => {
 			let swipeStart = { x: 0, y: 0 },
@@ -679,9 +635,6 @@ const scroller = {
 			});
 			addMobileGraphicsTouchEffects();
 			addMobileTimelineGraphicsTouchEffects();
-		} else {
-			addDesktopTabletTouchEffects($originalContent);
-			addDesktopTabletTouchEffects(this.$sections);
 		}
 	},
 

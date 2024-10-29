@@ -8,15 +8,12 @@ import sassVars from '../../scss/variables.json';
 export default {
 
 	isInited: false,
-	currentEmotion: null,
 	wrapper: null,
 
 	init: function (containerNode, data) {
 		this.data = data.about;
 
-		this.sectionContainer = containerNode;
-
-		this.wrapper = this.sectionContainer.querySelector('.wrapper');
+		this.wrapper = containerNode;
 
 		this.setContent();
 		this.isInited = true;
@@ -53,41 +50,5 @@ export default {
 		table.appendChild(subRow);
 		this.wrapper.appendChild(table);
 	},
-
-	setEmotion: function (emotion) {
-
-		return new Promise((resolve, reject) => {
-
-			// TODO: resolve after any intro animations
-			// setTimeout(() => {
-			resolve();
-			// }, sassVars.states.backgrounded.duration.in);
-
-		});
-
-	},
-
-	open: function () {
-		this.sectionContainer.classList.add('active');
-
-		if (this.wrapper) {
-			window.scrollTo(0, 0);
-		}
-		// any section-wide opening animations not specific to a particular page go here.
-		// probably won't be anything here for the more info section.
-
-	},
-
-	close: function () {
-		this.sectionContainer.classList.remove('active');
-		return new Promise((resolve, reject) => {
-
-			// any closing animation goes here
-
-			resolve();
-
-		});
-
-	}
 
 };

@@ -606,16 +606,9 @@
                     <h2 class="section-heading" data-template="metadata.navigation">{{ strategies.heading }}</h2>
                     <div class="section-text__scroller">
                         <div>
-                            <ul data-template="strategiesData.toc" id="strategies-toc">
-                                {{# for(let section of sections) { if(Array.isArray(section)) { }} 
-                                    <ul>
-                                        {{# for(let subSection of section) { }}
-                                        <li data-scroll-to="#{{ subSection.id }}">{{ subSection.title }}</li>
-                                        {{# } }}
-                                    </ul>
-                                    {{# } else { }}
-                                        <li data-scroll-to="#{{ section.id }}">{{ section.title }}</li>
-                                    {{# } }}
+                            <ul data-template="secondaryData" id="learn_more-toc">
+                                {{# for(let key in annex) { }}
+                                    <li data-scroll-to="#{{ key }}">{{ annex[key].title }}</li>
                                 {{# } }}
                             </ul>
                         </div>
@@ -653,7 +646,7 @@
                     <li><a href="#actions/" id="response-menu-link">{{ response.menu }}</a>
                     </li>
                     <li><a href="#strategies/" id="strategies-menu-link">{{ strategies.menu }}</a></li>
-                    <li><a href="#learn-more/" id="learn-more-menu-link">{{ learn_more.menu }}</a></li>
+                    <li><a href="#learn_more/" id="learn-more-menu-link">{{ learn_more.menu }}</a></li>
                     <li>
                         <a id="opt-in-link" class="opt-in-button">
                             <img src="img/mail.svg">

@@ -2,7 +2,7 @@ import _ from "lodash";
 import scroller from "./scroller.js";
 import timeline from "./timeline/timeline.js";
 import dispatcher from "./dispatcher.js";
-import moreInfo from "./moreInfo.js";
+import learnMore from "./learnMore.js";
 import ContinentsSection from "./continents";
 import states from "./states.js";
 import actions from "./actions.js";
@@ -139,10 +139,13 @@ export default function (...initArgs) {
 		templateElements.forEach(function (element) {
 			let isStrategies =
 				element.dataset.template.match(/(strategiesData)/) != null;
-			let isDerived = element.dataset.template.match(/(derived)/) != null,
-				prefix = isDerived || isStrategies ? "" : "emotionsData.",
-				data = appStrings().getStr(prefix + element.dataset.template),
-				compiled = _.template(element.innerHTML);
+			let isSecondary =
+				element.dataset.template.match(/(secondaryData)/) != null;
+			let isDerived = element.dataset.template.match(/(derived)/) != null;
+			let prefix =
+				isDerived || isStrategies || isSecondary ? "" : "emotionsData.";
+			let data = appStrings().getStr(prefix + element.dataset.template);
+			let compiled = _.template(element.innerHTML);
 			element.innerHTML = compiled(data);
 		});
 
@@ -183,10 +186,7 @@ export default function (...initArgs) {
 		sections.triggers = timeline;
 		sections.calm = calm;
 		sections.strategies = strategies;
-
-		// use this without a container, so the info
-		// can be spread out across sections
-		moreInfo.init(null, screenIsSmall);
+		sections.learn_more = learnMore;
 	}
 
 	function initLanguageSelector() {
@@ -240,7 +240,7 @@ export default function (...initArgs) {
 		);
 		//updateArrowLabels();
 
-		promise.then(() => {
+		promise?.then(() => {
 			isNavigating = false;
 			//updateArrowLabels();
 		});
@@ -263,13 +263,16 @@ export default function (...initArgs) {
 			if (section.backgroundSections) {
 				section.backgroundSections.forEach((backgroundSection) => {
 					if (!backgroundSection.isInited) {
-						initSection(backgroundSection);
+						const sectionName = Object.entries(sections).find(
+							([_, section]) => section === backgroundSection
+						)[0];
+						initSection(sectionName);
 					}
 				});
 			}
 
 			// init current section
-			initSection(section);
+			initSection(sectionName);
 		}
 
 		let backgroundSections = section.backgroundSections || [];
@@ -445,15 +448,8 @@ export default function (...initArgs) {
 		currentEmotion = emotion;
 	}
 
-	function initSection(section) {
-		let sectionName;
-		for (let key in sections) {
-			if (sections[key] === section) {
-				sectionName = key;
-				break;
-			}
-		}
-
+	function initSection(sectionName) {
+		const section = sections[sectionName];
 		if (containers[sectionName]) {
 			// turn on display so width/height can be calculated
 			let currentDisplay = containers[sectionName].style.display;

@@ -70,7 +70,7 @@ export default {
 	randomLabelPositions: {},
 
 
-	init: function ( containerNode, screenIsSmall ) {
+	init: function (containerNode, screenIsSmall) {
 
 		this.sectionHitArea = containerNode;
 
