@@ -439,6 +439,18 @@
 	bottom: 0;
 	width: 100%;
 	padding: 90px 100px;
+	#scientific-basis {
+		tr {
+			border-bottom: none;
+		}
+		td:first-of-type {
+			padding-left: 0;
+		}
+	}
+}
+
+#learn_more,
+#strategies-fp-section {
 	.wrapper {
 		margin-bottom: 4rem;
 
@@ -467,14 +479,6 @@
 			tr {
 				border-bottom: 1px solid #000;
 			}
-		}
-	}
-	#scientific-basis {
-		tr {
-			border-bottom: none;
-		}
-		td:first-of-type {
-			padding-left: 0;
 		}
 	}
 }

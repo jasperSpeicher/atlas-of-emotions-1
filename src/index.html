@@ -573,6 +573,8 @@
                             {{# } }}
                             {{# } }}
                         </div>
+                        <div id="strategies-impediment-container">
+                        </div>
                     </div>
                 </div>
                 <div class="section-text">
@@ -580,15 +582,15 @@
                     <div class="section-text__scroller">
                         <div>
                             <ul data-template="strategiesData.toc" id="strategies-toc">
-                                {{# for(let section of sections) { if(Array.isArray(section)) { }} 
-                                    <ul>
-                                        {{# for(let subSection of section) { }}
-                                        <li data-scroll-to="#{{ subSection.id }}">{{ subSection.title }}</li>
-                                        {{# } }}
-                                    </ul>
-                                    {{# } else { }}
-                                        <li data-scroll-to="#{{ section.id }}">{{ section.title }}</li>
+                                {{# for(let section of sections) { if(Array.isArray(section)) { }}
+                                <ul>
+                                    {{# for(let subSection of section) { }}
+                                    <li data-scroll-to="#{{ subSection.id }}">{{ subSection.title }}</li>
                                     {{# } }}
+                                </ul>
+                                {{# } else { }}
+                                <li data-scroll-to="#{{ section.id }}">{{ section.title }}</li>
+                                {{# } }}
                                 {{# } }}
                             </ul>
                             <a class="more-link more-link__scrollable" data-template="metadata.site">
@@ -608,7 +610,7 @@
                         <div>
                             <ul data-template="secondaryData" id="learn_more-toc">
                                 {{# for(let key in annex) { }}
-                                    <li data-scroll-to="#{{ key }}">{{ annex[key].title }}</li>
+                                <li data-scroll-to="#{{ key }}">{{ annex[key].title }}</li>
                                 {{# } }}
                             </ul>
                         </div>
