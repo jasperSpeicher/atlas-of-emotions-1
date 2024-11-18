@@ -425,12 +425,11 @@ const scroller = {
 			slidesNavPosition: "top",
 			onLeave: this.onSectionLeave.bind(this),
 			afterLoad: this.afterSectionLoad.bind(this),
-			touchSensitivity: touchSensitivity,
 			normalScrollElementTouchThreshold: 15,
 			normalScrollElements: normalScrollElements,
 		});
 
-		$.fn.fullpage.setAllowScrolling(false);
+		$.fn.fullpage.setAllowScrolling(false, "all");
 
 		let $originalContent = $(".original-content");
 
