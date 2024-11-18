@@ -104,11 +104,27 @@ const scroller = {
 		}
 	},
 
-	hashChange: function (section, emotion) {
-		//let hash = document.location.hash.replace( /^#/, '' ).split( dispatcher.HASH_DELIMITER );
-		//let section = hash[ 0 ];
-		//let emotion = hash[ 1 ];// != '' ? hash[ 1 ] : dispatcher.DEFAULT_EMOTION;
+	currentSection: null,
 
+	moveTo: function (section, emotion) {
+		const nextIndex =
+			Object.keys(this.FULLPAGE_TO_ATLAS_SECTIONS).indexOf(section) + 1;
+		if (this.currentSection) {
+			this.onSectionLeave(undefined, nextIndex);
+		}
+		this.getLoadedSection(this.currentSection).removeClass("active");
+		this.getLoadedSection(section).addClass("active");
+		if (section !== this.currentSection) {
+			$(".page-body").css(
+				"transform",
+				`translateY(${-(nextIndex - 1) * 100}vh)`
+			);
+			this.afterSectionLoad(section);
+			this.currentSection = section;
+		}
+	},
+
+	hashChange: function (section, emotion) {
 		if (section && section.match(/(states)|(actions)|(triggers)/) != null) {
 			let state =
 				section.match(/(triggers)/) != null
@@ -120,8 +136,10 @@ const scroller = {
 		}
 
 		//update scroller
-		$.fn.fullpage.moveTo(
-			this.ATLAS_TO_FULLPAGE_SECTIONS[section],
+		this.moveTo(
+			section
+				? this.ATLAS_TO_FULLPAGE_SECTIONS[section]
+				: "introduction-fp",
 			emotion ? emotion : null
 		);
 
@@ -151,8 +169,8 @@ const scroller = {
 	},
 
 	onSectionLeave: function (index, nextIndex, direction) {
-		let anchorLink = this.anchors[nextIndex - 1];
-		let loadedSection = this.getLoadedSection(anchorLink);
+		let nextAnchorLink = this.anchors[nextIndex - 1]; // index is 1 based?
+		let loadedSection = this.getLoadedSection(nextAnchorLink);
 		let sectionId = loadedSection[0].id;
 
 		if (this.screenIsSmall) {
@@ -177,10 +195,11 @@ const scroller = {
 		//if the hash is not correct for the next section, change the hash
 		let nextAtlasSection = hash[0];
 		if (
-			this.ATLAS_TO_FULLPAGE_SECTIONS[currentAtlasSection] != anchorLink
+			this.ATLAS_TO_FULLPAGE_SECTIONS[currentAtlasSection] !=
+			nextAnchorLink
 		) {
 			//if section has emotion state, set it so the original content can pick it up
-			nextAtlasSection = this.FULLPAGE_TO_ATLAS_SECTIONS[anchorLink];
+			nextAtlasSection = this.FULLPAGE_TO_ATLAS_SECTIONS[nextAnchorLink];
 		}
 
 		//TODO replace with navigation call, integrate with app.js properly
@@ -194,9 +213,8 @@ const scroller = {
 		}
 	},
 
-	afterSectionLoad: function (anchorLink, index) {
+	afterSectionLoad: function (anchorLink) {
 		let _self = this; //callback must be bound to the scroller class
-
 		let loadedSection = this.getLoadedSection(anchorLink);
 		let sectionId = loadedSection[0].id;
 
@@ -210,7 +228,7 @@ const scroller = {
 			let $intro = $("#introduction-fp-section");
 			this.introTimeline = new gsap.timeline();
 
-			$.fn.fullpage.moveTo("introduction", 0);
+			this.moveTo("introduction", 0);
 
 			this.introTimeline
 				.add("start")
@@ -258,7 +276,6 @@ const scroller = {
 				_self.initSlideInterval();
 			});
 		}
-
 		//using anchorLink
 		if (anchorLink == "introduction") {
 			this.$hiddenForIntro.removeClass("visible");
@@ -411,25 +428,27 @@ const scroller = {
 			normalScrollElements += ", .episode-parent";
 		}
 
-		let $pageBody = $(".page-body");
+		// let $pageBody = $(".page-body");
 
-		$pageBody.fullpage({
-			anchors: this.anchors,
-			lockAnchors: true,
-			menu: "#menu-list",
-			autoScrolling: true,
-			offsetSections: false,
-			verticalCentered: true,
-			controlArrows: false,
-			slidesNavigation: true,
-			slidesNavPosition: "top",
-			onLeave: this.onSectionLeave.bind(this),
-			afterLoad: this.afterSectionLoad.bind(this),
-			normalScrollElementTouchThreshold: 15,
-			normalScrollElements: normalScrollElements,
-		});
+		// $pageBody.fullpage({
+		// 	anchors: this.anchors,
+		// 	lockAnchors: true,
+		// 	menu: "#menu-list",
+		// 	autoScrolling: true,
+		// 	scrollHorizontally: false,
+		// 	scrollVertically: false,
+		// 	offsetSections: false,
+		// 	verticalCentered: true,
+		// 	controlArrows: false,
+		// 	slidesNavigation: true,
+		// 	slidesNavPosition: "top",
+		// 	onLeave: this.onSectionLeave.bind(this),
+		// 	afterLoad: this.afterSectionLoad.bind(this),
+		// 	normalScrollElementTouchThreshold: 15,
+		// 	normalScrollElements: normalScrollElements,
+		// });
 
-		$.fn.fullpage.setAllowScrolling(false, "all");
+		// $.fn.fullpage.setAllowScrolling(false, "all");
 
 		let $originalContent = $(".original-content");
 
@@ -663,9 +682,6 @@ const scroller = {
 			this.$topNavLinks.click(() => {
 				this.$topNav.removeClass("open");
 			});
-			//this.$topNav.find( 'li h4' ).click( ()=> {
-			//	this.$topNav.removeClass( 'open' )
-			//} );
 			$(".menu-toggle").click(() => {
 				this.$topNav.toggleClass("open");
 			});
@@ -685,10 +701,6 @@ const scroller = {
 		this.initEmotionNav();
 		this.initFullpageSections();
 		this.initImageFades();
-
-		// respond to hash changes, call hashChange on load to update fullpage section
-		//window.addEventListener( 'hashchange', this.hashChange.bind( this ) );
-		//this.hashChange();
 
 		this.initAboutLink();
 		this.initOptInModal();

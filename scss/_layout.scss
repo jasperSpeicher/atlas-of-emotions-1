@@ -1052,7 +1052,8 @@ svg {
 	}
 }
 
-#strategies-toc, #learn_more-toc {
+#strategies-toc,
+#learn_more-toc {
 	padding: 0;
 	& > li {
 		font-weight: 400;
@@ -1073,7 +1074,8 @@ svg {
 	}
 }
 
-#strategies-fp-section, #learn_more {
+#strategies-fp-section,
+#learn_more {
 	.scroll-parent {
 		overflow: scroll;
 	}
@@ -1656,4 +1658,15 @@ h5 {
 h6 {
 	font-size: 0.333333em;
 	font-weight: normal;
+}
+
+// get fullpage to work without the dep
+
+.page-body {
+	width: 100vw;
+	height: 100vh;
+	.section {
+		width: 100vw;
+		height: 100vh;
+	}
 }
