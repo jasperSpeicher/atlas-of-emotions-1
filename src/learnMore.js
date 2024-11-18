@@ -19,6 +19,7 @@ import AnnexScientificBasis from "./more-pages/annex-scientific-basis.js";
 import AnnexSignals from "./more-pages/annex-signals.js";
 import AnnexTraits from "./more-pages/annex-traits.js";
 import AnnexMoods from "./more-pages/annex-moods.js";
+import { initScrollLinks } from "./helpers.js";
 
 export default {
 	isInited: false,
@@ -38,7 +39,6 @@ export default {
 		this.initializePages();
 
 		this.isInited = true;
-		this.initializeSidebar()
 	},
 
 	// Emotion in this context is the more-info page
@@ -59,39 +59,49 @@ export default {
 
 	initializePages: function () {
 		const subSections = [
-			{ component: AnnexEpisodeTimeline, key: "annex-triggers-timeline" },
+			{ component: AnnexScientificBasis, page: "annex-scientific-basis" },
 			{
-				component: AnnexPartiallyCharted,
-				key: "annex-partially-charted",
-			},
-			{ component: AnnexTraits, key: "annex-personality-trait" },
-			{ component: AnnexMoods, key: "annex-moods" },
-			{ component: AnnexSignals, key: "annex-signals" },
-			{
-				component: AnnexPsychopathologies,
-				key: "annex-psychopathology",
-			},
-			{ component: AnnexScientificBasis, key: "annex-scientific-basis" },
-			{
-				component: AnnexImpedimentAntidote,
-				key: "annex-impediment-antidote",
+				component: AnnexEpisodeTimeline,
+				page: "annex-triggers-timeline",
 			},
 			{
 				component: AnnexIntrinsicRemedial,
-				key: "annex-intrinsic-or-intentional",
+				page: "annex-intrinsic-or-intentional",
 			},
+			{
+				component: AnnexPartiallyCharted,
+				page: "annex-partially-charted",
+			},
+			{ component: AnnexTraits, page: "annex-personality-trait" },
+			{ component: AnnexMoods, page: "annex-moods" },
+			{
+				component: AnnexPsychopathologies,
+				page: "annex-psychopathology",
+			},
+			{ component: AnnexSignals, page: "annex-signals" },
+			{
+				component: AnnexImpedimentAntidote,
+				page: "annex-impediment-antidote",
+			},
+
 		];
 		for (let subSection of subSections) {
 			const subSectionWrapper = document.createElement("div");
 			$(subSectionWrapper).addClass("wrapper");
-			subSection.component.init(
-				subSectionWrapper,
-				appStrings().getSecondaryDataBlock(
-					this.getKeyByPage(subSection.key)
-				)
-			);
+			const subSectionKey = this.getKeyByPage(subSection.page);
+			const subSectionAnnexKey = subSectionKey.replace("annex-", "");
+			subSectionWrapper.id = subSectionAnnexKey;
+			const subSectionData =
+				appStrings().getSecondaryDataBlock(subSectionKey);
+			subSection.component.init(subSectionWrapper, subSectionData);
+			const titleElement = document.createElement("h1");
+			const annexData = subSectionData.annex[subSectionAnnexKey];
+			titleElement.innerHTML = annexData.title;
+			subSectionWrapper.prepend(titleElement);
 			this.sectionContainer.appendChild(subSectionWrapper);
 		}
+		const scrollParent = $("#learn_more");
+		initScrollLinks(scrollParent);
 	},
 
 	/**
