@@ -120,6 +120,7 @@ const scroller = {
 				`translateY(${-(nextIndex - 1) * 100}vh)`
 			);
 			this.currentSection = section;
+			$('body').addClass(`viewing-${section}`);
 		}
 	},
 

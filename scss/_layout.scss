@@ -53,16 +53,16 @@ body {
 		}
 	}
 
-	&[class*="fp-viewing-experience-fp"],
-	&[class*="fp-viewing-learn_more-fp"],
-	&[class*="fp-viewing-response-fp"] {
+	&[class*="viewing-experience-fp"],
+	&[class*="viewing-learn_more-fp"],
+	&[class*="viewing-response-fp"] {
 		// allows interaction by default, js passes swipes to scroller
 		// other sections drop this back behind the scroller content
 		.original-content {
 			z-index: 100;
 		}
 	}
-	&[class*="fp-viewing-introduction"] {
+	&[class*="viewing-introduction-fp"] {
 		//mute the calm graphics in the intro
 		.original-content {
 			opacity: 0.65;
@@ -75,7 +75,7 @@ body {
 		}
 	}
 
-	&[class*="fp-viewing-introduction"] {
+	&[class*="viewing-introduction-fp"] {
 		&.more-visible {
 			.original-content,
 			#timeline-fp-section .section-graphics,
@@ -94,7 +94,7 @@ body {
 		}
 	}
 
-	&[class*="fp-viewing-timeline"] {
+	&[class*="viewing-timeline-fp"] {
 		background-color: #454545;
 		.original-content {
 			opacity: 0;
@@ -245,7 +245,7 @@ svg {
 	pointer-events: none;
 }
 
-[class*="fp-viewing-introduction"] {
+[class*="viewing-introduction-fp"] {
 	.logo {
 		background-color: transparent;
 	}
@@ -835,7 +835,7 @@ svg {
 	}
 }
 
-[class*="fp-viewing-timeline"] {
+[class*="viewing-timeline-fp"] {
 	.section-text__scroller {
 		margin: 0 -10px;
 		// fix button shadow
@@ -1570,19 +1570,19 @@ svg {
 	.logo {
 		display: none;
 	}
-	&[class*="fp-viewing-introduction"] {
+	&[class*="viewing-introduction-fp"] {
 		.logo {
 			display: block;
 		}
 	}
 }
 
-body[class*="fp-viewing-timeline"].small-screen .emotion-nav ul li.all {
+body[class*="viewing-timeline-fp"].small-screen .emotion-nav ul li.all {
 	display: none;
 }
 
 .small-screen .emotion-nav,
-body[class*="fp-viewing-timeline"].small-screen .emotion-nav {
+body[class*="viewing-timeline-fp"].small-screen .emotion-nav {
 	bottom: initial;
 	top: $mobile-section-text-top;
 	left: 0;
