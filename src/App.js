@@ -305,6 +305,8 @@ export default function (...initArgs) {
 				backgroundSection.setEmotion(currentEmotion, previousEmotion);
 			});
 
+			currentSection = section;
+
 			section.open({
 				sectionName: sectionName,
 				inBackground: false,
@@ -312,8 +314,6 @@ export default function (...initArgs) {
 			});
 
 			setSectionEmotion(section, previousEmotion, previousMorePage);
-
-			currentSection = section;
 
 			scroller.afterSectionLoad(fullPageSection);
 		} else {
@@ -620,7 +620,17 @@ export default function (...initArgs) {
 		body = body ? body.replace(/LHAMO/gi, cappedEmotion) : null;
 
 		// update scroller content
-		let activeScrollerSectionText = $(".section.active .section-text")[0];
+		const currentSectionEntry = Object.entries(sections).find(
+			([_, section]) => section === currentSection
+		);
+		const currentSectionName =
+			currentSectionEntry && currentSectionEntry[0];
+		const fpSection =
+			currentSectionName &&
+			scroller.ATLAS_TO_FULLPAGE_SECTIONS[currentSectionName];
+		let activeScrollerSectionText =
+			fpSection && $(`#${fpSection}-section .section-text`)[0];
+		console.log({ currentSection });
 		if (activeScrollerSectionText) {
 			let sectionHeadlineElement =
 				activeScrollerSectionText.querySelector(".headline");
