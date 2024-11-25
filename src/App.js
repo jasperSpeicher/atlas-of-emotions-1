@@ -251,6 +251,9 @@ export default function (...initArgs) {
 			previousSection = currentSection,
 			previousContainer;
 
+		const fullPageSection =
+			scroller.ATLAS_TO_FULLPAGE_SECTIONS[sectionName];
+
 		for (let key in sections) {
 			if (sections[key] === previousSection) {
 				previousContainer = containers[key];
@@ -309,6 +312,10 @@ export default function (...initArgs) {
 			});
 
 			setSectionEmotion(section, previousEmotion, previousMorePage);
+
+			currentSection = section;
+
+			scroller.afterSectionLoad(fullPageSection);
 		} else {
 			// some section is already open; perform transition
 
@@ -395,6 +402,10 @@ export default function (...initArgs) {
 				}
 
 				Promise.all(promises).then((values) => {
+					setTimeout(() => {
+						scroller.afterSectionLoad(fullPageSection);
+					}, previousSection.closeDelay || 0);
+
 					if (!previousSectionBackgrounded) {
 						// hide the previous section's container if not backgrounded,
 						// after a delay if specified
@@ -437,9 +448,8 @@ export default function (...initArgs) {
 					);
 				});
 			}
+			currentSection = section;
 		}
-
-		currentSection = section;
 	}
 
 	function setEmotion(emotion) {

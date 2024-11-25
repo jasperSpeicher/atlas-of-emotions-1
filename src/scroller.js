@@ -119,7 +119,6 @@ const scroller = {
 				"transform",
 				`translateY(${-(nextIndex - 1) * 100}vh)`
 			);
-			this.afterSectionLoad(section);
 			this.currentSection = section;
 		}
 	},
@@ -149,19 +148,6 @@ const scroller = {
 			let emoAttr = element.getAttribute("data-emotion");
 			d3.select(element).classed("active", emoAttr == emotion);
 		}
-	},
-
-	topOverscroll: function (e) {
-		let distanceFromTop = e.currentTarget.scrollTop;
-		return distanceFromTop == 0 && e.deltaY > 0;
-	},
-
-	bottomOverscroll: function (e) {
-		let distanceFromBottom =
-			e.currentTarget.scrollHeight -
-			e.currentTarget.scrollTop -
-			e.currentTarget.offsetHeight;
-		return distanceFromBottom == 0 && e.deltaY < 0;
 	},
 
 	getLoadedSection: function (anchorLink) {
@@ -411,8 +397,6 @@ const scroller = {
 	},
 
 	initFullpageSections: function () {
-		let touchSensitivity = 15;
-
 		this.$sections = $(".section");
 
 		this.sectionTextAnimators = {};
