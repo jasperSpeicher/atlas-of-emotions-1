@@ -580,22 +580,22 @@
                 <div class="section-text">
                     <h2 class="section-heading" data-template="metadata.navigation">{{ strategies.heading }}</h2>
                     <div class="section-text__scroller">
-                        <div>
-                            <ul data-template="strategiesData.toc" id="strategies-toc">
+                        <div id="strategies-toc">
+                            <ul data-template="strategiesData.toc">
                                 {{# for(let section of sections) { if(Array.isArray(section)) { }}
                                 <ul>
                                     {{# for(let subSection of section) { }}
-                                    <li data-scroll-to="#{{ subSection.id }}">{{ subSection.title }}</li>
+                                    <li><a href="#strategies/{{ subSection.id }}">{{ subSection.title }}</a></li>
                                     {{# } }}
                                 </ul>
                                 {{# } else { }}
-                                <li data-scroll-to="#{{ section.id }}">{{ section.title }}</li>
+                                <li><a href="#strategies/{{ section.id }}">{{ section.title }}</a></li>
                                 {{# } }}
                                 {{# } }}
                             </ul>
-                            <a class="more-link more-link__scrollable" data-template="metadata.site">
-                                {{ learn_more_button }}
-                            </a>
+                            <div data-template="secondaryData">
+                                <a href="#strategies/impediment-antidote">{{ annex["impediment-antidote"].title }}</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -607,10 +607,10 @@
                 <div class="section-text">
                     <h2 class="section-heading" data-template="metadata.navigation">{{ strategies.heading }}</h2>
                     <div class="section-text__scroller">
-                        <div>
-                            <ul data-template="secondaryData" id="learn_more-toc">
+                        <div id="learn_more-toc">
+                            <ul data-template="secondaryData">
                                 {{# for(let key in annex) { }}
-                                <li data-scroll-to="#{{ key }}">{{ annex[key].title }}</li>
+                                <li id="{{ key }}-link"><a href="#learn_more/{{ key }}">{{ annex[key].title }}</a></li>
                                 {{# } }}
                             </ul>
                         </div>

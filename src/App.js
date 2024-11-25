@@ -727,9 +727,8 @@ export default function (...initArgs) {
 
 		const section = coerceSectionFromHash(hash);
 
-		let emotion = coerceEmotionFromHash(hash);
-
-		emotion = !emotion ? previousNonSecondaryHash.emotion : emotion;
+		const emotion =
+			coerceEmotionFromHash(hash) || previousNonSecondaryHash.emotion;
 
 		previousNonSecondaryHash = { section, emotion };
 
@@ -739,11 +738,23 @@ export default function (...initArgs) {
 
 		let previousEmotion = currentEmotion;
 
+		const isFirstLoad = !currentSection;
+
 		setEmotion(emotion);
 
 		setSection(section, previousEmotion, null);
 
 		scroller.hashChange(hash.section, emotion);
+
+		const emotionOrElementId = hash.emotion;
+		const isEmotion = dispatcher.validateEmotion(emotionOrElementId);
+		const selector =
+			!isEmotion && emotionOrElementId && `#${emotionOrElementId}`;
+
+		if (selector && currentSection.scrollToSelector) {
+			const delay = isFirstLoad ? 1000 : 0;
+			currentSection.scrollToSelector(selector, delay);
+		}
 
 		// Track hash changes in Google Analytics as virtual pageviews
 		// https://developers.google.com/analytics/devguides/collection/analyticsjs/single-page-applications#tracking_virtual_pageviews

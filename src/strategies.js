@@ -1,7 +1,9 @@
-import { initScrollLinks, initializeTables } from "./helpers.js";
+import { initializeTables, scrollToSelector } from "./helpers.js";
 import AnnexImpedimentAntidote from "./more-pages/annex-impediment-antidote.js";
 
 class StrategiesSection {
+	scrollParent = null;
+
 	init(containerNode, screenIsSmall) {
 		const subSections = [
 			{
@@ -9,12 +11,15 @@ class StrategiesSection {
 				key: "annex-impediment-antidote",
 			},
 		];
-		const scrollParent = $("#strategies-fp-section .scroll-parent");
-		const sectionContainer = scrollParent.find(
+		this.scrollParent = $("#strategies-fp-section .scroll-parent");
+		const sectionContainer = this.scrollParent.find(
 			"#strategies-impediment-container"
 		)[0];
 		initializeTables(subSections, sectionContainer);
-		initScrollLinks(scrollParent);
+	}
+
+	scrollToSelector(selector, delay) {
+		setTimeout(() => scrollToSelector(selector, this.scrollParent), delay);
 	}
 
 	open() {}

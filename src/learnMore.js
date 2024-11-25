@@ -9,7 +9,7 @@ import AnnexScientificBasis from "./more-pages/annex-scientific-basis.js";
 import AnnexSignals from "./more-pages/annex-signals.js";
 import AnnexTraits from "./more-pages/annex-traits.js";
 import AnnexMoods from "./more-pages/annex-moods.js";
-import { initializeTables, initScrollLinks } from "./helpers.js";
+import { initializeTables, scrollToSelector } from "./helpers.js";
 
 export default {
 	isInited: false,
@@ -20,15 +20,22 @@ export default {
 	previousSection: null,
 	pages: {},
 	containers: {},
+	scrollParent: null,
 
 	init: function (containerNode, screenIsSmall) {
 		this.sectionContainer = containerNode;
 
 		this.screenIsSmall = screenIsSmall;
 
+		this.scrollParent = $("#learn_more");
+
 		this.initializePages();
 
 		this.isInited = true;
+	},
+
+	scrollToSelector: function (selector, delay) {
+		setTimeout(() => scrollToSelector(selector, this.scrollParent), delay);
 	},
 
 	// Emotion in this context is the more-info page
@@ -71,8 +78,6 @@ export default {
 			{ component: AnnexSignals, key: "annex-signals" },
 		];
 		initializeTables(subSections, this.sectionContainer);
-		const scrollParent = $("#learn_more");
-		initScrollLinks(scrollParent);
 	},
 
 	getPageTitle(item) {

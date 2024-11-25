@@ -1054,23 +1054,37 @@ svg {
 
 #strategies-toc,
 #learn_more-toc {
-	padding: 0;
-	& > li {
-		font-weight: 400;
-	}
 	ul {
-		padding-left: 30px;
-		padding-bottom: 10px;
-	}
-	li {
-		list-style: none;
 		padding: 0;
-		margin: 0;
-		line-height: 2;
-		cursor: pointer;
-		&:hover {
+		& > li {
 			font-weight: 400;
 		}
+		ul {
+			padding-left: 30px;
+			padding-bottom: 10px;
+		}
+		li {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			line-height: 2;
+			cursor: pointer;
+			&:hover {
+				font-weight: 400;
+			}
+		}
+		margin-bottom: 0;
+	}
+	a,
+	a:visited,
+	a:active,
+	a:hover,
+	a:focus  {
+		color: #000;
+	}
+	a:focus {
+		outline: none !important;
+		border: 0;
 	}
 }
 
@@ -1669,4 +1683,8 @@ h6 {
 		width: 100vw;
 		height: 100vh;
 	}
+}
+
+#impediment-antidote-link {
+	display: none;
 }

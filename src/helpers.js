@@ -1,14 +1,5 @@
 import appStrings from "./appStrings";
 
-export const initScrollLinks = (scrollParent) => {
-	$("[data-scroll-to]").on("click", (e) => {
-		const link = $(e.target);
-		const selector = link.data("scroll-to");
-		const destination = $(selector);
-		scrollParent.animate({ scrollTop: destination[0].offsetTop - 80 });
-	});
-};
-
 export const initializeTables = (subSections, sectionContainer) => {
 	for (let subSection of subSections) {
 		const subSectionWrapper = document.createElement("div");
@@ -26,3 +17,8 @@ export const initializeTables = (subSections, sectionContainer) => {
 		sectionContainer.appendChild(subSectionWrapper);
 	}
 };
+
+export function scrollToSelector(selector, scrollParent) {
+	const destination = $(selector);
+	scrollParent.animate({ scrollTop: destination[0].offsetTop - 80 });
+}
