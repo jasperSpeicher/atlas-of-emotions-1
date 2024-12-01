@@ -630,7 +630,6 @@ export default function (...initArgs) {
 			scroller.ATLAS_TO_FULLPAGE_SECTIONS[currentSectionName];
 		let activeScrollerSectionText =
 			fpSection && $(`#${fpSection}-section .section-text`)[0];
-		console.log({ currentSection });
 		if (activeScrollerSectionText) {
 			let sectionHeadlineElement =
 				activeScrollerSectionText.querySelector(".headline");
