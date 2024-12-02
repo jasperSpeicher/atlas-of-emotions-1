@@ -3,6 +3,7 @@ import AnnexImpedimentAntidote from "./more-pages/annex-impediment-antidote.js";
 
 class StrategiesSection {
 	scrollParent = null;
+	isInited = false;
 
 	init(containerNode, screenIsSmall) {
 		const subSections = [
@@ -16,6 +17,7 @@ class StrategiesSection {
 			"#strategies-impediment-container"
 		)[0];
 		initializeTables(subSections, sectionContainer);
+		this.isInited = true;
 	}
 
 	scrollToSelector(selector, delay) {

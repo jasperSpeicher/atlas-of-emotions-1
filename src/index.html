@@ -42,9 +42,6 @@
     <!-- for mailchimp link to emotrak -->
     <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
 
-    <!-- Fullpage -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/jquery.fullpage/2.9.2/jquery.fullpage.min.css">
 
     <style>
         html.placeholder,
@@ -513,6 +510,8 @@
 
                         <div class="strategy-details">
                             {{# for(let subSection of reflecting.sub_sections) { }}
+                            <div class="details-subsection">
+                            <!-- start details-subsection -->
                             <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
                             <p>{{ subSection.description }}</p>
                             {{# for(let paragraph of subSection.paragraphs) { }}
@@ -537,7 +536,10 @@
                                 {{# } }}
                             </div>
                             {{# } }}
+                            <!-- end details-subsection -->
+                            </div>
                             {{# } }}
+                            <!-- end strategy-details -->
                         </div>
 
                         <div class="strategies-subsection">
@@ -547,6 +549,8 @@
 
                         <div class="strategy-details">
                             {{# for(let subSection of in_the_moment.sub_sections) { }}
+                            <div class="details-subsection">
+                            <!-- start details-subsection -->
                             <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
                             <p>{{ subSection.description }}</p>
                             {{# for(let paragraph of subSection.paragraphs) { }}
@@ -571,7 +575,10 @@
                                 {{# } }}
                             </div>
                             {{# } }}
+                            <!-- end details-subsection -->
+                            </div>
                             {{# } }}
+                            <!-- end strategy-details -->
                         </div>
                         <div id="strategies-impediment-container">
                         </div>
@@ -605,7 +612,7 @@
                 <div class="section-graphics scroll-parent">
                 </div>
                 <div class="section-text">
-                    <h2 class="section-heading" data-template="metadata.navigation">{{ strategies.heading }}</h2>
+                    <h2 class="section-heading" data-template="metadata.navigation">{{ learn_more.heading }}</h2>
                     <div class="section-text__scroller">
                         <div id="learn_more-toc">
                             <ul data-template="secondaryData">
@@ -737,8 +744,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"
         type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
-        type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.9.4/jquery.fullpage.extensions.min.js"
         type="text/javascript"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll-lite.min.js"></script> -->
 

@@ -434,11 +434,9 @@
 #learn_more {
 	overflow-y: auto;
 	position: absolute;
-	padding-top: 50px;
 	top: 0;
 	bottom: 0;
 	width: 100%;
-	padding: 90px 100px;
 	#scientific-basis {
 		tr {
 			border-bottom: none;
@@ -455,7 +453,7 @@
 		margin-bottom: 4rem;
 
 		.annex-table-wrapper {
-			margin-top: 1rem;
+			margin-top: 0;
 		}
 		img {
 			width: 100%;

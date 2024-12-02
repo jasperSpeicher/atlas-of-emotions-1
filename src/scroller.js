@@ -119,6 +119,7 @@ const scroller = {
 				"transform",
 				`translateY(${-(nextIndex - 1) * 100}vh)`
 			);
+			$('body').removeClass(`viewing-${this.currentSection}`);
 			this.currentSection = section;
 			$('body').addClass(`viewing-${section}`);
 		}

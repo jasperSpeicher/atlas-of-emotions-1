@@ -1079,7 +1079,7 @@ svg {
 	a:visited,
 	a:active,
 	a:hover,
-	a:focus  {
+	a:focus {
 		color: #000;
 	}
 	a:focus {
@@ -1088,19 +1088,20 @@ svg {
 	}
 }
 
+#strategies-fp-section .strategies-text,
+#learn_more {
+	font-family: Raleway, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 90px 100px;
+	max-width: 1000px;
+}
+
 #strategies-fp-section,
 #learn_more {
 	.scroll-parent {
 		overflow: scroll;
 	}
-	.strategies-text {
-		font-family: Raleway, sans-serif;
-		font-size: 15px;
-		line-height: 1.5;
-		padding: 90px 100px;
-		max-width: 1000px;
-	}
-
 	h1 {
 		font-weight: 400;
 		font-size: 32px;
@@ -1687,4 +1688,73 @@ h6 {
 
 #impediment-antidote-link {
 	display: none;
+}
+
+#strategies-fp-section {
+	.strategies-intro {
+		h1 {
+			margin-bottom: 35px;
+		}
+	}
+}
+
+@media print {
+	.viewing-strategies-fp {
+		.site-header {
+			display: none;
+		}
+		.logo {
+			position: fixed;
+			left: 0;
+			top: 10px;
+			right: unset;
+			width: unset;
+			padding: 0;
+			img {
+				width: 90px;
+				height: auto;
+			}
+		}
+		.top-nav {
+			display: none;
+		}
+		.section-text {
+			display: none;
+		}
+		.section-graphics {
+			padding-left: 0;
+			height: auto;
+			position: relative;
+		}
+		.page-body {
+			position: relative;
+			transform: none !important;
+			height: auto;
+		}
+		.page-body > div {
+			display: none;
+		}
+		#strategies-fp-section {
+			display: block;
+			height: auto;
+			.strategies-intro {
+				page-break-after: always;
+			}
+			h1 {
+				margin-top: 5px;
+			}
+			.details-subsection {
+				page-break-after: always;
+			}
+			.strategies-subsection {
+				page-break-before: always;
+			}
+			.strategies-text {
+				padding: 0 20px 60px 120px;
+			}
+		}
+		#impediment-antidote {
+			font-size: 0.65rem;
+		}
+	}
 }
