@@ -1699,7 +1699,8 @@ h6 {
 }
 
 @media print {
-	.viewing-strategies-fp {
+	.viewing-strategies-fp,
+	.viewing-learn_more-fp {
 		.site-header {
 			display: none;
 		}
@@ -1721,6 +1722,31 @@ h6 {
 		.section-text {
 			display: none;
 		}
+	}
+	.viewing-learn_more-fp {
+		#learn_more-fp-section,
+		.page-body {
+			display: none;
+		}
+		.original-content,
+		#main,
+		#learn_more {
+			left: 0;
+			position: relative;
+			height: auto !important;
+		}
+		#learn_more {
+			h1 {
+				page-break-before: always;
+				margin-top: 0;
+			}
+			padding-left: 120px;
+			.wrapper:first-of-type h1 {
+				page-break-before: auto;
+			}
+		}
+	}
+	.viewing-strategies-fp {
 		.section-graphics {
 			padding-left: 0;
 			height: auto;
