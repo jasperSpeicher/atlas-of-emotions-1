@@ -293,7 +293,7 @@ const scroller = {
 			}
 		});
 
-		if (this.screenIsSmall && anchorLink == "response") {
+		if (this.screenIsSmall && anchorLink == "response-fp") {
 			setTimeout(() => {
 				this.resizeActions();
 			}, sassVars.states.backgrounded.duration.in * 1000);
@@ -302,7 +302,7 @@ const scroller = {
 
 	sectionGraphicsResize(anchorLink) {
 		dispatcher.sectionGraphicsResize();
-		if (this.screenIsSmall && anchorLink == "response") {
+		if (this.screenIsSmall && anchorLink == "response-fp") {
 			this.resizeActions();
 		}
 	},
