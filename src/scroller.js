@@ -10,6 +10,7 @@ const scroller = {
 
 	ATLAS_TO_FULLPAGE_SECTIONS: {
 		introduction: "introduction-fp",
+		calm: "introduction-fp",
 		actions: "response-fp",
 		continents: "experience-fp",
 		states: "experience-fp",
@@ -29,7 +30,12 @@ const scroller = {
 
 	headerHeight: 55,
 	selectedEmotionState: "",
+
 	slideInterval: null,
+	$slides: null,
+	slideCount: 0,
+	activeSlideIndex: 0,
+
 	introTimeline: null,
 	$sections: null,
 	sectionTextAnimators: null,
@@ -55,15 +61,32 @@ const scroller = {
 	},
 
 	advanceSlide: function () {
-		$.fn.fullpage.moveSlideRight();
+		if (!this.$slides) {
+			return;
+		}
+		const activeSlide = this.$slides[this.activeSlideIndex];
+		const nextSlideIndex = (this.activeSlideIndex + 1) % this.slideCount;
+		const nextSlide = this.$slides[nextSlideIndex];
+		debugger;
+		$(activeSlide).removeClass("active");
+		$(nextSlide).addClass("active");
+		this.activeSlideIndex = nextSlideIndex;
 	},
 
 	initSlideInterval: function () {
-		clearInterval(this.slideInterval);
-		this.slideInterval = setInterval(
-			this.advanceSlide,
-			this.SLIDE_INTERVAL_DELAY
+		console.log("initSlideInterval");
+		if (this.slideInterval) {
+			clearInterval(this.slideInterval);
+		}
+		// init the slides
+		this.$slides = $(".slide");
+		this.slideCount = this.$slides.length;
+		this.activeSlideIndex = [...this.$slides].findIndex((s) =>
+			$(s).hasClass("active")
 		);
+		this.slideInterval = setInterval(() => {
+			this.advanceSlide();
+		}, this.SLIDE_INTERVAL_DELAY);
 	},
 
 	toggleEmotionNav: function (visible) {
@@ -117,9 +140,9 @@ const scroller = {
 				"transform",
 				`translateY(${-(nextIndex - 1) * 100}vh)`
 			);
-			$('body').removeClass(`viewing-${this.currentSection}`);
+			$("body").removeClass(`viewing-${this.currentSection}`);
 			this.currentSection = section;
-			$('body').addClass(`viewing-${section}`);
+			$("body").addClass(`viewing-${section}`);
 		}
 	},
 
@@ -191,8 +214,6 @@ const scroller = {
 		//TODO replace with navigation call, integrate with app.js properly
 		let nextEmotionState =
 			nextAtlasSection == "continents" ? "" : this.selectedEmotionState;
-		//console.log( 'leave current hash ' + window.location.hash );
-		//console.log( 'leave next hash ' + hashSection + dispatcher.HASH_DELIMITER + nextEmotionState );
 		if (currentAtlasSection !== nextAtlasSection) {
 			window.location.hash =
 				nextAtlasSection + dispatcher.HASH_DELIMITER + nextEmotionState;
@@ -209,7 +230,7 @@ const scroller = {
 		$(".section-text__scroller")[0].scrollTop = 0;
 		dispatcher.sectionGraphicsResize();
 
-		if (sectionId == "introduction-section" && !this.introTimeline) {
+		if (sectionId == "introduction-fp-section" && !this.introTimeline) {
 			//init animations for intro section
 			let $intro = $("#introduction-fp-section");
 			this.introTimeline = new gsap.timeline();
@@ -229,15 +250,6 @@ const scroller = {
 					"start+=1"
 				)
 				.fromTo(
-					$intro.find(".fp-slides, .fp-slidesNav"),
-					2,
-					{
-						autoAlpha: 0,
-						ease: "power1.out",
-					},
-					{ autoAlpha: 1 }
-				)
-				.fromTo(
 					$intro.find(".cta"),
 					2,
 					{
@@ -252,18 +264,13 @@ const scroller = {
 				.add("end");
 
 			//make slide interface clickable right away
-			$(".fp-slidesNav a").click(function (e) {
-				_self.initSlideInterval();
-				$(".fp-slidesNav a").removeClass("active");
-				$(this).addClass("active");
-			});
 			$(".slide-content").click(function (e) {
 				_self.advanceSlide();
 				_self.initSlideInterval();
 			});
 		}
 		//using anchorLink
-		if (anchorLink == "introduction") {
+		if (anchorLink == "introduction-fp") {
 			this.$hiddenForIntro.removeClass("visible");
 			this.introTimeline.play();
 		} else {
@@ -355,7 +362,6 @@ const scroller = {
 	},
 
 	toggleOptInModal: function () {
-		console.log("toggle modal");
 		$(".opt-in-modal").fadeToggle(400);
 	},
 
@@ -411,28 +417,6 @@ const scroller = {
 		if (this.screenIsSmall) {
 			normalScrollElements += ", .episode-parent";
 		}
-
-		// let $pageBody = $(".page-body");
-
-		// $pageBody.fullpage({
-		// 	anchors: this.anchors,
-		// 	lockAnchors: true,
-		// 	menu: "#menu-list",
-		// 	autoScrolling: true,
-		// 	scrollHorizontally: false,
-		// 	scrollVertically: false,
-		// 	offsetSections: false,
-		// 	verticalCentered: true,
-		// 	controlArrows: false,
-		// 	slidesNavigation: true,
-		// 	slidesNavPosition: "top",
-		// 	onLeave: this.onSectionLeave.bind(this),
-		// 	afterLoad: this.afterSectionLoad.bind(this),
-		// 	normalScrollElementTouchThreshold: 15,
-		// 	normalScrollElements: normalScrollElements,
-		// });
-
-		// $.fn.fullpage.setAllowScrolling(false, "all");
 
 		let $originalContent = $(".original-content");
 
