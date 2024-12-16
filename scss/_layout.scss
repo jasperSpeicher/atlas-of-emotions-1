@@ -523,16 +523,10 @@ svg {
 
 .section.introduction-hero {
 	color: #000;
-
-	&.fp-completely {
-		transition: margin-left 1s ease, opacity 1s ease;
-	}
+	transition: margin-left 1s ease, opacity 1s ease;
 
 	&.more-visible {
 		margin-left: $section-text-width;
-		.more-content.more-content--about {
-			transform: translateX(-100%);
-		}
 	}
 
 	a {
@@ -656,13 +650,6 @@ svg {
 
 	&.active {
 		opacity: 1;
-	}
-
-	//slide in more content when it is visible
-	&.more-visible {
-		.more-content {
-			transform: translateX(0);
-		}
 	}
 }
 

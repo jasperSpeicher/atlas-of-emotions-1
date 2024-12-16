@@ -67,14 +67,12 @@ const scroller = {
 		const activeSlide = this.$slides[this.activeSlideIndex];
 		const nextSlideIndex = (this.activeSlideIndex + 1) % this.slideCount;
 		const nextSlide = this.$slides[nextSlideIndex];
-		debugger;
 		$(activeSlide).removeClass("active");
 		$(nextSlide).addClass("active");
 		this.activeSlideIndex = nextSlideIndex;
 	},
 
 	initSlideInterval: function () {
-		console.log("initSlideInterval");
 		if (this.slideInterval) {
 			clearInterval(this.slideInterval);
 		}
@@ -660,9 +658,18 @@ const scroller = {
 		$("#app-container").addClass("visible");
 	},
 
-	init: function (container, screenIsSmall) {
-		//$( '#introduction' ).attr( 'data-centered', true );
+	initIntroAboutBackButton() {
+		$(".close-button").click(function (e) {
+			e.preventDefault();
+			let $section = $(this).parents(".section");
+			$section.toggleClass("more-visible");
+			$("body").toggleClass("more-visible");
+			let moreVisible = $section.hasClass("more-visible");
+			$.fn.fullpage.setAllowScrolling(!moreVisible);
+		});
+	},
 
+	init: function (container, screenIsSmall) {
 		this.screenIsSmall = screenIsSmall;
 
 		this.initTopNav();
@@ -672,6 +679,7 @@ const scroller = {
 
 		this.initAboutLink();
 		this.initOptInModal();
+		this.initIntroAboutBackButton();
 		this.showApp();
 	},
 };
