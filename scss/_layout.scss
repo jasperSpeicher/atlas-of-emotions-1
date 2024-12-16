@@ -1325,7 +1325,6 @@ svg {
 		height: 100%;
 		padding-top: #{$menu-padding-top}px;
 		background-color: transparent;
-		font-size: 1.25em;
 		transition-duration: 0.4s;
 		left: 0;
 
@@ -1338,6 +1337,7 @@ svg {
 			opacity: 1;
 		}
 		.menu {
+			font-size: 1.25em;
 			background-color: #fff;
 			right: 0;
 			bottom: 0;
@@ -1350,6 +1350,7 @@ svg {
 				padding-left: 0;
 				margin-left: 0;
 				padding-top: 0.5em;
+				flex-direction: column;
 				li {
 					padding-left: 0;
 					margin-left: 0;

@@ -4,8 +4,6 @@ import timeline from "./timeline/timeline";
 import sassVars from "../scss/variables.json";
 import d3 from "d3";
 
-//TODO do we really need max or just lite? Should we replace tween.js in other files?
-
 const scroller = {
 	SLIDE_INTERVAL_DELAY: 7000,
 	ABOUT_IMAGE_INTERVAL_DELAY: 7,
