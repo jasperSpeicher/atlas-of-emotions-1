@@ -589,7 +589,7 @@ export default function (...initArgs) {
 
 	function onPopupChange(section, emotionState, desc, secondaryData) {
 		if (screenIsSmall && emotionState) {
-			onSectionTextChange(currentEmotion, emotionState, desc);
+			onSectionTextChange(currentEmotion, emotionState, desc, true);
 			return;
 		}
 
@@ -605,7 +605,7 @@ export default function (...initArgs) {
 		}
 	}
 
-	function onSectionTextChange(emotion, title, body) {
+	function onSectionTextChange(emotion, title, body, showTitle) {
 		// on non-mobile, if no title passed just hide callout and bail
 		if (!screenIsSmall && !title) {
 			//callout.classList.remove( 'visible' );
@@ -636,7 +636,7 @@ export default function (...initArgs) {
 			let sectionBodyElement =
 				activeScrollerSectionText.querySelector(".body");
 			if (sectionHeadlineElement) {
-				sectionHeadlineElement.innerHTML = title;
+				sectionHeadlineElement.innerHTML = showTitle ? title : "";
 			}
 			// only replace the innerHTML if the content is different - this is to enable fading on the links in the actions section
 			if (sectionBodyElement && sectionBodyElement.innerHTML != body) {
