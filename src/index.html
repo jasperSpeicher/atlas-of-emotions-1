@@ -287,7 +287,8 @@
                             <div class="intro-heading">
                                 <h1>{{ header }}</h1>
                                 <div class="subheader">
-                                    <strong>{{ sub_header }}</strong> <a href="#" class="about-link">{{ learn_more_link }}</a>
+                                    <strong>{{ sub_header }}</strong> <a href="#" class="about-link">{{ learn_more_link
+                                        }}</a>
                                 </div>
                             </div>
                             <div class="slide-content" data-anchor="" data-widow-fix="true">
@@ -296,11 +297,11 @@
                         </div>
 
                         {{# }); }}
-                    </div>  
-                </div>  
+                    </div>
+                </div>
 
                 <div class="cta">
-                    <a href="#triggers">
+                    <a href="#waking_up">
                         {{ cta }}
                     </a>
                 </div>
@@ -330,10 +331,11 @@
 
                     </div>
                 </div>
-
-
             </div>
 
+            <div class="section waking_up" id="waking_up-fp-section">
+                <iframe src="http://atlasofemotions.jasperspeicher.codes/immersive-scroll" id="waking_up-iframe"></iframe>
+            </div>
 
             <div class="section" id="timeline-fp-section" data-has-emotion-state="true">
                 <div class="section-graphics">
@@ -519,32 +521,33 @@
                         <div class="strategy-details">
                             {{# for(let subSection of reflecting.sub_sections) { }}
                             <div class="details-subsection">
-                            <!-- start details-subsection -->
-                            <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
-                            <p>{{ subSection.description }}</p>
-                            {{# for(let paragraph of subSection.paragraphs) { }}
-                            <div class="strategy-details__columns">
-                                <div class="strategy-details__left">
-                                    <p>{{# print(paragraph.body.replace("--", "–")) }}</p>
-                                </div>
-                                {{# if(paragraph.image) { }}
-                                <div class="strategy-details__right">
-                                    <img class="strategy-details__illustration" src="{{ paragraph.image }}"
-                                        style="width: {{ paragraph.image_width }};" />
-                                </div>
-                                {{# } }}
-                                {{# if(paragraph.insight) { }}
-                                <div class="strategy-details__right strategy-details__insight">
-                                    <img class="strategy-details__insight-icon" src="{{ paragraph.insight_image }}" />
-                                    <div>
-                                        <h3>Key Insight</h3>
-                                        <p>{{ paragraph.insight }}</p>
+                                <!-- start details-subsection -->
+                                <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
+                                <p>{{ subSection.description }}</p>
+                                {{# for(let paragraph of subSection.paragraphs) { }}
+                                <div class="strategy-details__columns">
+                                    <div class="strategy-details__left">
+                                        <p>{{# print(paragraph.body.replace("--", "–")) }}</p>
                                     </div>
+                                    {{# if(paragraph.image) { }}
+                                    <div class="strategy-details__right">
+                                        <img class="strategy-details__illustration" src="{{ paragraph.image }}"
+                                            style="width: {{ paragraph.image_width }};" />
+                                    </div>
+                                    {{# } }}
+                                    {{# if(paragraph.insight) { }}
+                                    <div class="strategy-details__right strategy-details__insight">
+                                        <img class="strategy-details__insight-icon"
+                                            src="{{ paragraph.insight_image }}" />
+                                        <div>
+                                            <h3>Key Insight</h3>
+                                            <p>{{ paragraph.insight }}</p>
+                                        </div>
+                                    </div>
+                                    {{# } }}
                                 </div>
                                 {{# } }}
-                            </div>
-                            {{# } }}
-                            <!-- end details-subsection -->
+                                <!-- end details-subsection -->
                             </div>
                             {{# } }}
                             <!-- end strategy-details -->
@@ -558,32 +561,33 @@
                         <div class="strategy-details">
                             {{# for(let subSection of in_the_moment.sub_sections) { }}
                             <div class="details-subsection">
-                            <!-- start details-subsection -->
-                            <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
-                            <p>{{ subSection.description }}</p>
-                            {{# for(let paragraph of subSection.paragraphs) { }}
-                            <div class="strategy-details__columns">
-                                <div class="strategy-details__left">
-                                    <p>{{# print(paragraph.body.replace("--", "–")) }}</p>
-                                </div>
-                                {{# if(paragraph.image) { }}
-                                <div class="strategy-details__right">
-                                    <img class="strategy-details__illustration" src="{{ paragraph.image }}"
-                                        style="width: {{ paragraph.image_width }};" />
-                                </div>
-                                {{# } }}
-                                {{# if(paragraph.insight) { }}
-                                <div class="strategy-details__right strategy-details__insight">
-                                    <img class="strategy-details__insight-icon" src="{{ paragraph.insight_image }}" />
-                                    <div>
-                                        <h3>Key Insight</h3>
-                                        <p>{{ paragraph.insight }}</p>
+                                <!-- start details-subsection -->
+                                <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
+                                <p>{{ subSection.description }}</p>
+                                {{# for(let paragraph of subSection.paragraphs) { }}
+                                <div class="strategy-details__columns">
+                                    <div class="strategy-details__left">
+                                        <p>{{# print(paragraph.body.replace("--", "–")) }}</p>
                                     </div>
+                                    {{# if(paragraph.image) { }}
+                                    <div class="strategy-details__right">
+                                        <img class="strategy-details__illustration" src="{{ paragraph.image }}"
+                                            style="width: {{ paragraph.image_width }};" />
+                                    </div>
+                                    {{# } }}
+                                    {{# if(paragraph.insight) { }}
+                                    <div class="strategy-details__right strategy-details__insight">
+                                        <img class="strategy-details__insight-icon"
+                                            src="{{ paragraph.insight_image }}" />
+                                        <div>
+                                            <h3>Key Insight</h3>
+                                            <p>{{ paragraph.insight }}</p>
+                                        </div>
+                                    </div>
+                                    {{# } }}
                                 </div>
                                 {{# } }}
-                            </div>
-                            {{# } }}
-                            <!-- end details-subsection -->
+                                <!-- end details-subsection -->
                             </div>
                             {{# } }}
                             <!-- end strategy-details -->
@@ -631,12 +635,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="site-header hidden-for-intro">
-            <div class="site-name">
-                Atlas of Emotions
             </div>
         </div>
 

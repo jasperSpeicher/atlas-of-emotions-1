@@ -13,6 +13,7 @@ import stringsConfig from "../static/strings/stringsConfig.json";
 import sassVars from "../scss/variables.json";
 import d3 from "d3";
 import strategies from "./strategies";
+import wakingUp from "./waking_up.js";
 
 export default function (...initArgs) {
 	const MIN_ALLOWED_WIDTH = 1200,
@@ -187,6 +188,7 @@ export default function (...initArgs) {
 		sections.calm = calm;
 		sections.strategies = strategies;
 		sections.learn_more = learnMore;
+		sections.waking_up = wakingUp;
 	}
 
 	function initLanguageSelector() {

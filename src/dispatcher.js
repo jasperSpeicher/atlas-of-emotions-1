@@ -29,7 +29,8 @@ const dispatcher = {
 		TIMELINE: 'triggers',
 		CALM: 'calm',
 		STRATEGIES: 'strategies',
-		LEARN_MORE: 'learn_more'
+		LEARN_MORE: 'learn_more',
+		WAKING_UP: 'waking_up'
 	},
 
 	HOME: 'home',

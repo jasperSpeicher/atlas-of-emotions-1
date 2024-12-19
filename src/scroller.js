@@ -17,10 +17,12 @@ const scroller = {
 		triggers: "timeline-fp",
 		strategies: "strategies-fp",
 		learn_more: "learn_more-fp",
+		waking_up: "waking_up-fp",
 	},
 
 	FULLPAGE_TO_ATLAS_SECTIONS: {
 		"introduction-fp": "introduction",
+		"waking_up-fp": "waking_up",
 		"timeline-fp": "triggers",
 		"experience-fp": "continents",
 		"response-fp": "actions",
