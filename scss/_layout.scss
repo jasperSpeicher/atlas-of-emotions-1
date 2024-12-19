@@ -1082,6 +1082,12 @@ svg {
 	padding: 90px 100px;
 	max-width: 1000px;
 }
+.small-screen {
+	#strategies-fp-section .strategies-text,
+	#learn_more {
+		padding: 20px 20px;
+	}
+}
 
 #strategies-fp-section,
 #learn_more {
@@ -1156,6 +1162,24 @@ svg {
 		font-weight: 400;
 		font-size: 11px;
 		line-height: 18px;
+	}
+}
+
+.small-screen {
+	#strategies-fp-section .strategy-details__columns,
+	#learn_more .strategy-details__columns {
+		display: block;
+	}
+	#strategies-fp-section .strategies-intro__columns,
+	#learn_more .strategies-intro__columns {
+		display: block;
+	}
+	.strategy-details__right {
+		display: flex;
+		justify-content: center;
+		img {
+			margin-bottom: 40px;
+		}
 	}
 }
 
@@ -1666,6 +1690,16 @@ h6 {
 		h1 {
 			margin-bottom: 35px;
 		}
+	}
+}
+
+.small-screen.viewing-strategies-fp {
+	.section-text {
+		display: none;
+	}
+	.section-graphics {
+		bottom: 0;
+		height: unset;
 	}
 }
 
