@@ -257,23 +257,6 @@ svg {
 	}
 }
 
-.site-header {
-	position: fixed;
-	top: 0;
-	left: $section-text-width;
-	right: 0;
-	height: #{$ui-header-height}px;
-	background-color: $top-nav-background;
-	padding-top: $top-nav-padding-top;
-	.site-name {
-		display: none;
-		left: 1.5em;
-		position: absolute;
-		height: 40px;
-		text-transform: uppercase;
-	}
-}
-
 %lang-selector {
 	button {
 		padding: 0;
@@ -1090,16 +1073,10 @@ svg {
 #strategies-fp-section .strategies-text,
 #learn_more {
 	font-family: Raleway, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.5;
 	padding: 90px 100px;
-	max-width: 1000px;
-}
-.small-screen {
-	#strategies-fp-section .strategies-text,
-	#learn_more {
-		padding: 20px 20px;
-	}
+	max-width: 1300px;
 }
 
 #strategies-fp-section,
@@ -1121,7 +1098,7 @@ svg {
 
 	h3 {
 		font-weight: 700;
-		font-size: 11px;
+		font-size: 14px;
 		text-transform: uppercase;
 		margin-bottom: 0;
 		margin-top: 0;
@@ -1151,7 +1128,7 @@ svg {
 
 	.strategy-details__columns {
 		display: grid;
-		grid-template-columns: 1fr 200px;
+		grid-template-columns: 1fr 300px;
 		column-gap: 60px;
 	}
 
@@ -1173,7 +1150,7 @@ svg {
 	.strategy-details__right p {
 		font-style: italic;
 		font-weight: 400;
-		font-size: 11px;
+		font-size: 14px;
 		line-height: 18px;
 	}
 }
@@ -1194,6 +1171,120 @@ svg {
 			margin-bottom: 40px;
 		}
 	}
+	#learn_more,
+	#strategies-fp-section {
+		.strategies-intro__left {
+			padding-bottom: 40px;
+			img {
+				margin: 0 auto;
+				display: block;
+			}
+		}
+	}
+	#strategies-fp-section .strategies-text,
+	#learn_more {
+		padding: 20px 20px;
+	}
+	.annex-table {
+		.content {
+			.upper {
+				white-space: normal;
+			}
+		}
+	}
+	.annex-table td > table td:first-child {
+		width: auto;
+	}
+	.annex-table-wrapper {
+		overflow-x: auto;
+	}
+	&.viewing-introduction-fp {
+		a#introduction-menu-link {
+			color: #000;
+		}
+	}
+	&.viewing-timeline-fp {
+		a#timeline-menu-link {
+			color: #000;
+		}
+	}
+	&.viewing-experience-fp {
+		a#experience-menu-link {
+			color: #000;
+		}
+	}
+	&.viewing-response-fp {
+		a#response-menu-link {
+			color: #000;
+		}
+	}
+	&.viewing-strategies-fp {
+		a#strategies-menu-link {
+			color: #000;
+		}
+	}
+	&.viewing-learn_more-fp {
+		a#learn_more-menu-link {
+			color: #000;
+		}
+	}
+	#learn_more-fp-section {
+		.section-text {
+			display: none;
+		}
+	}
+	&.viewing-learn_more-fp .original-content {
+		height: auto;
+		bottom: 0;
+		& #main > div#learn_more {
+			overflow: auto;
+		}
+	}
+	&.viewing-waking_up-fp .top-nav a {
+		color: #000;
+		&:hover {
+			color: #000;
+		}
+	}
+	.mobile-header {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 44px;
+		background-color: #fff;
+		color: #000;
+		&::after {
+			content: "";
+			background-color: #000;
+			position: absolute;
+			top: 6px;
+			left: 8px;
+			height: 32px;
+			width: 32px;
+			mask: url("./img/atlas-logo.svg") no-repeat;
+			mask-size: cover;
+			mask-position: left;
+		}
+		div {
+			margin-left: 50px;
+			line-height: 44px;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+	}
+	&.viewing-timeline-fp .mobile-header,
+	&.viewing-waking_up-fp .mobile-header {
+		color: #000;
+		&::after {
+			background-color: #000;
+		}
+	}
+}
+
+.mobile-header {
+	display: none;
 }
 
 #calm {
@@ -1319,18 +1410,8 @@ svg {
 			}
 		}
 	}
-	.site-header {
-		height: #{$ui-header-height-small}px;
-		padding-top: #{$menu-padding-top}px;
-		left: 0;
-		.site-name {
-			left: 0.75em;
-			font-size: 18px;
-			display: block;
-		}
-	}
 	.top-nav {
-		$h-padding: 1.25em;
+		$h-padding: 50px;
 		$v-padding: 0.5em;
 		height: 100%;
 		padding-top: #{$menu-padding-top}px;
@@ -1347,7 +1428,8 @@ svg {
 			opacity: 1;
 		}
 		.menu {
-			font-size: 1.25em;
+			font-size: 1.125em;
+			text-transform: uppercase;
 			background-color: #fff;
 			right: 0;
 			bottom: 0;
@@ -1355,6 +1437,8 @@ svg {
 			top: #{$ui-header-mobile-nav-target-height}px;
 			height: auto;
 			text-align: left;
+			font-weight: 400;
+			overflow-y: auto;
 			ul {
 				background-color: transparent;
 				padding-left: 0;
@@ -1384,10 +1468,12 @@ svg {
 				outline: none;
 				color: inherit;
 			}
-			.dropdown-menu {
+			.dropdown-menu.pull-right {
+				position: relative;
+				float: none !important;
 				right: auto;
+				top: 25px;
 				left: 0;
-				top: #{$ui-header-height}px;
 				min-width: 0;
 				padding: 0;
 				margin-top: -1 * $top-nav-padding-top;
@@ -1719,9 +1805,6 @@ h6 {
 @media print {
 	.viewing-strategies-fp,
 	.viewing-learn_more-fp {
-		.site-header {
-			display: none;
-		}
 		.logo {
 			position: fixed;
 			left: 0;
@@ -1799,6 +1882,14 @@ h6 {
 		}
 		#impediment-antidote {
 			font-size: 0.65rem;
+		}
+	}
+	#strategies-fp-section .strategy-details__columns,
+	#learn_more .strategy-details__columns {
+		grid-template-columns: 1fr 200px;
+		column-gap: 40px;
+		&:last-of-type p {
+			margin-bottom: 0;
 		}
 	}
 }
