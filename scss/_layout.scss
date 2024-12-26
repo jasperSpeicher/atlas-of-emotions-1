@@ -649,6 +649,11 @@ svg {
 	}
 }
 
+/* prevent overscroll from messing up the coupling of the emotion nav and the scroller in mobile */
+:root {
+	overscroll-behavior: none;
+}
+
 .section-text {
 	position: absolute;
 	z-index: 10;

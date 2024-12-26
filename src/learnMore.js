@@ -46,7 +46,11 @@ export default {
 		previousMorePage
 	) {},
 
-	open: function () {},
+	open: function () {
+		if (this.screenIsSmall) {
+			$(".original-content").css({ height: "" });
+		}
+	},
 
 	close: function () {},
 

@@ -418,27 +418,26 @@ const scroller = {
 			normalScrollElements += ", .episode-parent";
 		}
 
-		let $originalContent = $(".original-content");
-
 		let addMobileTextTouchEffects = ($element) => {
-			let swipeStart = { x: 0, y: 0 },
-				yDistance = 0,
-				height = 0,
-				thresh = 20,
-				minimumDistance = null,
-				maximumDistance = 0,
-				transitionDuration = 0.5,
-				sectionTextMaximized = false,
-				sectionTextMaximizing = false,
-				sectionTextMinimizing = false,
-				$sectionText = null,
-				$sectionGraphics = null,
-				$sectionTextContent = null,
-				$originalContent = $(".original-content"),
-				$emotionNav = $(".emotion-nav"),
-				id = $element.parents(".section")[0].id,
-				anchorLink = this.getFullpageAnchorLink(id),
-				animator = new SectionTextAnimator();
+			let parent = $element.parents(".section")[0];
+			let swipeStart = { x: 0, y: 0 };
+			let height = 0;
+			let thresh = 20;
+			let minimumDistance = null;
+			let maximumDistance = 0;
+			let transitionDuration = 0.5;
+			let sectionTextMaximized = false;
+			let sectionTextMaximizing = false;
+			let sectionTextMinimizing = false;
+			let $sectionText = null;
+			let $sectionGraphics = null;
+			let $sectionTextContent = null;
+			let $originalContent = $(".original-content");
+			let $emotionNav = $(".emotion-nav");
+			let id = parent.id;
+			let anchorLink = this.getFullpageAnchorLink(id);
+			let animator = new SectionTextAnimator();
+			
 
 			this.sectionTextAnimators[id] = animator;
 
@@ -452,7 +451,7 @@ const scroller = {
 				}
 			};
 
-			$(".section .section-graphics").on("click", onTapSectionGraphics);
+			$(parent).find(".section-graphics").on("click", onTapSectionGraphics);
 
 			let minimizeSectionText = () => {
 				let minimized = !sectionTextMaximized && !sectionTextMaximizing;
@@ -581,7 +580,6 @@ const scroller = {
 				) {
 					return;
 				}
-				yDistance = newYDistance;
 				if (sectionTextMaximized) {
 					if (
 						$sectionTextContent[0].scrollTop <= 0 &&
@@ -617,6 +615,9 @@ const scroller = {
 
 		if (this.screenIsSmall) {
 			$(".section-text").each((e, element) => {
+				if ($(element).parents("#learn_more-fp-section").length > 0) {
+					return;
+				}
 				addMobileTextTouchEffects($(element));
 			});
 			addMobileGraphicsTouchEffects();
