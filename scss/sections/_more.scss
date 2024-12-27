@@ -386,6 +386,11 @@
 	td.upper {
 		text-transform: uppercase;
 		line-height: 1.1;
+		padding-left: 0;
+	}
+
+	td:last-of-type {
+		padding-right: 0;
 	}
 
 	tr.content > td.has-sub-table {
@@ -440,9 +445,6 @@
 	#scientific-basis {
 		tr {
 			border-bottom: none;
-		}
-		td:first-of-type {
-			padding-left: 0;
 		}
 	}
 }

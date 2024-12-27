@@ -1185,6 +1185,13 @@ svg {
 				display: block;
 			}
 		}
+		h1 {
+			font-size: 22px;
+		}
+		h2 {
+			font-size: 18px;
+			font-weight: 500;
+		}
 	}
 	#strategies-fp-section .strategies-text,
 	#learn_more {
@@ -1264,10 +1271,10 @@ svg {
 			content: "";
 			background-color: #000;
 			position: absolute;
-			top: 6px;
-			left: 8px;
-			height: 32px;
-			width: 32px;
+			top: 8px;
+			left: 10px;
+			height: 28px;
+			width: 28px;
 			mask: url("./img/atlas-logo.svg") no-repeat;
 			mask-size: cover;
 			mask-position: left;
@@ -1284,6 +1291,36 @@ svg {
 		color: #000;
 		&::after {
 			background-color: #000;
+		}
+	}
+	#psychopathology,
+	#signals,
+	#intrinsic-or-intentional,
+	#impediment-antidote {
+		.annex-table {
+			.content {
+				font-size: 0.65em;
+				.upper {
+					padding-top: 1em;
+					font-size: 1em;
+				}
+			}
+		}
+	}
+	.annex-table {
+		.content {
+			.upper {
+				padding-top: 1.85em;
+				font-size: 0.85em;
+			}
+		}
+	}
+	#scientific-basis .annex-table {
+		.content {
+			.upper {
+				padding-top: 1.25em;
+				font-size: 1em;
+			}
 		}
 	}
 }
