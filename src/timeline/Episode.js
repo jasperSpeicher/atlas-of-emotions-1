@@ -44,7 +44,7 @@ export default class Episode {
 		}
 	}
 
-    start(animateReplaceContent = false) {
+	start(animateReplaceContent = false) {
 		//go to start
 		this.episodeTimeline.timeScale(1);
 
@@ -68,6 +68,7 @@ export default class Episode {
 		this.playFromStart = true;
 		this.episodeTimeline.timeScale(1);
 		this.episodeTimeline.pause("event", true);
+		this.scrollSvgToStage(this.scrollStages[0], 0);
 	}
 
 	setEmotion(emotion) {
