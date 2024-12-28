@@ -660,6 +660,8 @@ svg {
 	width: $section-text-width;
 	bottom: 0;
 	background-color: $section-text-background-color;
+	font-size: 20px;
+	font-weight: 400;
 
 	padding: $section-text-padding;
 	padding-top: $section-padding-top;
@@ -682,37 +684,32 @@ svg {
 	}
 
 	button {
-		$button-color: 252;
+		@mixin shadow($color: transparent, $fade: 0) {
+			box-shadow: 0 0 10px 0.5px rgba($color, $fade);
+		}
+		@include shadow();
+		transition: all 0.15s linear;
+		position: relative;
+		$height: 45px;
+		background-color: #fff;
+		color: #333;
 		pointer-events: auto;
 		display: block;
 		width: 100%;
+		height: 45px;
 		margin: 0 auto;
-		border: 1px solid #000;
+		border: none;
 		box-shadow: 1px 3px 5px 0px #555;
 		text-transform: uppercase;
 		font-weight: 500;
-		font-size: 0.8em;
+		font-size: 20px;
 		padding: 0.3em 0;
-		border-radius: 5px;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefefe+0,fefefe+100&1+0,0+100 */
-		background: -moz-linear-gradient(
-			top,
-			rgba($button-color, $button-color, $button-color, 1) 0%,
-			rgba($button-color, $button-color, $button-color, 0) 100%
-		); /* FF3.6-15 */
-		background: -webkit-linear-gradient(
-			top,
-			rgba($button-color, $button-color, $button-color, 1) 0%,
-			rgba($button-color, $button-color, $button-color, 0) 100%
-		); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(
-			to bottom,
-			rgba($button-color, $button-color, $button-color, 1) 0%,
-			rgba($button-color, $button-color, $button-color, 0) 100%
-		); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#00fefefe', GradientType=0); /* IE6-9 */
+		border-radius: $height/2;
 		&:hover {
-			font-weight: 700;
+			@include shadow(black, 0.2);
+			transform: scale(0.98);
+			background: #eee;
+			cursor: pointer;
 		}
 		&:active,
 		&:focus {
