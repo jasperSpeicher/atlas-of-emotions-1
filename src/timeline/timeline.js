@@ -40,15 +40,31 @@ const timeline = {
 		this.activeEpisode && this.activeEpisode.beginTouchDeflection();
 	},
 
-	touchend: function (e) {
-		let currentSwipe =
-			e.originalEvent.changedTouches[0].pageX - this.swipeStart;
-		if (Math.abs(currentSwipe) > this.swipeDistanceThreshold) {
-			let swipeDirection = currentSwipe > 0 ? 1 : -1;
-			this.activeEpisode &&
-				this.activeEpisode.scrollSvgInDirection(swipeDirection);
+	touchend: function (event) {
+		const originalEvent = event.originalEvent;
+		if (!originalEvent) return; // Safety check for missing original event
+
+		const { changedTouches } = originalEvent;
+		if (!changedTouches || changedTouches.length === 0) return; // Ensure we have touch data
+
+		const [touch] = changedTouches;
+		if (!touch) return; // Safety check for valid touch object
+
+		// Calculate how far the user swiped (horizontal distance)
+		const swipeDistance = touch.pageX - this.swipeStart;
+		const isSwipeAboveThreshold =
+			Math.abs(swipeDistance) > this.swipeDistanceThreshold;
+
+		// If there's no active episode, we do nothing
+		if (!this.activeEpisode) return;
+
+		if (isSwipeAboveThreshold) {
+			// Determine swipe direction: 1 for right, -1 for left
+			const direction = swipeDistance > 0 ? 1 : -1;
+			this.activeEpisode.scrollSvgInDirection(direction);
 		} else {
-			this.activeEpisode && this.activeEpisode.returnTouchDeflection();
+			// If the swipe doesn't exceed the threshold, revert any partial movement
+			this.activeEpisode.returnTouchDeflection();
 		}
 	},
 
@@ -390,8 +406,6 @@ const timeline = {
 		this.isActive = val;
 	},
 
-	setInteractive: function (val) {},
-
 	setEmotion: function (emotion, previousEmotion) {
 		let _self = this;
 
@@ -416,20 +430,16 @@ const timeline = {
 		}
 
 		this.setActive(true);
-		this.setInteractive(true);
 	},
 
-	close: function (nextSection) {
-		return new Promise((resolve, reject) => {
-			if (this.activeEpisode && this.activeEpisode.replayEnabled) {
-				this.activeEpisode.reset();
-			}
+	close: function () {
+		if (this.activeEpisode && this.activeEpisode.replayEnabled) {
+			this.activeEpisode.reset();
+		}
+		
+		this.setActive(false);
 
-			this.setActive(false);
-			this.setInteractive(false);
-
-			resolve();
-		});
+		return Promise.resolve();
 	},
 };
 
