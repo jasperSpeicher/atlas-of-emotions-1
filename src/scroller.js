@@ -180,7 +180,8 @@ const scroller = {
 	onSectionLeave: function (index, nextIndex, direction) {
 		let nextAnchorLink = this.anchors[nextIndex - 1]; // index is 1 based?
 		let loadedSection = this.getLoadedSection(nextAnchorLink);
-		let sectionId = loadedSection[0].id;
+		let sectionId =
+			loadedSection && loadedSection[0] && loadedSection[0].id;
 
 		if (this.screenIsSmall) {
 			this.minimizeSectionText();
@@ -189,34 +190,6 @@ const scroller = {
 		//hide the about text if leaving the intro
 		if (sectionId == "introduction-section") {
 			this.toggleAboutSection(false);
-		}
-
-		//save the emotion state before leaving
-		let hash = window.location.hash
-			.replace(/^#/, "")
-			.split(dispatcher.HASH_DELIMITER);
-		let currentAtlasSection = hash[0];
-		//let emotion = hash[ 1 ];
-		//if ( this.hasEmotionState( anchorLink ) && emotion ) {
-		//    this.selectedEmotionState = emotion;
-		//}
-
-		//if the hash is not correct for the next section, change the hash
-		let nextAtlasSection = hash[0];
-		if (
-			this.ATLAS_TO_FULLPAGE_SECTIONS[currentAtlasSection] !=
-			nextAnchorLink
-		) {
-			//if section has emotion state, set it so the original content can pick it up
-			nextAtlasSection = this.FULLPAGE_TO_ATLAS_SECTIONS[nextAnchorLink];
-		}
-
-		//TODO replace with navigation call, integrate with app.js properly
-		let nextEmotionState =
-			nextAtlasSection == "continents" ? "" : this.selectedEmotionState;
-		if (currentAtlasSection !== nextAtlasSection) {
-			window.location.hash =
-				nextAtlasSection + dispatcher.HASH_DELIMITER + nextEmotionState;
 		}
 	},
 
@@ -437,7 +410,6 @@ const scroller = {
 			let id = parent.id;
 			let anchorLink = this.getFullpageAnchorLink(id);
 			let animator = new SectionTextAnimator();
-			
 
 			this.sectionTextAnimators[id] = animator;
 
@@ -451,7 +423,9 @@ const scroller = {
 				}
 			};
 
-			$(parent).find(".section-graphics").on("click", onTapSectionGraphics);
+			$(parent)
+				.find(".section-graphics")
+				.on("click", onTapSectionGraphics);
 
 			let minimizeSectionText = () => {
 				let minimized = !sectionTextMaximized && !sectionTextMaximizing;
