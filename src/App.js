@@ -17,8 +17,6 @@ import states from "./states.js";
 import actions from "./actions.js";
 import calm from "./calm.js";
 
-
-
 export default function (...initArgs) {
 	const MIN_ALLOWED_WIDTH = 1200,
 		MIN_ALLOWED_HEIGHT = 600,
@@ -48,10 +46,10 @@ export default function (...initArgs) {
 			.loadStrings()
 			.then(() => {
 				initTemplate();
+				initScroller();
 				initContainers();
 				initSections();
 				initLanguageSelector();
-				initScroller();
 
 				// unhide content rendered for bots
 				document
@@ -170,11 +168,19 @@ export default function (...initArgs) {
 	function initContainers() {
 		let mainEl = document.querySelector("#main"),
 			containerEl;
+		const independentSections = [
+			"triggers",
+			"strategies",
+			"learn_more",
+			"waking_up",
+		];
 		_.values(dispatcher.SECTIONS).forEach((sectionName) => {
-			if (sectionName == "triggers") {
-				//FIXME do this better?
-				containers[sectionName] =
-					document.getElementById("timeline-graphics");
+			if (independentSections.includes(sectionName)) {
+				const fullPageSectionSelector =
+					scroller.getFullpageSectionId(sectionName);
+				containers[sectionName] = document.querySelector(
+					`${fullPageSectionSelector} .section-graphics`
+				);
 			} else {
 				containerEl = document.createElement("div");
 				containerEl.id = sectionName;

@@ -12,7 +12,7 @@ class StrategiesSection {
 				key: "annex-impediment-antidote",
 			},
 		];
-		this.scrollParent = $("#strategies-fp-section .scroll-parent");
+		this.scrollParent = $(containerNode);
 		const sectionContainer = this.scrollParent.find(
 			"#strategies-impediment-container"
 		)[0];

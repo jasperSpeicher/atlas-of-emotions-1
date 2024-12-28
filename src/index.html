@@ -147,28 +147,6 @@
     <div id="app-container">
 
         <div class="original-content">
-
-            <div id="header">
-                <div class="dropdown emotion-menu hide-on-more">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="emotion-dropdown"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span
-                            class="dd-title"></span><span class="caret"></span></button>
-                    <ul class="dropdown-menu" aria-labelledby="emotion-dropdown"></ul>
-                </div>
-
-                <div id="more-close" class="close-button show-on-more"></div>
-            </div>
-            <div id="mobile-header" style="display: none">
-                <div class="dropdown-curtain"></div>
-                <div class="dropdown">
-                    <div class="dropdown-bkgd"></div>
-                    <button class="btn btn-default dropdown-toggle" type="button" id="mobile-nav-toggle"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                    <ul class="dropdown-menu" aria-labelledby="mobile-nav-toggle">
-                        <li>&times;</li>
-                    </ul>
-                </div>
-            </div>
             <div id="main">
                 <!-- This content is all replaced at runtime. -->
                 <div id="continents" class="placeholder">
@@ -334,7 +312,10 @@
             </div>
 
             <div class="section waking_up" id="waking_up-fp-section">
-                <iframe src="http://atlasofemotions.jasperspeicher.codes/immersive-scroll" id="waking_up-iframe"></iframe>
+                <div class="section-graphics">
+                    <iframe src="http://atlasofemotions.jasperspeicher.codes/immersive-scroll"
+                        id="waking_up-iframe"></iframe>
+                </div>
             </div>
 
             <div class="section" id="timeline-fp-section" data-has-emotion-state="true">
@@ -613,7 +594,8 @@
                                 {{# } }}
                             </ul>
                             <div data-template="secondaryData">
-                                <a href="#strategies/impediment-antidote">{{ annex["impediment-antidote"].title }}</a>
+                                <a href="#strategies/impediment-antidote">{{ annex["impediment-antidote"].title
+                                    }}</a>
                             </div>
                         </div>
                     </div>
@@ -622,6 +604,8 @@
 
             <div class="section" id="learn_more-fp-section">
                 <div class="section-graphics scroll-parent">
+                    <div class="learn_more-text">
+                    </div>
                 </div>
                 <div class="section-text">
                     <h2 class="section-heading" data-template="metadata.navigation">{{ learn_more.heading }}</h2>
@@ -629,7 +613,8 @@
                         <div id="learn_more-toc">
                             <ul data-template="secondaryData">
                                 {{# for(let key in annex) { }}
-                                <li id="{{ key }}-link"><a href="#learn_more/{{ key }}">{{ annex[key].title }}</a></li>
+                                <li id="{{ key }}-link"><a href="#learn_more/{{ key }}">{{ annex[key].title }}</a>
+                                </li>
                                 {{# } }}
                             </ul>
                         </div>
@@ -640,7 +625,8 @@
 
         <div class="emotion-nav">
             <ul>
-                <li data-template="metadata.navigation.emotions" class="all"><a href="#continents">{{ all }}</a></li>
+                <li data-template="metadata.navigation.emotions" class="all"><a href="#continents">{{ all }}</a>
+                </li>
                 <li data-template="derived.emotions"><a href="#" data-emotion="anger">{{ anger }}</a></li>
                 <li data-template="derived.emotions"><a href="#" data-emotion="fear">{{ fear }}</a></li>
                 <li data-template="derived.emotions"><a href="#" data-emotion="disgust">{{ disgust }}</a></li>

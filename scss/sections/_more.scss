@@ -436,12 +436,8 @@
 	}
 }
 
-#learn_more {
+#learn_more-fp-section {
 	overflow-y: auto;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 100%;
 	#scientific-basis {
 		tr {
 			border-bottom: none;
@@ -449,7 +445,7 @@
 	}
 }
 
-#learn_more,
+#learn_more-fp-section,
 #strategies-fp-section {
 	.wrapper {
 		margin-bottom: 4rem;

@@ -372,7 +372,7 @@ const timeline = {
 	init: function (containerNode, screenIsSmall) {
 		this.screenIsSmall = screenIsSmall;
 
-		this.sectionContainer = containerNode;
+		this.sectionContainer = containerNode.querySelector("#timeline-graphics");
 		this.beginAwarenessButton = document.getElementById("begin-awareness");
 		this.sectionTextBodyIntro = Array.prototype.slice.call(
 			document.querySelectorAll("#timeline-fp-section .body-intro")

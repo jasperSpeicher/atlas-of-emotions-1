@@ -23,11 +23,11 @@ export default {
 	scrollParent: null,
 
 	init: function (containerNode, screenIsSmall) {
-		this.sectionContainer = containerNode;
+		this.sectionContainer = containerNode.querySelector(".learn_more-text");
 
 		this.screenIsSmall = screenIsSmall;
 
-		this.scrollParent = $("#learn_more");
+		this.scrollParent = $(containerNode);
 
 		this.initializePages();
 
@@ -39,12 +39,7 @@ export default {
 	},
 
 	// Emotion in this context is the more-info page
-	setEmotion: function (
-		currentEmotion,
-		previousEmotion,
-		currentMorePage,
-		previousMorePage
-	) {},
+	setEmotion: function () {},
 
 	open: function () {
 		if (this.screenIsSmall) {
