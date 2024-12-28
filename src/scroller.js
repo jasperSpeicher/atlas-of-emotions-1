@@ -641,8 +641,6 @@ const scroller = {
 			let $section = $(this).parents(".section");
 			$section.toggleClass("more-visible");
 			$("body").toggleClass("more-visible");
-			let moreVisible = $section.hasClass("more-visible");
-			$.fn.fullpage.setAllowScrolling(!moreVisible);
 		});
 	},
 
