@@ -1,19 +1,23 @@
 import _ from "lodash";
+import d3 from "d3";
 import scroller from "./scroller.js";
 import timeline from "./timeline/timeline.js";
 import dispatcher from "./dispatcher.js";
-import learnMore from "./learnMore.js";
-import ContinentsSection from "./continents";
-import states from "./states.js";
-import actions from "./actions.js";
-import calm from "./calm.js";
 import popupManager from "./popupManager.js";
 import appStrings from "./appStrings.js";
 import stringsConfig from "../static/strings/stringsConfig.json";
 import sassVars from "../scss/variables.json";
-import d3 from "d3";
+
+// sections
+import ContinentsSection from "./continents";
 import strategies from "./strategies";
+import learnMore from "./learnMore.js";
 import wakingUp from "./waking_up.js";
+import states from "./states.js";
+import actions from "./actions.js";
+import calm from "./calm.js";
+
+
 
 export default function (...initArgs) {
 	const MIN_ALLOWED_WIDTH = 1200,

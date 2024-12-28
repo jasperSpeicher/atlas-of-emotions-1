@@ -206,30 +206,46 @@ const scroller = {
 		if (sectionId == "introduction-fp-section" && !this.introTimeline) {
 			//init animations for intro section
 			let $intro = $("#introduction-fp-section");
+			let $introSlides = $intro.find(".slides");
+			let $introCta = $intro.find(".cta");
+
 			this.introTimeline = new gsap.timeline();
-
-			this.moveTo("introduction", 0);
-
 			this.introTimeline
 				.add("start")
 				.fromTo(
 					$intro.find(".intro-heading"),
-					2,
 					{
 						autoAlpha: 0,
 						ease: "power1.out",
 					},
-					{ autoAlpha: 1 },
-					"start+=1"
+					{
+						autoAlpha: 1,
+						duration: 1
+					 }
 				)
 				.fromTo(
-					$intro.find(".cta"),
-					2,
+					$introSlides,
 					{
 						autoAlpha: 0,
 						ease: "power1.out",
 					},
-					{ autoAlpha: 1 }
+					{
+						autoAlpha: 1,
+						duration: 1
+						
+					 }
+				)
+				.fromTo(
+					$introCta,
+					{
+						autoAlpha: 0,
+						ease: "power1.out",
+					},
+					{
+						autoAlpha: 1,
+						duration: 1
+						
+					 }
 				)
 				.call(function () {
 					_self.initSlideInterval();
@@ -250,7 +266,7 @@ const scroller = {
 			this.$hiddenForIntro.addClass("visible");
 			if (this.introTimeline) {
 				this.introTimeline.pause();
-				this.introTimeline.seek("end");
+				this.introTimeline.seek("start");
 			}
 		}
 
