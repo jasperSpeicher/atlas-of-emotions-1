@@ -644,7 +644,7 @@ const scroller = {
 		});
 	},
 
-	init: function (container, screenIsSmall) {
+	init: function (screenIsSmall) {
 		this.screenIsSmall = screenIsSmall;
 
 		this.initTopNav();

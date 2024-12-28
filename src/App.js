@@ -123,7 +123,7 @@ export default function (...initArgs) {
 	}
 
 	function initScroller() {
-		scroller.init.bind(scroller)(null, screenIsSmall);
+		scroller.init.bind(scroller)(screenIsSmall);
 	}
 
 	function initTemplate() {
