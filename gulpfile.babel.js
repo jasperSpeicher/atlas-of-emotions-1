@@ -164,7 +164,11 @@ function cssTask(options) {
 			console.log("Building CSS bundle");
 			return gulp
 				.src(options.src)
-				.pipe(sass.sync())
+				.pipe(
+					sass.sync({
+						includePaths: ["node_modules"],
+					})
+				)
 				.pipe($.autoprefixer())
 				.pipe(gulp.dest(options.dest))
 				.pipe(gulpif(options.reload, connect.reload()))
@@ -183,7 +187,11 @@ function cssTask(options) {
 		run();
 	} else {
 		gulp.src(options.src)
-			.pipe(sass.sync())
+			.pipe(
+				sass.sync({
+					includePaths: ["node_modules"],
+				})
+			)
 			.pipe($.autoprefixer())
 			.pipe($.cssmin())
 			.pipe(gulp.dest(options.dest));

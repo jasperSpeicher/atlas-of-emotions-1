@@ -23,6 +23,7 @@
 		"last 2 versions"
 	],
 	"dependencies": {
+		"@material/button": "^14.0.0",
 		"babel-plugin-inline-svg": "^1.2.0",
 		"babel-polyfill": "^6.9.1",
 		"d3": "^3.5.6",

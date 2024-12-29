@@ -1,4 +1,5 @@
 import { TweenMax, TimelineMax, gsap } from "gsap";
+import { MDCRipple } from "@material/ripple/index";
 
 import Episode from "./Episode.js";
 import scroller from "../scroller.js";
@@ -681,18 +682,22 @@ export default class EpisodeAddAwareness extends Episode {
 				"#experience-add-awareness",
 				document
 			);
+
+			MDCRipple.attachTo(this.addAwarenessButtonExperience);
 			this.addAwarenessButtonExperience.style.visibility = "hidden"; //TODO should these be handled in css? what's typical in this app?
 
 			this.addAwarenessButtonResponse = timeline.select(
 				"#response-add-awareness",
 				document
 			);
+			MDCRipple.attachTo(this.addAwarenessButtonResponse);
 			this.addAwarenessButtonResponse.style.visibility = "hidden";
 
 			this.refractoryPeriodButton = timeline.select(
 				"#begin-refractory-period",
 				document
 			);
+			MDCRipple.attachTo(this.refractoryPeriodButton);
 			this.refractoryPeriodButton.style.visibility = "hidden";
 
 			this.blockDiagramButton = timeline.select(

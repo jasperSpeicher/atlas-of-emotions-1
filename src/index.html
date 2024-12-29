@@ -370,7 +370,17 @@
                                     {{ paragraph }}
                                 </p>
                                 {{# }) }}
-                                <button id="begin-awareness" class="body-intro">{{ intro_button }}</button>
+                                <p class="body-intro">
+                                    {{ intro_button }}
+                                </p>
+                            </div>
+                            <div data-template="metadata.timeline.secondary">
+                                <button id="begin-awareness" class="body-intro mdc-button mdc-button--raised">
+                                    <span class="mdc-button__ripple"></span>
+                                    <span class="mdc-button__label">
+                                        {{ trigger.button }}
+                                    </span>
+                                </button>
                             </div>
 
                             <div data-template="metadata.timeline.secondary">
@@ -387,9 +397,14 @@
                                         {{# }) }}
                                     </ul>
                                 </div>
-                                <button id="experience-add-awareness" class="body-awareness" data-stage="trigger">
-                                    {{ trigger.button }}
+                                <button id="experience-add-awareness" class="body-awareness mdc-button mdc-button--raised"
+                                    data-stage="trigger">
+                                    <span class="mdc-button__ripple"></span>
+                                    <span class="mdc-button__label">
+                                        {{ trigger.button }}
+                                    </span>
                                 </button>
+
 
 
                                 <!--state-->
@@ -399,9 +414,12 @@
                                         {{ experience.body[0] }}
                                     </p>
                                 </div>
-                                <button id="response-add-awareness" class="body-awareness" data-stage="experience">
-                                    <!-- + add awareness -->
-                                    {{ experience.button }}
+                                <button id="response-add-awareness" class="body-awareness mdc-button mdc-button--raised"
+                                    data-stage="experience">
+                                    <span class="mdc-button__ripple"></span>
+                                    <span class="mdc-button__label">
+                                        {{ experience.button }}
+                                    </span>
                                 </button>
 
                                 <!--response-->
@@ -410,10 +428,15 @@
                                     <p>
                                         {{ response.body[0] }}
                                     </p>
+                                    <p>{{ response.button }}</p>
                                 </div>
-                                <button id="begin-refractory-period" class="body-awareness" data-stage="response">
-                                    <!--Why is it hard to stay aware?-->
-                                    {{ response.button }}
+                                <button id="begin-refractory-period" class="body-awareness mdc-button mdc-button--raised"
+                                    data-stage="response">
+                                    <span class="mdc-button__ripple"></span>
+                                    <span class="mdc-button__label">
+                                        <!--Why is it hard to stay aware?-->
+                                        {{ trigger.button }}
+                                    </span>
                                 </button>
 
                                 <!--refractory period-->
@@ -425,9 +448,13 @@
                                     </p>
                                     {{# }) }}
                                 </div>
-                                <button id="begin-block-diagram" class="body-awareness" data-stage="refractory">
-                                    <!--See the big picture-->
-                                    {{ refractory.button }}
+                                <button id="begin-block-diagram" class="body-awareness mdc-button mdc-button--raised"
+                                    data-stage="refractory">
+                                    <span class="mdc-button__ripple"></span>
+                                    <span class="mdc-button__label">
+                                        <!--See the big picture-->
+                                        {{ refractory.button }}
+                                    </span>
                                 </button>
 
                                 <!--blocks-->
@@ -605,6 +632,7 @@
             <div class="section" id="learn_more-fp-section">
                 <div class="section-graphics scroll-parent">
                     <div class="learn_more-text">
+                        <img src="img/journal.png" />
                     </div>
                 </div>
                 <div class="section-text">

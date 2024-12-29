@@ -1,5 +1,8 @@
+@use "@material/ripple";
+@use "@material/button/styles";
+
 /* variables used only in this file */
-$section-padding-top: 131px;
+$section-padding-top: 150px;
 $section-text-padding: 1.5em;
 $section-text-padding-mobile: 0.75em;
 $more-text-padding: 3em;
@@ -684,10 +687,18 @@ svg {
 	}
 
 	button {
+		--mdc-theme-primary: #000000;
+		--mdc-theme-on-primary: #ffffff;
+
 		@mixin shadow($color: transparent, $fade: 0) {
 			box-shadow: 0 0 10px 0.5px rgba($color, $fade);
 		}
 		@include shadow();
+
+		font-family: Raleway, sans-serif;
+
+		overflow: hidden;
+
 		transition: all 0.15s linear;
 		position: relative;
 		$height: 45px;
@@ -697,20 +708,19 @@ svg {
 		display: block;
 		width: 100%;
 		height: 45px;
-		margin: 0 auto;
+		margin: 30px auto;
 		border: none;
-		box-shadow: 1px 3px 5px 0px #555;
+		// box-shadow: 1px 3px 5px 0px #555;
 		text-transform: uppercase;
 		font-weight: 500;
 		font-size: 20px;
 		padding: 0.3em 0;
 		border-radius: $height/2;
-		&:hover {
-			@include shadow(black, 0.2);
-			transform: scale(0.98);
-			background: #eee;
-			cursor: pointer;
-		}
+		// &:hover {
+		// 	@include shadow(black, 0.2);
+		// 	transform: scale(0.98);
+		// 	cursor: pointer;
+		// }
 		&:active,
 		&:focus {
 			outline: none;
@@ -791,7 +801,7 @@ svg {
 	.section-text__scroller {
 		position: absolute;
 		bottom: 50px;
-		top: 179px;
+		top: $section-padding-top + 60;
 		left: $section-text-padding;
 		right: $section-text-padding;
 		padding-bottom: 50px;
@@ -1078,6 +1088,12 @@ svg {
 	line-height: 1.5;
 	padding: 90px 100px;
 	max-width: 1300px;
+}
+#learn_more-fp-section img {
+	max-width: 300px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
 }
 
 #strategies-fp-section,
@@ -1866,12 +1882,29 @@ h6 {
 		}
 	}
 	.viewing-learn_more-fp {
+		.page-body {
+			position: relative;
+			transform: none !important;
+			height: auto;
+		}
+		.page-body > div {
+			display: none;
+		}
 		#learn_more-fp-section {
+			display: block;
+			height: auto;
+			.section-graphics {
+				padding-left: 0;
+				height: auto;
+				position: relative;
+			}
+			.learn_more-text{
+				padding: 0 20px 60px 120px;
+			}
 			h1 {
 				page-break-before: always;
 				margin-top: 0;
 			}
-			padding-left: 120px;
 			.wrapper:first-of-type h1 {
 				page-break-before: auto;
 			}

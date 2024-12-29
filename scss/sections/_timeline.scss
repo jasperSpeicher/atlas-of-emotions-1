@@ -41,6 +41,12 @@
 				border: none;
 				margin-top: -15px;
 			}
+			div:last-of-type,
+			p:last-of-type,
+			ul:last-of-type,
+			li:last-of-type {
+				margin-bottom: 0;
+			}
 			h3 {
 				font-size: 1em;
 				font-weight: 500;
@@ -51,7 +57,7 @@
 				cursor: pointer;
 				&:before {
 					position: absolute;
-					content: '';
+					content: "";
 					display: inline-block;
 					opacity: 0.3;
 					width: 0;
@@ -76,7 +82,8 @@
 				margin: -10px 0 0 0;
 				line-height: 1.2;
 			}
-			p, ul {
+			p,
+			ul {
 				transition: opacity 0.3s;
 				margin-bottom: 1em;
 			}
@@ -90,19 +97,19 @@
 				}
 				h3:before {
 					left: 0.2em;
-					top: .4em;
+					top: 0.4em;
 					border-top: $arrow-size solid transparent;
 					border-right: none;
 					border-bottom: $arrow-size solid transparent;
 					border-left: $arrow-size solid #000;
 				}
-				p, ul {
+				p,
+				ul {
 					opacity: 0;
 					transition: opacity 0s;
 				}
 			}
 		}
-
 	}
 	.diagram-caption {
 		opacity: 0;
@@ -134,7 +141,7 @@
 	background-color: transparent;
 	overflow: hidden;
 	&:before {
-		content: ' ';
+		content: " ";
 		display: block;
 		position: absolute;
 		left: 0;
@@ -145,7 +152,7 @@
 		transform: translateX(3px);
 	}
 	&:after {
-		content: ' ';
+		content: " ";
 		display: block;
 		position: absolute;
 		right: 0;
@@ -154,7 +161,7 @@
 		transform: translateX(2px);
 		width: $edge-width;
 		background-color: transparent;
-		background-image: url('./img/glowEdge.png');
+		background-image: url("./img/glowEdge.png");
 		background-position: right;
 		background-repeat: repeat-y;
 		background-size: 100%;
@@ -210,9 +217,9 @@
 	}
 
 	.section-text {
-		p, ul {
+		p,
+		ul {
 			margin-bottom: 0.5em;
 		}
 	}
 }
-

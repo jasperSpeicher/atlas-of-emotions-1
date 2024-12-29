@@ -2,6 +2,7 @@
 //TODO should regular and add-awareness versions be running at the same time?
 import { ScrollToPlugin } from "gsap/all";
 import { gsap } from "gsap";
+import { MDCRipple } from "@material/ripple";
 
 import Episode from "./Episode.js";
 import EpisodeAddAwareness from "./EpisodeAddAwareness.js";
@@ -372,8 +373,11 @@ const timeline = {
 	init: function (containerNode, screenIsSmall) {
 		this.screenIsSmall = screenIsSmall;
 
-		this.sectionContainer = containerNode.querySelector("#timeline-graphics");
+		this.sectionContainer =
+			containerNode.querySelector("#timeline-graphics");
 		this.beginAwarenessButton = document.getElementById("begin-awareness");
+		MDCRipple.attachTo(this.beginAwarenessButton);
+
 		this.sectionTextBodyIntro = Array.prototype.slice.call(
 			document.querySelectorAll("#timeline-fp-section .body-intro")
 		);
@@ -436,7 +440,7 @@ const timeline = {
 		if (this.activeEpisode && this.activeEpisode.replayEnabled) {
 			this.activeEpisode.reset();
 		}
-		
+
 		this.setActive(false);
 
 		return Promise.resolve();
