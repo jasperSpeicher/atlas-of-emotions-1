@@ -453,11 +453,6 @@
 		.annex-table-wrapper {
 			margin-top: 0;
 		}
-		img {
-			width: 100%;
-			margin-bottom: 2rem;
-			margin-top: 1rem;
-		}
 		td {
 			background-color: transparent;
 		}
@@ -475,6 +470,15 @@
 			tr {
 				border-bottom: 1px solid #000;
 			}
+		}
+	}
+}
+#strategies-fp-section {
+	.wrapper {
+		img {
+			width: 100%;
+			margin-bottom: 2rem;
+			margin-top: 1rem;
 		}
 	}
 }
