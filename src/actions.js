@@ -6,6 +6,7 @@ import dispatcher from "./dispatcher.js";
 import appStrings from "./appStrings.js";
 import sassVars from "../scss/variables.json";
 import states from "./states.js";
+import { addScrollerFade } from "./helpers.js";
 
 const VALENCES = {
 	CONSTRUCTIVE: 1,
@@ -1358,7 +1359,12 @@ export default {
 		} else {
 			if (!this.isBackgrounded) this.resetSectionText();
 		}
-
+		let $activeScrollerSectionText = $(
+			`#response-fp-section .section-text`
+		);
+		if ($activeScrollerSectionText.length) {
+			addScrollerFade($activeScrollerSectionText);
+		}
 		this.displayHighlightedAction(action);
 	},
 

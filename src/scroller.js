@@ -200,7 +200,6 @@ const scroller = {
 
 		this.currentAnchor = anchorLink;
 
-		$(".section-text__scroller")[0].scrollTop = 0;
 		dispatcher.sectionGraphicsResize();
 
 		if (sectionId == "introduction-fp-section" && !this.introTimeline) {
@@ -220,8 +219,8 @@ const scroller = {
 					},
 					{
 						autoAlpha: 1,
-						duration: 1
-					 }
+						duration: 1,
+					}
 				)
 				.fromTo(
 					$introSlides,
@@ -231,9 +230,8 @@ const scroller = {
 					},
 					{
 						autoAlpha: 1,
-						duration: 1
-						
-					 }
+						duration: 1,
+					}
 				)
 				.fromTo(
 					$introCta,
@@ -243,9 +241,8 @@ const scroller = {
 					},
 					{
 						autoAlpha: 1,
-						duration: 1
-						
-					 }
+						duration: 1,
+					}
 				)
 				.call(function () {
 					_self.initSlideInterval();

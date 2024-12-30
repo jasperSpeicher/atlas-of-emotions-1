@@ -7,6 +7,7 @@ import popupManager from "./popupManager.js";
 import appStrings from "./appStrings.js";
 import stringsConfig from "../static/strings/stringsConfig.json";
 import sassVars from "../scss/variables.json";
+import { addScrollerFade } from "./helpers.js";
 
 // sections
 import ContinentsSection from "./continents";
@@ -640,20 +641,27 @@ export default function (...initArgs) {
 		const fpSection =
 			currentSectionName &&
 			scroller.ATLAS_TO_FULLPAGE_SECTIONS[currentSectionName];
-		let activeScrollerSectionText =
-			fpSection && $(`#${fpSection}-section .section-text`)[0];
-		if (activeScrollerSectionText) {
+		let $activeScrollerSectionText =
+			fpSection && $(`#${fpSection}-section .section-text`);
+		if ($activeScrollerSectionText && $activeScrollerSectionText[0]) {
 			let sectionHeadlineElement =
-				activeScrollerSectionText.querySelector(".headline");
+				$activeScrollerSectionText.find(".headline")[0];
 			let sectionBodyElement =
-				activeScrollerSectionText.querySelector(".body");
+				$activeScrollerSectionText.find(".body")[0];
 			if (sectionHeadlineElement) {
 				sectionHeadlineElement.innerHTML = showTitle ? title : "";
+				if (showTitle) {
+					sectionHeadlineElement.classList.add("visible");
+				} else {
+					sectionHeadlineElement.classList.remove("visible");
+				}
 			}
 			// only replace the innerHTML if the content is different - this is to enable fading on the links in the actions section
 			if (sectionBodyElement && sectionBodyElement.innerHTML != body) {
 				sectionBodyElement.innerHTML = body;
 			}
+
+			addScrollerFade($activeScrollerSectionText);
 		}
 	}
 
