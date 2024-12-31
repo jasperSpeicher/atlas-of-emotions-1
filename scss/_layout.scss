@@ -1308,7 +1308,7 @@ svg {
 
 	.mobile-header {
 		display: block;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -1617,7 +1617,7 @@ svg {
 	}
 	.menu-toggle {
 		display: block;
-		position: absolute;
+		position: fixed;
 		right: 0;
 		top: 0;
 		width: #{$ui-header-mobile-nav-target-width}px;
