@@ -1,7 +1,6 @@
 import _ from "lodash";
 import d3 from "d3";
 import scroller from "./scroller.js";
-import timeline from "./timeline/timeline.js";
 import dispatcher from "./dispatcher.js";
 import popupManager from "./popupManager.js";
 import appStrings from "./appStrings.js";
@@ -13,10 +12,11 @@ import { addScrollerFade } from "./helpers.js";
 import ContinentsSection from "./continents";
 import strategies from "./strategies";
 import learnMore from "./learnMore.js";
-import wakingUp from "./waking_up.js";
+import wakingUp from "./waking-up/waking_up.js";
 import states from "./states.js";
 import actions from "./actions.js";
 import calm from "./calm.js";
+import timeline from "./timeline/timeline.js";
 
 export default function (...initArgs) {
 	const MIN_ALLOWED_WIDTH = 1200,

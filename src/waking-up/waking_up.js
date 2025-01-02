@@ -1,15 +1,24 @@
+import {
+	createImmersiveScrollDOM,
+	initImmersiveScrollAnimations,
+} from "./ImmersiveScroll";
+
 class WakingUpSection {
 	isInited = false;
 
 	init(containerNode, screenIsSmall) {
+		if (this.isInited) {
+			return;
+		}
+		const container = createImmersiveScrollDOM();
+		containerNode.appendChild(container);
+		initImmersiveScrollAnimations();
+
 		this.isInited = true;
 	}
 
 	open() {
-		$("#waking_up-iframe")[0].setAttribute(
-			"src",
-			`http://atlasofemotions.jasperspeicher.codes/immersive-scroll?random=${Math.random()}`
-		);
+		return Promise.resolve();
 	}
 	close() {
 		return Promise.resolve();
