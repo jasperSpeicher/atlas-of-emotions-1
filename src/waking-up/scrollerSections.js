@@ -470,7 +470,7 @@ import { sharedStyle } from "./config";
       //   <div id="regret-response">we might act in ways we regret later.</div>
       // ),
       content: `
-        <div id="regret-response">we might act in ways we regret later.</div>
+        <div id="waking-up__regret-response">we might act in ways we regret later.</div>
       `,
       height: "30px",
       tweenVars: [
@@ -480,14 +480,14 @@ import { sharedStyle } from "./config";
             end: "bottom center+=30px",
             pinSpacing: false,
             onEnter: () => {
-              const e = document.querySelector("#waking-up__waking-up__regret-response");
+              const e = document.querySelector("#waking-up__regret-response");
               if (e) {
                 e.innerHTML = "Shout at them";
                 e.style.fontSize = "3.5rem";
               }
             },
             onLeaveBack: () => {
-              const e = document.querySelector("#waking-up__waking-up__regret-response");
+              const e = document.querySelector("#waking-up__regret-response");
               if (e) {
                 e.innerHTML = "we might act in ways we regret later.";
                 e.removeAttribute("style");
@@ -673,13 +673,13 @@ import { sharedStyle } from "./config";
             end: "bottom top",
             onEnter: () => {
               const els = document.querySelectorAll(
-                ".emotion-label--with-circle"
+                ".waking-up__emotion-label--with-circle"
               );
               els.forEach((l) => (l.style.opacity = "1"));
             },
             onLeaveBack: () => {
               const els = document.querySelectorAll(
-                ".emotion-label--with-circle"
+                ".waking-up__emotion-label--with-circle"
               );
               els.forEach((l) => (l.style.opacity = "0"));
             },
@@ -701,13 +701,13 @@ import { sharedStyle } from "./config";
             end: "bottom top",
             onEnter: () => {
               const els = document.querySelectorAll(
-                ".emotion-label--with-circle"
+                ".waking-up__emotion-label--with-circle"
               );
               els.forEach((l) => (l.style.opacity = "0"));
             },
             onLeaveBack: () => {
               const els = document.querySelectorAll(
-                ".emotion-label--with-circle"
+                ".waking-up__emotion-label--with-circle"
               );
               els.forEach((l) => (l.style.opacity = "1"));
             },
@@ -726,7 +726,7 @@ import { sharedStyle } from "./config";
       // ),
       content: `
         <div>
-          <span id="become-curious">and become curious and</span>
+          <span id="waking-up__become-curious">and become curious and</span>
           <span> kind about our emotion.&nbsp;&nbsp;</span>
         </div>
       `,
@@ -758,13 +758,13 @@ import { sharedStyle } from "./config";
       // content: (
       //   <div class="timeline-questions" id="trigger-timeline">
       //     <span className={sharedStyle.triggerQuestion}>What causes...</span>
-      //     <img className={sharedStyle.triggerArrow} src="/assets/right-arrow.svg" />
+      //     <img className={sharedStyle.triggerArrow} src="/img/right-arrow.svg" />
       //   </div>
       // ),
       content: `
-        <div class="timeline-questions" id="trigger-timeline">
+        <div class="timeline-questions" id="waking-up__trigger-timeline">
           <span class="${sharedStyle.triggerQuestion}">What causes this feeling?</span>
-          <img class="${sharedStyle.triggerArrow}" src="/assets/right-arrow.svg" />
+          <img class="${sharedStyle.triggerArrow}" src="/img/right-arrow.svg" />
         </div>
       `,
       scrollTriggerComponent: "heading",
@@ -799,13 +799,13 @@ import { sharedStyle } from "./config";
       // Originally:
       // content: (
       //   <div class="timeline-questions" id="response-timeline">
-      //     <img className={sharedStyle.responseArrow} src="/assets/right-arrow.svg" />
+      //     <img className={sharedStyle.responseArrow} src="/img/right-arrow.svg" />
       //     <span className={sharedStyle.responseQuestion}>How do I respond?</span>
       //   </div>
       // ),
       content: `
-        <div class="timeline-questions" id="response-timeline">
-          <img class="${sharedStyle.responseArrow}" src="/assets/right-arrow.svg" />
+        <div class="timeline-questions" id="waking-up__response-timeline">
+          <img class="${sharedStyle.responseArrow}" src="/img/right-arrow.svg" />
           <span class="${sharedStyle.responseQuestion}">How do I respond?</span>
         </div>
       `,

@@ -21,6 +21,10 @@
 
 .waking-up__emotionContainer {
 	z-index: 2;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 150vh; // add 100vh because of the transform on the page-body
 }
 
 .waking-up__emotionColorField {
