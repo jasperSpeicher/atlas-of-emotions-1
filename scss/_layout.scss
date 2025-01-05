@@ -245,9 +245,14 @@ svg {
 	padding: 25px;
 	width: 19em;
 	pointer-events: none;
+	color: #000;
 	img {
 		mix-blend-mode: multiply !important;
 	}
+}
+
+[class*="viewing-waking_up-fp"] .logo {
+	color: #eee;
 }
 
 [class*="viewing-introduction-fp"] {
