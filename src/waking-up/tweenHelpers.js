@@ -31,7 +31,8 @@ export function getTweenComponentSelector(tweenComponent, parentSelector) {
 export function mergeTweenVars(trigger, vars) {
 	return {
 		...(vars || {}),
-		scrollTrigger: {
+        scrollTrigger: {
+            scroller: "#waking_up-fp-section .section-graphics",
 			trigger,
 			scrub: true,
 			...(vars?.scrollTrigger || {}),

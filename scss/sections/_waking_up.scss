@@ -1,11 +1,10 @@
 .waking-up__stars {
 	position: fixed;
-	z-index: -1;
-	top: 0;
-	bottom: 0;
+	top: 100vh;
+	height: 100vh;
 	left: 0;
 	right: 0;
-	background-image: url("/assets/extra_large_star_pattern.svg");
+	background-image: url("/img/extra_large_star_pattern.svg");
 	background-repeat: both;
 	opacity: 0.5;
 }
@@ -30,7 +29,7 @@
 	width: 200vw;
 	position: fixed;
 	left: 50vw;
-	top: 50vh;
+	top: 150vh; // add 100vh because of the transform on the page-body
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
 	z-index: 0;
@@ -89,7 +88,7 @@
 .waking-up__emotion-label {
 	font-size: 2.5rem;
 	color: #fff;
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	transition: opacity 1s ease-in-out;
 	opacity: 0;
@@ -215,7 +214,7 @@
 	}
 }
 
-.waking-up__triggerArrow {
+.section-graphics img.waking-up__triggerArrow {
 	width: 100px;
 	height: auto;
 }
@@ -225,7 +224,7 @@
 	font-size: 30px;
 }
 
-.waking-up__responseArrow {
+.section-graphics img.waking-up__responseArrow {
 	margin-right: 40px;
 	width: 100px;
 	height: auto;

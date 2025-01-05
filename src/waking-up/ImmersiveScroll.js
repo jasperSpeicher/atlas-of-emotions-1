@@ -54,7 +54,8 @@ export function createImmersiveScrollDOM() {
 	const emotionColorField = document.createElement("div");
 	emotionColorField.className = sharedStyle.emotionColorField;
 	emotionColorField.id = "waking-up__emotionColorField";
-	emotionContainer.appendChild(emotionColorField);
+
+	pageContainer.appendChild(emotionColorField);
 
 	// Example emotion labels
 	const labels = [
@@ -113,34 +114,46 @@ export function createImmersiveScrollDOM() {
  */
 export function initImmersiveScrollAnimations() {
 	// Parallax stars
+	const scrollElement = document.querySelector(
+		"#waking_up-fp-section .section-graphics"
+	);
 	gsap.to("#waking-up__stars-1", {
-		scrollTrigger: { scrub: 1 },
-		y: (_i, target) => {
-			target.style.backgroundSize = "50%";
-			return -ScrollTrigger.maxScroll(window) * 0.2;
+		scrollTrigger: {
+			scroller: "#waking_up-fp-section .section-graphics",
+			scrub: 2,
+		},
+		backgroundPositionY: (_i, target) => {
+			target.style.backgroundSize = "20%";
+			return ScrollTrigger.maxScroll(scrollElement) * -0.02;
 		},
 		ease: "none",
 	});
 	gsap.to("#waking-up__stars-2", {
-		scrollTrigger: { scrub: 1 },
-		y: (_i, target) => {
-			target.style.backgroundSize = "75%";
-			return -ScrollTrigger.maxScroll(window) * 0.25;
+		scrollTrigger: {
+			scroller: "#waking_up-fp-section .section-graphics",
+			scrub: 2,
+		},
+		backgroundPositionY: (_i, target) => {
+			target.style.backgroundSize = "30%";
+			return ScrollTrigger.maxScroll(scrollElement) * -0.025;
 		},
 		ease: "none",
 	});
 	gsap.to("#waking-up__stars-3", {
-		scrollTrigger: { scrub: 1 },
-		y: (_i, target) => {
-			target.style.backgroundSize = "100%";
-			return -ScrollTrigger.maxScroll(window) * 0.35;
+		scrollTrigger: {
+			scroller: "#waking_up-fp-section .section-graphics",
+			scrub: 2,
+		},
+		backgroundPositionY: (_i, target) => {
+			target.style.backgroundSize = "40%";
+			return ScrollTrigger.maxScroll(scrollElement) * -0.035;
 		},
 		ease: "none",
 	});
 
 	// Configure section & phrase tweens
 	scrollerSections.forEach((section, sectionIndex) => {
-    const sectionSelector = `#${section.id ?? getSectionId(sectionIndex)}`;
+		const sectionSelector = `#${section.id ?? getSectionId(sectionIndex)}`;
 		configureTweens(section, sectionSelector);
 		section.experiences?.events?.forEach((phrase, phraseIndex) => {
 			const phraseSelector = `#${getPhraseId(sectionIndex, phraseIndex)}`;
@@ -149,7 +162,7 @@ export function initImmersiveScrollAnimations() {
 	});
 
 	// Decentering tween for emotionColorField
-	gsap.to(".emotionColorField", {
+	gsap.to(`.${sharedStyle.emotionColorField}`, {
 		backgroundColor: "rgba(255,255,255,0)",
 		...getDecenteringTweenVariables(0),
 		opacity: 1,
@@ -199,18 +212,11 @@ function createSectionDOM(section, index) {
 	// Section heading/content container
 	const headingDiv = document.createElement("div");
 	headingDiv.className = "waking-up__sectionHeading";
-	headingDiv.style.minHeight = section.height ? `${section.height}px` : "";
+	headingDiv.style.minHeight = section.height ? section.height : "";
 
-	// The content (if it's a simple string, you can just set textContent;
-	// if it's HTML, you can set innerHTML; or create child elements as needed)
+	// The content of the section
 	const contentDiv = document.createElement("div");
-	if (typeof section.content === "string") {
-		contentDiv.textContent = section.content;
-	} else {
-		// For more complex dynamic content, handle accordingly
-		// (e.g., section.content might be HTML or an array of objects)
-		contentDiv.textContent = String(section.content ?? "");
-	}
+	contentDiv.innerHTML = section.content;
 
 	headingDiv.appendChild(contentDiv);
 	sectionDiv.appendChild(headingDiv);
@@ -242,8 +248,8 @@ function createSectionDOM(section, index) {
 function createPhraseDOM(element, phraseId) {
 	const phraseDiv = document.createElement("div");
 	phraseDiv.className = "waking-up__phrase";
-  phraseDiv.id = phraseId;
-  const phraseSelector = `#${phraseId}`;
+	phraseDiv.id = phraseId;
+	const phraseSelector = `#${phraseId}`;
 
 	// lineHeight if available
 	if (element.lineHeight) {
@@ -256,11 +262,10 @@ function createPhraseDOM(element, phraseId) {
 	phraseDiv.appendChild(span);
 
 	// Once the DOM is appended, we can set up GSAP.
-	// However, you may want to do it after the full DOM is in place.
-	// For demonstration, we do it here:
 	setTimeout(() => {
 		gsap.timeline({
 			scrollTrigger: {
+				scroller: "#waking_up-fp-section .section-graphics",
 				trigger: phraseSelector,
 				start: "top center",
 				end: "bottom center",
