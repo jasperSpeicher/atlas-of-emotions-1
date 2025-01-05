@@ -124,7 +124,7 @@ export const getDefaultTweenVars = () => [
 	{
 		scrollTrigger: {
 			pin: true,
-			start: "center center",
+			start: "center+=30 center",
 			end: "bottom-=20px center",
 			pinSpacing: false,
 		},
