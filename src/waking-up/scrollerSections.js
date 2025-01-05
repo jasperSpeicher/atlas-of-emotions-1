@@ -792,12 +792,13 @@ export const scrollerSections = [
       `,
 		scrollTriggerComponent: "heading",
 		tweenVars: [
-        {
-          scrollTrigger: {
-            ...getDefaultTweenVars()[0].scrollTrigger,
-            end: "bottom top-=10000px",
-          },
-        },
+			{
+				scrollTrigger: {
+					...getDefaultTweenVars()[0].scrollTrigger,
+					start: "center+=30 center",
+					end: "bottom top-=10000px",
+				},
+			},
 		],
 	},
 	{
@@ -834,12 +835,13 @@ export const scrollerSections = [
       `,
 		scrollTriggerComponent: "heading",
 		tweenVars: [
-        {
-          scrollTrigger: {
-            ...getDefaultTweenVars()[0].scrollTrigger,
-            end: "bottom top-=10000px",
-          },
-        },
+			{
+				scrollTrigger: {
+					...getDefaultTweenVars()[0].scrollTrigger,
+					start: "center+=30 center",
+					end: "bottom top-=10000px",
+				},
+			},
 		],
 	},
 	{
