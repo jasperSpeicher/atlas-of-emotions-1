@@ -811,7 +811,7 @@ svg {
 	.section-text__scroller {
 		position: absolute;
 		bottom: 50px;
-		top: $section-padding-top + 60;
+		top: $section-padding-top + 50;
 		left: $section-text-padding;
 		right: $section-text-padding;
 		padding-bottom: 50px;
@@ -1077,6 +1077,7 @@ svg {
 #strategies-toc,
 #learn_more-toc {
 	ul {
+		margin-top: 0;
 		padding: 0;
 		& > li {
 			font-weight: 400;
@@ -1922,7 +1923,7 @@ h6 {
 			right: unset;
 			width: unset;
 			padding: 0;
-			img {
+			svg {
 				width: 90px;
 				height: auto;
 			}
