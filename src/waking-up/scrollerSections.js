@@ -785,7 +785,7 @@ export const scrollerSections = [
 		//   </div>
 		// ),
 		content: `
-        <div class="timeline-questions" id="waking-up__trigger-timeline">
+        <div class="waking-up__timeline-questions" id="waking-up__trigger-timeline">
           <span class="${sharedStyle.triggerQuestion}">What causes this feeling?</span>
           <img class="${sharedStyle.triggerArrow}" src="/img/right-arrow.svg" />
         </div>
@@ -828,7 +828,7 @@ export const scrollerSections = [
 		//   </div>
 		// ),
 		content: `
-        <div class="timeline-questions" id="waking-up__response-timeline">
+        <div class="waking-up__timeline-questions" id="waking-up__response-timeline">
           <img class="${sharedStyle.responseArrow}" src="/img/right-arrow.svg" />
           <span class="${sharedStyle.responseQuestion}">How do I respond?</span>
         </div>
