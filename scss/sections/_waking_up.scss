@@ -90,7 +90,7 @@
 }
 
 .waking-up__emotion-label {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	color: #fff;
 	position: absolute;
 	top: 50%;
@@ -242,4 +242,13 @@
 #waking_up-fp-section .section-graphics {
 	background-color: rgb(77, 77, 77);
 	overflow-y: auto;
+}
+
+#waking-up__timeline-link {
+	font-size: 30px;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	&:hover{
+		text-decoration: none;
+	}
 }

@@ -862,9 +862,17 @@ export const scrollerSections = [
 		},
 	},
 	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 3}vh`,
-		content: "",
+		height: `${parseInt(DEFAULT_HEIGHT) * 2}vh`,
+		content: `<a href="#triggers" id="waking-up__timeline-link">Explore the emotional episode timeline ></a>`,
 		scrollTriggerComponent: "heading",
-		tweenVars: getDefaultTweenVars(),
+		tweenVars: [
+			{
+				scrollTrigger: {
+					...getDefaultTweenVars()[0].scrollTrigger,
+					start: "center-=150 center",
+					end: "bottom top-=10000px",
+				},
+			},
+		],
 	},
 ];
