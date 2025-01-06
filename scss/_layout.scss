@@ -17,19 +17,19 @@ $mobile-section-graphics-height: #{$mobile-split-height -
 $more-content-transition: transform 700ms ease;
 
 @mixin emotion-nav-colors {
-	&[data-emotion=anger] {
+	&[data-emotion="anger"] {
 		color: #a00;
 	}
-	&[data-emotion=sadness] {
+	&[data-emotion="sadness"] {
 		color: #05f;
 	}
-	&[data-emotion=fear] {
+	&[data-emotion="fear"] {
 		color: #a0a;
 	}
-	&[data-emotion=disgust] {
+	&[data-emotion="disgust"] {
 		color: #080;
 	}
-	&[data-emotion=enjoyment] {
+	&[data-emotion="enjoyment"] {
 		color: #fa0;
 	}
 }
@@ -224,7 +224,8 @@ svg {
 
 %menus {
 	a,
-	h4, svg {
+	h4,
+	svg {
 		@extend %button-link;
 		color: rgba(#000, 0.5);
 		&.active {
@@ -378,21 +379,25 @@ svg {
 			flex-direction: row;
 			justify-content: space-around;
 			max-width: 900px;
-			// li {
-			// 	margin-left: 30px;
-			// }
-			// li:first-child {
-			// 	margin: 0;
-			// }
+			li {
+				a:focus,
+				a.active {
+					outline: none;
+					border: none;
+				}
+			}	
 		}
 	}
+
 	#lang-selector {
 		@extend %lang-selector;
 	}
 }
 .viewing-waking_up-fp .top-nav {
 	background-color: transparent;
-	a, svg, .dup-title h4 {
+	a,
+	svg,
+	.dup-title h4 {
 		color: rgba(#fff, 0.7);
 		&:hover {
 			color: #fff;
@@ -521,7 +526,8 @@ svg {
 			text-indent: 0;
 			display: inline-block;
 			transition: width 0.7s ease;
-			a.active, a:hover {
+			a.active,
+			a:hover {
 				@include emotion-nav-colors;
 			}
 		}
@@ -717,7 +723,7 @@ svg {
 		display: block;
 		width: 100%;
 		height: 45px;
-		margin: 30px auto;
+		margin: 0 auto;
 		border: none;
 		// box-shadow: 1px 3px 5px 0px #555;
 		text-transform: uppercase;
@@ -1832,7 +1838,7 @@ body[class*="viewing-timeline-fp"].small-screen .emotion-nav {
 			padding: 0;
 			display: inline-block;
 			position: relative;
-			top: 1.5em;
+			top: 1em;
 			text-align: center;
 			width: auto;
 			a {
@@ -1841,6 +1847,9 @@ body[class*="viewing-timeline-fp"].small-screen .emotion-nav {
 				color: #333;
 				&.active {
 					color: #000;
+					@include emotion-nav-colors();
+					border: none;
+					outline: none;
 				}
 			}
 		}

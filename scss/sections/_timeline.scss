@@ -34,9 +34,12 @@
 			overflow: hidden;
 			position: relative;
 			padding: 15px 0;
-			padding-bottom: 0;
+			padding-bottom: 1.5rem;
 			border-top: 1px solid #777;
 			display: none;
+			&:last-of-type {
+				padding-bottom: 0;
+			}
 			&:first-of-type {
 				border: none;
 				margin-top: -15px;
@@ -91,7 +94,8 @@
 				transition: opacity 0.3s;
 				margin-bottom: 1em;
 			}
-			&.closed {
+			&.closed {	
+				padding-bottom: 10px;
 				min-height: 53px;
 				& > * {
 					display: none;
