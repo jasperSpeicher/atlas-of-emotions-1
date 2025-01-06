@@ -7,7 +7,8 @@ import appStrings from "./appStrings.js";
 import stringsConfig from "../static/strings/stringsConfig.json";
 import sassVars from "../scss/variables.json";
 import { addScrollerFade } from "./helpers.js";
-import * as logoSvg from "./atlas-logo.svg";
+import * as logo from "./atlas-logo.svg";
+import * as mail from "./mail.svg";
 
 // sections
 import ContinentsSection from "./continents";
@@ -124,14 +125,18 @@ export default function (...initArgs) {
 					true
 				);
 			});
-		initLogo();
+		initInlineSvgs();
 	}
 
-	function initLogo() {
-		const logoElement = document.querySelector(".logo");
-		if (logoElement) { 
-			logoElement.innerHTML = logoSvg;
-		}
+	function initInlineSvgs() {
+		const svgs = { logo, mail };
+		const $logoElements = $("[data-src]");
+		[...$logoElements].forEach((logoElement) => {
+			if (logoElement) {
+				const src = $(logoElement).data("src");
+				logoElement.innerHTML = svgs[src];
+			}
+		});
 	}
 
 	function initScroller() {

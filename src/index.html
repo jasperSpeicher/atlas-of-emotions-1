@@ -674,8 +674,8 @@
                     <li><a href="#strategies/" id="strategies-menu-link">{{ strategies.menu }}</a></li>
                     <li><a href="#learn_more/" id="learn_more-menu-link">{{ learn_more.menu }}</a></li>
                     <li>
-                        <a id="opt-in-link" class="opt-in-button">
-                            <img src="img/mail.svg">
+                        <a id="opt-in-link" class="opt-in-button" data-src="mail">
+                            <!-- App.js will add mail icon here -->
                         </a>
                     </li>
                     <li>
@@ -697,7 +697,7 @@
         </div>
         <div class="menu-toggle hidden-for-intro"></div>
 
-        <div class="logo">
+        <div class="logo" data-src="logo">
             <!-- App.js adds the logo svg here -->
         </div>
 
