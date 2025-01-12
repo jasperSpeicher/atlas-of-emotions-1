@@ -26,7 +26,6 @@ const phrasePairs = [
 	{ pair: { event: "Spilled coffee on shirt" }, emotion: "anger" },
 	{ pair: { event: "Got a promotion" }, emotion: "enjoyment" },
 	{ pair: { event: "Moldy shower grout" }, emotion: "disgust" },
-	{ pair: { event: "Plane turbulence" }, emotion: "fear" },
 	{ pair: { event: "Construction noise nearby" }, emotion: "anger" },
 	{ pair: { event: "Lost phone charger" }, emotion: "fear" },
 	{ pair: { event: "Helped a stranger" }, emotion: "enjoyment" },
