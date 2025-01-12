@@ -258,6 +258,7 @@ svg {
 }
 
 .logo {
+	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -355,6 +356,7 @@ svg {
 
 .top-nav {
 	@extend %menus;
+	display: none;
 	position: fixed;
 	top: 0;
 	height: #{$ui-header-height}px;
@@ -495,6 +497,7 @@ svg {
 .menu-toggle {
 	z-index: 200;
 	display: none;
+	visibility: hidden !important;
 }
 
 .emotion-nav {
@@ -1324,7 +1327,7 @@ svg {
 	}
 
 	.mobile-header {
-		display: block;
+		display: none;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -1724,7 +1727,7 @@ svg {
 
 	.section-graphics,
 	.original-content {
-		top: #{$ui-header-mobile-nav-target-height}px;
+		// top: #{$ui-header-mobile-nav-target-height}px;
 		height: $mobile-section-graphics-height;
 		bottom: auto;
 		right: 0;

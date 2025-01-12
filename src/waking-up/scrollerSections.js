@@ -350,7 +350,7 @@ export const scrollerSections = [
 	},
 	...transientEmotionSections("Emotions come and go", undefined, "fear"),
 	{
-		content: "Sometimes many experiences pile up and we feel a lot...",
+		content: "Sometimes <br/> many experiences pile up <br/> and we feel a lot...",
 		height: DEFAULT_HEIGHT,
 		tweenVars: (() => {
 			// Example of combining multiple tween vars from getDefaultTweenVars
