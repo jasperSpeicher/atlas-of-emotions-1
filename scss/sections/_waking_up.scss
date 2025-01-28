@@ -11,6 +11,7 @@
 
 .waking-up__pageContainer {
 	position: relative;
+	overflow: hidden
 }
 
 .waking-up__immersiveScrollContainer {
@@ -45,7 +46,7 @@
 }
 
 .waking-up__sectionHeading {
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	color: #fff;
 	opacity: 1;
 	display: flex;
@@ -250,5 +251,12 @@
 	border-bottom: 2px solid #fff;
 	&:hover{
 		text-decoration: none;
+	}
+}
+
+
+#waking-up__section-11 {
+	.waking-up__sectionHeading > div {
+		transform: translateY(-200px);
 	}
 }

@@ -826,6 +826,7 @@ svg {
 		padding-bottom: 50px;
 		padding-top: 5px;
 		overflow-y: auto;
+		overflow-x: hidden;
 		&.fade::after {
 			content: "";
 			position: absolute;
