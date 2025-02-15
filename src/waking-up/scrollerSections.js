@@ -595,7 +595,7 @@ export const scrollerSections = [
 		],
 	},
 	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 3}vh`,
+		height: `${parseInt(DEFAULT_HEIGHT) * 1.2}vh`,
 		content: "We can pause...",
 		styleKey: "decentering",
 		tweenComponent: "emotion",

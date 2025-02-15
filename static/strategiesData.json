@@ -145,6 +145,67 @@
 					]
 				}
 			]
+		},
+		"living_in_balance": {
+			"header": "Living in Balance",
+			"id": "living-in-balance",
+			"description": "We often think of navigating emotions as reaction to one specific event  after another throughout our lives, managing an out burst of anger or savoring a feeling of joy. But in order to reach our bigger goal of  a calm mind we must also consider the big-picture, beyond the specific emotion episodes. While managing the momentary responses is essential to a balanced life we also need to step back and consider the bigger context of how we live our lives and why we want to cultivate a calm mind in which we experience balance. The purpose of emotion awareness isn’t to be ‘happy all the time’ but instead to help us learn from our emotions and develop an emotional flexibility that allows our deeper desires and aspirations to blossom. Two of the most influential ways to consistently maintain calm in our lives are outlook and practice.",
+			"sub_sections": [
+				{
+					"header": "Compassion",
+					"id": "compassion",
+					"description": "",
+					"paragraphs": [
+						{
+							"body": "Compassion can be both a practice and a way of relating to ourselves and others. By understanding the cultural and evolutionary influences on our emotions, we can more easily accept the challenges we face, making it easier to extend compassion to ourselves and others."
+						},
+						{
+							"body": "Compassion is especially helpful when we set intentions to manage our emotions but fall into old patterns. In these moments, it protects us from hopelessness and burnout. Buddhist teachings define Compassion as the sincere wish for the self and others to be free from suffering and its causes. Similarly, science defines it as \"the feeling that arises in witnessing another's suffering, and that motivates a subsequent desire to help\" (Goetz et al., 2010). Key elements of compassion are recognizing suffering and responding to it."
+						},
+						{
+							"body": "We can apply this to our own struggles by practicing self-compassion. This means acknowledging our difficulties instead of avoiding them, recognizing that such struggles are universal, and extending kindness toward ourselves, as a caring friend would."
+						},
+						{
+							"body": "To go deeper :<br/><ul><li>Make a daily practice of remembering the unifying truth that everyone, everywhere, wants to struggle less with difficult emotions and we all need compassion for our difficulties.</li><li>Consider cultivating an ongoing stance of compassion, not only a response to immediate difficulty but a way of seeing the world.</li></ul>"
+						}
+					]
+				},
+				{
+					"header": "Lifestyle for Calm",
+					"id": "",
+					"description": "",
+					"paragraphs": [
+						{
+							"body": "Our emotions are deeply connected to our physical experiences. Sleep, diet, stress, and even the weather affect how we feel. Poor sleep, for instance, can intensify emotions, while intense emotions can disrupt sleep, creating a cycle of overwhelm. Similarly, being too hungry or too full can lead to physical discomfort and emotional challenges."
+						},
+						{
+							"body": "By looking at our overall lifestyle, we can better understand our emotions and make changes that support balance and well-being."
+						},
+						{
+							"body": "To go deeper:<ul><li>Start to recognize patterns which interfere with a calm mind such as disruptions to our sleep, excess distractions, and the resultant experience of dysregulation. In this way may start to develop a preference and desire for the simplicity that affords us a clam mind.</li></ul>"
+						}
+					]
+				},
+				{
+					"header": "Living with Intention",
+					"id": "",
+					"description": "",
+					"paragraphs": [
+						{
+							"body": "Living with intention is a simple, but not always clear, practice of getting clear on ‘how’ we want to direct our attention and behaviors.  Intention  can transform not only our daily interactions, but our overarching motivations and direction. An intention could be macro such as \"I want to cultivate a calm mind\" or more micro \"I want to bring more kindness in to my interactions today.\""
+						},
+						{
+							"body": "Connecting with intention anchors our sense of purpose and meaning. It provides clarity about what truly matters, guiding our actions in daily life. Whether improving relationships, changing behaviors, or deepening self-awareness, intention acts as a compass, fostering growth and creating a more meaningful, connected life."
+						},
+						{
+							"body": "We find joy and fulfillment in living in alignment our values through intention. This brings ease, focus, and clarity to the mind, supporting balance and enabling deeper exploration of ourselves, our relationships, and the world, leading to the joy of understanding and wisdom."
+						},
+						{
+							"body": "To go deeper:<ul><li>Take time to consider the values which guide our life decisions</li><li>Try viewing each moment through the lens of our personal values</li></ul>"
+						}						
+					]
+				}
+			]
 		}
 	}
 }
