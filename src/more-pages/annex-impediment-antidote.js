@@ -1,17 +1,16 @@
-import d3 from 'd3';
-import _ from 'lodash';
+import d3 from "d3";
+import _ from "lodash";
 
-import * as utils from './utils.js';
-import dispatcher from '../dispatcher.js';
-import sassVars from '../../scss/variables.json';
+import * as utils from "./utils.js";
+import dispatcher from "../dispatcher.js";
+import sassVars from "../../scss/variables.json";
 
 export default {
-
 	isInited: false,
 	wrapper: null,
 
 	init: function (containerNode, data) {
-		this.data = data.annex['impediment-antidote'];
+		this.data = data.annex["impediment-antidote"];
 
 		this.wrapper = containerNode;
 
@@ -19,11 +18,22 @@ export default {
 		this.isInited = true;
 	},
 
-	setContent: function() {
+	setContent: function () {
 		if (!this.wrapper) return;
-		
-		this.wrapper.appendChild(utils.makeTable(this.data.desc, this.data.emotions));
+		const deduplicatedData = this.data.emotions.map((emotion) => {
+			const { name, children } = emotion;
+			return {
+				name,
+				children: Object.values(_.groupBy(children, "desc")).map(
+					(group) => ({
+						name: group.map((e) => e.name).join(", "),
+						desc: group[0].desc,
+					})
+				),
+			};
+		});
+		this.wrapper.appendChild(
+			utils.makeTable(this.data.desc, deduplicatedData)
+		);
 	},
-
-
 };
