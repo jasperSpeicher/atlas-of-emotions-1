@@ -53,7 +53,7 @@ const breathingSections = (phrase, startSize, breathSize) => [
 	{
 		height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
 		content: " ",
-		styleKey: "decentering",
+		styleKey: "waking-up__decentering",
 		tweenComponent: "emotion",
 		scrollTriggerComponent: "heading",
 		tweenType: "fromTo",
@@ -82,7 +82,7 @@ const breathingSections = (phrase, startSize, breathSize) => [
 	{
 		height: `${parseInt(DEFAULT_HEIGHT) * 2}vh`,
 		content: " ",
-		styleKey: "decentering",
+		styleKey: "waking-up__decentering",
 		tweenComponent: "emotion",
 		scrollTriggerComponent: "heading",
 		tweenType: "fromTo",
@@ -140,7 +140,7 @@ const transientEmotionSections = (phrase, startEmotion, transientEmotion) => [
 	{
 		height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
 		content: " ",
-		styleKey: "decentering",
+		styleKey: "waking-up__decentering",
 		tweenComponent: "emotion",
 		scrollTriggerComponent: "heading",
 		tweenType: "fromTo",
@@ -595,9 +595,10 @@ export const scrollerSections = [
 		],
 	},
 	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 1.2}vh`,
+		height: `${parseInt(DEFAULT_HEIGHT) * 3}vh`,
+		id: "pause",
 		content: "We can pause...",
-		styleKey: "decentering",
+		styleKey: "waking-up__decentering",
 		tweenComponent: "emotion",
 		scrollTriggerComponent: "heading",
 		tweenType: "fromTo",
@@ -624,7 +625,7 @@ export const scrollerSections = [
 	{
 		height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
 		content: "...recognize that we are in an emotional state,",
-		styleKey: "decentering",
+		styleKey: "waking-up__decentering",
 		tweenComponent: "emotion",
 		scrollTriggerComponent: "heading",
 		tweenType: "fromTo",
