@@ -385,7 +385,7 @@ svg {
 					outline: none;
 					border: none;
 				}
-			}	
+			}
 		}
 	}
 
@@ -1197,6 +1197,8 @@ svg {
 
 	.strategy-details__right .strategy-details__illustration {
 		height: auto;
+		margin: 0 auto;
+		display: block;
 	}
 
 	.strategy-details__insight {
