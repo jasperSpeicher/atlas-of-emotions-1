@@ -268,6 +268,17 @@
 	width: 100px;
 	height: auto;
 }
+.small-screen .section-graphics img.waking-up__triggerArrow {
+	width: 70px;
+}
+.small-screen .section-graphics .waking-up__triggerQuestion {
+	display: inline-block;
+	font-size: 30px;
+	max-width: 180px;
+	margin-right: 0;
+	white-space: wrap;
+	vertical-align: middle;
+}
 
 .waking-up__triggerQuestion {
 	margin-right: 40px;
@@ -302,5 +313,40 @@
 	border-bottom: 2px solid #fff;
 	&:hover {
 		text-decoration: none;
+	}
+}
+
+.small-screen {
+	.waking-up__emotionContainer {
+		height: 100vh;
+		top: 100vh;
+		& > div {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 60px;
+			bottom: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			#waking-up__emotion-label-fear,
+			#waking-up__emotion-label-sadness,
+			#waking-up__emotion-label-anger,
+			#waking-up__emotion-label-disgust,
+			#waking-up__emotion-label-enjoyment {
+				position: relative;
+				left: auto;
+				top: auto;
+				transform: none;
+				&::before {
+					height: 13vh;
+					width: 13vh;
+				}
+			}
+		}
+	}
+	.waking-up__emotionColorField {
+		margin-top: 20px;
 	}
 }

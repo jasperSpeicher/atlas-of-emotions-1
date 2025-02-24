@@ -9,6 +9,7 @@ import {
 } from "./scrollerDataHelpers";
 
 import { sharedStyle } from "./config";
+import { color } from "d3";
 
 const DEFAULT_HEIGHT = "100vh";
 
@@ -164,6 +165,8 @@ const transientEmotionSections = (phrase, startEmotion, transientEmotion) => [
 	},
 ];
 
+const screenIsSmall = () => document.querySelectorAll(".small-screen").length > 0;
+
 // Your array of scroller sections, now with no JSX:
 export const scrollerSections = [
 	{
@@ -213,7 +216,7 @@ export const scrollerSections = [
 					pin: true,
 					pinSpacing: false,
 					start: "65% center",
-					end: "bottom+=700px center",
+					end: "bottom+=650px center",
 				},
 			},
 			{
@@ -247,7 +250,7 @@ export const scrollerSections = [
 				pin: true,
 				pinSpacing: false,
 				start: "65% center",
-				end: "bottom+=1000px center",
+				end: "bottom+=900px center",
 			},
 		},
 		experiences: {
@@ -307,7 +310,7 @@ export const scrollerSections = [
 			scrollTrigger: {
 				pin: true,
 				start: "center center",
-				end: "bottom center+=30px",
+				end: "bottom center+=70px",
 				pinSpacing: false,
 			},
 		},
@@ -321,8 +324,8 @@ export const scrollerSections = [
 			{
 				backgroundColor: getEmotionColor("sadness"),
 				scrollTrigger: {
-					start: "center-=50px center",
-					end: "bottom-=50px center",
+					start: "center-=120px center",
+					end: "bottom-=120px center",
 				},
 			},
 			{
@@ -350,7 +353,7 @@ export const scrollerSections = [
 	},
 	...transientEmotionSections("Emotions come and go", undefined, "fear"),
 	{
-		content: "Sometimes many experiences pile up and we feel a lot...",
+		content: "Sometimes many experiences pile up<br/>and we feel a lot...",
 		height: DEFAULT_HEIGHT,
 		tweenVars: (() => {
 			// Example of combining multiple tween vars from getDefaultTweenVars
@@ -360,7 +363,7 @@ export const scrollerSections = [
 					...pos,
 					scrollTrigger: {
 						...pos.scrollTrigger,
-						start: "60% center",
+						start: "65% center",
 						end: "bottom+=1000px center",
 					},
 				},
@@ -368,8 +371,8 @@ export const scrollerSections = [
 					...opacity,
 					scrollTrigger: {
 						...opacity.scrollTrigger,
-						start: "61% center",
-						end: "65% center",
+						start: "66% center",
+						end: "70% center",
 					},
 				},
 			];
@@ -428,10 +431,8 @@ export const scrollerSections = [
 		//   </div>
 		// ),
 		content: `
-        <div>
-          <p>In these moments, it is hard to separate what we feel inside</p>
-          <p>from what is actually happening around us.</p>
-        </div>
+          In&nbsp;these&nbsp;moments, it&nbsp;is&nbsp;hard&nbsp;to&nbsp;separate what&nbsp;we&nbsp;feel&nbsp;inside
+          from&nbsp;what&nbsp;is&nbsp;actually happening&nbsp;round&nbsp;us.
       `,
 		height: DEFAULT_HEIGHT,
 	},
@@ -448,7 +449,7 @@ export const scrollerSections = [
 				scrollTrigger: {
 					pin: true,
 					start: "center center",
-					end: "bottom center+=30px",
+					end: "bottom center+=70px",
 					pinSpacing: false,
 				},
 			},
@@ -483,6 +484,7 @@ export const scrollerSections = [
 							"#waking-up__regret-response"
 						);
 						if (e) {
+							e.style.height = e.clientHeight + "px";
 							e.innerHTML = "Shout at them";
 							e.style.fontSize = "3.5rem";
 						}
@@ -571,7 +573,7 @@ export const scrollerSections = [
 		],
 	},
 	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 1.5}vh`,
+		height: DEFAULT_HEIGHT,
 		content: "So what can we do?",
 		scrollTriggerComponent: "section",
 		tweenVars: [
@@ -747,8 +749,7 @@ export const scrollerSections = [
 		// ),
 		content: `
         <div>
-          <span id="waking-up__become-curious">and become curious and</span>
-          <span> kind about our emotion.&nbsp;&nbsp;</span>
+          <span id="waking-up__become-curious">and become curious and kind about our emotion.&nbsp;&nbsp;</span>
         </div>
       `,
 		id: "waking-up__curious",
@@ -761,15 +762,71 @@ export const scrollerSections = [
 					end: "bottom center",
 					onUpdate: (scrollTrigger) => {
 						const { progress, trigger } = scrollTrigger;
-						const emotionWidth = window.innerWidth / 6;
+						const colorField = document.querySelector(
+							"#waking-up__emotionColorField"
+						);
+						if (!colorField) {
+							return;
+						}
+						const emotionWidth = colorField.clientWidth * 1.5;
 						const curiousSpan = trigger?.querySelector(
 							"#waking-up__become-curious"
 						);
-						if (curiousSpan) {
-							curiousSpan.style.marginRight = `${
-								Math.sin(progress * Math.PI) * emotionWidth
-							}px`;
+						if (!curiousSpan) {
+							return;
 						}
+						curiousSpan.style.position = "relative";
+						let allWords = curiousSpan?.querySelectorAll("span");
+						if (!allWords.length) {
+							// put each word in its own span if it's not already
+							const words = curiousSpan?.textContent?.split(" ");
+							if (words) {
+								curiousSpan.innerHTML = words
+									.map((word) => `<span>${word}</span>`)
+									.join(" ");
+							}
+							allWords = curiousSpan?.querySelectorAll("span");
+							allWords.forEach((word) => {
+								word.style.position = "relative";
+							});
+						}
+						// partition words by whether they are left or right of center
+						const center = window.innerWidth / 2;
+						const leftWords = Array.from(allWords).filter(
+							(span) => {
+								const rect = span.getBoundingClientRect();
+								return rect.left + rect.width / 2 < center;
+							}
+						);
+						const rightWords = Array.from(allWords).filter(
+							(span) => {
+								const rect = span.getBoundingClientRect();
+								return rect.left + rect.width / 2 >= center;
+							}
+						);
+						const spread =
+							Math.sin(progress * Math.PI) * emotionWidth;
+						leftWords.forEach((span, i) => {
+							span.style.left = `-${spread}px`;
+						});
+						rightWords.forEach((span, i) => {
+							span.style.left = `${spread}px`;
+						});
+
+						// also prepare the timeline elements before they are onscreen
+						const fieldRect = colorField.getBoundingClientRect();
+						const timelineTrigger = document.querySelector(
+							"#waking-up__trigger-timeline"
+						);
+						timelineTrigger.style.position = "absolute";
+						timelineTrigger.style.right =
+							window.innerWidth - fieldRect.left + 30 + "px";
+						const timelineResponse = document.querySelector(
+							"#waking-up__response-timeline"
+						);
+						timelineResponse.style.position = "absolute";
+						timelineResponse.style.left =
+							fieldRect.right + 30 + "px";
 					},
 				},
 			},
@@ -777,13 +834,6 @@ export const scrollerSections = [
 	},
 	{
 		height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
-		// Originally:
-		// content: (
-		//   <div class="timeline-questions" id="trigger-timeline">
-		//     <span className={sharedStyle.triggerQuestion}>What causes...</span>
-		//     <img className={sharedStyle.triggerArrow} src="/img/right-arrow.svg" />
-		//   </div>
-		// ),
 		content: `
         <div class="waking-up__timeline-questions" id="waking-up__trigger-timeline">
           <span class="${sharedStyle.triggerQuestion}">What causes this feeling?</span>
@@ -795,7 +845,7 @@ export const scrollerSections = [
 			{
 				scrollTrigger: {
 					...getDefaultTweenVars()[0].scrollTrigger,
-					start: "center+=30 center",
+					start: "center center",
 					end: "bottom top-=10000px",
 				},
 			},
@@ -803,13 +853,69 @@ export const scrollerSections = [
 	},
 	{
 		height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
-      id: "waking-up__trigger-questions-section",
-      content: "",
-      scrollTriggerComponent: "heading",
-      tweenVars: getDefaultTweenVars(),
-      experiences: {
-        events: [
-          { phrase: "what just happened?" },
+		id: "waking-up__trigger-questions-section",
+		content: "",
+		scrollTriggerComponent: "heading",
+		tweenVars: [
+			{
+				...getDefaultTweenVars()[0],
+				scrollTrigger: {
+					...getDefaultTweenVars()[0],
+					onUpdate: (scrollTrigger) => {
+						if (!screenIsSmall()) {
+							return;
+						}
+						const { progress, trigger } = scrollTrigger;
+						const colorField = document.querySelector(
+							"#waking-up__emotionColorField"
+						);
+						const label = document.querySelector(
+							"#waking-up__emotion-label-anger"
+						);
+						const timelineTrigger = document.querySelector(
+							"#waking-up__trigger-timeline"
+						);
+						const timelineResponse = document.querySelector(
+							"#waking-up__response-timeline"
+						);
+						if (
+							!colorField ||
+							!timelineTrigger ||
+							!timelineResponse ||
+							!label
+						) {
+							return;
+						}
+						const speed = 1200;
+						const maxTranslateX = window.innerWidth / 2;
+						const padding = 50;
+
+						const transformTimeline = `translate(${Math.min(
+							progress * speed,
+							maxTranslateX - padding
+						)}px, -50%)`;
+						timelineTrigger.style.transform = transformTimeline;
+						timelineResponse.style.transform = transformTimeline;
+
+						label.style.transform = `translateX(${Math.min(
+							progress * speed,
+							maxTranslateX
+						)}px)`;
+
+						const colorFieldRect =
+							colorField.getBoundingClientRect();
+						colorField.style.transform = `translate(${
+							Math.min(progress * speed, maxTranslateX) -
+							colorFieldRect.width / 2
+						}px , -50%)`;
+					},
+				},
+			},
+			getDefaultTweenVars()[1],
+		],
+		experiences: {
+			events: [
+				{ phrase: "what just happened?" },
 				{ phrase: "what was I expecting?" },
 				{ phrase: "what's the big picture?" },
 				{ phrase: "how is my past involved?" },
@@ -838,7 +944,7 @@ export const scrollerSections = [
 			{
 				scrollTrigger: {
 					...getDefaultTweenVars()[0].scrollTrigger,
-					start: "center+=30 center",
+					start: "center+=5 center",
 					end: "bottom top-=10000px",
 				},
 			},

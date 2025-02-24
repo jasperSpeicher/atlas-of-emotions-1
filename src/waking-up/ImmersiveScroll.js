@@ -59,7 +59,6 @@ export function createImmersiveScrollDOM() {
 
 	// Example emotion labels
 	const labels = [
-		{ id: "waking-up__emotion-label-anger", text: "ANGER" },
 		{
 			id: "waking-up__emotion-label-fear",
 			text: "FEAR",
@@ -70,6 +69,7 @@ export function createImmersiveScrollDOM() {
 			text: "SADNESS",
 			extraClass: "waking-up__emotion-label--with-circle",
 		},
+		{ id: "waking-up__emotion-label-anger", text: "ANGER" },
 		{
 			id: "waking-up__emotion-label-disgust",
 			text: "DISGUST",
@@ -82,6 +82,9 @@ export function createImmersiveScrollDOM() {
 		},
 	];
 
+	const emotionContainerInner = document.createElement("div");
+	emotionContainer.appendChild(emotionContainerInner);
+
 	labels.forEach((labelData) => {
 		const labelDiv = document.createElement("div");
 		labelDiv.id = labelData.id;
@@ -89,7 +92,7 @@ export function createImmersiveScrollDOM() {
 			labelData.extraClass || ""
 		}`;
 		labelDiv.textContent = labelData.text;
-		emotionContainer.appendChild(labelDiv);
+		emotionContainerInner.appendChild(labelDiv);
 	});
 
 	pageContainer.appendChild(emotionContainer);
