@@ -64,14 +64,23 @@
 	justify-content: center;
 	position: relative;
 	will-change: filter;
+	@media (max-width: 500px) {
+		font-size: 8vw;
+	}
 }
 
 .waking-up__section.small .waking-up__sectionHeading {
 	font-size: 1.5rem;
+	@media (max-width: 500px) {
+		font-size: 4.5vw;
+	}
 }
 
 .waking-up__section.large .waking-up__sectionHeading {
 	font-size: 3.5rem;
+	@media (max-width: 500px) {
+		font-size: 11vw;
+	}
 }
 
 .waking-up__section.opacity .waking-up__sectionHeading {
@@ -85,14 +94,23 @@
 	text-transform: lowercase;
 	vertical-align: middle;
 	opacity: 0.2;
+	@media (max-width: 500px) {
+		font-size: 7vw;
+	}
 }
 
 .waking-up__sectionPhrases.small .waking-up__phrase {
 	font-size: 1.5rem;
+	@media (max-width: 500px) {
+		font-size: 4.5vw;
+	}
 }
 
 .waking-up__sectionPhrases.large .waking-up__phrase {
 	font-size: 2.5rem;
+	@media (max-width: 500px) {
+		font-size: 8vw;
+	}
 }
 
 .waking-up__decentering .waking-up__sectionHeading {
@@ -109,6 +127,9 @@
 	transform: translate(-50%, -50%);
 	white-space: nowrap;
 	overflow: visible;
+	@media (max-width: 500px) {
+		font-size: 7vw;
+	}
 }
 
 .waking-up__emotion-label--with-circle::before {
@@ -128,6 +149,9 @@
 
 .waking-up__emotion-label--with-circle {
 	font-size: 1.75rem;
+	@media (max-width: 500px) {
+		font-size: 6vw;
+	}
 }
 
 #waking-up__emotion-label-anger {
@@ -169,6 +193,9 @@
 @media (max-width: 1280px) {
 	#waking-up__emotion-label-anger {
 		font-size: 2rem;
+		@media (max-width: 500px) {
+			font-size: 7vw;
+		}
 	}
 }
 
@@ -179,6 +206,9 @@
 	color: #fff;
 	opacity: 1;
 	transform: translateY(-50%);
+	@media (max-width: 500px) {
+		font-size: 8vw;
+	}
 }
 
 #waking-up__trigger-timeline {
@@ -220,11 +250,17 @@
 		.waking-up__sectionPhrases
 		.waking-up__phrase {
 		font-size: 1.5rem;
+		@media (max-width: 500px) {
+			font-size: 4.5vw;
+		}
 	}
 	#waking-up__trigger-questions-section
 		.waking-up__sectionPhrases
 		.waking-up__phrase {
 		font-size: 1.5rem;
+		@media (max-width: 500px) {
+			font-size: 4.5vw;
+		}
 	}
 }
 
@@ -236,6 +272,9 @@
 .waking-up__triggerQuestion {
 	margin-right: 40px;
 	font-size: 30px;
+	@media (max-width: 500px) {
+		font-size: 8vw;
+	}
 }
 
 .section-graphics img.waking-up__responseArrow {
@@ -247,6 +286,9 @@
 .waking-up__responseQuestion {
 	margin-right: 60px;
 	font-size: 30px;
+	@media (max-width: 500px) {
+		font-size: 8vw;
+	}
 }
 
 #waking_up-fp-section .section-graphics {
@@ -258,7 +300,7 @@
 	font-size: 30px;
 	color: #fff;
 	border-bottom: 2px solid #fff;
-	&:hover{
+	&:hover {
 		text-decoration: none;
 	}
 }
