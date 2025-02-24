@@ -509,7 +509,7 @@
                             <p>{{ navigating.description }}</p>
                             <div class="strategies-intro__columns">
                                 <div class="strategies-intro__left">
-                                    <img src="{{ navigating.image }}" />
+                                    <img data-src="{{ navigating.image }}" />
                                 </div>
                                 <div class="strategies-intro__right">
                                     <p>{{ navigating.reflecting }}</p>
@@ -537,14 +537,14 @@
                                     </div>
                                     {{# if(paragraph.image) { }}
                                     <div class="strategy-details__right">
-                                        <img class="strategy-details__illustration" src="{{ paragraph.image }}"
+                                        <img class="strategy-details__illustration" data-src="{{ paragraph.image }}"
                                             style="width: {{ paragraph.image_width }};" />
                                     </div>
                                     {{# } }}
                                     {{# if(paragraph.insight) { }}
                                     <div class="strategy-details__right strategy-details__insight">
                                         <img class="strategy-details__insight-icon"
-                                            src="{{ paragraph.insight_image }}" />
+                                            data-src="{{ paragraph.insight_image }}" />
                                         <div>
                                             <h3>Key Insight</h3>
                                             <p>{{ paragraph.insight }}</p>
@@ -577,14 +577,14 @@
                                     </div>
                                     {{# if(paragraph.image) { }}
                                     <div class="strategy-details__right">
-                                        <img class="strategy-details__illustration" src="{{ paragraph.image }}"
+                                        <img class="strategy-details__illustration" data-src="{{ paragraph.image }}"
                                             style="width: {{ paragraph.image_width }};" />
                                     </div>
                                     {{# } }}
                                     {{# if(paragraph.insight) { }}
                                     <div class="strategy-details__right strategy-details__insight">
                                         <img class="strategy-details__insight-icon"
-                                            src="{{ paragraph.insight_image }}" />
+                                            data-src="{{ paragraph.insight_image }}" />
                                         <div>
                                             <h3>Key Insight</h3>
                                             <p>{{ paragraph.insight }}</p>
@@ -617,14 +617,14 @@
                                     </div>
                                     {{# if(paragraph.image) { }}
                                     <div class="strategy-details__right">
-                                        <img class="strategy-details__illustration" src="{{ paragraph.image }}"
+                                        <img class="strategy-details__illustration" data-src="{{ paragraph.image }}"
                                             style="width: {{ paragraph.image_width }};" />
                                     </div>
                                     {{# } }}
                                     {{# if(paragraph.insight) { }}
                                     <div class="strategy-details__right strategy-details__insight">
                                         <img class="strategy-details__insight-icon"
-                                            src="{{ paragraph.insight_image }}" />
+                                            data-src="{{ paragraph.insight_image }}" />
                                         <div>
                                             <h3>Key Insight</h3>
                                             <p>{{ paragraph.insight }}</p>

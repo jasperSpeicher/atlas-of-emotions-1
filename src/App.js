@@ -125,16 +125,19 @@ export default function (...initArgs) {
 					true
 				);
 			});
-		initInlineSvgs();
+		initInlineImages();
 	}
 
-	function initInlineSvgs() {
+	function initInlineImages() {
 		const svgs = { logo, mail };
-		const $logoElements = $("[data-src]");
-		[...$logoElements].forEach((logoElement) => {
-			if (logoElement) {
-				const src = $(logoElement).data("src");
-				logoElement.innerHTML = svgs[src];
+		const $imageElements = $("[data-src]");
+		[...$imageElements].forEach((imageElement) => {
+			if (!imageElement) {
+				return;
+			}
+			if ($(imageElement).is("div")) {
+				const src = $(imageElement).data("src");
+				imageElement.innerHTML = svgs[src];
 			}
 		});
 	}
@@ -165,6 +168,14 @@ export default function (...initArgs) {
 			let data = appStrings().getStr(prefix + element.dataset.template);
 			let compiled = _.template(element.innerHTML);
 			element.innerHTML = compiled(data);
+			const imageSrcElements = element.querySelectorAll("[data-src]");
+			[...imageSrcElements].forEach((imageSrcElement) => {
+				if (!imageSrcElement) {
+					return;
+				}
+				const src = imageSrcElement.dataset.src;
+				imageSrcElement.src = src;
+			});
 		});
 
 		let widowFixElements = [].slice.call(
