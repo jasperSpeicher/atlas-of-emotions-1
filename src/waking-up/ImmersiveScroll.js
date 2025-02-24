@@ -123,8 +123,7 @@ export function initImmersiveScrollAnimations() {
 			scrub: 2,
 		},
 		backgroundPositionY: (_i, target) => {
-			target.style.backgroundSize = "20%";
-			return ScrollTrigger.maxScroll(scrollElement) * -0.02;
+			return ScrollTrigger.maxScroll(scrollElement) * -0.002;
 		},
 		ease: "none",
 	});
@@ -134,8 +133,7 @@ export function initImmersiveScrollAnimations() {
 			scrub: 2,
 		},
 		backgroundPositionY: (_i, target) => {
-			target.style.backgroundSize = "30%";
-			return ScrollTrigger.maxScroll(scrollElement) * -0.025;
+			return ScrollTrigger.maxScroll(scrollElement) * -0.015;
 		},
 		ease: "none",
 	});
@@ -145,7 +143,6 @@ export function initImmersiveScrollAnimations() {
 			scrub: 2,
 		},
 		backgroundPositionY: (_i, target) => {
-			target.style.backgroundSize = "40%";
 			return ScrollTrigger.maxScroll(scrollElement) * -0.035;
 		},
 		ease: "none",
