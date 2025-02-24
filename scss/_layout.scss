@@ -1733,7 +1733,6 @@ svg {
 		left: 0;
 		margin: 0;
 		padding: 0;
-		overflow: visible;
 		#main {
 			bottom: 0;
 			top: 0;
@@ -1756,6 +1755,9 @@ svg {
 				}
 			}
 		}
+	}
+	.original-content {
+		overflow: visible;
 	}
 
 	&.viewing-waking_up-fp {
