@@ -7,9 +7,9 @@ import {
 	getEventPhrases,
 	getPhrasesWithLineHeight,
 } from "./scrollerDataHelpers";
+import gsap from "gsap";
 
 import { sharedStyle } from "./config";
-import { color } from "d3";
 
 const DEFAULT_HEIGHT = "100vh";
 
@@ -165,7 +165,125 @@ const transientEmotionSections = (phrase, startEmotion, transientEmotion) => [
 	},
 ];
 
-const screenIsSmall = () => document.querySelectorAll(".small-screen").length > 0;
+// const slideTimeline = (direction, scrollTrigger) => {
+// 	const screenIsSmall = () =>
+// 		document.querySelectorAll(".small-screen").length > 0;
+
+// 	// if the screen is small, slide the timeline right
+// 	if (!screenIsSmall()) {
+// 		return;
+// 	}
+// 	const { progress, trigger } = scrollTrigger;
+// 	const colorField = document.querySelector("#waking-up__emotionColorField");
+// 	const label = document.querySelector("#waking-up__emotion-label-anger");
+// 	const timelineTrigger = document.querySelector(
+// 		"#waking-up__trigger-timeline"
+// 	);
+// 	const timelineResponse = document.querySelector(
+// 		"#waking-up__response-timeline"
+// 	);
+// 	if (!colorField || !timelineTrigger || !timelineResponse || !label) {
+// 		return;
+// 	}
+// 	const speed = 1200;
+// 	const maxTranslateX = window.innerWidth / 2;
+// 	const padding = 50;
+
+// 	const transformTimeline = `translate(${Math.min(
+// 		progress * speed,
+// 		maxTranslateX - padding
+// 	)}px, -50%)`;
+// 	timelineTrigger.style.transform = transformTimeline;
+// 	timelineResponse.style.transform = transformTimeline;
+
+// 	label.style.transform = `translateX(${
+// 		direction * Math.min(progress * speed, maxTranslateX)
+// 	}px)`;
+
+// 	const colorFieldRect = colorField.getBoundingClientRect();
+// 	colorField.style.transform = `translate(${
+// 		direction * Math.min(progress * speed, maxTranslateX) -
+// 		colorFieldRect.width / 2
+// 	}px , -50%)`;
+// };
+
+const initTimelineElementPositions = () => {
+	// also prepare the timeline elements before they are onscreen
+	const colorField = document.querySelector("#waking-up__emotionColorField");
+	const fieldRect = colorField.getBoundingClientRect();
+	const timelineTrigger = document.querySelector(
+		"#waking-up__trigger-timeline"
+	);
+	timelineTrigger.style.position = "absolute";
+	const arrowPostionX = window.innerWidth / 2 + fieldRect.width / 2 + 30;
+	timelineTrigger.style.right = arrowPostionX + "px";
+	const timelineResponse = document.querySelector(
+		"#waking-up__response-timeline"
+	);
+	timelineResponse.style.position = "absolute";
+	timelineResponse.style.left = arrowPostionX + "px";
+};
+
+let sliderTimeline;
+const getSliderTimeline = () => {
+	if (sliderTimeline) {
+		return sliderTimeline;
+	}
+	const padding = 50;
+	const maxTranslateX = window.innerWidth / 2;
+
+	sliderTimeline = new gsap.timeline();
+
+	const screenIsSmall = () =>
+		document.querySelectorAll(".small-screen").length > 0;
+
+	if (!screenIsSmall()) {
+		return sliderTimeline;
+	}
+
+	// if the screen is small, slide the timeline right
+
+	const colorField = document.querySelector("#waking-up__emotionColorField");
+	const label = document.querySelector("#waking-up__emotion-label-anger");
+	const triggerResponseElements = [
+		document.querySelector("#waking-up__trigger-timeline"),
+		document.querySelector("#waking-up__response-timeline"),
+	];
+	const transformTriggerResponse = `translate(
+		${maxTranslateX - padding}px, -50%)`;
+
+	const transformLabel = `translateX(${maxTranslateX}px)`;
+
+	const colorFieldRect = colorField.getBoundingClientRect();
+	const transformColorField = `translate(${
+		maxTranslateX - colorFieldRect.width / 2
+	}px , -50%)`;
+
+	sliderTimeline
+		.add("start")
+		.to(triggerResponseElements, {
+			transform: transformTriggerResponse,
+			ease: "power1.out",
+		})
+		.to(
+			label,
+			{
+				transform: transformLabel,
+				ease: "power1.out",
+			},
+			"start"
+		)
+		.to(
+			colorField,
+			{
+				transform: transformColorField,
+				ease: "power1.out",
+			},
+			"start"
+		)
+		.add("right");
+	return sliderTimeline;
+};
 
 // Your array of scroller sections, now with no JSX:
 export const scrollerSections = [
@@ -813,20 +931,8 @@ export const scrollerSections = [
 							span.style.left = `${spread}px`;
 						});
 
-						// also prepare the timeline elements before they are onscreen
-						const fieldRect = colorField.getBoundingClientRect();
-						const timelineTrigger = document.querySelector(
-							"#waking-up__trigger-timeline"
-						);
-						timelineTrigger.style.position = "absolute";
-						timelineTrigger.style.right =
-							window.innerWidth - fieldRect.left + 30 + "px";
-						const timelineResponse = document.querySelector(
-							"#waking-up__response-timeline"
-						);
-						timelineResponse.style.position = "absolute";
-						timelineResponse.style.left =
-							fieldRect.right + 30 + "px";
+						// prep timeline elements for sliding
+						initTimelineElementPositions();
 					},
 				},
 			},
@@ -861,53 +967,11 @@ export const scrollerSections = [
 				...getDefaultTweenVars()[0],
 				scrollTrigger: {
 					...getDefaultTweenVars()[0],
-					onUpdate: (scrollTrigger) => {
-						if (!screenIsSmall()) {
-							return;
-						}
-						const { progress, trigger } = scrollTrigger;
-						const colorField = document.querySelector(
-							"#waking-up__emotionColorField"
-						);
-						const label = document.querySelector(
-							"#waking-up__emotion-label-anger"
-						);
-						const timelineTrigger = document.querySelector(
-							"#waking-up__trigger-timeline"
-						);
-						const timelineResponse = document.querySelector(
-							"#waking-up__response-timeline"
-						);
-						if (
-							!colorField ||
-							!timelineTrigger ||
-							!timelineResponse ||
-							!label
-						) {
-							return;
-						}
-						const speed = 1200;
-						const maxTranslateX = window.innerWidth / 2;
-						const padding = 50;
-
-						const transformTimeline = `translate(${Math.min(
-							progress * speed,
-							maxTranslateX - padding
-						)}px, -50%)`;
-						timelineTrigger.style.transform = transformTimeline;
-						timelineResponse.style.transform = transformTimeline;
-
-						label.style.transform = `translateX(${Math.min(
-							progress * speed,
-							maxTranslateX
-						)}px)`;
-
-						const colorFieldRect =
-							colorField.getBoundingClientRect();
-						colorField.style.transform = `translate(${
-							Math.min(progress * speed, maxTranslateX) -
-							colorFieldRect.width / 2
-						}px , -50%)`;
+					onEnter: () => {
+						getSliderTimeline().tweenTo("right");
+					},
+					onLeaveBack: () => {
+						getSliderTimeline().tweenTo(0);
 					},
 				},
 			},
