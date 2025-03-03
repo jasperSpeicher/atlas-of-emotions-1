@@ -165,48 +165,6 @@ const transientEmotionSections = (phrase, startEmotion, transientEmotion) => [
 	},
 ];
 
-// const slideTimeline = (direction, scrollTrigger) => {
-// 	const screenIsSmall = () =>
-// 		document.querySelectorAll(".small-screen").length > 0;
-
-// 	// if the screen is small, slide the timeline right
-// 	if (!screenIsSmall()) {
-// 		return;
-// 	}
-// 	const { progress, trigger } = scrollTrigger;
-// 	const colorField = document.querySelector("#waking-up__emotionColorField");
-// 	const label = document.querySelector("#waking-up__emotion-label-anger");
-// 	const timelineTrigger = document.querySelector(
-// 		"#waking-up__trigger-timeline"
-// 	);
-// 	const timelineResponse = document.querySelector(
-// 		"#waking-up__response-timeline"
-// 	);
-// 	if (!colorField || !timelineTrigger || !timelineResponse || !label) {
-// 		return;
-// 	}
-// 	const speed = 1200;
-// 	const maxTranslateX = window.innerWidth / 2;
-// 	const padding = 50;
-
-// 	const transformTimeline = `translate(${Math.min(
-// 		progress * speed,
-// 		maxTranslateX - padding
-// 	)}px, -50%)`;
-// 	timelineTrigger.style.transform = transformTimeline;
-// 	timelineResponse.style.transform = transformTimeline;
-
-// 	label.style.transform = `translateX(${
-// 		direction * Math.min(progress * speed, maxTranslateX)
-// 	}px)`;
-
-// 	const colorFieldRect = colorField.getBoundingClientRect();
-// 	colorField.style.transform = `translate(${
-// 		direction * Math.min(progress * speed, maxTranslateX) -
-// 		colorFieldRect.width / 2
-// 	}px , -50%)`;
-// };
-
 const initTimelineElementPositions = () => {
 	// also prepare the timeline elements before they are onscreen
 	const colorField = document.querySelector("#waking-up__emotionColorField");
