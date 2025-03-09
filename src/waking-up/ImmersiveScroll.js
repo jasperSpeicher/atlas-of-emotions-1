@@ -267,7 +267,7 @@ function createPhraseDOM(element, phraseId) {
 			scrollTrigger: {
 				scroller: "#waking_up-fp-section .section-graphics",
 				trigger: phraseSelector,
-				start: "top center",
+				start: "top-=100%px center",
 				end: "bottom center",
 				scrub: 0.5,
 			},

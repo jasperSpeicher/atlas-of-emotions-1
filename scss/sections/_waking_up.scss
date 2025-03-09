@@ -250,36 +250,64 @@
 		.waking-up__sectionPhrases
 		.waking-up__phrase {
 		font-size: 1.5rem;
-		@media (max-width: 500px) {
-			font-size: 4.5vw;
-		}
 	}
 	#waking-up__trigger-questions-section
 		.waking-up__sectionPhrases
 		.waking-up__phrase {
 		font-size: 1.5rem;
-		@media (max-width: 500px) {
-			font-size: 4.5vw;
+	}
+}
+@media (max-width: 500px) {
+	#waking-up__response-questions-section
+		.waking-up__sectionPhrases
+		.waking-up__phrase {
+		font-size: 6vw;
+	}
+	#waking-up__trigger-questions-section
+		.waking-up__sectionPhrases
+		.waking-up__phrase {
+		font-size: 6vw;
+	}
+}
+
+.small-screen {
+	.section-graphics img.waking-up__triggerArrow,
+	.section-graphics img.waking-up__responseArrow {
+		width: 70px;
+		margin: 0;
+	}
+	.section-graphics .waking-up__triggerQuestion,
+	.section-graphics .waking-up__responseQuestion {
+		display: inline-block;
+		font-size: 30px;
+		max-width: 180px;
+		margin: 0;
+		white-space: wrap;
+		vertical-align: middle;
+	}
+	#waking-up__trigger-questions-section .waking-up__sectionPhrases,
+	#waking-up__response-questions-section .waking-up__sectionPhrases {
+		text-align: center;
+		padding: 0;
+		.waking-up__phrase {
+			height: 20px;
+			overflow: visible;
+			span {
+				padding-top: 150px;
+				display: block;
+			}
 		}
 	}
+}
+
+#waking-up__trigger-timeline {
+	width: 257px;
 }
 
 .section-graphics img.waking-up__triggerArrow {
 	width: 100px;
 	height: auto;
 }
-.small-screen .section-graphics img.waking-up__triggerArrow {
-	width: 70px;
-}
-.small-screen .section-graphics .waking-up__triggerQuestion {
-	display: inline-block;
-	font-size: 30px;
-	max-width: 180px;
-	margin-right: 0;
-	white-space: wrap;
-	vertical-align: middle;
-}
-
 .waking-up__triggerQuestion {
 	margin-right: 40px;
 	font-size: 30px;
@@ -289,7 +317,7 @@
 }
 
 .section-graphics img.waking-up__responseArrow {
-	margin-right: 40px;
+	margin-right: 20px;
 	width: 100px;
 	height: auto;
 }

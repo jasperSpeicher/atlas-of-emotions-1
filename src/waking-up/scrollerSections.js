@@ -187,7 +187,7 @@ const getSliderTimeline = () => {
 	if (sliderTimeline) {
 		return sliderTimeline;
 	}
-	const padding = 50;
+	const padding = 0;
 	const maxTranslateX = window.innerWidth / 2;
 
 	sliderTimeline = new gsap.timeline();
@@ -203,30 +203,43 @@ const getSliderTimeline = () => {
 
 	const colorField = document.querySelector("#waking-up__emotionColorField");
 	const label = document.querySelector("#waking-up__emotion-label-anger");
-	const triggerResponseElements = [
-		document.querySelector("#waking-up__trigger-timeline"),
-		document.querySelector("#waking-up__response-timeline"),
-	];
-	const transformTriggerResponse = `translate(
-		${maxTranslateX - padding}px, -50%)`;
+	const triggerElement = document.querySelector(
+		"#waking-up__trigger-timeline"
+	);
+	const responseElement = document.querySelector(
+		"#waking-up__response-timeline"
+	);
 
-	const transformLabel = `translateX(${maxTranslateX}px)`;
+	const transformTrigger = (dir) => `translate(
+		${dir * maxTranslateX - padding}px, -50%)`;
+
+	const transformResponse = (dir) => `translate(
+		${dir * maxTranslateX + padding}px, -50%)`;
+
+	const transformLabel = (dir) => `translateX(${dir * maxTranslateX}px)`;
 
 	const colorFieldRect = colorField.getBoundingClientRect();
-	const transformColorField = `translate(${
-		maxTranslateX - colorFieldRect.width / 2
-	}px , -50%)`;
+	const transformColorField = (dir) =>
+		`translate(${dir * maxTranslateX - colorFieldRect.width / 2}px , -50%)`;
 
 	sliderTimeline
 		.add("start")
-		.to(triggerResponseElements, {
-			transform: transformTriggerResponse,
+		.to(triggerElement, {
+			transform: transformTrigger(1),
 			ease: "power1.out",
 		})
 		.to(
+			responseElement,
+			{
+				transform: transformResponse(1),
+				ease: "power1.out",
+			},
+			"start"
+		)
+		.to(
 			label,
 			{
-				transform: transformLabel,
+				transform: transformLabel(1),
 				ease: "power1.out",
 			},
 			"start"
@@ -234,12 +247,45 @@ const getSliderTimeline = () => {
 		.to(
 			colorField,
 			{
-				transform: transformColorField,
+				transform: transformColorField(1),
 				ease: "power1.out",
 			},
 			"start"
 		)
-		.add("right");
+		.add("right")
+		.to(
+			triggerElement,
+			{
+				transform: transformTrigger(-1),
+				ease: "power1.out",
+			},
+			"right"
+		)
+		.to(
+			responseElement,
+			{
+				transform: transformResponse(-1),
+				ease: "power1.out",
+			},
+			"right"
+		)
+		.to(
+			label,
+			{
+				transform: transformLabel(-1),
+				ease: "power1.out",
+			},
+			"right"
+		)
+		.to(
+			colorField,
+			{
+				transform: transformColorField(-1),
+				ease: "power1.out",
+			},
+			"right"
+		)
+		.add("left");
 	return sliderTimeline;
 };
 
@@ -977,12 +1023,26 @@ export const scrollerSections = [
 		id: "waking-up__response-questions-section",
 		content: "",
 		scrollTriggerComponent: "heading",
-		tweenVars: getDefaultTweenVars(),
+		tweenVars: [
+			{
+				...getDefaultTweenVars()[0],
+				scrollTrigger: {
+					...getDefaultTweenVars()[0],
+					onEnter: () => {
+						getSliderTimeline().tweenTo("left");
+					},
+					onLeaveBack: () => {
+						getSliderTimeline().tweenTo("right");
+					},
+				},
+			},
+			getDefaultTweenVars()[1],
+		],
 		experiences: {
 			events: [
 				{ phrase: "what is my goal?" },
 				{ phrase: "what are my options right now?" },
-				{ phrase: "are there different ways to see this?" },
+				{ phrase: "are there other ways to see it?" },
 				{ phrase: "how am I affecting others?" },
 				{ phrase: "what is a good result for us?" },
 				{ phrase: "what can I learn from this?" },
