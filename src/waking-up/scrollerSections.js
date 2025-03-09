@@ -534,7 +534,7 @@ export const scrollerSections = [
 		content: "Arguing with a loved one",
 		height: "100px",
 		tweenComponent: "emotion",
-		styleKey: "large",
+		styleKey: "large italic",
 		tweenVars: [
 			{
 				backgroundColor: getEmotionColor("anger"),
@@ -609,6 +609,7 @@ export const scrollerSections = [
 							e.style.height = e.clientHeight + "px";
 							e.innerHTML = "Shout at them";
 							e.style.fontSize = "3.5rem";
+							e.style.fontStyle = "italic";
 						}
 					},
 					onLeaveBack: () => {

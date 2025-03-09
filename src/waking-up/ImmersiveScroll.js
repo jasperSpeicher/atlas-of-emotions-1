@@ -204,7 +204,7 @@ function createSectionDOM(section, index) {
 	const sectionDiv = document.createElement("div");
 	const combinedClasses = ["waking-up__section"];
 	if (section.styleKey) {
-		combinedClasses.push(section.styleKey); // or however you handle custom styles
+		combinedClasses.push(section.styleKey);
 	}
 	sectionDiv.className = combinedClasses.join(" ");
 	sectionDiv.id = sectionId;

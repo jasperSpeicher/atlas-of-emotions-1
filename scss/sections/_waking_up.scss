@@ -83,6 +83,10 @@
 	}
 }
 
+.waking-up__section.italic .waking-up__sectionHeading {
+	font-style: italic;
+}
+
 .waking-up__section.opacity .waking-up__sectionHeading {
 	opacity: 0;
 }
@@ -90,7 +94,7 @@
 .waking-up__phrase {
 	color: #fff;
 	font-size: 2rem;
-	/* white-space: nowrap; */
+	font-style: italic;
 	text-transform: lowercase;
 	vertical-align: middle;
 	opacity: 0.2;
