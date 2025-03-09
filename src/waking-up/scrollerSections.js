@@ -187,20 +187,27 @@ const getSliderTimeline = () => {
 	if (sliderTimeline) {
 		return sliderTimeline;
 	}
-	const padding = 0;
-	const maxTranslateX = window.innerWidth / 2;
+
+	const timelineLink = document.querySelector(
+		"#waking-up__response-timeline .waking-up__timeline-link"
+	);
 
 	sliderTimeline = new gsap.timeline();
 
-	const screenIsSmall = () =>
-		document.querySelectorAll(".small-screen").length > 0;
+	const screenIsSmall = document.querySelectorAll(".small-screen").length > 0;
 
-	if (!screenIsSmall()) {
+	if (!screenIsSmall || !timelineLink) {
 		return sliderTimeline;
 	}
 
 	// if the screen is small, slide the timeline right
 
+	const padding = 0;
+	const triggerTranslateX = window.innerWidth / 2;
+	const linkTranslateX =
+		timelineLink.getBoundingClientRect().left +
+		timelineLink.getBoundingClientRect().width / 2 -
+		window.innerWidth / 2;
 	const colorField = document.querySelector("#waking-up__emotionColorField");
 	const label = document.querySelector("#waking-up__emotion-label-anger");
 	const triggerElement = document.querySelector(
@@ -211,16 +218,20 @@ const getSliderTimeline = () => {
 	);
 
 	const transformTrigger = (dir) => `translate(
-		${dir * maxTranslateX - padding}px, -50%)`;
+		${dir * triggerTranslateX - padding}px, -50%)`;
 
 	const transformResponse = (dir) => `translate(
-		${dir * maxTranslateX + padding}px, -50%)`;
+		${dir * triggerTranslateX + padding}px, -50%)`;
 
-	const transformLabel = (dir) => `translateX(${dir * maxTranslateX}px)`;
+	const transformLabel = (dir) => `translateX(${dir * triggerTranslateX}px)`;
 
 	const colorFieldRect = colorField.getBoundingClientRect();
 	const transformColorField = (dir) =>
-		`translate(${dir * maxTranslateX - colorFieldRect.width / 2}px , -50%)`;
+		`translate(${
+			dir * triggerTranslateX - colorFieldRect.width / 2
+		}px , -50%)`;
+
+	const linkDirValue = -linkTranslateX / triggerTranslateX;
 
 	sliderTimeline
 		.add("start")
@@ -252,14 +263,14 @@ const getSliderTimeline = () => {
 			},
 			"start"
 		)
-		.add("right")
+		.add("trigger")
 		.to(
 			triggerElement,
 			{
 				transform: transformTrigger(-1),
 				ease: "power1.out",
 			},
-			"right"
+			"trigger"
 		)
 		.to(
 			responseElement,
@@ -267,7 +278,7 @@ const getSliderTimeline = () => {
 				transform: transformResponse(-1),
 				ease: "power1.out",
 			},
-			"right"
+			"trigger"
 		)
 		.to(
 			label,
@@ -275,7 +286,7 @@ const getSliderTimeline = () => {
 				transform: transformLabel(-1),
 				ease: "power1.out",
 			},
-			"right"
+			"trigger"
 		)
 		.to(
 			colorField,
@@ -283,9 +294,43 @@ const getSliderTimeline = () => {
 				transform: transformColorField(-1),
 				ease: "power1.out",
 			},
-			"right"
+			"trigger"
 		)
-		.add("left");
+		.add("response")
+		.to(
+			triggerElement,
+			{
+				transform: transformTrigger(linkDirValue),
+				ease: "power1.out",
+			},
+			"response"
+		)
+		.to(
+			responseElement,
+			{
+				transform: transformResponse(linkDirValue),
+				ease: "power1.out",
+			},
+			"response"
+		)
+		.to(
+			label,
+			{
+				transform: transformLabel(linkDirValue),
+				ease: "power1.out",
+			},
+			"response"
+		)
+		.to(
+			colorField,
+			{
+				transform: transformColorField(linkDirValue),
+				ease: "power1.out",
+			},
+			"response"
+		)
+		.add("link");
+
 	return sliderTimeline;
 };
 
@@ -971,9 +1016,9 @@ export const scrollerSections = [
 			{
 				...getDefaultTweenVars()[0],
 				scrollTrigger: {
-					...getDefaultTweenVars()[0],
+					...getDefaultTweenVars()[0].scrollTrigger,
 					onEnter: () => {
-						getSliderTimeline().tweenTo("right");
+						getSliderTimeline().tweenTo("trigger");
 					},
 					onLeaveBack: () => {
 						getSliderTimeline().tweenTo(0);
@@ -1006,6 +1051,7 @@ export const scrollerSections = [
         <div class="waking-up__timeline-questions" id="waking-up__response-timeline">
           <img class="${sharedStyle.responseArrow}" src="/img/right-arrow.svg" />
           <span class="${sharedStyle.responseQuestion}">How do I respond?</span>
+		  <a href="#triggers" class="waking-up__timeline-link">Explore the emotional episode timeline ></a>
         </div>
       `,
 		scrollTriggerComponent: "heading",
@@ -1028,12 +1074,12 @@ export const scrollerSections = [
 			{
 				...getDefaultTweenVars()[0],
 				scrollTrigger: {
-					...getDefaultTweenVars()[0],
+					...getDefaultTweenVars()[0].scrollTrigger,
 					onEnter: () => {
-						getSliderTimeline().tweenTo("left");
+						getSliderTimeline().tweenTo("response");
 					},
 					onLeaveBack: () => {
-						getSliderTimeline().tweenTo("right");
+						getSliderTimeline().tweenTo("trigger");
 					},
 				},
 			},
@@ -1051,8 +1097,9 @@ export const scrollerSections = [
 		},
 	},
 	{
+		id: "waking-up__timeline-link-section",
 		height: `${parseInt(DEFAULT_HEIGHT) * 2}vh`,
-		content: `<a href="#triggers" id="waking-up__timeline-link">Explore the emotional episode timeline ></a>`,
+		content: `<a href="#triggers" class="waking-up__timeline-link">Explore the emotional episode timeline ></a>`,
 		scrollTriggerComponent: "heading",
 		tweenVars: [
 			{
@@ -1060,6 +1107,12 @@ export const scrollerSections = [
 					...getDefaultTweenVars()[0].scrollTrigger,
 					start: "center-=150 center",
 					end: "bottom top-=10000px",
+					onEnter: () => {
+						getSliderTimeline().tweenTo("link");
+					},
+					onLeaveBack: () => {
+						getSliderTimeline().tweenTo("response");
+					},
 				},
 			},
 		],

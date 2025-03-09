@@ -339,16 +339,35 @@
 	overflow-y: auto;
 }
 
-#waking-up__timeline-link {
+.waking-up__timeline-link {
 	font-size: 30px;
 	color: #fff;
-	border-bottom: 2px solid #fff;
-	&:hover {
-		text-decoration: none;
+	text-decoration: underline;
+}
+
+#waking-up__response-timeline {
+	.waking-up__timeline-link {
+		display: none;
+		margin-left: 50px;
 	}
 }
 
 .small-screen {
+	#waking-up__timeline-link-section {
+		visibility: hidden;
+	}
+	#waking-up__response-timeline {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		.waking-up__timeline-link {
+			display: block;
+			width: 90vw;
+			white-space: wrap;
+			text-decoration: underline;
+		}
+	}	
 	.waking-up__emotionContainer {
 		height: 100vh;
 		top: 100vh;
