@@ -137,8 +137,8 @@ const scroller = {
 		this.getLoadedSection(section).addClass("active");
 		if (section !== this.currentSection) {
 			$(".page-body").css(
-				"transform",
-				`translateY(${-(nextIndex - 1) * 100}vh)`
+				"left",
+				`${-(nextIndex - 1) * window.innerWidth}px`
 			);
 			$("body").removeClass(`viewing-${this.currentSection}`);
 			this.currentSection = section;

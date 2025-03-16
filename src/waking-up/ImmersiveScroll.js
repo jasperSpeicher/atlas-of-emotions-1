@@ -281,6 +281,7 @@ function createPhraseDOM(element, phraseId) {
 				start: "top-=100%px center",
 				end: "bottom center",
 				scrub: 0.5,
+				pinType: "fixed",
 			},
 		})
 			.to(phraseSelector, {

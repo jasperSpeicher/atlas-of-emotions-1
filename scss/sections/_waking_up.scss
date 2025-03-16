@@ -41,7 +41,7 @@
 	position: fixed;
 	left: 0;
 	right: 0;
-	top: 150vh; // add 100vh because of the transform on the page-body
+	top: 50vh;
 }
 
 .waking-up__emotionColorField {
@@ -50,7 +50,7 @@
 	width: 200vw;
 	position: fixed;
 	left: 50vw;
-	top: 150vh; // add 100vh because of the transform on the page-body
+	top: 50vh;
 	transform: translate(-50%, -50%);
 	border-radius: 50%;
 	z-index: 0;

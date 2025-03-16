@@ -1906,12 +1906,14 @@ h6 {
 // get fullpage to work without the dep
 
 .page-body {
-	width: 100vw;
+	width: 700vw;
 	height: 100vh;
 	.section {
 		width: 100vw;
 		height: 100vh;
 	}
+	display: flex;
+	flex-direction: row;
 }
 
 #impediment-antidote-link {

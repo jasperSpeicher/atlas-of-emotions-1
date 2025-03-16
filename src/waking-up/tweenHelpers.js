@@ -36,6 +36,8 @@ export function mergeTweenVars(trigger, vars) {
 			trigger,
 			scrub: true,
 			...(vars?.scrollTrigger || {}),
+			pinType: "fixed",
+			// anticipatePin: 1
 		},
 	};
 }

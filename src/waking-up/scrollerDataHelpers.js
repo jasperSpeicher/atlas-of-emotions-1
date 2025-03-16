@@ -210,6 +210,6 @@ export const getDecenteringTweenVariables = (percentageRaw) => {
 	return {
 		width: `${diameter}${unit}`,
 		height: `${diameter}${unit}`,
-		filter: `blur(${blur}px)`,
+		// filter: `blur(${blur}px)`,
 	};
 };
