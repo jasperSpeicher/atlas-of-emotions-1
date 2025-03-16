@@ -165,6 +165,9 @@ const transientEmotionSections = (phrase, startEmotion, transientEmotion) => [
 	},
 ];
 
+const screenIsSmall = () =>
+	document.querySelectorAll(".small-screen").length > 0;
+
 const initTimelineElementPositions = () => {
 	// also prepare the timeline elements before they are onscreen
 	const colorField = document.querySelector("#waking-up__emotionColorField");
@@ -194,9 +197,7 @@ const getSliderTimeline = () => {
 
 	sliderTimeline = new gsap.timeline();
 
-	const screenIsSmall = document.querySelectorAll(".small-screen").length > 0;
-
-	if (!screenIsSmall || !timelineLink) {
+	if (!screenIsSmall() || !timelineLink) {
 		return sliderTimeline;
 	}
 
@@ -982,7 +983,9 @@ export const scrollerSections = [
 						});
 
 						// prep timeline elements for sliding
-						initTimelineElementPositions();
+						if (screenIsSmall()) {
+							initTimelineElementPositions();
+						}
 					},
 				},
 			},

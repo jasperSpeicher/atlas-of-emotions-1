@@ -52,7 +52,18 @@ export function createImmersiveScrollDOM() {
 	emotionContainer.className = sharedStyle.emotionContainer;
 
 	const emotionColorField = document.createElement("div");
-	emotionColorField.className = sharedStyle.emotionColorField;
+	emotionColorField.className = `${
+		sharedStyle.emotionColorField
+	} ${"orb-container"}`;
+	emotionColorField.innerHTML = `
+	<div class="orb">
+		<div class="highlight"></div>
+	</div>
+	<div class="inner-orb"></div>
+	<div class="inner-orb"></div>
+	<div class="inner-orb"></div>
+	<!--<div class="text">you feel<br/>ANGER</div>-->
+`;
 	emotionColorField.id = "waking-up__emotionColorField";
 
 	pageContainer.appendChild(emotionColorField);

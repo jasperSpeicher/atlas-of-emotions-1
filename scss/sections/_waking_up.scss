@@ -1,3 +1,10 @@
+.waking-up__pageContainer {
+	pointer-events: none;
+	a {
+		pointer-events: auto;
+	}
+}
+
 .waking-up__stars {
 	position: fixed;
 	top: 100vh;
@@ -85,6 +92,7 @@
 
 .waking-up__section.italic .waking-up__sectionHeading {
 	font-style: italic;
+	text-transform: lowercase;
 }
 
 .waking-up__section.opacity .waking-up__sectionHeading {
@@ -197,9 +205,11 @@
 @media (max-width: 1280px) {
 	#waking-up__emotion-label-anger {
 		font-size: 2rem;
-		@media (max-width: 500px) {
-			font-size: 7vw;
-		}
+	}
+}
+@media (max-width: 500px) {
+	#waking-up__emotion-label-anger {
+		font-size: 7vw;
 	}
 }
 
@@ -249,17 +259,15 @@
 	margin-bottom: 3rem;
 }
 
-@media (max-width: 1280px) {
-	#waking-up__response-questions-section
-		.waking-up__sectionPhrases
-		.waking-up__phrase {
-		font-size: 1.5rem;
-	}
-	#waking-up__trigger-questions-section
-		.waking-up__sectionPhrases
-		.waking-up__phrase {
-		font-size: 1.5rem;
-	}
+#waking-up__response-questions-section
+	.waking-up__sectionPhrases
+	.waking-up__phrase {
+	font-size: 1.5rem;
+}
+#waking-up__trigger-questions-section
+	.waking-up__sectionPhrases
+	.waking-up__phrase {
+	font-size: 1.5rem;
 }
 @media (max-width: 500px) {
 	#waking-up__response-questions-section
@@ -271,6 +279,18 @@
 		.waking-up__sectionPhrases
 		.waking-up__phrase {
 		font-size: 6vw;
+	}
+}
+
+#waking-up__trigger-questions-section .waking-up__sectionPhrases,
+#waking-up__response-questions-section .waking-up__sectionPhrases {
+	.waking-up__phrase {
+		height: 20px;
+		overflow: visible;
+		span {
+			padding-top: 150px;
+			display: block;
+		}
 	}
 }
 
@@ -289,23 +309,14 @@
 		white-space: wrap;
 		vertical-align: middle;
 	}
+	#waking-up__trigger-timeline {
+		width: 257px;
+	}
 	#waking-up__trigger-questions-section .waking-up__sectionPhrases,
 	#waking-up__response-questions-section .waking-up__sectionPhrases {
 		text-align: center;
 		padding: 0;
-		.waking-up__phrase {
-			height: 20px;
-			overflow: visible;
-			span {
-				padding-top: 150px;
-				display: block;
-			}
-		}
 	}
-}
-
-#waking-up__trigger-timeline {
-	width: 257px;
 }
 
 .section-graphics img.waking-up__triggerArrow {
@@ -343,6 +354,13 @@
 	font-size: 30px;
 	color: #fff;
 	text-decoration: underline;
+	font-weight: 200;
+	letter-spacing: 1.5px;
+	&:hover {
+		color: #fff;
+		font-weight: 400;
+		letter-spacing: 1.2px;
+	}
 }
 
 #waking-up__response-timeline {
@@ -367,7 +385,7 @@
 			white-space: wrap;
 			text-decoration: underline;
 		}
-	}	
+	}
 	.waking-up__emotionContainer {
 		height: 100vh;
 		top: 100vh;

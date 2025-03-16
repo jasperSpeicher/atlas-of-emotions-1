@@ -21,9 +21,19 @@ class WakingUpSection {
 
 	open() {
 		$(this.scrollParent)[0].scrollTop = 0;
+		$("#waking-up__emotionColorField").css(
+			"background-color",
+			"rgba(255, 255, 255, 0)"
+		);
+		$(".waking-up__emotion-label").css("opacity", 0);
 		return Promise.resolve();
 	}
 	close() {
+		$("#waking-up__emotionColorField").css(
+			"background-color",
+			"rgba(255, 255, 255, 0)"
+		);
+		$(".waking-up__emotion-label").css("opacity", 0);
 		return Promise.resolve();
 	}
 	setEmotion() {
