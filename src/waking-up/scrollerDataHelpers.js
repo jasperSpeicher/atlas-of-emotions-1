@@ -1,6 +1,10 @@
 import { shuffle } from "lodash";
 import { configsByEmotion, emotions, eventsAndResponses } from "./config";
 
+
+export const INITIAL_EMOTION = "sadness";
+
+
 /**
  * Returns a GSAP tween configuration for transitioning the background color
  * from `previousEmotion` to `emotion`.
@@ -19,14 +23,17 @@ export const getColorTweenConfig = (
 	onEnter,
 	onLeaveBack
 ) => ({
-	tweenComponent: "emotion",
+	tweenComponent: "emotion-color",
 	scrollTriggerComponent: "phrase",
 	tweenType: "fromTo",
 	tweenVars: [
 		{
 			backgroundColor: previousEmotion
 				? getEmotionColor(previousEmotion)
-				: "rgba(255,255,255,0)",
+				: getEmotionColor(INITIAL_EMOTION),
+			color: previousEmotion
+				? getEmotionColor(previousEmotion) // need to change orb bg and shadow color, not parent, but this is not working, see change to selector that selects orb now instad of field to debug
+				: getEmotionColor(INITIAL_EMOTION),
 			scrollTrigger: {
 				start: "center center",
 				end: "bottom center+=30px",
@@ -37,6 +44,7 @@ export const getColorTweenConfig = (
 		},
 		{
 			backgroundColor: getEmotionColor(emotion),
+			color: getEmotionColor(emotion),
 			...(preventFlicker
 				? { transition: "background-color 333ms 0s ease-in-out" }
 				: { clearProps: "transition" }),
@@ -157,7 +165,7 @@ export const getEmotionColorComponents = (emotion) => {
  */
 export const getEmotionColor = (emotion) => {
 	const [r, g, b] = getEmotionColorComponents(emotion);
-	return `rgb(${r},${g},${b})`;
+	return `rgb(${r},${g},${b},0.65)`;
 };
 
 /**

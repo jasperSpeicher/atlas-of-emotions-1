@@ -5,10 +5,11 @@ gsap.registerPlugin(ScrollTrigger);
 import { scrollerSections } from "./scrollerSections.js";
 import {
 	getDecenteringTweenVariables,
+	getEmotionColor,
 	getPhraseId,
 	getSectionId,
 } from "./scrollerDataHelpers.js";
-import { configureTweens } from "./tweenHelpers.js";
+import { configureTweens, getTweenComponentSelector } from "./tweenHelpers.js";
 import { sharedStyle } from "./config.js";
 
 /**
@@ -52,9 +53,7 @@ export function createImmersiveScrollDOM() {
 	emotionContainer.className = sharedStyle.emotionContainer;
 
 	const emotionColorField = document.createElement("div");
-	emotionColorField.className = `${
-		sharedStyle.emotionColorField
-	} ${"orb-container"}`;
+	emotionColorField.className = `${sharedStyle.emotionColorField} orb-container`;
 	emotionColorField.innerHTML = `
 	<div class="orb">
 		<div class="highlight"></div>
@@ -172,11 +171,15 @@ export function initImmersiveScrollAnimations() {
 		});
 	});
 
+	// init sadness emotionColorField
+	gsap.to(getTweenComponentSelector("emotion-color"), {
+		color: getEmotionColor("sadness"),
+		backgroundColor: getEmotionColor("sadness"),
+	});
+
 	// Decentering tween for emotionColorField
 	gsap.to(`.${sharedStyle.emotionColorField}`, {
-		backgroundColor: "rgba(255,255,255,0)",
 		...getDecenteringTweenVariables(0),
-		opacity: 1,
 	});
 
 	// Reset scroll on page unload

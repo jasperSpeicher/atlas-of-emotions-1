@@ -13,11 +13,13 @@ export function getTweenComponentSelector(tweenComponent, parentSelector) {
 	const selector =
 		tweenComponent === "section" || tweenComponent === "phrase"
 			? `${parentSelector}`
-			: tweenComponent === "emotion"
+			: tweenComponent === "emotion-color"
+			? `.orb-container > div`
+			: tweenComponent === "emotion-size"
 			? `.${style.emotionColorField}`
 			: `${parentSelector} .${style.sectionHeading}`; // default to heading
 
-    // Escape "+" in IDs/selectors if needed
+	// Escape "+" in IDs/selectors if needed
 	return selector.replace("+", `\\2b`);
 }
 
@@ -31,8 +33,8 @@ export function getTweenComponentSelector(tweenComponent, parentSelector) {
 export function mergeTweenVars(trigger, vars) {
 	return {
 		...(vars || {}),
-        scrollTrigger: {
-            scroller: "#waking_up-fp-section .section-graphics",
+		scrollTrigger: {
+			scroller: "#waking_up-fp-section .section-graphics",
 			trigger,
 			scrub: true,
 			...(vars?.scrollTrigger || {}),

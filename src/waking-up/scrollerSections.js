@@ -6,6 +6,7 @@ import {
 	getEmotionColor,
 	getEventPhrases,
 	getPhrasesWithLineHeight,
+	INITIAL_EMOTION,
 } from "./scrollerDataHelpers";
 import gsap from "gsap";
 
@@ -55,7 +56,7 @@ const breathingSections = (phrase, startSize, breathSize) => [
 		height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
 		content: " ",
 		styleKey: "waking-up__decentering",
-		tweenComponent: "emotion",
+		tweenComponent: "emotion-size",
 		scrollTriggerComponent: "heading",
 		tweenType: "fromTo",
 		tweenVars: [
@@ -84,7 +85,7 @@ const breathingSections = (phrase, startSize, breathSize) => [
 		height: `${parseInt(DEFAULT_HEIGHT) * 2}vh`,
 		content: " ",
 		styleKey: "waking-up__decentering",
-		tweenComponent: "emotion",
+		tweenComponent: "emotion-size",
 		scrollTriggerComponent: "heading",
 		tweenType: "fromTo",
 		tweenVars: [
@@ -113,12 +114,15 @@ const transientEmotionSections = (phrase, startEmotion, transientEmotion) => [
 	{
 		height: `${parseInt(DEFAULT_HEIGHT) * 0.25}vh`,
 		content: " ",
-		tweenComponent: "emotion",
+		tweenComponent: "emotion-color",
 		scrollTriggerComponent: "heading",
 		tweenType: "fromTo",
 		tweenVars: [
 			{
 				backgroundColor: startEmotion
+					? getEmotionColor(startEmotion)
+					: "rgba(0,0,0,0)",
+				color: startEmotion
 					? getEmotionColor(startEmotion)
 					: "rgba(0,0,0,0)",
 				scrollTrigger: {
@@ -130,6 +134,9 @@ const transientEmotionSections = (phrase, startEmotion, transientEmotion) => [
 			},
 			{
 				backgroundColor: getEmotionColor(transientEmotion),
+				color: startEmotion
+					? getEmotionColor(transientEmotion)
+					: "rgba(0,0,0,0)",
 				duration: 1,
 			},
 		],
@@ -142,12 +149,13 @@ const transientEmotionSections = (phrase, startEmotion, transientEmotion) => [
 		height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
 		content: " ",
 		styleKey: "waking-up__decentering",
-		tweenComponent: "emotion",
+		tweenComponent: "emotion-color",
 		scrollTriggerComponent: "heading",
 		tweenType: "fromTo",
 		tweenVars: [
 			{
 				backgroundColor: getEmotionColor(transientEmotion),
+				color: getEmotionColor(transientEmotion),
 				scrollTrigger: {
 					scrub: true,
 					start: "top center",
@@ -157,6 +165,9 @@ const transientEmotionSections = (phrase, startEmotion, transientEmotion) => [
 			},
 			{
 				backgroundColor: startEmotion
+					? getEmotionColor(startEmotion)
+					: "rgba(0,0,0,0)",
+				color: startEmotion
 					? getEmotionColor(startEmotion)
 					: "rgba(0,0,0,0)",
 				duration: 1,
@@ -341,9 +352,9 @@ export const scrollerSections = [
 		content: "As we live our lives...",
 		height: DEFAULT_HEIGHT,
 		id: "waking-up__introduction",
-		styleKey: "opacity",
+		// styleKey: "opacity",
 		tweenVars: {
-			opacity: 1,
+			// opacity: 1,
 			scrollTrigger: {
 				start: "top center",
 			},
@@ -438,22 +449,24 @@ export const scrollerSections = [
 	{
 		content: "and they trigger our emotions.",
 		height: DEFAULT_HEIGHT,
-		tweenComponent: "emotion",
+		tweenComponent: "emotion-size",
 		scrollTriggerComponent: "section",
 		tweenType: "fromTo",
 		tweenVars: [
 			{
 				...getDecenteringTweenVariables(100),
+				opacity: 0,
 				duration: 10,
 				scrollTrigger: {
 					scrub: true,
-					start: "bottom-=50px center",
-					end: "bottom+=30px center",
+					start: "bottom-=200px center",
+					end: "bottom+=600px center",
 				},
 			},
 			{
 				...getDecenteringTweenVariables(0),
 				duration: 10,
+				opacity: 1,
 			},
 		],
 		experiences: {
@@ -461,7 +474,7 @@ export const scrollerSections = [
 			events: getEventPhrases({
 				phrasePairs: [
 					{
-						emotion: "sadness",
+						emotion: INITIAL_EMOTION,
 						pair: { event: "relationship falls apart" },
 					},
 				],
@@ -486,11 +499,12 @@ export const scrollerSections = [
 	{
 		content: "with stories and messages from our inner world.",
 		height: "30px",
-		tweenComponent: "emotion",
+		tweenComponent: "emotion-color",
 		tweenType: "fromTo",
 		tweenVars: [
 			{
 				backgroundColor: getEmotionColor("sadness"),
+				color: getEmotionColor("sadness"),
 				scrollTrigger: {
 					start: "center-=120px center",
 					end: "bottom-=120px center",
@@ -498,6 +512,7 @@ export const scrollerSections = [
 			},
 			{
 				backgroundColor: getEmotionColor("enjoyment"),
+				color: getEmotionColor("enjoyment"),
 			},
 		],
 	},
@@ -505,10 +520,11 @@ export const scrollerSections = [
 		content: " ",
 		height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
 		tweenType: "fromTo",
-		tweenComponent: "emotion",
+		tweenComponent: "emotion-color",
 		tweenVars: [
 			{
 				backgroundColor: getEmotionColor("enjoyment"),
+				color: getEmotionColor("enjoyment"),
 				scrollTrigger: {
 					start: "top center",
 					end: "bottom bottom",
@@ -516,6 +532,7 @@ export const scrollerSections = [
 			},
 			{
 				backgroundColor: getColorWithTransparency("enjoyment"),
+				color: getColorWithTransparency("enjoyment"),
 			},
 		],
 	},
@@ -553,10 +570,11 @@ export const scrollerSections = [
 		content: "",
 		height: `${parseInt(DEFAULT_HEIGHT) / 4}vh`,
 		tweenType: "fromTo",
-		tweenComponent: "emotion",
+		tweenComponent: "emotion-color",
 		tweenVars: [
 			{
 				backgroundColor: getEmotionColor(finalPiledUpEmotion),
+				color: getEmotionColor(finalPiledUpEmotion),
 				scrollTrigger: {
 					pin: true,
 					start: "top center",
@@ -567,6 +585,7 @@ export const scrollerSections = [
 			},
 			{
 				backgroundColor: transparentPiledUpEmotion,
+				color: transparentPiledUpEmotion,
 				pin: true,
 			},
 		],
@@ -579,11 +598,12 @@ export const scrollerSections = [
 	{
 		content: "Arguing with a loved one",
 		height: "100px",
-		tweenComponent: "emotion",
+		tweenComponent: "emotion-color",
 		styleKey: "large italic",
 		tweenVars: [
 			{
 				backgroundColor: getEmotionColor("anger"),
+				color: getEmotionColor("anger"),
 				scrollTrigger: {
 					start: "center-=50px center",
 					end: "bottom-=50px center",
@@ -592,15 +612,9 @@ export const scrollerSections = [
 		],
 	},
 	{
-		// Original JSX was something like:
-		// content: (
-		//   <div>
-		//     <p>In these moments...</p>
-		//   </div>
-		// ),
 		content: `
           In&nbsp;these&nbsp;moments, it&nbsp;is&nbsp;hard&nbsp;to&nbsp;separate what&nbsp;we&nbsp;feel&nbsp;inside
-          from&nbsp;what&nbsp;is&nbsp;actually happening&nbsp;round&nbsp;us.
+          from&nbsp;what&nbsp;is&nbsp;actually happening&nbsp;around&nbsp;us.
       `,
 		height: DEFAULT_HEIGHT,
 	},
@@ -770,7 +784,7 @@ export const scrollerSections = [
 		id: "pause",
 		content: "We can pause...",
 		styleKey: "waking-up__decentering",
-		tweenComponent: "emotion",
+		tweenComponent: "emotion-size",
 		scrollTriggerComponent: "heading",
 		tweenType: "fromTo",
 		tweenVars: [
@@ -797,7 +811,7 @@ export const scrollerSections = [
 		height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
 		content: "...recognize that we are in an emotional state,",
 		styleKey: "waking-up__decentering",
-		tweenComponent: "emotion",
+		tweenComponent: "emotion-size",
 		scrollTriggerComponent: "heading",
 		tweenType: "fromTo",
 		tweenVars: [

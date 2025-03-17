@@ -7,7 +7,7 @@
 
 .waking-up__stars {
 	position: fixed;
-	top: 100vh;
+	top: 0;
 	height: 100vh;
 	left: 0;
 	right: 0;
@@ -45,7 +45,6 @@
 }
 
 .waking-up__emotionColorField {
-	background-color: rgba(255, 255, 255, 0);
 	height: 200vh;
 	width: 200vw;
 	position: fixed;
