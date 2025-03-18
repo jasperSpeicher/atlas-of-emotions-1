@@ -186,14 +186,21 @@ const initTimelineElementPositions = () => {
 	const timelineTrigger = document.querySelector(
 		"#waking-up__trigger-timeline"
 	);
-	timelineTrigger.style.position = "absolute";
+
 	const arrowPostionX = window.innerWidth / 2 + fieldRect.width / 2 + 30;
 	timelineTrigger.style.right = arrowPostionX + "px";
+	timelineTrigger.style.position = "absolute";
+
 	const timelineResponse = document.querySelector(
 		"#waking-up__response-timeline"
 	);
-	timelineResponse.style.position = "absolute";
 	timelineResponse.style.left = arrowPostionX + "px";
+	timelineResponse.style.position = "absolute";
+
+	const timelineLink = document.querySelector(
+		"#waking-up__response-timeline .waking-up__timeline-link"
+	);
+	timelineLink.style.marginLeft = `${window.innerWidth / 2}px`;
 };
 
 let sliderTimeline;
@@ -215,13 +222,42 @@ const getSliderTimeline = () => {
 	// if the screen is small, slide the timeline right
 
 	const padding = 0;
-	const triggerTranslateX = window.innerWidth / 2;
-	const linkTranslateX =
+
+	const triggerCenterElement = document.querySelector(
+		".waking-up__triggerQuestion"
+	);
+	const responseCenterElement = document.querySelector(
+		".waking-up__responseQuestion"
+	);
+
+	const triggerRect = triggerCenterElement.getBoundingClientRect();
+	const triggerCenterX = triggerRect.left + triggerRect.width / 2;
+	const responseRect = responseCenterElement.getBoundingClientRect();
+	const responseCenterX = responseRect.left + responseRect.width / 2;
+	const linkCenterX =
 		timelineLink.getBoundingClientRect().left +
-		timelineLink.getBoundingClientRect().width / 2 -
-		window.innerWidth / 2;
+		timelineLink.getBoundingClientRect().width / 2;
+
+	const triggerTranslateX = window.innerWidth / 2 - triggerCenterX;
+	const responseTranslateX = window.innerWidth / 2 - responseCenterX;
+
+	const linkTranslateX = window.innerWidth / 2 - linkCenterX;
+
 	const colorField = document.querySelector("#waking-up__emotionColorField");
 	const label = document.querySelector("#waking-up__emotion-label-anger");
+
+	const transformTrigger = (distance) => `translate(
+		${distance - padding}px, -50%)`;
+
+	const transformResponse = (distance) => `translate(
+		${distance + padding}px, -50%)`;
+
+	const transformLabel = (distance) => `translateX(${distance}px)`;
+
+	const colorFieldRect = colorField.getBoundingClientRect();
+	const transformColorField = (distance) =>
+		`translate(${distance - colorFieldRect.width / 2}px , -50%)`;
+
 	const triggerElement = document.querySelector(
 		"#waking-up__trigger-timeline"
 	);
@@ -229,32 +265,17 @@ const getSliderTimeline = () => {
 		"#waking-up__response-timeline"
 	);
 
-	const transformTrigger = (dir) => `translate(
-		${dir * triggerTranslateX - padding}px, -50%)`;
-
-	const transformResponse = (dir) => `translate(
-		${dir * triggerTranslateX + padding}px, -50%)`;
-
-	const transformLabel = (dir) => `translateX(${dir * triggerTranslateX}px)`;
-
-	const colorFieldRect = colorField.getBoundingClientRect();
-	const transformColorField = (dir) =>
-		`translate(${
-			dir * triggerTranslateX - colorFieldRect.width / 2
-		}px , -50%)`;
-
-	const linkDirValue = -linkTranslateX / triggerTranslateX;
-
+	console.log({ triggerTranslateX, responseTranslateX, linkTranslateX });
 	sliderTimeline
 		.add("start")
 		.to(triggerElement, {
-			transform: transformTrigger(1),
+			transform: transformTrigger(triggerTranslateX),
 			ease: "power1.out",
 		})
 		.to(
 			responseElement,
 			{
-				transform: transformResponse(1),
+				transform: transformResponse(triggerTranslateX),
 				ease: "power1.out",
 			},
 			"start"
@@ -262,7 +283,7 @@ const getSliderTimeline = () => {
 		.to(
 			label,
 			{
-				transform: transformLabel(1),
+				transform: transformLabel(triggerTranslateX),
 				ease: "power1.out",
 			},
 			"start"
@@ -270,7 +291,7 @@ const getSliderTimeline = () => {
 		.to(
 			colorField,
 			{
-				transform: transformColorField(1),
+				transform: transformColorField(triggerTranslateX),
 				ease: "power1.out",
 			},
 			"start"
@@ -279,15 +300,25 @@ const getSliderTimeline = () => {
 		.to(
 			triggerElement,
 			{
-				transform: transformTrigger(-1),
+				transform: transformTrigger(responseTranslateX),
 				ease: "power1.out",
+				onStart: () => {
+					const responseCenterX =
+						responseRect.left + responseRect.width / 2;
+					const currentResponseTranslateX =
+						window.innerWidth / 2 - responseCenterX;
+					console.log({
+						responseTranslateX,
+						currentResponseTranslateX,
+					});
+				},
 			},
 			"trigger"
 		)
 		.to(
 			responseElement,
 			{
-				transform: transformResponse(-1),
+				transform: transformResponse(responseTranslateX),
 				ease: "power1.out",
 			},
 			"trigger"
@@ -295,7 +326,7 @@ const getSliderTimeline = () => {
 		.to(
 			label,
 			{
-				transform: transformLabel(-1),
+				transform: transformLabel(responseTranslateX),
 				ease: "power1.out",
 			},
 			"trigger"
@@ -303,7 +334,7 @@ const getSliderTimeline = () => {
 		.to(
 			colorField,
 			{
-				transform: transformColorField(-1),
+				transform: transformColorField(responseTranslateX),
 				ease: "power1.out",
 			},
 			"trigger"
@@ -312,7 +343,7 @@ const getSliderTimeline = () => {
 		.to(
 			triggerElement,
 			{
-				transform: transformTrigger(linkDirValue),
+				transform: transformTrigger(linkTranslateX),
 				ease: "power1.out",
 			},
 			"response"
@@ -320,7 +351,7 @@ const getSliderTimeline = () => {
 		.to(
 			responseElement,
 			{
-				transform: transformResponse(linkDirValue),
+				transform: transformResponse(linkTranslateX),
 				ease: "power1.out",
 			},
 			"response"
@@ -328,7 +359,7 @@ const getSliderTimeline = () => {
 		.to(
 			label,
 			{
-				transform: transformLabel(linkDirValue),
+				transform: transformLabel(linkTranslateX),
 				ease: "power1.out",
 			},
 			"response"
@@ -336,7 +367,7 @@ const getSliderTimeline = () => {
 		.to(
 			colorField,
 			{
-				transform: transformColorField(linkDirValue),
+				transform: transformColorField(linkTranslateX),
 				ease: "power1.out",
 			},
 			"response"
@@ -809,7 +840,7 @@ export const scrollerSections = [
 	...breathingSections("Ride the wave of emotion...", 90, 60),
 	{
 		height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
-		content: "...recognize that we are in an emotional state,",
+		content: "...recognize that we are in an emotional&nbsp;state,",
 		styleKey: "waking-up__decentering",
 		tweenComponent: "emotion-size",
 		scrollTriggerComponent: "heading",
@@ -1076,6 +1107,12 @@ export const scrollerSections = [
 			{
 				scrollTrigger: {
 					...getDefaultTweenVars()[0].scrollTrigger,
+					onEnter: () => {
+						getSliderTimeline().tweenTo("response");
+					},
+					onLeaveBack: () => {
+						getSliderTimeline().tweenTo("trigger");
+					},
 					start: "center+=5 center",
 					end: "bottom top-=10000px",
 				},
@@ -1092,12 +1129,6 @@ export const scrollerSections = [
 				...getDefaultTweenVars()[0],
 				scrollTrigger: {
 					...getDefaultTweenVars()[0].scrollTrigger,
-					onEnter: () => {
-						getSliderTimeline().tweenTo("response");
-					},
-					onLeaveBack: () => {
-						getSliderTimeline().tweenTo("trigger");
-					},
 				},
 			},
 			getDefaultTweenVars()[1],
@@ -1122,7 +1153,7 @@ export const scrollerSections = [
 			{
 				scrollTrigger: {
 					...getDefaultTweenVars()[0].scrollTrigger,
-					start: "center-=150 center",
+					start: "center-=200px center",
 					end: "bottom top-=10000px",
 					onEnter: () => {
 						getSliderTimeline().tweenTo("link");
