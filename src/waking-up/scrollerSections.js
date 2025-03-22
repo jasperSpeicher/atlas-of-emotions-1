@@ -631,14 +631,18 @@ export const scrollerSections = [
 		height: "100px",
 		tweenComponent: "emotion-color",
 		styleKey: "large italic",
+		tweenType: "fromTo",
 		tweenVars: [
 			{
-				backgroundColor: getEmotionColor("anger"),
-				color: getEmotionColor("anger"),
+				backgroundColor: "rgba(0,0,0,0)",
+				color: "rgba(0,0,0,0)",
 				scrollTrigger: {
 					start: "center-=50px center",
 					end: "bottom-=50px center",
 				},
+			},			{
+				backgroundColor: getEmotionColor("anger"),
+				color: getEmotionColor("anger"),
 			},
 		],
 	},
