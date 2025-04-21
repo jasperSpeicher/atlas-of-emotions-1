@@ -246,7 +246,7 @@
         {
             "key": "hero_about_body_1",
             "value": "Le Dalai Lama a imaginé une carte de nos émotions dans le but de développer un esprit calme. Il demanda à un scientifique reconnu et ami de longue date Docteur Paul Ekman de concrétiser cette idée. Ekmann a mené la création de l'Atlas accompagné par sa fille, Eve Ekman, chercheuse spécialisée sur les émotions de seconde génération et formatrice. L'Atlas  présente ce que les chercheurs ont découverts lors d'une étude sur la psychologie des émotions.",
-            "englishValue": "The Dalai Lama imagined \"a map of our emotions to develop a calm mind.\" He asked his longtime friend and renowned emotion scientist Dr. Paul Ekman to realize his idea. Ekman took on the creation of the Atlas alongside his daughter, Eve Ekman, a second-generation emotion researcher and teacher. The Dalai Lama requested the Atlas represent the science of Emotions from what researchers have learned from the psychological study of emotion. "
+            "englishValue": "The Dalai Lama imagined \"a map of our emotions to develop a calm mind.\" He asked his longtime friend and renowned emotion scientist Dr. Paul Ekman to realize his idea. Ekman took on the creation of the Atlas alongside his daughter, Eve Ekman, a second-generation emotion researcher and trainer. The Atlas represents what researchers have learned from the psychological study of emotion. "
         },
         {
             "key": "hero_call_to_action_button",
@@ -307,13 +307,13 @@
         },
         {
             "key": "actions_header",
-            "value": "Réactions de LHAMO",
+            "value": "Actions de LHAMO",
             "englishValue": "Actions of LHAMO"
         },
         {
             "key": "actions_body",
             "value": "Nous répondons aux états émotionnels par nos actions. Nos réponses à la même émotion peuvent varier selon les circonstances.",
-            "englishValue": "We respond to emotional states with our actions. Our responses to the same emotion may differ depending on the circumstances. We may have a primary, more immediate response, and a secondary more thoughtful response. Any response can be constructive and helpful to ourselves, others and the situation, or destructive and not helpful."
+            "englishValue": "We respond to emotional states with our actions. Our responses to the same emotion may differ depending on the circumstances."
         },
         {
             "key": "actions_body_mobile",
@@ -715,7 +715,7 @@
         },
         {
             "key": "timeline_common_phrase_you_feel",
-            "value": "vous ressentez de la",
+            "value": "tu ressens",
             "englishValue": "you feel"
         },
         {
@@ -1015,7 +1015,7 @@
         },
         {
             "key": "anger_timeline_response_constructive_response",
-            "value": "prenez un temps pour vous",
+            "value": "prends un temps pour soi",
             "englishValue": "take a time out"
         },
         {

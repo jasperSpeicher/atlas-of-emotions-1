@@ -245,7 +245,7 @@
         {
             "key": "hero_about_body_1",
             "value": "O Dalai Lama  imaginou \"um mapa de nossas emoções para cultivar uma mente calma.\" Ele pediu a seu velho amigo e renomado cientista de emoções, Dr. Paul Ekman, que pusesse em prática a sua idéia. Ekman assumiu a criação do Atlas de Emoções juntamente com sua filha, Eve Ekman, a segunda geração de pesquisadores e treinadora de emoções. O Atlas representa o que os pesquisadores aprenderam sobre o estudo psicológico das emoções. ",
-            "englishValue": "The Dalai Lama imagined \"a map of our emotions to develop a calm mind.\" He asked his longtime friend and renowned emotion scientist Dr. Paul Ekman to realize his idea. Ekman took on the creation of the Atlas alongside his daughter, Eve Ekman, a second-generation emotion researcher and teacher. The Dalai Lama requested the Atlas represent the science of Emotions from what researchers have learned from the psychological study of emotion. "
+            "englishValue": "The Dalai Lama imagined \"a map of our emotions to develop a calm mind.\" He asked his longtime friend and renowned emotion scientist Dr. Paul Ekman to realize his idea. Ekman took on the creation of the Atlas alongside his daughter, Eve Ekman, a second-generation emotion researcher and trainer. The Atlas represents what researchers have learned from the psychological study of emotion. "
         },
         {
             "key": "hero_call_to_action_button",
@@ -311,7 +311,7 @@
         {
             "key": "actions_body",
             "value": "Respondemos a um estado emocional com nossas ações. Nossas respostas a uma mesma emoção podem variar dependendo das circunstâncias.  ",
-            "englishValue": "We respond to emotional states with our actions. Our responses to the same emotion may differ depending on the circumstances. We may have a primary, more immediate response, and a secondary more thoughtful response. Any response can be constructive and helpful to ourselves, others and the situation, or destructive and not helpful."
+            "englishValue": "We respond to emotional states with our actions. Our responses to the same emotion may differ depending on the circumstances."
         },
         {
             "key": "actions_body_mobile",
