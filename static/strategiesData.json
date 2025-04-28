@@ -15,6 +15,12 @@
 			[
 				{ "title": "Mindfulness & Intentions", "id": "mindfulness" },
 				{ "title": "Pausing & Feeling", "id": "pausing" }
+			],
+			{ "title": "Living in Balance", "id": "living-in-balance" },
+			[
+				{ "title": "Compassion", "id": "compassion" },
+				{ "title": "Lifestyle for Calm", "id": "lifestyle-for-calm" },
+				{ "title": "Living with Intention", "id": "living-with-intention" }
 			]
 		]
 	},
@@ -173,7 +179,7 @@
 				},
 				{
 					"header": "Lifestyle for Calm",
-					"id": "",
+					"id": "lifestyle-for-calm",
 					"description": "Our emotions are deeply connected to our physical experiences. Sleep, diet, stress, substance use, and even the weather affect how we feel. Poor sleep, for instance, can intensify emotions, while intense emotions can disrupt sleep, creating a cycle of overwhelm. Similarly, being too hungry or too full can lead to physical discomfort and emotional challenges.",
 					"paragraphs": [
 						{
@@ -190,7 +196,7 @@
 				},
 				{
 					"header": "Living with Intention",
-					"id": "",
+					"id": "living-with-intention",
 					"description": "When we live with intention, we decide in each moment ‘how’ we want to direct our attention and behaviors.  Intention  can transform not only our daily interactions, but our overarching motivations and direction. An intention could be general such as \"I want to cultivate a calm mind\" or more specific \"I want to bring more kindness in to my interactions today.\"",
 					"paragraphs": [
 						{
