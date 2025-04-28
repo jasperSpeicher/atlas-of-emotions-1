@@ -673,7 +673,6 @@ svg {
 
 .section-text {
 	position: absolute;
-	z-index: 10;
 	top: 0;
 	width: $section-text-width;
 	bottom: 0;
@@ -1928,20 +1927,29 @@ h6 {
 	}
 }
 
+.print-header-logo {
+	display: none;
+}
+
 @media print {
 	.viewing-strategies-fp,
 	.viewing-learn_more-fp {
 		.logo {
-			position: fixed;
-			left: 0;
-			top: 10px;
-			right: unset;
-			width: unset;
-			padding: 0;
-			svg {
-				width: 90px;
+			display: none;
+		}
+		#strategies-fp-section h1,
+		#learn_more-fp-section h1 {
+			overflow: visible;
+			position: relative;
+			.print-header-logo {
+				display: block;
+				position: absolute;
+				left: -100px;
+				top: 10px;
+				width: 80px;
 				height: auto;
 			}
+			margin-bottom: 20px;
 		}
 		.top-nav {
 			display: none;
@@ -1953,7 +1961,7 @@ h6 {
 	.viewing-learn_more-fp {
 		.page-body {
 			position: relative;
-			transform: none !important;
+			left: 0 !important;
 			height: auto;
 		}
 		.page-body > div {
@@ -1971,11 +1979,16 @@ h6 {
 				padding: 0 20px 60px 120px;
 			}
 			h1 {
-				page-break-before: always;
 				margin-top: 0;
 			}
-			.wrapper:first-of-type h1 {
+			.wrapper {
+				page-break-before: always;
+				break-before: page;
+				margin-top: 0;
+			}
+			.wrapper:first-of-type {
 				page-break-before: auto;
+				break-before: auto;
 			}
 		}
 	}
@@ -1987,7 +2000,7 @@ h6 {
 		}
 		.page-body {
 			position: relative;
-			transform: none !important;
+			left: 0 !important;
 			height: auto;
 		}
 		.page-body > div {
@@ -1997,16 +2010,20 @@ h6 {
 			display: block;
 			height: auto;
 			.strategies-intro {
-				page-break-after: always;
+				// page-break-after: always;
+				// break-after: page;
 			}
 			h1 {
 				margin-top: 5px;
 			}
 			.details-subsection {
-				page-break-after: always;
+				// page-break-after: always;
+				// break-after: page;
 			}
-			.strategies-subsection {
+			.strategies-subsection,
+			#strategies-impediment-container {
 				page-break-before: always;
+				break-before: page !important;
 			}
 			.strategies-text {
 				padding: 0 20px 60px 120px;
@@ -2032,6 +2049,31 @@ h6 {
 			img {
 				max-width: 170px;
 			}
+		}
+	}
+}
+
+@-moz-document url-prefix() {
+	.viewing-strategies-fp,
+	.viewing-learn_more-fp {
+		#strategies-fp-section h1,
+		#learn_more-fp-section h1 {
+			.print-header-logo {
+				display: none !important;
+			}
+		}
+	}
+	.logo {
+		position: fixed;
+		display: block !important;
+		left: 0;
+		top: 10px;
+		right: unset;
+		width: unset;
+		padding: 0;
+		svg {
+			width: 90px;
+			height: auto;
 		}
 	}
 }

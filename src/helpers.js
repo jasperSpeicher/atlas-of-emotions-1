@@ -13,6 +13,10 @@ export const initializeTables = (subSections, sectionContainer) => {
 		const titleElement = document.createElement("h1");
 		const annexData = subSectionData.annex[subSectionAnnexKey];
 		titleElement.innerHTML = annexData.title;
+		const imageElement = document.createElement("img");
+		imageElement.src = "/img/atlas-logo.svg";
+		imageElement.className = "print-header-logo";
+		titleElement.prepend(imageElement);
 		subSectionWrapper.prepend(titleElement);
 		sectionContainer.appendChild(subSectionWrapper);
 	}
