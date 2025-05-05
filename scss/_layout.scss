@@ -862,6 +862,14 @@ svg {
 	}
 }
 
+.lang-uk {
+	.section-text__scroller {
+		button {
+			font-size: 0.75em;
+		}
+	}
+}
+
 [class*="viewing-timeline-fp"] {
 	.section-text__scroller {
 		margin: 0 -10px;
