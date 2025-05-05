@@ -2162,6 +2162,10 @@
 			},
 			"emotions": {
 				"all": "navigation_all_menu_item"
+			},
+			"learn_more": {
+				"menu": "navigation_learn_more_menu_item",
+				"heading": "navigation_learn_more_section_header"
 			}
 		},
 		"intro": {

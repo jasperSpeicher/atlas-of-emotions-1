@@ -41,6 +41,10 @@
             "value": "Strategies"
         },
         {
+            "key": "navigation_learn_more_menu_item",
+            "value": "Learn more"
+        },
+        {
             "key": "navigation_all_menu_item",
             "value": "all"
         },
@@ -63,6 +67,10 @@
         {
             "key": "navigation_strategies_section_header",
             "value": "Strategies"
+        },
+        {
+            "key": "navigation_learn_more_section_header",
+            "value": "Learn More"
         },
         {
             "key": "intro_header",

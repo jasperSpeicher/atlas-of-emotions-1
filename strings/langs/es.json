@@ -246,7 +246,7 @@
         {
             "key": "hero_about_body_1",
             "value": "El Dalai Lama  imaginó \"un mapa de nuestras emociones para cultivar una mente calma.\" Le pidió a su amigo de toda la vida y renombrado cientifico de las emociones Dr. Paul Ekman que materializara su idea. Ekman se encargo de la creación del Atlas de las Emociones junto a su hija Eve Ekman, una investigadora y entrenadora de emociones. El atlas representa lo que los investigadores han aprendido del estudio psicológico de las emociones. ",
-            "englishValue": "The Dalai Lama imagined \"a map of our emotions to develop a calm mind.\" He asked his longtime friend and renowned emotion scientist Dr. Paul Ekman to realize his idea. Ekman took on the creation of the Atlas alongside his daughter, Eve Ekman, a second-generation emotion researcher and trainer. The Atlas represents what researchers have learned from the psychological study of emotion. "
+            "englishValue": "The Dalai Lama imagined \"a map of our emotions to develop a calm mind.\" He asked his longtime friend and renowned emotion scientist Dr. Paul Ekman to realize his idea. Ekman took on the creation of the Atlas alongside his daughter, Eve Ekman, a second-generation emotion researcher and teacher. The Dalai Lama requested the Atlas represent the science of Emotions from what researchers have learned from the psychological study of emotion. "
         },
         {
             "key": "hero_call_to_action_button",
@@ -313,7 +313,7 @@
         {
             "key": "actions_body",
             "value": "Respondemos a un estado emocional con nuestras acciones. Nuestras respuestas a una misma emoción pueden diferir dependiendo de las circunstancias. ",
-            "englishValue": "We respond to emotional states with our actions. Our responses to the same emotion may differ depending on the circumstances."
+            "englishValue": "We respond to emotional states with our actions. Our responses to the same emotion may differ depending on the circumstances. We may have a primary, more immediate response, and a secondary more thoughtful response. Any response can be constructive and helpful to ourselves, others and the situation, or destructive and not helpful."
         },
         {
             "key": "actions_body_mobile",
