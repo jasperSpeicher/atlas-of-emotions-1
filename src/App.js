@@ -786,9 +786,9 @@ export default function (...initArgs) {
 
 		setEmotion(emotion);
 
-		setSection(section, previousEmotion, null);
-
 		scroller.hashChange(hash.section, emotion);
+		
+		setSection(section, previousEmotion, null);
 
 		const emotionOrElementId = hash.emotion;
 		const isEmotion = dispatcher.validateEmotion(emotionOrElementId);
