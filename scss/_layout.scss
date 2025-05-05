@@ -366,7 +366,7 @@ svg {
 	background-color: $top-nav-background;
 	.menu {
 		position: absolute;
-		font-size: 16px;
+		font-size: 18px;
 		left: 1em;
 		right: 1em;
 		height: 40px;
@@ -377,14 +377,21 @@ svg {
 			padding-inline-start: 0;
 			display: flex;
 			flex-direction: row;
-			justify-content: space-around;
-			max-width: 900px;
+			justify-content: flex-start;
 			li {
+				a {
+					color: #000;
+				}
 				a:focus,
 				a.active {
 					outline: none;
 					border: none;
 				}
+				padding: 0 3em;
+			}
+			li:last-child {
+				margin-left: auto;
+				padding-right: 1em;
 			}
 		}
 	}
