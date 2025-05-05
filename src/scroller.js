@@ -208,6 +208,10 @@ const scroller = {
 			let $introSlides = $intro.find(".slides");
 			let $introCta = $intro.find(".cta");
 
+			$introCta.click((e)=> {
+				this.toggleAboutSection(false);
+			});
+
 			this.introTimeline = new gsap.timeline();
 			this.introTimeline
 				.add("start")
