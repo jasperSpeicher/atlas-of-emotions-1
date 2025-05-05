@@ -873,7 +873,10 @@ export default function (...initArgs) {
 		checkForLandscape();
 
 		// set up appStrings
+		const languagePref = getLanguagePref();
 		appStrings(getLanguagePref(), screenIsSmall);
+
+		document.querySelector("body").classList.add(`lang-${languagePref}`);
 
 		return screenIsSmall;
 	}
