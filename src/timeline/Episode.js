@@ -223,25 +223,23 @@ export default class Episode {
 	}
 
 	getStageDOMCenterPoint(stage) {
+		let bounds;
 		if (stage == "trigger") {
-			let bounds = this.parent
+			bounds = this.parent
 				.querySelector("#event")
 				.getBoundingClientRect();
-			return bounds.left + bounds.width / 2;
 		}
 		if (stage == "experience") {
-			let bounds = this.parent
+			bounds = this.parent
 				.querySelector("#state")
 				.getBoundingClientRect();
-			return bounds.left + bounds.width / 2;
 		}
 		if (stage == "response") {
-			let bounds = this.parent
+			bounds = this.parent
 				.querySelector("#responses")
 				.getBoundingClientRect();
-			return bounds.left + bounds.width / 2;
 		}
-		return null;
+		return bounds ? bounds.left + bounds.width / 2 : null;
 	}
 
 	getParentWidth() {
