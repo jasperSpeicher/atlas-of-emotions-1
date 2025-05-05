@@ -6,8 +6,8 @@ $section-padding-top: 150px;
 $section-text-padding: 1.5em;
 $section-text-padding-mobile: 0.75em;
 $more-text-padding: 3em;
-$section-text-background-color: #eee;
-$top-nav-background: rgba(255, 255, 255, 0.9);
+$section-text-background-color: #f9f9f9;
+$top-nav-background: rgba(255, 255, 255, 0.96);
 $top-nav-padding-top: 15px;
 $mobile-split-height: 300;
 $mobile-section-text-top: #{$ui-header-mobile-nav-target-height +
@@ -363,7 +363,7 @@ svg {
 	z-index: 200;
 	left: $section-text-width;
 	right: 0;
-	background-color: rgba(#fff, 0.9);
+	background-color: $top-nav-background;
 	.menu {
 		position: absolute;
 		font-size: 16px;
@@ -830,7 +830,7 @@ svg {
 			bottom: 0;
 			left: 0;
 			right: 0;
-			background: linear-gradient(rgba(#eee, 0), rgba(#eee, 0.95));
+			background: linear-gradient(rgba(#f9f9f9, 0), rgba(#f9f9f9, 0.95));
 			pointer-events: none;
 		}
 		.headline {
