@@ -219,15 +219,15 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 	function loadStrings() {
 		if (strings) return Promise.resolve(instance);
 		else {
-			return fetch(`strings/langs/${defaultLang}.json`, {
+			return fetch(`strings/langs/strings.${defaultLang}.json`, {
 				credentials: "same-origin",
-			}) // needed on studio to pass .htaccess login creds to same-origin requests
+			})
 				.then((response) =>
 					Promise.all([
 						response,
-						fetch(`strings/langs/${_lang}.json`, {
+						fetch(`strings/langs/strings.${_lang}.json`, {
 							credentials: "same-origin",
-						}), // needed on studio to pass .htaccess login creds to same-origin requests
+						}),
 					])
 				)
 				.then((responses) =>
