@@ -290,15 +290,30 @@ function stringsTask(options) {
 									.map(removeEmptyProperties)
 									.map(camelCaseProperties)
 							),
+							// Keep the sheet names for group_name
+							sheetNames: [
+								"metadata", "anger", "fear", "disgust",
+								"sadness", "enjoyment", "about", "emotrak"
+							]
 						}))
 						.catch((e) => console.error(e))
 				);
 				Promise.all(files).then((fileResults) => {
 					fileResults.forEach((languageSheets) => {
-						const { lang, sheets } = languageSheets;
-						const path = `${lang.lang}.json`;
+						const { lang, sheets: arrayOfSheetData, sheetNames } = languageSheets;
+
+						const newStringGroups = arrayOfSheetData.map((sheetItems, index) => {
+							return {
+								group_name: sheetNames[index] || `Group ${index + 1}`, // Use actual sheet name
+								items: sheetItems // sheetItems is already the array of {"key": ..., "value": ...}
+							};
+						});
+						
+						const transformedData = { string_groups: newStringGroups };
+
+						const path = `strings.${lang.lang}.json`; // Correct path with 'strings.' prefix
 						const contents = Buffer.from(
-							JSON.stringify(sheets, null, 4)
+							JSON.stringify(transformedData, null, 4) // Use transformedData here
 						);
 						const newFile = file.clone();
 						newFile.path = path;
