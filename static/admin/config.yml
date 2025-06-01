@@ -54,6 +54,7 @@ collections:
                 name: "value"
                 widget: "text"
                 i18n: true
+                required: false
 
 # All other GitHub related backend settings have been removed or are ensured to be commented out.
 # Ensure there are no other 'backend:' sections. 
