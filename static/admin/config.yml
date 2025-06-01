@@ -21,7 +21,7 @@ collections:
   - name: "translations"
     label: "Translation Files"
     label_singular: "Translation File"
-    description: "JSON files containing translations for different languages."
+    description: "JSON files containing the translations for different languages."
     folder: "../strings/langs" # Path relative to this config file
     extension: "json"
     format: "json" # Expects a root object in the JSON file
