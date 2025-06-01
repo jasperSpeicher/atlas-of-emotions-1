@@ -196,12 +196,24 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 	//}
 
 	function processJSON(json) {
-		return json
-			.reduce((acc, worksheet) => acc.concat(worksheet), [])
-			.reduce((acc, kv) => {
+		// 1. Access json.string_groups
+		const stringGroups = json.string_groups || []; // Default to empty array if undefined
+
+		// 2. Iterate through each group, 3. Access items, 4. Concatenate
+		const allItems = stringGroups.reduce((acc, group) => {
+			if (group && group.items && Array.isArray(group.items)) {
+				return acc.concat(group.items);
+			}
+			return acc;
+		}, []);
+
+		// 5. Perform the same reduction as before
+		return allItems.reduce((acc, kv) => {
+			if (kv && typeof kv.key !== 'undefined') { // Ensure item has a key
 				acc[kv.key] = kv.value;
-				return acc;
-			}, {});
+			}
+			return acc;
+		}, {});
 	}
 
 	function loadStrings() {
