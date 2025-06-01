@@ -1,8 +1,13 @@
 backend:
-  name: github
-  repo: jasperSpeicher/atlas-of-emotions-1 # IMPORTANT: Replace with your repo path
-  branch:  data-source-refactor # Or whichever branch you want to commit to
-  # site_domain: your-site-domain.com # Optional: if you have GitHub gateway configured
+  name: test-repo # Using test-repo for local_backend mode
+  local_backend: true
+
+# The GitHub backend settings are commented out for local testing
+# backend:
+#   name: github
+#   repo: jasperSpeicher/atlas-of-emotions-1 # IMPORTANT: Replace with your repo path
+#   branch:  data-source-refactor # Or whichever branch you want to commit to
+#   # site_domain: your-site-domain.com # Optional: if you have GitHub gateway configured
 
 media_folder: "static/assets/uploads"
 public_folder: "/assets/uploads"
