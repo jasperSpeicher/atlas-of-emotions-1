@@ -56,5 +56,105 @@ collections:
                 i18n: true
                 required: false
 
+  - name: "secondary_content"
+    label: "Secondary Content (About, Annex, etc.)"
+    folder: "static/strings/langs" # All i18n JSONs go here. Path from repo root.
+    filter: {field: "slug", value: "secondaryData"} # Filters for files starting with this slug if multiple slugs were in this folder
+    extension: "json"
+    format: "json"
+    create: false # Not creating new slugs like "secondaryData", only new language versions of it.
+    i18n: true
+    summary: "Secondary Content - {{fields.slug}}" # Displays "Secondary Content - secondaryData"
+    fields:
+      - label: "Slug Identifier (internal)"
+        name: "slug"
+        widget: "hidden"
+        default: "secondaryData"
+        i18n: "duplicate"
+
+      - label: "Annex Pages"
+        name: "annex"
+        widget: "object"
+        i18n: true
+        fields:
+          - label: "Scientific Basis Page"
+            name: "scientific-basis"
+            widget: "object"
+            i18n: true
+            required: false # Assuming whole sections can be optional
+            fields:
+              - {label: "Title", name: "title", widget: "string", i18n: true, required: false}
+              - {label: "Description", name: "desc", widget: "markdown", i18n: true, required: false}
+              - {label: "Content Intro", name: "contentIntro", widget: "markdown", i18n: true, required: false}
+              - label: "Data Points (Content)"
+                name: "content"
+                widget: "list"
+                i18n: true
+                required: false
+                fields:
+                  - {label: "Name/Percentage", name: "name", widget: "string", i18n: "duplicate"}
+                  - {label: "Description", name: "desc", widget: "string", i18n: true, required: false}
+                  - {label: "Formatting", name: "formatting", widget: "string", i18n: "duplicate", required: false}
+              - label: "Footer Paragraphs"
+                name: "footer"
+                widget: "list"
+                i18n: true
+                required: false
+                field: {label: "Paragraph", name: "paragraph", widget: "markdown", i18n: true}
+
+          - label: "Triggers Timeline Page"
+            name: "triggers-timeline"
+            widget: "object"
+            i18n: true
+            required: false
+            fields:
+              - {label: "Title", name: "title", widget: "string", i18n: true, required: false}
+              - {label: "Description", name: "desc", widget: "markdown", i18n: true, required: false}
+              - label: "Timeline Events (Content)"
+                name: "content"
+                widget: "list"
+                i18n: true
+                required: false
+                fields:
+                  - {label: "Name", name: "name", widget: "string", i18n: "duplicate"}
+                  - {label: "Description", name: "desc", widget: "markdown", i18n: true, required: false}
+              # ... other fields for triggers-timeline ...
+
+          # Add other annex items here as needed, e.g.:
+          # - {label: "Intrinsic or Intentional", name: "intrinsic-or-intentional", widget: "object", ...}
+
+      - label: "About Page Content"
+        name: "about"
+        widget: "object"
+        i18n: true
+        required: false
+        fields:
+          - {label: "Title", name: "title", widget: "string", i18n: true, required: false}
+          - {label: "Description", name: "desc", widget: "markdown", i18n: true, required: false}
+          - label: "Subsections"
+            name: "subsections"
+            widget: "list"
+            i18n: true
+            required: false
+            fields:
+              - {label: "Title", name: "title", widget: "string", i18n: true, required: false}
+              - {label: "Description", name: "desc", widget: "markdown", i18n: true, required: false}
+              - {label: "Image Key", name: "image", widget: "string", i18n: "duplicate", required: false}
+              - {label: "Has Mail Link", name: "mail", widget: "boolean", i18n: "duplicate", default: false, required: false}
+
+      # Add other top-level sections like donate, further-reading, emotrak here
+      # Example for 'donate':
+      # - label: "Donate Section"
+      #   name: "donate"
+      #   widget: "object"
+      #   i18n: true
+      #   required: false
+      #   fields:
+      #     - {label: "Title", name: "title", widget: "string", i18n: true, required: false}
+      #     - {label: "Description", name: "desc", widget: "markdown", i18n: true, required: false}
+      #     - {label: "Link URL", name: "link", widget: "string", i18n: "duplicate", required: false}
+      #     # 'imgs' is an array, typically a list of strings (image paths) or objects if more complex
+      #     - {label: "Images", name: "imgs", widget: "list", i18n: "duplicate", required: false, field: {label: "Image Path", name: "imgPath", widget: "string"}}
+
 # All other GitHub related backend settings have been removed or are ensured to be commented out.
 # Ensure there are no other 'backend:' sections. 
