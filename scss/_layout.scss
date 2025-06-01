@@ -2060,29 +2060,28 @@ h6 {
 			}
 		}
 	}
-}
-
-@-moz-document url-prefix() {
-	.viewing-strategies-fp,
-	.viewing-learn_more-fp {
-		#strategies-fp-section h1,
-		#learn_more-fp-section h1 {
-			.print-header-logo {
-				display: none !important;
+	@-moz-document url-prefix() {
+		.viewing-strategies-fp,
+		.viewing-learn_more-fp {
+			#strategies-fp-section h1,
+			#learn_more-fp-section h1 {
+				.print-header-logo {
+					display: none !important;
+				}
 			}
 		}
-	}
-	.logo {
-		position: fixed;
-		display: block !important;
-		left: 0;
-		top: 10px;
-		right: unset;
-		width: unset;
-		padding: 0;
-		svg {
-			width: 90px;
-			height: auto;
+		.logo {
+			position: fixed;
+			display: block !important;
+			left: 0;
+			top: 10px;
+			right: unset;
+			width: unset;
+			padding: 0;
+			svg {
+				width: 90px;
+				height: auto;
+			}
 		}
 	}
 }
