@@ -1,13 +1,13 @@
-backend:
-  name: test-repo # Using test-repo for local_backend mode
-  local_backend: true
+# backend:
+#   name: test-repo
+#   local_backend: true
 
 # The GitHub backend settings are commented out for local testing
-# backend:
-#   name: github
-#   repo: jasperSpeicher/atlas-of-emotions-1 # IMPORTANT: Replace with your repo path
-#   branch:  data-source-refactor # Or whichever branch you want to commit to
-#   # site_domain: your-site-domain.com # Optional: if you have GitHub gateway configured
+backend:
+  name: github
+  repo: jasperSpeicher/atlas-of-emotions-1 # IMPORTANT: Replace with your repo path
+  branch:  data-source-refactor # Or whichever branch you want to commit to
+  # site_domain: your-site-domain.com # Optional: if you have GitHub gateway configured
 
 media_folder: "static/assets/uploads"
 public_folder: "/assets/uploads"
@@ -22,45 +22,38 @@ collections:
     label: "Translation Files"
     label_singular: "Translation File"
     description: "JSON files containing translations for different languages."
-    folder: "static/strings/langs"
+    folder: "../strings/langs" # Path relative to this config file
     extension: "json"
     format: "json" # Expects a root object in the JSON file
-    create: true
+    create: true # Allow creating new language groups (slugs)
     i18n: true # Enables i18n for this collection
+    summary: "All Strings"
     editor:
       preview: false
-    # summary: "{{filename}}" # You can uncomment this if the title message persists
-    fields: # Defines the structure of the content within each JSON file
+    fields:
       - label: "String Groups"
         name: "string_groups" # Matches the root key in your JSON
         widget: "list"
         i18n: true # The content within groups is translatable
-        # allow_add: true # Default behavior, allows adding new groups
-        # allow_delete: true # Default behavior, allows deleting groups
-        fields: # Defines the structure of each object within the "string_groups" list
+        fields:
           - label: "Group Name (Optional)"
             name: "group_name"
             widget: "string"
             required: false
-            i18n: "duplicate" # Group names are usually structural and not translated
+            i18n: "duplicate"
           - label: "Items"
-            name: "items" # Matches the key for the list of key-value pairs
+            name: "items"
             widget: "list"
-            i18n: true # The key-value pairs are the translatable content
-            fields: # Defines the structure of each key-value pair object
+            i18n: true
+            fields:
               - label: "Key"
                 name: "key"
                 widget: "string"
-                i18n: "duplicate" # Keys are identifiers, generally not translated
+                i18n: "duplicate"
               - label: "Value"
                 name: "value"
-                widget: "text" # Using 'text' for potentially multi-line translations
-                i18n: true # Values are translated
-        # If you want a free-form key-value structure, the above explicit key/value fields
-        # might be too restrictive. A list of objects might be better, or a simpler object approach.
-        # For a truly flexible key-value editor where keys are arbitrary, a custom widget would be best.
-        # Let's try a simpler approach first to see if it fits your JSON structure:
-        # Remove the fields under 'strings' and let Decap's object widget handle it.
-        # If your JSON files are flat { "key1": "value1", "key2": "value2" }, 
-        # you might not even need a nested 'strings' object.
-        # Let's re-evaluate this section after seeing an example of your JSON content. 
+                widget: "text"
+                i18n: true
+
+# All other GitHub related backend settings have been removed or are ensured to be commented out.
+# Ensure there are no other 'backend:' sections. 
