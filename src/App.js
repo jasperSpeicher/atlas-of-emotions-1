@@ -165,7 +165,25 @@ export default function (...initArgs) {
 			let isDerived = element.dataset.template.match(/(derived)/) != null;
 			let prefix =
 				isDerived || isStrategies || isSecondary ? "" : "emotionsData.";
-			let data = appStrings().getStr(prefix + element.dataset.template);
+			
+			let data;
+			// If the template is specifically "secondaryData", fetch the whole object.
+			// Otherwise, use getStr with the (potentially prefixed) template key.
+			if (isSecondary && element.dataset.template === "secondaryData") {
+				data = appStrings().getSecondaryDataObject();
+			} else {
+				data = appStrings().getStr(prefix + element.dataset.template);
+			}
+
+			// If data is still a string (e.g., an error message from getStr),
+			// provide an empty object to the template to prevent errors like "annex is not defined"
+			// when the template tries to access properties on a string.
+			// The template will then gracefully show missing data instead of breaking.
+			if (typeof data === 'string') {
+				console.warn(`Template data for key '${prefix + element.dataset.template}' resolved to a string: "${data}". Using empty object for template.`);
+				data = {};
+			}
+
 			let compiled = _.template(element.innerHTML);
 			element.innerHTML = compiled(data);
 			const imageSrcElements = element.querySelectorAll("[data-src]");
@@ -787,7 +805,7 @@ export default function (...initArgs) {
 		setEmotion(emotion);
 
 		scroller.hashChange(hash.section, emotion);
-		
+
 		setSection(section, previousEmotion, null);
 
 		const emotionOrElementId = hash.emotion;

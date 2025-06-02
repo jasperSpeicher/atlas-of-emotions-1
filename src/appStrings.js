@@ -2,13 +2,14 @@ import _ from "lodash";
 import fetch from "isomorphic-fetch";
 import dispatcher from "./dispatcher.js";
 import emotionsData from "../static/emotionsData.json";
-import secondaryData from "../static/secondaryData.json";
 import strategiesData from "../static/strategiesData.json";
 
 // maintain state and make globally accessible.
 // yeah, a little dirty, but good enough for this use case.
 let instance;
 let langs = [];
+let currentSecondaryData;
+let defaultSecondaryData;
 
 /**
  * Utility for loading an arbitrary string or set of strings
@@ -41,21 +42,35 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 		}
 
 		let path = key.split("."),
-			source = path.splice(0, 1)[0];
+			originalSourceKey = path.splice(0, 1)[0]; // Renamed to avoid conflict
 
-		if (source === "derived") {
+		if (originalSourceKey === "derived") {
 			return _.get(derivedStrings, path.join("."));
 		}
-		source =
-			source === "emotionsData"
+
+		// Handle "secondaryData." prefixed keys
+		if (originalSourceKey === "secondaryData") {
+			const secondaryDataObject = getSecondaryDataObject();
+			// The rest of 'path' is the path within the secondaryData object
+			const value = _.get(secondaryDataObject, path.join("."));
+			// Unlike other string lookups, secondaryData values are typically objects/arrays or direct strings,
+			// not keys to be resolved via resolveString. So we return the value directly.
+			// If a value is a string that itself is a key to the main 'strings' table, this won't resolve it.
+			// This assumes secondaryData contains final values or structures.
+			return typeof value !== 'undefined' ? value : (failQuietly ? "" : `Key not found in secondaryData: ${key}`);
+		}
+
+		// Existing logic for emotionsData, strategiesData, etc.
+		let source = 
+			originalSourceKey === "emotionsData"
 				? emotionsData
-				: source === "secondaryData"
-				? secondaryData
-				: source === "strategiesData"
+				: originalSourceKey === "strategiesData"
 				? strategiesData
 				: null;
 		if (!source) {
-			throw new Error(`Invalid source specified at key '${key}'`);
+			// This error should ideally not be reached if all valid sources (derived, secondaryData, emotionsData, strategiesData) are handled.
+			// If key didn't match any known source prefix.
+			throw new Error(`Invalid source specified at key '${key}' (source was '${originalSourceKey}')`);
 		}
 
 		if (_screenIsSmall) {
@@ -81,11 +96,23 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 		// we're moving everything from secondaryData into emotionsData, tab-by-tab.
 		if (parsedKey) {
 			source = emotionsData;
-		} else if (source === secondaryData || source === strategiesData) {
-			parsedKey = _.get(source, path.join("."));
-			if (!parsedKey) { 
-				return source;
+		} else if (originalSourceKey === "strategiesData" && source === strategiesData) {
+			// If originalSourceKey was strategiesData, try to get the key from strategiesData
+			// This assumes 'path' still holds the correct path parts for strategiesData
+			parsedKey = _.get(strategiesData, path.join("."));
+			if (!parsedKey) {
+				// If key not found in strategiesData either, return the strategiesData object itself or handle as error/empty
+				// This matches the previous behavior of `return source;` when source was strategiesData and key not found
+				return strategiesData; // Or consider: failQuietly ? "" : `Key not found: ${key}`;
 			}
+			// source is already strategiesData
+		} else if (source === null && originalSourceKey !== "emotionsData" && originalSourceKey !== "strategiesData" && originalSourceKey !== "derived" && originalSourceKey !== "secondaryData") {
+			// This case handles keys that didn't match any known prefix and weren't found in emotionsData initially.
+			// This situation should ideally be caught by the earlier `if (!source)` error throw for invalid prefixes.
+			// If we reach here, it means an unknown prefix was used, or a known prefix for which 'source' was not set (which is a logical flaw).
+			// For safety, and to mimic failing quietly or loudly based on an unfound key:
+			if (failQuietly) return "";
+			throw new Error(`Key not found and invalid source for key: ${key}`);
 		}
 
 		// this weirdness is an artifact of implementing localization long after the content spreadsheets and parsers were all set up.
@@ -119,7 +146,6 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 				});
 			} else if (typeof parsedKey === "object") {
 				if (
-					key.split(".")[0] === "secondaryData" ||
 					key.split(".")[0] === "strategiesData" ||
 					key.split(".")[0] === "emotionsData"
 				) {
@@ -170,31 +196,6 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 		return val ? (_screenIsSmall = val) : _screenIsSmall;
 	}
 
-	//function loadStrings() {
-	//
-	//	if ( strings ) return Promise.resolve( instance );
-	//	else {
-	//		return fetch( `strings/langs/${ _lang }.json`,
-	//			{ credentials: 'same-origin' }	// needed on studio to pass .htaccess login creds to same-origin requests
-	//		)
-	//			.then( response => response.json() )
-	//			.then( json => {
-	//				strings = json
-	//					.reduce( ( acc, worksheet ) => acc.concat( worksheet ), [] )
-	//					.reduce( ( acc, kv ) => {
-	//						acc[ kv.key ] = kv.value;
-	//						return acc;
-	//					}, {} );
-	//
-	//				cacheDerivedStrings();
-	//			} )
-	//			.catch( () => {
-	//				throw new Error( `Language ${ _lang } not supported, or language file is malformed.` );
-	//			} );
-	//	}
-	//
-	//}
-
 	function processJSON(json) {
 		// 1. Access json.string_groups
 		const stringGroups = json.string_groups || []; // Default to empty array if undefined
@@ -217,32 +218,51 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 	}
 
 	function loadStrings() {
-		if (strings) return Promise.resolve(instance);
+		if (strings && currentSecondaryData) return Promise.resolve(instance);
 		else {
-			return fetch(`strings/langs/strings.${defaultLang}.json`, {
+			const langPath = 'strings/langs';
+
+			const defaultStringsPromise = fetch(`${langPath}/strings.${defaultLang}.json`, {
 				credentials: "same-origin",
-			})
-				.then((response) =>
-					Promise.all([
-						response,
-						fetch(`strings/langs/strings.${_lang}.json`, {
-							credentials: "same-origin",
-						}),
-					])
-				)
-				.then((responses) =>
-					Promise.all(responses.map((r) => r.json()))
-				)
-				.then((json) => {
-					defaultStrings = processJSON(json[0]);
-					strings = processJSON(json[1]);
+			}).then(res => res.json());
+
+			const currentStringsPromise = fetch(`${langPath}/strings.${_lang}.json`, {
+				credentials: "same-origin",
+			}).then(res => res.json());
+
+			const defaultSecondaryDataPromise = fetch(`${langPath}/secondaryData.${defaultLang}.json`, {
+				credentials: "same-origin",
+			}).then(res => res.json());
+
+			const currentSecondaryDataPromise = fetch(`${langPath}/secondaryData.${_lang}.json`, {
+				credentials: "same-origin",
+			}).then(res => res.json());
+
+			return Promise.all([
+				defaultStringsPromise,
+				currentStringsPromise,
+				defaultSecondaryDataPromise,
+				currentSecondaryDataPromise
+			])
+				.then((results) => {
+					defaultStrings = processJSON(results[0]);
+					strings = processJSON(results[1]);
+					defaultSecondaryData = results[2];
+					currentSecondaryData = results[3];
+
+					if (defaultSecondaryData && defaultSecondaryData.slug) {
+						delete defaultSecondaryData.slug;
+					}
+					if (currentSecondaryData && currentSecondaryData.slug) {
+						delete currentSecondaryData.slug;
+					}
 
 					cacheDerivedStrings();
 				})
 				.catch((e) => {
-					console.log(e);
+					console.error("Error loading string/data files:", e);
 					throw new Error(
-						`Language ${_lang} or ${defaultLang}, not supported, or language file is malformed.`
+						`Language files for ${_lang} or ${defaultLang} (strings or secondaryData) not supported, or files are malformed.`
 					);
 				});
 		}
@@ -263,9 +283,15 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 		};
 	}
 
+	// New function to get the secondary data object
+	function getSecondaryDataObject() {
+		return currentSecondaryData || defaultSecondaryData || {};
+	}
+
 	instance = {
 		getStr,
 		getSecondaryDataBlock,
+		getSecondaryDataObject,
 		lang,
 		screenIsSmall,
 		loadStrings,
