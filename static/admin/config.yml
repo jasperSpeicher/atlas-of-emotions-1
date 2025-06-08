@@ -334,6 +334,95 @@ collections:
               - { label: "Image Key (Optional)", name: "image", widget: "string", i18n: true, required: false }
               - { label: "Include Mail Link (Optional)", name: "mail", widget: "boolean", i18n: true, required: false, default: false }
 
+  - name: "waking-up"
+    label: "Waking Up Experience"
+    summary: "Waking Up Experience"
+    label_singular: "Waking Up Experience"
+    description: "Content for the waking up scroller experience."
+    folder: "static/strings/langs"
+    filter: {field: "slug", value: "waking-up"}
+    identifier_field: "slug"
+    extension: "json"
+    format: "json"
+    create: false
+    i18n: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Identifier", name: "slug", widget: "hidden", default: "waking-up", i18n: true }
+      - label: "Phrase Pairs"
+        name: "phrasePairs"
+        widget: "list"
+        i18n: true
+        fields:
+          - label: "Pair"
+            name: "pair"
+            widget: "object"
+            i18n: true
+            fields:
+              - { label: "Event", name: "event", widget: "string", i18n: true }
+          - { label: "Emotion", name: "emotion", widget: "select", options: ["enjoyment", "fear", "anger", "disgust", "sadness"], i18n: false }
+      - label: "Scroller Content"
+        name: "scroller"
+        widget: "object"
+        i18n: true
+        fields:
+          - { label: "Introduction", name: "introduction", widget: "string", i18n: true }
+          - { label: "Experiences Title", name: "experiencesTitle", widget: "string", i18n: true }
+          - label: "Experiences"
+            name: "experiences"
+            widget: "list"
+            i18n: true
+            field: { label: "Experience", name: "experience", widget: "string", i18n: true }
+          - { label: "Less Important Title", name: "lessImportantTitle", widget: "string", i18n: true }
+          - label: "Less Important Experiences"
+            name: "lessImportantExperiences"
+            widget: "list"
+            i18n: true
+            field: { label: "Experience", name: "experience", widget: "string", i18n: true }
+          - { label: "Very Important Title", name: "veryImportantTitle", widget: "string", i18n: true }
+          - label: "Very Important Experiences"
+            name: "veryImportantExperiences"
+            widget: "list"
+            i18n: true
+            field: { label: "Experience", name: "experience", widget: "string", i18n: true }
+          - { label: "Trigger Emotions", name: "triggerEmotions", widget: "string", i18n: true }
+          - { label: "Trigger Emotion Experience", name: "triggerEmotionExperience", widget: "string", i18n: true }
+          - { label: "Emotions Color Perception", name: "emotionsColorPerception", widget: "string", i18n: true }
+          - { label: "Stories From Inner World", name: "storiesFromInnerWorld", widget: "string", i18n: true }
+          - { label: "Emotions Come and Go", name: "emotionsComeAndGo", widget: "string", i18n: true }
+          - { label: "Pile Up", name: "pileUp", widget: "string", i18n: true }
+          - { label: "One Big Experience", name: "oneBigExperience", widget: "string", i18n: true }
+          - { label: "Arguing", name: "arguing", widget: "string", i18n: true }
+          - { label: "Hard to Separate", name: "hardToSeparate", widget: "string", i18n: true }
+          - { label: "Respond Without Thinking", name: "respondWithoutThinking", widget: "string", i18n: true }
+          - { label: "Without Clear Understanding", name: "withoutClearUnderstanding", widget: "string", i18n: true }
+          - { label: "Act in Ways We Regret", name: "actInWaysWeRegret", widget: "string", i18n: true }
+          - label: "Regret Actions"
+            name: "regretActions"
+            widget: "list"
+            i18n: true
+            field: { label: "Action", name: "action", widget: "string", i18n: true }
+          - { label: "What Can We Do", name: "whatCanWeDo", widget: "string", i18n: true }
+          - { label: "We Can Pause", name: "weCanPause", widget: "string", i18n: true }
+          - { label: "Connect to Breath", name: "connectToBreath", widget: "string", i18n: true }
+          - { label: "Ride Wave of Emotion", name: "rideWaveOfEmotion", widget: "string", i18n: true }
+          - { label: "Recognize Emotional State", name: "recognizeEmotionalState", widget: "string", i18n: true }
+          - { label: "Become Curious", name: "becomeCurious", widget: "string", i18n: true }
+          - { label: "What Causes Feeling", name: "whatCausesFeeling", widget: "string", i18n: true }
+          - label: "Trigger Questions"
+            name: "triggerQuestions"
+            widget: "list"
+            i18n: true
+            field: { label: "Question", name: "question", widget: "string", i18n: true }
+          - { label: "How Do I Respond", name: "howDoIRespond", widget: "string", i18n: true }
+          - label: "Response Questions"
+            name: "responseQuestions"
+            widget: "list"
+            i18n: true
+            field: { label: "Question", name: "question", widget: "string", i18n: true }
+          - { label: "Explore Timeline", name: "exploreTimeline", widget: "string", i18n: true }
+
   - name: "strategies"
     label: "Strategies"
     summary: "Strategies"
