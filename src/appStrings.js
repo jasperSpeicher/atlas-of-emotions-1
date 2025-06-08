@@ -1,18 +1,21 @@
 import _ from "lodash";
 import fetch from "isomorphic-fetch";
 import dispatcher from "./dispatcher.js";
-import emotionsData from "../static/emotionsData.json";
-import secondaryData from "../static/secondaryData.json";
-import strategiesData from "../static/strategiesData.json";
 
 // maintain state and make globally accessible.
 // yeah, a little dirty, but good enough for this use case.
 let instance;
 let langs = [];
+let currentEmotionsData;
+let defaultEmotionsData;
+let currentSecondaryData;
+let defaultSecondaryData;
+let strategiesData;
+let defaultStrategiesData;
 
 /**
- * Utility for loading an arbitrary string or set of strings
- * from the Google Sheets that back this application.
+ * Utility for loading strings from the JSON files in the `langs` directory.
+ * 
  * Note that strings files per language are loaded at runtime
  * and are not guaranteed to be loaded when a `getStr()` call is made;
  * it's up to the application to call loadStrings() and safely request strings
@@ -23,130 +26,68 @@ let langs = [];
  */
 function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 	let defaultLang = "en",
-		strings = langs[_lang],
-		defaultStrings = langs[defaultLang],
 		derivedStrings;
 
-	function resolveString(key) {
-		if (!strings[key] && defaultStrings != strings) {
-			return defaultStrings[key];
-		}
-		return strings[key];
-	}
-
-	function getStr(key, failQuietly, debug) {
-		// Strings not yet loaded; fail silently
-		if (!strings) {
-			return "";
+	function getStr(key) {
+		if (!getEmotionsDataObject()) {
+			return undefined;
 		}
 
 		let path = key.split("."),
-			source = path.splice(0, 1)[0];
+			originalSourceKey = path.shift(0);
+		
+		switch (originalSourceKey) {
+			case "derived":
+				return _.get(derivedStrings, path.join("."));
 
-		if (source === "derived") {
-			return _.get(derivedStrings, path.join("."));
-		}
-		source =
-			source === "emotionsData"
-				? emotionsData
-				: source === "secondaryData"
-				? secondaryData
-				: source === "strategiesData"
-				? strategiesData
-				: null;
-		if (!source) {
-			throw new Error(`Invalid source specified at key '${key}'`);
-		}
-
-		if (_screenIsSmall) {
-			// append '_mobile' to all paths that support it,
-			// as implemented in googleSheetsExporter.js
-			// and GSE-secondaryPages.js
-			let lastPathSegment = path[path.length - 1];
-			switch (lastPathSegment) {
-				case "header":
-				case "body":
-				case "name":
-				case "desc":
-				case "title":
-					path[path.length - 1] = lastPathSegment + "_mobile";
+			case "secondaryData": {
+				const secondaryDataObject = getSecondaryDataObject();
+				if (path.length === 0) return secondaryDataObject;
+				const value = _.get(secondaryDataObject, path.join("."));
+				if (!_.isNil(value)) {
+					return value;
+				}
+				console.error(`Key not found in secondary data: ${key}`);
+				return undefined;
 			}
-		}
 
-		let parsedKey = _.get(emotionsData, path.join(".")),
-			parsedValue;
-
-		// if the key exists in emotionsData.json,
-		// then use it, whether this key-value was originally in emotionsData or secondaryData.
-		// we're moving everything from secondaryData into emotionsData, tab-by-tab.
-		if (parsedKey) {
-			source = emotionsData;
-		} else if (source === secondaryData || source === strategiesData) {
-			parsedKey = _.get(source, path.join("."));
-			if (!parsedKey) { 
-				return source;
+			case "strategiesData": {
+				const strategiesDataObject = getStrategiesDataObject();
+				if (path.length === 0) return strategiesDataObject;
+				const value = _.get(strategiesDataObject, path.join("."));
+				if (!_.isNil(value)) {
+					return value;
+				}
+				console.error(`Key not found in strategies: ${key}`);
+				return undefined;
 			}
-		}
 
-		// this weirdness is an artifact of implementing localization long after the content spreadsheets and parsers were all set up.
-		// only running nested parsing on emotionsData;
-		// secondaryData will eventually be phased into emotionsData and will all run through this block,
-		// but until then, we leave secondaryData strings alone.
-		if (source === emotionsData) {
-			if (
-				typeof parsedKey === "string" ||
-				typeof parsedKey === "boolean"
-			) {
-				parsedValue = resolveString(parsedKey);
-			} else if (Array.isArray(parsedKey)) {
-				parsedValue = parsedKey.map((k, i) => {
-					let pathPrefix = `${key}[${i}]`;
-					if (typeof k === "string") {
-						if (isNaN(k)) {
-							return resolveString(k); //getStr(pathPrefix + k); //FIXME why was it like this?
-						} else {
-							return k; // FIXME there are numbers stored as strings in the emotions data...
-						}
-					} else if (Array.isArray(k)) {
-						return k.map((kk, j) => getStr(`${pathPrefix}[${j}]`));
-					} else if (typeof k === "object") {
-						// localize nested objects
-						return Object.keys(k).reduce((acc, k1) => {
-							acc[k1] = getStr(pathPrefix + "." + k1);
-							return acc;
-						}, {});
+			default: {
+				if (_screenIsSmall) {
+					// append '_mobile' to all paths that support it,
+					// as implemented in googleSheetsExporter.js
+					// and GSE-secondaryPages.js
+					let lastPathSegment = path[path.length - 1];
+					switch (lastPathSegment) {
+						case "header":
+						case "body":
+						case "name":
+						case "desc":
+						case "title":
+							path[path.length - 1] = lastPathSegment + "_mobile";
 					}
-				});
-			} else if (typeof parsedKey === "object") {
-				if (
-					key.split(".")[0] === "secondaryData" ||
-					key.split(".")[0] === "strategiesData" ||
-					key.split(".")[0] === "emotionsData"
-				) {
-					// recursively parse nested objects in secondary data (more info / annex / etc)
-					parsedValue = Object.keys(parsedKey).reduce((acc, k) => {
-						if (typeof parsedKey[k] == "number") {
-							acc[k] = parsedKey[k];
-						} else {
-							acc[k] = getStr(`${key}.${k}`, failQuietly, debug);
-						}
-						return acc;
-					}, {});
-				} else {
-					// pass through non-nested objects in metadata / emotions tabs as-is
-					parsedValue = parsedKey;
 				}
-			} else {
-				if (failQuietly) {
-					return "";
-				} else {
-					throw new Error(`Key not found at ${key}`);
+
+				const emotionsDataObject = getEmotionsDataObject();
+				const value = _.get(emotionsDataObject, path.join("."));
+				if (!_.isNil(value)) {
+					return value;
 				}
+				console.error(`Key not found in emotions data: ${key}`);
+
+				return undefined;
 			}
 		}
-
-		// fall back to returning parsed key or empty string
-		return parsedValue || parsedKey || "";
 	}
 
 	function getSecondaryDataBlock(page) {
@@ -170,90 +111,145 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 		return val ? (_screenIsSmall = val) : _screenIsSmall;
 	}
 
-	//function loadStrings() {
-	//
-	//	if ( strings ) return Promise.resolve( instance );
-	//	else {
-	//		return fetch( `strings/langs/${ _lang }.json`,
-	//			{ credentials: 'same-origin' }	// needed on studio to pass .htaccess login creds to same-origin requests
-	//		)
-	//			.then( response => response.json() )
-	//			.then( json => {
-	//				strings = json
-	//					.reduce( ( acc, worksheet ) => acc.concat( worksheet ), [] )
-	//					.reduce( ( acc, kv ) => {
-	//						acc[ kv.key ] = kv.value;
-	//						return acc;
-	//					}, {} );
-	//
-	//				cacheDerivedStrings();
-	//			} )
-	//			.catch( () => {
-	//				throw new Error( `Language ${ _lang } not supported, or language file is malformed.` );
-	//			} );
-	//	}
-	//
-	//}
-
-	function processJSON(json) {
-		return json
-			.reduce((acc, worksheet) => acc.concat(worksheet), [])
-			.reduce((acc, kv) => {
-				acc[kv.key] = kv.value;
-				return acc;
-			}, {});
-	}
-
 	function loadStrings() {
-		if (strings) return Promise.resolve(instance);
-		else {
-			return fetch(`strings/langs/${defaultLang}.json`, {
-				credentials: "same-origin",
-			}) // needed on studio to pass .htaccess login creds to same-origin requests
-				.then((response) =>
-					Promise.all([
-						response,
-						fetch(`strings/langs/${_lang}.json`, {
-							credentials: "same-origin",
-						}), // needed on studio to pass .htaccess login creds to same-origin requests
-					])
-				)
-				.then((responses) =>
-					Promise.all(responses.map((r) => r.json()))
-				)
-				.then((json) => {
-					defaultStrings = processJSON(json[0]);
-					strings = processJSON(json[1]);
+		if (currentEmotionsData && currentSecondaryData && strategiesData) {
+			return Promise.resolve(instance);
+		} else {
+			const langPath = "strings/langs";
+
+			const defaultEmotionsDataPromise = fetch(
+				`${langPath}/strings.${defaultLang}.json`,
+				{
+					credentials: "same-origin",
+				}
+			).then((res) => res.json());
+
+			const currentEmotionsDataPromise = fetch(
+				`${langPath}/strings.${_lang}.json`,
+				{
+					credentials: "same-origin",
+				}
+			).then((res) => res.json());
+
+			const defaultSecondaryDataPromise = fetch(
+				`${langPath}/secondaryData.${defaultLang}.json`,
+				{
+					credentials: "same-origin",
+				}
+			).then((res) => res.json());
+
+			const currentSecondaryDataPromise = fetch(
+				`${langPath}/secondaryData.${_lang}.json`,
+				{
+					credentials: "same-origin",
+				}
+			).then((res) => res.json());
+
+			const defaultStrategiesDataPromise = fetch(
+				`${langPath}/strategies.${defaultLang}.json`,
+				{
+					credentials: "same-origin",
+				}
+			).then((res) => res.json());
+
+			const currentStrategiesDataPromise = fetch(
+				`${langPath}/strategies.${_lang}.json`,
+				{
+					credentials: "same-origin",
+				}
+			).then((res) => res.json());
+
+			return Promise.all([
+				defaultEmotionsDataPromise,
+				currentEmotionsDataPromise,
+				defaultSecondaryDataPromise,
+				currentSecondaryDataPromise,
+				defaultStrategiesDataPromise,
+				currentStrategiesDataPromise,
+			])
+				.then((results) => {
+					[
+						defaultEmotionsData,
+						currentEmotionsData,
+						defaultSecondaryData,
+						currentSecondaryData,
+						defaultStrategiesData,
+						strategiesData,
+					] = results;
+					if (defaultEmotionsData && defaultEmotionsData.slug) {
+						delete defaultEmotionsData.slug;
+					}
+					if (currentEmotionsData && currentEmotionsData.slug) {
+						delete currentEmotionsData.slug;
+					}
+					if (defaultSecondaryData && defaultSecondaryData.slug) {
+						delete defaultSecondaryData.slug;
+					}
+					if (currentSecondaryData && currentSecondaryData.slug) {
+						delete currentSecondaryData.slug;
+					}
+					if (defaultStrategiesData && defaultStrategiesData.slug) {
+						delete defaultStrategiesData.slug;
+					}
+					if (strategiesData && strategiesData.slug) {
+						delete strategiesData.slug;
+					}
 
 					cacheDerivedStrings();
+
+					if (typeof _stringsLoadedCallback === "function") {
+						_stringsLoadedCallback(instance);
+					}
+
+					return instance;
 				})
-				.catch((e) => {
-					console.log(e);
-					throw new Error(
-						`Language ${_lang} or ${defaultLang}, not supported, or language file is malformed.`
-					);
+				.catch((error) => {
+					console.error("Failed to load strings:", error);
+					// Handle error, e.g., by using default language as a fallback for everything
+					// This is a simplified error handling. Depending on requirements,
+					// you might want to retry or show a user-friendly message.
+					if (!currentEmotionsData) {
+						currentEmotionsData = defaultEmotionsData;
+					}
+					if (!currentSecondaryData) {
+						currentSecondaryData = defaultSecondaryData;
+					}
+					if (!strategiesData) {
+						strategiesData = defaultStrategiesData;
+					}
 				});
 		}
 	}
 
-	// This is all AoE-specific, for strings derived from the loaded+parsed content
-	// that don't have their own data structure within the content.
 	function cacheDerivedStrings() {
 		derivedStrings = {
 			emotions: _.values(dispatcher.EMOTIONS).reduce((acc, emotion) => {
-				acc[emotion] = resolveString(`${emotion}_continent_header`);
-				return acc;
-			}, {}),
-			sections: _.values(dispatcher.SECTIONS).reduce((acc, section) => {
-				acc[section] = resolveString(`${section}_section_name`);
+				acc[emotion] = getStr(`emotionsData.emotions.${emotion}.continent.name`);
 				return acc;
 			}, {}),
 		};
 	}
 
+	function getSecondaryDataObject() {
+		// Use current language's secondary data if available, otherwise fallback to default
+		return currentSecondaryData || defaultSecondaryData;
+	}
+
+	function getEmotionsDataObject() {
+		return currentEmotionsData || defaultEmotionsData;
+	}
+
+	function getStrategiesDataObject() {
+		return strategiesData || defaultStrategiesData;
+	}
+
+
 	instance = {
 		getStr,
+		getEmotionsDataObject,
 		getSecondaryDataBlock,
+		getSecondaryDataObject,
+		getStrategiesDataObject,
 		lang,
 		screenIsSmall,
 		loadStrings,

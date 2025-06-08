@@ -151,6 +151,7 @@ export default function (...initArgs) {
 			evaluate: /\{\{#([\s\S]+?)\}\}/g, // {{# console.log("blah") }}
 			interpolate: /\{\{[^#\{]([\s\S]+?)[^\}]\}\}/g, // {{ title }}
 			escape: /\{\{\{([\s\S]+?)\}\}\}/g, // {{{ title }}}
+			imports: { _: _ },
 		};
 
 		let templateElements = [].slice.call(
@@ -158,14 +159,8 @@ export default function (...initArgs) {
 		);
 
 		templateElements.forEach(function (element) {
-			let isStrategies =
-				element.dataset.template.match(/(strategiesData)/) != null;
-			let isSecondary =
-				element.dataset.template.match(/(secondaryData)/) != null;
-			let isDerived = element.dataset.template.match(/(derived)/) != null;
-			let prefix =
-				isDerived || isStrategies || isSecondary ? "" : "emotionsData.";
-			let data = appStrings().getStr(prefix + element.dataset.template);
+			const data = appStrings().getStr(element.dataset.template) ?? {};
+
 			let compiled = _.template(element.innerHTML);
 			element.innerHTML = compiled(data);
 			const imageSrcElements = element.querySelectorAll("[data-src]");
@@ -787,7 +782,7 @@ export default function (...initArgs) {
 		setEmotion(emotion);
 
 		scroller.hashChange(hash.section, emotion);
-		
+
 		setSection(section, previousEmotion, null);
 
 		const emotionOrElementId = hash.emotion;

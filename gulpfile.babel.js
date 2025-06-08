@@ -8,9 +8,6 @@ import gulpLoadPlugins from "gulp-load-plugins";
 import rimraf from "rimraf";
 import connect from "gulp-connect";
 import gulpif from "gulp-if";
-import stringsConfig from "./static/strings/stringsConfig.json";
-import { extractSheets } from "spreadsheet-to-json";
-import through from "through2";
 
 const sass = require("gulp-sass")(require("sass"));
 // Automatically load any gulp plugins in your package.json
@@ -227,93 +224,6 @@ function lintTask(options) {
 		);
 }
 
-function stringsTask(options) {
-	let langs = stringsConfig.stringsFiles;
-	return gulp
-		.src(options.src)
-		.pipe($.shell([`mkdir ${options.src}static/strings/langs`]))
-		.pipe(
-			through.obj(function (file, enc, cb) {
-				console.log("CALLBACK ", file, cb);
-				const filterCells = ({ key, value }) => !!key;
-				const removeEmptyProperties = (c) =>
-					Object.fromEntries(
-						Object.entries(c).filter(([_, value]) => !!value)
-					);
-				const camelCaseProperties = (c) =>
-					Object.fromEntries(
-						Object.entries(c).map(([property, value]) => [
-							property
-								.split(" ")
-								.map((s, i) =>
-									i == 0
-										? s
-										: `${s[0].toUpperCase()}${s.slice(1)}`
-								)
-								.join(""),
-							value,
-						])
-					);
-
-				const files = langs.map((lang) =>
-					extractSheets({
-						// your google spreadhsheet key
-						spreadsheetKey: lang.fileId,
-						// your google oauth2 credentials or API_KEY
-						credentials: "AIzaSyDlkr3D63Ns1dd8FcC5DBp8aEVpq7haNrI",
-						// optional: names of the sheets you want to extract
-						sheetsToExtract: [
-							"metadata",
-							"anger",
-							"fear",
-							"disgust",
-							"sadness",
-							"enjoyment",
-							"about",
-							"emotrak",
-						],
-					})
-						.then((sheets) => ({
-							lang,
-							sheets: [
-								sheets["metadata"],
-								sheets["anger"],
-								sheets["fear"],
-								sheets["disgust"],
-								sheets["sadness"],
-								sheets["enjoyment"],
-								sheets["about"],
-								sheets["emotrak"],
-							].map((s) =>
-								s
-									.filter(filterCells)
-									.map(removeEmptyProperties)
-									.map(camelCaseProperties)
-							),
-						}))
-						.catch((e) => console.error(e))
-				);
-				Promise.all(files).then((fileResults) => {
-					fileResults.forEach((languageSheets) => {
-						const { lang, sheets } = languageSheets;
-						const path = `${lang.lang}.json`;
-						const contents = Buffer.from(
-							JSON.stringify(sheets, null, 4)
-						);
-						const newFile = file.clone();
-						newFile.path = path;
-						newFile.base = null;
-						newFile.contents = contents;
-						this.push(newFile);
-					});
-					cb();
-				});
-			})
-		)
-		.pipe($.chmod(0o644))
-		.pipe(gulp.dest(options.dest));
-}
-
 function webserverTask(options) {
 	options = options || {};
 	const port = options.port || WEB_SERVER_PORT;
@@ -434,24 +344,3 @@ gulp.task("dist", async () => {
 	});
 });
 
-/**
- * Pull down strings from Google Sheets and save locally
- */
-gulp.task("strings", async () => {
-	return rimraf("./static/strings/langs/**", () => {
-		// Using a Google Sheets File > Publish to Web:
-		return stringsTask({
-			src: "./",
-			dest: "./static/strings/langs/",
-		});
-
-		/*
-		// Using Google OAuth:
-		stringsTask({
-			src: './',
-			dest: './static/strings/langs/',
-			token: stringsConfig.googleOAuthAccessToken
-		});
-		*/
-	});
-});

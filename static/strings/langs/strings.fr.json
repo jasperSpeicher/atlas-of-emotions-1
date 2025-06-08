@@ -1,0 +1,2636 @@
+{
+  "slug": "strings",
+  "emotions": {
+    "anger": {
+      "continent": {
+        "name": "Colère",
+        "desc": "Nous éprouvons de la colère lorsqu'on nous empêche d'atteindre nos objectifs ou quand nous pensons recevoir un traitement injuste.",
+        "name_mobile": "Colère",
+        "desc_mobile": "Nous ressentons de la colère lorsque nous sommes bloqués mentalement ou physiquement. La colère varie en force et en fréquence dans nos vies.",
+        "secondary": ""
+      },
+      "states": [
+        {
+          "name": "Contrariété",
+          "desc": "Colère légère",
+          "name_mobile": "Contrariété",
+          "desc_mobile": "Colère légère",
+          "secondary": "La colère contient à la fois de la contrariété et de la rage. L'intensité de ces états peut varier : nous pouvons ressentir de la contrariété à forte ou à faible intensité, mais nous ne pouvons ressentir la rage qu'à forte intensité. Tous les états de colère sont déclenchés par le sentiment d'être entravé dans notre progression.",
+          "range": {
+            "min": 1,
+            "max": 2
+          },
+          "actions": {
+            "all": [
+              "7",
+              "9",
+              "8"
+            ],
+            "con": [
+              "7"
+            ],
+            "des": [
+              "7",
+              "9",
+              "8"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Frustration",
+          "desc": "Une réponse aux échecs répétés pour surmonter un obstacle.",
+          "name_mobile": "Frustration",
+          "desc_mobile": "Une réponse aux échecs répétés pour surmonter un obstacle.",
+          "secondary": "",
+          "range": {
+            "min": 1,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "7",
+              "1",
+              "2",
+              "3",
+              "5",
+              "8",
+              "9"
+            ],
+            "con": [
+              "7"
+            ],
+            "des": [
+              "1",
+              "2",
+              "3",
+              "5",
+              "7",
+              "8",
+              "9"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Tendance à argumenter",
+          "desc": "Inclination à s'engager dans des désaccords",
+          "name_mobile": "Tendance à argumenter",
+          "desc_mobile": "Inclination à s'engager dans des désaccords",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "7",
+              "1",
+              "2",
+              "3",
+              "8"
+            ],
+            "con": [
+              "7"
+            ],
+            "des": [
+              "1",
+              "2",
+              "3",
+              "7",
+              "8"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Amertume",
+          "desc": "Déception après un traitement injuste",
+          "name_mobile": "Amertume",
+          "desc_mobile": "Déception après un traitement injuste",
+          "secondary": "",
+          "range": {
+            "min": 3,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "7",
+              "2",
+              "3",
+              "4",
+              "5",
+              "8",
+              "9"
+            ],
+            "con": [
+              "7"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Exaspération",
+          "desc": "Colère causée par une nuisance répétée ou forte. ",
+          "name_mobile": "Exaspération",
+          "desc_mobile": "Colère causée par une nuisance répétée ou forte. ",
+          "secondary": "",
+          "range": {
+            "min": 4,
+            "max": 7
+          },
+          "actions": {
+            "all": [
+              "7",
+              "1",
+              "2",
+              "3",
+              "9",
+              "4",
+              "5",
+              "8"
+            ],
+            "con": [
+              "7"
+            ],
+            "des": [
+              "1",
+              "2",
+              "3",
+              "7",
+              "9",
+              "4",
+              "5",
+              "8"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Vengeance",
+          "desc": "Désir de se venger",
+          "name_mobile": "Vengeance",
+          "desc_mobile": "Désir de se venger",
+          "secondary": "",
+          "range": {
+            "min": 5,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "con": [
+              ""
+            ],
+            "des": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Furie",
+          "desc": "Colère incontrôlée et souvent violente",
+          "name_mobile": "Furie",
+          "desc_mobile": "Colère incontrôlée et souvent violente",
+          "secondary": "",
+          "range": {
+            "min": 10,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "",
+              "1",
+              "2",
+              "3",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "con": [
+              ""
+            ],
+            "des": [
+              "1",
+              "2",
+              "3",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "both": []
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Se quereller",
+          "desc": "S'opposer verbalement d'une manière qui intensifie le désaccord",
+          "name_mobile": "Se quereller",
+          "desc_mobile": "S'opposer verbalement d'une manière qui intensifie le désaccord",
+          "secondary": "Par exemple, nous pouvons supprimer le sentiment de frustration au travail, mais crier ou hurler pour exprimer notre frustration envers un membre de notre famille. Supprimer notre frustration peut être constructif dans le cas où cela permet d'éviter une dispute, mais destructif si nous nous sentons blessés du fait de ne pas exprimer ce que l'on ressent"
+        },
+        {
+          "name": "Insulter",
+          "desc": "Dénigrer l'autre personne d'une manière offensive ou blessante qui risque d'aggraver le conflit au lieu de le résoudre.",
+          "name_mobile": "Insulter",
+          "desc_mobile": "Dénigrer l'autre personne d'une manière offensive ou blessante qui risque d'aggraver le conflit au lieu de le résoudre.",
+          "secondary": ""
+        },
+        {
+          "name": "Saper",
+          "desc": "Agir dans le but d'affaiblir ou de rendre moins efficace quelqu'un ou quelque chose, généralement de manière secrète ou graduelle",
+          "name_mobile": "Saper",
+          "desc_mobile": "Agir dans le but d'affaiblir ou de rendre moins efficace quelqu'un ou quelque chose, généralement de manière secrète ou graduelle",
+          "secondary": ""
+        },
+        {
+          "name": "Discuter",
+          "desc": "Discuter de manière à ce que le conflit s'intensifie",
+          "name_mobile": "Discuter",
+          "desc_mobile": "Discuter de manière à ce que le conflit s'intensifie",
+          "secondary": ""
+        },
+        {
+          "name": "Crier / hurler",
+          "desc": "Perdre le contrôle de nos paroles; parler avec une voix forte et crier d'un ton plus haut.",
+          "name_mobile": "Crier / hurler",
+          "desc_mobile": "Perdre le contrôle de nos paroles; parler avec une voix forte et crier d'un ton plus haut.",
+          "secondary": ""
+        },
+        {
+          "name": "Usage de la force",
+          "desc": "Blesser ou piéger quelqu'un.",
+          "name_mobile": "Usage de la force",
+          "desc_mobile": "Blesser ou piéger quelqu'un.",
+          "secondary": ""
+        },
+        {
+          "name": "Réprimer",
+          "desc": "Tenter d'éviter de sentir ou d'agir sous l'effet de l'émotion qui est ressentie",
+          "name_mobile": "Réprimer",
+          "desc_mobile": "Tenter d'éviter de sentir ou d'agir sous l'effet de l'émotion qui est ressentie",
+          "secondary": ""
+        },
+        {
+          "name": "Mijoter/ruminer",
+          "desc": "Exprimer sa colère en boudant.",
+          "name_mobile": "Mijoter/ruminer",
+          "desc_mobile": "Exprimer sa colère en boudant.",
+          "secondary": ""
+        },
+        {
+          "name": "Être passif-aggressif",
+          "desc": "Faites des actions indirectes qui ont un fond de colère.",
+          "name_mobile": "Être passif-aggressif",
+          "desc_mobile": "Faites des actions indirectes qui ont un fond de colère.",
+          "secondary": ""
+        }
+      ],
+      "triggers": [
+        {
+          "name": "Interférence dans notre locomotion",
+          "type": "Universal",
+          "name_mobile": "Interférence dans notre locomotion",
+          "desc_mobile": "Universal"
+        },
+        {
+          "name": "Interférence dans notre action",
+          "type": "Universal",
+          "name_mobile": "Déclencheurs universels de la colère",
+          "desc_mobile": "Les déclencheurs universels sont innés, communs à tous, et nous affectent plus intensément que les déclencheurs appris. L'interférence avec l'action ou la locomotion en sont des exemples."
+        },
+        {
+          "name": "Rejet de la part d'une personne aimée",
+          "type": "Universal",
+          "name_mobile": "Déclencheurs appris de la colère",
+          "desc_mobile": "Certains déclencheurs sont appris de nos expériences personnelles ou partagées. Exemple : être accusé injustement ou être rabaissé par une figure d'autorité"
+        },
+        {
+          "name": "Inéficacité ou bureaucratie",
+          "type": "Learned",
+          "name_mobile": "Inéficacité ou bureaucratie",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Être rabaissé par une figure d'autorité",
+          "type": "Learned",
+          "name_mobile": "Être rabaissé par une figure d'autorité",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Rencontrer des croyances offensantes",
+          "type": "Learned",
+          "name_mobile": "Rencontrer des croyances offensantes",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Être accusé injustement",
+          "type": "Learned",
+          "name_mobile": "Être accusé injustement",
+          "desc_mobile": "Learned"
+        }
+      ],
+      "moods": [
+        {
+          "name": "Irritable",
+          "desc": "Prédisposée à se mettre en colère, facilement provoquée. ",
+          "name_mobile": "Irritable",
+          "desc_mobile": "Prédisposée à se mettre en colère, facilement provoquée. ",
+          "secondary": ""
+        }
+      ],
+      "timeline": [
+        {
+          "trigger": {
+            "precondition": "vous manquez de sommeil",
+            "event": "un ami a été en colère contre vous",
+            "perceptual_database": "vous repensez à une personne intimidante"
+          },
+          "state": {
+            "physical_changes": "votre corps devient tendu",
+            "emotion": "colère",
+            "mental_changes": "vous vous sentez attaqué"
+          },
+          "response": {
+            "constructive_response": "prenez un temps pour vous",
+            "destructive_response": "discutez",
+            "ambiguous_response": "évitez-les"
+          }
+        }
+      ]
+    },
+    "fear": {
+      "continent": {
+        "name": "Peur",
+        "desc": "Notre peur du danger nous permet d'anticiper les menaces à notre sécurité.",
+        "name_mobile": "Peur",
+        "desc_mobile": "Nous ressentons de la peur lorsque notre sécurité ou notre bien-être est menacé. La peur varie en force et en fréquence dans nos vies.",
+        "secondary": ""
+      },
+      "states": [
+        {
+          "name": "Trépidation",
+          "desc": "Anticipation de la possibilité de danger.",
+          "name_mobile": "Trépidation",
+          "desc_mobile": "Anticipation de la possibilité de danger.",
+          "secondary": "La peur contient à la fois de l'anxiété et de l'effroi. L'intentisté de ces états peut varier : nous pouvons ressentir une anxiété à faible ou à forte intensité, mais nous ne pouvons ressentir que d'intensent états d'effroi. Tout état de peur est declenché lorsque nous nous sentons sos la menace d'un danger.",
+          "range": {
+            "min": 1,
+            "max": 3
+          },
+          "actions": {
+            "all": [
+              "3",
+              "6",
+              "7"
+            ],
+            "con": [
+              "3"
+            ],
+            "des": [
+              "6",
+              "7"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Anxiété",
+          "desc": "Peur d'une menace anticipée ou réelle et incertitude quant à sa capacité à y faire face.",
+          "name_mobile": "Anxiété",
+          "desc_mobile": "Peur d'une menace anticipée ou réelle et incertitude quant à sa capacité à y faire face.",
+          "secondary": "",
+          "range": {
+            "min": 1,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "3",
+              "1",
+              "4",
+              "6",
+              "7"
+            ],
+            "con": [
+              "3",
+              "1",
+              "4"
+            ],
+            "des": [
+              "1",
+              "4",
+              "6",
+              "7"
+            ],
+            "both": [
+              "1",
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Nervosité",
+          "desc": "Incertitude face à un danger potentiel.",
+          "name_mobile": "Nervosité",
+          "desc_mobile": "Incertitude face à un danger potentiel.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 7
+          },
+          "actions": {
+            "all": [
+              "3",
+              "6",
+              "7"
+            ],
+            "con": [
+              "3"
+            ],
+            "des": [
+              "6",
+              "7"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Redouter",
+          "desc": "Prévision d'un danger grave.",
+          "name_mobile": "Redouter",
+          "desc_mobile": "Prévision d'un danger grave.",
+          "secondary": "",
+          "range": {
+            "min": 6,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "con": [
+              "1",
+              "4"
+            ],
+            "des": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "both": [
+              "1",
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Désespoir",
+          "desc": "Une réponse à l'incapacité pour diminuer le danger.",
+          "name_mobile": "Désespoir",
+          "desc_mobile": "Une réponse à l'incapacité pour diminuer le danger.",
+          "secondary": "",
+          "range": {
+            "min": 9,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "con": [
+              "2",
+              "3",
+              "4"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "both": [
+              "2",
+              "3",
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Panique",
+          "desc": "Peur soudaine et incontrôlable",
+          "name_mobile": "Panique",
+          "desc_mobile": "Peur soudaine et incontrôlable",
+          "secondary": "",
+          "range": {
+            "min": 10,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "both": [
+              "1",
+              "4",
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Horreur",
+          "desc": "Mélange de peur, dégoût et un état de choc.",
+          "name_mobile": "Horreur",
+          "desc_mobile": "Mélange de peur, dégoût et un état de choc.",
+          "secondary": "",
+          "range": {
+            "min": 10,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "1",
+              "4",
+              "5"
+            ],
+            "both": [
+              "1",
+              "4",
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Terreur",
+          "desc": "Une peur intense, accablante.",
+          "name_mobile": "Terreur",
+          "desc_mobile": "Une peur intense, accablante.",
+          "secondary": "",
+          "range": {
+            "min": 10,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "1",
+              "4",
+              "5"
+            ],
+            "both": [
+              "1",
+              "4",
+              "5"
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Se retirer",
+          "desc": "Abandonner physiquement ou mentallement le scénario de la menace.",
+          "name_mobile": "Se retirer",
+          "desc_mobile": "Abandonner physiquement ou mentallement le scénario de la menace.",
+          "secondary": "Par exemple, nous pouvons supprimer le sentiment de frustration au travail, mais crier ou hurler pour exprimer notre frustration envers un membre de notre famille. Supprimer notre frustration peut être constructif dans le cas où cela permet d'éviter une dispute, mais destructif si nous nous sentons blessés du fait de ne pas exprimer ce que l'on ressent"
+        },
+        {
+          "name": "Eviter",
+          "desc": "Rester physiquement éloigné de quelqu'un ou de quelque chose, ou maintenir le mental éloignée de ce qui déclenche la peur.",
+          "name_mobile": "Eviter",
+          "desc_mobile": "Rester physiquement éloigné de quelqu'un ou de quelque chose, ou maintenir le mental éloignée de ce qui déclenche la peur.",
+          "secondary": ""
+        },
+        {
+          "name": "Tituber",
+          "desc": "Se contenir par doute ou indécision, au moins de manière momentannée.",
+          "name_mobile": "Tituber",
+          "desc_mobile": "Se contenir par doute ou indécision, au moins de manière momentannée.",
+          "secondary": ""
+        },
+        {
+          "name": "Se paralyser",
+          "desc": "Devenir incapable d'agir ou de parler",
+          "name_mobile": "Se paralyser",
+          "desc_mobile": "Devenir incapable d'agir ou de parler",
+          "secondary": ""
+        },
+        {
+          "name": "Crier / vociférer",
+          "desc": "Perdre le contrôle de nos paroles; parler avec une voix forte et crier d'un ton plus haut.",
+          "name_mobile": "Crier / vociférer",
+          "desc_mobile": "Perdre le contrôle de nos paroles; parler avec une voix forte et crier d'un ton plus haut.",
+          "secondary": ""
+        },
+        {
+          "name": "Ruminer",
+          "desc": "Penser avec répétition au sujet de notre expérience émotionnelle",
+          "name_mobile": "Ruminer",
+          "desc_mobile": "Penser avec répétition au sujet de notre expérience émotionnelle",
+          "secondary": ""
+        },
+        {
+          "name": "S'inquiéter",
+          "desc": "Prédir la possibilité d'un dommage",
+          "name_mobile": "S'inquiéter",
+          "desc_mobile": "Prédir la possibilité d'un dommage",
+          "secondary": ""
+        }
+      ],
+      "triggers": [
+        {
+          "name": "Impact physique iminent",
+          "type": "Universal",
+          "name_mobile": "Déclencheurs universels de la peur",
+          "desc_mobile": "Les déclencheurs universels sont innés et nous affectent plus que ceux que nous avons appris. Exemple : une forme ou une image de  serpents et une chute soudaine."
+        },
+        {
+          "name": "Perte de l'équilibre",
+          "type": "Universal",
+          "name_mobile": "Déclencheurs appris de la peur",
+          "desc_mobile": "Certains déclencheurs sont appris de nos expériences personnelles ou partagées. Exemple : parler en public ou la menace de perdre un emploi"
+        },
+        {
+          "name": "Menace à la sécurité",
+          "type": "Universal",
+          "name_mobile": "Menace à la sécurité",
+          "desc_mobile": "Universal"
+        },
+        {
+          "name": "Formes de serpents",
+          "type": "Universal",
+          "name_mobile": "Formes de serpents",
+          "desc_mobile": "Universal"
+        },
+        {
+          "name": "Menace de perdre un emploi",
+          "type": "Learned",
+          "name_mobile": "Menace de perdre un emploi",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Le tonnerre",
+          "type": "Learned",
+          "name_mobile": "Le tonnerre",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Parler en public",
+          "type": "Learned",
+          "name_mobile": "Parler en public",
+          "desc_mobile": "Learned"
+        }
+      ],
+      "moods": [
+        {
+          "name": "Craintif",
+          "desc": "Anxiété à l'idée que quelque chose de mauvais va arriver, énervé.",
+          "name_mobile": "Craintif",
+          "desc_mobile": "Anxiété à l'idée que quelque chose de mauvais va arriver, énervé.",
+          "secondary": ""
+        }
+      ],
+      "timeline": [
+        {
+          "trigger": {
+            "precondition": "lire des nouvelles épeurantes",
+            "event": "un ami a été en colère contre vous",
+            "perceptual_database": "un souvenir d'abandon"
+          },
+          "state": {
+            "physical_changes": "le coeur qui bat fort",
+            "emotion": "peur",
+            "mental_changes": "S'attendre à ce qu'ils partent"
+          },
+          "response": {
+            "constructive_response": "Se rappeler des raisons de l'amitié",
+            "destructive_response": "S'imaginer leur départ",
+            "ambiguous_response": "autre chose…"
+          }
+        }
+      ]
+    },
+    "disgust": {
+      "continent": {
+        "name": "Dégoût",
+        "desc": "Sentir du dégout pour quelque chose qui est toxique nous aide à éviter d'être empoisonné, que ce soit physiquement ou socialement. ",
+        "name_mobile": "Dégoût",
+        "desc_mobile": "Nous ressentons le dégout quand nous percevons quelque chose de toxique ou désagréable. L'intensité et la fréquence du dégout varient au cours de la vie.",
+        "secondary": ""
+      },
+      "states": [
+        {
+          "name": "Ne pas aimer",
+          "desc": "Une préférence contre quelque chose.",
+          "name_mobile": "Ne pas aimer",
+          "desc_mobile": "Une préférence contre quelque chose.",
+          "secondary": "Le dégoût contient à la fois l'aversion et la répugnance. L'intensité de ces états peut varier : nous pouvons ressentir l'aversion de faible ou de forte intensité, mais nous ne pouvons ressentir de la répugnance qu'à forte intensité. Tout état de dégoût est déclenché par le fait de sentir que quelque chose de toxique.",
+          "range": {
+            "min": 1,
+            "max": 5
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4"
+            ],
+            "con": [
+              "1",
+              "2"
+            ],
+            "des": [
+              "2",
+              "4"
+            ],
+            "both": [
+              "2"
+            ]
+          }
+        },
+        {
+          "name": "Aversion",
+          "desc": "Désir d'éviter une chose qui nous dégoute",
+          "name_mobile": "Aversion",
+          "desc_mobile": "Désir d'éviter une chose qui nous dégoute",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 7
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4"
+            ],
+            "con": [
+              "1",
+              "2"
+            ],
+            "des": [
+              "4"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Déplaisir",
+          "desc": "Réponse a une saveur ou odeur mauvaise; peut aussi être métaphorique",
+          "name_mobile": "Déplaisir",
+          "desc_mobile": "Réponse a une saveur ou odeur mauvaise; peut aussi être métaphorique",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 7
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "3",
+              ""
+            ],
+            "con": [
+              "1",
+              "2",
+              "3"
+            ],
+            "des": [
+              ""
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Répugnance",
+          "desc": "Forte aversion pour quelque chose, souvent un concept ou une idée",
+          "name_mobile": "Répugnance",
+          "desc_mobile": "Forte aversion pour quelque chose, souvent un concept ou une idée",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 9
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4"
+            ],
+            "con": [
+              "1",
+              "2"
+            ],
+            "des": [
+              "2",
+              "4"
+            ],
+            "both": [
+              "2"
+            ]
+          }
+        },
+        {
+          "name": "Révulsion",
+          "desc": "Un mélange de dégoût et de répugnance",
+          "name_mobile": "Révulsion",
+          "desc_mobile": "Un mélange de dégoût et de répugnance",
+          "secondary": "",
+          "range": {
+            "min": 8,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "con": [
+              "1",
+              "2",
+              "3"
+            ],
+            "des": [
+              "4"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Abhorrence",
+          "desc": "Répulsion extrême",
+          "name_mobile": "Abhorrence",
+          "desc_mobile": "Répulsion extrême",
+          "secondary": "",
+          "range": {
+            "min": 8,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4"
+            ],
+            "con": [
+              "1",
+              "2"
+            ],
+            "des": [
+              "4"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Répugnance",
+          "desc": "Dégoût intense concentré sur une personne. Le dégoût intense concentré sur soi-même est appelé dégoût de soi.",
+          "name_mobile": "Répugnance",
+          "desc_mobile": "Dégoût intense concentré sur une personne. Le dégoût intense concentré sur soi-même est appelé dégoût de soi.",
+          "secondary": "",
+          "range": {
+            "min": 9,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4"
+            ],
+            "con": [
+              "1"
+            ],
+            "des": [
+              "2",
+              "4"
+            ],
+            "both": []
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Se retirer",
+          "desc": "Abandonner physiquement ou mentallement le scénario de ce qui suscite le dégout",
+          "name_mobile": "Se retirer",
+          "desc_mobile": "Abandonner physiquement ou mentallement le scénario de ce qui suscite le dégout",
+          "secondary": "Par exemple, nous pouvons éviter de ressentir de l'aversion envers autrui au travail, mais nous retrouver à ressentir de l'aversion envers des personnes  qui font les nouvelles dans un journal. Éviter l'aversion peut être constructif dans le cas où cela permet de dépasser un préjugé, mais destructif si cela nous fait nous rapprocher d'une personne nocive."
+        },
+        {
+          "name": "Éviter",
+          "desc": "Rester physiquement éloigné ou éviter de réfléchir de ce qui provoque le dégoût",
+          "name_mobile": "Éviter",
+          "desc_mobile": "Rester physiquement éloigné ou éviter de réfléchir de ce qui provoque le dégoût",
+          "secondary": ""
+        },
+        {
+          "name": "Vomir",
+          "desc": "Répondre au sentiment de dégoût en vomissant",
+          "name_mobile": "Vomir",
+          "desc_mobile": "Répondre au sentiment de dégoût en vomissant",
+          "secondary": ""
+        },
+        {
+          "name": "Déshumaniser",
+          "desc": "Traiter quelqu'un comme s'il/elle n'était pas un être humain; priver cette personne de ses qualités, de sa personnalité ou de son seprit humain.",
+          "name_mobile": "Déshumaniser",
+          "desc_mobile": "Traiter quelqu'un comme s'il/elle n'était pas un être humain; priver cette personne de ses qualités, de sa personnalité ou de son seprit humain.",
+          "secondary": ""
+        }
+      ],
+      "triggers": [
+        {
+          "name": "Fluides ou déchets corporels",
+          "type": "Universal",
+          "name_mobile": "Déclencheurs universels du dégout",
+          "desc_mobile": "Les déclencheurs universels son innés et nous affectent plus que ceux qui sont appris. Exemple : un objet en état de décomposition ou un fluide ou déchet coroprels."
+        },
+        {
+          "name": "Putréfaction ou décomposition",
+          "type": "Universal",
+          "name_mobile": "Déclencheurs appris du dégout",
+          "desc_mobile": "Certains déclencheurs sont appris de nos expérience personnelles ou partagées. Exemple : certaines habitudes religieusse inhabituelles, manger des insectes ou de la viande crue."
+        },
+        {
+          "name": "Supporters d'une équipe de sport opposée",
+          "type": "Learned",
+          "name_mobile": "Supporters d'une équipe de sport opposée",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Habitudes religieuses inhabituelles",
+          "type": "Learned",
+          "name_mobile": "Habitudes religieuses inhabituelles",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Manger des insectes ou de la viande crue",
+          "type": "Learned",
+          "name_mobile": "Manger des insectes ou de la viande crue",
+          "desc_mobile": "Learned"
+        }
+      ],
+      "moods": [
+        {
+          "name": "Aigre",
+          "desc": "Généralement répugnant.",
+          "name_mobile": "Aigre",
+          "desc_mobile": "Généralement répugnant.",
+          "secondary": ""
+        }
+      ],
+      "timeline": [
+        {
+          "trigger": {
+            "precondition": "vous êtes en deuil",
+            "event": "un ami a été en colère contre vous",
+            "perceptual_database": "vous repensez à votre insensibilité"
+          },
+          "state": {
+            "physical_changes": "vous reculez",
+            "emotion": "dégoût",
+            "mental_changes": "vous vous sentez malade"
+          },
+          "response": {
+            "constructive_response": "demandez pourquoi ils sont en colère",
+            "destructive_response": "dénigrez-les",
+            "ambiguous_response": "évitez-les"
+          }
+        }
+      ]
+    },
+    "sadness": {
+      "continent": {
+        "name": "Tristesse",
+        "desc": "La tristesse est une réponse au sentiment de perte, et nous sentir tristes nous permet de faire une pause et montrer aux autres que nous avons besoin de soutien.",
+        "name_mobile": "Tristesse",
+        "desc_mobile": "Nous ressentons la tristesse lorsque nous perdons quelque chose qui comptait pour nous. L'intensité et la fréquence de la tristesse varie au fil de notre vie.",
+        "secondary": ""
+      },
+      "states": [
+        {
+          "name": "Déception",
+          "desc": "Sentiment que nos attentes ne sont pas remplies.",
+          "name_mobile": "Déception",
+          "desc_mobile": "Sentiment que nos attentes ne sont pas remplies.",
+          "secondary": "La tristesse contient à la fois de la déception et du désespoir. L'intensité de ces états peut varier : nous pouvons ressentir une déception de forte ou de faible intensité, mais nous ne pouvons ressentir du désespoir qu'à forte intensité. Tout état de tristesse est déclenché par le sentiment de perte.",
+          "range": {
+            "min": 1,
+            "max": 5
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "con": [
+              "1",
+              "4"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "6"
+            ],
+            "both": [
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Résignation",
+          "desc": "Acceptation que rien ne peut être fait.",
+          "name_mobile": "Résignation",
+          "desc_mobile": "Acceptation que rien ne peut être fait.",
+          "secondary": "",
+          "range": {
+            "min": 1,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "5",
+              "3",
+              "4",
+              "6"
+            ],
+            "con": [
+              "1",
+              "2",
+              "5"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "both": [
+              "2",
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Désarroi",
+          "desc": "Tristesse accompagnée d'agitation.",
+          "name_mobile": "Désarroi",
+          "desc_mobile": "Tristesse accompagnée d'agitation.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 8
+          },
+          "actions": {
+            "all": [
+              "1",
+              "5",
+              "2",
+              "6"
+            ],
+            "con": [
+              "1",
+              "5"
+            ],
+            "des": [
+              "2",
+              "5",
+              "6"
+            ],
+            "both": [
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Découragement",
+          "desc": "Sentiment qu'il n'y a rien a faire face à une situation.",
+          "name_mobile": "Découragement",
+          "desc_mobile": "Sentiment qu'il n'y a rien a faire face à une situation.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 8
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "2",
+              "3"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4"
+            ],
+            "both": [
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Impuissance",
+          "desc": "Reconnaissance de son incapacité pour empêcher ou faire face à une perte.",
+          "name_mobile": "Impuissance",
+          "desc_mobile": "Reconnaissance de son incapacité pour empêcher ou faire face à une perte.",
+          "secondary": "",
+          "range": {
+            "min": 5,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "5",
+              "2",
+              "3",
+              "6"
+            ],
+            "con": [
+              "1",
+              "5"
+            ],
+            "des": [
+              "2",
+              "3",
+              "5",
+              "6"
+            ],
+            "both": [
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Misère",
+          "desc": "Forte souffrance ou malheur",
+          "name_mobile": "Misère",
+          "desc_mobile": "Forte souffrance ou malheur",
+          "secondary": "",
+          "range": {
+            "min": 6,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "2",
+              "3"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "both": [
+              "4",
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Désespoir",
+          "desc": "Sentiment que rien de bien ne va arriver.",
+          "name_mobile": "Désespoir",
+          "desc_mobile": "Sentiment que rien de bien ne va arriver.",
+          "secondary": "",
+          "range": {
+            "min": 6,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "con": [
+              "1",
+              "4"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "6"
+            ],
+            "both": [
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Deuil",
+          "desc": "Tristesse pour la perte de quelque chose ou quelqu'un d'important",
+          "name_mobile": "Deuil",
+          "desc_mobile": "Tristesse pour la perte de quelque chose ou quelqu'un d'important",
+          "secondary": "",
+          "range": {
+            "min": 7,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "2",
+              "3",
+              "6"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "both": [
+              "4",
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Désespoir",
+          "desc": "La perte d'espoir qu'une mauvaise situation s'améliore ou change.",
+          "name_mobile": "Désespoir",
+          "desc_mobile": "La perte d'espoir qu'une mauvaise situation s'améliore ou change.",
+          "secondary": "",
+          "range": {
+            "min": 7,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "2",
+              "3"
+            ],
+            "con": [
+              "1",
+              "4"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4"
+            ],
+            "both": [
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Chagrin",
+          "desc": "Un sentiment de détresse et de tristesse, souvent causé par une perte.",
+          "name_mobile": "Chagrin",
+          "desc_mobile": "Un sentiment de détresse et de tristesse, souvent causé par une perte.",
+          "secondary": "",
+          "range": {
+            "min": 7,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "con": [
+              "1",
+              "4"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "6"
+            ],
+            "both": [
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Angoisse",
+          "desc": "Tristesse intense accompagnée d'agitation",
+          "name_mobile": "Angoisse",
+          "desc_mobile": "Tristesse intense accompagnée d'agitation",
+          "secondary": "",
+          "range": {
+            "min": 10,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "2",
+              "3"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "both": [
+              "4",
+              "5"
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Chercher du réconfort",
+          "desc": "Chercher aide et soutien d'autres.",
+          "name_mobile": "Chercher du réconfort",
+          "desc_mobile": "Chercher aide et soutien d'autres.",
+          "secondary": "Par exemple, nous pouvons nous retirer pour ne pas nous sentir désespéré en public, mais rechercher du confort à la maison. Nous retirer pour ne pas nous sentir désespéré peut être constructif afin de dépasser un sentiment de chagrin trop fort, mais destructif si l'on ne cherche pas de soutien lorsqu'on en a besoin. "
+        },
+        {
+          "name": "Se retirer",
+          "desc": "S'éloigner physiquement de ce qui déclenche la tristesse, ou s'empêcher d'y penser.",
+          "name_mobile": "Se retirer",
+          "desc_mobile": "S'éloigner physiquement de ce qui déclenche la tristesse, ou s'empêcher d'y penser.",
+          "secondary": ""
+        },
+        {
+          "name": "Ruminer",
+          "desc": "Penser de manière obsessive et répététive à l'expérience émotionnelle.",
+          "name_mobile": "Ruminer",
+          "desc_mobile": "Penser de manière obsessive et répététive à l'expérience émotionnelle.",
+          "secondary": ""
+        },
+        {
+          "name": "Faire le deuil de...",
+          "desc": "Exprimer son chagrin pour la perte d'un être cher par des actions, des vêtements et des paroles",
+          "name_mobile": "Faire le deuil de...",
+          "desc_mobile": "Exprimer son chagrin pour la perte d'un être cher par des actions, des vêtements et des paroles",
+          "secondary": ""
+        },
+        {
+          "name": "Protester",
+          "desc": "S'objecter à la perte",
+          "name_mobile": "Protester",
+          "desc_mobile": "S'objecter à la perte",
+          "secondary": ""
+        },
+        {
+          "name": "Ressentir de la honte",
+          "desc": "Se sentir honteux des sentiments que l'on éprouve à l'égard de la perte",
+          "name_mobile": "Ressentir de la honte",
+          "desc_mobile": "Se sentir honteux des sentiments que l'on éprouve à l'égard de la perte",
+          "secondary": ""
+        }
+      ],
+      "triggers": [
+        {
+          "name": "Être rejeté par quelqu'un d'important",
+          "type": "Universal",
+          "name_mobile": "Déclencheurs universels de la tristesse",
+          "desc_mobile": "Les déclencheurs universels sont innés et nous affectent plus que ceux appris. Exemple : Perdre un être aimé ou être rejeté par cette personne."
+        },
+        {
+          "name": "Perdre un être aimé",
+          "type": "Universal",
+          "name_mobile": "Déclencheurs appris de la tristesse",
+          "desc_mobile": "Certains déclencheurs sont appris lors de nos expérience personnelles ou partagées. Exemple : se sentir exclu ou percevoir une perte de statut."
+        },
+        {
+          "name": "Percevoir une perte de statut",
+          "type": "Learned",
+          "name_mobile": "Percevoir une perte de statut",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Ne pas être invité à une fête",
+          "type": "Learned",
+          "name_mobile": "Ne pas être invité à une fête",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Perdre un bien précieux",
+          "type": "Learned",
+          "name_mobile": "Perdre un bien précieux",
+          "desc_mobile": "Learned"
+        }
+      ],
+      "moods": [
+        {
+          "name": "Dysphorie (état d'humeur dépressif)",
+          "desc": "Sentiment de résignation, de découragement ou de déception persistant. ",
+          "name_mobile": "Dysphorie (état d'humeur dépressif)",
+          "desc_mobile": "Sentiment de résignation, de découragement ou de déception persistant. ",
+          "secondary": ""
+        }
+      ],
+      "timeline": [
+        {
+          "trigger": {
+            "precondition": "Écouter de la musique triste",
+            "event": "un ami en colère contre soi",
+            "perceptual_database": "Un sentiment de rejet est généré "
+          },
+          "state": {
+            "physical_changes": "Le corps s'affaiblit",
+            "emotion": "tristesse",
+            "mental_changes": "Vous vous sentez vide"
+          },
+          "response": {
+            "constructive_response": "Appeler une personne aimée",
+            "destructive_response": "Avoir honte de soi",
+            "ambiguous_response": "ignorer le sentiment"
+          }
+        }
+      ]
+    },
+    "enjoyment": {
+      "continent": {
+        "name": "Joie",
+        "desc": "La joie décrit les nombreux sentiments agréables qui surgissent d'expériences tant nouvelles que connues.",
+        "name_mobile": "Le continent de la joie",
+        "desc_mobile": "Nous ressentons la joie lorsque nous expérimentons quelque chose de nouveau ou de confortable. L'intensité et la fréquence de la joie varie au fil de nos vies.",
+        "secondary": ""
+      },
+      "states": [
+        {
+          "name": "Plaisir sensoriel",
+          "desc": "Plaisir qui s'obtient par nos cinq sens : la vue, l'ouïe, le touché, le goût, et l'odorat",
+          "name_mobile": "Plaisir sensoriel",
+          "desc_mobile": "Plaisir qui s'obtient par nos cinq sens : la vue, l'ouïe, le touché, le goût, et l'odorat",
+          "secondary": "La joie contient à la fois la paix et l'extase. L'intensité de ces états peut varier : nous pouvons ressentir de la paix à faible ou à forte intensité, mais nous ne pouvons ressentir l'extase qu'à forte intensité. Tout état de joie est declenché par un sentiment de connexion et/ou un plaisir sensoriel",
+          "range": {
+            "min": 1,
+            "max": 5
+          },
+          "actions": {
+            "all": [
+              "1",
+              "6",
+              ""
+            ],
+            "con": [
+              "1",
+              "6"
+            ],
+            "des": [
+              ""
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Réjouissance",
+          "desc": "Sentiment chaud et exaltant que l'on ressent en présence d'actes de bonté, d'amabilité, et de compassion humaine. Nous l'appelons aussi élévation.",
+          "name_mobile": "Réjouissance",
+          "desc_mobile": "Sentiment chaud et exaltant que l'on ressent en présence d'actes de bonté, d'amabilité, et de compassion humaine. Nous l'appelons aussi élévation.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 8
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "des": [
+              "7"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Amusement ",
+          "desc": "Sentiment de légèreté, de joie et de bonne humeur",
+          "name_mobile": "Amusement ",
+          "desc_mobile": "Sentiment de légèreté, de joie et de bonne humeur",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 8
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7"
+            ],
+            "con": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7"
+            ],
+            "des": [
+              "7"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Soulagement",
+          "desc": "Quand on évite ou termine quelque chose qui nous était désagréable, surtout si cela pouvait nous faire du mal.",
+          "name_mobile": "Soulagement",
+          "desc_mobile": "Quand on évite ou termine quelque chose qui nous était désagréable, surtout si cela pouvait nous faire du mal.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "con": [
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "des": [
+              "7"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Compassion ",
+          "desc": "Joie que l'on ressent quand on agis pour réduire la souffrance d'un autre",
+          "name_mobile": "Compassion ",
+          "desc_mobile": "Joie que l'on ressent quand on agis pour réduire la souffrance d'un autre",
+          "secondary": "",
+          "range": {
+            "min": 3,
+            "max": 6
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "6",
+              ""
+            ],
+            "con": [
+              "1",
+              "4",
+              "5",
+              "6"
+            ],
+            "des": [
+              ""
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Schadenfreude",
+          "desc": "Terme allemand qui se réfère à la joie pour les difficultés d'une autre personne, en particulier un rival. ",
+          "name_mobile": "Schadenfreude",
+          "desc_mobile": "Terme allemand qui se réfère à la joie pour les difficultés d'une autre personne, en particulier un rival. ",
+          "secondary": "",
+          "range": {
+            "min": 3,
+            "max": 8
+          },
+          "actions": {
+            "all": [
+              "",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "con": [
+              ""
+            ],
+            "des": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Fiero",
+          "desc": "Terme italien qui décrit la joie que nous ressentons lorsque nous avons affronté un défi qui développe nos capacités.",
+          "name_mobile": "Fiero",
+          "desc_mobile": "Terme italien qui décrit la joie que nous ressentons lorsque nous avons affronté un défi qui développe nos capacités.",
+          "secondary": "",
+          "range": {
+            "min": 3,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "5",
+              "6",
+              "7",
+              "3"
+            ],
+            "con": [
+              "1",
+              "2",
+              "5",
+              "6",
+              "7"
+            ],
+            "des": [
+              "3",
+              "5",
+              "6",
+              "7"
+            ],
+            "both": [
+              "5",
+              "6",
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Naches",
+          "desc": "Fierté joyeuse des réalisations de ses enfants ou de ses apprentis (un mot yiddish).",
+          "name_mobile": "Naches",
+          "desc_mobile": "Fierté joyeuse des réalisations de ses enfants ou de ses apprentis (un mot yiddish).",
+          "secondary": "",
+          "range": {
+            "min": 3,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "4",
+              "5",
+              "6",
+              "3"
+            ],
+            "con": [
+              "4",
+              "5",
+              "6"
+            ],
+            "des": [
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "both": [
+              "4",
+              "5",
+              "6"
+            ]
+          }
+        },
+        {
+          "name": "Orgueil",
+          "desc": "Plaisir et satisfaction profonde tirés de ses propres réalisations ou de celles d'un associé.",
+          "name_mobile": "Orgueil",
+          "desc_mobile": "Plaisir et satisfaction profonde tirés de ses propres réalisations ou de celles d'un associé.",
+          "secondary": "",
+          "range": {
+            "min": 4,
+            "max": 9
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "des": [
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "both": [
+              "4",
+              "5",
+              "6",
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Emerveillement",
+          "desc": "Expérience de quelque chose très surprenant, beau, prodigieux, ou difficler à croire.",
+          "name_mobile": "Emerveillement",
+          "desc_mobile": "Expérience de quelque chose très surprenant, beau, prodigieux, ou difficler à croire.",
+          "secondary": "",
+          "range": {
+            "min": 5,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "des": [
+              "7"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Paix",
+          "desc": "Expérience de tranquilité et de contentement",
+          "name_mobile": "Paix",
+          "desc_mobile": "Expérience de tranquilité et de contentement",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "2",
+              "5",
+              ""
+            ],
+            "con": [
+              "2",
+              "5"
+            ],
+            "des": [
+              ""
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Excitation",
+          "desc": "Un enthousiasme puissant",
+          "name_mobile": "Excitation",
+          "desc_mobile": "Un enthousiasme puissant",
+          "secondary": "",
+          "range": {
+            "min": 6,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7"
+            ],
+            "con": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7"
+            ],
+            "des": [
+              "7"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Extase",
+          "desc": "Ravissement. État de félicité très fort, presque accablant.",
+          "name_mobile": "Extase",
+          "desc_mobile": "Ravissement. État de félicité très fort, presque accablant.",
+          "secondary": "",
+          "range": {
+            "min": 9,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "2",
+              "6",
+              "7"
+            ],
+            "con": [
+              "2",
+              "6",
+              "7"
+            ],
+            "des": [
+              "7"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Vouloir plus",
+          "desc": "Volonté d'augmenter les sentiments agréables.",
+          "name_mobile": "Vouloir plus",
+          "desc_mobile": "Volonté d'augmenter les sentiments agréables.",
+          "secondary": "Par exemple, nous pouvons être exité à exprimer notre amusement avec nos amis, mais ressentir notre amusement de manière calme lorsque nous sommes seuls.Exprimer notre amusement avec exitation peut être constructif pour partager sa joie, mais destructif si en réponse à une moquerie visant une autre personne."
+        },
+        {
+          "name": "Maintenir",
+          "desc": "Continuer de faire le nécessaire pour que nos sentiments agréables persistent",
+          "name_mobile": "Maintenir",
+          "desc_mobile": "Continuer de faire le nécessaire pour que nos sentiments agréables persistent",
+          "secondary": ""
+        },
+        {
+          "name": "Se vanter",
+          "desc": "Savourer l'envie que les autres ont de votre réussite",
+          "name_mobile": "Se vanter",
+          "desc_mobile": "Savourer l'envie que les autres ont de votre réussite",
+          "secondary": ""
+        },
+        {
+          "name": "S'exclamer",
+          "desc": "Exprimer oralement notre joie.",
+          "name_mobile": "S'exclamer",
+          "desc_mobile": "Exprimer oralement notre joie.",
+          "secondary": ""
+        },
+        {
+          "name": "S'engager / connecter",
+          "desc": "Partager ses sentiments de plaisir avec les autres sans vouloir provoquer de jalousie.",
+          "name_mobile": "S'engager / connecter",
+          "desc_mobile": "Partager ses sentiments de plaisir avec les autres sans vouloir provoquer de jalousie.",
+          "secondary": ""
+        },
+        {
+          "name": "Savourer",
+          "desc": "Appréciez pleinement les bons sentiments qui entourent une expérience, notamment en vous y attardant.",
+          "name_mobile": "Savourer",
+          "desc_mobile": "Appréciez pleinement les bons sentiments qui entourent une expérience, notamment en vous y attardant.",
+          "secondary": ""
+        },
+        {
+          "name": "Se faire plaisir",
+          "desc": "Se donner la permission de vivre de bon moments",
+          "name_mobile": "Se faire plaisir",
+          "desc_mobile": "Se donner la permission de vivre de bon moments",
+          "secondary": ""
+        }
+      ],
+      "triggers": [
+        {
+          "name": "Expérience sensorielle de la nature",
+          "type": "Universal",
+          "name_mobile": "Déclencheurs universels de la joie",
+          "desc_mobile": "Les déclencheurs universels sont innés et nous affectent plus que ceux appris. Exemple : l'interaction sociale et l'expérience de la nature."
+        },
+        {
+          "name": "Aider autri",
+          "type": "Universal",
+          "name_mobile": "Déclencheurs appris de la joie",
+          "desc_mobile": "Certains déclencheurs s'apprennent lors de nos expériences personnelles et partagées. Exemple : passer du temps en famille ou visiter des lieux de notre enfance."
+        },
+        {
+          "name": "Interaction sociale",
+          "type": "Universal",
+          "name_mobile": "Interaction sociale",
+          "desc_mobile": "Universal"
+        },
+        {
+          "name": "Jouer au badminton",
+          "type": "Learned",
+          "name_mobile": "Jouer au badminton",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Lieux associés à des souvenirs agréables",
+          "type": "Learned",
+          "name_mobile": "Lieux associés à des souvenirs agréables",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "La saveur d'un gâteau au chocolat",
+          "type": "Learned",
+          "name_mobile": "La saveur d'un gâteau au chocolat",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Passer du temps en famille",
+          "type": "Learned",
+          "name_mobile": "Passer du temps en famille",
+          "desc_mobile": "Learned"
+        }
+      ],
+      "moods": [
+        {
+          "name": "Euphorie",
+          "desc": "Sentiment jovial généralisé, non spécifique qui peut durer plusieurs heures",
+          "name_mobile": "Euphorie",
+          "desc_mobile": "Sentiment jovial généralisé, non spécifique qui peut durer plusieurs heures",
+          "secondary": ""
+        }
+      ],
+      "timeline": [
+        {
+          "trigger": {
+            "precondition": "vous faites un but",
+            "event": "un ami a été en colère contre vous",
+            "perceptual_database": "vous semblez être un mauvais perdant"
+          },
+          "state": {
+            "physical_changes": "une montée d'adrénaline",
+            "emotion": "joie",
+            "mental_changes": "vous vous sentez vertueux"
+          },
+          "response": {
+            "constructive_response": "continuer à jouer",
+            "destructive_response": "se vanter",
+            "ambiguous_response": "célebrer"
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "site": {
+      "header": "Atlas des émotions",
+      "body": "",
+      "caption": "Choisis une émotion",
+      "header_mobile": "Retour",
+      "body_mobile": "",
+      "sectionName": "",
+      "interaction_prompt": "",
+      "learn_more_button": "En savoir plus",
+      "close_button": "Fermer",
+      "back_button": "Retour"
+    },
+    "navigation": {
+      "introduction": {
+        "menu": "Introduction",
+        "heading": "Introduction"
+      },
+      "timeline": {
+        "menu": "Chronologie",
+        "heading": "La chronologie"
+      },
+      "experience": {
+        "menu": "Expérience",
+        "heading": "Notre expérience"
+      },
+      "response": {
+        "menu": "Réponse",
+        "heading": "Notre réponse"
+      },
+      "strategies": {
+        "menu": "Stratégies",
+        "heading": "Stratégies"
+      },
+      "emotions": {
+        "all": "Tout"
+      },
+      "learn_more": {
+        "menu": "navigation_learn_more_menu_item",
+        "heading": "navigation_learn_more_section_header"
+      }
+    },
+    "intro": {
+      "header": "Bienvenue sur l'Atlas des Emotions",
+      "body": "",
+      "header_mobile": "Bienvenue sur l'Atlas des Emotions",
+      "body_mobile": "Cet Atlas est inspiré de conversations tenues entre le Dalai Lama et le Docteur Paul Ekman au sujet de la science des émotions. Créé en collaboration avec Stamen Design et la fille de Paul, le Docteur Eve Ekman, l'Atlas des émotions est un voyage visuel interactif dans le monde des émotions.",
+      "sectionName": "Introduction",
+      "steps": [
+        {
+          "header": "Bienvenue sur l'Atlas des Emotions",
+          "body": "La première étape dans la gestion des émotions est d'apprendre à identifier et décrire ce que l'on ressent",
+          "header_mobile": "Bienvenue sur l'Atlas des Emotions",
+          "body_mobile": "La première étape dans la gestion des émotions est d'apprendre à identifier et décrire ce que l'on ressent",
+          "caption": "Cet Atlas est un outil visuel destiné à créer notre vocabulaire émotionel. L'objectif est de nous permettre d'augmenter notre liberté de choisir nos réactions face à ce qui génère des émotions, ainsi que nos façons d'y réagir."
+        },
+        {
+          "header": "Naviguer sur l'Atlas",
+          "body": "Il y a 5 émotions à explorer. Découvrez plus sur chaque émotion en interagissant avec les formes. Naviguez en cliquant vers le bas, la gauche ou la droite. Étudiez chaque émotion et la façon dont cela fait écho avec votre propre expérience.",
+          "header_mobile": "Naviguer sur l'Atlas",
+          "body_mobile": "Il y a 5 émotions à explorer. Découvrez plus sur chaque émotion en interagissant avec les formes. Naviguez en cliquant vers le bas, la gauche ou la droite. Étudiez chaque émotion et la façon dont cela fait écho avec votre propre expérience.",
+          "caption": "intro_caption_2"
+        },
+        {
+          "header": "L'atlas: un nouveau genre de carte",
+          "body": "Cet Atlas a été commandité par le Dalaï Lama afin de créer une feuille de route scientifiquement fondée sur la conscience de soi et des émotions. Le docteur Paul Ekman et sa fille, Eve Ekman, ont créés cet Atlas à partir d'études qu'ils ont menés sur le sujet. Les scientifiques interrogés dans cette étude ont accordés que ces cinq émotions sont les plus universelement ressentis",
+          "header_mobile": "L'atlas: un nouveau genre de carte",
+          "body_mobile": "Cet Atlas a été commandité par le Dalaï Lama afin de créer une feuille de route scientifiquement fondée sur la conscience de soi et des émotions. Le docteur Paul Ekman et sa fille, Eve Ekman, ont créés cet Atlas à partir d'études qu'ils ont menés sur le sujet. Les scientifiques interrogés dans cette étude ont accordés que ces cinq émotions sont les plus universelement ressentis",
+          "caption": "Choisis une émotion et commence l'exploration"
+        },
+        {
+          "header": "Aller à l'Atlas",
+          "body": "",
+          "header_mobile": "Aller à l'Atlas",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Commencer",
+          "body": "",
+          "header_mobile": "Commencer",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Retour",
+          "body": "",
+          "header_mobile": "Retour",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Pourquoi un altas?",
+          "body": "",
+          "header_mobile": "Pourquoi un altas?",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Commencer",
+          "body": "",
+          "header_mobile": "Commencer",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Gauche",
+          "body": "",
+          "header_mobile": "Gauche",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Droite",
+          "body": "",
+          "header_mobile": "Droite",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Bas",
+          "body": "",
+          "header_mobile": "Bas",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "La colère est universelle",
+          "body": "",
+          "header_mobile": "La colère est universelle",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "La peur est universelle",
+          "body": "",
+          "header_mobile": "La peur est universelle",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Le dégoût est universelle",
+          "body": "",
+          "header_mobile": "Le dégoût est universelle",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "La tristesse est universelle",
+          "body": "",
+          "header_mobile": "La tristesse est universelle",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "La joie est universelle",
+          "body": "",
+          "header_mobile": "La joie est universelle",
+          "body_mobile": "",
+          "caption": ""
+        }
+      ]
+    },
+    "hero": {
+      "header": "Bienvenue sur l'Atlas des émotions",
+      "body": "",
+      "header_mobile": "Bienvenue sur l'Atlas des émotions",
+      "body_mobile": "",
+      "sectionName": "Introduction",
+      "sub_header": "Avec le soutien du Dalai Lama",
+      "learn_more_link": "En savoir plus",
+      "about": {
+        "header": "À propos de l'Atlas",
+        "header_mobile": "À propos de l'Atlas",
+        "body": "Le Dalai Lama a imaginé une carte de nos émotions dans le but de développer un esprit calme. Il demanda à un scientifique reconnu et ami de longue date Docteur Paul Ekman de concrétiser cette idée. Ekmann a mené la création de l'Atlas accompagné par sa fille, Eve Ekman, chercheuse spécialisée sur les émotions de seconde génération et formatrice. L'Atlas  présente ce que les chercheurs ont découverts lors d'une étude sur la psychologie des émotions.",
+        "body_mobile": "Le Dalai Lama a imaginé une carte de nos émotions dans le but de développer un esprit calme. Il demanda à un scientifique reconnu et ami de longue date Docteur Paul Ekman de concrétiser cette idée. Ekmann a mené la création de l'Atlas accompagné par sa fille, Eve Ekman, chercheuse spécialisée sur les émotions de seconde génération et formatrice. L'Atlas  présente ce que les chercheurs ont découverts lors d'une étude sur la psychologie des émotions."
+      },
+      "cta": "Commencer",
+      "slides": [
+        "Cet Atlas est un outil interactif visant à créer notre vocabulaire émotionnel et éclairer notre monde émotionnel",
+        "Le but est d'acquérir un meilleur contrôle sur ce qui déclenche nos émotions et nos façons d'y répondre",
+        "La première étape dans la prise de conscience émotionnelle est d'apprendre à identifier et décrire comment nous nous sentons, et pourquoi."
+      ]
+    },
+    "continents": {
+      "header": "Cinq émotions universelles",
+      "body": "La plupart des chercheurs sur les émotions sont d'accord sur ces cinq émotions universelles: ces émotions que tous les êtres humains, peu importe où ils ont grandit, ont en commun. Le mouvement des formes reflète la nature fluide de chaque émotios- la façon dont leur force et fréquence varie d'instant en instant. Choisis une émotions pour en savoir plus.",
+      "caption": "",
+      "header_mobile": "Cinq émotions universelles",
+      "body_mobile": "La plupart des chercheurs sur les émotions sont d'accord sur ces cinq émotions universelles: ces émotions que tous les êtres humains, peu importe où ils ont grandit, ont en commun. Choisis une émotion et commence l'exploration.",
+      "sectionName": "Emotions universelles",
+      "interaction_prompt": ""
+    },
+    "states": {
+      "header": "États de LHAMO",
+      "body": "Ici, nous explorons différents états et intensités dans une famille d'émotion",
+      "caption": "Les moins intenses, les plus intenses",
+      "header_mobile": "États de LHAMO",
+      "body_mobile": "Peut être ressenti légèrement, intensément, ou modérément. Choisis la forme au-dessus pour apprendre au sujet des états que l'on peut ressentir.",
+      "sectionName": "États",
+      "interaction_prompt": "Choisis une forme pour apprendre certains des états dont nous pouvons faire l'expérience"
+    },
+    "actions": {
+      "header": "Réactions de LHAMO",
+      "body": "Nous répondons aux états émotionnels par nos actions. Nos réponses à la même émotion peuvent varier selon les circonstances.",
+      "header_mobile": "Réactions de LHAMO",
+      "body_mobile": "Nous répondons aux états émotionnels par nos actions. Choisis une forme pour apprendre les actions possibles résultant de LHAMO",
+      "sectionName": "Actions",
+      "interaction_prompt": "Choisir une forme pour apprendre au sujet de certains des états dont nous pouvons faire l'expérience. Ensuite, choisir une action pour en savoir plus.",
+      "qualities": [
+        {
+          "header": "Actions constructives",
+          "body": "Dans cet état, l'action est constructive. C'est une réponse utile à l'émotion.",
+          "header_mobile": "Actions constructives",
+          "body_mobile": "Nous répondons aux états émotionnels par nos actions. Choisis une forme pour apprendre les actions possibles résultant de LHAMO"
+        },
+        {
+          "header": "Actions ambiguës",
+          "body": "Dans cet état, l'action est ambiguë. Elle peut tout autant être une réponse utile à l'émotion ou faire du mal",
+          "header_mobile": "Actions ambiguës",
+          "body_mobile": "Dans cet état, l'action est ambiguë. Elle peut tout autant être une réponse utile à l'émotion ou faire du mal"
+        },
+        {
+          "header": "Actions destructives",
+          "body": "Dans cet état, l'action est destructive. Elle peut causer du tort.",
+          "header_mobile": "Actions destructives",
+          "body_mobile": "Dans cet état, l'action est destructive. Elle peut causer du tort."
+        }
+      ]
+    },
+    "triggers": {
+      "header": "Déclencheurs de LHAMO",
+      "body": "Un déclencheur est quelque chose autour de nous ou dans notre popre esprit qui nous fait ressentir une émotion. Choisir une étiquette pour en savoir plus au sujet du déclenchement de LHAMO",
+      "header_mobile": "Déclencheurs de LHAMO",
+      "body_mobile": "Un déclencheur est quelque chose autour de nous ou dans notre popre esprit qui nous fait ressentir une émotion. Choisis une étiquette pour en savoir plus au sujet du déclenchement de LHAMO",
+      "sectionName": "Déclencheurs",
+      "steps": [
+        {
+          "header": "Déclencheurs",
+          "body": "Certains déclencheurs sont naturels et universels pour tous, d'autres déclencheurs dépendent du monde autour de nous ou de notre expérience propre.",
+          "header_mobile": "Déclencheurs",
+          "body_mobile": "Un déclencheur est quelque chose autour de nous ou dans notre popre esprit qui nous fait ressentir une émotion. Choisis une étiquette pour en savoir plus au sujet du déclenchement de LHAMO"
+        },
+        {
+          "header": "Perception",
+          "body": "Nos expérience personnelles passées déterminent si nos déclencheurs appris nous rendent émotifs. Les déclencheurs universels nous activent dans tous les cas.",
+          "header_mobile": "Perception",
+          "body_mobile": "Nos expérience personnelles passées déterminent si nos déclencheurs appris nous rendent émotifs. Les déclencheurs universels nous activent dans tous les cas."
+        },
+        {
+          "header": "Réponse",
+          "body": "Les émotions sont une réponse automatique lorsque un déclencheur nous atteint. Généralement, l'état émotionnel que nous ressentons ainsi que les actions que nous effectuons se déroulent sans que l'on sache pourquoi.",
+          "header_mobile": "Réponse",
+          "body_mobile": "Les émotions sont une réponse automatique lorsque un déclencheur nous atteint. Généralement, l'état émotionnel que nous ressentons ainsi que les actions que nous effectuons se déroulent sans que l'on sache pourquoi."
+        },
+        {
+          "header": "Déclencheurs universels",
+          "body": "Voici un exemple de déclencheur universel. Nous avons tous les mêmes déclencheurs universels, nous sommes nés avec. Ils nous affectent plus intensément que les déclencheurs que nous avons appris.",
+          "header_mobile": "Déclencheurs universels",
+          "body_mobile": "Voici un exemple de déclencheur universel. Nous avons tous les mêmes déclencheurs universels, nous sommes nés avec. Ils nous affectent plus intensément que les déclencheurs que nous avons appris."
+        },
+        {
+          "header": "Déclencheurs appris",
+          "body": "Voici un exemple d'un déclenchent appris. Certains déclencheurs sont partagés au sein d'une culture, d'autres sont très personnels et créés par notre expérience individuelle.",
+          "header_mobile": "Déclencheurs appris",
+          "body_mobile": "Voici un exemple d'un déclenchent appris. Certains déclencheurs sont partagés au sein d'une culture, d'autres sont très personnels et créés par notre expérience individuelle."
+        }
+      ]
+    },
+    "moods": {
+      "header": "L'humeur de LHAMO",
+      "body": "Les humeurs sont les grandes cousines des émotions qui nous font ressentir une émotion sans aucun déclencheur précis. Choisir une forme pour en savoir plus.",
+      "caption": "",
+      "header_mobile": "L'humeur de LHAMO",
+      "body_mobile": "Les humeurs sont les grandes cousines des émotions qui nous font ressentir une certaine émotion  sans aucun déclencheur précis. Choisir une forme pour en savoir plus.",
+      "sectionName": "Humeurs",
+      "interaction_prompt": ""
+    },
+    "calm": {
+      "header": "L'expérience du calme",
+      "body": "L'atlas des émotions a été commandité par le Dalai Lama, son but est \"afin de découvrir le nouveau monde, nous avons eu besoin d'une carte, et afin de trouver un esprit calme en nous, nous avons besoin d'un carte de nos émotions\". Le but, simple mais difficile, de cet Atlas, est de nous aider à être conscient de nos émotions. Prendre conscience de nos émotions signifie comprendre comment elles sont declenchées et comment y répondre. La prise de conscience est déjà une stratégie, elle nous aide à comprendre l'expérience de nos émotions. Nous ne voulons pas nous débarasser de nos émotions, nous voulons des stratégies qui nous aident à y répondre d'une manière bénéfique et consctructive.",
+      "caption": "Rejouer",
+      "header_mobile": "L'expérience du calme",
+      "body_mobile": "L'atlas des émotions a été commandité par le Dalai Lama, son but est \"afin de découvrir nous avons eu besoin d'une carte, et afin de trouver un esprit calme en nous, nous avons besoin d'un carte de nos émotions\". Le but, simple mais difficile, de cet Atlas, est de nous aider à être conscient de nos émotions. Prendre conscience de nos émotions signifie comprendre comment elles sont declenchées et comment y répondre. La prise de conscience est déjà une stratégie, elle nous aide à comprendre l'expérience de nos émotions. Nous ne voulons pas nous débarasser de nos émotions, nous voulons des stratégies qui nous aident à y répondre d'une manière bénéfique et consctructive.",
+      "sectionName": "Calme",
+      "secondary": {
+        "header": "Visiter l'Annexe",
+        "body": "Pour en savoir plus au sujet de nos émotions, cliquer sur \"Plus d'informations\" dans le coin en bas à droite.",
+        "header_mobile": "Visiter l'Annexe",
+        "body_mobile": "L'atlas des émotions a été commandité par le Dalai Lama, son but est \"afin de découvrir nous avons eu besoin d'une carte, et afin de trouver un esprit calme en nous, nous avons besoin d'un carte de nos émotions\". Le but, simple mais difficile, de cet Atlas, est de nous aider à être conscient de nos émotions. Prendre conscience de nos émotions signifie comprendre comment elles sont declenchées et comment y répondre. La prise de conscience est déjà une stratégie, elle nous aide à comprendre l'expérience de nos émotions. Nous ne voulons pas nous débarasser de nos émotions, nous voulons des stratégies qui nous aident à y répondre d'une manière bénéfique et consctructive."
+      },
+      "crowdfunding": "We are making an atlas for children! If you would like to support this project, please visit our page on <a target=\"_newWin\" href=\"https://www.indiegogo.com/projects/help-create-an-atlas-of-emotions-for-children#/\"><img src=\"img/Indiegogo-Logo.png\" alt=\"indie gogo\"></a>"
+    },
+    "more": {
+      "header": "",
+      "body": "",
+      "caption": "Retour à l'Atlas",
+      "header_mobile": "",
+      "body_mobile": "",
+      "sectionName": "Plus d'informations",
+      "interaction_prompt": ""
+    },
+    "timeline": {
+      "header": "La chronologie",
+      "header_mobile": "La chronologie",
+      "body": [
+        "Nos émotions se déploient sur une chronologie. La chronologie commence avec un déclencheur qui initie une expérience émotionelle et donne ensuite lieu à une réponse.",
+        "Essaye de choisir différentes émotions depuis la liste sous la chronologie.",
+        "Remarque comment des déclencheurs différents peuvent mener à des réponses différentes  selon l'émotion que l'on ressent."
+      ],
+      "body_mobile": [
+        "Nos émotions se déploient sur une chronologie. La chronologie commence avec un déclencheur qui initie une expérience émotionelle et donne ensuite lieu à une réponse.",
+        "Essaye de choisir différentes émotions depuis la liste sous la chronologie.",
+        "Remarque comment des déclencheurs différents peuvent mener à des réponses différentes  selon l'émotion que l'on ressent."
+      ],
+      "restart_button": "Rejouer",
+      "intro_button": "Comment cela se produit-il?",
+      "secondary": {
+        "trigger": {
+          "header": "Déclencheur",
+          "body": [
+            "Le déclencheur se déroule dans un contexte :",
+            [
+              "Les circonstances actuelles et les sentiments",
+              "L'événement",
+              "Notre vision du monde, influencée par nos expériences antérieures, nos histoires personnelles et notre héritage universel de scénarios liés à des des évènements importants."
+            ]
+          ],
+          "button": "ajouter la prise conscience",
+          "body_mobile": [
+            "Le déclencheur se déroule dans un contexte :",
+            [
+              "Les circonstances actuelles et les sentiments",
+              "L'événement",
+              "Notre vision du monde, influencée par nos expériences antérieures, nos histoires personnelles et notre héritage universel de scénarios liés à des des évènements importants."
+            ]
+          ],
+          "header_mobile": "Déclencheur"
+        },
+        "experience": {
+          "header": "Expérience",
+          "body": [
+            "L'expérience émotionelle qui est déclenchée contient des sentiments subjectifs et des sensations physiques. Ces derniers déforment notre perception d'une situation."
+          ],
+          "button": "ajouter la prise conscience",
+          "body_mobile": [
+            "L'expérience émotionelle qui est déclenchée contient des sentiments subjectifs et des sensations physiques. Ces derniers déforment notre perception d'une situation."
+          ],
+          "header_mobile": "Expérience"
+        },
+        "response": {
+          "header": "Réponse",
+          "body": [
+            "Nous avons un choix sur nos façon de répondre, même si parfois il est difficile de contrôler nos réponses. Certaines réponses sont plus constructives que d'autres."
+          ],
+          "button": "Pourquoi est-il difficile de rester attentif ?",
+          "body_mobile": [
+            "Nous avons un choix sur nos façon de répondre, même si parfois il est difficile de contrôler nos réponses. Certaines réponses sont plus constructives que d'autres."
+          ],
+          "header_mobile": "Réponse"
+        },
+        "refractory": {
+          "header": "La saturation émotive",
+          "body": [
+            "Lorsqu'une émotion est déclenchée, nous sommes pris par une émotion. Cela limite notre abilité à penser avec clarté et à choisir comment nous réagissons.",
+            "À mesure que le temps passe, nous gagnons en clarté et notre capacité à faire des choix réfléchis augmente.",
+            "Avec attention nous pouvons nous arrêter avant de répondre et choisir une réponse la plus bénéfique pour atteindre nos objectifs."
+          ],
+          "button": "Voir la vue globale",
+          "body_mobile": [
+            "Lorsqu'une émotion est déclenchée, nous sommes pris par une émotion. Cela limite notre abilité à penser avec clarté et à choisir comment nous réagissons.",
+            "À mesure que le temps passe, nous gagnons en clarté et notre capacité à faire des choix réfléchis augmente.",
+            "Avec attention nous pouvons nous arrêter avant de répondre et choisir une réponse la plus bénéfique pour atteindre nos objectifs."
+          ],
+          "header_mobile": "La saturation émotive"
+        },
+        "blocks": {
+          "header": "Vue globale",
+          "body": [
+            "Choissez un segment de la chronologie et apprenez comment les chercheurs donnent un sens à nos épisodes émotionnels. Ensuite, poursuivez dans la section pour voir comment ils peuvent cartographier nos expériences émotionelles."
+          ],
+          "labels": {
+            "precondition": "Pré-condition",
+            "event": "Évènement",
+            "perceptual_database": "Base de données percéptuelles",
+            "physical_changes": "Changements physiques",
+            "state": "État émotionnel",
+            "mental_changes": "Changement mentaux",
+            "constructive_response": "Réponse constructive",
+            "destructive_response": "Réponse destructive",
+            "ambiguous_response": "Réponses ambiguë"
+          },
+          "captions": {
+            "precondition": "Le contexte, qui influence la manière dont nous expérimentons une émotion",
+            "event": "Un événement qui se déroule dans le monde de nos propres esprits.",
+            "perceptual_database": "Notre vision du monde est le résultat de notre histoire personnelle et des scénarios universels; ces scénarios sont les caractéristique essentielles d'expériences émotionelles répétées, certaines héritées, certaines acquises.",
+            "physical_changes": "La sensation physique automatique de notre émotion",
+            "emotional_state": "Nos changements physiques et mentaux combinés",
+            "mental_changes": "L'expérience vécue immédiate de notre émotion",
+            "constructive_response": "Une réponse qui nous aide dans nos objectifs",
+            "destructive_response": "Une réponse qui nous empêche d'atteindre nos objectifs",
+            "ambiguous_response": "Une réponse qui peut être utile ou non - et parfois nous n'en sommes pas certain"
+          },
+          "body_mobile": [
+            "Choissez un segment de la chronologie et apprenez comment les chercheurs donnent un sens à nos épisodes émotionnels. Ensuite, poursuivez dans la section pour voir comment ils peuvent cartographier nos expériences émotionelles."
+          ],
+          "header_mobile": "Vue globale"
+        },
+        "common": {
+          "header": "timeline_common_header",
+          "body": [],
+          "phrases": {
+            "you_feel": "vous ressentez de la"
+          },
+          "body_mobile": [],
+          "header_mobile": "timeline_common_header"
+        }
+      }
+    }
+  },
+  "about": {
+    "subsections": [
+      {
+        "title": "A propos des Ekmans",
+        "desc": "Paul Ekman est un psychologue américain reconnu, pionnier dans la recherche sur les émotions. Après avoir enseignée dans la UCSF durant 40 ans et collaboré avec des organismes chargés de faire respecter les lois mais aussi avec le Dalai Lama. Il dirge actuellement une entreprise privée de formation. Eve Ekman est une universitaire post-doctortat dans le Centre Osher pour les médecines complémentaires de la UCSF. Comme formatrice d'enseignants à la culture de l'équilibre émotionnel (CEB en anglais), une formation autour de la régulation des émotions et de la méditation, Eve adapta le CEB pour l'enseigner aux donneurs de soins de divers domaines.",
+        "title_mobile": "A propos des Ekmans",
+        "desc_mobile": "Paul Ekman est un psychologue américain reconnu, pionnier dans la recherche sur les émotions. Après avoir enseignée dans la UCSF durant 40 ans et collaboré avec des organismes chargés de faire respecter les lois mais aussi avec le Dalai Lama. Il dirge actuellement une entreprise privée de formation. Eve Ekman est une universitaire post-doctortat dans le Centre Osher pour les médecines complémentaires de la UCSF. Comme formatrice d'enseignants à la culture de l'équilibre émotionnel (CEB en anglais), une formation autour de la régulation des émotions et de la méditation, Eve adapta le CEB pour l'enseigner aux donneurs de soins de divers domaines."
+      },
+      {
+        "title": "A propos du Design",
+        "desc": "a été fondé par Eric Rodenbeck en 2001. Depuis, l'étude s'est développé et compte aujourd'hui 12 individus, et a établis une réputation d'experts dans la création de projets convaincants de dessin interactifs et de visualisation de données. Stamen n'est pas unlaboratoire d'investigation ni une société de dessin traditionnelle, mais quelque chose d'intermédiaire : un lieu où l'on valorise la collaboration, où les bonnes idées peuvent venir de nimporte quel partie et les résultats ont une place prépondérantes.",
+        "title_mobile": "A propos du Design",
+        "desc_mobile": "a été fondé par Eric Rodenbeck en 2001. Depuis, l'étude s'est développé et compte aujourd'hui 12 individus, et a établis une réputation d'experts dans la création de projets convaincants de dessin interactifs et de visualisation de données. Stamen n'est pas unlaboratoire d'investigation ni une société de dessin traditionnelle, mais quelque chose d'intermédiaire : un lieu où l'on valorise la collaboration, où les bonnes idées peuvent venir de nimporte quel partie et les résultats ont une place prépondérantes."
+      },
+      {
+        "title": "about_header_3",
+        "desc": "about_body_3",
+        "title_mobile": "about_header_3",
+        "desc_mobile": "about_body_3"
+      },
+      {
+        "title": "about_header_4",
+        "desc": "about_body_4",
+        "title_mobile": "about_header_4",
+        "desc_mobile": "about_body_4"
+      },
+      {
+        "title": "about_header_5",
+        "desc": "about_body_5",
+        "title_mobile": "about_header_5",
+        "desc_mobile": "about_body_5"
+      },
+      {
+        "title": "about_header_6",
+        "desc": "about_body_6",
+        "title_mobile": "about_header_6",
+        "desc_mobile": "about_body_6"
+      },
+      {
+        "title": "about_header_7",
+        "desc": "about_body_7",
+        "title_mobile": "about_header_7",
+        "desc_mobile": "about_body_7"
+      }
+    ],
+    "title": "A propos de cet Atlas",
+    "desc": "L'atlas des émotions est un outil intéractif dont le but est de cutliver la conscience des émotions. Ce site invite à visualiser, identifier et explorer 5 émotions primaires (et ses états sentimentaux, les actions, les déclencheurs et les humeurs) afin d'établir une meilleure compréhension de leur influence sur nos vies. Même si nous ne pouvons pas toujours choisir quelle émotions ressentir  et quand les ressentir, en cultivant la conscience émotionnelle nous pouvons choisir la manière de répondre à ce que nous ressentons. L'atlas est né lorsque le Dalaï-Lama demanda à un spécialiste des émotions Paul Ekman de créer une carte des émotions qui puisse aider les personnes à apprendre à avoir des expériences constructives sur leurs émotions. Ekman, expert sur le sujet, a été commandité par le passé de différents projets en lien avec les émotions, entre autres le film de Pixar Inside Out (Vice-versa). Conjointement avec sa fille, Eve Ekman, il créa l'Atlas des Emotions en réponse à cette demande du Dalai Lama.",
+    "title_mobile": "A propos de cet Atlas",
+    "desc_mobile": "L'atlas des émotions est un outil intéractif dont le but est de cutliver la conscience des émotions. Ce site invite à visualiser, identifier et explorer 5 émotions primaires (et ses états sentimentaux, les actions, les déclencheurs et les humeurs) afin d'établir une meilleure compréhension de leur influence sur nos vies. Même si nous ne pouvons pas toujours choisir quelle émotions ressentir  et quand les ressentir, en cultivant la conscience émotionnelle nous pouvons choisir la manière de répondre à ce que nous ressentons. L'atlas est né lorsque le Dalaï-Lama demanda à un spécialiste des émotions Paul Ekman de créer une carte des émotions qui puisse aider les personnes à apprendre à avoir des expériences constructives sur leurs émotions. Ekman, expert sur le sujet, a été commandité par le passé de différents projets en lien avec les émotions, entre autres le film de Pixar Inside Out (Vice-versa). Conjointement avec sa fille, Eve Ekman, il créa l'Atlas des Emotions en réponse à cette demande du Dalai Lama.",
+    "sectionName": "A propos",
+    "sectionName_mobile": "A propos"
+  },
+  "emotrak": {
+    "subsections": [
+      {
+        "title": "",
+        "desc": "La Docteur Eve Ekman et ses collaborateurs ont développés une application nouvelle, EmoTrack. Inscrit toi pour être le premier ou la première à être au courant de la sorte de cette application d'entrainement émotionnel sur une base scientifique.",
+        "title_mobile": "",
+        "desc_mobile": "La Docteur Eve Ekman et ses collaborateurs ont développés une application nouvelle, EmoTrack. Inscrit toi pour être le premier ou la première à être au courant de la sorte de cette application d'entrainement émotionnel sur une base scientifique.",
+        "image": "emotrak",
+        "mail": null
+      },
+      {
+        "title": "",
+        "desc": "emotrak_section_2",
+        "title_mobile": "",
+        "desc_mobile": "emotrak_section_2",
+        "image": null,
+        "mail": true
+      },
+      {
+        "title": "",
+        "desc": "La Docteur Eve Ekman est une académique post-doctorat de l'université de San Francisco en Californie qui étudie l'épuisement et le bien-être émotionnel. La Docteur Ekman s'est dédiée à développer et à évaluer EmoTrak pour soutenir les donneurs de soins. L'application est un outil d'autoévaluation pour étudier les déclencheurs d'émotions et les expérience et réponses émotionelles, qui apportent à l'usager de courtes méditations centrées sur les émotions et aussi un retour d'expérience sur son profil émotionnel.",
+        "title_mobile": "",
+        "desc_mobile": "La Docteur Eve Ekman est une académique post-doctorat de l'université de San Francisco en Californie qui étudie l'épuisement et le bien-être émotionnel. La Docteur Ekman s'est dédiée à développer et à évaluer EmoTrak pour soutenir les donneurs de soins. L'application est un outil d'autoévaluation pour étudier les déclencheurs d'émotions et les expérience et réponses émotionelles, qui apportent à l'usager de courtes méditations centrées sur les émotions et aussi un retour d'expérience sur son profil émotionnel.",
+        "image": null,
+        "mail": null
+      }
+    ],
+    "title": "EmoTrak",
+    "desc": "Améliore ton bien-être avec l'entrainement quotidien d'équilibre émotionnel",
+    "header_mobile": "EmoTrak",
+    "body_mobile": "Améliore ton bien-être avec l'entrainement quotidien d'équilibre émotionnel<br> \"<!-- Begin MailChimp Signup Form -->\n<link href=\"\"//cdn-images.mailchimp.com/embedcode/slim-10_7.css\"\" rel=\"\"stylesheet\"\" type=\"\"text/css\"\">\n<style type=\"\"text/css\"\">\n        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.\n           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n</style>\n<div id=\"\"mc_embed_signup\"\">\n<form action=\"\"//eveekman.us12.list-manage.com/subscribe/post?u=a8f41488aed929208e96dcf44&amp;id=76c8861d7d\"\" method=\"\"post\"\" id=\"\"mc-embedded-subscribe-form\"\" name=\"\"mc-embedded-subscribe-form\"\" class=\"\"validate\"\" target=\"\"_blank\"\" novalidate>\n    <div id=\"\"mc_embed_signup_scroll\"\">\n        <label for=\"\"mce-EMAIL\"\">Subscribe for EmoTrak Release Updates</label>\n        <input type=\"\"email\"\" value=\"\"\"\" name=\"\"EMAIL\"\" class=\"\"email\"\" id=\"\"mce-EMAIL\"\" placeholder=\"\"email address\"\" required>\n    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n    <div style=\"\"position: absolute; left: -5000px;\"\" aria-hidden=\"\"true\"\"><input type=\"\"text\"\" name=\"\"b_a8f41488aed929208e96dcf44_76c8861d7d\"\" tabindex=\"\"-1\"\" value=\"\"\"\"></div>\n    <div class=\"\"clear\"\"><input type=\"\"submit\"\" value=\"\"Subscribe\"\" name=\"\"subscribe\"\" id=\"\"mc-embedded-subscribe\"\" class=\"\"button\"\"></div>\n    </div>\n</form>\n</div>\n\n<!--End mc_embed_signup-->\"",
+    "sectionName": "EmoTrak",
+    "sectionName_mobile": "EmoTrak"
+  }
+}

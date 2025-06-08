@@ -4,7 +4,7 @@ import { transform } from "d3-transform";
 import TWEEN from "tween.js";
 
 import Circle from "./Circle.js";
-import emotionsData from "../static/emotionsData.json";
+import emotionsData from "../static/strings/langs/strings.en.json";
 import sassVars from "../scss/variables.json";
 import appStrings from "./appStrings.js";
 

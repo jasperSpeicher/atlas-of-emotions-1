@@ -49,7 +49,7 @@ scp -prq ./dist/. studio.stamen.com:www/emotionmap/show/v2/latest/ (or `/yyyy-mm
 ## Updating text content
 
 TL;DR:
-1. Edit strings in [`en.json`](./static/strings/langs/es.json), [`es.json`](./static/strings/langs/es.json), etc.
+1. Edit strings in [`strings.en.json`](./static/strings/langs/es.json), [`es.json`](./static/strings/langs/es.json), etc.
 2. `npm run strings` and rebuild / redeploy.
 
 Text content is arranged as follows:
@@ -68,7 +68,7 @@ Note that each language must be set to `"enabled": true` for it to be available 
 
 Text content source for the application is in a single Google Sheet per language, e.g. [AoE - English](https://docs.google.com/spreadsheets/d/1mZH66DoV1F3f1k2cP1jo5t7ApcaSIzl5Xycw_oUSPNo/edit#gid=0). These files are manually edited, with the keys pulled from the content keys files (see below), and the values provided by writers / translators.
 
-Local text content for the application lives in a single strings file per language: [`en.json`](./static/strings/langs/es.json), [`es.json`](./static/strings/langs/es.json), etc. These files are loaded on request at runtime when the application loads or the language is changed. In order to prevent accidentally breaking the app, these strings files do not update automatically; call `npm run strings` to pull down the latest content from Google Sheets that contain the strings. They are committed with the rest of the source, however; this means that strings don't have to be pulled down when the repo is checked out, only when the source changes and an update is required.
+Local text content for the application lives in a single strings file per language: [`strings.en.json`](./static/strings/langs/es.json), [`es.json`](./static/strings/langs/es.json), etc. These files are loaded on request at runtime when the application loads or the language is changed. In order to prevent accidentally breaking the app, these strings files do not update automatically; call `npm run strings` to pull down the latest content from Google Sheets that contain the strings. They are committed with the rest of the source, however; this means that strings don't have to be pulled down when the repo is checked out, only when the source changes and an update is required.
 
 #### Content keys
 All localized string keys live in the ["AoE String Keys" spreadsheet on Drive](https://docs.google.com/spreadsheets/d/18rr302KT37L_DVOVA54CyoSEC-aQqwjWk8E7iByscyA/). To import them into the codebase, click the "Export to JSON" button in the menu at the top of the spreadsheet, select "Export all sheets to JSON", and copy+paste the resulting JSON into [`emotionsData.json`](https://github.com/stamen/atlas-of-emotions/blob/master/static/strings/emotionsData.json). These keys map to the translated strings described above in **Localized Strings**.
