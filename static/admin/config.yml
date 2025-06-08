@@ -6,7 +6,7 @@
 backend:
   name: github
   repo: jasperSpeicher/atlas-of-emotions-1 # IMPORTANT: Replace with your repo path
-  branch:  data-source-refactor # Or whichever branch you want to commit to
+  branch:  waking-up-cms # Or whichever branch you want to commit to
   # site_domain: your-site-domain.com # Optional: if you have GitHub gateway configured
 
 media_folder: "static/assets/uploads"
