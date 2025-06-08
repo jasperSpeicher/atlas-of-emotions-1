@@ -1,1892 +1,2636 @@
 {
-	"slug": "strings",
-	"string_groups": [
-		{
-			"group_name": "Group 1",
-			"items": [
-				{
-					"key": "site_header",
-					"value": "Atlas der Gefühle"
-				},
-				{
-					"key": "site_dropdown_label",
-					"value": "Wähle eine Emotion"
-				},
-				{
-					"key": "site_learn_more_button",
-					"value": "Erfahre mehr"
-				},
-				{
-					"key": "site_close_button",
-					"value": "Schließen"
-				},
-				{
-					"key": "site_back_button",
-					"value": "Zurück"
-				},
-				{
-					"key": "navigation_introduction_menu_item",
-					"value": "Einleitung"
-				},
-				{
-					"key": "navigation_timeline_menu_item",
-					"value": "Zeitstrahl"
-				},
-				{
-					"key": "navigation_experience_menu_item",
-					"value": "Erleben"
-				},
-				{
-					"key": "navigation_response_menu_item",
-					"value": "Reaktion"
-				},
-				{
-					"key": "navigation_strategies_menu_item",
-					"value": "Strategien"
-				},
-				{
-					"key": "navigation_all_menu_item",
-					"value": "Alles"
-				},
-				{
-					"key": "navigation_introduction_section_header",
-					"value": "Einleitung"
-				},
-				{
-					"key": "navigation_timeline_section_header",
-					"value": "Der Zeitstrahl"
-				},
-				{
-					"key": "navigation_experience_section_header",
-					"value": "Unser Erleben"
-				},
-				{
-					"key": "navigation_response_section_header",
-					"value": "Unsere Reaktion"
-				},
-				{
-					"key": "navigation_strategies_section_header",
-					"value": "Strategien"
-				},
-				{
-					"key": "intro_header",
-					"value": "Willkommen zum Atlas der Emotionen"
-				},
-				{
-					"key": "intro_body_mobile",
-					"value": "Die Idee des Atlasses wurde im Rahmen von Gesprächen über die Wissenschaft der Emotionen zwischen dem Dalai Lama und Dr. Paul Ekman geboren. Erschaffen wurde er in Zusammenarbeit mit Stamen Design und Pauls Tochter, Dr. Eve Ekman. Der Atlas der Emotionen ist eine interaktive und visuelle Reise durch die Welt der Emotionen."
-				},
-				{
-					"key": "intro_secondary_header_1",
-					"value": "Willkommen zum Atlas der Emotionen"
-				},
-				{
-					"key": "intro_secondary_copy_1",
-					"value": "Der erste Schritt zur Regulation der eigenen Gefühle besteht darin, zu erkennen und zu beschreiben was du fühlst."
-				},
-				{
-					"key": "intro_caption_1",
-					"value": "Dieser Atlas ist ein visuelles Tool, um deinen Emotionswortschatz zu erweitern. Das Ziel ist es, den eigenen Handlungsspielraum zu erweitern: was löst Emotionen bei mir aus und wie reagiere ich darauf."
-				},
-				{
-					"key": "intro_secondary_header_2",
-					"value": "Durch den Atlas navigieren"
-				},
-				{
-					"key": "intro_secondary_copy_2",
-					"value": "Es gibt fünf Emotionen zu erkunden. Erfahre mehr über jede Emotion, indem du mit den Formen interagierst. Navigiere, indem du \"runter\", \"inks\" und \"rechts\" klickst. Betrachte jede Emotion und überlege, wie diese mit deiner eigenen Lebenserfahrung zusammenhängt.  "
-				},
-				{
-					"key": "intro_caption_2"
-				},
-				{
-					"key": "intro_secondary_header_3",
-					"value": "Der Atlas: Eine neue Landkarte"
-				},
-				{
-					"key": "intro_secondary_copy_3",
-					"value": "Der Atlas wurde durch den Dalai Lama beauftragt, um eine wissenschaftlich basierte \"road map\" zur emotionalen Bewusstheit zu kreieren. Dr. Paul Ekman und seine Tochter, Eve Ekman beziehen sich in diesem Atlas auf eine durch sie durchgeführte Metastudie <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">study</a> they conducted.<br><br> Die dort befragten Wissenschaftler stimmten darin überein, dass es diese fünf Emotionen, welche von allen Menschen gefühlt werden. "
-				},
-				{
-					"key": "intro_caption_3",
-					"value": "Wähle eine Emotion und beginne mit der Erkundung."
-				},
-				{
-					"key": "intro_section_name",
-					"value": "Einleitung"
-				},
-				{
-					"key": "intro_button_goto",
-					"value": "Gehe zum Atlas"
-				},
-				{
-					"key": "intro_button_start",
-					"value": "Unternimm eine Rundtour"
-				},
-				{
-					"key": "intro_button_back",
-					"value": "Zurück"
-				},
-				{
-					"key": "intro_button_why",
-					"value": "Warum ein Atlas?"
-				},
-				{
-					"key": "intro_button_start",
-					"value": "Los geht’s"
-				},
-				{
-					"key": "intro_gfx_left",
-					"value": "Links"
-				},
-				{
-					"key": "intro_gfx_right",
-					"value": "Rechts"
-				},
-				{
-					"key": "intro_gfx_down",
-					"value": "Runter"
-				},
-				{
-					"key": "intro_gfx_chart_anger",
-					"value": "Ärger ist universell"
-				},
-				{
-					"key": "intro_gfx_chart_fear",
-					"value": "Angst ist universell"
-				},
-				{
-					"key": "intro_gfx_chart_disgust",
-					"value": "Ekel ist universell"
-				},
-				{
-					"key": "intro_gfx_chart_sadness",
-					"value": "Trauer ist universell"
-				},
-				{
-					"key": "intro_gfx_chart_enjoyment",
-					"value": "Freude ist universell"
-				},
-				{
-					"key": "hero_header",
-					"value": "Willkommen zum Atlas der Emotionen"
-				},
-				{
-					"key": "hero_section_name",
-					"value": "Einleitung"
-				},
-				{
-					"key": "hero_sub_header",
-					"value": "Gefördert und unterstützt durch den Dalai Lama"
-				},
-				{
-					"key": "hero_sub_header_learn_more",
-					"value": "Erfahre mehr"
-				},
-				{
-					"key": "hero_slide_1",
-					"value": "Dieser Atlas ist ein interaktives Tool, um deinen Emotionswortschatz zu erweitern und deine Welt der Emotionen zu erleuchten."
-				},
-				{
-					"key": "hero_slide_2",
-					"value": "Das Ziel besteht darin, größere Kontrolle darüber zu erlangen, was Gefühle bei dir auslösen und wie du darauf reagierst. "
-				},
-				{
-					"key": "hero_slide_3",
-					"value": "Der erste Schritt zu emotionaler Bewusstheit besteht darin, dass du lernst zu erkennen und zu beschreiben, wie du dich fühlst und warum du dich so fühlst."
-				},
-				{
-					"key": "hero_about_header",
-					"value": "Über der Atlas"
-				},
-				{
-					"key": "hero_about_body_1",
-					"value": "Der Dalai Lama stellte sich eine Landkarte unserer Emotionen vor, um einen ruhigen Geist zu entwickeln. Er bat seinen langjährigen Freund und renommierten Emotionswissenschaftler Dr. Paul Ekman, diese Idee umzusetzen. Ekman nahm sich der Realisierung des Atlas der Emotionen zusammen mit seiner Tochter an: Eve Ekman, eine Emotionswissenschaftlerin der zweiten Generation und zugleich Trainerin. Der Atlas spiegelt die Erkenntnisse wider, die Wissenschaftler im Rahmen von psychologischen Studien zur Emotion gewonnen haben."
-				},
-				{
-					"key": "hero_call_to_action_button",
-					"value": "Start"
-				},
-				{
-					"key": "continents_header",
-					"value": "Fünf universelle Emotionen"
-				},
-				{
-					"key": "continents_body",
-					"value": "Die meisten Emotionswissenschaftler stimmen hinsichtlich dieser fünf universellen Emotionen überein: Emotionen, die alle Menschen, ungeachtet ihrer Herkunft und Sozialisation, gemeinsam haben. Die Bewegung der Formen spiegelt die fließende Beschaffenheit von Emotionen wider -  die Art und Weise wie sich Emotionen von Moment zu Moment ändern können. Wähle eine Emotion, um mehr zu erfahren."
-				},
-				{
-					"key": "continents_body_mobile",
-					"value": "Die meisten Emotionswissenschaftler stimmen hinsichtlich dieser fünf universellen Emotionen überein: Emotionen, die alle Menschen, ungeachtet ihrer Herkunft und Sozialisation, gemeinsam haben. Klicke auf eine Emotion, um mehr zu erfahren."
-				},
-				{
-					"key": "continents_section_name",
-					"value": "universelle Emotionen"
-				},
-				{
-					"key": "states_header",
-					"value": "Zustände von LHAMO"
-				},
-				{
-					"key": "states_body",
-					"value": "Hier erkunden wir unterschiedliche Zustände und Intensitäten innerhalb einer Emotion. "
-				},
-				{
-					"key": "states_axis_labels",
-					"value": "Geringste Intensität, höchste Intensität"
-				},
-				{
-					"key": "states_body_mobile",
-					"value": "LHAMO kann sehr sanft oder extrem wahrgenommen werden - oder irgendwo dazwischen. Klicke auf die Formen , um einige der Zustände kennenzulernen, die wir erleben können. "
-				},
-				{
-					"key": "states_section_name",
-					"value": "Zustände"
-				},
-				{
-					"key": "states_interaction_prompt",
-					"value": "Wähle eine Form, um mehr über die emotionalen Zustände von LHAMO zu erfahren."
-				},
-				{
-					"key": "actions_header",
-					"value": "Handlungen aufgrund von LHAMO"
-				},
-				{
-					"key": "actions_body",
-					"value": "Wir reagieren auf emotionale Zustände mit unseren Handlungen. Unsere Reaktion auf die gleiche Emotion mag dabei variieren - abhängig von der Situation "
-				},
-				{
-					"key": "actions_body_mobile",
-					"value": "Wir reagieren auf emotionale Zustände mit unseren Handlungen. Klicke auf die Formen, um mehr über die möglichen Reaktionen auf LHAMO zu erfahren."
-				},
-				{
-					"key": "actions_secondary_header_1",
-					"value": "Zielführende Handlungen"
-				},
-				{
-					"key": "actions_secondary_copy_1",
-					"value": "In diesem Stadium ist die Handlung zielführend. Sie ist eine hilfreiche Reaktion auf die Emotion."
-				},
-				{
-					"key": "actions_secondary_header_2",
-					"value": "Zweideutige Handlungen"
-				},
-				{
-					"key": "actions_secondary_copy_2",
-					"value": "In diesem Zustand ist die Handlung nicht eindeutig zu bewerten. Sie könnte entweder eine nützliche Reaktion auf die Emotion sein oder Schaden anrichten. "
-				},
-				{
-					"key": "actions_secondary_header_3",
-					"value": "Schädliche Handlungen"
-				},
-				{
-					"key": "actions_secondary_copy_3",
-					"value": "In diesem Zustand ist diese Handlung schädlich. Sie könnte Schaden anrichten."
-				},
-				{
-					"key": "actions_section_name",
-					"value": "Handlungen"
-				},
-				{
-					"key": "actions_interaction_prompt",
-					"value": "Wähle eine Form, um mehr über einige der möglichen emotionalen Zustände, die wir erleben können, zu erfahren. Wähle dann eine Handlung für weitere Informationen."
-				},
-				{
-					"key": "triggers_header",
-					"value": "Die Auslöser von LHAMO"
-				},
-				{
-					"key": "triggers_body",
-					"value": "Ein Auslöser ist etwas in unserer Umwelt oder in unserer Gedankenwelt, dass eine Emotion in uns wachruft. Wähle einen Reiter, um mehr über das Auslösen von LHAMO zu erfahren"
-				},
-				{
-					"key": "triggers_body_mobile",
-					"value": "Ein Auslöser ist etwas in unserer Umwelt oder in unserer Gedankenwelt, dass eine Emotion in uns wachruft. Wähle einen Reiter, um mehr über das Auslösen von LHAMO zu erfahren"
-				},
-				{
-					"key": "triggers_secondary_header_1",
-					"value": "Auslöser"
-				},
-				{
-					"key": "triggers_secondary_body_1",
-					"value": "Einige Auslöser sind fest in uns verankert und für alle Menschen gleich. Andere Auslöser erlernen wir durch unsere Umwelt und durch unsere individuellen Erfahrungen. "
-				},
-				{
-					"key": "triggers_secondary_header_2",
-					"value": "Wahrnehmung"
-				},
-				{
-					"key": "triggers_secondary_body_2",
-					"value": "Unsere persönliche Erfahrung bestimmt, ob ein Auslöser uns emotional werden lässt oder nicht. Universelle Auslöser hingegen lösen ungeachtet dessen Emotionen aus. "
-				},
-				{
-					"key": "triggers_secondary_header_3",
-					"value": "Reaktion"
-				},
-				{
-					"key": "triggers_secondary_body_3",
-					"value": "Emotionen sind unsere natürliche Reaktion auf bestimmte Auslöser. Die Ausprägung der Emotion und unsere Handlungen finden häufig statt, ohne dass wir realisieren warum. "
-				},
-				{
-					"key": "triggers_secondary_header_4",
-					"value": "universelle Auslöser"
-				},
-				{
-					"key": "triggers_secondary_body_4",
-					"value": "Dies ist ein Beispiel eines universellen Auslösers. Jeder Mensch hat die gleichen universellen Auslöser - wir sind damit geboren und sie wirken sich intensiver aus, als erlernte Auslöser. "
-				},
-				{
-					"key": "triggers_secondary_header_5",
-					"value": "Erlernte Auslöser"
-				},
-				{
-					"key": "triggers_secondary_body_5",
-					"value": "Dies ist ein Beispiel für einen erlernten Auslöser. Einige erlernte Auslöser sind kulturspezifisch, andere wiederum sind sehr persönlich und durch individuelle Erfahrungen erzeugt.  "
-				},
-				{
-					"key": "triggers_section_name",
-					"value": "Auslöser"
-				},
-				{
-					"key": "moods_header",
-					"value": "Eine Stimmung von LHAMO"
-				},
-				{
-					"key": "moods_body",
-					"value": "Stimmungen sind langlebige Verwandte einer Emotion. Sie führen dazu, dass wir die dazugehörige Emotion immer wieder ohne klaren Auslöser erleben. Wähle eine Form, um mehr zu erfahren."
-				},
-				{
-					"key": "moods_body_mobile",
-					"value": "Stimmungen sind langlebige Verwandte einer Emotion. Sie führen dazu, dass wir die dazugehörige Emotion immer wieder ohne klaren Auslöser erleben. Klicke auf die Form, um mehr zu erfahren."
-				},
-				{
-					"key": "moods_section_name",
-					"value": "Stimmungen"
-				},
-				{
-					"key": "calm_header",
-					"value": "Ruhe erfahren"
-				},
-				{
-					"key": "calm_body",
-					"value": "Der Atlas der Emotionen wurde durch den Dalai Lama mit folgendem Zweck in Auftrag gegeben: Um Amerika zu entdecken brauchte Kolumbus Seekarten. Auch wir benötigen eine Landkarte, um zu einem ruhigen Geist finden: eine Landkarte unserer Emotionen. Das einfache, aber nicht triviale Ziel dieses Atlasses ist es, uns beim bewusst werden unserer Emotionen zu unterstützen. Sich seiner Emotionen gewahr zu sein bedeutet, zu verstehen, wie diese ausgelöst werden, wie sie sich anfühlen und wie wir auf sie reagieren. Diese Bewusstheit selbst ist eine Strategie, die uns dabei hilft Emotionserfahrungen zu verstehen. Wir wollen Emotionen nicht los werden, wir wollen Strategien, die uns bei hilfreichen und zielführenden Antworten unterstützen."
-				},
-				{
-					"key": "calm_body_mobile",
-					"value": "Der Atlas der Emotionen wurde durch den Dalai Lama mit folgendem Zweck in Auftrag gegeben: Um die neue Welt  zu finden, benötigen wir eine Landkarte. Wenn wir einen Weg zu einem ruhigen Geist finden wollen, benötigen wir eine Landkarte userer Emotionen. Das einfache, aber nicht triviale Ziel dieses Atlasses ist es, uns beim bewusst werden unserer Emotionen zu unterstützen. Sich seiner Emotionen bewusst zu sein bedeutet, zu verstehen, wie diese ausgelöst werden, wie sie sich anfühen und wie wir auf sie reagieren. Diese Bewusstheit selbst ist eine Strategie, die uns dabei hilft, Emotionserfahrungen zu verstehen. Wir wollen Emotionen nicht los werden, wir wollen Strategien, die uns bei hilfreichen und zielführenden Antworten untertützen."
-				},
-				{
-					"key": "calm_secondary_header",
-					"value": "Besuche den Anhang"
-				},
-				{
-					"key": "calm_secondary_body",
-					"value": "Um mehr über Emotionen zu erfahren, klicke auf \"Mehr Informationen\" in der unteren rechten Ecke"
-				},
-				{
-					"key": "calm_button_label",
-					"value": "Beginne neu"
-				},
-				{
-					"key": "calm_section_name"
-				},
-				{
-					"key": "more_button_label",
-					"value": "Zurück zum Atlas"
-				},
-				{
-					"key": "more_section_name",
-					"value": "Mehr Informationen"
-				},
-				{
-					"key": "timeline_header",
-					"value": "Der Zeitstrahl"
-				},
-				{
-					"key": "timeline_restart_button",
-					"value": "Neustart"
-				},
-				{
-					"key": "timeline_intro_body_1",
-					"value": "Unsere Emotionen entfalten sich auf einem Zeitstrahl. Dieser Strahl beginnt mit einem Auslöser, der die emotionale Erfahrung initiiert und letztlich zu einer Reaktion führt."
-				},
-				{
-					"key": "timeline_intro_body_2",
-					"value": "Wähle aus der Liste unterhalb des Zeitstrahls die unterschiedlichen Emotionen aus."
-				},
-				{
-					"key": "timeline_intro_body_3",
-					"value": "Erkenne, wie der selbe Auslöser zu unterschiedlichen Reaktionen führen kann - abhängig von der erlebten Emotion."
-				},
-				{
-					"key": "timeline_begin_awareness_button",
-					"value": "Wie geschieht dies?"
-				},
-				{
-					"key": "timeline_trigger_header",
-					"value": "Auslöser"
-				},
-				{
-					"key": "timeline_trigger_body_1",
-					"value": "Der Auslöser ist in einen Kontext eingebettet:"
-				},
-				{
-					"key": "timeline_trigger_body_2_list_item_1",
-					"value": "Aktuelle Befindlichkeiten und Umstände"
-				},
-				{
-					"key": "timeline_trigger_body_2_list_item_2",
-					"value": "Der Anlass"
-				},
-				{
-					"key": "timeline_trigger_body_2_list_item_3",
-					"value": "Unsere Sicht der Welt, die durch frühere Erfahrungen, persönliche Biografie und vererbte universelle Schemata beeinflusst ist."
-				},
-				{
-					"key": "timeline_experience_add_awareness_button",
-					"value": "Füge Bewusstheit hinzu"
-				},
-				{
-					"key": "timeline_experience_header",
-					"value": "Erfahrung"
-				},
-				{
-					"key": "timeline_experience_body_1",
-					"value": "Die ausgelöste emotionale Erfahrung besteht aus subjektiven Gefühlen und körperlichen Empfindungen. Beides beeinflusst unsere Wahrnehmung einer Situation. "
-				},
-				{
-					"key": "timeline_response_add_awareness_button",
-					"value": "Füge Bewusstheit hinzu"
-				},
-				{
-					"key": "timeline_response_header",
-					"value": "Reaktion"
-				},
-				{
-					"key": "timeline_response_body_1",
-					"value": "Wir haben die Wahl, wie wir reagieren, auch wenn es manchmal schwierig ist. Einige Reaktionen sind zielführender als andere."
-				},
-				{
-					"key": "timeline_begin_refractory_period_button",
-					"value": "Warum ist es schwierig, Bewussheit aufrecht zu erhalten?"
-				},
-				{
-					"key": "timeline_refractory_header",
-					"value": "Emotionale Sättigung"
-				},
-				{
-					"key": "timeline_refractory_body_1",
-					"value": "Wenn eine Emotion ausgelöst wird, hat uns diese Emotion im Griff. Dies limitiert unsere Fähigkeit, klar zu denken und zu handeln."
-				},
-				{
-					"key": "timeline_refractory_body_2",
-					"value": "Nach einiger Zeit gewinnen wir wieder Klarheit und sind in der Lage, eine überlegte Wahl zu treffen."
-				},
-				{
-					"key": "timeline_refractory_body_3",
-					"value": "Wenn wir achtsam sind, können wir innehalten bevor wir reagieren und uns so für eine Reaktion entscheiden, die unseren Zielen am dienlichsten ist. "
-				},
-				{
-					"key": "timeline_begin_block_diagram_button",
-					"value": "Betrachte den Gesamtzusammenhang"
-				},
-				{
-					"key": "timeline_blocks_header",
-					"value": "Gesamtzusammenhang"
-				},
-				{
-					"key": "timeline_blocks_body_1",
-					"value": "Du kannst jedes Stück des Zeitstrahls auswählen und lernen, wie sich Wissenschaftler emotionale Verläufe erklären. Gehe dann zum <a href=\"#continents/\">Erleben</a> Abschnitt um zu betrachten, wie emotionale Erfahrungen abgebildet werden."
-				},
-				{
-					"key": "timeline_blocks_label_precondition",
-					"value": "Vorbedingung"
-				},
-				{
-					"key": "timeline_blocks_label_event",
-					"value": "Anlass"
-				},
-				{
-					"key": "timeline_blocks_label_perceptual_database",
-					"value": "Wahrnehmungsdatenbank"
-				},
-				{
-					"key": "timeline_blocks_label_physical_changes",
-					"value": "Körperliche Veränderungen"
-				},
-				{
-					"key": "timeline_blocks_label_state",
-					"value": "Emotionaler Zustand"
-				},
-				{
-					"key": "timeline_blocks_label_mental_changes",
-					"value": "Geistige Veränderung"
-				},
-				{
-					"key": "timeline_blocks_label_constructive_response",
-					"value": "Zielführende Reaktion"
-				},
-				{
-					"key": "timeline_blocks_label_destructive_response",
-					"value": "Schädliche Reaktion"
-				},
-				{
-					"key": "timeline_blocks_label_ambiguous_response",
-					"value": "Mehrdeutige Reaktion"
-				},
-				{
-					"key": "timeline_blocks_caption_precondition",
-					"value": "Der Kontext, der uns beeinflusst, in welcher Art und Weise wir Gefühle wahrnehmen."
-				},
-				{
-					"key": "timeline_blocks_caption_event",
-					"value": "Ein Vorgang, der in der Realität, oder in unserer Gedanken stattfindet."
-				},
-				{
-					"key": "timeline_blocks_caption_perceptual_database",
-					"value": "Wie wir die Welt betrachten, ist ein Ergebnis unserer persönlichen Historie und universeller Handlungsschemata. Diese Schemata sind die Folge wiederholter emotionaler Erfahrungen, manche davon sind geerbt, andere angeeignet. "
-				},
-				{
-					"key": "timeline_blocks_caption_physical_changes",
-					"value": "Die automatische körperliche Empfindung unserer Emotion."
-				},
-				{
-					"key": "timeline_blocks_caption_emotional_state",
-					"value": "Unsere kombinierten körperlichen und geistigen Veränderungen."
-				},
-				{
-					"key": "timeline_blocks_caption_mental_changes",
-					"value": "Das unmittelbare Erleben unserer Emotion."
-				},
-				{
-					"key": "timeline_blocks_caption_constructive_response",
-					"value": "Eine Reaktion, die uns bei der Zielerreichung unterstützt."
-				},
-				{
-					"key": "timeline_blocks_caption_destructive_response",
-					"value": "Eine Reaktion, die unsere Zielerreichung verhindert."
-				},
-				{
-					"key": "timeline_blocks_caption_ambiguous_response",
-					"value": "Eine Reaktion, die hilfreich oder nicht hilfreich sein kann - manchmal können wir uns nicht sicher sein."
-				},
-				{
-					"key": "timeline_common_phrase_you_feel",
-					"value": "Du fühlst"
-				},
-				{
-					"key": "strategies_crowdfunding",
-					"value": "Wir entwickeln ebenfalls einen Atlas der Emotionen für Kinder! Wenn Sie dieses Projekt unterstützen möchten, besuchen Sie bitte die folgende Webpage: <a target=\"_newWin\" href=\"https://www.indiegogo.com/projects/help-create-an-atlas-of-emotions-for-children#/\"><img src=\"img/Indiegogo-Logo.png\" alt=\"indie gogo\"></a>"
-				}
-			]
-		},
-		{
-			"group_name": "Group 2",
-			"items": [
-				{
-					"key": "anger_continent_header",
-					"value": "Ärger"
-				},
-				{
-					"key": "anger_continent_header_mobile",
-					"value": "Ärger"
-				},
-				{
-					"key": "anger_continent_body",
-					"value": "Wir reagieren verärgert, wenn wir an etwas gehindert werden, oder wenn wir denken, dass wir unfair behandelt werden."
-				},
-				{
-					"key": "anger_continent_body_mobile",
-					"value": "Wir empfinden Ärger, wenn wir vor einem geistigen oder körperlichen Hindernis stehen. Ärger variiert hinsichtlich Intensität und Häufigkeit des Auftretens. "
-				},
-				{
-					"key": "anger_states_body",
-					"value": "Ärger reicht von Verstimmung bis Wut. Die Intensität der Zustände variiert: Wir können schwache oder starke Verstimmung empfinden, aber wir können nur intensive Wut empfinden. Alle Zustände des Ärgers werden durch das Gefühl ausgelöst, dass wir an unserem Fortkommen gehindert werden. "
-				},
-				{
-					"key": "anger_states_header_1",
-					"value": "Verstimmung "
-				},
-				{
-					"key": "anger_states_body_1",
-					"value": "Eine schwache Form des Ärgers, oft als Unannehmlichkeit empfunden."
-				},
-				{
-					"key": "anger_states_header_2",
-					"value": "Ärgerlich sein"
-				},
-				{
-					"key": "anger_states_body_2",
-					"value": "Ensteht durch wiederholte Mißerfolge."
-				},
-				{
-					"key": "anger_states_header_3",
-					"value": "Streitlust"
-				},
-				{
-					"key": "anger_states_body_3",
-					"value": "Eine Neigung, sich an Meinungsverschiedenheiten zu beteiligen."
-				},
-				{
-					"key": "anger_states_header_4",
-					"value": "Verbitterung"
-				},
-				{
-					"key": "anger_states_body_4",
-					"value": "Ärger nach unfairer Behandlung. "
-				},
-				{
-					"key": "anger_states_header_5",
-					"value": "Verärgerung"
-				},
-				{
-					"key": "anger_states_body_5",
-					"value": "Wird verursacht durch wiederholte Enttäuschung."
-				},
-				{
-					"key": "anger_states_header_6",
-					"value": "Rachsucht"
-				},
-				{
-					"key": "anger_states_body_6",
-					"value": "Das Verlangen nach Vergeltung, nachdem man verletzt wurde. "
-				},
-				{
-					"key": "anger_states_header_7",
-					"value": "Wut"
-				},
-				{
-					"key": "anger_states_body_7",
-					"value": "Unkontrollierter und oft mit Gewalt einhergehender Zorn. "
-				},
-				{
-					"key": "anger_actions_body",
-					"value": "Möglicherweise unterdrücken wir unsere Enttäuschung am Arbeitsplatz, lassen unseren Gefühlen gegenüber einer vertrauten Person jedoch freien Lauf. Enttäuschung zu unterdrücken, kann zielführend sein, wenn es uns dabei hilft, Streit zu vermeiden. Das Unterdrücken ist allerdings schädlich, wenn es uns verletzt, unsere Gefühle nicht zu äußern. "
-				},
-				{
-					"key": "anger_actions_header_1",
-					"value": "Streit"
-				},
-				{
-					"key": "anger_actions_body_1",
-					"value": "Verbale Auseinandersetzung auf eine Art und Weise, die eine Eskalation der Unstimmigkeit beabsichtigt. "
-				},
-				{
-					"key": "anger_actions_header_2",
-					"value": "Beleidigung"
-				},
-				{
-					"key": "anger_actions_body_2",
-					"value": "Herabsetzen einer anderen Person auf eine verletzende Art, die den Konflikt eher befeuert, als ihn löst."
-				},
-				{
-					"key": "anger_actions_header_3",
-					"value": "Jemandens Autorität untergraben"
-				},
-				{
-					"key": "anger_actions_body_3",
-					"value": "Etwas unternehmen, um jemanden zu schwächen oder ineffektier zu machen, oftmals heimlich oder nach und nach. "
-				},
-				{
-					"key": "anger_actions_header_4",
-					"value": "Zwist"
-				},
-				{
-					"key": "anger_actions_body_4",
-					"value": "In einer Art und Weise unterschiedlicher Meinung sein, die den Konflikt möglicherweise verstärkt. "
-				},
-				{
-					"key": "anger_actions_header_5",
-					"value": "Jemanden anschreien"
-				},
-				{
-					"key": "anger_actions_body_5",
-					"value": "Die Beherrschung verlieren. Laute und unbeherrschte Artikulation."
-				},
-				{
-					"key": "anger_actions_header_6",
-					"value": "Körperliche Gewalt"
-				},
-				{
-					"key": "anger_actions_body_6",
-					"value": "Jemandem Schaden zufügen oder ihn in eine Falle locken."
-				},
-				{
-					"key": "anger_actions_header_7",
-					"value": "Emotionen unterdrücken"
-				},
-				{
-					"key": "anger_actions_body_7",
-					"value": "Der Versuch, das Gefühl in Wort und Tat nicht zu zeigen."
-				},
-				{
-					"key": "anger_actions_header_8",
-					"value": "Vor sich hin brüten / Grübeln"
-				},
-				{
-					"key": "anger_actions_body_8",
-					"value": "Seinen Unmut durch Schmollen ausdrücken."
-				},
-				{
-					"key": "anger_actions_header_9",
-					"value": "Passiv-Aggressiv sein"
-				},
-				{
-					"key": "anger_actions_body_9",
-					"value": "Indirekte Handlungen unternehmen, die einen wütenden Beigeschmack haben. "
-				},
-				{
-					"key": "anger_triggers_universal_header_mobile",
-					"value": "universelle Auslöser für Ärger"
-				},
-				{
-					"key": "anger_triggers_universal_body_mobile",
-					"value": "universelle Auslöser für Ärger sind angeboren, allen Menschen gemeinsam und beeinflussen uns stärker, als erlernte Auslöser. Die Störung in einer Handlung oder Bewegung sind Beispiele für universelle Auslöser von Ärger."
-				},
-				{
-					"key": "anger_triggers_learned_header_mobile",
-					"value": "Erlernte Auslöser für Ärger"
-				},
-				{
-					"key": "anger_triggers_learned_body_mobile",
-					"value": "Einige Auslöser für Ärger sind durch persönliche oder kulturelle Erfahrung erlernt. Falsche Anschuldigungen oder Unterdrückung durch eine Autoritätsperson sind Beispiele hierfür. "
-				},
-				{
-					"key": "anger_triggers_header_1",
-					"value": "Störung einer Bewegung "
-				},
-				{
-					"key": "anger_triggers_header_2",
-					"value": "Störung einer Handlung"
-				},
-				{
-					"key": "anger_triggers_header_3",
-					"value": "Zurückweisung durch eine geliebte Person"
-				},
-				{
-					"key": "anger_triggers_header_4",
-					"value": "Ineffizienz oder Bürokratie"
-				},
-				{
-					"key": "anger_triggers_header_5",
-					"value": "Unterdrückung durch eine Autoritätsperson"
-				},
-				{
-					"key": "anger_triggers_header_6",
-					"value": "Auf offensive Überzeugungen treffen"
-				},
-				{
-					"key": "anger_triggers_header_7",
-					"value": "Falsche Beschuldigungen"
-				},
-				{
-					"key": "anger_moods_header",
-					"value": "Aufbrausend"
-				},
-				{
-					"key": "anger_moods_body",
-					"value": "Prädisposition leicht ärgerlich zu werden und sich leicht provozieren zu lassen."
-				},
-				{
-					"key": "anger_timeline_trigger_precondition",
-					"value": "Du hast zu wenig geschlafen"
-				},
-				{
-					"key": "anger_timeline_trigger_event",
-					"value": "Ein Freund ist wütend auf dich"
-				},
-				{
-					"key": "anger_timeline_trigger_perceptual_database",
-					"value": "Du wirst an einen Tyrannen erinnert"
-				},
-				{
-					"key": "anger_timeline_state_physical_changes",
-					"value": "Dein Körper spannt sich an"
-				},
-				{
-					"key": "anger_timeline_state_emotion",
-					"value": "Ärger"
-				},
-				{
-					"key": "anger_timeline_state_mental_changes",
-					"value": "Du fühlst dich angegriffen"
-				},
-				{
-					"key": "anger_timeline_response_constructive_response",
-					"value": "Du nimmst eine Auszeit"
-				},
-				{
-					"key": "anger_timeline_response_destructive_response",
-					"value": "Du streitest dich"
-				},
-				{
-					"key": "anger_timeline_response_ambiguous_response",
-					"value": "Vermeide weiteren Kontakt"
-				}
-			]
-		},
-		{
-			"group_name": "Group 3",
-			"items": [
-				{
-					"key": "fear_continent_header",
-					"value": "Angst"
-				},
-				{
-					"key": "fear_continent_header_mobile",
-					"value": "Angst"
-				},
-				{
-					"key": "fear_continent_body",
-					"value": "Unsere Angst vor Gefahr lässt uns zu unserer eigenen Sicherheit Bedrohungen antizipieren."
-				},
-				{
-					"key": "fear_continent_body_mobile",
-					"value": "Wir spüren Angst, wenn unsere Sicherheit oder unser Wohlbefinden bderoht ist. Angst variiert in unserem Leben in Stärke und Frequenz."
-				},
-				{
-					"key": "fear_states_body",
-					"value": "Angst umfasst sowohl Besorgnis als auch Schrecken. Die Intensität dieser Zustände variiert. Wir können schache oder starke Besorgnis empfinden, Schrecken hingegen ist immer intensiv. Alle Zustände von Angst werden durch das Gefühl einer drohenden Gefahr ausgelöst. "
-				},
-				{
-					"key": "fear_states_header_1",
-					"value": "Ängstlichkeit"
-				},
-				{
-					"key": "fear_states_body_1",
-					"value": "Antizipation einer möglichen Gefahr."
-				},
-				{
-					"key": "fear_states_header_2",
-					"value": "Besorgnis"
-				},
-				{
-					"key": "fear_states_body_2",
-					"value": "Sorge vor einer möglichen oder tatsächlichen Bedrohung, verbunden mit der Unsicherheit, wie man sie bewältigen kann."
-				},
-				{
-					"key": "fear_states_header_3",
-					"value": "Nervosität"
-				},
-				{
-					"key": "fear_states_body_3",
-					"value": "Unsicherheit, ob eine Gefahr droht."
-				},
-				{
-					"key": "fear_states_header_4",
-					"value": "Furcht"
-				},
-				{
-					"key": "fear_states_body_4",
-					"value": "Befürchtung einer ernsthaften Gefahr."
-				},
-				{
-					"key": "fear_states_header_5",
-					"value": "Verzweiflung"
-				},
-				{
-					"key": "fear_states_body_5",
-					"value": "Eine Reaktion, auf die Unfähigkeit eine Gefahr zu minimieren."
-				},
-				{
-					"key": "fear_states_header_6",
-					"value": "Schrecken"
-				},
-				{
-					"key": "fear_states_body_6",
-					"value": "Plötzlich auftretende unkontrollierbare Angst."
-				},
-				{
-					"key": "fear_states_header_7",
-					"value": "Entsetzen"
-				},
-				{
-					"key": "fear_states_body_7",
-					"value": "Eine Mischung aus Angst, Ekel und Schock."
-				},
-				{
-					"key": "fear_states_header_8",
-					"value": "Panische Angst"
-				},
-				{
-					"key": "fear_states_body_8",
-					"value": "Intensive, überwältigende Angst."
-				},
-				{
-					"key": "fear_actions_body",
-					"value": "Möglicherweise vermeiden wir Gefühle der Angst auf der Arbeit, grübeln dann aber zu Hause über unsere Angstgefühle. Angst zu vermeiden kann zielführend sein, wenn es uns hilft, in einem Raum voller Kollegen eine Präsentation zu halten. Die Vermeidung ist allerdings schädlich, wenn sie uns davon abhält, schwierige Beziehungen z.B. zu unserem Chef zu thematisieren."
-				},
-				{
-					"key": "fear_actions_header_1",
-					"value": "Sich zurückziehen"
-				},
-				{
-					"key": "fear_actions_body_1",
-					"value": "Die Gefahrenzone körperlich oder mental verlassen."
-				},
-				{
-					"key": "fear_actions_header_2",
-					"value": "Vermeiden"
-				},
-				{
-					"key": "fear_actions_body_2",
-					"value": "Einer Gefahr entweder körperlich fern bleiben oder vermeiden, darüber nachzudenken. "
-				},
-				{
-					"key": "fear_actions_header_3",
-					"value": "Zögern"
-				},
-				{
-					"key": "fear_actions_body_3",
-					"value": "Zweifelndes oder unentschlossenes Zurückhalten, oft vorübergehend."
-				},
-				{
-					"key": "fear_actions_header_4",
-					"value": "Erstarren"
-				},
-				{
-					"key": "fear_actions_body_4",
-					"value": "Unfähig werden zu Sprechen oder zu Handeln."
-				},
-				{
-					"key": "fear_actions_header_5",
-					"value": "Schreien/ Brüllen"
-				},
-				{
-					"key": "fear_actions_body_5",
-					"value": "Die Kontrolle über die Stimme verlieren, lautes Brüllen mit schriller Stimme."
-				},
-				{
-					"key": "fear_actions_header_6",
-					"value": "Grübeln"
-				},
-				{
-					"key": "fear_actions_body_6",
-					"value": "Zwangshaftes Nachdenken über eine vergangene emotionale Erfahrung."
-				},
-				{
-					"key": "fear_actions_header_7",
-					"value": "Sorge"
-				},
-				{
-					"key": "fear_actions_body_7",
-					"value": "Die Befürchtung möglicherweise verletzt zu werden."
-				},
-				{
-					"key": "fear_triggers_universal_header_mobile",
-					"value": "Universelle Auslöser von Angst"
-				},
-				{
-					"key": "fear_triggers_universal_body_mobile",
-					"value": "Universelle Auslöser sind allen Menschen angeboren und beeinflussen uns stärker, als erlernte Auslöser. Schlangenähnliche Formen und plötzliche Schwerelosigkeit sind Beispiele für universelle Auslöser von Angst. "
-				},
-				{
-					"key": "fear_triggers_learned_header_mobile",
-					"value": "Erlernte Auslöser von Angst"
-				},
-				{
-					"key": "fear_triggers_learned_body_mobile",
-					"value": "Einige Auslöser werden durch persönliche oder gemeinsame kulturelle Erfahrungen erlernt. Reden in der Öffentlichkeit, Donner und  drohender Jobverlust sind Beispiele."
-				},
-				{
-					"key": "fear_triggers_header_1",
-					"value": "Drohende körperliche Auswirkungen"
-				},
-				{
-					"key": "fear_triggers_header_2",
-					"value": "Plötzliche Schwerelosigkeit"
-				},
-				{
-					"key": "fear_triggers_header_3",
-					"value": "Bedrohung der Sicherheit"
-				},
-				{
-					"key": "fear_triggers_header_4",
-					"value": "Schlangeähnliche Formen"
-				},
-				{
-					"key": "fear_triggers_header_5",
-					"value": "Drohender Jobverlust"
-				},
-				{
-					"key": "fear_triggers_header_6",
-					"value": "Donner"
-				},
-				{
-					"key": "fear_triggers_header_7",
-					"value": "Reden in der Öffentlichkeit"
-				},
-				{
-					"key": "fear_moods_header",
-					"value": "Besorgt"
-				},
-				{
-					"key": "fear_moods_body",
-					"value": "Ängstlich, dass etwas Schlimmes passieren wird, etwas steht auf Messers Schneide"
-				},
-				{
-					"key": "fear_timeline_trigger_precondition",
-					"value": "Du liest beängstigende Nachrichten"
-				},
-				{
-					"key": "fear_timeline_trigger_event",
-					"value": "Ein Freund ist wütend auf dich"
-				},
-				{
-					"key": "fear_timeline_trigger_perceptual_database",
-					"value": "Du erinnerst dich daran verlassen zu werden "
-				},
-				{
-					"key": "fear_timeline_state_physical_changes",
-					"value": "Dein Herz schlägt bis zum Hals"
-				},
-				{
-					"key": "fear_timeline_state_emotion",
-					"value": "Angst"
-				},
-				{
-					"key": "fear_timeline_state_mental_changes",
-					"value": "Du erwartest, dass sie gehen"
-				},
-				{
-					"key": "fear_timeline_response_constructive_response",
-					"value": "Erinnere dich daran, warum ihr Freunde seid"
-				},
-				{
-					"key": "fear_timeline_response_destructive_response",
-					"value": "Du hast Angst verlassen zu werden "
-				},
-				{
-					"key": "fear_timeline_response_ambiguous_response",
-					"value": "Etwas anderes…"
-				}
-			]
-		},
-		{
-			"group_name": "Group 4",
-			"items": [
-				{
-					"key": "disgust_continent_header",
-					"value": "Ekel"
-				},
-				{
-					"key": "disgust_continent_header_mobile",
-					"value": "Ekel"
-				},
-				{
-					"key": "disgust_continent_body",
-					"value": "Der Ekel vor dem, was giftig ist, hilft uns, eine Vergiftung zu vermeiden, sei es körperlich oder sozial."
-				},
-				{
-					"key": "disgust_continent_body_mobile",
-					"value": "Wir fühlen Ekel, wenn wir mit etwas giftigem oder sehr unangenehmen konfrontiert werden. Ekel variiert hinsichtlich Intensität und Häufigkeit des Auftretens."
-				},
-				{
-					"key": "disgust_states_body",
-					"value": "Ekel beinhaltet viele Facetten, von Ablehnung bis Abscheu. Die erlebte Intensität variiert: Wir können leichte oder starke Ablehnung spüren, aber Abscheu ist immer ein starkes Gefühl. Alle Facetten des Ekels werden ausgelöst durch das Gefühl, dass etwas physisch oder psychisch nicht gut für uns ist."
-				},
-				{
-					"key": "disgust_states_header_1",
-					"value": "Abneigung"
-				},
-				{
-					"key": "disgust_states_body_1",
-					"value": "Etwas anderes bevorzugen."
-				},
-				{
-					"key": "disgust_states_header_2",
-					"value": "Aversion"
-				},
-				{
-					"key": "disgust_states_body_2",
-					"value": "Der Impuls, etwas ekeliges zu vermeiden."
-				},
-				{
-					"key": "disgust_states_header_3",
-					"value": "Widerwille"
-				},
-				{
-					"key": "disgust_states_body_3",
-					"value": "Reaktion auf schlechten Geschmack, Geruch oder eine schlechte Sache oder Idee. Kann physisch oder psychisch sein."
-				},
-				{
-					"key": "disgust_states_header_4",
-					"value": "Ablehnung"
-				},
-				{
-					"key": "disgust_states_body_4",
-					"value": "Starke Ablehnung gegen etwas, oftmals ein Konzept oder eine Idee."
-				},
-				{
-					"key": "disgust_states_header_5",
-					"value": "Ekel"
-				},
-				{
-					"key": "disgust_states_body_5",
-					"value": "Eine Mischung aus Ekel und Abscheu."
-				},
-				{
-					"key": "disgust_states_header_6",
-					"value": "Grausen"
-				},
-				{
-					"key": "disgust_states_body_6",
-					"value": "Eine Mischung aus intensivem Ekel und Abneigung."
-				},
-				{
-					"key": "disgust_states_header_7",
-					"value": "Verachtung"
-				},
-				{
-					"key": "disgust_states_body_7",
-					"value": "Intensiver Ekel, auf eine Person bezogen. Dies ist auch im Bezug auf die eigene Person möglich."
-				},
-				{
-					"key": "disgust_actions_body",
-					"value": "Möglicherweise vermeiden wir das Gefühl der Abneigung gegenüber Menschen an unserem Arbeitsplatz, empfinden aber Abneigung gegenüber Menschen, über die wir in den Medien lesen. Die Vermeidung von Abneigung / vorschneller Abneigung kann zielführend sein, um Vorurteile zu überwinden. Sie kann aber auch schädlich sein, wenn wir dadurch in Kontakt mit verletzenden Personen kommen."
-				},
-				{
-					"key": "disgust_actions_header_1",
-					"value": "Rückzug"
-				},
-				{
-					"key": "disgust_actions_body_1",
-					"value": "Physisch oder psychisch die Situation verlassen, die den Ekel auslöst."
-				},
-				{
-					"key": "disgust_actions_header_2",
-					"value": "Vermeiden"
-				},
-				{
-					"key": "disgust_actions_body_2",
-					"value": "Entweder das vermeiden, was den Ekel auslöst, oder zu versuchen, nicht daran zu denken."
-				},
-				{
-					"key": "disgust_actions_header_3",
-					"value": "Erbrechen"
-				},
-				{
-					"key": "disgust_actions_body_3",
-					"value": "Erbrechen als Reaktion auf Ekel."
-				},
-				{
-					"key": "disgust_actions_header_4",
-					"value": "Entmenschlichen"
-				},
-				{
-					"key": "disgust_actions_body_4",
-					"value": "Jemanden so behandeln, als ob er kein Mensch sei. Jemandem menschliche Qualitäten, Persönlichkeit oder Geist absprechen. "
-				},
-				{
-					"key": "disgust_triggers_universal_header_mobile",
-					"value": "universelle Auslöser für Ekel"
-				},
-				{
-					"key": "disgust_triggers_universal_body_mobile",
-					"value": "universelle Auslöser sind angeboren, allen Menschen gemeinsam und beeinflussen uns stärker, als erlernte Auslöser. Alles, das verfault oder aus dem Körper herauskommt sind Beispiele für universelle Auslöser."
-				},
-				{
-					"key": "disgust_triggers_learned_header_mobile",
-					"value": "Erlernte Auslöser von Ekel"
-				},
-				{
-					"key": "disgust_triggers_learned_body_mobile",
-					"value": "Einige Auslöser von Ekel sind durch persönliche oder kulturelle Erfahrung erlernt. Fremde religiöse Handlungen oder das Essen von Insekten oder rohem Fleisch sind Beispiele hierfür. "
-				},
-				{
-					"key": "disgust_triggers_header_1",
-					"value": "Alles, was aus dem Körper kommt"
-				},
-				{
-					"key": "disgust_triggers_header_2",
-					"value": "Verrottend oder verfaulend"
-				},
-				{
-					"key": "disgust_triggers_header_3",
-					"value": "Anhänger eines gegnerischen Sportteams"
-				},
-				{
-					"key": "disgust_triggers_header_4",
-					"value": "Fremde religiöse Handlungen"
-				},
-				{
-					"key": "disgust_triggers_header_5",
-					"value": "Das Essen von Insekten oder rohem Fleisch"
-				},
-				{
-					"key": "disgust_moods_header",
-					"value": "Bitter "
-				},
-				{
-					"key": "disgust_moods_body",
-					"value": "Generell abgestoßen von Dingen"
-				},
-				{
-					"key": "disgust_timeline_trigger_precondition",
-					"value": "Du bist bekümmert"
-				},
-				{
-					"key": "disgust_timeline_trigger_event",
-					"value": "Ein Freund ist wütend auf dich"
-				},
-				{
-					"key": "disgust_timeline_trigger_perceptual_database",
-					"value": "Du erinnerst dich an Unsensibilität"
-				},
-				{
-					"key": "disgust_timeline_state_physical_changes",
-					"value": "Du musst aufstoßen"
-				},
-				{
-					"key": "disgust_timeline_state_emotion",
-					"value": "Ekel"
-				},
-				{
-					"key": "disgust_timeline_state_mental_changes",
-					"value": "Dir ist übel"
-				},
-				{
-					"key": "disgust_timeline_response_constructive_response",
-					"value": "Frage, warum er wütend ist"
-				},
-				{
-					"key": "disgust_timeline_response_destructive_response",
-					"value": "Du wertest ihn ab"
-				},
-				{
-					"key": "disgust_timeline_response_ambiguous_response",
-					"value": "Vermeide ihn"
-				}
-			]
-		},
-		{
-			"group_name": "Group 5",
-			"items": [
-				{
-					"key": "sadness_continent_header",
-					"value": "Trauer"
-				},
-				{
-					"key": "sadness_continent_header_mobile",
-					"value": "Trauer"
-				},
-				{
-					"key": "sadness_continent_body",
-					"value": "Trauer ist eine Reaktion auf Verlust und sich traurig fühlen lässt uns Zeit für uns selbst nehmen und anderen zeigen, dass wir Unterstützung benötigen."
-				},
-				{
-					"key": "sadness_continent_body_mobile",
-					"value": "Wir fühlen uns traurig, wenn wir etwas wertvolles verlieren. Trauer variiert in unserem Leben in Stärke und Frequenz."
-				},
-				{
-					"key": "sadness_states_body",
-					"value": "Trauer reicht von Enttäuschung bis Verzweiflung. Die Intensität dieser Zustände variiert. Wir können schwache oder starke Enttäuschung empfinden, aber Verzweiflung ist immer intensiv. Alle Zustände von Trauer werden durch einen Verlust ausgelöst. "
-				},
-				{
-					"key": "sadness_states_header_1",
-					"value": "Enttäuschung"
-				},
-				{
-					"key": "sadness_states_body_1",
-					"value": "Das Gefühl haben, dass Erwartungen nicht erfüllt werden."
-				},
-				{
-					"key": "sadness_states_header_2",
-					"value": "Resignation"
-				},
-				{
-					"key": "sadness_states_body_2",
-					"value": "Der Glaube, dass nichts Hilfreiches getan werden kann."
-				},
-				{
-					"key": "sadness_states_header_3",
-					"value": "Verwirrung"
-				},
-				{
-					"key": "sadness_states_body_3",
-					"value": "Trauer, die es schwer macht, klar zu denken."
-				},
-				{
-					"key": "sadness_states_header_4",
-					"value": "Entmutigung"
-				},
-				{
-					"key": "sadness_states_body_4",
-					"value": "Eine Reaktion auf wiederholtes Versagen, die Überzeugung, dass etwas nicht zu schaffen ist."
-				},
-				{
-					"key": "sadness_states_header_5",
-					"value": "Hilflosigkeit"
-				},
-				{
-					"key": "sadness_states_body_5",
-					"value": "Die Erkenntnis, dass man die Situation nicht besser oder einfacher machen kann. "
-				},
-				{
-					"key": "sadness_states_header_6",
-					"value": "Leid"
-				},
-				{
-					"key": "sadness_states_body_6",
-					"value": "Starkes Leiden oder Unglück."
-				},
-				{
-					"key": "sadness_states_header_7",
-					"value": "Hoffnungslosigkeit"
-				},
-				{
-					"key": "sadness_states_body_7",
-					"value": "Der Glaube, dass nichts Gutes passieren wird."
-				},
-				{
-					"key": "sadness_states_header_8",
-					"value": "Trauer"
-				},
-				{
-					"key": "sadness_states_body_8",
-					"value": "Trauer über einen starken Verlust."
-				},
-				{
-					"key": "sadness_states_header_9",
-					"value": "Verzweiflung"
-				},
-				{
-					"key": "sadness_states_body_9",
-					"value": "Der Verlust des Glaubens daran, dass eine schlimme Situation besser wird oder sich verändert."
-				},
-				{
-					"key": "sadness_states_header_10",
-					"value": "Sorge"
-				},
-				{
-					"key": "sadness_states_body_10",
-					"value": "Eine Mischung aus Stress und Trauer, häufig durch Verlust hervorgerufen."
-				},
-				{
-					"key": "sadness_states_header_11",
-					"value": "Trostlosigkeit"
-				},
-				{
-					"key": "sadness_states_body_11",
-					"value": "Intensive Trauer oder Leiden."
-				},
-				{
-					"key": "sadness_actions_body",
-					"value": "Möglicherweise vermeiden wir es, in der Öffentlichkeit ein Gefühl von Hilflosigkeit zu zeigen, aber zu Hause suchen wir dann Geborgenheit. Sich von dem Gefühl der Hilflosigkeit zurückzuziehen kann hilfreich sein, um intensive Trauer zu überwinden. Es kann aber auch schädlich sein, wenn wir uns keine Unterstützung suchen, wenn wir sie brauchen."
-				},
-				{
-					"key": "sadness_actions_header_1",
-					"value": "Geborgenheit suchen"
-				},
-				{
-					"key": "sadness_actions_body_1",
-					"value": "Sich Hilfe oder Untestützung von Anderen suchen."
-				},
-				{
-					"key": "sadness_actions_header_2",
-					"value": "Abgrenzung"
-				},
-				{
-					"key": "sadness_actions_body_2",
-					"value": "Einem Auslöser von Trauer entweder körperlich fern bleiben oder nicht daran denken. "
-				},
-				{
-					"key": "sadness_actions_header_3",
-					"value": "Grübeln"
-				},
-				{
-					"key": "sadness_actions_body_3",
-					"value": "Zwanghaftes Nachdenken über eine emotionale Erfahrung."
-				},
-				{
-					"key": "sadness_actions_header_4",
-					"value": "Trauern"
-				},
-				{
-					"key": "sadness_actions_body_4",
-					"value": "Die Trauer über einen Verlust durch Verhalten, Kleidung und Sprache ausdrücken."
-				},
-				{
-					"key": "sadness_actions_header_5",
-					"value": "Leugnen"
-				},
-				{
-					"key": "sadness_actions_body_5",
-					"value": "Den Verlust nicht Wahrhaben wollen."
-				},
-				{
-					"key": "sadness_actions_header_6",
-					"value": "Sich schämen"
-				},
-				{
-					"key": "sadness_actions_body_6",
-					"value": "Sich über die eigenen Gefühle in Bezug auf einen Verlust schämen."
-				},
-				{
-					"key": "sadness_triggers_universal_header_mobile",
-					"value": "Allgemeine Auslöser von Trauer"
-				},
-				{
-					"key": "sadness_triggers_universal_body_mobile",
-					"value": "Allgemeine Auslöser sind bei Jedem von uns angeboren und beeinflussen uns stärker als erlernte Auslöser. Zurückweisung oder der Verlust eines geliebten Menschen sind Beispiele dafür."
-				},
-				{
-					"key": "sadness_triggers_learned_header_mobile",
-					"value": "Erlernte Auslöser von Trauer"
-				},
-				{
-					"key": "sadness_triggers_learned_body_mobile",
-					"value": "Einige Auslöser werden durch persönliche oder gemeinsame kulturelle Erfahrungen erlernt. Sich ausgeschlossen fühlen oder ein Statusverlust sind Beispiele dafür."
-				},
-				{
-					"key": "sadness_triggers_header_1",
-					"value": "Von jemand Wichtigem zurückgewiesen werden."
-				},
-				{
-					"key": "sadness_triggers_header_2",
-					"value": "Jemanden Geliebtes verlieren."
-				},
-				{
-					"key": "sadness_triggers_header_3",
-					"value": "Einen Statusverlust erleben"
-				},
-				{
-					"key": "sadness_triggers_header_4",
-					"value": "Zu einer Party nicht eingeladen werden."
-				},
-				{
-					"key": "sadness_triggers_header_5",
-					"value": "Ein kostbares Eigentum verlieren"
-				},
-				{
-					"key": "sadness_moods_header",
-					"value": "Bedrückt sein"
-				},
-				{
-					"key": "sadness_moods_body",
-					"value": "Ein andauerndes Gefühle von Entmutigung oder Enttäuschung"
-				},
-				{
-					"key": "sadness_timeline_trigger_precondition",
-					"value": "Du hörst traurige Musik"
-				},
-				{
-					"key": "sadness_timeline_trigger_event",
-					"value": "Ein Freund ist wütend auf dich"
-				},
-				{
-					"key": "sadness_timeline_trigger_perceptual_database",
-					"value": "Du erinnerst dich an Zurückweisung"
-				},
-				{
-					"key": "sadness_timeline_state_physical_changes",
-					"value": "Dein Körper fühlt sich schwach an"
-				},
-				{
-					"key": "sadness_timeline_state_emotion",
-					"value": "Trauer"
-				},
-				{
-					"key": "sadness_timeline_state_mental_changes",
-					"value": "Du fühlst dich leer"
-				},
-				{
-					"key": "sadness_timeline_response_constructive_response",
-					"value": "Ruf eine geliebte Person an"
-				},
-				{
-					"key": "sadness_timeline_response_destructive_response",
-					"value": "Du schämst dich"
-				},
-				{
-					"key": "sadness_timeline_response_ambiguous_response",
-					"value": "Du ignorierst das Gefühl"
-				}
-			]
-		},
-		{
-			"group_name": "Group 6",
-			"items": [
-				{
-					"key": "enjoyment_continent_header",
-					"value": "Freude"
-				},
-				{
-					"key": "enjoyment_continent_header_mobile",
-					"value": "Der Kontinent der Freude"
-				},
-				{
-					"key": "enjoyment_continent_body",
-					"value": "Freude beschreibt die Vielzahl an guten Gefühlen die aus neuen und bekannten Erfahrungen entstehen."
-				},
-				{
-					"key": "enjoyment_continent_body_mobile",
-					"value": "Wir empfinden Freude, wenn wir Neuheit oder Komfort erleben. bei Freude variiert hinsichtlich Stärke und Häufigkeit des Auftretens."
-				},
-				{
-					"key": "enjoyment_states_body",
-					"value": "Freude beinhaltet Facetten von Zufriedenheit und Euphorie gleichermaßen. Die erlebte Intensität variiert. Wir können leichte oder starke Zufriedenheit erleben, Euphorie hingegen ist immer intensiv. Alle Zustände der Freude sind ausgelöst durch ein Gefühl der Verbundenheit und/ oder ein sinnliches Vergnügen."
-				},
-				{
-					"key": "enjoyment_states_header_1",
-					"value": "Sinnliches Vergnügen"
-				},
-				{
-					"key": "enjoyment_states_body_1",
-					"value": "Freude entstanden durch einen der 5 Sinne: Sehen, Hören, Tasten, Schmecken, Riechen."
-				},
-				{
-					"key": "enjoyment_states_header_2",
-					"value": "Gerührt sein"
-				},
-				{
-					"key": "enjoyment_states_body_2",
-					"value": "Ein warmes, erhebendes Gefühl, das ensteht, wenn man Handlungen menschlicher Güte, Liebenswürdigkeiten oder Mitgefühl erfährt."
-				},
-				{
-					"key": "enjoyment_states_header_3",
-					"value": "Heiterkeit"
-				},
-				{
-					"key": "enjoyment_states_body_3",
-					"value": "Leichte, spielerische Gefühle der Freude und des guten Humors."
-				},
-				{
-					"key": "enjoyment_states_header_4",
-					"value": "Erleichterung"
-				},
-				{
-					"key": "enjoyment_states_body_4",
-					"value": "Wenn etwas Unangenehmes, insbesondere die Gefahr einer Verletzung vermieden werden konnte oder beendet ist."
-				},
-				{
-					"key": "enjoyment_states_header_5",
-					"value": "Mitgefühl"
-				},
-				{
-					"key": "enjoyment_states_body_5",
-					"value": "Freude daran, Anderen zu helfen oder ihr Leid zu verringern."
-				},
-				{
-					"key": "enjoyment_states_header_6",
-					"value": "Schadenfreude"
-				},
-				{
-					"key": "enjoyment_states_body_6",
-					"value": "Freude am Pech Anderer, normalerweise bei Rivalen."
-				},
-				{
-					"key": "enjoyment_states_header_7",
-					"value": "Kampfgeist"
-				},
-				{
-					"key": "enjoyment_states_body_7",
-					"value": "Freude, einer schwierigen Herausforderung zu begegnen."
-				},
-				{
-					"key": "enjoyment_states_header_8",
-					"value": "Elternstolz"
-				},
-				{
-					"key": "enjoyment_states_body_8",
-					"value": "Freudig-erregter Stolz angesichts der Leistung der eigenen Kinder oder Schützlinge."
-				},
-				{
-					"key": "enjoyment_states_header_9",
-					"value": "Stolz"
-				},
-				{
-					"key": "enjoyment_states_body_9",
-					"value": "Tiefe Freude und Zufriedenheit über die eigenen Leistungen oder die Leistungen eines Freundes/Kollegen"
-				},
-				{
-					"key": "enjoyment_states_header_10",
-					"value": "Erstaunen"
-				},
-				{
-					"key": "enjoyment_states_body_10",
-					"value": "Eine Erfahrung von etwas, das sehr überraschend kommt, wunderschön, erstaunlich oder kaum zu glauben ist."
-				},
-				{
-					"key": "enjoyment_states_header_11",
-					"value": "Zufriedenheit"
-				},
-				{
-					"key": "enjoyment_states_body_11",
-					"value": "Eine Erfahrung von Leichtigkeit und Zufriedenheit."
-				},
-				{
-					"key": "enjoyment_states_header_12",
-					"value": "Begeisterung"
-				},
-				{
-					"key": "enjoyment_states_body_12",
-					"value": "Kraftvoller Enthusiasmus."
-				},
-				{
-					"key": "enjoyment_states_header_13",
-					"value": "Euphorie"
-				},
-				{
-					"key": "enjoyment_states_body_13",
-					"value": "Verzückendes Vergnügen. Ein Zustand von sehr großem Glück, fast überwältigend."
-				},
-				{
-					"key": "enjoyment_actions_body",
-					"value": "Möglicherweise lachen wir laut, um unser Vergnügen zu zeigen, wenn wir mit Freunden zusammen sind, aber erleben unser Vergnügen leise, wenn wir allein sind. Lautes Lachen kann förderlich sein, um Freude zu teilen. Es ist aber weniger förderlich, wenn man sich damit über jemand anderen lustig macht. "
-				},
-				{
-					"key": "enjoyment_actions_header_1",
-					"value": "Mehr von etwas machen"
-				},
-				{
-					"key": "enjoyment_actions_body_1",
-					"value": "Der Versuch das erfreuliche Gefühl zu steigern."
-				},
-				{
-					"key": "enjoyment_actions_header_2",
-					"value": "Etwas beibehalten"
-				},
-				{
-					"key": "enjoyment_actions_body_2",
-					"value": "Das Nötige tun, um die angenehmen Gefühle beizubehalten. "
-				},
-				{
-					"key": "enjoyment_actions_header_3",
-					"value": "Häme"
-				},
-				{
-					"key": "enjoyment_actions_body_3",
-					"value": "Genieße den Neid anderer auf deine Freude."
-				},
-				{
-					"key": "enjoyment_actions_header_4",
-					"value": "Darüber sprechen"
-				},
-				{
-					"key": "enjoyment_actions_body_4",
-					"value": "Unsere Freude mit unserer Stimme ausdrücken."
-				},
-				{
-					"key": "enjoyment_actions_header_5",
-					"value": "Sich verbinden"
-				},
-				{
-					"key": "enjoyment_actions_body_5",
-					"value": "Seine Freude mit Anderen teilen ohne den Wunsch nach Neid."
-				},
-				{
-					"key": "enjoyment_actions_header_6",
-					"value": "Genuß"
-				},
-				{
-					"key": "enjoyment_actions_body_6",
-					"value": "Wertschätze die guten Gefühle einer Erfahrung, indem du eine Zeit lang bei ihnen verweilst."
-				},
-				{
-					"key": "enjoyment_actions_header_7",
-					"value": "Schwelgen"
-				},
-				{
-					"key": "enjoyment_actions_body_7",
-					"value": "Erlaub dir, die schöne Gefühle voll auszukosten und zu genießen."
-				},
-				{
-					"key": "enjoyment_triggers_universal_header_mobile",
-					"value": "Allgemeine Auslöser von Freude "
-				},
-				{
-					"key": "enjoyment_triggers_universal_body_mobile",
-					"value": "universelle Auslöser sind angeboren, allen Menschen gemeinsam und beeinflussen uns stärker, als erlernte Auslöser. Soziale Interaktion und die Natur erleben sind Beispiele dafür. "
-				},
-				{
-					"key": "enjoyment_triggers_learned_header_mobile",
-					"value": "Erlernte Auslöser von Freude"
-				},
-				{
-					"key": "enjoyment_triggers_learned_body_mobile",
-					"value": "Einige Auslöser werden durch persönliche oder gemeinsame kulturelle Erfahrungen erlernt. Zeit mit der Familie verbringen oder Plätze aus der Kindheit besuchen."
-				},
-				{
-					"key": "enjoyment_triggers_header_1",
-					"value": "Sinnliches Erleben der Natur"
-				},
-				{
-					"key": "enjoyment_triggers_header_2",
-					"value": "Anderen Helfen"
-				},
-				{
-					"key": "enjoyment_triggers_header_3",
-					"value": "Soziale Interaktion"
-				},
-				{
-					"key": "enjoyment_triggers_header_4",
-					"value": "Badminton spielen"
-				},
-				{
-					"key": "enjoyment_triggers_header_5",
-					"value": "Plätze, die mit positiven Erinnerungen verbunden sind"
-				},
-				{
-					"key": "enjoyment_triggers_header_6",
-					"value": "Der Geschmack eines Schokoladenkuchens"
-				},
-				{
-					"key": "enjoyment_triggers_header_7",
-					"value": "Zeit mit der Familie verbringen"
-				},
-				{
-					"key": "enjoyment_moods_header",
-					"value": "Beschwingt"
-				},
-				{
-					"key": "enjoyment_moods_body",
-					"value": "Ein andauerndes, allgemeines gutes Gefühl. "
-				},
-				{
-					"key": "enjoyment_timeline_trigger_precondition",
-					"value": "Du hast ein Tor geschossen"
-				},
-				{
-					"key": "enjoyment_timeline_trigger_event",
-					"value": "Ein Freund ist wütend auf dich"
-				},
-				{
-					"key": "enjoyment_timeline_trigger_perceptual_database",
-					"value": "Er scheint ein schlechter Verlierer zu sein"
-				},
-				{
-					"key": "enjoyment_timeline_state_physical_changes",
-					"value": "Adrenalinkick"
-				},
-				{
-					"key": "enjoyment_timeline_state_emotion",
-					"value": "Freude"
-				},
-				{
-					"key": "enjoyment_timeline_state_mental_changes",
-					"value": "Du fühlst dich aufrichtig und anständig"
-				},
-				{
-					"key": "enjoyment_timeline_response_constructive_response",
-					"value": "Mach weiter"
-				},
-				{
-					"key": "enjoyment_timeline_response_destructive_response",
-					"value": "Du lachst ihn hämisch aus"
-				},
-				{
-					"key": "enjoyment_timeline_response_ambiguous_response",
-					"value": "Feier deinen Erfolg"
-				}
-			]
-		},
-		{
-			"group_name": "Group 7",
-			"items": [
-				{
-					"key": "about_intro_title",
-					"value": "Über den Atlas"
-				},
-				{
-					"key": "about_intro_body",
-					"value": "Der Atlas der Emotionen ist ein interaktives Tool, welches kreiert wurde, um emotionales Bewusstheit zu lernen. Diese Seite lädt dich ein, die 5 Grundemotionen (sowie ihre damit verbundenen Gefühle, Handlungen, Auslöser und Stimmungen) zu visualisieren, identifizieren und zu erkunden, wie diese unser Leben beeinflussen. Auch wenn wir uns nicht immer aussuchen können, wie wir uns fühlen oder wann wir was fühlen, so ist es mit emotionaler Bewusstheit vielleicht möglich, zu entscheiden, wie wir auf ein Gefühl reagieren. \nDie Geschichte des Atlas begann, als der Dalai Lama den berühmten Emotionsforscher Paul Ekman gebeten hat, eine Karte der Emotionen zu kreieren, mit der Menschen lernen können zielführender mit emotionalen Erfahrungen umzugehen. Ekman, ein Experte auf diesem Gebiet, hatte bereits vorher Projekte zum Thema Emotionen beraten, so z.B. den erfolgreichen Pixar FIlm \" Alles steht Kopf\". Zusammen mit seiner Tocher Eve Ekmam kreierte Ekman den Atlas der Emotionen als Antwort auf die Bitte des Dalai Lamas. "
-				},
-				{
-					"key": "about_intro_title_mobile",
-					"value": "Über den Atlas"
-				},
-				{
-					"key": "about_intro_body_mobile",
-					"value": "Der Atlas der Emotionen ist ein interaktives Tool, welches kreiert wurde, um emotionales Bewusstheit zu lernen. Diese Seite lädt dich ein, die 5 Grundemotionen (sowie ihre damit verbundenen Gefühle, Handlungen, Auslöser und Stimmungen) zu visualisieren, identifizieren und zu erkunden, wie diese unser Leben beeinflussen. Auch wenn wir uns nicht immer aussuchen können, wie wir uns fühlen oder wann wir was fühlen, so ist es mit emotionaler Bewusstheit vielleicht möglich, zu entscheiden, wie wir auf ein Gefühl reagieren. \nDie Geschichte des Atlas begann, als der Dalai Lama den berühmten Emotionsforscher Paul Ekman gebeten hat, eine Karte der Emotionen zu kreieren, mit der Menschen lernen können zielführender mit emotionalen Erfahrungen umzugehen. Ekman, ein Experte auf diesem Gebiet, hatte bereits vorher Projekte zum Thema Emotionen beraten, so z.B. den erfolgreichen Pixar FIlm \" Alles steht Kopf\". Zusammen mit seiner Tocher Eve Ekmam kreierte Ekman den Atlas der Emotionen als Antwort auf die Bitte des Dalai Lamas. "
-				},
-				{
-					"key": "about_section_name",
-					"value": "Über den Atlas"
-				},
-				{
-					"key": "about_header_1",
-					"value": "Über Paul und Eve Ekman"
-				},
-				{
-					"key": "about_body_1",
-					"value": "Paul Ekman ist ein anerkannter US- amerikanischer Psychologe, der einer der ersten war, der auf dem Gebiet der Emotionen geforscht hat. Nach 40 Jahren Lehre an der UCSF, langer Zusammenarbet mit law enforcement agencies und dem Dalai Lama, hat er nun eine eigene Trainingsfirma. \nEve Ekman, post doctoral scholar am UCSF Osher Center für intergrative Medizin. Sie unterrichtet Cultivating Emotional Balance (CEB), eine Methode die Emotionsregulation und Meditation kombiniert. Eve nutzt CEB auch um Anbieter im Gesundheitssektor zu trainieren."
-				},
-				{
-					"key": "about_header_2",
-					"value": "Über Stamen Design"
-				},
-				{
-					"key": "about_body_2",
-					"value": "Stamen Design wurde 2001 von Eric Rodenbeck gegründet. Inwzischen arbeiten dort 12 Personen. Stamen Design hat sich einen Namen gemacht für seine Kompetenz bei der Erstellung überzeugender interaktiver Design- und Datenvisualisierungsprojekte. Stamen ist weder ein Forschungslabor noch eine traditionelle Design Agentur aber ein Ort, an dem Zusammenarbeit geschätzt wird, gute Ideen von überall her kommen können und Ergebnisse im Vordergrund stehen. "
-				},
-				{
-					"key": "about_header_3"
-				},
-				{
-					"key": "about_body_3"
-				},
-				{
-					"key": "about_header_4"
-				},
-				{
-					"key": "about_body_4"
-				},
-				{
-					"key": "about_header_5"
-				},
-				{
-					"key": "about_body_5"
-				},
-				{
-					"key": "about_header_6"
-				},
-				{
-					"key": "about_body_6"
-				},
-				{
-					"key": "about_header_7"
-				},
-				{
-					"key": "about_body_7"
-				}
-			]
-		},
-		{
-			"group_name": "Group 8",
-			"items": [
-				{
-					"key": "emotrak_title",
-					"value": "EmoTrak"
-				},
-				{
-					"key": "emotrak_intro",
-					"value": "Verbessern Sie Ihr Wohlbefinden durch tägliches emotionales Gleichgewichtstraining."
-				},
-				{
-					"key": "emotrak_header_mobile",
-					"value": "EmoTrak"
-				},
-				{
-					"key": "emotrak_body_mobile",
-					"value": "Verbessern Sie Ihr Wohlbefinden durch tägliches emotionales Gleichgewichtstraining. Jetzt anmelden.<br> \"<!-- Begin MailChimp Signup Form -->\n<link href=\"\"//cdn-images.mailchimp.com/embedcode/slim-10_7.css\"\" rel=\"\"stylesheet\"\" type=\"\"text/css\"\">\n<style type=\"\"text/css\"\">\n        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.\n           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n</style>\n<div id=\"\"mc_embed_signup\"\">\n<form action=\"\"//eveekman.us12.list-manage.com/subscribe/post?u=a8f41488aed929208e96dcf44&amp;id=76c8861d7d\"\" method=\"\"post\"\" id=\"\"mc-embedded-subscribe-form\"\" name=\"\"mc-embedded-subscribe-form\"\" class=\"\"validate\"\" target=\"\"_blank\"\" novalidate>\n    <div id=\"\"mc_embed_signup_scroll\"\">\n        <label for=\"\"mce-EMAIL\"\">Subscribe for EmoTrak Release Updates</label>\n        <input type=\"\"email\"\" value=\"\"\"\" name=\"\"EMAIL\"\" class=\"\"email\"\" id=\"\"mce-EMAIL\"\" placeholder=\"\"email address\"\" required>\n    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n    <div style=\"\"position: absolute; left: -5000px;\"\" aria-hidden=\"\"true\"\"><input type=\"\"text\"\" name=\"\"b_a8f41488aed929208e96dcf44_76c8861d7d\"\" tabindex=\"\"-1\"\" value=\"\"\"\"></div>\n    <div class=\"\"clear\"\"><input type=\"\"submit\"\" value=\"\"Subscribe\"\" name=\"\"subscribe\"\" id=\"\"mc-embedded-subscribe\"\" class=\"\"button\"\"></div>\n    </div>\n</form>\n</div>\n\n<!--End mc_embed_signup-->\""
-				},
-				{
-					"key": "emotrak_section_name",
-					"value": "Emo Trak"
-				},
-				{
-					"key": "emotrak_section_1",
-					"value": "Eine brandneue App, EmoTrak, wird von Dr. Eve Ekman und Mitarbeitern entwickelt. Melden Sie sich hier an, um als Erster über die Veröffentlichung dieser wissenschaftsbasierten Emotionstrainingsapp informiert zu werden."
-				},
-				{
-					"key": "emotrak_section_2"
-				},
-				{
-					"key": "emotrak_section_3",
-					"value": "Dr. Eve Ekman ist an der UCSF eine Habilitationsstipendiatin, die über Bunrout und emotionale Gesundheit forscht. Emo Trak wurde von ihr entwickelt, um Gesundheitsdienstleister zu unterstützen. Die App ist ein Selbsteinschätzungstool, um emotionale Auslöser, das Erleben von Emotionen und die Reaktionen darauf einzuschätzen. Zusätzlich enthält die App kurze emotionsfokussierte Meditationseinheiten und gibt Feedback zu deinem emotionalen Profil. "
-				}
-			]
-		}
-	]
+  "slug": "strings",
+  "emotions": {
+    "anger": {
+      "continent": {
+        "name": "Ärger",
+        "desc": "Wir reagieren verärgert, wenn wir an etwas gehindert werden, oder wenn wir denken, dass wir unfair behandelt werden.",
+        "name_mobile": "Ärger",
+        "desc_mobile": "Wir empfinden Ärger, wenn wir vor einem geistigen oder körperlichen Hindernis stehen. Ärger variiert hinsichtlich Intensität und Häufigkeit des Auftretens. ",
+        "secondary": ""
+      },
+      "states": [
+        {
+          "name": "Verstimmung ",
+          "desc": "Eine schwache Form des Ärgers, oft als Unannehmlichkeit empfunden.",
+          "name_mobile": "Verstimmung ",
+          "desc_mobile": "Eine schwache Form des Ärgers, oft als Unannehmlichkeit empfunden.",
+          "secondary": "Ärger reicht von Verstimmung bis Wut. Die Intensität der Zustände variiert: Wir können schwache oder starke Verstimmung empfinden, aber wir können nur intensive Wut empfinden. Alle Zustände des Ärgers werden durch das Gefühl ausgelöst, dass wir an unserem Fortkommen gehindert werden. ",
+          "range": {
+            "min": 1,
+            "max": 2
+          },
+          "actions": {
+            "all": [
+              "7",
+              "9",
+              "8"
+            ],
+            "con": [
+              "7"
+            ],
+            "des": [
+              "7",
+              "9",
+              "8"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Ärgerlich sein",
+          "desc": "Ensteht durch wiederholte Mißerfolge.",
+          "name_mobile": "Ärgerlich sein",
+          "desc_mobile": "Ensteht durch wiederholte Mißerfolge.",
+          "secondary": "",
+          "range": {
+            "min": 1,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "7",
+              "1",
+              "2",
+              "3",
+              "5",
+              "8",
+              "9"
+            ],
+            "con": [
+              "7"
+            ],
+            "des": [
+              "1",
+              "2",
+              "3",
+              "5",
+              "7",
+              "8",
+              "9"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Streitlust",
+          "desc": "Eine Neigung, sich an Meinungsverschiedenheiten zu beteiligen.",
+          "name_mobile": "Streitlust",
+          "desc_mobile": "Eine Neigung, sich an Meinungsverschiedenheiten zu beteiligen.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "7",
+              "1",
+              "2",
+              "3",
+              "8"
+            ],
+            "con": [
+              "7"
+            ],
+            "des": [
+              "1",
+              "2",
+              "3",
+              "7",
+              "8"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Verbitterung",
+          "desc": "Ärger nach unfairer Behandlung. ",
+          "name_mobile": "Verbitterung",
+          "desc_mobile": "Ärger nach unfairer Behandlung. ",
+          "secondary": "",
+          "range": {
+            "min": 3,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "7",
+              "2",
+              "3",
+              "4",
+              "5",
+              "8",
+              "9"
+            ],
+            "con": [
+              "7"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "7",
+              "8",
+              "9"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Verärgerung",
+          "desc": "Wird verursacht durch wiederholte Enttäuschung.",
+          "name_mobile": "Verärgerung",
+          "desc_mobile": "Wird verursacht durch wiederholte Enttäuschung.",
+          "secondary": "",
+          "range": {
+            "min": 4,
+            "max": 7
+          },
+          "actions": {
+            "all": [
+              "7",
+              "1",
+              "2",
+              "3",
+              "9",
+              "4",
+              "5",
+              "8"
+            ],
+            "con": [
+              "7"
+            ],
+            "des": [
+              "1",
+              "2",
+              "3",
+              "7",
+              "9",
+              "4",
+              "5",
+              "8"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Rachsucht",
+          "desc": "Das Verlangen nach Vergeltung, nachdem man verletzt wurde. ",
+          "name_mobile": "Rachsucht",
+          "desc_mobile": "Das Verlangen nach Vergeltung, nachdem man verletzt wurde. ",
+          "secondary": "",
+          "range": {
+            "min": 5,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "con": [
+              ""
+            ],
+            "des": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Wut",
+          "desc": "Unkontrollierter und oft mit Gewalt einhergehender Zorn. ",
+          "name_mobile": "Wut",
+          "desc_mobile": "Unkontrollierter und oft mit Gewalt einhergehender Zorn. ",
+          "secondary": "",
+          "range": {
+            "min": 10,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "",
+              "1",
+              "2",
+              "3",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "con": [
+              ""
+            ],
+            "des": [
+              "1",
+              "2",
+              "3",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "both": []
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Streit",
+          "desc": "Verbale Auseinandersetzung auf eine Art und Weise, die eine Eskalation der Unstimmigkeit beabsichtigt. ",
+          "name_mobile": "Streit",
+          "desc_mobile": "Verbale Auseinandersetzung auf eine Art und Weise, die eine Eskalation der Unstimmigkeit beabsichtigt. ",
+          "secondary": "Möglicherweise unterdrücken wir unsere Enttäuschung am Arbeitsplatz, lassen unseren Gefühlen gegenüber einer vertrauten Person jedoch freien Lauf. Enttäuschung zu unterdrücken, kann zielführend sein, wenn es uns dabei hilft, Streit zu vermeiden. Das Unterdrücken ist allerdings schädlich, wenn es uns verletzt, unsere Gefühle nicht zu äußern. "
+        },
+        {
+          "name": "Beleidigung",
+          "desc": "Herabsetzen einer anderen Person auf eine verletzende Art, die den Konflikt eher befeuert, als ihn löst.",
+          "name_mobile": "Beleidigung",
+          "desc_mobile": "Herabsetzen einer anderen Person auf eine verletzende Art, die den Konflikt eher befeuert, als ihn löst.",
+          "secondary": ""
+        },
+        {
+          "name": "Jemandens Autorität untergraben",
+          "desc": "Etwas unternehmen, um jemanden zu schwächen oder ineffektier zu machen, oftmals heimlich oder nach und nach. ",
+          "name_mobile": "Jemandens Autorität untergraben",
+          "desc_mobile": "Etwas unternehmen, um jemanden zu schwächen oder ineffektier zu machen, oftmals heimlich oder nach und nach. ",
+          "secondary": ""
+        },
+        {
+          "name": "Zwist",
+          "desc": "In einer Art und Weise unterschiedlicher Meinung sein, die den Konflikt möglicherweise verstärkt. ",
+          "name_mobile": "Zwist",
+          "desc_mobile": "In einer Art und Weise unterschiedlicher Meinung sein, die den Konflikt möglicherweise verstärkt. ",
+          "secondary": ""
+        },
+        {
+          "name": "Jemanden anschreien",
+          "desc": "Die Beherrschung verlieren. Laute und unbeherrschte Artikulation.",
+          "name_mobile": "Jemanden anschreien",
+          "desc_mobile": "Die Beherrschung verlieren. Laute und unbeherrschte Artikulation.",
+          "secondary": ""
+        },
+        {
+          "name": "Körperliche Gewalt",
+          "desc": "Jemandem Schaden zufügen oder ihn in eine Falle locken.",
+          "name_mobile": "Körperliche Gewalt",
+          "desc_mobile": "Jemandem Schaden zufügen oder ihn in eine Falle locken.",
+          "secondary": ""
+        },
+        {
+          "name": "Emotionen unterdrücken",
+          "desc": "Der Versuch, das Gefühl in Wort und Tat nicht zu zeigen.",
+          "name_mobile": "Emotionen unterdrücken",
+          "desc_mobile": "Der Versuch, das Gefühl in Wort und Tat nicht zu zeigen.",
+          "secondary": ""
+        },
+        {
+          "name": "Vor sich hin brüten / Grübeln",
+          "desc": "Seinen Unmut durch Schmollen ausdrücken.",
+          "name_mobile": "Vor sich hin brüten / Grübeln",
+          "desc_mobile": "Seinen Unmut durch Schmollen ausdrücken.",
+          "secondary": ""
+        },
+        {
+          "name": "Passiv-Aggressiv sein",
+          "desc": "Indirekte Handlungen unternehmen, die einen wütenden Beigeschmack haben. ",
+          "name_mobile": "Passiv-Aggressiv sein",
+          "desc_mobile": "Indirekte Handlungen unternehmen, die einen wütenden Beigeschmack haben. ",
+          "secondary": ""
+        }
+      ],
+      "triggers": [
+        {
+          "name": "Störung einer Bewegung ",
+          "type": "Universal",
+          "name_mobile": "Störung einer Bewegung ",
+          "desc_mobile": "Universal"
+        },
+        {
+          "name": "Störung einer Handlung",
+          "type": "Universal",
+          "name_mobile": "universelle Auslöser für Ärger",
+          "desc_mobile": "universelle Auslöser für Ärger sind angeboren, allen Menschen gemeinsam und beeinflussen uns stärker, als erlernte Auslöser. Die Störung in einer Handlung oder Bewegung sind Beispiele für universelle Auslöser von Ärger."
+        },
+        {
+          "name": "Zurückweisung durch eine geliebte Person",
+          "type": "Universal",
+          "name_mobile": "Erlernte Auslöser für Ärger",
+          "desc_mobile": "Einige Auslöser für Ärger sind durch persönliche oder kulturelle Erfahrung erlernt. Falsche Anschuldigungen oder Unterdrückung durch eine Autoritätsperson sind Beispiele hierfür. "
+        },
+        {
+          "name": "Ineffizienz oder Bürokratie",
+          "type": "Learned",
+          "name_mobile": "Ineffizienz oder Bürokratie",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Unterdrückung durch eine Autoritätsperson",
+          "type": "Learned",
+          "name_mobile": "Unterdrückung durch eine Autoritätsperson",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Auf offensive Überzeugungen treffen",
+          "type": "Learned",
+          "name_mobile": "Auf offensive Überzeugungen treffen",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Falsche Beschuldigungen",
+          "type": "Learned",
+          "name_mobile": "Falsche Beschuldigungen",
+          "desc_mobile": "Learned"
+        }
+      ],
+      "moods": [
+        {
+          "name": "Aufbrausend",
+          "desc": "Prädisposition leicht ärgerlich zu werden und sich leicht provozieren zu lassen.",
+          "name_mobile": "Aufbrausend",
+          "desc_mobile": "Prädisposition leicht ärgerlich zu werden und sich leicht provozieren zu lassen.",
+          "secondary": ""
+        }
+      ],
+      "timeline": [
+        {
+          "trigger": {
+            "precondition": "Du hast zu wenig geschlafen",
+            "event": "Ein Freund ist wütend auf dich",
+            "perceptual_database": "Du wirst an einen Tyrannen erinnert"
+          },
+          "state": {
+            "physical_changes": "Dein Körper spannt sich an",
+            "emotion": "Ärger",
+            "mental_changes": "Du fühlst dich angegriffen"
+          },
+          "response": {
+            "constructive_response": "Du nimmst eine Auszeit",
+            "destructive_response": "Du streitest dich",
+            "ambiguous_response": "Vermeide weiteren Kontakt"
+          }
+        }
+      ]
+    },
+    "fear": {
+      "continent": {
+        "name": "Angst",
+        "desc": "Unsere Angst vor Gefahr lässt uns zu unserer eigenen Sicherheit Bedrohungen antizipieren.",
+        "name_mobile": "Angst",
+        "desc_mobile": "Wir spüren Angst, wenn unsere Sicherheit oder unser Wohlbefinden bderoht ist. Angst variiert in unserem Leben in Stärke und Frequenz.",
+        "secondary": ""
+      },
+      "states": [
+        {
+          "name": "Ängstlichkeit",
+          "desc": "Antizipation einer möglichen Gefahr.",
+          "name_mobile": "Ängstlichkeit",
+          "desc_mobile": "Antizipation einer möglichen Gefahr.",
+          "secondary": "Angst umfasst sowohl Besorgnis als auch Schrecken. Die Intensität dieser Zustände variiert. Wir können schache oder starke Besorgnis empfinden, Schrecken hingegen ist immer intensiv. Alle Zustände von Angst werden durch das Gefühl einer drohenden Gefahr ausgelöst. ",
+          "range": {
+            "min": 1,
+            "max": 3
+          },
+          "actions": {
+            "all": [
+              "3",
+              "6",
+              "7"
+            ],
+            "con": [
+              "3"
+            ],
+            "des": [
+              "6",
+              "7"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Besorgnis",
+          "desc": "Sorge vor einer möglichen oder tatsächlichen Bedrohung, verbunden mit der Unsicherheit, wie man sie bewältigen kann.",
+          "name_mobile": "Besorgnis",
+          "desc_mobile": "Sorge vor einer möglichen oder tatsächlichen Bedrohung, verbunden mit der Unsicherheit, wie man sie bewältigen kann.",
+          "secondary": "",
+          "range": {
+            "min": 1,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "3",
+              "1",
+              "4",
+              "6",
+              "7"
+            ],
+            "con": [
+              "3",
+              "1",
+              "4"
+            ],
+            "des": [
+              "1",
+              "4",
+              "6",
+              "7"
+            ],
+            "both": [
+              "1",
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Nervosität",
+          "desc": "Unsicherheit, ob eine Gefahr droht.",
+          "name_mobile": "Nervosität",
+          "desc_mobile": "Unsicherheit, ob eine Gefahr droht.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 7
+          },
+          "actions": {
+            "all": [
+              "3",
+              "6",
+              "7"
+            ],
+            "con": [
+              "3"
+            ],
+            "des": [
+              "6",
+              "7"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Furcht",
+          "desc": "Befürchtung einer ernsthaften Gefahr.",
+          "name_mobile": "Furcht",
+          "desc_mobile": "Befürchtung einer ernsthaften Gefahr.",
+          "secondary": "",
+          "range": {
+            "min": 6,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "con": [
+              "1",
+              "4"
+            ],
+            "des": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "both": [
+              "1",
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Verzweiflung",
+          "desc": "Eine Reaktion, auf die Unfähigkeit eine Gefahr zu minimieren.",
+          "name_mobile": "Verzweiflung",
+          "desc_mobile": "Eine Reaktion, auf die Unfähigkeit eine Gefahr zu minimieren.",
+          "secondary": "",
+          "range": {
+            "min": 9,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "con": [
+              "2",
+              "3",
+              "4"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "both": [
+              "2",
+              "3",
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Schrecken",
+          "desc": "Plötzlich auftretende unkontrollierbare Angst.",
+          "name_mobile": "Schrecken",
+          "desc_mobile": "Plötzlich auftretende unkontrollierbare Angst.",
+          "secondary": "",
+          "range": {
+            "min": 10,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "both": [
+              "1",
+              "4",
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Entsetzen",
+          "desc": "Eine Mischung aus Angst, Ekel und Schock.",
+          "name_mobile": "Entsetzen",
+          "desc_mobile": "Eine Mischung aus Angst, Ekel und Schock.",
+          "secondary": "",
+          "range": {
+            "min": 10,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "1",
+              "4",
+              "5"
+            ],
+            "both": [
+              "1",
+              "4",
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Panische Angst",
+          "desc": "Intensive, überwältigende Angst.",
+          "name_mobile": "Panische Angst",
+          "desc_mobile": "Intensive, überwältigende Angst.",
+          "secondary": "",
+          "range": {
+            "min": 10,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "1",
+              "4",
+              "5"
+            ],
+            "both": [
+              "1",
+              "4",
+              "5"
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Sich zurückziehen",
+          "desc": "Die Gefahrenzone körperlich oder mental verlassen.",
+          "name_mobile": "Sich zurückziehen",
+          "desc_mobile": "Die Gefahrenzone körperlich oder mental verlassen.",
+          "secondary": "Möglicherweise vermeiden wir Gefühle der Angst auf der Arbeit, grübeln dann aber zu Hause über unsere Angstgefühle. Angst zu vermeiden kann zielführend sein, wenn es uns hilft, in einem Raum voller Kollegen eine Präsentation zu halten. Die Vermeidung ist allerdings schädlich, wenn sie uns davon abhält, schwierige Beziehungen z.B. zu unserem Chef zu thematisieren."
+        },
+        {
+          "name": "Vermeiden",
+          "desc": "Einer Gefahr entweder körperlich fern bleiben oder vermeiden, darüber nachzudenken. ",
+          "name_mobile": "Vermeiden",
+          "desc_mobile": "Einer Gefahr entweder körperlich fern bleiben oder vermeiden, darüber nachzudenken. ",
+          "secondary": ""
+        },
+        {
+          "name": "Zögern",
+          "desc": "Zweifelndes oder unentschlossenes Zurückhalten, oft vorübergehend.",
+          "name_mobile": "Zögern",
+          "desc_mobile": "Zweifelndes oder unentschlossenes Zurückhalten, oft vorübergehend.",
+          "secondary": ""
+        },
+        {
+          "name": "Erstarren",
+          "desc": "Unfähig werden zu Sprechen oder zu Handeln.",
+          "name_mobile": "Erstarren",
+          "desc_mobile": "Unfähig werden zu Sprechen oder zu Handeln.",
+          "secondary": ""
+        },
+        {
+          "name": "Schreien/ Brüllen",
+          "desc": "Die Kontrolle über die Stimme verlieren, lautes Brüllen mit schriller Stimme.",
+          "name_mobile": "Schreien/ Brüllen",
+          "desc_mobile": "Die Kontrolle über die Stimme verlieren, lautes Brüllen mit schriller Stimme.",
+          "secondary": ""
+        },
+        {
+          "name": "Grübeln",
+          "desc": "Zwangshaftes Nachdenken über eine vergangene emotionale Erfahrung.",
+          "name_mobile": "Grübeln",
+          "desc_mobile": "Zwangshaftes Nachdenken über eine vergangene emotionale Erfahrung.",
+          "secondary": ""
+        },
+        {
+          "name": "Sorge",
+          "desc": "Die Befürchtung möglicherweise verletzt zu werden.",
+          "name_mobile": "Sorge",
+          "desc_mobile": "Die Befürchtung möglicherweise verletzt zu werden.",
+          "secondary": ""
+        }
+      ],
+      "triggers": [
+        {
+          "name": "Drohende körperliche Auswirkungen",
+          "type": "Universal",
+          "name_mobile": "Universelle Auslöser von Angst",
+          "desc_mobile": "Universelle Auslöser sind allen Menschen angeboren und beeinflussen uns stärker, als erlernte Auslöser. Schlangenähnliche Formen und plötzliche Schwerelosigkeit sind Beispiele für universelle Auslöser von Angst. "
+        },
+        {
+          "name": "Plötzliche Schwerelosigkeit",
+          "type": "Universal",
+          "name_mobile": "Erlernte Auslöser von Angst",
+          "desc_mobile": "Einige Auslöser werden durch persönliche oder gemeinsame kulturelle Erfahrungen erlernt. Reden in der Öffentlichkeit, Donner und  drohender Jobverlust sind Beispiele."
+        },
+        {
+          "name": "Bedrohung der Sicherheit",
+          "type": "Universal",
+          "name_mobile": "Bedrohung der Sicherheit",
+          "desc_mobile": "Universal"
+        },
+        {
+          "name": "Schlangeähnliche Formen",
+          "type": "Universal",
+          "name_mobile": "Schlangeähnliche Formen",
+          "desc_mobile": "Universal"
+        },
+        {
+          "name": "Drohender Jobverlust",
+          "type": "Learned",
+          "name_mobile": "Drohender Jobverlust",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Donner",
+          "type": "Learned",
+          "name_mobile": "Donner",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Reden in der Öffentlichkeit",
+          "type": "Learned",
+          "name_mobile": "Reden in der Öffentlichkeit",
+          "desc_mobile": "Learned"
+        }
+      ],
+      "moods": [
+        {
+          "name": "Besorgt",
+          "desc": "Ängstlich, dass etwas Schlimmes passieren wird, etwas steht auf Messers Schneide",
+          "name_mobile": "Besorgt",
+          "desc_mobile": "Ängstlich, dass etwas Schlimmes passieren wird, etwas steht auf Messers Schneide",
+          "secondary": ""
+        }
+      ],
+      "timeline": [
+        {
+          "trigger": {
+            "precondition": "Du liest beängstigende Nachrichten",
+            "event": "Ein Freund ist wütend auf dich",
+            "perceptual_database": "Du erinnerst dich daran verlassen zu werden "
+          },
+          "state": {
+            "physical_changes": "Dein Herz schlägt bis zum Hals",
+            "emotion": "Angst",
+            "mental_changes": "Du erwartest, dass sie gehen"
+          },
+          "response": {
+            "constructive_response": "Erinnere dich daran, warum ihr Freunde seid",
+            "destructive_response": "Du hast Angst verlassen zu werden ",
+            "ambiguous_response": "Etwas anderes…"
+          }
+        }
+      ]
+    },
+    "disgust": {
+      "continent": {
+        "name": "Ekel",
+        "desc": "Der Ekel vor dem, was giftig ist, hilft uns, eine Vergiftung zu vermeiden, sei es körperlich oder sozial.",
+        "name_mobile": "Ekel",
+        "desc_mobile": "Wir fühlen Ekel, wenn wir mit etwas giftigem oder sehr unangenehmen konfrontiert werden. Ekel variiert hinsichtlich Intensität und Häufigkeit des Auftretens.",
+        "secondary": ""
+      },
+      "states": [
+        {
+          "name": "Abneigung",
+          "desc": "Etwas anderes bevorzugen.",
+          "name_mobile": "Abneigung",
+          "desc_mobile": "Etwas anderes bevorzugen.",
+          "secondary": "Ekel beinhaltet viele Facetten, von Ablehnung bis Abscheu. Die erlebte Intensität variiert: Wir können leichte oder starke Ablehnung spüren, aber Abscheu ist immer ein starkes Gefühl. Alle Facetten des Ekels werden ausgelöst durch das Gefühl, dass etwas physisch oder psychisch nicht gut für uns ist.",
+          "range": {
+            "min": 1,
+            "max": 5
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4"
+            ],
+            "con": [
+              "1",
+              "2"
+            ],
+            "des": [
+              "2",
+              "4"
+            ],
+            "both": [
+              "2"
+            ]
+          }
+        },
+        {
+          "name": "Aversion",
+          "desc": "Der Impuls, etwas ekeliges zu vermeiden.",
+          "name_mobile": "Aversion",
+          "desc_mobile": "Der Impuls, etwas ekeliges zu vermeiden.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 7
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4"
+            ],
+            "con": [
+              "1",
+              "2"
+            ],
+            "des": [
+              "4"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Widerwille",
+          "desc": "Reaktion auf schlechten Geschmack, Geruch oder eine schlechte Sache oder Idee. Kann physisch oder psychisch sein.",
+          "name_mobile": "Widerwille",
+          "desc_mobile": "Reaktion auf schlechten Geschmack, Geruch oder eine schlechte Sache oder Idee. Kann physisch oder psychisch sein.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 7
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "3",
+              ""
+            ],
+            "con": [
+              "1",
+              "2",
+              "3"
+            ],
+            "des": [
+              ""
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Ablehnung",
+          "desc": "Starke Ablehnung gegen etwas, oftmals ein Konzept oder eine Idee.",
+          "name_mobile": "Ablehnung",
+          "desc_mobile": "Starke Ablehnung gegen etwas, oftmals ein Konzept oder eine Idee.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 9
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4"
+            ],
+            "con": [
+              "1",
+              "2"
+            ],
+            "des": [
+              "2",
+              "4"
+            ],
+            "both": [
+              "2"
+            ]
+          }
+        },
+        {
+          "name": "Ekel",
+          "desc": "Eine Mischung aus Ekel und Abscheu.",
+          "name_mobile": "Ekel",
+          "desc_mobile": "Eine Mischung aus Ekel und Abscheu.",
+          "secondary": "",
+          "range": {
+            "min": 8,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "con": [
+              "1",
+              "2",
+              "3"
+            ],
+            "des": [
+              "4"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Grausen",
+          "desc": "Eine Mischung aus intensivem Ekel und Abneigung.",
+          "name_mobile": "Grausen",
+          "desc_mobile": "Eine Mischung aus intensivem Ekel und Abneigung.",
+          "secondary": "",
+          "range": {
+            "min": 8,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4"
+            ],
+            "con": [
+              "1",
+              "2"
+            ],
+            "des": [
+              "4"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Verachtung",
+          "desc": "Intensiver Ekel, auf eine Person bezogen. Dies ist auch im Bezug auf die eigene Person möglich.",
+          "name_mobile": "Verachtung",
+          "desc_mobile": "Intensiver Ekel, auf eine Person bezogen. Dies ist auch im Bezug auf die eigene Person möglich.",
+          "secondary": "",
+          "range": {
+            "min": 9,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4"
+            ],
+            "con": [
+              "1"
+            ],
+            "des": [
+              "2",
+              "4"
+            ],
+            "both": []
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Rückzug",
+          "desc": "Physisch oder psychisch die Situation verlassen, die den Ekel auslöst.",
+          "name_mobile": "Rückzug",
+          "desc_mobile": "Physisch oder psychisch die Situation verlassen, die den Ekel auslöst.",
+          "secondary": "Möglicherweise vermeiden wir das Gefühl der Abneigung gegenüber Menschen an unserem Arbeitsplatz, empfinden aber Abneigung gegenüber Menschen, über die wir in den Medien lesen. Die Vermeidung von Abneigung / vorschneller Abneigung kann zielführend sein, um Vorurteile zu überwinden. Sie kann aber auch schädlich sein, wenn wir dadurch in Kontakt mit verletzenden Personen kommen."
+        },
+        {
+          "name": "Vermeiden",
+          "desc": "Entweder das vermeiden, was den Ekel auslöst, oder zu versuchen, nicht daran zu denken.",
+          "name_mobile": "Vermeiden",
+          "desc_mobile": "Entweder das vermeiden, was den Ekel auslöst, oder zu versuchen, nicht daran zu denken.",
+          "secondary": ""
+        },
+        {
+          "name": "Erbrechen",
+          "desc": "Erbrechen als Reaktion auf Ekel.",
+          "name_mobile": "Erbrechen",
+          "desc_mobile": "Erbrechen als Reaktion auf Ekel.",
+          "secondary": ""
+        },
+        {
+          "name": "Entmenschlichen",
+          "desc": "Jemanden so behandeln, als ob er kein Mensch sei. Jemandem menschliche Qualitäten, Persönlichkeit oder Geist absprechen. ",
+          "name_mobile": "Entmenschlichen",
+          "desc_mobile": "Jemanden so behandeln, als ob er kein Mensch sei. Jemandem menschliche Qualitäten, Persönlichkeit oder Geist absprechen. ",
+          "secondary": ""
+        }
+      ],
+      "triggers": [
+        {
+          "name": "Alles, was aus dem Körper kommt",
+          "type": "Universal",
+          "name_mobile": "universelle Auslöser für Ekel",
+          "desc_mobile": "universelle Auslöser sind angeboren, allen Menschen gemeinsam und beeinflussen uns stärker, als erlernte Auslöser. Alles, das verfault oder aus dem Körper herauskommt sind Beispiele für universelle Auslöser."
+        },
+        {
+          "name": "Verrottend oder verfaulend",
+          "type": "Universal",
+          "name_mobile": "Erlernte Auslöser von Ekel",
+          "desc_mobile": "Einige Auslöser von Ekel sind durch persönliche oder kulturelle Erfahrung erlernt. Fremde religiöse Handlungen oder das Essen von Insekten oder rohem Fleisch sind Beispiele hierfür. "
+        },
+        {
+          "name": "Anhänger eines gegnerischen Sportteams",
+          "type": "Learned",
+          "name_mobile": "Anhänger eines gegnerischen Sportteams",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Fremde religiöse Handlungen",
+          "type": "Learned",
+          "name_mobile": "Fremde religiöse Handlungen",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Das Essen von Insekten oder rohem Fleisch",
+          "type": "Learned",
+          "name_mobile": "Das Essen von Insekten oder rohem Fleisch",
+          "desc_mobile": "Learned"
+        }
+      ],
+      "moods": [
+        {
+          "name": "Bitter ",
+          "desc": "Generell abgestoßen von Dingen",
+          "name_mobile": "Bitter ",
+          "desc_mobile": "Generell abgestoßen von Dingen",
+          "secondary": ""
+        }
+      ],
+      "timeline": [
+        {
+          "trigger": {
+            "precondition": "Du bist bekümmert",
+            "event": "Ein Freund ist wütend auf dich",
+            "perceptual_database": "Du erinnerst dich an Unsensibilität"
+          },
+          "state": {
+            "physical_changes": "Du musst aufstoßen",
+            "emotion": "Ekel",
+            "mental_changes": "Dir ist übel"
+          },
+          "response": {
+            "constructive_response": "Frage, warum er wütend ist",
+            "destructive_response": "Du wertest ihn ab",
+            "ambiguous_response": "Vermeide ihn"
+          }
+        }
+      ]
+    },
+    "sadness": {
+      "continent": {
+        "name": "Trauer",
+        "desc": "Trauer ist eine Reaktion auf Verlust und sich traurig fühlen lässt uns Zeit für uns selbst nehmen und anderen zeigen, dass wir Unterstützung benötigen.",
+        "name_mobile": "Trauer",
+        "desc_mobile": "Wir fühlen uns traurig, wenn wir etwas wertvolles verlieren. Trauer variiert in unserem Leben in Stärke und Frequenz.",
+        "secondary": ""
+      },
+      "states": [
+        {
+          "name": "Enttäuschung",
+          "desc": "Das Gefühl haben, dass Erwartungen nicht erfüllt werden.",
+          "name_mobile": "Enttäuschung",
+          "desc_mobile": "Das Gefühl haben, dass Erwartungen nicht erfüllt werden.",
+          "secondary": "Trauer reicht von Enttäuschung bis Verzweiflung. Die Intensität dieser Zustände variiert. Wir können schwache oder starke Enttäuschung empfinden, aber Verzweiflung ist immer intensiv. Alle Zustände von Trauer werden durch einen Verlust ausgelöst. ",
+          "range": {
+            "min": 1,
+            "max": 5
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "con": [
+              "1",
+              "4"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "6"
+            ],
+            "both": [
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Resignation",
+          "desc": "Der Glaube, dass nichts Hilfreiches getan werden kann.",
+          "name_mobile": "Resignation",
+          "desc_mobile": "Der Glaube, dass nichts Hilfreiches getan werden kann.",
+          "secondary": "",
+          "range": {
+            "min": 1,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "5",
+              "3",
+              "4",
+              "6"
+            ],
+            "con": [
+              "1",
+              "2",
+              "5"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "both": [
+              "2",
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Verwirrung",
+          "desc": "Trauer, die es schwer macht, klar zu denken.",
+          "name_mobile": "Verwirrung",
+          "desc_mobile": "Trauer, die es schwer macht, klar zu denken.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 8
+          },
+          "actions": {
+            "all": [
+              "1",
+              "5",
+              "2",
+              "6"
+            ],
+            "con": [
+              "1",
+              "5"
+            ],
+            "des": [
+              "2",
+              "5",
+              "6"
+            ],
+            "both": [
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Entmutigung",
+          "desc": "Eine Reaktion auf wiederholtes Versagen, die Überzeugung, dass etwas nicht zu schaffen ist.",
+          "name_mobile": "Entmutigung",
+          "desc_mobile": "Eine Reaktion auf wiederholtes Versagen, die Überzeugung, dass etwas nicht zu schaffen ist.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 8
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "2",
+              "3"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4"
+            ],
+            "both": [
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Hilflosigkeit",
+          "desc": "Die Erkenntnis, dass man die Situation nicht besser oder einfacher machen kann. ",
+          "name_mobile": "Hilflosigkeit",
+          "desc_mobile": "Die Erkenntnis, dass man die Situation nicht besser oder einfacher machen kann. ",
+          "secondary": "",
+          "range": {
+            "min": 5,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "5",
+              "2",
+              "3",
+              "6"
+            ],
+            "con": [
+              "1",
+              "5"
+            ],
+            "des": [
+              "2",
+              "3",
+              "5",
+              "6"
+            ],
+            "both": [
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Leid",
+          "desc": "Starkes Leiden oder Unglück.",
+          "name_mobile": "Leid",
+          "desc_mobile": "Starkes Leiden oder Unglück.",
+          "secondary": "",
+          "range": {
+            "min": 6,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "2",
+              "3"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "both": [
+              "4",
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Hoffnungslosigkeit",
+          "desc": "Der Glaube, dass nichts Gutes passieren wird.",
+          "name_mobile": "Hoffnungslosigkeit",
+          "desc_mobile": "Der Glaube, dass nichts Gutes passieren wird.",
+          "secondary": "",
+          "range": {
+            "min": 6,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "con": [
+              "1",
+              "4"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "6"
+            ],
+            "both": [
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Trauer",
+          "desc": "Trauer über einen starken Verlust.",
+          "name_mobile": "Trauer",
+          "desc_mobile": "Trauer über einen starken Verlust.",
+          "secondary": "",
+          "range": {
+            "min": 7,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "2",
+              "3",
+              "6"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "both": [
+              "4",
+              "5"
+            ]
+          }
+        },
+        {
+          "name": "Verzweiflung",
+          "desc": "Der Verlust des Glaubens daran, dass eine schlimme Situation besser wird oder sich verändert.",
+          "name_mobile": "Verzweiflung",
+          "desc_mobile": "Der Verlust des Glaubens daran, dass eine schlimme Situation besser wird oder sich verändert.",
+          "secondary": "",
+          "range": {
+            "min": 7,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "2",
+              "3"
+            ],
+            "con": [
+              "1",
+              "4"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4"
+            ],
+            "both": [
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Sorge",
+          "desc": "Eine Mischung aus Stress und Trauer, häufig durch Verlust hervorgerufen.",
+          "name_mobile": "Sorge",
+          "desc_mobile": "Eine Mischung aus Stress und Trauer, häufig durch Verlust hervorgerufen.",
+          "secondary": "",
+          "range": {
+            "min": 7,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "con": [
+              "1",
+              "4"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "6"
+            ],
+            "both": [
+              "4"
+            ]
+          }
+        },
+        {
+          "name": "Trostlosigkeit",
+          "desc": "Intensive Trauer oder Leiden.",
+          "name_mobile": "Trostlosigkeit",
+          "desc_mobile": "Intensive Trauer oder Leiden.",
+          "secondary": "",
+          "range": {
+            "min": 10,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "2",
+              "3"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5"
+            ],
+            "des": [
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "both": [
+              "4",
+              "5"
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Geborgenheit suchen",
+          "desc": "Sich Hilfe oder Untestützung von Anderen suchen.",
+          "name_mobile": "Geborgenheit suchen",
+          "desc_mobile": "Sich Hilfe oder Untestützung von Anderen suchen.",
+          "secondary": "Möglicherweise vermeiden wir es, in der Öffentlichkeit ein Gefühl von Hilflosigkeit zu zeigen, aber zu Hause suchen wir dann Geborgenheit. Sich von dem Gefühl der Hilflosigkeit zurückzuziehen kann hilfreich sein, um intensive Trauer zu überwinden. Es kann aber auch schädlich sein, wenn wir uns keine Unterstützung suchen, wenn wir sie brauchen."
+        },
+        {
+          "name": "Abgrenzung",
+          "desc": "Einem Auslöser von Trauer entweder körperlich fern bleiben oder nicht daran denken. ",
+          "name_mobile": "Abgrenzung",
+          "desc_mobile": "Einem Auslöser von Trauer entweder körperlich fern bleiben oder nicht daran denken. ",
+          "secondary": ""
+        },
+        {
+          "name": "Grübeln",
+          "desc": "Zwanghaftes Nachdenken über eine emotionale Erfahrung.",
+          "name_mobile": "Grübeln",
+          "desc_mobile": "Zwanghaftes Nachdenken über eine emotionale Erfahrung.",
+          "secondary": ""
+        },
+        {
+          "name": "Trauern",
+          "desc": "Die Trauer über einen Verlust durch Verhalten, Kleidung und Sprache ausdrücken.",
+          "name_mobile": "Trauern",
+          "desc_mobile": "Die Trauer über einen Verlust durch Verhalten, Kleidung und Sprache ausdrücken.",
+          "secondary": ""
+        },
+        {
+          "name": "Leugnen",
+          "desc": "Den Verlust nicht Wahrhaben wollen.",
+          "name_mobile": "Leugnen",
+          "desc_mobile": "Den Verlust nicht Wahrhaben wollen.",
+          "secondary": ""
+        },
+        {
+          "name": "Sich schämen",
+          "desc": "Sich über die eigenen Gefühle in Bezug auf einen Verlust schämen.",
+          "name_mobile": "Sich schämen",
+          "desc_mobile": "Sich über die eigenen Gefühle in Bezug auf einen Verlust schämen.",
+          "secondary": ""
+        }
+      ],
+      "triggers": [
+        {
+          "name": "Von jemand Wichtigem zurückgewiesen werden.",
+          "type": "Universal",
+          "name_mobile": "Allgemeine Auslöser von Trauer",
+          "desc_mobile": "Allgemeine Auslöser sind bei Jedem von uns angeboren und beeinflussen uns stärker als erlernte Auslöser. Zurückweisung oder der Verlust eines geliebten Menschen sind Beispiele dafür."
+        },
+        {
+          "name": "Jemanden Geliebtes verlieren.",
+          "type": "Universal",
+          "name_mobile": "Erlernte Auslöser von Trauer",
+          "desc_mobile": "Einige Auslöser werden durch persönliche oder gemeinsame kulturelle Erfahrungen erlernt. Sich ausgeschlossen fühlen oder ein Statusverlust sind Beispiele dafür."
+        },
+        {
+          "name": "Einen Statusverlust erleben",
+          "type": "Learned",
+          "name_mobile": "Einen Statusverlust erleben",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Zu einer Party nicht eingeladen werden.",
+          "type": "Learned",
+          "name_mobile": "Zu einer Party nicht eingeladen werden.",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Ein kostbares Eigentum verlieren",
+          "type": "Learned",
+          "name_mobile": "Ein kostbares Eigentum verlieren",
+          "desc_mobile": "Learned"
+        }
+      ],
+      "moods": [
+        {
+          "name": "Bedrückt sein",
+          "desc": "Ein andauerndes Gefühle von Entmutigung oder Enttäuschung",
+          "name_mobile": "Bedrückt sein",
+          "desc_mobile": "Ein andauerndes Gefühle von Entmutigung oder Enttäuschung",
+          "secondary": ""
+        }
+      ],
+      "timeline": [
+        {
+          "trigger": {
+            "precondition": "Du hörst traurige Musik",
+            "event": "Ein Freund ist wütend auf dich",
+            "perceptual_database": "Du erinnerst dich an Zurückweisung"
+          },
+          "state": {
+            "physical_changes": "Dein Körper fühlt sich schwach an",
+            "emotion": "Trauer",
+            "mental_changes": "Du fühlst dich leer"
+          },
+          "response": {
+            "constructive_response": "Ruf eine geliebte Person an",
+            "destructive_response": "Du schämst dich",
+            "ambiguous_response": "Du ignorierst das Gefühl"
+          }
+        }
+      ]
+    },
+    "enjoyment": {
+      "continent": {
+        "name": "Freude",
+        "desc": "Freude beschreibt die Vielzahl an guten Gefühlen die aus neuen und bekannten Erfahrungen entstehen.",
+        "name_mobile": "Der Kontinent der Freude",
+        "desc_mobile": "Wir empfinden Freude, wenn wir Neuheit oder Komfort erleben. bei Freude variiert hinsichtlich Stärke und Häufigkeit des Auftretens.",
+        "secondary": ""
+      },
+      "states": [
+        {
+          "name": "Sinnliches Vergnügen",
+          "desc": "Freude entstanden durch einen der 5 Sinne: Sehen, Hören, Tasten, Schmecken, Riechen.",
+          "name_mobile": "Sinnliches Vergnügen",
+          "desc_mobile": "Freude entstanden durch einen der 5 Sinne: Sehen, Hören, Tasten, Schmecken, Riechen.",
+          "secondary": "Freude beinhaltet Facetten von Zufriedenheit und Euphorie gleichermaßen. Die erlebte Intensität variiert. Wir können leichte oder starke Zufriedenheit erleben, Euphorie hingegen ist immer intensiv. Alle Zustände der Freude sind ausgelöst durch ein Gefühl der Verbundenheit und/ oder ein sinnliches Vergnügen.",
+          "range": {
+            "min": 1,
+            "max": 5
+          },
+          "actions": {
+            "all": [
+              "1",
+              "6",
+              ""
+            ],
+            "con": [
+              "1",
+              "6"
+            ],
+            "des": [
+              ""
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Gerührt sein",
+          "desc": "Ein warmes, erhebendes Gefühl, das ensteht, wenn man Handlungen menschlicher Güte, Liebenswürdigkeiten oder Mitgefühl erfährt.",
+          "name_mobile": "Gerührt sein",
+          "desc_mobile": "Ein warmes, erhebendes Gefühl, das ensteht, wenn man Handlungen menschlicher Güte, Liebenswürdigkeiten oder Mitgefühl erfährt.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 8
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "des": [
+              "7"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Heiterkeit",
+          "desc": "Leichte, spielerische Gefühle der Freude und des guten Humors.",
+          "name_mobile": "Heiterkeit",
+          "desc_mobile": "Leichte, spielerische Gefühle der Freude und des guten Humors.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 8
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7"
+            ],
+            "con": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7"
+            ],
+            "des": [
+              "7"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Erleichterung",
+          "desc": "Wenn etwas Unangenehmes, insbesondere die Gefahr einer Verletzung vermieden werden konnte oder beendet ist.",
+          "name_mobile": "Erleichterung",
+          "desc_mobile": "Wenn etwas Unangenehmes, insbesondere die Gefahr einer Verletzung vermieden werden konnte oder beendet ist.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "con": [
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "des": [
+              "7"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Mitgefühl",
+          "desc": "Freude daran, Anderen zu helfen oder ihr Leid zu verringern.",
+          "name_mobile": "Mitgefühl",
+          "desc_mobile": "Freude daran, Anderen zu helfen oder ihr Leid zu verringern.",
+          "secondary": "",
+          "range": {
+            "min": 3,
+            "max": 6
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "6",
+              ""
+            ],
+            "con": [
+              "1",
+              "4",
+              "5",
+              "6"
+            ],
+            "des": [
+              ""
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Schadenfreude",
+          "desc": "Freude am Pech Anderer, normalerweise bei Rivalen.",
+          "name_mobile": "Schadenfreude",
+          "desc_mobile": "Freude am Pech Anderer, normalerweise bei Rivalen.",
+          "secondary": "",
+          "range": {
+            "min": 3,
+            "max": 8
+          },
+          "actions": {
+            "all": [
+              "",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "con": [
+              ""
+            ],
+            "des": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Kampfgeist",
+          "desc": "Freude, einer schwierigen Herausforderung zu begegnen.",
+          "name_mobile": "Kampfgeist",
+          "desc_mobile": "Freude, einer schwierigen Herausforderung zu begegnen.",
+          "secondary": "",
+          "range": {
+            "min": 3,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "5",
+              "6",
+              "7",
+              "3"
+            ],
+            "con": [
+              "1",
+              "2",
+              "5",
+              "6",
+              "7"
+            ],
+            "des": [
+              "3",
+              "5",
+              "6",
+              "7"
+            ],
+            "both": [
+              "5",
+              "6",
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Elternstolz",
+          "desc": "Freudig-erregter Stolz angesichts der Leistung der eigenen Kinder oder Schützlinge.",
+          "name_mobile": "Elternstolz",
+          "desc_mobile": "Freudig-erregter Stolz angesichts der Leistung der eigenen Kinder oder Schützlinge.",
+          "secondary": "",
+          "range": {
+            "min": 3,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "4",
+              "5",
+              "6",
+              "3"
+            ],
+            "con": [
+              "4",
+              "5",
+              "6"
+            ],
+            "des": [
+              "3",
+              "4",
+              "5",
+              "6"
+            ],
+            "both": [
+              "4",
+              "5",
+              "6"
+            ]
+          }
+        },
+        {
+          "name": "Stolz",
+          "desc": "Tiefe Freude und Zufriedenheit über die eigenen Leistungen oder die Leistungen eines Freundes/Kollegen",
+          "name_mobile": "Stolz",
+          "desc_mobile": "Tiefe Freude und Zufriedenheit über die eigenen Leistungen oder die Leistungen eines Freundes/Kollegen",
+          "secondary": "",
+          "range": {
+            "min": 4,
+            "max": 9
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "des": [
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "both": [
+              "4",
+              "5",
+              "6",
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Erstaunen",
+          "desc": "Eine Erfahrung von etwas, das sehr überraschend kommt, wunderschön, erstaunlich oder kaum zu glauben ist.",
+          "name_mobile": "Erstaunen",
+          "desc_mobile": "Eine Erfahrung von etwas, das sehr überraschend kommt, wunderschön, erstaunlich oder kaum zu glauben ist.",
+          "secondary": "",
+          "range": {
+            "min": 5,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "con": [
+              "1",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "des": [
+              "7"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Zufriedenheit",
+          "desc": "Eine Erfahrung von Leichtigkeit und Zufriedenheit.",
+          "name_mobile": "Zufriedenheit",
+          "desc_mobile": "Eine Erfahrung von Leichtigkeit und Zufriedenheit.",
+          "secondary": "",
+          "range": {
+            "min": 2,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "2",
+              "5",
+              ""
+            ],
+            "con": [
+              "2",
+              "5"
+            ],
+            "des": [
+              ""
+            ],
+            "both": []
+          }
+        },
+        {
+          "name": "Begeisterung",
+          "desc": "Kraftvoller Enthusiasmus.",
+          "name_mobile": "Begeisterung",
+          "desc_mobile": "Kraftvoller Enthusiasmus.",
+          "secondary": "",
+          "range": {
+            "min": 6,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7"
+            ],
+            "con": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7"
+            ],
+            "des": [
+              "7"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        },
+        {
+          "name": "Euphorie",
+          "desc": "Verzückendes Vergnügen. Ein Zustand von sehr großem Glück, fast überwältigend.",
+          "name_mobile": "Euphorie",
+          "desc_mobile": "Verzückendes Vergnügen. Ein Zustand von sehr großem Glück, fast überwältigend.",
+          "secondary": "",
+          "range": {
+            "min": 9,
+            "max": 10
+          },
+          "actions": {
+            "all": [
+              "2",
+              "6",
+              "7"
+            ],
+            "con": [
+              "2",
+              "6",
+              "7"
+            ],
+            "des": [
+              "7"
+            ],
+            "both": [
+              "7"
+            ]
+          }
+        }
+      ],
+      "actions": [
+        {
+          "name": "Mehr von etwas machen",
+          "desc": "Der Versuch das erfreuliche Gefühl zu steigern.",
+          "name_mobile": "Mehr von etwas machen",
+          "desc_mobile": "Der Versuch das erfreuliche Gefühl zu steigern.",
+          "secondary": "Möglicherweise lachen wir laut, um unser Vergnügen zu zeigen, wenn wir mit Freunden zusammen sind, aber erleben unser Vergnügen leise, wenn wir allein sind. Lautes Lachen kann förderlich sein, um Freude zu teilen. Es ist aber weniger förderlich, wenn man sich damit über jemand anderen lustig macht. "
+        },
+        {
+          "name": "Etwas beibehalten",
+          "desc": "Das Nötige tun, um die angenehmen Gefühle beizubehalten. ",
+          "name_mobile": "Etwas beibehalten",
+          "desc_mobile": "Das Nötige tun, um die angenehmen Gefühle beizubehalten. ",
+          "secondary": ""
+        },
+        {
+          "name": "Häme",
+          "desc": "Genieße den Neid anderer auf deine Freude.",
+          "name_mobile": "Häme",
+          "desc_mobile": "Genieße den Neid anderer auf deine Freude.",
+          "secondary": ""
+        },
+        {
+          "name": "Darüber sprechen",
+          "desc": "Unsere Freude mit unserer Stimme ausdrücken.",
+          "name_mobile": "Darüber sprechen",
+          "desc_mobile": "Unsere Freude mit unserer Stimme ausdrücken.",
+          "secondary": ""
+        },
+        {
+          "name": "Sich verbinden",
+          "desc": "Seine Freude mit Anderen teilen ohne den Wunsch nach Neid.",
+          "name_mobile": "Sich verbinden",
+          "desc_mobile": "Seine Freude mit Anderen teilen ohne den Wunsch nach Neid.",
+          "secondary": ""
+        },
+        {
+          "name": "Genuß",
+          "desc": "Wertschätze die guten Gefühle einer Erfahrung, indem du eine Zeit lang bei ihnen verweilst.",
+          "name_mobile": "Genuß",
+          "desc_mobile": "Wertschätze die guten Gefühle einer Erfahrung, indem du eine Zeit lang bei ihnen verweilst.",
+          "secondary": ""
+        },
+        {
+          "name": "Schwelgen",
+          "desc": "Erlaub dir, die schöne Gefühle voll auszukosten und zu genießen.",
+          "name_mobile": "Schwelgen",
+          "desc_mobile": "Erlaub dir, die schöne Gefühle voll auszukosten und zu genießen.",
+          "secondary": ""
+        }
+      ],
+      "triggers": [
+        {
+          "name": "Sinnliches Erleben der Natur",
+          "type": "Universal",
+          "name_mobile": "Allgemeine Auslöser von Freude ",
+          "desc_mobile": "universelle Auslöser sind angeboren, allen Menschen gemeinsam und beeinflussen uns stärker, als erlernte Auslöser. Soziale Interaktion und die Natur erleben sind Beispiele dafür. "
+        },
+        {
+          "name": "Anderen Helfen",
+          "type": "Universal",
+          "name_mobile": "Erlernte Auslöser von Freude",
+          "desc_mobile": "Einige Auslöser werden durch persönliche oder gemeinsame kulturelle Erfahrungen erlernt. Zeit mit der Familie verbringen oder Plätze aus der Kindheit besuchen."
+        },
+        {
+          "name": "Soziale Interaktion",
+          "type": "Universal",
+          "name_mobile": "Soziale Interaktion",
+          "desc_mobile": "Universal"
+        },
+        {
+          "name": "Badminton spielen",
+          "type": "Learned",
+          "name_mobile": "Badminton spielen",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Plätze, die mit positiven Erinnerungen verbunden sind",
+          "type": "Learned",
+          "name_mobile": "Plätze, die mit positiven Erinnerungen verbunden sind",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Der Geschmack eines Schokoladenkuchens",
+          "type": "Learned",
+          "name_mobile": "Der Geschmack eines Schokoladenkuchens",
+          "desc_mobile": "Learned"
+        },
+        {
+          "name": "Zeit mit der Familie verbringen",
+          "type": "Learned",
+          "name_mobile": "Zeit mit der Familie verbringen",
+          "desc_mobile": "Learned"
+        }
+      ],
+      "moods": [
+        {
+          "name": "Beschwingt",
+          "desc": "Ein andauerndes, allgemeines gutes Gefühl. ",
+          "name_mobile": "Beschwingt",
+          "desc_mobile": "Ein andauerndes, allgemeines gutes Gefühl. ",
+          "secondary": ""
+        }
+      ],
+      "timeline": [
+        {
+          "trigger": {
+            "precondition": "Du hast ein Tor geschossen",
+            "event": "Ein Freund ist wütend auf dich",
+            "perceptual_database": "Er scheint ein schlechter Verlierer zu sein"
+          },
+          "state": {
+            "physical_changes": "Adrenalinkick",
+            "emotion": "Freude",
+            "mental_changes": "Du fühlst dich aufrichtig und anständig"
+          },
+          "response": {
+            "constructive_response": "Mach weiter",
+            "destructive_response": "Du lachst ihn hämisch aus",
+            "ambiguous_response": "Feier deinen Erfolg"
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "site": {
+      "header": "Atlas der Gefühle",
+      "body": "",
+      "caption": "Wähle eine Emotion",
+      "header_mobile": "Zurück",
+      "body_mobile": "",
+      "sectionName": "",
+      "interaction_prompt": "",
+      "learn_more_button": "Erfahre mehr",
+      "close_button": "Schließen",
+      "back_button": "Zurück"
+    },
+    "navigation": {
+      "introduction": {
+        "menu": "Einleitung",
+        "heading": "Einleitung"
+      },
+      "timeline": {
+        "menu": "Zeitstrahl",
+        "heading": "Der Zeitstrahl"
+      },
+      "experience": {
+        "menu": "Erleben",
+        "heading": "Unser Erleben"
+      },
+      "response": {
+        "menu": "Reaktion",
+        "heading": "Unsere Reaktion"
+      },
+      "strategies": {
+        "menu": "Strategien",
+        "heading": "Strategien"
+      },
+      "emotions": {
+        "all": "Alles"
+      },
+      "learn_more": {
+        "menu": "navigation_learn_more_menu_item",
+        "heading": "navigation_learn_more_section_header"
+      }
+    },
+    "intro": {
+      "header": "Willkommen zum Atlas der Emotionen",
+      "body": "",
+      "header_mobile": "Willkommen zum Atlas der Emotionen",
+      "body_mobile": "Die Idee des Atlasses wurde im Rahmen von Gesprächen über die Wissenschaft der Emotionen zwischen dem Dalai Lama und Dr. Paul Ekman geboren. Erschaffen wurde er in Zusammenarbeit mit Stamen Design und Pauls Tochter, Dr. Eve Ekman. Der Atlas der Emotionen ist eine interaktive und visuelle Reise durch die Welt der Emotionen.",
+      "sectionName": "Einleitung",
+      "steps": [
+        {
+          "header": "Willkommen zum Atlas der Emotionen",
+          "body": "Der erste Schritt zur Regulation der eigenen Gefühle besteht darin, zu erkennen und zu beschreiben was du fühlst.",
+          "header_mobile": "Willkommen zum Atlas der Emotionen",
+          "body_mobile": "Der erste Schritt zur Regulation der eigenen Gefühle besteht darin, zu erkennen und zu beschreiben was du fühlst.",
+          "caption": "Dieser Atlas ist ein visuelles Tool, um deinen Emotionswortschatz zu erweitern. Das Ziel ist es, den eigenen Handlungsspielraum zu erweitern: was löst Emotionen bei mir aus und wie reagiere ich darauf."
+        },
+        {
+          "header": "Durch den Atlas navigieren",
+          "body": "Es gibt fünf Emotionen zu erkunden. Erfahre mehr über jede Emotion, indem du mit den Formen interagierst. Navigiere, indem du \"runter\", \"inks\" und \"rechts\" klickst. Betrachte jede Emotion und überlege, wie diese mit deiner eigenen Lebenserfahrung zusammenhängt.  ",
+          "header_mobile": "Durch den Atlas navigieren",
+          "body_mobile": "Es gibt fünf Emotionen zu erkunden. Erfahre mehr über jede Emotion, indem du mit den Formen interagierst. Navigiere, indem du \"runter\", \"inks\" und \"rechts\" klickst. Betrachte jede Emotion und überlege, wie diese mit deiner eigenen Lebenserfahrung zusammenhängt.  ",
+          "caption": "intro_caption_2"
+        },
+        {
+          "header": "Der Atlas: Eine neue Landkarte",
+          "body": "Der Atlas wurde durch den Dalai Lama beauftragt, um eine wissenschaftlich basierte \"road map\" zur emotionalen Bewusstheit zu kreieren. Dr. Paul Ekman und seine Tochter, Eve Ekman beziehen sich in diesem Atlas auf eine durch sie durchgeführte Metastudie <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">study</a> they conducted.<br><br> Die dort befragten Wissenschaftler stimmten darin überein, dass es diese fünf Emotionen, welche von allen Menschen gefühlt werden. ",
+          "header_mobile": "Der Atlas: Eine neue Landkarte",
+          "body_mobile": "Der Atlas wurde durch den Dalai Lama beauftragt, um eine wissenschaftlich basierte \"road map\" zur emotionalen Bewusstheit zu kreieren. Dr. Paul Ekman und seine Tochter, Eve Ekman beziehen sich in diesem Atlas auf eine durch sie durchgeführte Metastudie <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">study</a> they conducted.<br><br> Die dort befragten Wissenschaftler stimmten darin überein, dass es diese fünf Emotionen, welche von allen Menschen gefühlt werden. ",
+          "caption": "Wähle eine Emotion und beginne mit der Erkundung."
+        },
+        {
+          "header": "Gehe zum Atlas",
+          "body": "",
+          "header_mobile": "Gehe zum Atlas",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Los geht’s",
+          "body": "",
+          "header_mobile": "Los geht’s",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Zurück",
+          "body": "",
+          "header_mobile": "Zurück",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Warum ein Atlas?",
+          "body": "",
+          "header_mobile": "Warum ein Atlas?",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Los geht’s",
+          "body": "",
+          "header_mobile": "Los geht’s",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Links",
+          "body": "",
+          "header_mobile": "Links",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Rechts",
+          "body": "",
+          "header_mobile": "Rechts",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Runter",
+          "body": "",
+          "header_mobile": "Runter",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Ärger ist universell",
+          "body": "",
+          "header_mobile": "Ärger ist universell",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Angst ist universell",
+          "body": "",
+          "header_mobile": "Angst ist universell",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Ekel ist universell",
+          "body": "",
+          "header_mobile": "Ekel ist universell",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Trauer ist universell",
+          "body": "",
+          "header_mobile": "Trauer ist universell",
+          "body_mobile": "",
+          "caption": ""
+        },
+        {
+          "header": "Freude ist universell",
+          "body": "",
+          "header_mobile": "Freude ist universell",
+          "body_mobile": "",
+          "caption": ""
+        }
+      ]
+    },
+    "hero": {
+      "header": "Willkommen zum Atlas der Emotionen",
+      "body": "",
+      "header_mobile": "Willkommen zum Atlas der Emotionen",
+      "body_mobile": "",
+      "sectionName": "Einleitung",
+      "sub_header": "Gefördert und unterstützt durch den Dalai Lama",
+      "learn_more_link": "Erfahre mehr",
+      "about": {
+        "header": "Über der Atlas",
+        "header_mobile": "Über der Atlas",
+        "body": "Der Dalai Lama stellte sich eine Landkarte unserer Emotionen vor, um einen ruhigen Geist zu entwickeln. Er bat seinen langjährigen Freund und renommierten Emotionswissenschaftler Dr. Paul Ekman, diese Idee umzusetzen. Ekman nahm sich der Realisierung des Atlas der Emotionen zusammen mit seiner Tochter an: Eve Ekman, eine Emotionswissenschaftlerin der zweiten Generation und zugleich Trainerin. Der Atlas spiegelt die Erkenntnisse wider, die Wissenschaftler im Rahmen von psychologischen Studien zur Emotion gewonnen haben.",
+        "body_mobile": "Der Dalai Lama stellte sich eine Landkarte unserer Emotionen vor, um einen ruhigen Geist zu entwickeln. Er bat seinen langjährigen Freund und renommierten Emotionswissenschaftler Dr. Paul Ekman, diese Idee umzusetzen. Ekman nahm sich der Realisierung des Atlas der Emotionen zusammen mit seiner Tochter an: Eve Ekman, eine Emotionswissenschaftlerin der zweiten Generation und zugleich Trainerin. Der Atlas spiegelt die Erkenntnisse wider, die Wissenschaftler im Rahmen von psychologischen Studien zur Emotion gewonnen haben."
+      },
+      "cta": "Start",
+      "slides": [
+        "Dieser Atlas ist ein interaktives Tool, um deinen Emotionswortschatz zu erweitern und deine Welt der Emotionen zu erleuchten.",
+        "Das Ziel besteht darin, größere Kontrolle darüber zu erlangen, was Gefühle bei dir auslösen und wie du darauf reagierst. ",
+        "Der erste Schritt zu emotionaler Bewusstheit besteht darin, dass du lernst zu erkennen und zu beschreiben, wie du dich fühlst und warum du dich so fühlst."
+      ]
+    },
+    "continents": {
+      "header": "Fünf universelle Emotionen",
+      "body": "Die meisten Emotionswissenschaftler stimmen hinsichtlich dieser fünf universellen Emotionen überein: Emotionen, die alle Menschen, ungeachtet ihrer Herkunft und Sozialisation, gemeinsam haben. Die Bewegung der Formen spiegelt die fließende Beschaffenheit von Emotionen wider -  die Art und Weise wie sich Emotionen von Moment zu Moment ändern können. Wähle eine Emotion, um mehr zu erfahren.",
+      "caption": "",
+      "header_mobile": "Fünf universelle Emotionen",
+      "body_mobile": "Die meisten Emotionswissenschaftler stimmen hinsichtlich dieser fünf universellen Emotionen überein: Emotionen, die alle Menschen, ungeachtet ihrer Herkunft und Sozialisation, gemeinsam haben. Klicke auf eine Emotion, um mehr zu erfahren.",
+      "sectionName": "universelle Emotionen",
+      "interaction_prompt": ""
+    },
+    "states": {
+      "header": "Zustände von LHAMO",
+      "body": "Hier erkunden wir unterschiedliche Zustände und Intensitäten innerhalb einer Emotion. ",
+      "caption": "Geringste Intensität, höchste Intensität",
+      "header_mobile": "Zustände von LHAMO",
+      "body_mobile": "LHAMO kann sehr sanft oder extrem wahrgenommen werden - oder irgendwo dazwischen. Klicke auf die Formen , um einige der Zustände kennenzulernen, die wir erleben können. ",
+      "sectionName": "Zustände",
+      "interaction_prompt": "Wähle eine Form, um mehr über die emotionalen Zustände von LHAMO zu erfahren."
+    },
+    "actions": {
+      "header": "Handlungen aufgrund von LHAMO",
+      "body": "Wir reagieren auf emotionale Zustände mit unseren Handlungen. Unsere Reaktion auf die gleiche Emotion mag dabei variieren - abhängig von der Situation ",
+      "header_mobile": "Handlungen aufgrund von LHAMO",
+      "body_mobile": "Wir reagieren auf emotionale Zustände mit unseren Handlungen. Klicke auf die Formen, um mehr über die möglichen Reaktionen auf LHAMO zu erfahren.",
+      "sectionName": "Handlungen",
+      "interaction_prompt": "Wähle eine Form, um mehr über einige der möglichen emotionalen Zustände, die wir erleben können, zu erfahren. Wähle dann eine Handlung für weitere Informationen.",
+      "qualities": [
+        {
+          "header": "Zielführende Handlungen",
+          "body": "In diesem Stadium ist die Handlung zielführend. Sie ist eine hilfreiche Reaktion auf die Emotion.",
+          "header_mobile": "Zielführende Handlungen",
+          "body_mobile": "Wir reagieren auf emotionale Zustände mit unseren Handlungen. Klicke auf die Formen, um mehr über die möglichen Reaktionen auf LHAMO zu erfahren."
+        },
+        {
+          "header": "Zweideutige Handlungen",
+          "body": "In diesem Zustand ist die Handlung nicht eindeutig zu bewerten. Sie könnte entweder eine nützliche Reaktion auf die Emotion sein oder Schaden anrichten. ",
+          "header_mobile": "Zweideutige Handlungen",
+          "body_mobile": "In diesem Zustand ist die Handlung nicht eindeutig zu bewerten. Sie könnte entweder eine nützliche Reaktion auf die Emotion sein oder Schaden anrichten. "
+        },
+        {
+          "header": "Schädliche Handlungen",
+          "body": "In diesem Zustand ist diese Handlung schädlich. Sie könnte Schaden anrichten.",
+          "header_mobile": "Schädliche Handlungen",
+          "body_mobile": "In diesem Zustand ist diese Handlung schädlich. Sie könnte Schaden anrichten."
+        }
+      ]
+    },
+    "triggers": {
+      "header": "Die Auslöser von LHAMO",
+      "body": "Ein Auslöser ist etwas in unserer Umwelt oder in unserer Gedankenwelt, dass eine Emotion in uns wachruft. Wähle einen Reiter, um mehr über das Auslösen von LHAMO zu erfahren",
+      "header_mobile": "Die Auslöser von LHAMO",
+      "body_mobile": "Ein Auslöser ist etwas in unserer Umwelt oder in unserer Gedankenwelt, dass eine Emotion in uns wachruft. Wähle einen Reiter, um mehr über das Auslösen von LHAMO zu erfahren",
+      "sectionName": "Auslöser",
+      "steps": [
+        {
+          "header": "Auslöser",
+          "body": "Einige Auslöser sind fest in uns verankert und für alle Menschen gleich. Andere Auslöser erlernen wir durch unsere Umwelt und durch unsere individuellen Erfahrungen. ",
+          "header_mobile": "Auslöser",
+          "body_mobile": "Ein Auslöser ist etwas in unserer Umwelt oder in unserer Gedankenwelt, dass eine Emotion in uns wachruft. Wähle einen Reiter, um mehr über das Auslösen von LHAMO zu erfahren"
+        },
+        {
+          "header": "Wahrnehmung",
+          "body": "Unsere persönliche Erfahrung bestimmt, ob ein Auslöser uns emotional werden lässt oder nicht. Universelle Auslöser hingegen lösen ungeachtet dessen Emotionen aus. ",
+          "header_mobile": "Wahrnehmung",
+          "body_mobile": "Unsere persönliche Erfahrung bestimmt, ob ein Auslöser uns emotional werden lässt oder nicht. Universelle Auslöser hingegen lösen ungeachtet dessen Emotionen aus. "
+        },
+        {
+          "header": "Reaktion",
+          "body": "Emotionen sind unsere natürliche Reaktion auf bestimmte Auslöser. Die Ausprägung der Emotion und unsere Handlungen finden häufig statt, ohne dass wir realisieren warum. ",
+          "header_mobile": "Reaktion",
+          "body_mobile": "Emotionen sind unsere natürliche Reaktion auf bestimmte Auslöser. Die Ausprägung der Emotion und unsere Handlungen finden häufig statt, ohne dass wir realisieren warum. "
+        },
+        {
+          "header": "universelle Auslöser",
+          "body": "Dies ist ein Beispiel eines universellen Auslösers. Jeder Mensch hat die gleichen universellen Auslöser - wir sind damit geboren und sie wirken sich intensiver aus, als erlernte Auslöser. ",
+          "header_mobile": "universelle Auslöser",
+          "body_mobile": "Dies ist ein Beispiel eines universellen Auslösers. Jeder Mensch hat die gleichen universellen Auslöser - wir sind damit geboren und sie wirken sich intensiver aus, als erlernte Auslöser. "
+        },
+        {
+          "header": "Erlernte Auslöser",
+          "body": "Dies ist ein Beispiel für einen erlernten Auslöser. Einige erlernte Auslöser sind kulturspezifisch, andere wiederum sind sehr persönlich und durch individuelle Erfahrungen erzeugt.  ",
+          "header_mobile": "Erlernte Auslöser",
+          "body_mobile": "Dies ist ein Beispiel für einen erlernten Auslöser. Einige erlernte Auslöser sind kulturspezifisch, andere wiederum sind sehr persönlich und durch individuelle Erfahrungen erzeugt.  "
+        }
+      ]
+    },
+    "moods": {
+      "header": "Eine Stimmung von LHAMO",
+      "body": "Stimmungen sind langlebige Verwandte einer Emotion. Sie führen dazu, dass wir die dazugehörige Emotion immer wieder ohne klaren Auslöser erleben. Wähle eine Form, um mehr zu erfahren.",
+      "caption": "",
+      "header_mobile": "Eine Stimmung von LHAMO",
+      "body_mobile": "Stimmungen sind langlebige Verwandte einer Emotion. Sie führen dazu, dass wir die dazugehörige Emotion immer wieder ohne klaren Auslöser erleben. Klicke auf die Form, um mehr zu erfahren.",
+      "sectionName": "Stimmungen",
+      "interaction_prompt": ""
+    },
+    "calm": {
+      "header": "Ruhe erfahren",
+      "body": "Der Atlas der Emotionen wurde durch den Dalai Lama mit folgendem Zweck in Auftrag gegeben: Um Amerika zu entdecken brauchte Kolumbus Seekarten. Auch wir benötigen eine Landkarte, um zu einem ruhigen Geist finden: eine Landkarte unserer Emotionen. Das einfache, aber nicht triviale Ziel dieses Atlasses ist es, uns beim bewusst werden unserer Emotionen zu unterstützen. Sich seiner Emotionen gewahr zu sein bedeutet, zu verstehen, wie diese ausgelöst werden, wie sie sich anfühlen und wie wir auf sie reagieren. Diese Bewusstheit selbst ist eine Strategie, die uns dabei hilft Emotionserfahrungen zu verstehen. Wir wollen Emotionen nicht los werden, wir wollen Strategien, die uns bei hilfreichen und zielführenden Antworten unterstützen.",
+      "caption": "Beginne neu",
+      "header_mobile": "Ruhe erfahren",
+      "body_mobile": "Der Atlas der Emotionen wurde durch den Dalai Lama mit folgendem Zweck in Auftrag gegeben: Um die neue Welt  zu finden, benötigen wir eine Landkarte. Wenn wir einen Weg zu einem ruhigen Geist finden wollen, benötigen wir eine Landkarte userer Emotionen. Das einfache, aber nicht triviale Ziel dieses Atlasses ist es, uns beim bewusst werden unserer Emotionen zu unterstützen. Sich seiner Emotionen bewusst zu sein bedeutet, zu verstehen, wie diese ausgelöst werden, wie sie sich anfühen und wie wir auf sie reagieren. Diese Bewusstheit selbst ist eine Strategie, die uns dabei hilft, Emotionserfahrungen zu verstehen. Wir wollen Emotionen nicht los werden, wir wollen Strategien, die uns bei hilfreichen und zielführenden Antworten untertützen.",
+      "sectionName": "calm_section_name",
+      "secondary": {
+        "header": "Besuche den Anhang",
+        "body": "Um mehr über Emotionen zu erfahren, klicke auf \"Mehr Informationen\" in der unteren rechten Ecke",
+        "header_mobile": "Besuche den Anhang",
+        "body_mobile": "Der Atlas der Emotionen wurde durch den Dalai Lama mit folgendem Zweck in Auftrag gegeben: Um die neue Welt  zu finden, benötigen wir eine Landkarte. Wenn wir einen Weg zu einem ruhigen Geist finden wollen, benötigen wir eine Landkarte userer Emotionen. Das einfache, aber nicht triviale Ziel dieses Atlasses ist es, uns beim bewusst werden unserer Emotionen zu unterstützen. Sich seiner Emotionen bewusst zu sein bedeutet, zu verstehen, wie diese ausgelöst werden, wie sie sich anfühen und wie wir auf sie reagieren. Diese Bewusstheit selbst ist eine Strategie, die uns dabei hilft, Emotionserfahrungen zu verstehen. Wir wollen Emotionen nicht los werden, wir wollen Strategien, die uns bei hilfreichen und zielführenden Antworten untertützen."
+      },
+      "crowdfunding": "Wir entwickeln ebenfalls einen Atlas der Emotionen für Kinder! Wenn Sie dieses Projekt unterstützen möchten, besuchen Sie bitte die folgende Webpage: <a target=\"_newWin\" href=\"https://www.indiegogo.com/projects/help-create-an-atlas-of-emotions-for-children#/\"><img src=\"img/Indiegogo-Logo.png\" alt=\"indie gogo\"></a>"
+    },
+    "more": {
+      "header": "",
+      "body": "",
+      "caption": "Zurück zum Atlas",
+      "header_mobile": "",
+      "body_mobile": "",
+      "sectionName": "Mehr Informationen",
+      "interaction_prompt": ""
+    },
+    "timeline": {
+      "header": "Der Zeitstrahl",
+      "header_mobile": "Der Zeitstrahl",
+      "body": [
+        "Unsere Emotionen entfalten sich auf einem Zeitstrahl. Dieser Strahl beginnt mit einem Auslöser, der die emotionale Erfahrung initiiert und letztlich zu einer Reaktion führt.",
+        "Wähle aus der Liste unterhalb des Zeitstrahls die unterschiedlichen Emotionen aus.",
+        "Erkenne, wie der selbe Auslöser zu unterschiedlichen Reaktionen führen kann - abhängig von der erlebten Emotion."
+      ],
+      "body_mobile": [
+        "Unsere Emotionen entfalten sich auf einem Zeitstrahl. Dieser Strahl beginnt mit einem Auslöser, der die emotionale Erfahrung initiiert und letztlich zu einer Reaktion führt.",
+        "Wähle aus der Liste unterhalb des Zeitstrahls die unterschiedlichen Emotionen aus.",
+        "Erkenne, wie der selbe Auslöser zu unterschiedlichen Reaktionen führen kann - abhängig von der erlebten Emotion."
+      ],
+      "restart_button": "Neustart",
+      "intro_button": "Wie geschieht dies?",
+      "secondary": {
+        "trigger": {
+          "header": "Auslöser",
+          "body": [
+            "Der Auslöser ist in einen Kontext eingebettet:",
+            [
+              "Aktuelle Befindlichkeiten und Umstände",
+              "Der Anlass",
+              "Unsere Sicht der Welt, die durch frühere Erfahrungen, persönliche Biografie und vererbte universelle Schemata beeinflusst ist."
+            ]
+          ],
+          "button": "Füge Bewusstheit hinzu",
+          "body_mobile": [
+            "Der Auslöser ist in einen Kontext eingebettet:",
+            [
+              "Aktuelle Befindlichkeiten und Umstände",
+              "Der Anlass",
+              "Unsere Sicht der Welt, die durch frühere Erfahrungen, persönliche Biografie und vererbte universelle Schemata beeinflusst ist."
+            ]
+          ],
+          "header_mobile": "Auslöser"
+        },
+        "experience": {
+          "header": "Erfahrung",
+          "body": [
+            "Die ausgelöste emotionale Erfahrung besteht aus subjektiven Gefühlen und körperlichen Empfindungen. Beides beeinflusst unsere Wahrnehmung einer Situation. "
+          ],
+          "button": "Füge Bewusstheit hinzu",
+          "body_mobile": [
+            "Die ausgelöste emotionale Erfahrung besteht aus subjektiven Gefühlen und körperlichen Empfindungen. Beides beeinflusst unsere Wahrnehmung einer Situation. "
+          ],
+          "header_mobile": "Erfahrung"
+        },
+        "response": {
+          "header": "Reaktion",
+          "body": [
+            "Wir haben die Wahl, wie wir reagieren, auch wenn es manchmal schwierig ist. Einige Reaktionen sind zielführender als andere."
+          ],
+          "button": "Warum ist es schwierig, Bewussheit aufrecht zu erhalten?",
+          "body_mobile": [
+            "Wir haben die Wahl, wie wir reagieren, auch wenn es manchmal schwierig ist. Einige Reaktionen sind zielführender als andere."
+          ],
+          "header_mobile": "Reaktion"
+        },
+        "refractory": {
+          "header": "Emotionale Sättigung",
+          "body": [
+            "Wenn eine Emotion ausgelöst wird, hat uns diese Emotion im Griff. Dies limitiert unsere Fähigkeit, klar zu denken und zu handeln.",
+            "Nach einiger Zeit gewinnen wir wieder Klarheit und sind in der Lage, eine überlegte Wahl zu treffen.",
+            "Wenn wir achtsam sind, können wir innehalten bevor wir reagieren und uns so für eine Reaktion entscheiden, die unseren Zielen am dienlichsten ist. "
+          ],
+          "button": "Betrachte den Gesamtzusammenhang",
+          "body_mobile": [
+            "Wenn eine Emotion ausgelöst wird, hat uns diese Emotion im Griff. Dies limitiert unsere Fähigkeit, klar zu denken und zu handeln.",
+            "Nach einiger Zeit gewinnen wir wieder Klarheit und sind in der Lage, eine überlegte Wahl zu treffen.",
+            "Wenn wir achtsam sind, können wir innehalten bevor wir reagieren und uns so für eine Reaktion entscheiden, die unseren Zielen am dienlichsten ist. "
+          ],
+          "header_mobile": "Emotionale Sättigung"
+        },
+        "blocks": {
+          "header": "Gesamtzusammenhang",
+          "body": [
+            "Du kannst jedes Stück des Zeitstrahls auswählen und lernen, wie sich Wissenschaftler emotionale Verläufe erklären. Gehe dann zum <a href=\"#continents/\">Erleben</a> Abschnitt um zu betrachten, wie emotionale Erfahrungen abgebildet werden."
+          ],
+          "labels": {
+            "precondition": "Vorbedingung",
+            "event": "Anlass",
+            "perceptual_database": "Wahrnehmungsdatenbank",
+            "physical_changes": "Körperliche Veränderungen",
+            "state": "Emotionaler Zustand",
+            "mental_changes": "Geistige Veränderung",
+            "constructive_response": "Zielführende Reaktion",
+            "destructive_response": "Schädliche Reaktion",
+            "ambiguous_response": "Mehrdeutige Reaktion"
+          },
+          "captions": {
+            "precondition": "Der Kontext, der uns beeinflusst, in welcher Art und Weise wir Gefühle wahrnehmen.",
+            "event": "Ein Vorgang, der in der Realität, oder in unserer Gedanken stattfindet.",
+            "perceptual_database": "Wie wir die Welt betrachten, ist ein Ergebnis unserer persönlichen Historie und universeller Handlungsschemata. Diese Schemata sind die Folge wiederholter emotionaler Erfahrungen, manche davon sind geerbt, andere angeeignet. ",
+            "physical_changes": "Die automatische körperliche Empfindung unserer Emotion.",
+            "emotional_state": "Unsere kombinierten körperlichen und geistigen Veränderungen.",
+            "mental_changes": "Das unmittelbare Erleben unserer Emotion.",
+            "constructive_response": "Eine Reaktion, die uns bei der Zielerreichung unterstützt.",
+            "destructive_response": "Eine Reaktion, die unsere Zielerreichung verhindert.",
+            "ambiguous_response": "Eine Reaktion, die hilfreich oder nicht hilfreich sein kann - manchmal können wir uns nicht sicher sein."
+          },
+          "body_mobile": [
+            "Du kannst jedes Stück des Zeitstrahls auswählen und lernen, wie sich Wissenschaftler emotionale Verläufe erklären. Gehe dann zum <a href=\"#continents/\">Erleben</a> Abschnitt um zu betrachten, wie emotionale Erfahrungen abgebildet werden."
+          ],
+          "header_mobile": "Gesamtzusammenhang"
+        },
+        "common": {
+          "header": "timeline_common_header",
+          "body": [],
+          "phrases": {
+            "you_feel": "Du fühlst"
+          },
+          "body_mobile": [],
+          "header_mobile": "timeline_common_header"
+        }
+      }
+    }
+  },
+  "about": {
+    "subsections": [
+      {
+        "title": "Über Paul und Eve Ekman",
+        "desc": "Paul Ekman ist ein anerkannter US- amerikanischer Psychologe, der einer der ersten war, der auf dem Gebiet der Emotionen geforscht hat. Nach 40 Jahren Lehre an der UCSF, langer Zusammenarbet mit law enforcement agencies und dem Dalai Lama, hat er nun eine eigene Trainingsfirma. \nEve Ekman, post doctoral scholar am UCSF Osher Center für intergrative Medizin. Sie unterrichtet Cultivating Emotional Balance (CEB), eine Methode die Emotionsregulation und Meditation kombiniert. Eve nutzt CEB auch um Anbieter im Gesundheitssektor zu trainieren.",
+        "title_mobile": "Über Paul und Eve Ekman",
+        "desc_mobile": "Paul Ekman ist ein anerkannter US- amerikanischer Psychologe, der einer der ersten war, der auf dem Gebiet der Emotionen geforscht hat. Nach 40 Jahren Lehre an der UCSF, langer Zusammenarbet mit law enforcement agencies und dem Dalai Lama, hat er nun eine eigene Trainingsfirma. \nEve Ekman, post doctoral scholar am UCSF Osher Center für intergrative Medizin. Sie unterrichtet Cultivating Emotional Balance (CEB), eine Methode die Emotionsregulation und Meditation kombiniert. Eve nutzt CEB auch um Anbieter im Gesundheitssektor zu trainieren."
+      },
+      {
+        "title": "Über Stamen Design",
+        "desc": "Stamen Design wurde 2001 von Eric Rodenbeck gegründet. Inwzischen arbeiten dort 12 Personen. Stamen Design hat sich einen Namen gemacht für seine Kompetenz bei der Erstellung überzeugender interaktiver Design- und Datenvisualisierungsprojekte. Stamen ist weder ein Forschungslabor noch eine traditionelle Design Agentur aber ein Ort, an dem Zusammenarbeit geschätzt wird, gute Ideen von überall her kommen können und Ergebnisse im Vordergrund stehen. ",
+        "title_mobile": "Über Stamen Design",
+        "desc_mobile": "Stamen Design wurde 2001 von Eric Rodenbeck gegründet. Inwzischen arbeiten dort 12 Personen. Stamen Design hat sich einen Namen gemacht für seine Kompetenz bei der Erstellung überzeugender interaktiver Design- und Datenvisualisierungsprojekte. Stamen ist weder ein Forschungslabor noch eine traditionelle Design Agentur aber ein Ort, an dem Zusammenarbeit geschätzt wird, gute Ideen von überall her kommen können und Ergebnisse im Vordergrund stehen. "
+      },
+      {
+        "title": "about_header_3",
+        "desc": "about_body_3",
+        "title_mobile": "about_header_3",
+        "desc_mobile": "about_body_3"
+      },
+      {
+        "title": "about_header_4",
+        "desc": "about_body_4",
+        "title_mobile": "about_header_4",
+        "desc_mobile": "about_body_4"
+      },
+      {
+        "title": "about_header_5",
+        "desc": "about_body_5",
+        "title_mobile": "about_header_5",
+        "desc_mobile": "about_body_5"
+      },
+      {
+        "title": "about_header_6",
+        "desc": "about_body_6",
+        "title_mobile": "about_header_6",
+        "desc_mobile": "about_body_6"
+      },
+      {
+        "title": "about_header_7",
+        "desc": "about_body_7",
+        "title_mobile": "about_header_7",
+        "desc_mobile": "about_body_7"
+      }
+    ],
+    "title": "Über den Atlas",
+    "desc": "Der Atlas der Emotionen ist ein interaktives Tool, welches kreiert wurde, um emotionales Bewusstheit zu lernen. Diese Seite lädt dich ein, die 5 Grundemotionen (sowie ihre damit verbundenen Gefühle, Handlungen, Auslöser und Stimmungen) zu visualisieren, identifizieren und zu erkunden, wie diese unser Leben beeinflussen. Auch wenn wir uns nicht immer aussuchen können, wie wir uns fühlen oder wann wir was fühlen, so ist es mit emotionaler Bewusstheit vielleicht möglich, zu entscheiden, wie wir auf ein Gefühl reagieren. \nDie Geschichte des Atlas begann, als der Dalai Lama den berühmten Emotionsforscher Paul Ekman gebeten hat, eine Karte der Emotionen zu kreieren, mit der Menschen lernen können zielführender mit emotionalen Erfahrungen umzugehen. Ekman, ein Experte auf diesem Gebiet, hatte bereits vorher Projekte zum Thema Emotionen beraten, so z.B. den erfolgreichen Pixar FIlm \" Alles steht Kopf\". Zusammen mit seiner Tocher Eve Ekmam kreierte Ekman den Atlas der Emotionen als Antwort auf die Bitte des Dalai Lamas. ",
+    "title_mobile": "Über den Atlas",
+    "desc_mobile": "Der Atlas der Emotionen ist ein interaktives Tool, welches kreiert wurde, um emotionales Bewusstheit zu lernen. Diese Seite lädt dich ein, die 5 Grundemotionen (sowie ihre damit verbundenen Gefühle, Handlungen, Auslöser und Stimmungen) zu visualisieren, identifizieren und zu erkunden, wie diese unser Leben beeinflussen. Auch wenn wir uns nicht immer aussuchen können, wie wir uns fühlen oder wann wir was fühlen, so ist es mit emotionaler Bewusstheit vielleicht möglich, zu entscheiden, wie wir auf ein Gefühl reagieren. \nDie Geschichte des Atlas begann, als der Dalai Lama den berühmten Emotionsforscher Paul Ekman gebeten hat, eine Karte der Emotionen zu kreieren, mit der Menschen lernen können zielführender mit emotionalen Erfahrungen umzugehen. Ekman, ein Experte auf diesem Gebiet, hatte bereits vorher Projekte zum Thema Emotionen beraten, so z.B. den erfolgreichen Pixar FIlm \" Alles steht Kopf\". Zusammen mit seiner Tocher Eve Ekmam kreierte Ekman den Atlas der Emotionen als Antwort auf die Bitte des Dalai Lamas. ",
+    "sectionName": "Über den Atlas",
+    "sectionName_mobile": "Über den Atlas"
+  },
+  "emotrak": {
+    "subsections": [
+      {
+        "title": "",
+        "desc": "Eine brandneue App, EmoTrak, wird von Dr. Eve Ekman und Mitarbeitern entwickelt. Melden Sie sich hier an, um als Erster über die Veröffentlichung dieser wissenschaftsbasierten Emotionstrainingsapp informiert zu werden.",
+        "title_mobile": "",
+        "desc_mobile": "Eine brandneue App, EmoTrak, wird von Dr. Eve Ekman und Mitarbeitern entwickelt. Melden Sie sich hier an, um als Erster über die Veröffentlichung dieser wissenschaftsbasierten Emotionstrainingsapp informiert zu werden.",
+        "image": "emotrak",
+        "mail": null
+      },
+      {
+        "title": "",
+        "desc": "emotrak_section_2",
+        "title_mobile": "",
+        "desc_mobile": "emotrak_section_2",
+        "image": null,
+        "mail": true
+      },
+      {
+        "title": "",
+        "desc": "Dr. Eve Ekman ist an der UCSF eine Habilitationsstipendiatin, die über Bunrout und emotionale Gesundheit forscht. Emo Trak wurde von ihr entwickelt, um Gesundheitsdienstleister zu unterstützen. Die App ist ein Selbsteinschätzungstool, um emotionale Auslöser, das Erleben von Emotionen und die Reaktionen darauf einzuschätzen. Zusätzlich enthält die App kurze emotionsfokussierte Meditationseinheiten und gibt Feedback zu deinem emotionalen Profil. ",
+        "title_mobile": "",
+        "desc_mobile": "Dr. Eve Ekman ist an der UCSF eine Habilitationsstipendiatin, die über Bunrout und emotionale Gesundheit forscht. Emo Trak wurde von ihr entwickelt, um Gesundheitsdienstleister zu unterstützen. Die App ist ein Selbsteinschätzungstool, um emotionale Auslöser, das Erleben von Emotionen und die Reaktionen darauf einzuschätzen. Zusätzlich enthält die App kurze emotionsfokussierte Meditationseinheiten und gibt Feedback zu deinem emotionalen Profil. ",
+        "image": null,
+        "mail": null
+      }
+    ],
+    "title": "EmoTrak",
+    "desc": "Verbessern Sie Ihr Wohlbefinden durch tägliches emotionales Gleichgewichtstraining.",
+    "header_mobile": "EmoTrak",
+    "body_mobile": "Verbessern Sie Ihr Wohlbefinden durch tägliches emotionales Gleichgewichtstraining. Jetzt anmelden.<br> \"<!-- Begin MailChimp Signup Form -->\n<link href=\"\"//cdn-images.mailchimp.com/embedcode/slim-10_7.css\"\" rel=\"\"stylesheet\"\" type=\"\"text/css\"\">\n<style type=\"\"text/css\"\">\n        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.\n           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n</style>\n<div id=\"\"mc_embed_signup\"\">\n<form action=\"\"//eveekman.us12.list-manage.com/subscribe/post?u=a8f41488aed929208e96dcf44&amp;id=76c8861d7d\"\" method=\"\"post\"\" id=\"\"mc-embedded-subscribe-form\"\" name=\"\"mc-embedded-subscribe-form\"\" class=\"\"validate\"\" target=\"\"_blank\"\" novalidate>\n    <div id=\"\"mc_embed_signup_scroll\"\">\n        <label for=\"\"mce-EMAIL\"\">Subscribe for EmoTrak Release Updates</label>\n        <input type=\"\"email\"\" value=\"\"\"\" name=\"\"EMAIL\"\" class=\"\"email\"\" id=\"\"mce-EMAIL\"\" placeholder=\"\"email address\"\" required>\n    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n    <div style=\"\"position: absolute; left: -5000px;\"\" aria-hidden=\"\"true\"\"><input type=\"\"text\"\" name=\"\"b_a8f41488aed929208e96dcf44_76c8861d7d\"\" tabindex=\"\"-1\"\" value=\"\"\"\"></div>\n    <div class=\"\"clear\"\"><input type=\"\"submit\"\" value=\"\"Subscribe\"\" name=\"\"subscribe\"\" id=\"\"mc-embedded-subscribe\"\" class=\"\"button\"\"></div>\n    </div>\n</form>\n</div>\n\n<!--End mc_embed_signup-->\"",
+    "sectionName": "Emo Trak",
+    "sectionName_mobile": "Emo Trak"
+  }
 }
