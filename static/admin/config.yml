@@ -20,6 +20,7 @@ i18n:
 collections:
   - name: "strings"
     label: "Primary Content"
+    summary: "Primary Content"
     label_singular: "Content File"
     description: "JSON files containing the translations for different languages."
     folder: "static/strings/langs" # Path relative to repo root
@@ -60,6 +61,7 @@ collections:
 
   - name: "secondary_content"
     label: "Secondary Page Content"
+    summary: "Secondary Page Content"
     label_singular: "Secondary Page Content Item"
     description: "Content for various secondary pages like About, Annex, Donate, etc."
     folder: "static/strings/langs"
@@ -334,6 +336,7 @@ collections:
 
   - name: "strategies"
     label: "Strategies"
+    summary: "Strategies"
     label_singular: "Strategy"
     description: "Content for the strategies page."
     folder: "static/strings/langs"
