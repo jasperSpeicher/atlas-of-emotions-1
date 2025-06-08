@@ -20,7 +20,6 @@ const dispatcher = {
 		SECTION_TEXT_MINIMIZE_COMPLETE: 'sectionTextMinimizeComplete',
 		MAXIMIZE_SECTION_TEXT: 'maximizeSectionText',
 		MINIMIZE_SECTION_TEXT: 'minimizeSectionText',
-		ALLOW_MORE_CONTENT: 'allowMoreContent'
 	},
 
 	SECTIONS: {
@@ -29,7 +28,9 @@ const dispatcher = {
 		ACTIONS: 'actions',
 		TIMELINE: 'triggers',
 		CALM: 'calm',
-		LINKS: 'links'
+		STRATEGIES: 'strategies',
+		LEARN_MORE: 'learn_more',
+		WAKING_UP: 'waking_up'
 	},
 
 	HOME: 'home',
@@ -171,12 +172,6 @@ const dispatcher = {
 	minimizeSectionText: function () {
 
 		this.emit( this.EVENTS.MINIMIZE_SECTION_TEXT );
-
-	},
-
-	allowMoreContent: function ( allow, section ) {
-
-		this.emit( this.EVENTS.ALLOW_MORE_CONTENT );
 
 	},
 

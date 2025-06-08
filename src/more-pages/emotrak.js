@@ -14,9 +14,7 @@ export default {
 	init: function (containerNode, data) {
 		this.data = data.emotrak;
 
-		this.sectionContainer = containerNode;
-
-		this.wrapper = this.sectionContainer.querySelector('.wrapper');
+		this.wrapper = containerNode;
 
 		this.setContent();
 		this.isInited = true;

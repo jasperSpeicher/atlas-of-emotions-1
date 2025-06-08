@@ -1,4 +1,4 @@
-#continents, #links {
+#continents {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -7,12 +7,12 @@
 	top: 0;
 	left: 50%;
 	margin-left: -50%;
+	text-align: center;
 
 	.small-screen & {
 		min-height: 0;
 	}
 
-	text-align: center;
 
 	g.continent {
 		cursor: pointer;

@@ -1,0 +1,435 @@
+.waking-up__pageContainer {
+	pointer-events: none;
+	a {
+		pointer-events: auto;
+	}
+}
+
+.waking-up__stars {
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	right: 0;
+	background-image: url("./img/extra_large_star_pattern.svg");
+	background-repeat: both;
+	opacity: 0.5;
+}
+
+#waking-up__stars-1 {
+	background-size: 200px;
+}
+#waking-up__stars-2 {
+	background-size: 300px;
+}
+#waking-up__stars-3 {
+	background-size: 400px;
+}
+
+.waking-up__pageContainer {
+	position: relative;
+}
+
+.waking-up__immersiveScrollContainer {
+	z-index: 2;
+	position: relative;
+	padding: 0 5%;
+}
+
+.waking-up__emotionContainer {
+	z-index: 2;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 50vh;
+	& > div {
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+
+}
+
+.waking-up__emotionColorField {
+	height: 200vh;
+	width: 200vw;
+	position: fixed;
+	left: 50vw;
+	top: 50vh;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	z-index: 0;
+	will-change: filter;
+}
+
+.waking-up__section {
+	text-align: center;
+}
+
+.waking-up__sectionHeading {
+	font-size: 2.5rem;
+	color: #fff;
+	opacity: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	will-change: filter;
+	@media (max-width: 500px) {
+		font-size: 8vw;
+	}
+}
+
+.waking-up__section.small .waking-up__sectionHeading {
+	font-size: 1.5rem;
+	@media (max-width: 500px) {
+		font-size: 4.5vw;
+	}
+}
+
+.waking-up__section.large .waking-up__sectionHeading {
+	font-size: 3.5rem;
+	@media (max-width: 500px) {
+		font-size: 11vw;
+	}
+}
+
+.waking-up__section.italic .waking-up__sectionHeading {
+	font-style: italic;
+	text-transform: lowercase;
+}
+
+.waking-up__section.opacity .waking-up__sectionHeading {
+	opacity: 0;
+}
+
+.waking-up__phrase {
+	color: #fff;
+	font-size: 2rem;
+	font-style: italic;
+	text-transform: lowercase;
+	vertical-align: middle;
+	opacity: 0.2;
+	@media (max-width: 500px) {
+		font-size: 7vw;
+	}
+}
+
+.waking-up__sectionPhrases.small .waking-up__phrase {
+	font-size: 1.5rem;
+	@media (max-width: 500px) {
+		font-size: 4.5vw;
+	}
+}
+
+.waking-up__sectionPhrases.large .waking-up__phrase {
+	font-size: 2.5rem;
+	@media (max-width: 500px) {
+		font-size: 8vw;
+	}
+}
+
+.waking-up__decentering .waking-up__sectionHeading {
+	justify-content: flex-start;
+}
+
+.waking-up__emotion-label {
+	font-size: 2rem;
+	color: #fff;
+	position: relative;
+	top: 50%;
+	transition: opacity 1s ease-in-out;
+	opacity: 0;
+	transform: translate(0, -50%);
+	white-space: nowrap;
+	overflow: visible;
+	width:300px;
+	text-align: center;
+	@media (max-width: 500px) {
+		font-size: 7vw;
+	}
+}
+
+.waking-up__emotion-label--with-circle::before {
+	content: "";
+	display: block;
+	filter: blur(10px);
+	height: 12vw;
+	width: 12vw;
+	opacity: 1;
+	border-radius: 50%;
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: smooth-pulse 6s infinite ease-in-out;
+}
+
+.waking-up__emotion-label--with-circle {
+	font-size: 1.75rem;
+	@media (max-width: 500px) {
+		font-size: 6vw;
+	}
+}
+
+#waking-up__emotion-label-anger {
+	// left: 50%;
+}
+
+#waking-up__emotion-label-fear {
+	// left: 25%;
+}
+
+#waking-up__emotion-label-fear::before {
+	background-color: rgb(143, 39, 139);
+	color: rgb(143, 39, 139);
+}
+
+#waking-up__emotion-label-sadness {
+	// left: 37%;
+}
+
+#waking-up__emotion-label-sadness::before {
+	background-color: rgb(65, 74, 161);
+	color: rgb(65, 74, 161);
+}
+
+#waking-up__emotion-label-disgust {
+	// left: 62%;
+}
+
+#waking-up__emotion-label-disgust::before {
+	background-color: rgb(0, 104, 55);
+	color: rgb(0, 104, 55);
+}
+
+#waking-up__emotion-label-enjoyment {
+	// left: 75%;
+}
+
+#waking-up__emotion-label-enjoyment::before {
+	background-color: rgb(248, 136, 29);
+	color: rgb(248, 136, 29);
+}
+
+@media (max-width: 1280px) {
+	#waking-up__emotion-label-anger {
+		font-size: 2rem;
+	}
+}
+@media (max-width: 500px) {
+	#waking-up__emotion-label-anger {
+		font-size: 7vw;
+	}
+}
+
+.waking-up__timeline-questions {
+	white-space: nowrap;
+	overflow: visible;
+	font-size: 2.5rem;
+	color: #fff;
+	opacity: 1;
+	transform: translateY(-50%);
+	@media (max-width: 500px) {
+		font-size: 8vw;
+	}
+}
+
+#waking-up__trigger-timeline {
+	position: absolute;
+	right: 60%;
+}
+
+#waking-up__response-timeline {
+	position: absolute;
+	left: 60%;
+}
+
+#waking-up__trigger-questions-section .waking-up__sectionPhrases {
+	position: relative;
+	padding-right: 60%;
+	text-align: right;
+}
+
+#waking-up__response-questions-section .waking-up__sectionPhrases {
+	position: relative;
+	text-align: left;
+	padding-left: 60%;
+}
+
+#waking-up__response-questions-section
+	.waking-up__sectionPhrases
+	.waking-up__phrase {
+	margin-bottom: 3rem;
+}
+
+#waking-up__trigger-questions-section
+	.waking-up__sectionPhrases
+	.waking-up__phrase {
+	margin-bottom: 3rem;
+}
+
+#waking-up__response-questions-section
+	.waking-up__sectionPhrases
+	.waking-up__phrase {
+	font-size: 1.5rem;
+}
+#waking-up__trigger-questions-section
+	.waking-up__sectionPhrases
+	.waking-up__phrase {
+	font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+	#waking-up__response-questions-section
+		.waking-up__sectionPhrases
+		.waking-up__phrase {
+		font-size: 6vw;
+	}
+	#waking-up__trigger-questions-section
+		.waking-up__sectionPhrases
+		.waking-up__phrase {
+		font-size: 6vw;
+	}
+}
+
+#waking-up__trigger-questions-section .waking-up__sectionPhrases,
+#waking-up__response-questions-section .waking-up__sectionPhrases {
+	.waking-up__phrase {
+		height: 20px;
+		overflow: visible;
+		span {
+			padding-top: 150px;
+			display: block;
+		}
+	}
+}
+
+.small-screen {
+	.section-graphics img.waking-up__triggerArrow,
+	.section-graphics img.waking-up__responseArrow {
+		width: 70px;
+		margin: 0;
+	}
+	.section-graphics .waking-up__triggerQuestion,
+	.section-graphics .waking-up__responseQuestion {
+		display: inline-block;
+		font-size: 30px;
+		max-width: 180px;
+		margin: 0;
+		white-space: wrap;
+		vertical-align: middle;
+	}
+	#waking-up__trigger-timeline {
+		width: 257px;
+	}
+	#waking-up__trigger-questions-section .waking-up__sectionPhrases,
+	#waking-up__response-questions-section .waking-up__sectionPhrases {
+		text-align: center;
+		padding: 0;
+	}
+}
+
+.section-graphics img.waking-up__triggerArrow {
+	width: 100px;
+	height: auto;
+}
+.waking-up__triggerQuestion {
+	margin-right: 40px;
+	font-size: 30px;
+	@media (max-width: 500px) {
+		font-size: 8vw;
+	}
+}
+
+.section-graphics img.waking-up__responseArrow {
+	margin-right: 20px;
+	width: 100px;
+	height: auto;
+}
+
+.waking-up__responseQuestion {
+	margin-right: 60px;
+	font-size: 30px;
+	@media (max-width: 500px) {
+		font-size: 8vw;
+	}
+}
+
+#waking_up-fp-section .section-graphics {
+	background-color: rgb(77, 77, 77);
+	overflow-y: auto;
+}
+
+.waking-up__timeline-link {
+	font-size: 30px;
+	color: #fff;
+	text-decoration: underline;
+	font-weight: 200;
+	letter-spacing: 1.5px;
+	&:hover {
+		color: #fff;
+		font-weight: 400;
+		letter-spacing: 1.2px;
+	}
+}
+
+#waking-up__response-timeline {
+	.waking-up__timeline-link {
+		display: none;
+		margin-left: 50px;
+	}
+}
+
+.small-screen {
+	#waking-up__timeline-link-section {
+		visibility: hidden;
+	}
+	#waking-up__response-timeline {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		.waking-up__timeline-link {
+			display: block;
+			width: 90vw;
+			white-space: wrap;
+			text-decoration: underline;
+		}
+	}
+	.waking-up__emotionContainer {
+		height: 100vh;
+		top: 0;
+		& > div {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 60px;
+			bottom: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			#waking-up__emotion-label-fear,
+			#waking-up__emotion-label-sadness,
+			#waking-up__emotion-label-anger,
+			#waking-up__emotion-label-disgust,
+			#waking-up__emotion-label-enjoyment {
+				position: relative;
+				left: auto;
+				top: auto;
+				transform: none;
+				&::before {
+					height: 13vh;
+					width: 13vh;
+				}
+			}
+		}	
+	}
+	.waking-up__emotionColorField {
+		margin-top: 20px;
+	}
+}

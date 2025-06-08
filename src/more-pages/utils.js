@@ -1,17 +1,17 @@
-import dispatcher from '../dispatcher.js';
+import dispatcher from "../dispatcher.js";
 
 /**
  * Utility functions for More Info sections...
  */
 
 export function makeBlock(titleStr, descStr) {
-	const block = document.createElement('div');
-	const title = document.createElement('h3');
-	const desc = document.createElement('p');
+	const block = document.createElement("div");
+	const title = document.createElement("h2");
+	const desc = document.createElement("p");
 
-	block.classList.add('block');
-	title.classList.add('title');
-	desc.classList.add('desc');
+	block.classList.add("block");
+	title.classList.add("title");
+	desc.classList.add("desc");
 
 	title.innerHTML = titleStr;
 	desc.innerHTML = descStr;
@@ -20,19 +20,19 @@ export function makeBlock(titleStr, descStr) {
 	block.appendChild(desc);
 
 	return block;
-};
+}
 
-export function makeImageBlock(titleStr, descStr, imageStr, filetype='png') {
-	const block = document.createElement('div');
-	const title = document.createElement('h3');
-	const desc = document.createElement('p');
-	const image = document.createElement('img');
+export function makeImageBlock(titleStr, descStr, imageStr, filetype = "png") {
+	const block = document.createElement("div");
+	const title = document.createElement("h3");
+	const desc = document.createElement("p");
+	const image = document.createElement("img");
 
-	block.classList.add('block');
-	title.classList.add('title');
-	desc.classList.add('desc');
+	block.classList.add("block");
+	title.classList.add("title");
+	desc.classList.add("desc");
 
-	image.src = './img/' + imageStr + '.' + filetype;
+	image.src = "./img/" + imageStr + "." + filetype;
 
 	desc.innerHTML = descStr;
 
@@ -41,78 +41,75 @@ export function makeImageBlock(titleStr, descStr, imageStr, filetype='png') {
 	block.appendChild(image);
 
 	return block;
-};
+}
 
 export function makeLinkBlock(linkStr) {
-	const block = document.createElement('div');
-	const title = document.createElement('h3');
-	const link = document.createElement('a');
+	const block = document.createElement("div");
+	const link = document.createElement("a");
 
-	block.classList.add('block', 'link');
-	title.classList.add('title');
+	block.classList.add("block", "link");
 
 	link.href = linkStr;
-	link.target = '_blank';
+	link.target = "_blank";
 	link.innerHTML = linkStr;
 
-	title.appendChild(link);
-	block.appendChild(title);
+	block.appendChild(link);
 
 	return block;
-};
+}
 
 export function makeAnnexBackNav(titleStr) {
-	const block = document.createElement('div');
-	const btn = document.createElement('button');
+	const block = document.createElement("div");
+	const btn = document.createElement("button");
 
-	block.classList.add('annex-back-nav');
+	block.classList.add("annex-back-nav");
 	btn.textContent = titleStr;
 	block.appendChild(btn);
 
-	btn.addEventListener('click', function(e) {
-		dispatcher.navigate('more', null, 'annex');
+	btn.addEventListener("click", function (e) {
+		dispatcher.navigate("more", null, "annex");
 	});
 
 	return block;
-};
+}
 
 export function makeTable(title, rows, subTable) {
-	const wrapper = document.createElement('div');
-	wrapper.classList.add('annex-table-wrapper');
+	const wrapper = document.createElement("div");
+	wrapper.classList.add("annex-table-wrapper");
 
-	const table = document.createElement('table');
-	if (!subTable) table.classList.add('annex-table');
+	const table = document.createElement("table");
+	if (!subTable) table.classList.add("annex-table");
 
 	// title
 	if (title) {
-		const titleRow = document.createElement('tr');
-		titleRow.classList.add('title');
+		const titleRow = document.createElement("tr");
+		titleRow.classList.add("title");
 
-		const titleCell = document.createElement('td');
-		titleCell.setAttribute('colspan', 2);
+		const titleCell = document.createElement("td");
+		titleCell.setAttribute("colspan", 2);
 		titleCell.innerHTML = title;
 
 		titleRow.appendChild(titleCell);
 		table.appendChild(titleRow);
 	}
 
-	rows.forEach(row => {
-		const tr = document.createElement('tr');
-		if (!subTable) tr.classList.add('content');
+	rows.forEach((row) => {
+		const tr = document.createElement("tr");
+		if (!subTable) tr.classList.add("content");
 
-		const td0 = document.createElement('td');
-		const td1 = document.createElement('td');
+		const td0 = document.createElement("td");
+		const td1 = document.createElement("td");
 
-		if (!subTable) td0.classList.add('upper');
+		if (!subTable) td0.classList.add("upper");
 
 		td0.textContent = row.name;
 		if (row.children) {
 			if (row.children.length) {
 				const child = makeTable(row.desc, row.children, true);
-				td1.classList.add('has-sub-table');
+				td1.classList.add("has-sub-table");
 				td1.appendChild(child);
 			} else {
-				tr.classList.add('no-children');
+				tr.classList.add("no-children");
 			}
 		} else {
 			td1.textContent = row.desc;
@@ -124,15 +121,19 @@ export function makeTable(title, rows, subTable) {
 		table.appendChild(tr);
 
 		if (row.formatting) {
-			if (row.formatting === 'break' || row.formatting === 'beforebreak') {
-				let spacer = document.createElement('tr');
-				spacer.classList.add('table-break');
-				if (row.formatting === 'break') {
+			if (
+				row.formatting === "break" ||
+				row.formatting === "beforebreak"
+			) {
+				let spacer = document.createElement("tr");
+				spacer.appendChild(document.createElement("td"));
+				spacer.appendChild(document.createElement("td"));
+				spacer.classList.add("table-break");
+				if (row.formatting === "break") {
 					table.appendChild(spacer);
 				} else {
 					table.insertBefore(spacer, tr);
 				}
-
 			}
 		}
 	});
