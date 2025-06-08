@@ -1,99 +1,178 @@
 {
-	"slug": "waking-up",
-	"phrasePairs": [
-		{ "pair": { "event": "Successful interview" }, "emotion": "enjoyment" },
-		{ "pair": { "event": "Forgetting phone password" }, "emotion": "fear" },
-		{ "pair": { "event": "Enjoyed a vacation" }, "emotion": "enjoyment" },
-		{ "pair": { "event": "Stuck in an elevator" }, "emotion": "fear" },
-		{ "pair": { "event": "Slow internet speed" }, "emotion": "anger" },
-		{
-			"pair": { "event": "Dirty dishes everywhere" },
-			"emotion": "disgust"
-		},
-		{ "pair": { "event": "Hear a strange noise" }, "emotion": "fear" },
-		{ "pair": { "event": "Hear a good joke" }, "emotion": "enjoyment" },
-		{ "pair": { "event": "Laid off" }, "emotion": "sadness" },
-		{ "pair": { "event": "Spilled coffee on shirt" }, "emotion": "anger" },
-		{ "pair": { "event": "Got a promotion" }, "emotion": "enjoyment" },
-		{ "pair": { "event": "Moldy shower grout" }, "emotion": "disgust" },
-		{
-			"pair": { "event": "Construction noise nearby" },
-			"emotion": "anger"
-		},
-		{ "pair": { "event": "Lost phone charger" }, "emotion": "fear" },
-		{ "pair": { "event": "Helped a stranger" }, "emotion": "enjoyment" },
-		{ "pair": { "event": "Rotten food in fridge" }, "emotion": "disgust" },
-		{ "pair": { "event": "Plane turbulence" }, "emotion": "fear" }
-	],
-	"scroller": {
-		"introduction": "As we live our lives...",
-		"experiencesTitle": "...we have experiences.",
-		"experiences": [
-			"late to an appointment",
-			"surprise gift",
-			"spilled water on computer",
-			"foul smell",
-			"great first date",
-			"feel unseen"
-		],
-		"lessImportantTitle": "Some might feel less important.",
-		"lessImportantExperiences": [
-			"Hear a good joke",
-			"Houseplant wilting",
-			"Lost phone charger",
-			"Out of laundry detergent"
-		],
-		"veryImportantTitle": "While others feel very important...",
-		"veryImportantExperiences": [
-			"Car accident",
-			"Falling in love",
-			"Bad doctor visit",
-			"Laid off",
-			"Overflowing toilet",
-			"Losing a loved one"
-		],
-		"triggerEmotions": "and they trigger our emotions.",
-		"triggerEmotionExperience": "relationship falls apart",
-		"emotionsColorPerception": "Emotions color our perception of the outer world",
-		"storiesFromInnerWorld": "with stories and messages from our inner world.",
-		"emotionsComeAndGo": "Emotions come and go",
-		"pileUp": "Sometimes many experiences pile up<br/>and we feel a lot...",
-		"oneBigExperience": "...or one experience feels really big.",
-		"arguing": "Arguing with a loved one",
-		"hardToSeparate": "In&nbsp;these&nbsp;moments, it&nbsp;is&nbsp;hard&nbsp;to&nbsp;separate what&nbsp;we&nbsp;feel&nbsp;inside from&nbsp;what&nbsp;is&nbsp;actually happening&nbsp;around&nbsp;us.",
-		"respondWithoutThinking": "And we may respond without thinking.",
-		"withoutClearUnderstanding": "Without clear understanding or intention...",
-		"actInWaysWeRegret": "we might act in ways we regret later.",
-		"regretActions": [
-			"Shout at them",
-			"Mock them",
-			"Ignore them",
-			"Hide our feelings"
-		],
-		"whatCanWeDo": "So what can we do?",
-		"weCanPause": "We can pause...",
-		"connectToBreath": "Connect to our breath...",
-		"rideWaveOfEmotion": "Ride the wave of emotion...",
-		"recognizeEmotionalState": "...recognize that we are in an emotional&nbsp;state,",
-		"becomeCurious": "and become curious and kind about our emotion.&nbsp;&nbsp;",
-		"whatCausesFeeling": "What causes this feeling?",
-		"triggerQuestions": [
-			"what just happened?",
-			"what was I expecting?",
-			"what's the big picture?",
-			"how is my past involved?",
-			"how was my day?",
-			"am I well rested?"
-		],
-		"howDoIRespond": "How do I respond?",
-		"responseQuestions": [
-			"what is my goal?",
-			"what are my options right now?",
-			"are there other ways to see it?",
-			"how am I affecting others?",
-			"what is a good result for us?",
-			"what can I learn from this?"
-		],
-		"exploreTimeline": "Explore the emotional episode timeline >"
-	}
+  "slug": "waking-up",
+  "phrasePairs": [
+    {
+      "pair": {
+        "event": "Successful interview"
+      },
+      "emotion": "enjoyment"
+    },
+    {
+      "pair": {
+        "event": "Forgetting phone password"
+      },
+      "emotion": "fear"
+    },
+    {
+      "pair": {
+        "event": "Enjoyed a vacation"
+      },
+      "emotion": "enjoyment"
+    },
+    {
+      "pair": {
+        "event": "Stuck in an elevator"
+      },
+      "emotion": "fear"
+    },
+    {
+      "pair": {
+        "event": "Slow internet speed"
+      },
+      "emotion": "anger"
+    },
+    {
+      "pair": {
+        "event": "Dirty dishes everywhere"
+      },
+      "emotion": "disgust"
+    },
+    {
+      "pair": {
+        "event": "Hear a strange noise"
+      },
+      "emotion": "fear"
+    },
+    {
+      "pair": {
+        "event": "Hear a good joke"
+      },
+      "emotion": "enjoyment"
+    },
+    {
+      "pair": {
+        "event": "Laid off"
+      },
+      "emotion": "sadness"
+    },
+    {
+      "pair": {
+        "event": "Spilled coffee on shirt"
+      },
+      "emotion": "anger"
+    },
+    {
+      "pair": {
+        "event": "Got a promotion"
+      },
+      "emotion": "enjoyment"
+    },
+    {
+      "pair": {
+        "event": "Moldy shower grout"
+      },
+      "emotion": "disgust"
+    },
+    {
+      "pair": {
+        "event": "Construction noise nearby"
+      },
+      "emotion": "anger"
+    },
+    {
+      "pair": {
+        "event": "Lost phone charger"
+      },
+      "emotion": "fear"
+    },
+    {
+      "pair": {
+        "event": "Helped a stranger"
+      },
+      "emotion": "enjoyment"
+    },
+    {
+      "pair": {
+        "event": "Rotten food in fridge"
+      },
+      "emotion": "disgust"
+    },
+    {
+      "pair": {
+        "event": "Plane turbulence"
+      },
+      "emotion": "fear"
+    }
+  ],
+  "scroller": {
+    "lessImportantExperiences": [
+      "Hear a good joke",
+      "Houseplant wilting",
+      "Lost phone charger",
+      "Out of laundry detergent"
+    ],
+    "respondWithoutThinking": "And we may respond without thinking.",
+    "arguing": "Arguing with a loved one",
+    "emotionsComeAndGo": "Emotions come and go",
+    "oneBigExperience": "...or one experience feels really big.",
+    "whatCanWeDo": "So what can we do?",
+    "connectToBreath": "Connect to our breath...",
+    "howDoIRespond": "How do I respond?",
+    "experiences": [
+      "late to an appointment",
+      "surprise gift",
+      "spilled water on computer",
+      "foul smell",
+      "great first date",
+      "feel unseen"
+    ],
+    "hardToSeparate": "In&nbsp;these&nbsp;moments, it&nbsp;is&nbsp;hard&nbsp;to&nbsp;separate what&nbsp;we&nbsp;feel&nbsp;inside from&nbsp;what&nbsp;is&nbsp;actually happening&nbsp;around&nbsp;us.",
+    "responseQuestions": [
+      "what is my goal?",
+      "what are my options right now?",
+      "are there other ways to see it?",
+      "how am I affecting others?",
+      "what is a good result for us?",
+      "what can I learn from this?"
+    ],
+    "veryImportantTitle": "While others feel very important...",
+    "triggerEmotionExperience": "relationship falls apart",
+    "pileUp": "Sometimes many experiences pile up<br/>and we feel a lot...",
+    "whatCausesFeeling": "What causes this feeling?",
+    "lessImportantTitle": "Some might feel less important.",
+    "experiencesTitle": "...we have experiences.",
+    "regretActions": [
+      "Shout at them",
+      "Mock them",
+      "Ignore them",
+      "Hide our feelings"
+    ],
+    "triggerEmotions": "and they trigger our emotions.",
+    "emotionsColorPerception": "Emotions color our perception of the outer world",
+    "rideWaveOfEmotion": "Ride the wave of emotion...",
+    "weCanPause": "We can pause...",
+    "exploreTimeline": "Explore the emotional episode timeline >",
+    "triggerQuestions": [
+      "what just happened?",
+      "what was I expecting?",
+      "what's the big picture?",
+      "how is my past involved?",
+      "how was my day?",
+      "am I well rested?"
+    ],
+    "actInWaysWeRegret": "we might act in ways we regret later.",
+    "storiesFromInnerWorld": "with stories and messages from our inner world.",
+    "recognizeEmotionalState": "...recognize that we are in an emotional&nbsp;state,",
+    "introduction": "As we live our lives...",
+    "becomeCurious": "and become curious and kind about our emotion.&nbsp;&nbsp;",
+    "veryImportantExperiences": [
+      "Car accident",
+      "Falling in love",
+      "Bad doctor visit",
+      "Laid off",
+      "Overflowing toilet",
+      "Losing a loved one"
+    ],
+    "withoutClearUnderstanding": "Without clear understanding or intention..."
+  }
 }
