@@ -2,7 +2,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-import { scrollerSections } from "./scrollerSections.js";
 import {
 	getDecenteringTweenVariables,
 	getEmotionColor,
@@ -25,7 +24,7 @@ import { sharedStyle } from "./config.js";
  * Creates the DOM elements for the ImmersiveScroll structure.
  * Returns the top-level container so we can append it to the app.
  */
-export function createImmersiveScrollDOM() {
+export function createImmersiveScrollDOM(scrollerSections) {
 	// Main container
 	const pageContainer = document.createElement("div");
 	pageContainer.className = sharedStyle.pageContainer;
@@ -125,7 +124,7 @@ export function createImmersiveScrollDOM() {
  * Sets up the GSAP and ScrollTrigger animations for parallax, sections, etc.
  * This replicates the logic of useEffect/useLayoutEffect in vanilla JS.
  */
-export function initImmersiveScrollAnimations() {
+export function initImmersiveScrollAnimations(scrollerSections) {
 	// Parallax stars
 	const scrollElement = document.querySelector(
 		"#waking_up-fp-section .section-graphics"

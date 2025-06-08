@@ -2,6 +2,7 @@ import {
 	createImmersiveScrollDOM,
 	initImmersiveScrollAnimations,
 } from "./ImmersiveScroll";
+import { createScrollerSections } from "./scrollerSections.js";
 
 class WakingUpSection {
 	isInited = false;
@@ -11,10 +12,11 @@ class WakingUpSection {
 		if (this.isInited) {
 			return;
 		}
-		const scrollContent = createImmersiveScrollDOM();
+		const scrollerSections = createScrollerSections();
+		const scrollContent = createImmersiveScrollDOM(scrollerSections);
 		this.scrollParent = containerNode;
 		this.scrollParent.appendChild(scrollContent);
-		initImmersiveScrollAnimations();
+		initImmersiveScrollAnimations(scrollerSections);
 
 		this.isInited = true;
 	}

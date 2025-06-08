@@ -11,621 +11,497 @@ import {
 import gsap from "gsap";
 
 import { sharedStyle } from "./config";
-import strings from "../../static/strings/langs/waking-up.en.json";
-
-const { scroller: scrollerStrings, phrasePairs: phrasePairsStrings } =
-	strings.wakingUp;
-
-const DEFAULT_HEIGHT = "100vh";
-
-// Example phrase configs
-const phrasePairs = phrasePairsStrings;
-
-// Build a list of "pile up events" using one of your imported helpers
-const pileUpEvents = getEventPhrases({
-	lineHeight: 1.5,
-	changeColor: true,
-	preventFlicker: true,
-	phrasePairs,
-});
-
-const finalPiledUpEmotion = phrasePairs[phrasePairs.length - 1].emotion;
-const transparentPiledUpEmotion = getColorWithTransparency(finalPiledUpEmotion);
+import appStrings from "../appStrings";
 
 /**
  * Creates an array of scroller section objects that simulate a "breathing" animation
  * by adjusting decentering tween variables.
+ * Call this after the appStrings are loaded.
  */
-const breathingSections = (phrase, startSize, breathSize) => [
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
-		content: " ",
-		styleKey: "waking-up__decentering",
-		tweenComponent: "emotion-size",
-		scrollTriggerComponent: "heading",
-		tweenType: "fromTo",
-		tweenVars: [
-			{
-				...getDecenteringTweenVariables(startSize),
-				scrollTrigger: {
-					scrub: true,
-					start: "top bottom",
-					end: "bottom center",
+export const createScrollerSections = () => {
+	const { getStr } = appStrings();
+	const scrollerStrings = getStr("wakingUp.scroller");
+	const phrasePairsStrings = getStr("wakingUp.phrasePairs");
+
+	const DEFAULT_HEIGHT = "100vh";
+
+	// Example phrase configs
+	const phrasePairs = phrasePairsStrings;
+
+	// Build a list of "pile up events" using one of your imported helpers
+	const pileUpEvents = getEventPhrases({
+		lineHeight: 1.5,
+		changeColor: true,
+		preventFlicker: true,
+		phrasePairs,
+	});
+
+	const finalPiledUpEmotion = phrasePairs[phrasePairs.length - 1].emotion;
+	const transparentPiledUpEmotion =
+		getColorWithTransparency(finalPiledUpEmotion);
+
+	/**
+	 * Creates an array of scroller section objects that simulate a "breathing" animation
+	 * by adjusting decentering tween variables.
+	 */
+	const breathingSections = (phrase, startSize, breathSize) => [
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
+			content: " ",
+			styleKey: "waking-up__decentering",
+			tweenComponent: "emotion-size",
+			scrollTriggerComponent: "heading",
+			tweenType: "fromTo",
+			tweenVars: [
+				{
+					...getDecenteringTweenVariables(startSize),
+					scrollTrigger: {
+						scrub: true,
+						start: "top bottom",
+						end: "bottom center",
+					},
+					ease: "power2",
+					duration: 10,
 				},
-				ease: "power2",
-				duration: 10,
-			},
-			{
-				...getDecenteringTweenVariables(breathSize),
-				duration: 10,
-				ease: "power2",
-			},
-		],
-	},
-	{
-		content: phrase,
-		height: `30px`,
-	},
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 2}vh`,
-		content: " ",
-		styleKey: "waking-up__decentering",
-		tweenComponent: "emotion-size",
-		scrollTriggerComponent: "heading",
-		tweenType: "fromTo",
-		tweenVars: [
-			{
-				...getDecenteringTweenVariables(breathSize),
-				scrollTrigger: {
-					scrub: true,
-					start: "top center",
-					end: "bottom bottom",
+				{
+					...getDecenteringTweenVariables(breathSize),
+					duration: 10,
+					ease: "power2",
 				},
-				ease: "power2",
-			},
-			{
-				...getDecenteringTweenVariables(startSize),
-				duration: 1,
-			},
-		],
-	},
-];
-
-/**
- * Creates an array of scroller section objects that simulate a transient emotion,
- * changing from one color to another and back again.
- */
-const transientEmotionSections = (phrase, startEmotion, transientEmotion) => [
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 0.25}vh`,
-		content: " ",
-		tweenComponent: "emotion-color",
-		scrollTriggerComponent: "heading",
-		tweenType: "fromTo",
-		tweenVars: [
-			{
-				backgroundColor: startEmotion
-					? getEmotionColor(startEmotion)
-					: "rgba(0,0,0,0)",
-				color: startEmotion
-					? getEmotionColor(startEmotion)
-					: "rgba(0,0,0,0)",
-				scrollTrigger: {
-					scrub: true,
-					start: "top bottom",
-					end: "bottom center",
-					toggleActions: "restart none reverse none",
+			],
+		},
+		{
+			content: phrase,
+			height: `30px`,
+		},
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 2}vh`,
+			content: " ",
+			styleKey: "waking-up__decentering",
+			tweenComponent: "emotion-size",
+			scrollTriggerComponent: "heading",
+			tweenType: "fromTo",
+			tweenVars: [
+				{
+					...getDecenteringTweenVariables(breathSize),
+					scrollTrigger: {
+						scrub: true,
+						start: "top center",
+						end: "bottom bottom",
+					},
+					ease: "power2",
 				},
-			},
-			{
-				backgroundColor: getEmotionColor(transientEmotion),
-				color: startEmotion
-					? getEmotionColor(transientEmotion)
-					: "rgba(0,0,0,0)",
-				duration: 1,
-			},
-		],
-	},
-	{
-		content: phrase,
-		height: `30px`,
-	},
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
-		content: " ",
-		styleKey: "waking-up__decentering",
-		tweenComponent: "emotion-color",
-		scrollTriggerComponent: "heading",
-		tweenType: "fromTo",
-		tweenVars: [
-			{
-				backgroundColor: getEmotionColor(transientEmotion),
-				color: getEmotionColor(transientEmotion),
-				scrollTrigger: {
-					scrub: true,
-					start: "top center",
-					end: "bottom top",
-					toggleActions: "restart none reverse none",
+				{
+					...getDecenteringTweenVariables(startSize),
+					duration: 1,
 				},
-			},
-			{
-				backgroundColor: startEmotion
-					? getEmotionColor(startEmotion)
-					: "rgba(0,0,0,0)",
-				color: startEmotion
-					? getEmotionColor(startEmotion)
-					: "rgba(0,0,0,0)",
-				duration: 1,
-			},
-		],
-	},
-];
+			],
+		},
+	];
 
-const screenIsSmall = () =>
-	document.querySelectorAll(".small-screen").length > 0;
+	/**
+	 * Creates an array of scroller section objects that simulate a transient emotion,
+	 * changing from one color to another and back again.
+	 */
+	const transientEmotionSections = (
+		phrase,
+		startEmotion,
+		transientEmotion
+	) => [
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 0.25}vh`,
+			content: " ",
+			tweenComponent: "emotion-color",
+			scrollTriggerComponent: "heading",
+			tweenType: "fromTo",
+			tweenVars: [
+				{
+					backgroundColor: startEmotion
+						? getEmotionColor(startEmotion)
+						: "rgba(0,0,0,0)",
+					color: startEmotion
+						? getEmotionColor(startEmotion)
+						: "rgba(0,0,0,0)",
+					scrollTrigger: {
+						scrub: true,
+						start: "top bottom",
+						end: "bottom center",
+						toggleActions: "restart none reverse none",
+					},
+				},
+				{
+					backgroundColor: getEmotionColor(transientEmotion),
+					color: startEmotion
+						? getEmotionColor(transientEmotion)
+						: "rgba(0,0,0,0)",
+					duration: 1,
+				},
+			],
+		},
+		{
+			content: phrase,
+			height: `30px`,
+		},
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
+			content: " ",
+			styleKey: "waking-up__decentering",
+			tweenComponent: "emotion-color",
+			scrollTriggerComponent: "heading",
+			tweenType: "fromTo",
+			tweenVars: [
+				{
+					backgroundColor: getEmotionColor(transientEmotion),
+					color: getEmotionColor(transientEmotion),
+					scrollTrigger: {
+						scrub: true,
+						start: "top center",
+						end: "bottom top",
+						toggleActions: "restart none reverse none",
+					},
+				},
+				{
+					backgroundColor: startEmotion
+						? getEmotionColor(startEmotion)
+						: "rgba(0,0,0,0)",
+					color: startEmotion
+						? getEmotionColor(startEmotion)
+						: "rgba(0,0,0,0)",
+					duration: 1,
+				},
+			],
+		},
+	];
 
-const initTimelineElementPositions = () => {
-	// also prepare the timeline elements before they are onscreen
-	const colorField = document.querySelector("#waking-up__emotionColorField");
-	const fieldRect = colorField.getBoundingClientRect();
-	const timelineTrigger = document.querySelector(
-		"#waking-up__trigger-timeline"
-	);
+	const screenIsSmall = () =>
+		document.querySelectorAll(".small-screen").length > 0;
 
-	const arrowPostionX = window.innerWidth / 2 + fieldRect.width / 2 + 30;
-	timelineTrigger.style.right = arrowPostionX + "px";
-	timelineTrigger.style.position = "absolute";
+	const initTimelineElementPositions = () => {
+		// also prepare the timeline elements before they are onscreen
+		const colorField = document.querySelector(
+			"#waking-up__emotionColorField"
+		);
+		const fieldRect = colorField.getBoundingClientRect();
+		const timelineTrigger = document.querySelector(
+			"#waking-up__trigger-timeline"
+		);
 
-	const timelineResponse = document.querySelector(
-		"#waking-up__response-timeline"
-	);
-	timelineResponse.style.left = arrowPostionX + "px";
-	timelineResponse.style.position = "absolute";
+		const arrowPostionX = window.innerWidth / 2 + fieldRect.width / 2 + 30;
+		timelineTrigger.style.right = arrowPostionX + "px";
+		timelineTrigger.style.position = "absolute";
 
-	const timelineLink = document.querySelector(
-		"#waking-up__response-timeline .waking-up__timeline-link"
-	);
-	timelineLink.style.marginLeft = `${window.innerWidth / 2}px`;
-};
+		const timelineResponse = document.querySelector(
+			"#waking-up__response-timeline"
+		);
+		timelineResponse.style.left = arrowPostionX + "px";
+		timelineResponse.style.position = "absolute";
 
-let sliderTimeline;
-const getSliderTimeline = () => {
-	if (sliderTimeline) {
-		return sliderTimeline;
-	}
+		const timelineLink = document.querySelector(
+			"#waking-up__response-timeline .waking-up__timeline-link"
+		);
+		timelineLink.style.marginLeft = `${window.innerWidth / 2}px`;
+	};
 
-	const timelineLink = document.querySelector(
-		"#waking-up__response-timeline .waking-up__timeline-link"
-	);
+	let sliderTimeline;
+	const getSliderTimeline = () => {
+		if (sliderTimeline) {
+			return sliderTimeline;
+		}
 
-	sliderTimeline = new gsap.timeline();
+		const timelineLink = document.querySelector(
+			"#waking-up__response-timeline .waking-up__timeline-link"
+		);
 
-	if (!screenIsSmall() || !timelineLink) {
-		return sliderTimeline;
-	}
+		sliderTimeline = new gsap.timeline();
 
-	// if the screen is small, slide the timeline right
+		if (!screenIsSmall() || !timelineLink) {
+			return sliderTimeline;
+		}
 
-	const padding = 0;
+		// if the screen is small, slide the timeline right
 
-	const triggerCenterElement = document.querySelector(
-		".waking-up__triggerQuestion"
-	);
-	const responseCenterElement = document.querySelector(
-		".waking-up__responseQuestion"
-	);
+		const padding = 0;
 
-	const triggerRect = triggerCenterElement.getBoundingClientRect();
-	const triggerCenterX = triggerRect.left + triggerRect.width / 2;
-	const responseRect = responseCenterElement.getBoundingClientRect();
-	const responseCenterX = responseRect.left + responseRect.width / 2;
-	const linkCenterX =
-		timelineLink.getBoundingClientRect().left +
-		timelineLink.getBoundingClientRect().width / 2;
+		const triggerCenterElement = document.querySelector(
+			".waking-up__triggerQuestion"
+		);
+		const responseCenterElement = document.querySelector(
+			".waking-up__responseQuestion"
+		);
 
-	const triggerTranslateX = window.innerWidth / 2 - triggerCenterX;
-	const responseTranslateX = window.innerWidth / 2 - responseCenterX;
+		const triggerRect = triggerCenterElement.getBoundingClientRect();
+		const triggerCenterX = triggerRect.left + triggerRect.width / 2;
+		const responseRect = responseCenterElement.getBoundingClientRect();
+		const responseCenterX = responseRect.left + responseRect.width / 2;
+		const linkCenterX =
+			timelineLink.getBoundingClientRect().left +
+			timelineLink.getBoundingClientRect().width / 2;
 
-	const linkTranslateX = window.innerWidth / 2 - linkCenterX;
+		const triggerTranslateX = window.innerWidth / 2 - triggerCenterX;
+		const responseTranslateX = window.innerWidth / 2 - responseCenterX;
 
-	const colorField = document.querySelector("#waking-up__emotionColorField");
-	const label = document.querySelector("#waking-up__emotion-label-anger");
+		const linkTranslateX = window.innerWidth / 2 - linkCenterX;
 
-	const transformTrigger = (distance) => `translate(
+		const colorField = document.querySelector(
+			"#waking-up__emotionColorField"
+		);
+		const label = document.querySelector("#waking-up__emotion-label-anger");
+
+		const transformTrigger = (distance) => `translate(
 		${distance - padding}px, -50%)`;
 
-	const transformResponse = (distance) => `translate(
+		const transformResponse = (distance) => `translate(
 		${distance + padding}px, -50%)`;
 
-	const transformLabel = (distance) => `translateX(${distance}px)`;
+		const transformLabel = (distance) => `translateX(${distance}px)`;
 
-	const colorFieldRect = colorField.getBoundingClientRect();
-	const transformColorField = (distance) =>
-		`translate(${distance - colorFieldRect.width / 2}px , -50%)`;
+		const colorFieldRect = colorField.getBoundingClientRect();
+		const transformColorField = (distance) =>
+			`translate(${distance - colorFieldRect.width / 2}px , -50%)`;
 
-	const triggerElement = document.querySelector(
-		"#waking-up__trigger-timeline"
-	);
-	const responseElement = document.querySelector(
-		"#waking-up__response-timeline"
-	);
+		const triggerElement = document.querySelector(
+			"#waking-up__trigger-timeline"
+		);
+		const responseElement = document.querySelector(
+			"#waking-up__response-timeline"
+		);
 
-	console.log({ triggerTranslateX, responseTranslateX, linkTranslateX });
-	sliderTimeline
-		.add("start")
-		.to(triggerElement, {
-			transform: transformTrigger(triggerTranslateX),
-			ease: "power1.out",
-		})
-		.to(
-			responseElement,
-			{
-				transform: transformResponse(triggerTranslateX),
+		console.log({ triggerTranslateX, responseTranslateX, linkTranslateX });
+		sliderTimeline
+			.add("start")
+			.to(triggerElement, {
+				transform: transformTrigger(triggerTranslateX),
 				ease: "power1.out",
-			},
-			"start"
-		)
-		.to(
-			label,
-			{
-				transform: transformLabel(triggerTranslateX),
-				ease: "power1.out",
-			},
-			"start"
-		)
-		.to(
-			colorField,
-			{
-				transform: transformColorField(triggerTranslateX),
-				ease: "power1.out",
-			},
-			"start"
-		)
-		.add("trigger")
-		.to(
-			triggerElement,
-			{
-				transform: transformTrigger(responseTranslateX),
-				ease: "power1.out",
-				onStart: () => {
-					const responseCenterX =
-						responseRect.left + responseRect.width / 2;
-					const currentResponseTranslateX =
-						window.innerWidth / 2 - responseCenterX;
-					console.log({
-						responseTranslateX,
-						currentResponseTranslateX,
-					});
+			})
+			.to(
+				responseElement,
+				{
+					transform: transformResponse(triggerTranslateX),
+					ease: "power1.out",
+				},
+				"start"
+			)
+			.to(
+				label,
+				{
+					transform: transformLabel(triggerTranslateX),
+					ease: "power1.out",
+				},
+				"start"
+			)
+			.to(
+				colorField,
+				{
+					transform: transformColorField(triggerTranslateX),
+					ease: "power1.out",
+				},
+				"start"
+			)
+			.add("trigger")
+			.to(
+				triggerElement,
+				{
+					transform: transformTrigger(responseTranslateX),
+					ease: "power1.out",
+					onStart: () => {
+						const responseCenterX =
+							responseRect.left + responseRect.width / 2;
+						const currentResponseTranslateX =
+							window.innerWidth / 2 - responseCenterX;
+						console.log({
+							responseTranslateX,
+							currentResponseTranslateX,
+						});
+					},
+				},
+				"trigger"
+			)
+			.to(
+				responseElement,
+				{
+					transform: transformResponse(responseTranslateX),
+					ease: "power1.out",
+				},
+				"trigger"
+			)
+			.to(
+				label,
+				{
+					transform: transformLabel(responseTranslateX),
+					ease: "power1.out",
+				},
+				"trigger"
+			)
+			.to(
+				colorField,
+				{
+					transform: transformColorField(responseTranslateX),
+					ease: "power1.out",
+				},
+				"trigger"
+			)
+			.add("response")
+			.to(
+				triggerElement,
+				{
+					transform: transformTrigger(linkTranslateX),
+					ease: "power1.out",
+				},
+				"response"
+			)
+			.to(
+				responseElement,
+				{
+					transform: transformResponse(linkTranslateX),
+					ease: "power1.out",
+				},
+				"response"
+			)
+			.to(
+				label,
+				{
+					transform: transformLabel(linkTranslateX),
+					ease: "power1.out",
+				},
+				"response"
+			)
+			.to(
+				colorField,
+				{
+					transform: transformColorField(linkTranslateX),
+					ease: "power1.out",
+				},
+				"response"
+			)
+			.add("link");
+
+		return sliderTimeline;
+	};
+
+	return [
+		{
+			content: scrollerStrings.introduction,
+			height: DEFAULT_HEIGHT,
+			id: "waking-up__introduction",
+			// styleKey: "opacity",
+			tweenVars: {
+				// opacity: 1,
+				scrollTrigger: {
+					start: "top center",
 				},
 			},
-			"trigger"
-		)
-		.to(
-			responseElement,
-			{
-				transform: transformResponse(responseTranslateX),
-				ease: "power1.out",
-			},
-			"trigger"
-		)
-		.to(
-			label,
-			{
-				transform: transformLabel(responseTranslateX),
-				ease: "power1.out",
-			},
-			"trigger"
-		)
-		.to(
-			colorField,
-			{
-				transform: transformColorField(responseTranslateX),
-				ease: "power1.out",
-			},
-			"trigger"
-		)
-		.add("response")
-		.to(
-			triggerElement,
-			{
-				transform: transformTrigger(linkTranslateX),
-				ease: "power1.out",
-			},
-			"response"
-		)
-		.to(
-			responseElement,
-			{
-				transform: transformResponse(linkTranslateX),
-				ease: "power1.out",
-			},
-			"response"
-		)
-		.to(
-			label,
-			{
-				transform: transformLabel(linkTranslateX),
-				ease: "power1.out",
-			},
-			"response"
-		)
-		.to(
-			colorField,
-			{
-				transform: transformColorField(linkTranslateX),
-				ease: "power1.out",
-			},
-			"response"
-		)
-		.add("link");
-
-	return sliderTimeline;
-};
-
-// Your array of scroller sections, now with no JSX:
-export const scrollerSections = [
-	{
-		content: scrollerStrings.introduction,
-		height: DEFAULT_HEIGHT,
-		id: "waking-up__introduction",
-		// styleKey: "opacity",
-		tweenVars: {
-			// opacity: 1,
-			scrollTrigger: {
-				start: "top center",
-			},
 		},
-	},
-	{
-		content: scrollerStrings.experiencesTitle,
-		height: DEFAULT_HEIGHT,
-		tweenVars: {
-			scrollTrigger: {
-				pin: true,
-				pinSpacing: false,
-				start: "65% center",
-				end: "bottom+=570px center",
-			},
-		},
-		experiences: {
-			events: getPhrasesWithLineHeight(
-				scrollerStrings.experiences,
-				3
-			),
-		},
-	},
-	{
-		content: scrollerStrings.lessImportantTitle,
-		height: DEFAULT_HEIGHT,
-		styleKey: "small",
-		tweenVars: [
-			{
+		{
+			content: scrollerStrings.experiencesTitle,
+			height: DEFAULT_HEIGHT,
+			tweenVars: {
 				scrollTrigger: {
 					pin: true,
 					pinSpacing: false,
 					start: "65% center",
-					end: "bottom+=650px center",
+					end: "bottom+=570px center",
 				},
 			},
-			{
-				opacity: 0,
-				filter: "blur(100px)",
-				scrollTrigger: {
-					start: "bottom-=250px center",
-					end: "bottom+=10% center",
-					pinSpacing: false,
-				},
+			experiences: {
+				events: getPhrasesWithLineHeight(
+					scrollerStrings.experiences,
+					3
+				),
 			},
-		],
-		experiences: {
+		},
+		{
+			content: scrollerStrings.lessImportantTitle,
+			height: DEFAULT_HEIGHT,
 			styleKey: "small",
-			events: getPhrasesWithLineHeight(
-				scrollerStrings.lessImportantExperiences,
-				3
-			),
-		},
-	},
-	{
-		content: scrollerStrings.veryImportantTitle,
-		height: DEFAULT_HEIGHT,
-		tweenVars: {
-			scrollTrigger: {
-				pin: true,
-				pinSpacing: false,
-				start: "65% center",
-				end: "bottom+=900px center",
-			},
-		},
-		experiences: {
-			events: getPhrasesWithLineHeight(
-				scrollerStrings.veryImportantExperiences,
-				3
-			),
-		},
-	},
-	{
-		content: scrollerStrings.triggerEmotions,
-		height: DEFAULT_HEIGHT,
-		tweenComponent: "emotion-size",
-		scrollTriggerComponent: "section",
-		tweenType: "fromTo",
-		tweenVars: [
-			{
-				...getDecenteringTweenVariables(100),
-				opacity: 0,
-				duration: 10,
-				scrollTrigger: {
-					scrub: true,
-					start: "bottom-=200px center",
-					end: "bottom+=600px center",
-				},
-			},
-			{
-				...getDecenteringTweenVariables(0),
-				duration: 10,
-				opacity: 1,
-			},
-		],
-		experiences: {
-			styleKey: "large",
-			events: getEventPhrases({
-				phrasePairs: [
-					{
-						emotion: INITIAL_EMOTION,
-						pair: { event: scrollerStrings.triggerEmotionExperience },
-					},
-				],
-				changeColor: true,
-				lineHeight: 3,
-			}),
-		},
-	},
-	{
-		content: scrollerStrings.emotionsColorPerception,
-		height: DEFAULT_HEIGHT,
-		scrollTriggerComponent: "section",
-		tweenVars: {
-			scrollTrigger: {
-				pin: true,
-				start: "center center",
-				end: "bottom center+=70px",
-				pinSpacing: false,
-			},
-		},
-	},
-	{
-		content: scrollerStrings.storiesFromInnerWorld,
-		height: "30px",
-		tweenComponent: "emotion-color",
-		tweenType: "fromTo",
-		tweenVars: [
-			{
-				backgroundColor: getEmotionColor("sadness"),
-				color: getEmotionColor("sadness"),
-				scrollTrigger: {
-					start: "center-=120px center",
-					end: "bottom-=120px center",
-				},
-			},
-			{
-				backgroundColor: getEmotionColor("enjoyment"),
-				color: getEmotionColor("enjoyment"),
-			},
-		],
-	},
-	{
-		content: " ",
-		height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
-		tweenType: "fromTo",
-		tweenComponent: "emotion-color",
-		tweenVars: [
-			{
-				backgroundColor: getEmotionColor("enjoyment"),
-				color: getEmotionColor("enjoyment"),
-				scrollTrigger: {
-					start: "top center",
-					end: "bottom bottom",
-				},
-			},
-			{
-				backgroundColor: getColorWithTransparency("enjoyment"),
-				color: getColorWithTransparency("enjoyment"),
-			},
-		],
-	},
-	...transientEmotionSections(scrollerStrings.emotionsComeAndGo, undefined, "fear"),
-	{
-		content: scrollerStrings.pileUp,
-		height: DEFAULT_HEIGHT,
-		tweenVars: (() => {
-			// Example of combining multiple tween vars from getDefaultTweenVars
-			const [pos, opacity] = getDefaultTweenVars();
-			return [
+			tweenVars: [
 				{
-					...pos,
 					scrollTrigger: {
-						...pos.scrollTrigger,
+						pin: true,
+						pinSpacing: false,
 						start: "65% center",
-						end: "bottom+=1000px center",
+						end: "bottom+=650px center",
 					},
 				},
 				{
-					...opacity,
+					opacity: 0,
+					filter: "blur(100px)",
 					scrollTrigger: {
-						...opacity.scrollTrigger,
-						start: "66% center",
-						end: "70% center",
+						start: "bottom-=250px center",
+						end: "bottom+=10% center",
+						pinSpacing: false,
 					},
 				},
-			];
-		})(),
-		experiences: {
-			events: pileUpEvents,
+			],
+			experiences: {
+				styleKey: "small",
+				events: getPhrasesWithLineHeight(
+					scrollerStrings.lessImportantExperiences,
+					3
+				),
+			},
 		},
-	},
-	{
-		content: "",
-		height: `${parseInt(DEFAULT_HEIGHT) / 4}vh`,
-		tweenType: "fromTo",
-		tweenComponent: "emotion-color",
-		tweenVars: [
-			{
-				backgroundColor: getEmotionColor(finalPiledUpEmotion),
-				color: getEmotionColor(finalPiledUpEmotion),
+		{
+			content: scrollerStrings.veryImportantTitle,
+			height: DEFAULT_HEIGHT,
+			tweenVars: {
 				scrollTrigger: {
 					pin: true,
-					start: "top center",
-					end: "bottom-=20px top",
 					pinSpacing: false,
-					scrub: true,
+					start: "65% center",
+					end: "bottom+=900px center",
 				},
 			},
-			{
-				backgroundColor: transparentPiledUpEmotion,
-				color: transparentPiledUpEmotion,
-				pin: true,
+			experiences: {
+				events: getPhrasesWithLineHeight(
+					scrollerStrings.veryImportantExperiences,
+					3
+				),
 			},
-		],
-	},
-	{
-		content: scrollerStrings.oneBigExperience,
-		height: DEFAULT_HEIGHT,
-		tweenVars: getDefaultTweenVars(),
-	},
-	{
-		content: scrollerStrings.arguing,
-		height: "100px",
-		tweenComponent: "emotion-color",
-		styleKey: "large italic",
-		tweenType: "fromTo",
-		tweenVars: [
-			{
-				backgroundColor: "rgba(0,0,0,0)",
-				color: "rgba(0,0,0,0)",
-				scrollTrigger: {
-					start: "center-=50px center",
-					end: "bottom-=50px center",
+		},
+		{
+			content: scrollerStrings.triggerEmotions,
+			height: DEFAULT_HEIGHT,
+			tweenComponent: "emotion-size",
+			scrollTriggerComponent: "section",
+			tweenType: "fromTo",
+			tweenVars: [
+				{
+					...getDecenteringTweenVariables(100),
+					opacity: 0,
+					duration: 10,
+					scrollTrigger: {
+						scrub: true,
+						start: "bottom-=200px center",
+						end: "bottom+=600px center",
+					},
 				},
-			},			{
-				backgroundColor: getEmotionColor("anger"),
-				color: getEmotionColor("anger"),
+				{
+					...getDecenteringTweenVariables(0),
+					duration: 10,
+					opacity: 1,
+				},
+			],
+			experiences: {
+				styleKey: "large",
+				events: getEventPhrases({
+					phrasePairs: [
+						{
+							emotion: INITIAL_EMOTION,
+							pair: {
+								event: scrollerStrings.triggerEmotionExperience,
+							},
+						},
+					],
+					changeColor: true,
+					lineHeight: 3,
+				}),
 			},
-		],
-	},
-	{
-		content: scrollerStrings.hardToSeparate,
-		height: DEFAULT_HEIGHT,
-	},
-	{
-		content: scrollerStrings.respondWithoutThinking,
-		height: DEFAULT_HEIGHT,
-	},
-	{
-		content: scrollerStrings.withoutClearUnderstanding,
-		height: DEFAULT_HEIGHT,
-		scrollTriggerComponent: "section",
-		tweenVars: [
-			{
+		},
+		{
+			content: scrollerStrings.emotionsColorPerception,
+			height: DEFAULT_HEIGHT,
+			scrollTriggerComponent: "section",
+			tweenVars: {
 				scrollTrigger: {
 					pin: true,
 					start: "center center",
@@ -633,489 +509,642 @@ export const scrollerSections = [
 					pinSpacing: false,
 				},
 			},
-			{
-				opacity: 0,
-				filter: "blur(60px)",
-				scrollTrigger: {
-					start: "51% center",
-					end: "100% center",
-					pinSpacing: false,
+		},
+		{
+			content: scrollerStrings.storiesFromInnerWorld,
+			height: "30px",
+			tweenComponent: "emotion-color",
+			tweenType: "fromTo",
+			tweenVars: [
+				{
+					backgroundColor: getEmotionColor("sadness"),
+					color: getEmotionColor("sadness"),
+					scrollTrigger: {
+						start: "center-=120px center",
+						end: "bottom-=120px center",
+					},
 				},
+				{
+					backgroundColor: getEmotionColor("enjoyment"),
+					color: getEmotionColor("enjoyment"),
+				},
+			],
+		},
+		{
+			content: " ",
+			height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
+			tweenType: "fromTo",
+			tweenComponent: "emotion-color",
+			tweenVars: [
+				{
+					backgroundColor: getEmotionColor("enjoyment"),
+					color: getEmotionColor("enjoyment"),
+					scrollTrigger: {
+						start: "top center",
+						end: "bottom bottom",
+					},
+				},
+				{
+					backgroundColor: getColorWithTransparency("enjoyment"),
+					color: getColorWithTransparency("enjoyment"),
+				},
+			],
+		},
+		...transientEmotionSections(
+			scrollerStrings.emotionsComeAndGo,
+			undefined,
+			"fear"
+		),
+		{
+			content: scrollerStrings.pileUp,
+			height: DEFAULT_HEIGHT,
+			tweenVars: (() => {
+				// Example of combining multiple tween vars from getDefaultTweenVars
+				const [pos, opacity] = getDefaultTweenVars();
+				return [
+					{
+						...pos,
+						scrollTrigger: {
+							...pos.scrollTrigger,
+							start: "65% center",
+							end: "bottom+=1000px center",
+						},
+					},
+					{
+						...opacity,
+						scrollTrigger: {
+							...opacity.scrollTrigger,
+							start: "66% center",
+							end: "70% center",
+						},
+					},
+				];
+			})(),
+			experiences: {
+				events: pileUpEvents,
 			},
-		],
-	},
-	{
-		// Original JSX:
-		// content: (
-		//   <div id="regret-response">we might act in ways we regret later.</div>
-		// ),
-		content: `
+		},
+		{
+			content: "",
+			height: `${parseInt(DEFAULT_HEIGHT) / 4}vh`,
+			tweenType: "fromTo",
+			tweenComponent: "emotion-color",
+			tweenVars: [
+				{
+					backgroundColor: getEmotionColor(finalPiledUpEmotion),
+					color: getEmotionColor(finalPiledUpEmotion),
+					scrollTrigger: {
+						pin: true,
+						start: "top center",
+						end: "bottom-=20px top",
+						pinSpacing: false,
+						scrub: true,
+					},
+				},
+				{
+					backgroundColor: transparentPiledUpEmotion,
+					color: transparentPiledUpEmotion,
+					pin: true,
+				},
+			],
+		},
+		{
+			content: scrollerStrings.oneBigExperience,
+			height: DEFAULT_HEIGHT,
+			tweenVars: getDefaultTweenVars(),
+		},
+		{
+			content: scrollerStrings.arguing,
+			height: "100px",
+			tweenComponent: "emotion-color",
+			styleKey: "large italic",
+			tweenType: "fromTo",
+			tweenVars: [
+				{
+					backgroundColor: "rgba(0,0,0,0)",
+					color: "rgba(0,0,0,0)",
+					scrollTrigger: {
+						start: "center-=50px center",
+						end: "bottom-=50px center",
+					},
+				},
+				{
+					backgroundColor: getEmotionColor("anger"),
+					color: getEmotionColor("anger"),
+				},
+			],
+		},
+		{
+			content: scrollerStrings.hardToSeparate,
+			height: DEFAULT_HEIGHT,
+		},
+		{
+			content: scrollerStrings.respondWithoutThinking,
+			height: DEFAULT_HEIGHT,
+		},
+		{
+			content: scrollerStrings.withoutClearUnderstanding,
+			height: DEFAULT_HEIGHT,
+			scrollTriggerComponent: "section",
+			tweenVars: [
+				{
+					scrollTrigger: {
+						pin: true,
+						start: "center center",
+						end: "bottom center+=70px",
+						pinSpacing: false,
+					},
+				},
+				{
+					opacity: 0,
+					filter: "blur(60px)",
+					scrollTrigger: {
+						start: "51% center",
+						end: "100% center",
+						pinSpacing: false,
+					},
+				},
+			],
+		},
+		{
+			// Original JSX:
+			// content: (
+			//   <div id="regret-response">we might act in ways we regret later.</div>
+			// ),
+			content: `
         <div id="waking-up__regret-response">${scrollerStrings.actInWaysWeRegret}</div>
       `,
-		height: "30px",
-		tweenVars: [
-			{
-				scrollTrigger: {
-					start: "center center+=30px",
-					end: "bottom center+=30px",
-					pinSpacing: false,
-					onEnter: () => {
-						const e = document.querySelector(
-							"#waking-up__regret-response"
-						);
-						if (e) {
-							e.style.height = e.clientHeight + "px";
-							e.innerHTML = scrollerStrings.regretActions[0];
-							e.style.fontSize = "3.5rem";
-							e.style.fontStyle = "italic";
-						}
-					},
-					onLeaveBack: () => {
-						const e = document.querySelector(
-							"#waking-up__regret-response"
-						);
-						if (e) {
-							e.innerHTML =
-								scrollerStrings.actInWaysWeRegret;
-							e.removeAttribute("style");
-						}
-					},
-				},
-			},
-			{
-				scrollTrigger: {
-					start: "center center-=100px",
-					end: "bottom center-=100px",
-					pinSpacing: false,
-					onEnter: () => {
-						const e = document.querySelector(
-							"#waking-up__regret-response"
-						);
-						if (e) {
-							e.innerHTML = scrollerStrings.regretActions[1];
-						}
-					},
-					onLeaveBack: () => {
-						const e = document.querySelector(
-							"#waking-up__regret-response"
-						);
-						if (e) {
-							e.innerHTML = scrollerStrings.regretActions[0];
-						}
+			height: "30px",
+			tweenVars: [
+				{
+					scrollTrigger: {
+						start: "center center+=30px",
+						end: "bottom center+=30px",
+						pinSpacing: false,
+						onEnter: () => {
+							const e = document.querySelector(
+								"#waking-up__regret-response"
+							);
+							if (e) {
+								e.style.height = e.clientHeight + "px";
+								e.innerHTML = scrollerStrings.regretActions[0];
+								e.style.fontSize = "3.5rem";
+								e.style.fontStyle = "italic";
+							}
+						},
+						onLeaveBack: () => {
+							const e = document.querySelector(
+								"#waking-up__regret-response"
+							);
+							if (e) {
+								e.innerHTML = scrollerStrings.actInWaysWeRegret;
+								e.removeAttribute("style");
+							}
+						},
 					},
 				},
-			},
-			{
-				scrollTrigger: {
-					start: "center center-=200px",
-					end: "bottom center-=200px",
-					pinSpacing: false,
-					onEnter: () => {
-						const e = document.querySelector(
-							"#waking-up__regret-response"
-						);
-						if (e) {
-							e.innerHTML = scrollerStrings.regretActions[2];
-						}
-					},
-					onLeaveBack: () => {
-						const e = document.querySelector(
-							"#waking-up__regret-response"
-						);
-						if (e) {
-							e.innerHTML = scrollerStrings.regretActions[1];
-						}
-					},
-				},
-			},
-			{
-				scrollTrigger: {
-					start: "center center-=300px",
-					end: "bottom center-=300px",
-					pinSpacing: false,
-					onEnter: () => {
-						const e = document.querySelector(
-							"#waking-up__regret-response"
-						);
-						if (e) {
-							e.innerHTML = scrollerStrings.regretActions[3];
-						}
-					},
-					onLeaveBack: () => {
-						const e = document.querySelector(
-							"#waking-up__regret-response"
-						);
-						if (e) {
-							e.innerHTML = scrollerStrings.regretActions[2];
-						}
+				{
+					scrollTrigger: {
+						start: "center center-=100px",
+						end: "bottom center-=100px",
+						pinSpacing: false,
+						onEnter: () => {
+							const e = document.querySelector(
+								"#waking-up__regret-response"
+							);
+							if (e) {
+								e.innerHTML = scrollerStrings.regretActions[1];
+							}
+						},
+						onLeaveBack: () => {
+							const e = document.querySelector(
+								"#waking-up__regret-response"
+							);
+							if (e) {
+								e.innerHTML = scrollerStrings.regretActions[0];
+							}
+						},
 					},
 				},
-			},
-		],
-	},
-	{
-		height: DEFAULT_HEIGHT,
-		content: scrollerStrings.whatCanWeDo,
-		scrollTriggerComponent: "section",
-		tweenVars: [
-			{
-				scrollTrigger: {
-					pin: true,
-					pinSpacing: false,
-					start: "center center",
-					end: "bottom center+=30px",
-				},
-			},
-			{
-				opacity: 0,
-				filter: "blur(60px)",
-				scrollTrigger: {
-					start: "51% center",
-					end: "100% center",
-					pinSpacing: false,
-				},
-			},
-		],
-	},
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 3}vh`,
-		id: "pause",
-		content: scrollerStrings.weCanPause,
-		styleKey: "waking-up__decentering",
-		tweenComponent: "emotion-size",
-		scrollTriggerComponent: "heading",
-		tweenType: "fromTo",
-		tweenVars: [
-			{
-				...getDecenteringTweenVariables(40),
-				duration: 10,
-				scrollTrigger: {
-					pin: true,
-					pinSpacing: false,
-					scrub: true,
-					start: "top+=30px center",
-					end: "bottom bottom",
-				},
-			},
-			{
-				...getDecenteringTweenVariables(90),
-				duration: 10,
-			},
-		],
-	},
-	...breathingSections(scrollerStrings.connectToBreath, 90, 80),
-	...breathingSections(scrollerStrings.rideWaveOfEmotion, 90, 60),
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
-		content: scrollerStrings.recognizeEmotionalState,
-		styleKey: "waking-up__decentering",
-		tweenComponent: "emotion-size",
-		scrollTriggerComponent: "heading",
-		tweenType: "fromTo",
-		tweenVars: [
-			{
-				...getDecenteringTweenVariables(90),
-				duration: 10,
-				ease: "power2",
-				scrollTrigger: {
-					pin: true,
-					pinSpacing: false,
-					scrub: true,
-					start: "top center-=200px",
-					end: "bottom top-=400px",
-				},
-			},
-			{
-				...getDecenteringTweenVariables(100),
-				duration: 1,
-			},
-		],
-	},
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
-		content: "",
-		scrollTriggerComponent: "heading",
-		tweenVars: [
-			{
-				scrollTrigger: {
-					pin: true,
-					pinSpacing: false,
-					scrub: true,
-					start: "center center",
-					end: "bottom top",
-					onEnter: () => {
-						const e = document.querySelector(
-							"#waking-up__emotion-label-anger"
-						);
-						if (e) {
-							e.style.opacity = "1";
-						}
-					},
-					onLeaveBack: () => {
-						const e = document.querySelector(
-							"#waking-up__emotion-label-anger"
-						);
-						if (e) {
-							e.style.opacity = "0";
-						}
+				{
+					scrollTrigger: {
+						start: "center center-=200px",
+						end: "bottom center-=200px",
+						pinSpacing: false,
+						onEnter: () => {
+							const e = document.querySelector(
+								"#waking-up__regret-response"
+							);
+							if (e) {
+								e.innerHTML = scrollerStrings.regretActions[2];
+							}
+						},
+						onLeaveBack: () => {
+							const e = document.querySelector(
+								"#waking-up__regret-response"
+							);
+							if (e) {
+								e.innerHTML = scrollerStrings.regretActions[1];
+							}
+						},
 					},
 				},
-			},
-		],
-	},
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
-		content: "",
-		scrollTriggerComponent: "heading",
-		tweenVars: [
-			{
-				scrollTrigger: {
-					pin: true,
-					pinSpacing: false,
-					scrub: true,
-					start: "center center",
-					end: "bottom top",
-					onEnter: () => {
-						const els = document.querySelectorAll(
-							".waking-up__emotion-label--with-circle"
-						);
-						els.forEach((l) => (l.style.opacity = "1"));
-					},
-					onLeaveBack: () => {
-						const els = document.querySelectorAll(
-							".waking-up__emotion-label--with-circle"
-						);
-						els.forEach((l) => (l.style.opacity = "0"));
+				{
+					scrollTrigger: {
+						start: "center center-=300px",
+						end: "bottom center-=300px",
+						pinSpacing: false,
+						onEnter: () => {
+							const e = document.querySelector(
+								"#waking-up__regret-response"
+							);
+							if (e) {
+								e.innerHTML = scrollerStrings.regretActions[3];
+							}
+						},
+						onLeaveBack: () => {
+							const e = document.querySelector(
+								"#waking-up__regret-response"
+							);
+							if (e) {
+								e.innerHTML = scrollerStrings.regretActions[2];
+							}
+						},
 					},
 				},
-			},
-		],
-	},
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
-		content: "",
-		scrollTriggerComponent: "heading",
-		tweenVars: [
-			{
-				scrollTrigger: {
-					pin: true,
-					pinSpacing: false,
-					scrub: true,
-					start: "center center",
-					end: "bottom top",
-					onEnter: () => {
-						const els = document.querySelectorAll(
-							".waking-up__emotion-label--with-circle"
-						);
-						els.forEach((l) => (l.style.opacity = "0"));
-					},
-					onLeaveBack: () => {
-						const els = document.querySelectorAll(
-							".waking-up__emotion-label--with-circle"
-						);
-						els.forEach((l) => (l.style.opacity = "1"));
+			],
+		},
+		{
+			height: DEFAULT_HEIGHT,
+			content: scrollerStrings.whatCanWeDo,
+			scrollTriggerComponent: "section",
+			tweenVars: [
+				{
+					scrollTrigger: {
+						pin: true,
+						pinSpacing: false,
+						start: "center center",
+						end: "bottom center+=30px",
 					},
 				},
-			},
-		],
-	},
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
-		// Originally:
-		// content: (
-		//   <div>
-		//     <span id="become-curious">and become curious...</span>
-		//     ...
-		//   </div>
-		// ),
-		content: `
+				{
+					opacity: 0,
+					filter: "blur(60px)",
+					scrollTrigger: {
+						start: "51% center",
+						end: "100% center",
+						pinSpacing: false,
+					},
+				},
+			],
+		},
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 3}vh`,
+			id: "pause",
+			content: scrollerStrings.weCanPause,
+			styleKey: "waking-up__decentering",
+			tweenComponent: "emotion-size",
+			scrollTriggerComponent: "heading",
+			tweenType: "fromTo",
+			tweenVars: [
+				{
+					...getDecenteringTweenVariables(40),
+					duration: 10,
+					scrollTrigger: {
+						pin: true,
+						pinSpacing: false,
+						scrub: true,
+						start: "top+=30px center",
+						end: "bottom bottom",
+					},
+				},
+				{
+					...getDecenteringTweenVariables(90),
+					duration: 10,
+				},
+			],
+		},
+		...breathingSections(scrollerStrings.connectToBreath, 90, 80),
+		...breathingSections(scrollerStrings.rideWaveOfEmotion, 90, 60),
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
+			content: scrollerStrings.recognizeEmotionalState,
+			styleKey: "waking-up__decentering",
+			tweenComponent: "emotion-size",
+			scrollTriggerComponent: "heading",
+			tweenType: "fromTo",
+			tweenVars: [
+				{
+					...getDecenteringTweenVariables(90),
+					duration: 10,
+					ease: "power2",
+					scrollTrigger: {
+						pin: true,
+						pinSpacing: false,
+						scrub: true,
+						start: "top center-=200px",
+						end: "bottom top-=400px",
+					},
+				},
+				{
+					...getDecenteringTweenVariables(100),
+					duration: 1,
+				},
+			],
+		},
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
+			content: "",
+			scrollTriggerComponent: "heading",
+			tweenVars: [
+				{
+					scrollTrigger: {
+						pin: true,
+						pinSpacing: false,
+						scrub: true,
+						start: "center center",
+						end: "bottom top",
+						onEnter: () => {
+							const e = document.querySelector(
+								"#waking-up__emotion-label-anger"
+							);
+							if (e) {
+								e.style.opacity = "1";
+							}
+						},
+						onLeaveBack: () => {
+							const e = document.querySelector(
+								"#waking-up__emotion-label-anger"
+							);
+							if (e) {
+								e.style.opacity = "0";
+							}
+						},
+					},
+				},
+			],
+		},
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
+			content: "",
+			scrollTriggerComponent: "heading",
+			tweenVars: [
+				{
+					scrollTrigger: {
+						pin: true,
+						pinSpacing: false,
+						scrub: true,
+						start: "center center",
+						end: "bottom top",
+						onEnter: () => {
+							const els = document.querySelectorAll(
+								".waking-up__emotion-label--with-circle"
+							);
+							els.forEach((l) => (l.style.opacity = "1"));
+						},
+						onLeaveBack: () => {
+							const els = document.querySelectorAll(
+								".waking-up__emotion-label--with-circle"
+							);
+							els.forEach((l) => (l.style.opacity = "0"));
+						},
+					},
+				},
+			],
+		},
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
+			content: "",
+			scrollTriggerComponent: "heading",
+			tweenVars: [
+				{
+					scrollTrigger: {
+						pin: true,
+						pinSpacing: false,
+						scrub: true,
+						start: "center center",
+						end: "bottom top",
+						onEnter: () => {
+							const els = document.querySelectorAll(
+								".waking-up__emotion-label--with-circle"
+							);
+							els.forEach((l) => (l.style.opacity = "0"));
+						},
+						onLeaveBack: () => {
+							const els = document.querySelectorAll(
+								".waking-up__emotion-label--with-circle"
+							);
+							els.forEach((l) => (l.style.opacity = "1"));
+						},
+					},
+				},
+			],
+		},
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
+			// Originally:
+			// content: (
+			//   <div>
+			//     <span id="become-curious">and become curious...</span>
+			//     ...
+			//   </div>
+			// ),
+			content: `
         <div>
           <span id="waking-up__become-curious">${scrollerStrings.becomeCurious}</span>
         </div>
       `,
-		id: "waking-up__curious",
-		scrollTriggerComponent: "heading",
-		tweenVars: [
-			{
-				scrollTrigger: {
-					scrub: true,
-					start: "top center",
-					end: "bottom center",
-					onUpdate: (scrollTrigger) => {
-						const { progress, trigger } = scrollTrigger;
-						const colorField = document.querySelector(
-							"#waking-up__emotionColorField"
-						);
-						if (!colorField) {
-							return;
-						}
-						const emotionWidth = colorField.clientWidth * 1.5;
-						const curiousSpan = trigger?.querySelector(
-							"#waking-up__become-curious"
-						);
-						if (!curiousSpan) {
-							return;
-						}
-						curiousSpan.style.position = "relative";
-						let allWords = curiousSpan?.querySelectorAll("span");
-						if (!allWords.length) {
-							// put each word in its own span if it's not already
-							const words = curiousSpan?.textContent?.split(" ");
-							if (words) {
-								curiousSpan.innerHTML = words
-									.map((word) => `<span>${word}</span>`)
-									.join(" ");
+			id: "waking-up__curious",
+			scrollTriggerComponent: "heading",
+			tweenVars: [
+				{
+					scrollTrigger: {
+						scrub: true,
+						start: "top center",
+						end: "bottom center",
+						onUpdate: (scrollTrigger) => {
+							const { progress, trigger } = scrollTrigger;
+							const colorField = document.querySelector(
+								"#waking-up__emotionColorField"
+							);
+							if (!colorField) {
+								return;
 							}
-							allWords = curiousSpan?.querySelectorAll("span");
-							allWords.forEach((word) => {
-								word.style.position = "relative";
+							const emotionWidth = colorField.clientWidth * 1.5;
+							const curiousSpan = trigger?.querySelector(
+								"#waking-up__become-curious"
+							);
+							if (!curiousSpan) {
+								return;
+							}
+							curiousSpan.style.position = "relative";
+							let allWords =
+								curiousSpan?.querySelectorAll("span");
+							if (!allWords.length) {
+								// put each word in its own span if it's not already
+								const words =
+									curiousSpan?.textContent?.split(" ");
+								if (words) {
+									curiousSpan.innerHTML = words
+										.map((word) => `<span>${word}</span>`)
+										.join(" ");
+								}
+								allWords =
+									curiousSpan?.querySelectorAll("span");
+								allWords.forEach((word) => {
+									word.style.position = "relative";
+								});
+							}
+							// partition words by whether they are left or right of center
+							const center = window.innerWidth / 2;
+							const leftWords = Array.from(allWords).filter(
+								(span) => {
+									const rect = span.getBoundingClientRect();
+									return rect.left + rect.width / 2 < center;
+								}
+							);
+							const rightWords = Array.from(allWords).filter(
+								(span) => {
+									const rect = span.getBoundingClientRect();
+									return rect.left + rect.width / 2 >= center;
+								}
+							);
+							const spread =
+								Math.sin(progress * Math.PI) * emotionWidth;
+							leftWords.forEach((span, i) => {
+								span.style.left = `-${spread}px`;
 							});
-						}
-						// partition words by whether they are left or right of center
-						const center = window.innerWidth / 2;
-						const leftWords = Array.from(allWords).filter(
-							(span) => {
-								const rect = span.getBoundingClientRect();
-								return rect.left + rect.width / 2 < center;
-							}
-						);
-						const rightWords = Array.from(allWords).filter(
-							(span) => {
-								const rect = span.getBoundingClientRect();
-								return rect.left + rect.width / 2 >= center;
-							}
-						);
-						const spread =
-							Math.sin(progress * Math.PI) * emotionWidth;
-						leftWords.forEach((span, i) => {
-							span.style.left = `-${spread}px`;
-						});
-						rightWords.forEach((span, i) => {
-							span.style.left = `${spread}px`;
-						});
+							rightWords.forEach((span, i) => {
+								span.style.left = `${spread}px`;
+							});
 
-						// prep timeline elements for sliding
-						if (screenIsSmall()) {
-							initTimelineElementPositions();
-						}
+							// prep timeline elements for sliding
+							if (screenIsSmall()) {
+								initTimelineElementPositions();
+							}
+						},
 					},
 				},
-			},
-		],
-	},
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
-		content: `
+			],
+		},
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
+			content: `
         <div class="waking-up__timeline-questions" id="waking-up__trigger-timeline">
           <span class="${sharedStyle.triggerQuestion}">${scrollerStrings.whatCausesFeeling}</span>
           <img class="${sharedStyle.triggerArrow}" src="/img/right-arrow.svg" />
         </div>
       `,
-		scrollTriggerComponent: "heading",
-		tweenVars: [
-			{
-				scrollTrigger: {
-					...getDefaultTweenVars()[0].scrollTrigger,
-					start: "center center",
-					end: "bottom top-=10000px",
-				},
-			},
-		],
-	},
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
-		id: "waking-up__trigger-questions-section",
-		content: "",
-		scrollTriggerComponent: "heading",
-		tweenVars: [
-			{
-				...getDefaultTweenVars()[0],
-				scrollTrigger: {
-					...getDefaultTweenVars()[0].scrollTrigger,
-					onEnter: () => {
-						getSliderTimeline().tweenTo("trigger");
-					},
-					onLeaveBack: () => {
-						getSliderTimeline().tweenTo(0);
+			scrollTriggerComponent: "heading",
+			tweenVars: [
+				{
+					scrollTrigger: {
+						...getDefaultTweenVars()[0].scrollTrigger,
+						start: "center center",
+						end: "bottom top-=10000px",
 					},
 				},
-			},
-			getDefaultTweenVars()[1],
-		],
-		experiences: {
-			events: scrollerStrings.triggerQuestions.map(phrase => ({phrase})),
+			],
 		},
-	},
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
-		// Originally:
-		// content: (
-		//   <div class="timeline-questions" id="response-timeline">
-		//     <img className={sharedStyle.responseArrow} src="/img/right-arrow.svg" />
-		//     <span className={sharedStyle.responseQuestion}>How do I respond?</span>
-		//   </div>
-		// ),
-		content: `
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
+			id: "waking-up__trigger-questions-section",
+			content: "",
+			scrollTriggerComponent: "heading",
+			tweenVars: [
+				{
+					...getDefaultTweenVars()[0],
+					scrollTrigger: {
+						...getDefaultTweenVars()[0].scrollTrigger,
+						onEnter: () => {
+							getSliderTimeline().tweenTo("trigger");
+						},
+						onLeaveBack: () => {
+							getSliderTimeline().tweenTo(0);
+						},
+					},
+				},
+				getDefaultTweenVars()[1],
+			],
+			experiences: {
+				events: scrollerStrings.triggerQuestions.map((phrase) => ({
+					phrase,
+				})),
+			},
+		},
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 0.5}vh`,
+			// Originally:
+			// content: (
+			//   <div class="timeline-questions" id="response-timeline">
+			//     <img className={sharedStyle.responseArrow} src="/img/right-arrow.svg" />
+			//     <span className={sharedStyle.responseQuestion}>How do I respond?</span>
+			//   </div>
+			// ),
+			content: `
         <div class="waking-up__timeline-questions" id="waking-up__response-timeline">
           <img class="${sharedStyle.responseArrow}" src="/img/right-arrow.svg" />
           <span class="${sharedStyle.responseQuestion}">${scrollerStrings.howDoIRespond}</span>
 		  <a href="#triggers" class="waking-up__timeline-link">${scrollerStrings.exploreTimeline}</a>
         </div>
       `,
-		scrollTriggerComponent: "heading",
-		tweenVars: [
-			{
-				scrollTrigger: {
-					...getDefaultTweenVars()[0].scrollTrigger,
-					onEnter: () => {
-						getSliderTimeline().tweenTo("response");
+			scrollTriggerComponent: "heading",
+			tweenVars: [
+				{
+					scrollTrigger: {
+						...getDefaultTweenVars()[0].scrollTrigger,
+						onEnter: () => {
+							getSliderTimeline().tweenTo("response");
+						},
+						onLeaveBack: () => {
+							getSliderTimeline().tweenTo("trigger");
+						},
+						start: "center+=5 center",
+						end: "bottom top-=10000px",
 					},
-					onLeaveBack: () => {
-						getSliderTimeline().tweenTo("trigger");
-					},
-					start: "center+=5 center",
-					end: "bottom top-=10000px",
 				},
-			},
-		],
-	},
-	{
-		height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
-		id: "waking-up__response-questions-section",
-		content: "",
-		scrollTriggerComponent: "heading",
-		tweenVars: [
-			{
-				...getDefaultTweenVars()[0],
-				scrollTrigger: {
-					...getDefaultTweenVars()[0].scrollTrigger,
-				},
-			},
-			getDefaultTweenVars()[1],
-		],
-		experiences: {
-			events: scrollerStrings.responseQuestions.map(phrase => ({phrase})),
+			],
 		},
-	},
-	{
-		id: "waking-up__timeline-link-section",
-		height: `${parseInt(DEFAULT_HEIGHT) * 2}vh`,
-		content: `<a href="#triggers" class="waking-up__timeline-link">${scrollerStrings.exploreTimeline}</a>`,
-		scrollTriggerComponent: "heading",
-		tweenVars: [
-			{
-				scrollTrigger: {
-					...getDefaultTweenVars()[0].scrollTrigger,
-					start: "center-=200px center",
-					end: "bottom top-=10000px",
-					onEnter: () => {
-						getSliderTimeline().tweenTo("link");
-					},
-					onLeaveBack: () => {
-						getSliderTimeline().tweenTo("response");
+		{
+			height: `${parseInt(DEFAULT_HEIGHT) * 1}vh`,
+			id: "waking-up__response-questions-section",
+			content: "",
+			scrollTriggerComponent: "heading",
+			tweenVars: [
+				{
+					...getDefaultTweenVars()[0],
+					scrollTrigger: {
+						...getDefaultTweenVars()[0].scrollTrigger,
 					},
 				},
+				getDefaultTweenVars()[1],
+			],
+			experiences: {
+				events: scrollerStrings.responseQuestions.map((phrase) => ({
+					phrase,
+				})),
 			},
-		],
-	},
-];
+		},
+		{
+			id: "waking-up__timeline-link-section",
+			height: `${parseInt(DEFAULT_HEIGHT) * 2}vh`,
+			content: `<a href="#triggers" class="waking-up__timeline-link">${scrollerStrings.exploreTimeline}</a>`,
+			scrollTriggerComponent: "heading",
+			tweenVars: [
+				{
+					scrollTrigger: {
+						...getDefaultTweenVars()[0].scrollTrigger,
+						start: "center-=200px center",
+						end: "bottom top-=10000px",
+						onEnter: () => {
+							getSliderTimeline().tweenTo("link");
+						},
+						onLeaveBack: () => {
+							getSliderTimeline().tweenTo("response");
+						},
+					},
+				},
+			],
+		},
+	];
+};

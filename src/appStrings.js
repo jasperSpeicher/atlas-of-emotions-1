@@ -3,15 +3,15 @@ import fetch from "isomorphic-fetch";
 import dispatcher from "./dispatcher.js";
 
 // maintain state and make globally accessible.
-// yeah, a little dirty, but good enough for this use case.
 let instance;
-let langs = [];
 let currentEmotionsData;
 let defaultEmotionsData;
 let currentSecondaryData;
 let defaultSecondaryData;
 let strategiesData;
 let defaultStrategiesData;
+let wakingUpData;
+let defaultWakingUpData;
 
 /**
  * Utility for loading strings from the JSON files in the `langs` directory.
@@ -59,6 +59,17 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 					return value;
 				}
 				console.error(`Key not found in strategies: ${key}`);
+				return undefined;
+			}
+
+			case "wakingUp": {
+				const wakingUpDataObject = getWakingUpDataObject();
+				if (path.length === 0) return wakingUpDataObject;
+				const value = _.get(wakingUpDataObject, path.join("."));
+				if (!_.isNil(value)) {
+					return value;
+				}
+				console.error(`Key not found in waking up data: ${key}`);
 				return undefined;
 			}
 
@@ -159,6 +170,20 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 				}
 			).then((res) => res.json());
 
+			const defaultWakingUpDataPromise = fetch(
+				`${langPath}/waking-up.${defaultLang}.json`,
+				{
+					credentials: "same-origin",
+				}
+			).then((res) => res.json());
+
+			const currentWakingUpDataPromise = fetch(
+				`${langPath}/waking-up.${_lang}.json`,
+				{
+					credentials: "same-origin",
+				}
+			).then((res) => res.json());
+
 			return Promise.all([
 				defaultEmotionsDataPromise,
 				currentEmotionsDataPromise,
@@ -166,6 +191,8 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 				currentSecondaryDataPromise,
 				defaultStrategiesDataPromise,
 				currentStrategiesDataPromise,
+				defaultWakingUpDataPromise,
+				currentWakingUpDataPromise,
 			])
 				.then((results) => {
 					[
@@ -175,6 +202,8 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 						currentSecondaryData,
 						defaultStrategiesData,
 						strategiesData,
+						defaultWakingUpData,
+						wakingUpData,
 					] = results;
 					if (defaultEmotionsData && defaultEmotionsData.slug) {
 						delete defaultEmotionsData.slug;
@@ -193,6 +222,12 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 					}
 					if (strategiesData && strategiesData.slug) {
 						delete strategiesData.slug;
+					}
+					if (defaultWakingUpData && defaultWakingUpData.slug) {
+						delete defaultWakingUpData.slug;
+					}
+					if (wakingUpData && wakingUpData.slug) {
+						delete wakingUpData.slug;
 					}
 
 					cacheDerivedStrings();
@@ -243,6 +278,10 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 		return strategiesData || defaultStrategiesData;
 	}
 
+	function getWakingUpDataObject() {
+		return wakingUpData || defaultWakingUpData;
+	}
+
 
 	instance = {
 		getStr,
@@ -250,6 +289,7 @@ function appStrings(_lang, _screenIsSmall, _stringsLoadedCallback) {
 		getSecondaryDataBlock,
 		getSecondaryDataObject,
 		getStrategiesDataObject,
+		getWakingUpDataObject,
 		lang,
 		screenIsSmall,
 		loadStrings,
