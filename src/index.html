@@ -255,7 +255,7 @@
 
         <div class="page-body">
 
-            <div class="section introduction-hero" id="introduction-fp-section" data-template="metadata.hero">
+            <div class="section introduction-hero" id="introduction-fp-section" data-template="emotionsData.metadata.hero">
 
                 <div class="slides">
                     <div class="slidesContainer">
@@ -318,7 +318,7 @@
 
             <div class="section" id="timeline-fp-section" data-has-emotion-state="true">
                 <div class="section-graphics">
-                    <div id="timeline-graphics" data-template="metadata.timeline.secondary.blocks.captions">
+                    <div id="timeline-graphics" data-template="emoationsData.metadata.timeline.secondary.blocks.captions">
                         <div class="diagram-caption" id="constructive-response-caption">
                             {{ constructive_response }}
                         </div>
@@ -350,7 +350,7 @@
                 </div>
                 <div class="section-text">
 
-                    <div data-template="metadata">
+                    <div data-template="emotionsData.metadata">
                         <h2 class="section-heading">
                             {{ navigation.timeline.heading }}
                             <a class="restart-button">
@@ -361,7 +361,7 @@
 
                     <div class="section-text__scroller">
                         <div>
-                            <div data-template="metadata.timeline">
+                            <div data-template="emotionsData.metadata.timeline">
                                 <!--intro-->
                                 {{# body.forEach( function(paragraph){ }}
                                 <p class="body-intro">
@@ -372,7 +372,7 @@
                                     {{ intro_button }}
                                 </p>
                             </div>
-                            <div data-template="metadata.timeline.secondary">
+                            <div data-template="emotionsData.metadata.timeline.secondary">
                                 <button id="begin-awareness" class="body-intro mdc-button mdc-button--raised">
                                     <span class="mdc-button__ripple"></span>
                                     <span class="mdc-button__label">
@@ -381,7 +381,7 @@
                                 </button>
                             </div>
 
-                            <div data-template="metadata.timeline.secondary">
+                            <div data-template="emotionsData.metadata.timeline.secondary">
 
                                 <!--event-->
                                 <div class="body-awareness" data-stage="trigger">
@@ -473,7 +473,7 @@
                 <div class="section-graphics">
                 </div>
                 <div class="section-text">
-                    <h2 class="section-heading" data-template="metadata.navigation">{{ experience.heading }}</h2>
+                    <h2 class="section-heading" data-template="emotionsData.metadata.navigation">{{ experience.heading }}</h2>
                     <div class="section-text__scroller">
                         <div>
                             <p class="headline">
@@ -489,7 +489,7 @@
                 <div class="section-graphics">
                 </div>
                 <div class="section-text">
-                    <h2 class="section-heading" data-template="metadata.navigation">{{ response.heading }}</h2>
+                    <h2 class="section-heading" data-template="emotionsData.metadata.navigation">{{ response.heading }}</h2>
                     <div class="section-text__scroller">
                         <div>
                             <p class="headline">
@@ -644,7 +644,7 @@
                     </div>
                 </div>
                 <div class="section-text">
-                    <h2 class="section-heading" data-template="metadata.navigation">{{ strategies.heading }}</h2>
+                    <h2 class="section-heading" data-template="emotionsData.metadata.navigation">{{ strategies.heading }}</h2>
                     <div class="section-text__scroller">
                         <div id="strategies-toc">
                             <ul data-template="strategiesData.toc">
@@ -676,7 +676,7 @@
                     </div>
                 </div>
                 <div class="section-text">
-                    <h2 class="section-heading" data-template="metadata.navigation">{{ learn_more.heading }}</h2>
+                    <h2 class="section-heading" data-template="emotionsData.metadata.navigation">{{ learn_more.heading }}</h2>
                     <div class="section-text__scroller">
                         <div id="learn_more-toc">
                             <ul data-template="secondaryData">
@@ -693,7 +693,7 @@
 
         <div class="emotion-nav">
             <ul>
-                <li data-template="metadata.navigation.emotions" class="all"><a href="#continents">{{ all }}</a>
+                <li data-template="emotionsData.metadata.navigation.emotions" class="all"><a href="#continents">{{ all }}</a>
                 </li>
                 <li data-template="derived.emotions"><a href="#" data-emotion="anger">{{ anger }}</a></li>
                 <li data-template="derived.emotions"><a href="#" data-emotion="fear">{{ fear }}</a></li>
@@ -705,7 +705,7 @@
 
         <div class="top-nav hidden-for-intro">
             <div class="menu">
-                <ul id="menu-list" data-template="metadata.navigation">
+                <ul id="menu-list" data-template="emotionsData.metadata.navigation">
 
                     <li><a href="#introduction/" id="introduction-menu-link">{{ introduction.menu }}</a>
                     </li>

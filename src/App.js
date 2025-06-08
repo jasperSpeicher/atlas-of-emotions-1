@@ -151,7 +151,7 @@ export default function (...initArgs) {
 			evaluate: /\{\{#([\s\S]+?)\}\}/g, // {{# console.log("blah") }}
 			interpolate: /\{\{[^#\{]([\s\S]+?)[^\}]\}\}/g, // {{ title }}
 			escape: /\{\{\{([\s\S]+?)\}\}\}/g, // {{{ title }}}
-			imports: { '_': _ }
+			imports: { _: _ },
 		};
 
 		let templateElements = [].slice.call(
@@ -159,33 +159,7 @@ export default function (...initArgs) {
 		);
 
 		templateElements.forEach(function (element) {
-			let isStrategies =
-				element.dataset.template.match(/(strategies)/) != null;
-			let isSecondary =
-				element.dataset.template.match(/(secondaryData)/) != null;
-			let isDerived = element.dataset.template.match(/(derived)/) != null;
-			let prefix =
-				isDerived || isStrategies || isSecondary ? "" : "emotionsData.";
-			
-			let data;
-			// If the template is specifically "secondaryData", fetch the whole object.
-			// Otherwise, use getStr with the (potentially prefixed) template key.
-			if (element.dataset.template === "secondaryData") {
-				data = appStrings().getSecondaryDataObject();
-			} else if (element.dataset.template.startsWith("strategiesData")) {
-				data = appStrings().getStr(element.dataset.template);
-			} else {
-				data = appStrings().getStr(prefix + element.dataset.template);
-			}
-
-			// If data is still a string (e.g., an error message from getStr),
-			// provide an empty object to the template to prevent errors like "annex is not defined"
-			// when the template tries to access properties on a string.
-			// The template will then gracefully show missing data instead of breaking.
-			if (typeof data === 'string') {
-				console.warn(`Template data for key '${prefix + element.dataset.template}' resolved to a string: "${data}". Using empty object for template.`);
-				data = {};
-			}
+			const data = appStrings().getStr(element.dataset.template) ?? {};
 
 			let compiled = _.template(element.innerHTML);
 			element.innerHTML = compiled(data);
