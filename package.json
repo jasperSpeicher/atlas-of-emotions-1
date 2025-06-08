@@ -71,7 +71,6 @@
 		"rimraf": "^3.0.2",
 		"sass": "^1.79.3",
 		"serve": "^13.0.2",
-		"spreadsheet-to-json": "^2.0.0",
 		"vinyl-buffer": "^1.0.1",
 		"vinyl-source-stream": "^2.0.0",
 		"watchify": "^4.0.0"
