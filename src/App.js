@@ -151,6 +151,7 @@ export default function (...initArgs) {
 			evaluate: /\{\{#([\s\S]+?)\}\}/g, // {{# console.log("blah") }}
 			interpolate: /\{\{[^#\{]([\s\S]+?)[^\}]\}\}/g, // {{ title }}
 			escape: /\{\{\{([\s\S]+?)\}\}\}/g, // {{{ title }}}
+			imports: { '_': _ }
 		};
 
 		let templateElements = [].slice.call(
@@ -159,7 +160,7 @@ export default function (...initArgs) {
 
 		templateElements.forEach(function (element) {
 			let isStrategies =
-				element.dataset.template.match(/(strategiesData)/) != null;
+				element.dataset.template.match(/(strategies)/) != null;
 			let isSecondary =
 				element.dataset.template.match(/(secondaryData)/) != null;
 			let isDerived = element.dataset.template.match(/(derived)/) != null;
@@ -169,8 +170,10 @@ export default function (...initArgs) {
 			let data;
 			// If the template is specifically "secondaryData", fetch the whole object.
 			// Otherwise, use getStr with the (potentially prefixed) template key.
-			if (isSecondary && element.dataset.template === "secondaryData") {
+			if (element.dataset.template === "secondaryData") {
 				data = appStrings().getSecondaryDataObject();
+			} else if (element.dataset.template.startsWith("strategiesData")) {
+				data = appStrings().getStr(element.dataset.template);
 			} else {
 				data = appStrings().getStr(prefix + element.dataset.template);
 			}

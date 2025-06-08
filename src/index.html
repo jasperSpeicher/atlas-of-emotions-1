@@ -185,8 +185,8 @@
                         relation
                         to facial expressions. He has gained a reputation as "the best human lie detector in the world".
                         Eve
-                        Ekman is currently a Post Doctoral Scholar at UCSF’s Osher Center for Integrative Medicine.
-                        Ekman’s
+                        Ekman is currently a Post Doctoral Scholar at UCSF's Osher Center for Integrative Medicine.
+                        Ekman's
                         research interests were inspired by her experience as a medical social worker in the emergency
                         department of San Francisco General Hospital coupled with her training in the applied emotion
                         regulation and mindfulness intervention: Cultivating Emotional Balance, CEB.</p>
@@ -525,12 +525,12 @@
                         </div>
 
                         <div class="strategy-details">
-                            {{# for(let subSection of reflecting.sub_sections) { }}
+                            {{# if(reflecting.sub_sections) { reflecting.sub_sections.forEach(function(subSection) { }}
                             <div class="details-subsection">
                                 <!-- start details-subsection -->
                                 <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
                                 <p>{{ subSection.description }}</p>
-                                {{# for(let paragraph of subSection.paragraphs) { }}
+                                {{# if(subSection.paragraphs) { subSection.paragraphs.forEach(function(paragraph) { }}
                                 <div class="strategy-details__columns">
                                     <div class="strategy-details__left">
                                         <p>{{# print(paragraph.body.replace("--", "–")) }}</p>
@@ -552,10 +552,10 @@
                                     </div>
                                     {{# } }}
                                 </div>
-                                {{# } }}
+                                {{# }); } }}
                                 <!-- end details-subsection -->
                             </div>
-                            {{# } }}
+                            {{# }); } }}
                             <!-- end strategy-details -->
                         </div>
 
@@ -565,12 +565,12 @@
                         </div>
 
                         <div class="strategy-details">
-                            {{# for(let subSection of in_the_moment.sub_sections) { }}
+                            {{# if(in_the_moment.sub_sections) { in_the_moment.sub_sections.forEach(function(subSection) { }}
                             <div class="details-subsection">
                                 <!-- start details-subsection -->
                                 <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
                                 <p>{{ subSection.description }}</p>
-                                {{# for(let paragraph of subSection.paragraphs) { }}
+                                {{# if(subSection.paragraphs) { subSection.paragraphs.forEach(function(paragraph) { }}
                                 <div class="strategy-details__columns">
                                     <div class="strategy-details__left">
                                         <p>{{# print(paragraph.body.replace("--", "–")) }}</p>
@@ -592,10 +592,10 @@
                                     </div>
                                     {{# } }}
                                 </div>
-                                {{# } }}
+                                {{# }); } }}
                                 <!-- end details-subsection -->
                             </div>
-                            {{# } }}
+                            {{# }); } }}
                             <!-- end strategy-details -->
                         </div>
 
@@ -605,12 +605,12 @@
                         </div>
 
                         <div class="strategy-details">
-                            {{# for(let subSection of living_in_balance.sub_sections) { }}
+                            {{# if(living_in_balance.sub_sections) { living_in_balance.sub_sections.forEach(function(subSection) { }}
                             <div class="details-subsection">
                                 <!-- start details-subsection -->
                                 <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
                                 <p>{{ subSection.description }}</p>
-                                {{# for(let paragraph of subSection.paragraphs) { }}
+                                {{# if(subSection.paragraphs) { subSection.paragraphs.forEach(function(paragraph) { }}
                                 <div class="strategy-details__columns">
                                     <div class="strategy-details__left">
                                         <p>{{# print(paragraph.body.replace("--", "–")) }}</p>
@@ -632,10 +632,10 @@
                                     </div>
                                     {{# } }}
                                 </div>
-                                {{# } }}
+                                {{# }); } }}
                                 <!-- end details-subsection -->
                             </div>
-                            {{# } }}
+                            {{# }); } }}
                             <!-- end strategy-details -->
                         </div>
 
@@ -648,16 +648,18 @@
                     <div class="section-text__scroller">
                         <div id="strategies-toc">
                             <ul data-template="strategiesData.toc">
-                                {{# for(let section of sections) { if(Array.isArray(section)) { }}
-                                <ul>
-                                    {{# for(let subSection of section) { }}
-                                    <li><a href="#strategies/{{ subSection.id }}">{{ subSection.title }}</a></li>
-                                    {{# } }}
-                                </ul>
-                                {{# } else { }}
-                                <li><a href="#strategies/{{ section.id }}">{{ section.title }}</a></li>
-                                {{# } }}
-                                {{# } }}
+                                {{# if(sections) { sections.forEach(function(section) { }}
+                                 <li>
+                                     <a href="#strategies/{{ section.id }}">{{ section.title }}</a>
+                                     {{# if(section.sub_sections) { }}
+                                     <ul>
+                                         {{# section.sub_sections.forEach(function(subSection) { }}
+                                         <li><a href="#strategies/{{ subSection.id }}">{{ subSection.title }}</a></li>
+                                         {{# }); }}
+                                     </ul>
+                                     {{# } }}
+                                 </li>
+                                 {{# }); } }}
                             </ul>
                             <div data-template="secondaryData">
                                 <a href="#strategies/impediment-antidote">{{ annex["impediment-antidote"].title
