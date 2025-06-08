@@ -350,17 +350,12 @@ collections:
       preview: false
     fields:
       - { label: "Identifier", name: "slug", widget: "hidden", default: "waking-up", i18n: true }
-      - label: "Phrase Pairs"
-        name: "phrasePairs"
+      - label: "Phrases"
+        name: "phrases"
         widget: "list"
         i18n: true
         fields:
-          - label: "Pair"
-            name: "pair"
-            widget: "object"
-            i18n: true
-            fields:
-              - { label: "Event", name: "event", widget: "string", i18n: true }
+          - { label: "Phrase", name: "phrase", widget: "string", i18n: true }
           - { label: "Emotion", name: "emotion", widget: "select", options: ["enjoyment", "fear", "anger", "disgust", "sadness"], i18n: false }
       - label: "Scroller Content"
         name: "scroller"

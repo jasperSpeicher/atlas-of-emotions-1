@@ -1,106 +1,72 @@
 {
   "slug": "waking-up",
-  "phrasePairs": [
+  "phrases": [
     {
-      "pair": {
-        "event": "Successful interview"
-      },
+      "phrase": "Successful interview",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Forgetting phone password"
-      },
+      "phrase": "Forgetting phone password",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Enjoyed a vacation"
-      },
+      "phrase": "Enjoyed a vacation",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Stuck in an elevator"
-      },
+      "phrase": "Stuck in an elevator",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Slow internet speed"
-      },
+      "phrase": "Slow internet speed",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Dirty dishes everywhere"
-      },
+      "phrase": "Dirty dishes everywhere",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Hear a strange noise"
-      },
+      "phrase": "Hear a strange noise",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Hear a good joke"
-      },
+      "phrase": "Hear a good joke",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Laid off"
-      },
+      "phrase": "Laid off",
       "emotion": "sadness"
     },
     {
-      "pair": {
-        "event": "Spilled coffee on shirt"
-      },
+      "phrase": "Spilled coffee on shirt",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Got a promotion"
-      },
+      "phrase": "Got a promotion",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Moldy shower grout"
-      },
+      "phrase": "Moldy shower grout",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Construction noise nearby"
-      },
+      "phrase": "Construction noise nearby",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Lost phone charger"
-      },
+      "phrase": "Lost phone charger",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Helped a stranger"
-      },
+      "phrase": "Helped a stranger",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Rotten food in fridge"
-      },
+      "phrase": "Rotten food in fridge",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Plane turbulence"
-      },
+      "phrase": "Plane turbulence",
       "emotion": "fear"
     }
   ],

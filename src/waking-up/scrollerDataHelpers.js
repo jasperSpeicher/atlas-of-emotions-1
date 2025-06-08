@@ -87,21 +87,21 @@ export const getPhraseConfigs = ({ count, emotion, severity }) => {
  * Maps a list of phrase/emotion pairs into an array suitable for scroller usage.
  * Optionally configures color tween transitions for each phrase.
  *
- * @param {Object} options - { phrasePairs, lineHeight, changeColor, preventFlicker }
- * @param {Array<Object>} options.phrasePairs - An array of { pair, emotion } objects.
+ * @param {Object} options - { phrases, lineHeight, changeColor, preventFlicker }
+ * @param {Array<Object>} options.phrases - An array of { phrase, emotion } objects.
  * @param {number} [options.lineHeight] - Optional line-height to apply to each phrase.
  * @param {boolean} [options.changeColor] - Whether to include background color transitions.
  * @param {boolean} [options.preventFlicker] - Whether to add a transition to prevent flicker.
  * @returns {Array<Object>} An array of phrase elements (with optional tween configs).
  */
 export const getEventPhrases = ({
-	phrasePairs,
+	phrases,
 	lineHeight,
 	changeColor,
 	preventFlicker,
 }) =>
-	phrasePairs.map(({ pair: { event }, emotion }, i, array) => ({
-		phrase: event,
+	phrases.map(({ phrase, emotion }, i, array) => ({
+		phrase,
 		emotion,
 		lineHeight,
 		...(changeColor

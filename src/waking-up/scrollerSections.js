@@ -21,22 +21,19 @@ import appStrings from "../appStrings";
 export const createScrollerSections = () => {
 	const { getStr } = appStrings();
 	const scrollerStrings = getStr("wakingUp.scroller");
-	const phrasePairsStrings = getStr("wakingUp.phrasePairs");
+	const phrases = getStr("wakingUp.phrases");
 
 	const DEFAULT_HEIGHT = "100vh";
-
-	// Example phrase configs
-	const phrasePairs = phrasePairsStrings;
 
 	// Build a list of "pile up events" using one of your imported helpers
 	const pileUpEvents = getEventPhrases({
 		lineHeight: 1.5,
 		changeColor: true,
 		preventFlicker: true,
-		phrasePairs,
+		phrases,
 	});
 
-	const finalPiledUpEmotion = phrasePairs[phrasePairs.length - 1].emotion;
+	const finalPiledUpEmotion = phrases[phrases.length - 1].emotion;
 	const transparentPiledUpEmotion =
 		getColorWithTransparency(finalPiledUpEmotion);
 
@@ -484,12 +481,10 @@ export const createScrollerSections = () => {
 			experiences: {
 				styleKey: "large",
 				events: getEventPhrases({
-					phrasePairs: [
+					phrases: [
 						{
 							emotion: INITIAL_EMOTION,
-							pair: {
-								event: scrollerStrings.triggerEmotionExperience,
-							},
+							phrase: scrollerStrings.triggerEmotionExperience,
 						},
 					],
 					changeColor: true,
