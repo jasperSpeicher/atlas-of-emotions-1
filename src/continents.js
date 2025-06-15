@@ -610,6 +610,16 @@ export default class ContinentsSection {
 		this.labelContainer.selectAll(".emotion-label").on({
 			mouseenter: val ? section.onContinentMouseEnter : null,
 			mouseleave: val ? section.onContinentMouseLeave : null,
+			click: val ? function(d) {
+				if (d3.event) {
+					d3.event.stopImmediatePropagation();
+				}
+				// Fade out labels immediately
+				section.labelContainer.selectAll('.emotion-label')
+					.classed('muted', false)
+					.classed('visible', false);
+				section.onContinentClick(d);
+			} : null
 		});
 
 		// handle background click for deselection
@@ -976,6 +986,11 @@ export default class ContinentsSection {
 		if (this.mouseLeaveTimeout) {
 			clearTimeout(this.mouseLeaveTimeout);
 		}
+
+		// Fade out labels immediately
+		this.labelContainer.selectAll('.emotion-label')
+			.classed('muted', false)
+			.classed('visible', false);
 
 		this.setInteractive(false);
 		dispatcher.navigate(dispatcher.SECTIONS.STATES, continent.id);

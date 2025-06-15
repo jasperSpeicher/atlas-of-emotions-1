@@ -1613,7 +1613,6 @@ export default {
 			dispatcher.setEmotionState( statesData.name, true );
 		} else {
 			dispatcher.popupChange( 'states', statesData.name, statesData.desc );
-			// dispatcher.changeSectionText(this.currentEmotion, statesData.name, statesData.desc);
 		}
 
 	},
