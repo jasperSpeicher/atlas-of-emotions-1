@@ -421,6 +421,9 @@ export default {
 			let isClosed = !emotionState.data;
 			if ( isClosed ) {
 				this.renderEmotion( emotion );
+				if ( !this.isBackgrounded ) {
+					this.setEmotionScale( emotion, 1.0, false );
+				}
 			}
 
 			// transition graphs and labels
@@ -492,12 +495,12 @@ export default {
 
 			if ( !this.isBackgrounded ) {
 
-				setTimeout( () => {
-					// animate in emotion graph if first time viewing or was previously closed
-					if ( isClosed ) {
-						this.setEmotionScale( emotion, 1.0, false );
-					}
-				}, sassVars.emotions.scale.in.delay * 1000 );
+				// setTimeout( () => {
+				// 	// animate in emotion graph if first time viewing or was previously closed
+				// 	if ( isClosed ) {
+				// 		this.setEmotionScale( emotion, 1.0, false );
+				// 	}
+				// }, sassVars.emotions.scale.in.delay * 1000 );
 
 
 				setTimeout( () => {
