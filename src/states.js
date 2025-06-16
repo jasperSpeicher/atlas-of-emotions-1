@@ -426,23 +426,21 @@ export default {
 				}
 			}
 
+			// set all other graphs to inactive
+			Object.entries( this.emotionStates ).forEach( ( [e] ) => {
+				if ( e !== emotion ) {
+					this.graphContainers[ e ].classed( 'active', false );
+					this.labelContainers[ e ].classed( 'active', false );
+					this.graphContainers[ e ].style( 'transform', null );
+					this.graphContainers[ e ].style( '-webkit-transform', null );
+					this.labelContainers[ e ].style( 'transform', null );
+					this.labelContainers[ e ].style( '-webkit-transform', null );
+				}
+			} );
+
 			// transition graphs and labels
 			let dx = 0;
 			if ( previousEmotion ) {
-				let previousGraph = this.graphContainers[ previousEmotion ],
-					previousLabels = this.labelContainers[ previousEmotion ];
-				previousGraph.classed( 'active', false );
-				previousLabels.classed( 'active', false );
-				previousGraph.on( 'transitionend', event => {
-					previousGraph.on( 'transitionend', null );
-					previousGraph.style( 'transform', null );
-					previousLabels.style( 'transform', null );
-					previousGraph.style( '-webkit-transform', null );
-					previousLabels.style( '-webkit-transform', null );
-					previousGraph.classed( 'transitioning', false );
-					previousLabels.classed( 'transitioning', false );
-				} );
-
 				let containerWidth = document.querySelector( '#states .graph-container' ).offsetWidth;
 
 				// just place left or right one viewport, instead of adhering to column positions,
