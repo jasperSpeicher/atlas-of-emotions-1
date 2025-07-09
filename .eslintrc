@@ -1,7 +1,10 @@
 {
-  "parser": "babel-eslint",
-  "ecmaFeatures": {
-    "jsx": true
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-env"]
+    }
   },
   "env": {
     "es6": true,
