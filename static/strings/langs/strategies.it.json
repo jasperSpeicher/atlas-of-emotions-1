@@ -61,7 +61,7 @@
     "navigating": {
       "header": "Strategie per navigare le emozioni",
       "description": "Per navigare una vita piena di emozioni, dobbiamo creare spazio per esse, così non ci fanno deviare troppo dal nostro percorso. Ci sono due metodi per creare questo spazio, ed entrambi sono molto importanti.",
-      "image": "img/signpost.png",
+      "image": "assets/uploads/signpost.png",
       "reflecting": "<strong>Riflettere</strong> –- possiamo prenderci del tempo per riflettere sulle nostre emozioni, un po' come guardare indietro a esse, per prepararci alla prossima volta.",
       "in_the_moment": "<strong>Nel momento</strong> –- possiamo imparare a gestire le nostre emozioni proprio quando accadono, come strumenti per creare spazio tra noi e i nostri sentimenti quando ne abbiamo bisogno.",
       "keep_reading": "Continua a leggere o sfoglia il menu per saperne di più su queste strategie..."
@@ -78,13 +78,13 @@
           "paragraphs": [
             {
               "body": "<strong>Come</strong> &mdash; Utilizzando il sito Atlas of Emotion possiamo esplorare, con specificità, quale emozione stiamo provando. Invece di \"mi sento male\" o \"mi sento stressato\", possiamo identificare quale emozione potremmo star sperimentando attraverso le famiglie di emozioni universali elencate o le emozioni non universali trovate qui.",
-              "image": "img/label.png",
+              "image": "assets/uploads/label.png",
               "image_width": "88px"
             },
             {
               "body": "<strong>Perché</strong> &mdash; Denominare o etichettare le nostre emozioni crea un momento di \"decentramento\". Il decentramento significa che possiamo rifocalizzarci su una prospettiva più ampia identificando i nostri sentimenti invece di essere coinvolti nell'eccitazione di un'emozione che può saturare il nostro corpo e la nostra mente. Applicare una parola per identificare la nostra emozione supporta una 'granularità emotiva'. Pratichiamo la nostra granularità prendendoci un momento per fare una pausa e considerare la nostra esperienza e poi etichettare: \"In questo momento sono consapevole di provare delusione\". Questa semplice etichetta non deve portare alcun giudizio o agenda, solo denominare può servire ad aiutarci a vedere noi stessi e la situazione più chiaramente.",
               "insight": "Denominare un'emozione può aiutarci a vedere noi stessi e la situazione più chiaramente.",
-              "insight_image": "img/puzzle-head.png"
+              "insight_image": "assets/uploads/puzzle-head.png"
             }
           ]
         },
@@ -95,13 +95,13 @@
           "paragraphs": [
             {
               "body": "<strong>Come</strong> &mdash; Quando guardiamo la cronologia dell'emozione impariamo che il nostro trigger è composto sia dal nostro stato immediato e contesto, sia da storie e percezioni più vecchie. Possiamo scegliere un episodio emotivo quando abbiamo sentito di aver reagito troppo fortemente e poi considerare cosa stava succedendo nella nostra esperienza immediata, la nostra pre-condizione, di fame, stanchezza, stress, ecc. che potrebbe influenzare come diventiamo emotivi. Esploriamo poi cosa potrebbe essere nel database, il magazzino di esperienze passate che potremmo imporre a questa esperienza attuale.",
-              "image": "img/triggers.png",
+              "image": "assets/uploads/triggers.png",
               "image_width": "200px"
             },
             {
               "body": "<strong>Perché</strong> &mdash; Siamo scatenati verso un'emozione in un venticinquesimo di secondo e raramente possiamo identificare tutti i fatti che contribuiscono a quell'emozione. Quando iniziamo a esplorare la pre-condizione e il database sviluppiamo una maggiore comprensione del nostro ruolo nelle nostre emozioni, non è solo il mondo esterno - è il nostro stato attuale e le storie passate che creano un episodio emotivo. Questa comprensione può contribuire alla nostra rivalutazione, per ricordare che quando diventiamo emotivi è spesso un processo complesso che ha bisogno di spazio e riflessione. Potremmo dire a noi stessi: \"Mi sento preoccupato e ci sono molti fattori che stanno contribuendo a questa preoccupazione, sono stanco e ho spesso avuto difficoltà con le transizioni\".",
               "insight": "Non è solo il mondo esterno&mdash;è il nostro stato attuale e le storie passate che creano un episodio emotivo.",
-              "insight_image": "img/pop-head.png"
+              "insight_image": "assets/uploads/pop-head.png"
             }
           ]
         },
@@ -112,13 +112,13 @@
           "paragraphs": [
             {
               "body": "<strong>Come</strong> &mdash; Per alcuni di noi sentire l'emozione nel corpo è abbastanza chiaro, riconosciamo aree nel viso, nel petto o nella pancia dove ci sono sensazioni aumentate, come calore pesante nel nostro viso quando siamo arrabbiati, o una sensazione vuota nel petto quando siamo soli. Per altri l'accesso alle sensazioni dell'emozione nel corpo è meno disponibile, o l'attenzione è più catturata nei pensieri. Proprio come riconosciamo e applichiamo etichette al tipo di emozione che stiamo provando, possiamo identificare i tipi di sensazioni nel nostro corpo e dove le stiamo sentendo. Considera dove nel tuo corpo ti senti preoccupato, e quali sono le qualità di questa sensazione, leggera, pesante, formicolante, pulsante, appuntita, ecc.",
-              "image": "img/body.png",
+              "image": "assets/uploads/body.png",
               "image_width": "160px"
             },
             {
               "body": "<strong>Perché</strong> &mdash; Le nostre emozioni sono un'esperienza incarnata, non sono solo un fenomeno mentale. Il nostro intero sistema nervoso si mobilita in risposta alla nostra emozione per aiutarci a prepararci alle opportunità e alle sfide che l'emozione ci sta segnalando. Quando sviluppiamo una relazione più stretta con la nostra esperienza incarnata dell'emozione stiamo sviluppando l'interocezione. L'interocezione è un'abilità allenabile, un modo per riconoscere la nostra esperienza delle emozioni nel corpo che può aiutare con il decentramento, l'auto-calmamento e la rivalutazione. Per esempio, se sentiamo molta energia brillante e intensa nel petto con fastidio possiamo dire a noi stessi: \"Sto notando questa energia brillante e intensa nel mio petto, questo ha senso perché mi sento fastidioso e il mio corpo sta rispondendo\".",
               "insight": "Una relazione più stretta con la nostra esperienza incarnata può aiutare con il decentramento, l'auto-calmamento e la rivalutazione",
-              "insight_image": "img/mag-head.png"
+              "insight_image": "assets/uploads/mag-head.png"
             }
           ]
         },
@@ -130,11 +130,11 @@
             {
               "body": "<strong>How</strong> &mdash; Many of us only become aware of our emotions during or right after we have behaved in a way we regret. The intensity, and rapidity of emotion can prevent us from recognizing the trigger and experience, but once we feel that urgency to respond or difficulty in suppressing we become aware we are emotional. Recognizing we are emotional is an incomparably valuable skill. Once we have recognized our emotions are acting through us, we can pause and get very curious about the momentum of our response, which can be ebullient joy or blinding anger.",
               "insight": "Once we have recognized our emotions are acting through us, we can pause and get very curious about the momentum of our response",
-              "insight_image": "img/double-head.png"
+              "insight_image": "assets/uploads/double-head.png"
             },
             {
               "body": "<strong>Why</strong> &mdash; Our emotions prepare us to respond to the threats and opportunities in our world, a surprise visit from a friend or an unforeseen loss of work. Our responses often occur before we have time to recognize we are emotional and are intended to help us. Responses can be very functional, but sometimes we react in ways that are challenging &mdash; usually because we misread the trigger &mdash; we project something from our past on to what is happening now and respond to that fabricated reality. Our responses include external such as raising our voice in frustration, slinking away in anxiety, and rejoicing in gratitude. Some of our responses are internal, trying to prevent the emotion from being seen or fully expressed such as avoidance and distraction.",
-              "image": "img/responses.png",
+              "image": "assets/uploads/responses.png",
               "image_width": "200px"
             }
           ]
@@ -153,13 +153,13 @@
           "paragraphs": [
             {
               "body": "<strong>Consapevolezza</strong> &mdash; La consapevolezza è la pratica di prestare piena attenzione al momento presente, senza giudizio. Praticare la consapevolezza in modo coerente ci aiuta a essere più coscienti di ciò che accade intorno a noi nel presente e meno presi nei pensieri e nelle proiezioni del passato. Quando siamo più consapevoli, sviluppiamo un livello più alto di auto-consapevolezza chiamato \"meta-consapevolezza\" che ci aiuta a comprendere e gestire meglio le nostre reazioni e comportamenti. Diventiamo naturalmente più consapevoli dei nostri pensieri, sentimenti e ambiente, accettandoli per quello che sono, il che può aiutare a ridurre lo stress e migliorare il benessere generale. Anche se la consapevolezza avviene sempre nel momento presente, ci sono pratiche quotidiane che aumentano la quantità di consapevolezza che tendiamo a portare in ogni momento, come la meditazione.",
-              "image": "img/mandala.png",
+              "image": "assets/uploads/mandala.png",
               "image_width": "200px"
             },
             {
               "body": "<strong>Definizione delle intenzioni</strong> &mdash; Proprio come una pratica di meditazione può aumentare la meta-consapevolezza, una pratica quotidiana di definire intenzioni chiare per la pace della mente, la gentilezza e la chiarezza può creare una mentalità di supporto per qualsiasi cosa incontriamo. La definizione delle intenzioni è particolarmente utile prima di entrare in un'esperienza 'impegnativa' anticipata. Prospettivamente, nel futuro, stabiliamo un'intenzione di gentilezza all'inizio della nostra giornata prima di incontrare una persona, un luogo o un'esperienza.",
               "insight": "Creare una mentalità di supporto per qualsiasi cosa incontriamo",
-              "insight_image": "img/puzzle-head.png"
+              "insight_image": "assets/uploads/puzzle-head.png"
             }
           ]
         },
@@ -170,13 +170,13 @@
           "paragraphs": [
             {
               "body": "<strong>Respiro</strong> &mdash; Un respiro profondo è un modo molto utile per fare una pausa. Porta più ossigeno al nostro sistema nervoso e ci aiuta a processare l'eccitazione fisica nel nostro corpo. Una grande parte del nostro stato emotivo sono i cambiamenti fisici che sperimentiamo, e il nostro respiro è un modo per assistere fisicamente il nostro corpo durante la pausa.",
-              "image": "img/breath.png",
+              "image": "assets/uploads/breath.png",
               "image_width": "180px"
             },
             {
               "body": "<strong>Sensazioni</strong> &mdash; Portare attenzione e consapevolezza alle sensazioni fisiche nel corpo può impedire a un'emozione di intensificarsi. Mentre sentiamo il corpo, pensiamo meno a quello che sembrava causare l'emozione, solo sentendo e percependo l'esperienza nel corpo. Aiuta essere specifici: che sensazioni stiamo provando e dove, come stanno cambiando? Quando ci concentriamo sulla realtà fisica di essere nel nostro corpo, le emozioni distorcono meno la nostra percezione.",
               "insight": "Quando ci concentriamo sulla realtà fisica di essere nel nostro corpo, le emozioni distorcono meno la nostra percezione.",
-              "insight_image": "img/heart-head.png"
+              "insight_image": "assets/uploads/heart-head.png"
             },
             {
               "body": "Nota che la relazione di ognuno con il proprio corpo è unica, e talvolta una storia di trauma può influenzare la nostra capacità di usare il corpo e il respiro come strategie efficaci. Per maggiori informazioni su strategie alternative per \"l'ancoraggio\", vedi <a target=\"_blank\" rel=\"noopener\" href=\"https://psychcentral.com/health/trauma-informed-mindfulness#how-to-be-trauma-informed\">questo articolo.</a>"
@@ -197,13 +197,13 @@
           "paragraphs": [
             {
               "body": "La compassione è particolarmente utile quando stabiliamo intenzioni per gestire le nostre emozioni ma ricadiamo in vecchi schemi. In questi momenti, ci protegge dalla disperazione e dal burnout. Gli insegnamenti buddhisti definiscono la Compassione come il desiderio sincero per il sé e gli altri di essere liberi dalla sofferenza e dalle sue cause. Similmente, la scienza la definisce come \"il sentimento che sorge nel testimoniare la sofferenza di un altro, e che motiva un desiderio successivo di aiutare\" (Goetz et al., 2010). Gli elementi chiave della compassione sono riconoscere la sofferenza e rispondere ad essa.",
-              "image": "img/compassion.jpg",
+              "image": "assets/uploads/compassion.jpg",
               "image_width": "200px"
             },
             {
               "body": "Possiamo applicare questo alle nostre lotte praticando l'auto-compassione. Questo significa riconoscere le nostre difficoltà invece di evitarle, riconoscere che tali lotte sono universali, e estendere gentilezza verso noi stessi, come farebbe un amico premuroso.",
               "insight": "La compassione significa riconoscere che tutti lottano ed estendere gentilezza a se stessi e agli altri",
-              "insight_image": "img/heart-head.png"
+              "insight_image": "assets/uploads/heart-head.png"
             },
             {
               "body": "<em>Per andare più in profondità...</em><br/><br/><strong>Prospettiva &mdash; </strong>Considera di coltivare una posizione continua di compassione, non solo una risposta alla difficoltà immediata ma un modo di vedere il mondo.<br/><br/><strong>Pratica &mdash; </strong>Fai una pratica quotidiana di ricordare la verità unificante che tutti, ovunque, vogliono lottare meno con emozioni difficili e tutti abbiamo bisogno di compassione per le nostre difficoltà."
@@ -218,11 +218,11 @@
             {
               "body": "Osservando il nostro stile di vita complessivo, possiamo comprendere meglio le nostre emozioni e fare cambiamenti che supportano equilibrio e benessere.",
               "insight": "Ogni decisione che prendiamo impatterà il nostro stato mentale futuro.",
-              "insight_image": "img/pop-head.png"
+              "insight_image": "assets/uploads/pop-head.png"
             },
             {
               "body": "<em>Per andare più in profondità...</em><br/><br/><strong>Prospettiva &mdash; </strong>Piuttosto che considerare le nostre scelte in isolamento, consideriamo come ogni decisione che prendiamo impatterà il nostro stato mentale futuro.<br/><br/><strong>Pratica &mdash; </strong>Inizia a riconoscere schemi che interferiscono con una mente calma come interruzioni al nostro sonno, distrazioni eccessive, e l'esperienza risultante di disregolazione. In questo modo, possiamo iniziare a sviluppare una preferenza e desiderio per la semplicità che ci offre una mente calma.",
-              "image": "img/salad.png",
+              "image": "assets/uploads/salad.png",
               "image_width": "200px"
             }
           ]
@@ -234,13 +234,13 @@
           "paragraphs": [
             {
               "body": "Connettersi con l'intenzione ancora il nostro senso di scopo e significato. Fornisce chiarezza su ciò che conta veramente, guidando le nostre azioni nella vita quotidiana. Che si tratti di migliorare relazioni, cambiare comportamenti, o approfondire la consapevolezza di sé, l'intenzione agisce come una bussola, favorendo la crescita e creando una vita più significativa e connessa.",
-              "image": "img/compass.png",
+              "image": "assets/uploads/compass.png",
               "image_width": "180px"
             },
             {
               "body": "Troviamo gioia e soddisfazione quando viviamo in allineamento con i nostri valori attraverso l'intenzione. Questo porta facilità, focus e chiarezza alla mente, supportando l'equilibrio e permettendo un'esplorazione più profonda di noi stessi, le nostre relazioni, e il mondo, portando alla gioia della comprensione e saggezza.",
               "insight": "Vivere con intenzione fornisce chiarezza su ciò che conta veramente, guidando le nostre azioni nella vita quotidiana.",
-              "insight_image": "img/mag-head.png"
+              "insight_image": "assets/uploads/mag-head.png"
             },
             {
               "body": "<em>Per andare più in profondità...</em><br/><br/><strong>Prospettiva &mdash; </strong>Possiamo impegnarci verso alcuni valori specifici che vogliamo guidino le nostre decisioni. A volte scriverli può aiutare.<br/><br/><strong>Pratica &mdash; </strong>Prova a vedere ogni scelta che facciamo attraverso la lente dei nostri valori personali."
