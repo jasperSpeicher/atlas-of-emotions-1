@@ -2,55 +2,55 @@
   "toc": {
     "sections": [
       {
-        "title": "How to Reflect",
+        "title": "Wie man reflektiert",
         "id": "how-to-reflect",
         "sub_sections": [
           {
-            "title": "Labeling",
+            "title": "Emotionen benennen",
             "id": "labeling"
           },
           {
-            "title": "Understanding Triggers",
+            "title": "Auslöser verstehen",
             "id": "understanding-triggers"
           },
           {
-            "title": "Embodying Emotion",
+            "title": "Emotionen verkörpern",
             "id": "the-body"
           },
           {
-            "title": "Creating Choice",
+            "title": "Wahlmöglichkeiten schaffen",
             "id": "creating-choice"
           }
         ]
       },
       {
-        "title": "In the Moment",
+        "title": "Im Moment",
         "id": "in-the-moment",
         "sub_sections": [
           {
-            "title": "Mindfulness & Intentions",
+            "title": "Achtsamkeit & Absichten",
             "id": "mindfulness"
           },
           {
-            "title": "Pausing & Feeling",
+            "title": "Innehalten & Fühlen",
             "id": "pausing"
           }
         ]
       },
       {
-        "title": "Living in Balance",
+        "title": "Leben im Gleichgewicht",
         "id": "living-in-balance",
         "sub_sections": [
           {
-            "title": "Compassion",
+            "title": "Mitgefühl",
             "id": "compassion"
           },
           {
-            "title": "Lifestyle for Calm",
+            "title": "Lebensstil für Ruhe",
             "id": "lifestyle-for-calm"
           },
           {
-            "title": "Living with Intention",
+            "title": "Mit Absicht leben",
             "id": "living-with-intention"
           }
         ]
@@ -59,22 +59,22 @@
   },
   "text": {
     "navigating": {
-      "header": "Strategies for Navigating Emotions",
-      "description": "To navigate a life filled with emotions, we need to create space for them, so they don’t throw us too far off course. There are two methods for us to create that space, and both are very important.",
+      "header": "Strategien für den Umgang mit Emotionen",
+      "description": "Um ein Leben voller Emotionen zu bewältigen, müssen wir Raum für sie schaffen, damit sie uns nicht zu weit vom Kurs abbringen. Es gibt zwei Methoden, um diesen Raum zu schaffen, und beide sind sehr wichtig.",
       "image": "img/signpost.png",
-      "reflecting": "<strong>Reflecting</strong> –- we can take some time to reflect on our emotions, sort of like looking back on them, to get ready for next time.",
-      "in_the_moment": "<strong>In the moment</strong> –- we can learn to handle our emotions right when they happen, like tools to create space between us and our feelings right when we need it.",
-      "keep_reading": "Keep reading or browse the menu to learn more about these strategies..."
+      "reflecting": "<strong>Reflektieren</strong> –- wir können uns Zeit nehmen, um über unsere Emotionen nachzudenken, sozusagen auf sie zurückzublicken, um uns auf das nächste Mal vorzubereiten.",
+      "in_the_moment": "<strong>Im Moment</strong> –- wir können lernen, mit unseren Emotionen umzugehen, wenn sie auftreten, wie Werkzeuge, um Raum zwischen uns und unseren Gefühlen zu schaffen, wenn wir es brauchen.",
+      "keep_reading": "Lesen Sie weiter oder durchstöbern Sie das Menü, um mehr über diese Strategien zu erfahren..."
     },
     "reflecting": {
-      "header": "How to Reflect",
+      "header": "Wie man reflektiert",
       "id": "how-to-reflect",
-      "description": "Reflecting is an essential aspect of developing emotion awareness. Through the strategies listed below you can both learn more about your emotions and the important messages they have to share with you and practice ways to find a ‘pause’ and slow down reactivity.",
+      "description": "Reflektieren ist ein wesentlicher Aspekt der Entwicklung emotionaler Bewusstheit. Durch die unten aufgeführten Strategien können Sie sowohl mehr über Ihre Emotionen und die wichtigen Botschaften, die sie mit Ihnen teilen, erfahren als auch Wege üben, eine 'Pause' zu finden und die Reaktivität zu verlangsamen.",
       "sub_sections": [
         {
-          "header": "Labeling",
+          "header": "Emotionen benennen",
           "id": "labeling",
-          "description": "What is happening? Developing language to describe our emotions.",
+          "description": "Was passiert? Sprache entwickeln, um unsere Emotionen zu beschreiben.",
           "paragraphs": [
             {
               "body": "<strong>How</strong> &mdash; In using the Atlas of Emotion site we can explore, with specificity, what emotion we are feeling. Instead of “I feel bad,” or “I feel stressed” we can identify what emotion we may be experiencing through the families of universal emotions listed or the non universal emotions found here.",
@@ -89,9 +89,9 @@
           ]
         },
         {
-          "header": "Understanding Triggers",
+          "header": "Auslöser verstehen",
           "id": "understanding-triggers",
-          "description": "What is making me feel this emotion? Learning about how triggers work.",
+          "description": "Was löst diese Emotion in mir aus? Lernen, wie Auslöser funktionieren.",
           "paragraphs": [
             {
               "body": "<strong>How</strong> &mdash; When we look at the timeline of emotion we learn that our trigger is comprised of both our immediate state and context, as well as older stories and perceptions. We can choose an emotion episode when we felt we reacted too strongly and then consider what was going on in our immediate experience, our pre-condition, of hunger, fatigue, stress, etc. which might influence how we become emotional. We then explore what might be in the database, the storehouse of past experiences that we may impose on to  this current experience.",
@@ -106,9 +106,9 @@
           ]
         },
         {
-          "header": "The Body",
+          "header": "Der Körper",
           "id": "the-body",
-          "description": "What does an emotion feel like? Learning to be an observer of emotions in the body.",
+          "description": "Wie fühlt sich eine Emotion an? Lernen, ein Beobachter von Emotionen im Körper zu sein.",
           "paragraphs": [
             {
               "body": "<strong>How</strong> &mdash; For some of us feeling emotion in the body is quite clear, we recognize areas in the face, chest, or belly where there is increased sensations, such has heavy heat in our face when angry, or a hollow feeling in the chest when lonely. For others access to sensations of emotion in the body is less available, or the focus is more caught up in thoughts. Just as we recognize and apply labels to the type of emotion we are feeling, we can identify the types of sensations in our body and where we are feeling them. Consider where in your body you feel worried, and what are the qualities of this sensation, light, heavy, tingling, throbbing, pointy etc.",
@@ -123,9 +123,9 @@
           ]
         },
         {
-          "header": "Creating Choice",
+          "header": "Wahlmöglichkeiten schaffen",
           "id": "creating-choice",
-          "description": "Where did that reaction come from? Creating choice in our responses.",
+          "description": "Woher kam diese Reaktion? Wahlmöglichkeiten bei unseren Reaktionen schaffen.",
           "paragraphs": [
             {
               "body": "<strong>How</strong> &mdash; Many of us only become aware of our emotions during or right after we have behaved in a way we regret. The intensity, and rapidity of emotion can prevent us from recognizing the trigger and experience, but once we feel that urgency to respond or difficulty in suppressing we become aware we are emotional. Recognizing we are emotional is an incomparably valuable skill. Once we have recognized our emotions are acting through us, we can pause and get very curious about the momentum of our response, which can be ebullient joy or blinding anger.",
@@ -142,14 +142,14 @@
       ]
     },
     "in_the_moment": {
-      "header": "In the Moment",
+      "header": "Im Moment",
       "id": "in-the-moment",
-      "description": "In-the-moment strategies use executive functioning to move from the embodied arousal of our emotion to clear understanding about what is happening, a calm mind that allows for choice.",
+      "description": "Strategien für den Moment nutzen Exekutivfunktionen, um von der körperlichen Erregung unserer Emotion zu einem klaren Verständnis dessen zu gelangen, was passiert - einem ruhigen Geist, der Wahlmöglichkeiten ermöglicht.",
       "sub_sections": [
         {
-          "header": "Mindfulness and Intention Setting",
+          "header": "Achtsamkeit und Absichtssetzung",
           "id": "mindfulness",
-          "description": "In each moment, we can stay aware of our thoughts and feelings and make decisions in the present about how we wish to behave in the future.",
+          "description": "In jedem Moment können wir unsere Gedanken und Gefühle wahrnehmen und in der Gegenwart Entscheidungen darüber treffen, wie wir uns in der Zukunft verhalten möchten.",
           "paragraphs": [
             {
               "body": "<strong>Mindfulness</strong> &mdash; Mindfulness is the practice of paying full attention to the present moment, without judgment. Practicing mindfulness consistently helps us be more conscious of what is going on around us in the present and less caught in thoughts and projections from the past. When we are more mindful, we develop a higher level of self-awareness called “meta-awareness” that helps us understand and manage our reactions and behaviors better. We become naturally more aware of our thoughts, feelings, and surroundings, accepting them as they are, which can help reduce stress and improve overall well-being. Although mindfulness always happens in the present moment, there are daily practices that increase the amount of mindfulness we tend to bring to each moment, such as meditation.",
@@ -164,9 +164,9 @@
           ]
         },
         {
-          "header": "Pausing and feeling",
+          "header": "Innehalten und Fühlen",
           "id": "pausing",
-          "description": "Pausing to feel the body is a powerful strategy for keeping our mind open to all that happened before a trigger, and all that might follow&mdash;it can prevent a temporary emotional state from dominating how we interpret what just happened and the possible future.",
+          "description": "Innezuhalten, um den Körper zu spüren, ist eine kraftvolle Strategie, um unseren Geist offen zu halten für alles, was vor einem Auslöser geschah, und alles, was folgen könnte - es kann verhindern, dass ein vorübergehender emotionaler Zustand dominiert, wie wir interpretieren, was gerade passiert ist und was möglicherweise passieren wird.",
           "paragraphs": [
             {
               "body": "<strong>Breath</strong> &mdash; A deep breath is one very helpful way to pause. It brings more oxygen to our nervous system and help us process the physical arousal in our body. A big part of our emotional state is the physical changes we experience, and our breath is a way to physically assist our body during the pause.",
@@ -186,14 +186,14 @@
       ]
     },
     "living_in_balance": {
-      "header": "Living in Balance",
+      "header": "Leben im Gleichgewicht",
       "id": "living-in-balance",
-      "description": "We often think of navigating emotions as reaction to one specific event after another throughout our lives, managing an out burst of anger or savoring a feeling of joy. But in order to reach our bigger goal of a calm mind we must also consider the big-picture, beyond the specific emotion episodes. While managing the momentary responses is essential to a balanced life we also need to step back and consider the bigger context of how we live our lives and why we want to cultivate a calm mind in which we experience balance. The purpose of emotion awareness isn’t to be ‘happy all the time’ but instead to help us learn from our emotions and develop an emotional flexibility that allows our deeper desires and aspirations to blossom. Two of the most influential ways to consistently maintain calm in our lives are outlook and practice.",
+      "description": "Oft denken wir beim Umgang mit Emotionen an die Reaktion auf ein bestimmtes Ereignis nach dem anderen in unserem Leben - einen Wutausbruch bewältigen oder ein Gefühl der Freude auskosten. Um unser größeres Ziel eines ruhigen Geistes zu erreichen, müssen wir jedoch auch das große Ganze berücksichtigen, jenseits der spezifischen emotionalen Episoden. Während die Bewältigung momentaner Reaktionen für ein ausgeglichenes Leben wesentlich ist, müssen wir auch zurücktreten und den größeren Kontext berücksichtigen, wie wir unser Leben führen und warum wir einen ruhigen Geist kultivieren wollen, in dem wir Gleichgewicht erfahren. Der Zweck emotionaler Bewusstheit ist es nicht, 'die ganze Zeit glücklich zu sein', sondern uns zu helfen, von unseren Emotionen zu lernen und eine emotionale Flexibilität zu entwickeln, die es unseren tieferen Wünschen und Bestrebungen ermöglicht zu erblühen. Zwei der einflussreichsten Wege, um konsequent Ruhe in unserem Leben zu bewahren, sind Weltanschauung und Praxis.",
       "sub_sections": [
         {
-          "header": "Compassion",
+          "header": "Mitgefühl",
           "id": "compassion",
-          "description": "Compassion can be both a practice and a way of relating to ourselves and others. By understanding the cultural and evolutionary influences on our emotions, we can more easily accept the challenges we face, making it easier to extend compassion to ourselves and others.",
+          "description": "Mitgefühl kann sowohl eine Praxis als auch eine Art der Beziehung zu uns selbst und anderen sein. Durch das Verständnis der kulturellen und evolutionären Einflüsse auf unsere Emotionen können wir die Herausforderungen, denen wir begegnen, leichter akzeptieren und es uns so einfacher machen, Mitgefühl für uns selbst und andere zu empfinden.",
           "paragraphs": [
             {
               "body": "Compassion is especially helpful when we set intentions to manage our emotions but fall into old patterns. In these moments, it protects us from hopelessness and burnout. Buddhist teachings define Compassion as the sincere wish for the self and others to be free from suffering and its causes. Similarly, science defines it as \"the feeling that arises in witnessing another's suffering, and that motivates a subsequent desire to help\" (Goetz et al., 2010). Key elements of compassion are recognizing suffering and responding to it.",
@@ -211,9 +211,9 @@
           ]
         },
         {
-          "header": "Lifestyle for Calm",
+          "header": "Lebensstil für Ruhe",
           "id": "lifestyle-for-calm",
-          "description": "Our emotions are deeply connected to our physical experiences. Sleep, diet, stress, substance use, and even the weather affect how we feel. Poor sleep, for instance, can intensify emotions, while intense emotions can disrupt sleep, creating a cycle of overwhelm. Similarly, being too hungry or too full can lead to physical discomfort and emotional challenges.",
+          "description": "Unsere Emotionen sind tief mit unseren körperlichen Erfahrungen verbunden. Schlaf, Ernährung, Stress, Substanzkonsum und sogar das Wetter beeinflussen, wie wir uns fühlen. Schlechter Schlaf kann beispielsweise Emotionen verstärken, während intensive Emotionen den Schlaf stören können, wodurch ein Kreislauf der Überwältigung entsteht. Ebenso kann zu viel Hunger oder zu viel Sättigung zu körperlichem Unbehagen und emotionalen Herausforderungen führen.",
           "paragraphs": [
             {
               "body": "By looking at our overall lifestyle, we can better understand our emotions and make changes that support balance and well-being.",
@@ -228,9 +228,9 @@
           ]
         },
         {
-          "header": "Living with Intention",
+          "header": "Mit Absicht leben",
           "id": "living-with-intention",
-          "description": "When we live with intention, we decide in each moment ‘how’ we want to direct our attention and behaviors.  Intention  can transform not only our daily interactions, but our overarching motivations and direction. An intention could be general such as \"I want to cultivate a calm mind\" or more specific \"I want to bring more kindness in to my interactions today.\"",
+          "description": "Wenn wir mit Absicht leben, entscheiden wir in jedem Moment, 'wie' wir unsere Aufmerksamkeit und unser Verhalten lenken wollen. Absicht kann nicht nur unsere täglichen Interaktionen transformieren, sondern auch unsere übergeordneten Motivationen und Richtungen. Eine Absicht könnte allgemein sein, wie 'Ich möchte einen ruhigen Geist kultivieren', oder spezifischer 'Ich möchte heute mehr Freundlichkeit in meine Interaktionen bringen.'",
           "paragraphs": [
             {
               "body": "Connecting with intention anchors our sense of purpose and meaning. It provides clarity about what truly matters, guiding our actions in daily life. Whether improving relationships, changing behaviors, or deepening self-awareness, intention acts as a compass, fostering growth and creating a more meaningful, connected life.",

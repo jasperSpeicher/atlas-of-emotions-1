@@ -4,212 +4,212 @@
     "psychopathology": {
       "emotions": [
         {
-          "name": "Anger",
-          "desc": "A tendency to cause physical or verbal harm in inappropriate contexts. Anger may be out of control, or passive but persistently preoccupying.",
+          "name": "Rabbia",
+          "desc": "Una tendenza a causare danni fisici o verbali in contesti inappropriati. La rabbia può essere fuori controllo, o passiva ma persistentemente preoccupante.",
           "children": [
             {
-              "name": "Intermittent Explosive Disorder",
-              "desc": "Impulsively aggressive and assaultive behaviors out of proportion to triggers."
+              "name": "Disturbo Esplosivo Intermittente",
+              "desc": "Comportamenti impulsivamente aggressivi e violenti sproporzionati rispetto ai trigger."
             },
             {
-              "name": "Oppositional Defiance Disorder",
-              "desc": "A pattern of defiant, disobedient and hostile behavior in children or teens toward parents and people in authority, beyond normal age-appropriate misbehavior."
+              "name": "Disturbo Oppositivo Provocatorio",
+              "desc": "Un pattern di comportamento provocatorio, disobbediente e ostile nei bambini o adolescenti verso genitori e persone di autorità, oltre i normali comportamenti inadeguati per l'età."
             },
             {
-              "name": "Antisocial Personality Disorder",
-              "desc": "Characterized by a pervasive pattern of disregard for the rights of other people that often manifests as hostility and/or aggression. Deceit and manipulation are also central features."
+              "name": "Disturbo Antisociale di Personalità",
+              "desc": "Caratterizzato da un pattern pervasivo di disprezzo per i diritti degli altri che spesso si manifesta con ostilità e/o aggressione. Inganno e manipolazione sono anche caratteristiche centrali."
             },
             {
-              "name": "Disruptive Mood Dysregulation Disorder",
-              "desc": "Severe recurrent temper outbursts manifested verbally (e.g., verbal rages) and/or behaviorally (e.g., physical aggression toward people or property) that are grossly out of proportion in intensity or duration to the situation or provocation."
+              "name": "Disturbo Esplosivo Disregolativo dell'Umore",
+              "desc": "Gravi scoppi di collera ricorrenti manifestati verbalmente (es. rabbia verbale) e/o comportamentalmente (es. aggressione fisica verso persone o proprietà) che sono grossolanamente sproporzionati in intensità o durata alla situazione o provocazione."
             }
           ]
         },
         {
-          "name": "Fear",
-          "desc": "Anxiety states involve prolonged fear without knowledge of the source of the threat, and incidents of panic (episodic attacks of severe anxiety).",
+          "name": "Paura",
+          "desc": "Gli stati d'ansia coinvolgono paura prolungata senza conoscenza della fonte della minaccia, e incidenti di panico (attacchi episodici di ansia severa).",
           "children": [
             {
-              "name": "Social Anxiety Disorder",
-              "desc": "A persistent fear of one or more social or performance situations in which the person is exposed to unfamiliar people or to possible scrutiny by others. The individual fears that he or she will act (or show anxiety symptoms) in a way that will be embarrassing and humiliating."
+              "name": "Disturbo d'Ansia Sociale",
+              "desc": "Una paura persistente di una o più situazioni sociali o di performance nelle quali la persona è esposta a persone sconosciute o al possibile esame da parte di altri. L'individuo teme di agire (o mostrare sintomi d'ansia) in un modo che sarà imbarazzante e umiliante."
             },
             {
-              "name": "Post-Traumatic Stress Disorder (PTSD)",
-              "desc": "A mental health condition that’s triggered by an often overwhelmingly terrifying event — either experiencing it or witnessing it. Symptoms may include flashbacks, nightmares and severe anxiety, as well as uncontrollable thoughts about the event."
+              "name": "Disturbo da Stress Post-Traumatico (PTSD)",
+              "desc": "Una condizione di salute mentale scatenata da un evento spesso estremamente terrificante — vivendolo o assistendovi. I sintomi possono includere flashback, incubi e ansia severa, così come pensieri incontrollabili sull'evento."
             },
             {
-              "name": "Avoidant Personality Disorder",
-              "desc": "Characterized by a pervasive pattern of social inhibition, feelings of inadequacy and a hypersensitivity to negative evaluation. People with this disorder are intensely afraid that others will ridicule them, reject them or criticize them."
+              "name": "Disturbo Evitante di Personalità",
+              "desc": "Caratterizzato da un pattern pervasivo di inibizione sociale, sentimenti di inadeguatezza e ipersensibilità alla valutazione negativa. Le persone con questo disturbo hanno intensamente paura che altri li ridicolizzino, li rifiutino o li critichino."
             },
             {
-              "name": "Generalized Anxiety Disorder",
-              "desc": "An anxiety disorder that is characterized by excessive, uncontrollable and often irrational worry and apprehensive expectation about events or activities."
+              "name": "Disturbo d'Ansia Generalizzata",
+              "desc": "Un disturbo ansioso caratterizzato da preoccupazioni eccessive, incontrollabili e spesso irrazionali e aspettativa ansiosa riguardo eventi o attività."
             },
             {
-              "name": "Obsessive-Compulsive Disorder (OCD)",
-              "desc": "An anxiety disorder characterized by intrusive thoughts that produce uneasiness, apprehension, fear or worry (obsessions); repetitive behaviors aimed at reducing the associated anxiety (compulsions); or a combination of both obsessions and compulsions."
+              "name": "Disturbo Ossessivo-Compulsivo (DOC)",
+              "desc": "Un disturbo ansioso caratterizzato da pensieri intrusivi che producono disagio, apprensione, paura o preoccupazione (ossessioni); comportamenti ripetitivi mirati a ridurre l'ansia associata (compulsioni); o una combinazione di entrambe ossessioni e compulsioni."
             }
           ]
         },
         {
-          "name": "Disgust",
-          "desc": "The psychopathology of disgust includes feelings that prevent everyday interaction with the world, the self or others. Disgust can be a paralyzing feeling that makes simple interactions (such as eating) extremely painful if not impossible. Disgust and fear are both thought to contribute to various phobias, such as fear of small animals.",
+          "name": "Disgusto",
+          "desc": "La psicopatologia del disgusto include sentimenti che impediscono l'interazione quotidiana con il mondo, se stessi o gli altri. Il disgusto può essere un sentimento paralizzante che rende le interazioni semplici (come mangiare) estremamente dolorose se non impossibili. Il disgusto e la paura contribuiscono entrambi a varie fobie, come la paura di piccoli animali.",
           "children": [
             {
-              "name": "Anorexia Nervosa",
-              "desc": "A distorted self-image that may be maintained by various cognitive biases that alter how the affected individual evaluates and thinks about their body, food and eating. People with anorexia nervosa often view themselves as disgusting, overweight or “big” even when they are underweight."
+              "name": "Anoressia Nervosa",
+              "desc": "Un'immagine distorta di sé che può essere mantenuta da vari bias cognitivi che alterano come l'individuo colpito valuta e pensa al proprio corpo, al cibo e al mangiare. Le persone con anoressia nervosa spesso si vedono come disgustose, sovrappeso o 'grasse' anche quando sono sottopeso."
             },
             {
-              "name": "Body Dysmorphic Disorder",
-              "desc": "A body-image disorder characterized by persistent and intrusive preoccupations with an imagined or slight defect in one’s appearance or a feeling of disgust with one’s appearance."
+              "name": "Disturbo Dismorfico del Corpo",
+              "desc": "Un disturbo dell'immagine corporea caratterizzato da preoccupazioni persistenti e intrusive con un difetto immaginario o lieve del proprio aspetto o un sentimento di disgusto verso il proprio aspetto."
             },
             {
               "name": "Bulimia",
-              "desc": "A disorder characterized by repeated binging on large quantities of food followed by induced vomiting; both the binging and purging may be accompanied by feelings of self-disgust."
+              "desc": "Un disturbo caratterizzato da episodi ripetuti di abbuffate su grandi quantità di cibo seguite da vomito indotto; sia l'abbuffata che la purgazione possono essere accompagnate da sentimenti di auto-disgusto."
             },
             {
-              "name": "Sexual Aversion Disorder",
-              "desc": "Characterized by disgust, fear, revulsion or lack of desire in consensual relationships involving genital contact."
+              "name": "Disturbo di Avversione Sessuale",
+              "desc": "Caratterizzato da disgusto, paura, repulsione o mancanza di desiderio nelle relazioni consensuali che coinvolgono contatto genitale."
             }
           ]
         },
         {
-          "name": "Sadness",
-          "desc": "Depression is a well-known type of psychopathology that is reported to affect over 25% of the population. Depression interferes with daily life and causes pain for both the sufferers and those who care about them. Depression is a common but serious illness.\n",
+          "name": "Tristezza",
+          "desc": "La depressione è un tipo ben conosciuto di psicopatologia che si dice colpisca oltre il 25% della popolazione. La depressione interferisce con la vita quotidiana e causa dolore sia ai sofferenti che a coloro che si prendono cura di loro. La depressione è una malattia comune ma seria.\n",
           "children": [
             {
-              "name": "Major Depressive Disorder",
-              "desc": "Also known as clinical depression, major depression or unipolar depression, this is a mental disorder characterized by a pervasive and persistent low mood that is accompanied by low self-esteem and by a loss of interest or pleasure in normally enjoyable activities."
+              "name": "Disturbo Depressivo Maggiore",
+              "desc": "Anche conosciuto come depressione clinica, depressione maggiore o depressione unipolare, questo è un disturbo mentale caratterizzato da un umore basso pervasivo e persistente accompagnato da bassa autostima e da una perdita di interesse o piacere nelle attività normalmente piacevoli."
             },
             {
-              "name": "Dysthymia",
-              "desc": "Sometimes also called neurotic depression, dysthymic disorder or chronic depression, this is a mood disorder consisting of the same cognitive and physical problems as depression, with less severe but longer-lasting symptoms."
+              "name": "Distimia",
+              "desc": "A volte chiamata anche depressione nevrotica, disturbo distimico o depressione cronica, questo è un disturbo dell'umore che consiste negli stessi problemi cognitivi e fisici della depressione, con sintomi meno severi ma più duraturi."
             },
             {
-              "name": "Bipolar Disorder",
-              "desc": "Also known as bipolar affective disorder (and originally called manic-depressive illness), this is a mental disorder characterized by periods of elevated mood and periods of depression."
+              "name": "Disturbo Bipolare",
+              "desc": "Anche conosciuto come disturbo affettivo bipolare (e originariamente chiamato malattia maniaco-depressiva), questo è un disturbo mentale caratterizzato da periodi di umore elevato e periodi di depressione."
             }
           ]
         },
         {
-          "name": "Enjoyment",
-          "desc": "Unlike with other emotions, it is hard to imagine enjoyable emotions contributing to challenges in managing our everyday relationships, work and ability to meet our basic needs. However, pathological enjoyment is quite serious; hyper-elevated states of enjoyment can cause delusions in addition to feeling good, which can lead to destructive behaviors.\n",
+          "name": "Gioia",
+          "desc": "A differenza delle altre emozioni, è difficile immaginare che le emozioni piacevoli contribuiscano alle sfide nella gestione delle nostre relazioni quotidiane, lavoro e capacità di soddisfare i nostri bisogni di base. Tuttavia, la gioia patologica è piuttosto seria; stati iper-elevati di gioia possono causare delusioni oltre a sentirsi bene, il che può portare a comportamenti distruttivi.\n",
           "children": [
             {
-              "name": "Mania/Manic Episode",
-              "desc": "Mania at its extreme is commonly characterized by frenzied, ungovernable exuberance — essentially elation not grounded in reality. Frequently, confidence and self-esteem are excessively enlarged, and grand, extravagant ideas are expressed; this is called “grandiosity.” Mania is often part of bipolar disorder."
+              "name": "Mania/Episodio Maniacale",
+              "desc": "La mania al suo estremo è comunemente caratterizzata da esuberanza frenetica e ingovernabile — essenzialmente euforia non basata sulla realtà. Frequentemente, fiducia e autostima sono eccessivamente ingrandite, e idee grandiose ed extravaganti sono espresse; questo è chiamato 'grandiosità'. La mania è spesso parte del disturbo bipolare."
             },
             {
-              "name": "Cyclothemia",
-              "desc": "This is characterized by moods that shift noticeably up and down from a person’s baseline. The person may feel on top of the world for a time, followed by a low period when their feeling is somewhat blue. Between these cyclothymic highs and lows, the person may feel stable and fine."
+              "name": "Ciclotimia",
+              "desc": "Questo è caratterizzato da umori che cambiano notevolmente su e giù rispetto alla linea di base di una persona. La persona può sentirsi in cima al mondo per un periodo, seguita da un periodo basso quando il loro sentimento è piuttosto triste. Tra questi alti e bassi ciclotimici, la persona può sentirsi stabile e bene."
             }
           ]
         }
       ],
-      "title": "Psychopathology",
-      "desc": "Each emotion relates to distinct psychopathologies, which describe persistent behaviors that interfere with one’s ability to function."
+      "title": "Psicopatologia",
+      "desc": "Ogni emozione si riferisce a psicopatologie distinte, che descrivono comportamenti persistenti che interferiscono con la capacità di funzionare di una persona."
     },
     "signals": {
       "emotions": [
         {
-          "name": "Anger",
+          "name": "Rabbia",
           "desc": null,
           "children": [
             {
-              "name": "Signal",
-              "desc": "In the voice, anger generates a roar if not controlled; when anger is controlled, the voice may have a sharp edge that is very detectable. In the face, the signal includes glaring eyes, lowered brows and narrowed, tightened lips. When people hear or see an angry signal, they are typically hurt just by the perception of the signal, and may retaliate with angry actions."
+              "name": "Segnale",
+              "desc": "Nella voce, la rabbia genera un ruggito se non controllata; quando la rabbia è controllata, la voce può avere un tono tagliente molto rilevabile. Nel viso, il segnale include occhi penetranti, sopracciglia abbassate e labbra ristrette e tese. Quando le persone sentono o vedono un segnale di rabbia, sono tipicamente ferite solo dalla percezione del segnale, e possono reagire con azioni rabbiose."
             },
             {
-              "name": "Message",
-              "desc": "The message of anger is “get out of my way.”  Anger can carry a message ranging from dissatisfaction to threat."
+              "name": "Messaggio",
+              "desc": "Il messaggio della rabbia è 'togliti dalla mia strada'. La rabbia può portare un messaggio che va dall'insoddisfazione alla minaccia."
             }
           ]
         },
         {
-          "name": "Fear",
+          "name": "Paura",
           "desc": null,
           "children": [
             {
-              "name": "Signal",
-              "desc": "Common signals are very wide open eyes, horizontally stretched lips and raised, drawn together eyebrows. There may be movement away from the target. Screams may accompany intense fear. Lesser fear signals can include heavy breathing, a head position slightly backwards and away, and horizontally stretched lips accompanied by tightened neck muscles."
+              "name": "Segnale",
+              "desc": "I segnali comuni sono occhi molto aperti, labbra stirate orizzontalmente e sopracciglia sollevate e avvicinate. Ci può essere un movimento di allontanamento dal bersaglio. Urla possono accompagnare una paura intensa. Segnali di paura minori possono includere respiro pesante, una posizione della testa leggermente all'indietro e lontana, e labbra stirate orizzontalmente accompagnate da muscoli del collo tesi."
             },
             {
-              "name": "Message",
-              "desc": "The message of fear is “help me”; it can range from showing low-level concern to conveying panic."
+              "name": "Messaggio",
+              "desc": "Il messaggio della paura è 'aiutami'; può andare dal mostrare una preoccupazione di basso livello al trasmettere panico."
             }
           ]
         },
         {
-          "name": "Disgust",
+          "name": "Disgusto",
           "desc": null,
           "children": [
             {
-              "name": "Signal",
-              "desc": "There are three facial expressions associated with disgust. The first is sticking the tongue out as if the person is getting something out of their mouth. The second is raising the upper lip, but it is relaxed and not tense, which can display gums and teeth depending on the shape of the mouth. The third is wrinkling of the nose and raising of the nostrils. These expressions can occur separately or in unison."
+              "name": "Segnale",
+              "desc": "Ci sono tre espressioni facciali associate al disgusto. La prima è tirare fuori la lingua come se la persona stesse togliendo qualcosa dalla bocca. La seconda è sollevare il labbro superiore, ma è rilassato e non teso, il che può mostrare gengive e denti a seconda della forma della bocca. La terza è corrugare il naso e sollevare le narici. Queste espressioni possono verificarsi separatamente o all'unisono."
             },
             {
-              "name": "Message",
-              "desc": "The message of disgust is “get away from this.” It can show others that the target of disgust is to be kept away from or that the target is unclean, dirty or socially/morally reprehensible."
+              "name": "Messaggio",
+              "desc": "Il messaggio del disgusto è 'stai lontano da questo'. Può mostrare agli altri che il bersaglio del disgusto deve essere tenuto lontano o che il bersaglio è impuro, sporco o socialmente/moralmente riprovevole."
             }
           ]
         },
         {
-          "name": "Sadness",
+          "name": "Tristezza",
           "desc": null,
           "children": [
             {
-              "name": "Signal",
-              "desc": "The signals of sadness include a frown (lower lip pushed up slightly and lip corners pulled slightly down), the inner corners of the eyebrows drawn up and together in the center of the forehead, raised cheeks and tears. The vocalization of sadness can include sobs and heaving and quavering of the voice."
+              "name": "Segnale",
+              "desc": "I segnali di tristezza includono una smorfia (labbro inferiore spinto leggermente in alto e angoli delle labbra tirati leggermente in basso), gli angoli interni delle sopracciglia tirati in alto e insieme al centro della fronte, guance sollevate e lacrime. La vocalizzazione della tristezza può includere singhiozzi e sussulti e tremori della voce."
             },
             {
-              "name": "Message",
-              "desc": "The message of sadness is “comfort me.” It encourages, or intends to encourage, empathy from others."
+              "name": "Messaggio",
+              "desc": "Il messaggio della tristezza è 'consolami'. Incoraggia, o intende incoraggiare, l'empatia degli altri."
             }
           ]
         },
         {
-          "name": "Enjoyment",
+          "name": "Gioia",
           "desc": null,
           "children": [
             {
-              "name": "Signal",
-              "desc": "Enjoyment signals include the Duchenne (authentic) smile, activation of a smile (lip corners pulled obliquely up), and activation of the orbital eye muscles that tighten the lower eyelid and create wrinkling around the outer eye corners (especially with age). Enjoyment also includes vocal signals such as the sound of relief (a sigh or exhalation) and the sound of amusement (laughter or giggling)."
+              "name": "Segnale",
+              "desc": "I segnali di gioia includono il sorriso di Duchenne (autentico), l'attivazione di un sorriso (angoli delle labbra tirati obliquamente in alto), e l'attivazione dei muscoli orbitali degli occhi che stringono la palpebra inferiore e creano rughe intorno agli angoli esterni degli occhi (specialmente con l'età). La gioia include anche segnali vocali come il suono del sollievo (un sospiro o un'espirazione) e il suono del divertimento (risata o risatine)."
             },
             {
-              "name": "Message",
-              "desc": "The message of enjoyment is “this feels good.” It encourages engaging in social interaction."
+              "name": "Messaggio",
+              "desc": "Il messaggio della gioia è 'questo si sente bene'. Incoraggia l'impegno nell'interazione sociale."
             }
           ]
         }
       ],
-      "title": "Signal and Message",
-      "desc": "The signal of an emotion describes the universal ways that emotion is displayed in the face and/or voice. There can also be other vocal tone changes and body language indicators, but these are not included here because they are often culturally informed and learned as opposed to universal.<br><br>The message is what the emotion is telling us. All emotions have a message that is a response to the world around us."
+      "title": "Segnale e Messaggio",
+      "desc": "Il segnale di un'emozione descrive i modi universali in cui quell'emozione viene mostrata nel viso e/o nella voce. Ci possono essere anche altri cambiamenti del tono vocale e indicatori del linguaggio corporeo, ma questi non sono inclusi qui perché sono spesso culturalmente informati e appresi rispetto all'essere universali.<br><br>Il messaggio è quello che l'emozione ci sta dicendo. Tutte le emozioni hanno un messaggio che è una risposta al mondo che ci circonda."
     },
     "personality-trait": {
       "emotions": [
         {
-          "name": "Anger",
-          "desc": "A hostile person is often angry and is known to others for the frequency of anger responses to the world. Often anger occurs with any frustration; the threshold for frustration is low. Hostile people may experience regret afterward and apologize for their anger, but nevertheless continue to respond angrily. Sometimes hostile people express their anger in a nasty way, using words to demean and cause psychological pain to others."
+          "name": "Rabbia",
+          "desc": "Una persona ostile è spesso arrabbiata ed è conosciuta dagli altri per la frequenza delle risposte di rabbia al mondo. Spesso la rabbia si verifica con qualsiasi frustrazione; la soglia per la frustrazione è bassa. Le persone ostili possono provare rimorso dopo e scusarsi per la loro rabbia, ma continuano comunque a rispondere con rabbia. A volte le persone ostili esprimono la loro rabbia in modo cattivo, usando parole per sminuire e causare dolore psicologico agli altri."
         },
         {
-          "name": "Fear",
-          "desc": "A shy or timid person. This personality type is likely to avoid risks and uncomfortable situations. Timid people may perceive the world as full of difficult situations."
+          "name": "Paura",
+          "desc": "Una persona timida o paurosa. Questo tipo di personalità è probabile che eviti rischi e situazioni scomode. Le persone timide possono percepire il mondo come pieno di situazioni difficili."
         },
         {
-          "name": "Disgust",
-          "desc": "A person who often feels disgusted by others may have an inflated sense of self-worth and a hyper-aversion toward others. Someone who is disgusted or dissatisfied with everything can be unpleasant to be around."
+          "name": "Disgusto",
+          "desc": "Una persona che spesso si sente disgustata dagli altri può avere un senso gonfiato del proprio valore e un'iper-avversione verso gli altri. Qualcuno che è disgustato o insoddisfatto di tutto può essere sgradevole da frequentare."
         },
         {
-          "name": "Sadness",
-          "desc": "A somber person who is often feeling low may have clinical depression or may simply have more frequent feelings of sadness. This person may hold the perspective that life is hard and difficult."
+          "name": "Tristezza",
+          "desc": "Una persona cupa. Questo tipo di personalità può tendere ad essere abbattuta e vedere il lato oscuro della vita. Le persone cupe possono essere inclini a concentrarsi sugli aspetti negativi delle situazioni e possono avere difficoltà a trovare gioia o ottimismo."
         },
         {
-          "name": "Enjoyment",
-          "desc": "A cheerful person may also be thought of as optimistic. This person sees the world in positive way and can easily be made to laugh and feel enjoyment."
+          "name": "Gioia",
+          "desc": "Una persona allegra. Questo tipo di personalità può tendere ad essere ottimista e vedere il lato positivo delle cose. Le persone allegre possono essere inclini a cercare esperienze positive e possono avere una visione generalmente positiva della vita e delle persone."
         }
       ],
-      "title": "Personality Trait",
-      "desc": "Certain personality traits are related to specific emotions."
+      "title": "Tratto della Personalità",
+      "desc": "Quando una particolare emozione domina nella personalità di qualcuno, possiamo vedere come quell'emozione colora il loro modo di essere nel mondo."
     },
     "impediment-antidote": {
       "emotions": [
@@ -424,268 +424,268 @@
           ]
         }
       ],
-      "title": "Impediments and Antidotes",
-      "desc": "The chart below was created by Mathieu Ricard and offers a Tibetan Buddhist perspective on understanding and working with emotions. It shows how to counter difficult emotions by cultivating positive mental states, known as \"antidotes.\" It also helps identify \"impediments\" that block feeling enjoyable emotions and highlights enjoyable emotions which can be difficult. You can learn more about Mathieu Ricard <a href=\"https://www.matthieuricard.org/en/articles/buddhist-and-psychological-perspectives-on-emotions-and-well-being-by-paul-ekman-richard-j-davidson-matthieu-ricard-and-b-alan-wallace-current-directions-in-psychological-science-2005-14-2/\" target=\"blank\">here</a>."
+      "title": "Impedimenti e Antidoti",
+      "desc": "Il grafico sottostante è stato creato da Matthieu Ricard e offre una prospettiva buddhista tibetana sulla comprensione e il lavoro con le emozioni. Mostra come contrastare le emozioni difficili coltivando stati mentali positivi, conosciuti come \"antidoti\". Aiuta anche a identificare gli \"impedimenti\" che bloccano il sentire emozioni piacevoli e mette in evidenza le emozioni piacevoli che possono essere difficili. Puoi imparare di più su Matthieu Ricard <a href=\"https://www.matthieuricard.org/en/articles/buddhist-and-psychological-perspectives-on-emotions-and-well-being-by-paul-ekman-richard-j-davidson-matthieu-ricard-and-b-alan-wallace-current-directions-in-psychological-science-2005-14-2/\" target=\"blank\">qui</a>."
     },
     "triggers-timeline": {
       "content": [
         {
-          "desc": "This describes the context or situations which may influence the way we enter the emotion. For example our pre-condition could be physiological: being hungry, tired or emotional: having had a very enjoyable or stressful day or coming out of a prior emotional episode.",
-          "name": "pre-condition"
+          "desc": "Questo descrive il contesto o le situazioni che possono influenzare il modo in cui entriamo nell'emozione. Ad esempio, la nostra precondizione potrebbe essere fisiologica: essere affamati, stanchi o emotivi: aver avuto una giornata molto piacevole o stressante o uscire da un episodio emotivo precedente.",
+          "name": "pre-condizione"
         },
         {
-          "desc": "This describes a person, place, situation, image, thought, memory, smell, sound, taste or idea that we encounter from the outside world or from our own mind. We are constantly, automatically appraising, or assessing our inner and outer world. For example, when we hear a new song, we are instantly overlaying our knowledge of instruments and categories of music as we listen without even thinking, this is automatic appraisal. ",
-          "name": "event"
+          "desc": "Questo descrive una persona, posto, situazione, immagine, pensiero, memoria, odore, suono, gusto o idea che incontriamo dal mondo esterno o dalla nostra mente. Stiamo costantemente, automaticamente valutando, o valutando il nostro mondo interno ed esterno. Ad esempio, quando sentiamo una nuova canzone, stiamo istantaneamente sovrapponendo la nostra conoscenza di strumenti e categorie musicali mentre ascoltiamo senza nemmeno pensarci, questa è valutazione automatica.",
+          "name": "evento"
         },
         {
-          "desc": "This describes the combination of the automatic appraisal matching to some universal/hardwired or acquired script in our database. ",
+          "desc": "Questo descrive la combinazione della valutazione automatica che corrisponde a qualche script universale/innato o acquisito nel nostro database.",
           "name": "trigger"
         },
         {
-          "desc": "This describes our universal/hardwired responses and our individually acquired emotional memories. For example, if the event is a smell and in the database is the stored memory of the shampoo our mother used in our childhood, and we are triggered to experience an emotion of warm nostalgia of a happy childhood. When the appraised event resembles something in our database, it may be a highly accurate or could create a distorted perception of the trigger. For example if we had an intimidating experience with a police officer when we were young and we are pulled over as an adult we could misperceive the situation with a distorted sense of fear.",
-          "name": "perception database"
+          "desc": "Questo descrive le nostre risposte universali/innate e le nostre memorie emotive acquisite individualmente. Ad esempio, se l'evento è un odore e nel database è memorizzata la memoria dello shampoo che nostra madre usava nella nostra infanzia, e siamo scatenati a sperimentare un'emozione di calda nostalgia di un'infanzia felice. Quando l'evento valutato assomiglia a qualcosa nel nostro database, può essere molto accurato o potrebbe creare una percezione distorta del trigger. Ad esempio, se abbiamo avuto un'esperienza intimidatoria con un agente di polizia quando eravamo giovani e veniamo fermati da adulti, potremmo percepire erroneamente la situazione con un senso distorto di paura.",
+          "name": "database di percezione"
         },
         {
-          "desc": "This describes the autonomic changes in our body which occur as our emotion arises. We can experience these changes as sensations in our body, feeling heat in our face, tightness in our jaw or shoulders, etc.",
-          "name": "physical changes"
+          "desc": "Questo descrive i cambiamenti autonomi nel nostro corpo che si verificano quando la nostra emozione sorge. Possiamo sperimentare questi cambiamenti come sensazioni nel nostro corpo, sentendo calore nel nostro viso, tensione nella nostra mascella o spalle, ecc.",
+          "name": "cambiamenti fisici"
         },
         {
-          "desc": "This describes the emotion itself, inclusive of physical and psychological changes.",
-          "name": "state"
+          "desc": "Questo descrive l'emozione stessa, inclusiva di cambiamenti fisici e psicologici.",
+          "name": "stato"
         },
         {
-          "desc": "This describes the qualitative experience of the emotion, how sadness feels sad, or anger feels angry.",
-          "name": "psychological changes"
+          "desc": "Questo descrive l'esperienza qualitativa dell'emozione, come la tristezza si sente triste, o la rabbia si sente arrabbiata.",
+          "name": "cambiamenti psicologici"
         },
         {
-          "desc": "This describes our emotional responses. This could be an external behavior such as yelling in anger, or could be internal, such as suppressing anger. Each emotion in the atlas shows a range of immediate actions, as well as intrinsic or intention actions.  The action can be either constructive or destructive. Leading to further collaboration with others or to difficulty in collaborating.",
-          "name": "action"
+          "desc": "Questo descrive le nostre risposte emotive. Questo potrebbe essere un comportamento esterno come urlare per rabbia, o potrebbe essere interno, come sopprimere la rabbia. Ogni emozione nell'atlante mostra una gamma di azioni immediate, così come azioni intrinseche o intenzionali. L'azione può essere costruttiva o distruttiva. Portando a ulteriore collaborazione con gli altri o a difficoltà nel collaborare.",
+          "name": "azione"
         },
         {
-          "desc": "This describes the result or impact of our emotional actions. This could be external: if we have yelled at someone they may then yell back; or internal: if we have suppressed we could be feeling some ongoing irritation. The post condition could lead to our next episode of emotion, if someone is yelling back at us we are triggered once again to either anger, fear or sadness/ regret for our actions. Our post condition is an opportunity for us to build emotional awareness through reflection on our emotion, to understand the trigger, identify the felt experience and consider its impact it has had.",
-          "name": "post-condition"
+          "desc": "Questo descrive il risultato o l'impatto delle nostre azioni emotive. Questo potrebbe essere esterno: se abbiamo urlato a qualcuno potrebbero poi urlarci dietro; o interno: se abbiamo soppresso potremmo provare una certa irritazione continua. La post-condizione potrebbe portare al nostro prossimo episodio di emozione, se qualcuno ci sta urlando dietro siamo scatenati ancora una volta alla rabbia, paura o tristezza/rimorso per le nostre azioni. La nostra post-condizione è un'opportunità per noi di costruire consapevolezza emotiva attraverso la riflessione sulla nostra emozione, per capire il trigger, identificare l'esperienza sentita e considerare l'impatto che ha avuto.",
+          "name": "post-condizione"
         },
         {
-          "desc": "The Selective Filtering Period is initiated with the onset of actions and signals — perception is narrowed and distorted, filtering and interpreting information relevant to and consistent with the prevailing emotion. For example, when fear is aroused, there is a heightened sensitivity to real and imagined threats. ",
-          "name": "selective filter period"
+          "desc": "Il Periodo di Filtraggio Selettivo è iniziato con l'inizio di azioni e segnali — la percezione è ristretta e distorta, filtrando e interpretando informazioni rilevanti e coerenti con l'emozione prevalente. Ad esempio, quando la paura è suscitata, c'è una sensibilità aumentata alle minacce reali e immaginarie.",
+          "name": "periodo di filtro selettivo"
         }
       ],
       "footer": [
-        "Learned display rules (to regulate signals) and learned feeling rules (to modify, amplify or suppress subjective feelings) arise. We don’t know how quickly these occur. Do they occur before signals and actions, or immediately during the onset of signals and actions? Impulses are translated into actions and signals. ",
-        "The gap between Step 2 (impulses) and Step 4 (actions/signals) is variable, depending on the individual characteristics of each person and the person’s emotional profile, the intensity of the appraised trigger, and the momentary psychological state of the individual when the trigger is appraised (how much sleep the person had last night; what, if any, emotion the person last experienced or is currently experiencing, etc.)."
+        "Sorgono regole di display apprese (per regolare i segnali) e regole di sentimento apprese (per modificare, amplificare o sopprimere sentimenti soggettivi). Non sappiamo quanto velocemente si verifichino. Si verificano prima di segnali e azioni, o immediatamente durante l'inizio di segnali e azioni? Gli impulsi sono tradotti in azioni e segnali.",
+        "Il gap tra il Passo 2 (impulsi) e il Passo 4 (azioni/segnali) è variabile, dipendendo dalle caratteristiche individuali di ogni persona e dal profilo emotivo della persona, dall'intensità del trigger valutato, e dallo stato psicologico momentaneo dell'individuo quando il trigger è valutato (quanto sonno la persona ha avuto la notte scorsa; quale, se presente, emozione la persona ha sperimentato per ultima o sta attualmente sperimentando, ecc.)."
       ],
-      "title": "Emotional Episode Timeline",
+      "title": "Cronologia dell'Episodio Emotivo",
       "desc": ""
     },
     "intrinsic-or-intentional": {
       "emotions": [
         {
-          "name": "Anger",
+          "name": "Rabbia",
           "children": [
             {
-              "name": "Intrinsic",
-              "desc": "Quarrel, Insult, Undermine, Dispute, Scream/yell, Use physical force, Simmer/brood, Be passive-aggressive"
+              "name": "Intrinseco",
+              "desc": "Litigare, Insultare, Minare, Disputare, Urlare/gridare, Usare forza fisica, Covare/rimuginare, Essere passivo-aggressivo"
             },
             {
-              "name": "Intentional",
-              "desc": "Set limits, Be firm, Withdraw, Take a time out, Breathe, Practice patience, Reframe, Distract, Avoid, Remove the interference"
+              "name": "Intenzionale",
+              "desc": "Porre limiti, Essere fermo, Ritirarsi, Prendersi una pausa, Respirare, Praticare pazienza, Riformulare, Distrarre, Evitare, Rimuovere l'interferenza"
             }
           ]
         },
         {
-          "name": "Fear",
+          "name": "Paura",
           "children": [
             {
-              "name": "Intrinsic",
-              "desc": "Withdraw, Avoid, Hesitate, Freeze, Scream/yell, Ruminate, Worry"
+              "name": "Intrinseco",
+              "desc": "Ritirarsi, Evitare, Esitare, Bloccarsi, Urlare/gridare, Rimuginare, Preoccuparsi"
             },
             {
-              "name": "Intentional",
-              "desc": "Reframe, Be mindful, Breathe, Distract"
+              "name": "Intenzionale",
+              "desc": "Riformulare, Essere consapevole, Respirare, Distrarre"
             }
           ]
         },
         {
-          "name": "Disgust",
+          "name": "Disgusto",
           "children": [
             {
-              "name": "Intrinsic",
-              "desc": "Withdraw, Avoid, Vomit, Dehumanize"
+              "name": "Intrinseco",
+              "desc": "Ritirarsi, Evitare, Vomitare, Disumanizzare"
             },
             {
-              "name": "Intentional",
-              "desc": "Withdraw, Avoid"
+              "name": "Intenzionale",
+              "desc": "Ritirarsi, Evitare"
             }
           ]
         },
         {
-          "name": "Sadness",
+          "name": "Tristezza",
           "children": [
             {
-              "name": "Intrinsic",
-              "desc": "Seek comfort, Withdraw, Mourn, Protest, Feel ashamed"
+              "name": "Intrinseco",
+              "desc": "Cercare conforto, Ritirarsi, Lamentarsi, Protestare, Sentirsi in colpa"
             },
             {
-              "name": "Intentional",
-              "desc": "Withdraw, Distract"
+              "name": "Intenzionale",
+              "desc": "Ritirarsi, Distrarre"
             }
           ]
         },
         {
-          "name": "Enjoyment",
+          "name": "Gioia",
           "children": [
             {
-              "name": "Intrinsic",
-              "desc": "Seek more, Maintain, Exclaim, Engage/connect, Savor, Indulge"
+              "name": "Intrinseco",
+              "desc": "Cercare di più, Mantenere, Esclamare, Impegnarsi/connettersi, Assaporare, Indulgere"
             },
             {
-              "name": "Intentional",
-              "desc": "None"
+              "name": "Intenzionale",
+              "desc": "Nessuno"
             }
           ]
         }
       ],
-      "title": "Intrinsic or Intentional Actions",
-      "desc": "Actions can be intrinsic (without conscious intent) or intentional (an active attempt to enact change), or both."
+      "title": "Azioni Intrinseche o Intenzionali",
+      "desc": "Le azioni possono essere intrinseche (senza intento consapevole) o intenzionali (un tentativo attivo di apportare cambiamento), o entrambe."
     },
     "scientific-basis": {
       "content": [
         {
-          "desc": "There are universal emotions",
+          "desc": "Esistono emozioni universali",
           "name": "88%",
           "formatting": "beforebreak"
         },
         {
-          "desc": "There are universal facial signals to emotion",
+          "desc": "Esistono segnali facciali universali alle emozioni",
           "name": "80%",
           "formatting": "break"
         },
         {
-          "desc": "Anger is a universal emotion",
+          "desc": "La rabbia è un'emozione universale",
           "name": "91%",
           "formatting": ""
         },
         {
-          "desc": "Fear is a universal emotion",
+          "desc": "La paura è un'emozione universale",
           "name": "90%",
           "formatting": ""
         },
         {
-          "desc": "Disgust is a universal emotion",
+          "desc": "Il disgusto è un'emozione universale",
           "name": "86%",
           "formatting": ""
         },
         {
-          "desc": "Sadness is a universal emotion",
+          "desc": "La tristezza è un'emozione universale",
           "name": "80%",
           "formatting": ""
         },
         {
-          "desc": "Happiness is a universal emotion",
+          "desc": "La felicità è un'emozione universale",
           "name": "76%",
           "formatting": "break"
         },
         {
-          "desc": "There are universal triggers to emotion",
+          "desc": "Esistono trigger universali alle emozioni",
           "name": "66%",
           "formatting": ""
         },
         {
-          "desc": "There is universal physiology of emotion",
+          "desc": "Esiste una fisiologia universale delle emozioni",
           "name": "51%",
           "formatting": ""
         },
         {
-          "desc": "There are biologically discrete, separate emotions",
+          "desc": "Esistono emozioni biologicamente discrete e separate",
           "name": "49%",
           "formatting": ""
         },
         {
-          "desc": "Emotions are constructed by social factors",
+          "desc": "Le emozioni sono costruite da fattori sociali",
           "name": "11%",
           "formatting": ""
         },
         {
-          "desc": "Emotions are both biologically separate and socially constructed",
+          "desc": "Le emozioni sono sia biologicamente separate che socialmente costruite",
           "name": "3%",
           "formatting": ""
         }
       ],
       "footer": [
-        "The existence of “compelling evidence for universals in any aspect of emotion” was endorsed by 88% of the respondents. The evidence supporting universal signals (face or voice) was endorsed by 80%. There was less agreement about whether there is compelling evidence for universals in the events that trigger an emotion (66%), physiology (51%), or appraisal mechanisms (44%). Thus, Darwin’s claim in 1872 and the more recent work of Ekman and Friesen (1969) and Izard (1971) regarding the universality of some facial expressions were supported. In response to the question “Which of the following best captures your orientation toward emotion in your research?,” 49% chose “Discrete emotions (anger, fear, etc.) combining both biological and social influences,” 11% chose “Emotions as constructed, either socially or psychologically, to fit current conditions,” and 30% indicated they used both approaches. \n",
-        "The respondents were asked whether the evidence for each emotion was compelling. There was high agreement about five emotions (all of which were described by both Darwin and Wundt): anger (91%), fear (90%), disgust (86%), sadness (80%) and happiness (76%). Shame, surprise and embarrassment were listed by 40% to 50%. Other emotions, currently under study by various investigators, drew substantially less support: guilt (37%), contempt (34%), love (32%), awe (31%), pain (28%), envy (28%), compassion (20%), pride (9%) and gratitude (6%)."
+        "L'esistenza di \"prove convincenti per universali in qualsiasi aspetto dell'emozione\" è stata appoggiata dall'88% dei rispondenti. Le prove che supportano segnali universali (viso o voce) sono state appoggiate dall'80%. C'era meno accordo sull'esistenza di prove convincenti per universali negli eventi che scatenano un'emozione (66%), fisiologia (51%), o meccanismi di valutazione (44%). Così, l'affermazione di Darwin nel 1872 e il lavoro più recente di Ekman e Friesen (1969) e Izard (1971) riguardante l'universalità di alcune espressioni facciali sono stati supportati. In risposta alla domanda \"Quale delle seguenti cattura meglio il tuo orientamento verso l'emozione nella tua ricerca?\", il 49% ha scelto \"Emozioni discrete (rabbia, paura, ecc.) che combinano influenze biologiche e sociali\", l'11% ha scelto \"Emozioni come costruite, sia socialmente che psicologicamente, per adattarsi alle condizioni attuali\", e il 30% ha indicato che usavano entrambi gli approcci. \n",
+        "Ai rispondenti è stato chiesto se le prove per ogni emozione fossero convincenti. C'era alto accordo su cinque emozioni (tutte descritte sia da Darwin che da Wundt): rabbia (91%), paura (90%), disgusto (86%), tristezza (80%) e felicità (76%). Vergogna, sorpresa e imbarazzo sono stati elencati dal 40% al 50%. Altre emozioni, attualmente in studio da vari ricercatori, hanno ricevuto sostanzialmente meno supporto: colpa (37%), disprezzo (34%), amore (32%), meraviglia (31%), dolore (28%), invidia (28%), compassione (20%), orgoglio (9%) e gratitudine (6%)."
       ],
-      "title": "The Scientific Basis for This Work",
-      "desc": "The Atlas of Emotions is based on a consensus among scientists as determined by a survey (in the choice of the five emotion continents and the relationship of emotions to moods, personality and psychopathology), the work of a few scientists who have focused on the naming of states within emotions, dictionary definitions, theory and best guesses about the actions for each state and whether they are constructive, destructive or ambiguous. For more information, see <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">“What Scientists Who Study Emotion Agree About,”</a> by Paul Ekman (Perspectives on Psychological Science, 2015).",
-      "contentIntro": "The survey was emailed in mid-June of 2014 to 248 scientists who had frequently published quantitative research on emotion."
+      "title": "La Base Scientifica per Questo Lavoro",
+      "desc": "L'Atlante delle Emozioni è basato su un consenso tra scienziati determinato da un sondaggio (nella scelta dei cinque continenti emotivi e la relazione delle emozioni con umori, personalità e psicopatologia), il lavoro di alcuni scienziati che si sono concentrati sulla denominazione degli stati dentro le emozioni, definizioni di dizionario, teoria e migliori supposizioni sulle azioni per ogni stato e se sono costruttive, distruttive o ambigue. Per maggiori informazioni, vedi <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">\"Su cosa concordano gli scienziati che studiano le emozioni,\"</a> di Paul Ekman (Perspectives on Psychological Science, 2015).",
+      "contentIntro": "Il sondaggio è stato inviato via email a metà giugno 2014 a 248 scienziati che avevano frequentemente pubblicato ricerche quantitative sull'emozione."
     },
     "moods": {
       "emotions": [
         {
-          "name": "Irritable",
-          "desc": "Predisposed to becoming angry, easily provoked. "
+          "name": "Irritabile",
+          "desc": "Predisposto a diventare arrabbiato, facilmente provocato. "
         },
         {
-          "name": "Apprehensive",
-          "desc": "Anxious that something bad will happen, on edge."
+          "name": "Apprensivo",
+          "desc": "Ansioso che accada qualcosa di brutto, nervoso."
         },
         {
-          "name": "Sour",
-          "desc": "Generally repulsed."
+          "name": "Agro",
+          "desc": "Generalmente ripugnato."
         },
         {
-          "name": "Dysphoric (or feeling blue)",
-          "desc": "An enduring feeling of discouragement or disappointment."
+          "name": "Disforico (o sentirsi giù)",
+          "desc": "Un sentimento duraturo di scoraggiamento o delusione."
         },
         {
-          "name": "Elated",
-          "desc": "A long-lasting, generalized good feeling. "
+          "name": "Euforico",
+          "desc": "Un sentimento di benessere generalizzato e duraturo. "
         }
       ],
-      "title": "Moods",
-      "desc": "Moods are longer-lasting cousins of an emotion that cause us to feel the related emotion repeatedly without any clear trigger."
+      "title": "Umori",
+      "desc": "Gli umori sono cugini più duraturi di un'emozione che ci fanno sentire l'emozione correlata ripetutamente senza alcun trigger chiaro."
     },
     "partially-charted": {
       "emotions": [
         {
-          "name": "Love",
-          "desc": "A strong attachment to another person, typically parent toward child and child toward parent, but also between those romantically committed. Within loving relationships, anger, fear, sadness, disgust and enjoyment can all be experienced."
+          "name": "Amore",
+          "desc": "Un forte attaccamento a un'altra persona, tipicamente genitore verso bambino e bambino verso genitore, ma anche tra quelli romanticamente impegnati. Nelle relazioni d'amore, rabbia, paura, tristezza, disgusto e gioia possono tutti essere sperimentati."
         },
         {
-          "name": "Surprise",
-          "desc": "The briefest emotion, surprise is triggered by the sudden occurrence of an unexpected event. It is often a way station that leads, after more appraisal, to any of the other emotions."
+          "name": "Sorpresa",
+          "desc": "L'emozione più breve, la sorpresa è scatenata dall'occorrenza improvvisa di un evento inaspettato. È spesso una stazione intermedia che porta, dopo più valutazione, a qualsiasi delle altre emozioni."
         },
         {
-          "name": "Jealousy",
-          "desc": "An emotional storyline involving three people: the desired person, the person afraid of losing the commitment of the desired person, and the rival. During jealousy, anger, fear, disgust, sadness or surprise may be felt by any of the three people."
+          "name": "Gelosia",
+          "desc": "Una storia emotiva che coinvolge tre persone: la persona desiderata, la persona che ha paura di perdere l'impegno della persona desiderata, e il rivale. Durante la gelosia, rabbia, paura, disgusto, tristezza o sorpresa possono essere sentiti da qualsiasi delle tre persone."
         },
         {
-          "name": "Envy",
-          "desc": "Although often misused as a synonym for jealousy, envy involves resenting and wanting what another person possesses. When a person feels envy, anger, contempt or sadness may also be felt."
+          "name": "Invidia",
+          "desc": "Anche se spesso usata erroneamente come sinonimo di gelosia, l'invidia coinvolge risentimento e desiderio di quello che un'altra persona possiede. Quando una persona prova invidia, rabbia, disprezzo o tristezza possono anche essere sentiti."
         },
         {
-          "name": "Hate",
-          "desc": "Enduring anger focused on a particular person or group of persons. Over time hatred may generate the personality trait of hostility."
+          "name": "Odio",
+          "desc": "Rabbia duratura focalizzata su una persona particolare o gruppo di persone. Nel tempo l'odio può generare il tratto di personalità di ostilità."
         },
         {
-          "name": "Embarrassment",
-          "desc": "Self-conscious distress or awkwardness. Often activated by praise from another, or by a faux pas. It has no vocal signal, but may cause a blush that is visible only in light-skinned people."
+          "name": "Imbarazzo",
+          "desc": "Disagio auto-conscio o goffaggine. Spesso attivato da lodi da un altro, o da un faux pas. Non ha segnale vocale, ma può causare un rossore visibile solo nelle persone dalla pelle chiara."
         },
         {
-          "name": "Shame",
-          "desc": "An expectation that others would be disgusted if they knew what the person was thinking of or had done. It motivates a strong wish to prevent others from learning what the person has done or thought."
+          "name": "Vergogna",
+          "desc": "Un'aspettativa che altri sarebbero disgustati se sapessero a cosa la persona stava pensando o aveva fatto. Motiva un forte desiderio di impedire agli altri di apprendere quello che la persona ha fatto o pensato."
         },
         {
-          "name": "Contempt",
-          "desc": "The last emotion to appear in child development, it is a feeling of moral superiority to the target. Often mixed with enjoyment."
+          "name": "Disprezzo",
+          "desc": "L'ultima emozione ad apparire nello sviluppo del bambino, è un sentimento di superiorità morale verso il bersaglio. Spesso mescolato con gioia."
         },
         {
-          "name": "Guilt",
-          "desc": "Regret about a past action, which motivates the wish to confess the wrongful action, hoping for forgiveness."
+          "name": "Colpa",
+          "desc": "Rimorso per un'azione passata, che motiva il desiderio di confessare l'azione sbagliata, sperando il perdono."
         }
       ],
-      "title": "Partially Charted Emotions",
-      "desc": "Half or less than half of emotion scientists believe there is convincing evidence that each of the following is an emotion."
+      "title": "Emozioni Parzialmente Mappate",
+      "desc": "La metà o meno della metà degli scienziati delle emozioni crede che ci siano prove convincenti che ciascuna delle seguenti sia un'emozione."
     }
   },
   "about": {
