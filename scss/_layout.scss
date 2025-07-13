@@ -1121,6 +1121,8 @@ svg {
 	a:focus {
 		outline: none !important;
 		border: 0;
+		text-decoration: none;
+		font-weight: 500;
 	}
 }
 
