@@ -3,176 +3,176 @@
   "phrasePairs": [
     {
       "pair": {
-        "event": "Successful interview"
+        "event": "Entrevista exitosa"
       },
       "emotion": "enjoyment"
     },
     {
       "pair": {
-        "event": "Forgetting phone password"
+        "event": "Olvidar la contraseña del teléfono"
       },
       "emotion": "fear"
     },
     {
       "pair": {
-        "event": "Enjoyed a vacation"
+        "event": "Disfrutar de unas vacaciones"
       },
       "emotion": "enjoyment"
     },
     {
       "pair": {
-        "event": "Stuck in an elevator"
+        "event": "Atascado en un ascensor"
       },
       "emotion": "fear"
     },
     {
       "pair": {
-        "event": "Slow internet speed"
+        "event": "Velocidad de internet lenta"
       },
       "emotion": "anger"
     },
     {
       "pair": {
-        "event": "Dirty dishes everywhere"
+        "event": "Platos sucios por todas partes"
       },
       "emotion": "disgust"
     },
     {
       "pair": {
-        "event": "Hear a strange noise"
+        "event": "Escuchar un ruido extraño"
       },
       "emotion": "fear"
     },
     {
       "pair": {
-        "event": "Hear a good joke"
+        "event": "Escuchar un buen chiste"
       },
       "emotion": "enjoyment"
     },
     {
       "pair": {
-        "event": "Laid off"
+        "event": "Despedido"
       },
       "emotion": "sadness"
     },
     {
       "pair": {
-        "event": "Spilled coffee on shirt"
+        "event": "Derramé café en la camisa"
       },
       "emotion": "anger"
     },
     {
       "pair": {
-        "event": "Got a promotion"
+        "event": "Conseguí un ascenso"
       },
       "emotion": "enjoyment"
     },
     {
       "pair": {
-        "event": "Moldy shower grout"
+        "event": "Juntas de ducha con moho"
       },
       "emotion": "disgust"
     },
     {
       "pair": {
-        "event": "Construction noise nearby"
+        "event": "Ruido de construcción cerca"
       },
       "emotion": "anger"
     },
     {
       "pair": {
-        "event": "Lost phone charger"
+        "event": "Perdí el cargador del teléfono"
       },
       "emotion": "fear"
     },
     {
       "pair": {
-        "event": "Helped a stranger"
+        "event": "Ayudé a un extraño"
       },
       "emotion": "enjoyment"
     },
     {
       "pair": {
-        "event": "Rotten food in fridge"
+        "event": "Comida podrida en la nevera"
       },
       "emotion": "disgust"
     },
     {
       "pair": {
-        "event": "Plane turbulence"
+        "event": "Turbulencias en el avión"
       },
       "emotion": "fear"
     }
   ],
   "scroller": {
     "lessImportantExperiences": [
-      "Hear a good joke",
-      "Houseplant wilting",
-      "Lost phone charger",
-      "Out of laundry detergent"
+      "Escuchar un buen chiste",
+      "Planta de interior marchitándose",
+      "Perdí el cargador del teléfono",
+      "Sin detergente para la ropa"
     ],
-    "respondWithoutThinking": "And we may respond without thinking.",
-    "arguing": "Arguing with a loved one",
-    "emotionsComeAndGo": "Emotions come and go",
-    "oneBigExperience": "...or one experience feels really big.",
-    "whatCanWeDo": "So what can we do?",
-    "connectToBreath": "Connect to our breath...",
-    "howDoIRespond": "How do I respond?",
+    "respondWithoutThinking": "Y podemos responder sin pensar.",
+    "arguing": "Discutiendo con un ser querido",
+    "emotionsComeAndGo": "Las emociones van y vienen",
+    "oneBigExperience": "...o una experiencia se siente realmente grande.",
+    "whatCanWeDo": "¿Entonces qué podemos hacer?",
+    "connectToBreath": "Conectar con nuestra respiración...",
+    "howDoIRespond": "¿Cómo respondo?",
     "experiences": [
-      "late to an appointment",
-      "surprise gift",
-      "spilled water on computer",
-      "foul smell",
-      "great first date",
-      "feel unseen"
+      "llegar tarde a una cita",
+      "regalo sorpresa",
+      "derramé agua en la computadora",
+      "mal olor",
+      "excelente primera cita",
+      "sentirse invisible"
     ],
-    "hardToSeparate": "In&nbsp;these&nbsp;moments, it&nbsp;is&nbsp;hard&nbsp;to&nbsp;separate what&nbsp;we&nbsp;feel&nbsp;inside from&nbsp;what&nbsp;is&nbsp;actually happening&nbsp;around&nbsp;us.",
+    "hardToSeparate": "En&nbsp;estos&nbsp;momentos, es&nbsp;difícil&nbsp;separar lo&nbsp;que&nbsp;sentimos&nbsp;por&nbsp;dentro de&nbsp;lo&nbsp;que realmente&nbsp;está&nbsp;pasando&nbsp;a&nbsp;nuestro&nbsp;alrededor.",
     "responseQuestions": [
-      "what is my goal?",
-      "what are my options right now?",
-      "are there other ways to see it?",
-      "how am I affecting others?",
-      "what is a good result for us?",
-      "what can I learn from this?"
+      "¿cuál es mi objetivo?",
+      "¿cuáles son mis opciones ahora?",
+      "¿hay otras formas de verlo?",
+      "¿cómo estoy afectando a otros?",
+      "¿cuál es un buen resultado para nosotros?",
+      "¿qué puedo aprender de esto?"
     ],
-    "veryImportantTitle": "While others feel very important...",
-    "triggerEmotionExperience": "relationship falls apart",
-    "pileUp": "Sometimes many experiences pile up<br/>and we feel a lot...",
-    "whatCausesFeeling": "What causes this feeling?",
-    "lessImportantTitle": "Some might feel less important.",
-    "experiencesTitle": "...we have experiences.",
+    "veryImportantTitle": "Mientras que otras se sienten muy importantes...",
+    "triggerEmotionExperience": "la relación se desmorona",
+    "pileUp": "A veces muchas experiencias se acumulan<br/>y sentimos mucho...",
+    "whatCausesFeeling": "¿Qué causa este sentimiento?",
+    "lessImportantTitle": "Algunas pueden sentirse menos importantes.",
+    "experiencesTitle": "...tenemos experiencias.",
     "regretActions": [
-      "Shout at them",
-      "Mock them",
-      "Ignore them",
-      "Hide our feelings"
+      "Gritarles",
+      "Burlarse de ellos",
+      "Ignorarlos",
+      "Ocultar nuestros sentimientos"
     ],
-    "triggerEmotions": "and they trigger our emotions.",
-    "emotionsColorPerception": "Emotions color our perception of the outer world",
-    "rideWaveOfEmotion": "Ride the wave of emotion...",
-    "weCanPause": "We can pause...",
-    "exploreTimeline": "Explore the emotional episode timeline >",
+    "triggerEmotions": "y desencadenan nuestras emociones.",
+    "emotionsColorPerception": "Las emociones colorean nuestra percepción del mundo exterior",
+    "rideWaveOfEmotion": "Montar la ola de la emoción...",
+    "weCanPause": "Podemos hacer una pausa...",
+    "exploreTimeline": "Explorar la cronología del episodio emocional >",
     "triggerQuestions": [
-      "what just happened?",
-      "what was I expecting?",
-      "what's the big picture?",
-      "how is my past involved?",
-      "how was my day?",
-      "am I well rested?"
+      "¿qué acaba de pasar?",
+      "¿qué esperaba?",
+      "¿cuál es el panorama general?",
+      "¿cómo está involucrado mi pasado?",
+      "¿cómo estuvo mi día?",
+      "¿estoy bien descansado?"
     ],
-    "actInWaysWeRegret": "we might act in ways we regret later.",
-    "storiesFromInnerWorld": "with stories and messages from our inner world.",
-    "recognizeEmotionalState": "...recognize that we are in an emotional&nbsp;state,",
-    "introduction": "As we live our lives...",
-    "becomeCurious": "and become curious and kind about our emotion.&nbsp;&nbsp;",
+    "actInWaysWeRegret": "podríamos actuar de maneras que lamentaremos después.",
+    "storiesFromInnerWorld": "con historias y mensajes de nuestro mundo interior.",
+    "recognizeEmotionalState": "...reconocer que estamos en un estado&nbsp;emocional,",
+    "introduction": "Mientras vivimos nuestras vidas...",
+    "becomeCurious": "y volvernos curiosos y amables con nuestra emoción.&nbsp;&nbsp;",
     "veryImportantExperiences": [
-      "Car accident",
-      "Falling in love",
-      "Bad doctor visit",
-      "Laid off",
-      "Overflowing toilet",
-      "Losing a loved one"
+      "Accidente de coche",
+      "Enamorarse",
+      "Mala visita al médico",
+      "Despedido",
+      "Inodoro desbordado",
+      "Perder a un ser querido"
     ],
-    "withoutClearUnderstanding": "Without clear understanding or intention..."
+    "withoutClearUnderstanding": "Sin una comprensión clara o intención..."
   }
 }

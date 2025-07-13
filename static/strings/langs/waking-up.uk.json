@@ -3,176 +3,176 @@
   "phrasePairs": [
     {
       "pair": {
-        "event": "Successful interview"
+        "event": "Успішна співбесіда"
       },
       "emotion": "enjoyment"
     },
     {
       "pair": {
-        "event": "Forgetting phone password"
+        "event": "Забув пароль телефону"
       },
       "emotion": "fear"
     },
     {
       "pair": {
-        "event": "Enjoyed a vacation"
+        "event": "Насолодився відпусткою"
       },
       "emotion": "enjoyment"
     },
     {
       "pair": {
-        "event": "Stuck in an elevator"
+        "event": "Застряг у ліфті"
       },
       "emotion": "fear"
     },
     {
       "pair": {
-        "event": "Slow internet speed"
+        "event": "Повільна швидкість інтернету"
       },
       "emotion": "anger"
     },
     {
       "pair": {
-        "event": "Dirty dishes everywhere"
+        "event": "Брудний посуд всюди"
       },
       "emotion": "disgust"
     },
     {
       "pair": {
-        "event": "Hear a strange noise"
+        "event": "Почути дивний звук"
       },
       "emotion": "fear"
     },
     {
       "pair": {
-        "event": "Hear a good joke"
+        "event": "Почути хороший жарт"
       },
       "emotion": "enjoyment"
     },
     {
       "pair": {
-        "event": "Laid off"
+        "event": "Звільнений"
       },
       "emotion": "sadness"
     },
     {
       "pair": {
-        "event": "Spilled coffee on shirt"
+        "event": "Пролив каву на сорочку"
       },
       "emotion": "anger"
     },
     {
       "pair": {
-        "event": "Got a promotion"
+        "event": "Отримав підвищення"
       },
       "emotion": "enjoyment"
     },
     {
       "pair": {
-        "event": "Moldy shower grout"
+        "event": "Заплісневілі шви душу"
       },
       "emotion": "disgust"
     },
     {
       "pair": {
-        "event": "Construction noise nearby"
+        "event": "Шум будівництва поблизу"
       },
       "emotion": "anger"
     },
     {
       "pair": {
-        "event": "Lost phone charger"
+        "event": "Загубив зарядний пристрій телефону"
       },
       "emotion": "fear"
     },
     {
       "pair": {
-        "event": "Helped a stranger"
+        "event": "Допоміг незнайомцю"
       },
       "emotion": "enjoyment"
     },
     {
       "pair": {
-        "event": "Rotten food in fridge"
+        "event": "Гнила їжа в холодильнику"
       },
       "emotion": "disgust"
     },
     {
       "pair": {
-        "event": "Plane turbulence"
+        "event": "Турбулентність в літаку"
       },
       "emotion": "fear"
     }
   ],
   "scroller": {
     "lessImportantExperiences": [
-      "Hear a good joke",
-      "Houseplant wilting",
-      "Lost phone charger",
-      "Out of laundry detergent"
+      "Почути хороший жарт",
+      "Кімнатна рослина в'яне",
+      "Загубив зарядний пристрій телефону",
+      "Закінчився пральний порошок"
     ],
-    "respondWithoutThinking": "And we may respond without thinking.",
-    "arguing": "Arguing with a loved one",
-    "emotionsComeAndGo": "Emotions come and go",
-    "oneBigExperience": "...or one experience feels really big.",
-    "whatCanWeDo": "So what can we do?",
-    "connectToBreath": "Connect to our breath...",
-    "howDoIRespond": "How do I respond?",
+    "respondWithoutThinking": "І ми можемо відповідати не думаючи.",
+    "arguing": "Сварка з коханою людиною",
+    "emotionsComeAndGo": "Емоції приходять і йдуть",
+    "oneBigExperience": "...або один досвід здається дійсно великим.",
+    "whatCanWeDo": "Тож що ми можемо зробити?",
+    "connectToBreath": "Підключитися до нашого дихання...",
+    "howDoIRespond": "Як я відповідаю?",
     "experiences": [
-      "late to an appointment",
-      "surprise gift",
-      "spilled water on computer",
-      "foul smell",
-      "great first date",
-      "feel unseen"
+      "запізнюватися на зустріч",
+      "подарунок-сюрприз",
+      "пролив воду на комп'ютер",
+      "неприємний запах",
+      "чудове перше побачення",
+      "відчувати себе невидимим"
     ],
-    "hardToSeparate": "In&nbsp;these&nbsp;moments, it&nbsp;is&nbsp;hard&nbsp;to&nbsp;separate what&nbsp;we&nbsp;feel&nbsp;inside from&nbsp;what&nbsp;is&nbsp;actually happening&nbsp;around&nbsp;us.",
+    "hardToSeparate": "У&nbsp;ці&nbsp;моменти, важко&nbsp;відокремити те,&nbsp;що&nbsp;ми&nbsp;відчуваємо&nbsp;всередині від&nbsp;того,&nbsp;що насправді&nbsp;відбувається&nbsp;навколо&nbsp;нас.",
     "responseQuestions": [
-      "what is my goal?",
-      "what are my options right now?",
-      "are there other ways to see it?",
-      "how am I affecting others?",
-      "what is a good result for us?",
-      "what can I learn from this?"
+      "яка моя мета?",
+      "які у мене зараз варіанти?",
+      "чи є інші способи подивитися на це?",
+      "як я впливаю на інших?",
+      "який хороший результат для нас?",
+      "що я можу з цього вивчити?"
     ],
-    "veryImportantTitle": "While others feel very important...",
-    "triggerEmotionExperience": "relationship falls apart",
-    "pileUp": "Sometimes many experiences pile up<br/>and we feel a lot...",
-    "whatCausesFeeling": "What causes this feeling?",
-    "lessImportantTitle": "Some might feel less important.",
-    "experiencesTitle": "...we have experiences.",
+    "veryImportantTitle": "Поки інші здаються дуже важливими...",
+    "triggerEmotionExperience": "стосунки розпадаються",
+    "pileUp": "Іноді багато досвідів накопичується<br/>і ми відчуваємо багато...",
+    "whatCausesFeeling": "Що викликає це почуття?",
+    "lessImportantTitle": "Деякі можуть здаватися менш важливими.",
+    "experiencesTitle": "...ми маємо досвід.",
     "regretActions": [
-      "Shout at them",
-      "Mock them",
-      "Ignore them",
-      "Hide our feelings"
+      "Кричати на них",
+      "Глузувати з них",
+      "Ігнорувати їх",
+      "Приховувати наші почуття"
     ],
-    "triggerEmotions": "and they trigger our emotions.",
-    "emotionsColorPerception": "Emotions color our perception of the outer world",
-    "rideWaveOfEmotion": "Ride the wave of emotion...",
-    "weCanPause": "We can pause...",
-    "exploreTimeline": "Explore the emotional episode timeline >",
+    "triggerEmotions": "і вони викликають наші емоції.",
+    "emotionsColorPerception": "Емоції забарвлюють наше сприйняття зовнішнього світу",
+    "rideWaveOfEmotion": "Оседлати хвилю емоції...",
+    "weCanPause": "Ми можемо зробити паузу...",
+    "exploreTimeline": "Дослідити хронологію емоційного епізоду >",
     "triggerQuestions": [
-      "what just happened?",
-      "what was I expecting?",
-      "what's the big picture?",
-      "how is my past involved?",
-      "how was my day?",
-      "am I well rested?"
+      "що щойно сталося?",
+      "чого я очікував?",
+      "яка загальна картина?",
+      "як задіяне моє минуле?",
+      "як пройшов мій день?",
+      "чи я добре відпочив?"
     ],
-    "actInWaysWeRegret": "we might act in ways we regret later.",
-    "storiesFromInnerWorld": "with stories and messages from our inner world.",
-    "recognizeEmotionalState": "...recognize that we are in an emotional&nbsp;state,",
-    "introduction": "As we live our lives...",
-    "becomeCurious": "and become curious and kind about our emotion.&nbsp;&nbsp;",
+    "actInWaysWeRegret": "ми можемо діяти так, що пізніше шкодуватимемо.",
+    "storiesFromInnerWorld": "з історіями та повідомленнями з нашого внутрішнього світу.",
+    "recognizeEmotionalState": "...усвідомити, що ми в емоційному&nbsp;стані,",
+    "introduction": "Поки ми живемо нашим життям...",
+    "becomeCurious": "і стати цікавими та добрими до нашої емоції.&nbsp;&nbsp;",
     "veryImportantExperiences": [
-      "Car accident",
-      "Falling in love",
-      "Bad doctor visit",
-      "Laid off",
-      "Overflowing toilet",
-      "Losing a loved one"
+      "Автомобільна аварія",
+      "Закохатися",
+      "Поганий візит до лікаря",
+      "Звільнений",
+      "Переповнений унітаз",
+      "Втрата коханої людини"
     ],
-    "withoutClearUnderstanding": "Without clear understanding or intention..."
+    "withoutClearUnderstanding": "Без чіткого розуміння чи наміру..."
   }
 }
