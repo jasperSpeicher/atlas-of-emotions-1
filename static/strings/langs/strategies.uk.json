@@ -77,13 +77,13 @@
           "description": "Що відбувається? Розвиток мови для опису наших емоцій.",
           "paragraphs": [
             {
-              "body": "<strong>How</strong> &mdash; In using the Atlas of Emotion site we can explore, with specificity, what emotion we are feeling. Instead of “I feel bad,” or “I feel stressed” we can identify what emotion we may be experiencing through the families of universal emotions listed or the non universal emotions found here.",
+              "body": "<strong>Як</strong> &mdash; Використовуючи сайт Atlas of Emotion, ми можемо досліджувати, з специфічністю, яку емоцію ми відчуваємо. Замість \"мені погано\" або \"я відчуваю стрес\", ми можемо ідентифікувати, яку емоцію ми можемо переживати через сім'ї універсальних емоцій, перелічених тут, або неуніверсальні емоції, знайдені тут.",
               "image": "img/label.png",
               "image_width": "88px"
             },
             {
-              "body": "<strong>Why</strong> &mdash; Naming, or labeling our emotions creates a moment of “de-centering.” De-centering means we can re-focus on a bigger perspective by identifying our feelings instead of being caught up in the arousal of an emotion which can saturate our body and mind. Applying a word to identify our emotion supports an ‘emotion granularity.’ We practice our granularity by taking a moment to pause and consider our experience and then label, “Right now I am aware of feeling disappointed.” This simple label doesn’t have to carry any judgment or agenda, just naming can serve to help us see ourselves and the situation more clearly.",
-              "insight": "Naming an emotion can help us see ourselves and the situation more clearly.",
+              "body": "<strong>Чому</strong> &mdash; Називання або маркування наших емоцій створює момент \"децентрування\". Децентрування означає, що ми можемо перефокусуватися на більшій перспективі, ідентифікуючи наші почуття замість того, щоб бути захопленими збудженням емоції, яка може насичувати наше тіло і розум. Застосування слова для ідентифікації нашої емоції підтримує 'емоційну деталізацію'. Ми практикуємо нашу деталізацію, беручи момент для паузи і розгляду нашого досвіду, а потім маркуємо: \"Прямо зараз я усвідомлюю, що відчуваю розчарування\". Ця проста мітка не повинна нести жодного судження чи порядку денного, лише називання може допомогти нам бачити себе і ситуацію більш ясно.",
+              "insight": "Називання емоції може допомогти нам бачити себе і ситуацію більш ясно.",
               "insight_image": "img/puzzle-head.png"
             }
           ]
@@ -94,13 +94,13 @@
           "description": "Що змушує мене відчувати цю емоцію? Вивчення того, як працюють тригери.",
           "paragraphs": [
             {
-              "body": "<strong>How</strong> &mdash; When we look at the timeline of emotion we learn that our trigger is comprised of both our immediate state and context, as well as older stories and perceptions. We can choose an emotion episode when we felt we reacted too strongly and then consider what was going on in our immediate experience, our pre-condition, of hunger, fatigue, stress, etc. which might influence how we become emotional. We then explore what might be in the database, the storehouse of past experiences that we may impose on to  this current experience.",
+              "body": "<strong>Як</strong> &mdash; Коли ми дивимося на часову лінію емоції, ми дізнаємося, що наш тригер складається як з нашого безпосереднього стану і контексту, так і з старших історій та сприйнять. Ми можемо вибрати емоційний епізод, коли відчували, що реагували занадто сильно, а потім розглянути, що відбувалося в нашому безпосередньому досвіді, нашій передумові голоду, втоми, стресу тощо, що могло вплинути на те, як ми стаємо емоційними. Потім ми досліджуємо, що може бути в базі даних, сховищі минулих переживань, які ми можемо накласти на цей поточний досвід.",
               "image": "img/triggers.png",
               "image_width": "200px"
             },
             {
-              "body": "<strong>Why</strong> &mdash; We are triggered to an emotion in a 25th of a second and rarely can identify all the facts which contribute to that emotion. When we start exploring the pre-condition and database we develop greater insight about our role in our emotions, it isn’t just the outside world–it is our current state and past stories that create an emotional episode. This understanding can contribute to our reappraisal, to remember that when we become emotional it is often a complex process which needs space and reflection. We could say to ourselves, “I am feeling worried and there are many factors that are contributing to this worry, I am tired and have often had difficulty with transitions.”",
-              "insight": "It isn't just the outside world&mdash;it is our current state and past stories that create an emotional episode.",
+              "body": "<strong>Чому</strong> &mdash; Ми запускаємося до емоції за двадцять п'яту частину секунди і рідко можемо ідентифікувати всі факти, які сприяють цій емоції. Коли ми починаємо досліджувати передумову та базу даних, ми розвиваємо більше розуміння нашої ролі в наших емоціях, це не лише зовнішній світ - це наш поточний стан і минулі історії, які створюють емоційний епізод. Це розуміння може сприяти нашій переоцінці, пам'ятати, що коли ми стаємо емоційними, це часто складний процес, який потребує простору і роздумів. Ми могли б сказати собі: \"Я відчуваю занепокоєння і є багато факторів, які сприяють цьому занепокоєнню, я втомлений і часто мав труднощі з переходами\".",
+              "insight": "Це не лише зовнішній світ&mdash;це наш поточний стан і минулі історії, які створюють емоційний епізод.",
               "insight_image": "img/pop-head.png"
             }
           ]
@@ -111,13 +111,13 @@
           "description": "Як відчувається емоція? Навчання бути спостерігачем емоцій у тілі.",
           "paragraphs": [
             {
-              "body": "<strong>How</strong> &mdash; For some of us feeling emotion in the body is quite clear, we recognize areas in the face, chest, or belly where there is increased sensations, such has heavy heat in our face when angry, or a hollow feeling in the chest when lonely. For others access to sensations of emotion in the body is less available, or the focus is more caught up in thoughts. Just as we recognize and apply labels to the type of emotion we are feeling, we can identify the types of sensations in our body and where we are feeling them. Consider where in your body you feel worried, and what are the qualities of this sensation, light, heavy, tingling, throbbing, pointy etc.",
+              "body": "<strong>Як</strong> &mdash; Для деяких з нас відчування емоції в тілі є досить чітким, ми розпізнаємо області в обличчі, грудях або животі, де є підвищені відчуття, такі як важкий жар у нашому обличчі, коли ми сердимося, або порожнє відчуття в грудях, коли ми самотні. Для інших доступ до відчуттів емоції в тілі менш доступний, або увага більше захоплена думками. Так само, як ми розпізнаємо і застосовуємо мітки до типу емоції, яку ми відчуваємо, ми можемо ідентифікувати типи відчуттів у нашому тілі і де ми їх відчуваємо. Подумайте, де у вашому тілі ви відчуваєте занепокоєння, і які якості цього відчуття, легке, важке, поколювання, пульсуюче, гостре тощо.",
               "image": "img/body.png",
               "image_width": "160px"
             },
             {
-              "body": "<strong>Why</strong> &mdash; Our emotions are an embodied experience, they are not just a mental phenomenon. Our entire nervous system rallies in response to our emotion to help us prepare for the opportunities and challenges which the emotion is alerting us to. When we develop a closer relationship to our embodied experience of emotion we are developing 'interoception'. Interoception is a trainable skill, a way to recognize our experience of emotions in the body which can help with de-centering, self soothing and reappraisal . For example if we feel a lot of bright, intense, energy in the chest with annoyance we can say to ourselves \"I am noticing this bright, intense energy in my chest, this makes senes because I am feeling annoyed and my body is responding.\"",
-              "insight": "A closer relationship to our embodied experience can help with de-centering, self soothing and reappraisal",
+              "body": "<strong>Чому</strong> &mdash; Наші емоції є втіленим досвідом, вони не є лише ментальним феноменом. Вся наша нервова система мобілізується у відповідь на нашу емоцію, щоб допомогти нам підготуватися до можливостей і викликів, на які емоція нас попереджає. Коли ми розвиваємо більш тісні стосунки з нашим втіленим досвідом емоції, ми розвиваємо 'інтероцепцію'. Інтероцепція є навичкою, яку можна тренувати, способом розпізнавання нашого досвіду емоцій у тілі, який може допомогти з деценруванням, самозаспокоєнням і переоцінкою. Наприклад, якщо ми відчуваємо багато яскравої, інтенсивної енергії в грудях з роздратуванням, ми можемо сказати собі: \"Я помічаю цю яскраву, інтенсивну енергію в моїх грудях, це має сенс, тому що я відчуваю роздратування, і моє тіло реагує\".",
+              "insight": "Більш тісні стосунки з нашим втіленим досвідом можуть допомогти з деценруванням, самозаспокоєнням і переоцінкою",
               "insight_image": "img/mag-head.png"
             }
           ]
@@ -152,13 +152,13 @@
           "description": "У кожну мить ми можемо залишатися усвідомленими наших думок і почуттів і приймати рішення в теперішньому про те, як ми хочемо поводитися в майбутньому.",
           "paragraphs": [
             {
-              "body": "<strong>Mindfulness</strong> &mdash; Mindfulness is the practice of paying full attention to the present moment, without judgment. Practicing mindfulness consistently helps us be more conscious of what is going on around us in the present and less caught in thoughts and projections from the past. When we are more mindful, we develop a higher level of self-awareness called “meta-awareness” that helps us understand and manage our reactions and behaviors better. We become naturally more aware of our thoughts, feelings, and surroundings, accepting them as they are, which can help reduce stress and improve overall well-being. Although mindfulness always happens in the present moment, there are daily practices that increase the amount of mindfulness we tend to bring to each moment, such as meditation.",
+              "body": "<strong>Усвідомленість</strong> &mdash; Усвідомленість — це практика приділення повної уваги теперішньому моменту, без осуду. Послідовна практика усвідомленості допомагає нам бути більш свідомими того, що відбувається навколо нас у теперішньому, і менш захопленими думками та проекціями з минулого. Коли ми більш усвідомлені, ми розвиваємо вищий рівень самоусвідомлення, який називається \"мета-усвідомленістю\", що допомагає нам краще розуміти і керувати нашими реакціями та поведінкою. Ми природно стаємо більш усвідомленими наших думок, почуттів та оточення, приймаючи їх такими, якими вони є, що може допомогти зменшити стрес і покращити загальне благополуччя. Хоча усвідомленість завжди відбувається в теперішньому моменті, є щоденні практики, які збільшують кількість усвідомленості, яку ми схильні привносити в кожен момент, такі як медитація.",
               "image": "img/mandala.png",
               "image_width": "200px"
             },
             {
-              "body": "<strong>Intention Setting</strong> &mdash; Much as a mediation practice can increase meta-awareness, a daily practice of setting clear intentions for peace of mind, kindness, clarity can create a supportive mindset for whatever we encounter. Intention setting is especially helpful before we go in to an anticipated ‘challenging’ experience. We prospectively, in the future, set an intention for kindness at the start of our day before we encounter a person, place, or experience.",
-              "insight": "Create a supportive mindset for whatever we encounter",
+              "body": "<strong>Встановлення намірів</strong> &mdash; Так само, як практика медитації може підвищити мета-усвідомленість, щоденна практика встановлення чітких намірів для душевного спокою, доброти, ясності може створити підтримуючий настрій для всього, що ми зустрічаємо. Встановлення намірів особливо корисно перед тим, як ми йдемо в очікуваний 'складний' досвід. Ми перспективно, в майбутньому, встановлюємо намір доброти на початку нашого дня, перш ніж зустрінемо людину, місце чи досвід.",
+              "insight": "Створити підтримуючий настрій для всього, що ми зустрічаємо",
               "insight_image": "img/puzzle-head.png"
             }
           ]
@@ -169,17 +169,17 @@
           "description": "Пауза, щоб відчути тіло, є потужною стратегією для підтримання нашого розуму відкритим до всього, що сталося до тригера, і всього, що може слідувати — це може запобігти тому, щоб тимчасовий емоційний стан домінував над тим, як ми інтерпретуємо те, що щойно сталося, і можливе майбутнє.",
           "paragraphs": [
             {
-              "body": "<strong>Breath</strong> &mdash; A deep breath is one very helpful way to pause. It brings more oxygen to our nervous system and help us process the physical arousal in our body. A big part of our emotional state is the physical changes we experience, and our breath is a way to physically assist our body during the pause.",
+              "body": "<strong>Дихання</strong> &mdash; Глибокий вдих є дуже корисним способом зробити паузу. Він приносить більше кисню до нашої нервової системи і допомагає нам обробляти фізичне збудження в нашому тілі. Велика частина нашого емоційного стану — це фізичні зміни, які ми переживаємо, а наше дихання є способом фізично допомогти нашому тілу під час паузи.",
               "image": "img/breath.png",
               "image_width": "180px"
             },
             {
-              "body": "<strong>Sensations</strong> &mdash; Bringing attention and awareness to physical sensations in the body can prevent an emotion from escalating. While we are sensing the body, we think less about what seemed to cause the emotion, just feeling and sensing the experience in the body. It helps to be specific–what sensations are we feeling and where, how are they changing? When we focus on the physical reality of being in our body, emotions distort our perception less.",
-              "insight": "When we focus on the physical reality of being in our body, emotions distort our perception less.",
+              "body": "<strong>Відчуття</strong> &mdash; Приділення уваги та усвідомлення фізичним відчуттям у тілі може запобігти загостренню емоції. Поки ми відчуваємо тіло, ми менше думаємо про те, що здавалося причиною емоції, просто відчуваючи та сприймаючи досвід у тілі. Допомагає бути конкретним — які відчуття ми переживаємо і де, як вони змінюються? Коли ми зосереджуємося на фізичній реальності перебування в нашому тілі, емоції менше спотворюють наше сприйняття.",
+              "insight": "Коли ми зосереджуємося на фізичній реальності перебування в нашому тілі, емоції менше спотворюють наше сприйняття.",
               "insight_image": "img/heart-head.png"
             },
             {
-              "body": "Note that everyone's relationship with their body is unique, and sometimes a history of trauma can affect our ability to use the body and breath as effective strategies. For more information on alternative strategies for \"grounding\", see <a target=\"_blank\" rel=\"noopener\" href=\"https://psychcentral.com/health/trauma-informed-mindfulness#how-to-be-trauma-informed\">this article.</a>"
+              "body": "Зауважте, що стосунки кожної людини зі своїм тілом є унікальними, і іноді історія травми може вплинути на нашу здатність використовувати тіло та дихання як ефективні стратегії. Для отримання додаткової інформації про альтернативні стратегії \"заземлення\", див. <a target=\"_blank\" rel=\"noopener\" href=\"https://psychcentral.com/health/trauma-informed-mindfulness#how-to-be-trauma-informed\">цю статтю.</a>"
             }
           ]
         }
@@ -188,40 +188,40 @@
     "living_in_balance": {
       "header": "Життя в рівновазі",
       "id": "living-in-balance",
-      "description": "Ми часто думаємо про навігацію емоціями як про реакцію на одну специфічну подію за іншою протягом нашого життя, управління спалахом гніву або насолоду від почуття радості. Але щоб досягти нашої більшої мети спокійного розуму, ми також повинні розглянути загальну картину, поза специфічними емоційними епізодами. Хоча управління миттєвими реакціями є важливим для збалансованого життя, нам також потрібно відступити і розглянути більший контекст того, як ми живемо своїм життям і чому ми хочемо культивувати спокійний розум, в якому ми відчуваємо рівновагу. Мета емоційної свідомості не в тому, щоб 'бути щасливим весь час', а в тому, щоб допомогти нам вчитися з наших емоцій і розвивати емоційну гнучкість, яка дозволяє нашим глибшим бажанням і прагненням розквітнути. Два найвпливовіші способи постійно підтримувати спокій у нашому житті — це перспектива і практика.",
+      "description": "Ми часто думаємо про навігацію емоціями як реакцію на одну конкретну подію за іншою протягом нашого життя, керуючи спалахом гніву або смакуючи відчуття радості. Але щоб досягти нашої більшої мети спокійного розуму, ми також повинні розглянути загальну картину, поза конкретними емоційними епізодами. Хоча керування миттєвими реакціями є важливим для збалансованого життя, нам також потрібно відступити і розглянути ширший контекст того, як ми живемо своє життя і чому ми хочемо культивувати спокійний розум, в якому ми відчуваємо рівновагу. Мета емоційної обізнаності не полягає в тому, щоб бути 'щасливими весь час', а скоріше допомогти нам вчитися з наших емоцій і розвивати емоційну гнучкість, яка дозволяє нашим глибшим бажанням та прагненням розквітати. Два найбільш впливових способи постійно підтримувати спокій у нашому житті - це перспектива і практика.",
       "sub_sections": [
         {
           "header": "Співчуття",
           "id": "compassion",
-          "description": "Співчуття може бути як практикою, так і способом ставлення до себе та інших. Розуміючи культурні та еволюційні впливи на наші емоції, ми можемо легше приймати виклики, з якими стикаємося, роблячи легшим поширення співчуття до себе та інших.",
+          "description": "Співчуття може бути як практикою, так і способом ставлення до себе та інших. Розуміючи культурні та еволюційні впливи на наші емоції, ми можемо легше приймати виклики, з якими стикаємося, що робить легшим проявляти співчуття до себе та інших.",
           "paragraphs": [
             {
-              "body": "Compassion is especially helpful when we set intentions to manage our emotions but fall into old patterns. In these moments, it protects us from hopelessness and burnout. Buddhist teachings define Compassion as the sincere wish for the self and others to be free from suffering and its causes. Similarly, science defines it as \"the feeling that arises in witnessing another's suffering, and that motivates a subsequent desire to help\" (Goetz et al., 2010). Key elements of compassion are recognizing suffering and responding to it.",
+              "body": "Співчуття особливо корисне, коли ми встановлюємо наміри для керування нашими емоціями, але потрапляємо у старі шаблони. В ці моменти воно захищає нас від безнадійності та вигорання. Буддійські вчення визначають Співчуття як щире бажання для себе та інших бути вільними від страждань та їх причин. Подібно, наука визначає його як \"почуття, яке виникає при спостереженні страждань іншого, і яке мотивує подальше бажання допомогти\" (Goetz et al., 2010). Ключовими елементами співчуття є розпізнавання страждань та реагування на них.",
               "image": "img/compassion.jpg",
               "image_width": "200px"
             },
             {
-              "body": "We can apply this to our own struggles by practicing self-compassion. This means acknowledging our difficulties instead of avoiding them, recognizing that such struggles are universal, and extending kindness toward ourselves, as a caring friend would.",
-              "insight": "Compassion means recognizing that everyone struggles and extending kindness to oneself and others",
+              "body": "Ми можемо застосувати це до наших власних боротьб, практикуючи самоспівчуття. Це означає визнавати наші труднощі замість їх уникання, розуміти, що такі боротьби є універсальними, і проявляти доброту до себе, як це зробив би турботливий друг.",
+              "insight": "Співчуття означає розуміння того, що всі борються, і проявляння доброти до себе та інших",
               "insight_image": "img/heart-head.png"
             },
             {
-              "body": "<em>To go deeper...</em><br/><br/><strong>Outlook &mdash; </strong>Consider cultivating an ongoing stance of compassion, not only a response to immediate difficulty but a way of seeing the world.<br/><br/><strong>Practice &mdash; </strong>Make a daily practice of remembering the unifying truth that everyone, everywhere, wants to struggle less with difficult emotions and we all need compassion for our difficulties."
+              "body": "<em>Щоб глибше зануритися...</em><br/><br/><strong>Перспектива &mdash; </strong>Розгляньте культивування постійної позиції співчуття, не лише як реакції на безпосередні труднощі, а як способу бачення світу.<br/><br/><strong>Практика &mdash; </strong>Зробіть щоденною практикою пам'ятати об'єднуючу істину, що всі, скрізь, хочуть менше боротися з важкими емоціями і всі ми потребуємо співчуття до наших труднощів."
             }
           ]
         },
         {
           "header": "Спосіб життя для спокою",
           "id": "lifestyle-for-calm",
-          "description": "Наші емоції глибоко пов'язані з нашими фізичними переживаннями. Сон, дієта, стрес, вживання речовин і навіть погода впливають на те, як ми почуваємося. Поганий сон, наприклад, може посилити емоції, тоді як інтенсивні емоції можуть порушити сон, створюючи цикл перевантаження. Аналогічно, бути занадто голодним або занадто ситим може призвести до фізичного дискомфорту та емоційних викликів.",
+          "description": "Наші емоції глибоко пов'язані з нашими фізичними переживаннями. Сон, дієта, стрес, вживання речовин і навіть погода впливають на те, як ми себе почуваємо. Поганий сон, наприклад, може посилити емоції, тоді як інтенсивні емоції можуть порушити сон, створюючи цикл переважання. Подібно, бути занадто голодним або занадто ситим може призвести до фізичного дискомфорту і емоційних викликів.",
           "paragraphs": [
             {
-              "body": "By looking at our overall lifestyle, we can better understand our emotions and make changes that support balance and well-being.",
-              "insight": "Each decision we make will impact our future state of mind.",
+              "body": "Розглядаючи наш загальний спосіб життя, ми можемо краще зрозуміти наші емоції і зробити зміни, які підтримують рівновагу і добробут.",
+              "insight": "Кожне рішення, яке ми приймаємо, вплине на наш майбутній стан розуму.",
               "insight_image": "img/pop-head.png"
             },
             {
-              "body": "<em>To go deeper...</em><br/><br/><strong>Outlook &mdash; </strong>Rather than considering our choices in isolation, we consider how each decision we make will impact our future state of mind.<br/><br/><strong>Practice &mdash; </strong>Start to recognize patterns which interfere with a calm mind such as disruptions to our sleep, excess distractions, and the resultant experience of dysregulation. In this way, we may start to develop a preference and desire for the simplicity that affords us a calm mind.",
+              "body": "<em>Щоб глибше зануритися...</em><br/><br/><strong>Перспектива &mdash; </strong>Замість того, щоб розглядати наші вибори в ізоляції, ми розглядаємо, як кожне рішення, яке ми приймаємо, вплине на наш майбутній стан розуму.<br/><br/><strong>Практика &mdash; </strong>Починайте розпізнавати шаблони, які заважають спокійному розуму, такі як порушення нашого сну, надмірні відволікання і відчуття дисрегуляції, що з цього випливає. Таким чином, ми можемо почати розвивати перевагу і бажання простоти, яка дарує нам спокійний розум.",
               "image": "img/salad.png",
               "image_width": "200px"
             }
@@ -230,20 +230,20 @@
         {
           "header": "Життя з наміром",
           "id": "living-with-intention",
-          "description": "Коли ми живемо з наміром, ми вирішуємо в кожну мить, 'як' ми хочемо спрямувати нашу увагу та поведінку. Намір може трансформувати не лише наші щоденні взаємодії, але й наші загальні мотивації та напрямок. Намір може бути загальним, як-от 'Я хочу культивувати спокійний розум', або більш конкретним 'Я хочу принести більше доброти в мої взаємодії сьогодні.'",
+          "description": "Коли ми живемо з наміром, ми вирішуємо в кожен момент 'як' ми хочемо спрямувати нашу увагу і поведінку. Намір може трансформувати не лише наші щоденні взаємодії, але й наші загальні мотивації і напрям. Намір може бути загальним, як \"Я хочу культивувати спокійний розум\" або більш конкретним \"Я хочу привнести більше доброти в мої взаємодії сьогодні.\"",
           "paragraphs": [
             {
-              "body": "Connecting with intention anchors our sense of purpose and meaning. It provides clarity about what truly matters, guiding our actions in daily life. Whether improving relationships, changing behaviors, or deepening self-awareness, intention acts as a compass, fostering growth and creating a more meaningful, connected life.",
+              "body": "Зв'язок з наміром закріплює наше відчуття мети і значення. Він забезпечує ясність про те, що справді важливо, керуючи нашими діями в повсякденному житті. Чи то покращуючи стосунки, змінюючи поведінку, або поглиблюючи самосвідомість, намір діє як компас, сприяючи зростанню і створюючи більш значуще, пов'язане життя.",
               "image": "img/compass.png",
               "image_width": "180px"
             },
             {
-              "body": "We find joy and fulfillment when living in alignment with our values through intention. This brings ease, focus, and clarity to the mind, supporting balance and enabling deeper exploration of ourselves, our relationships, and the world, leading to the joy of understanding and wisdom.",
-              "insight": "Living with intention provides clarity about what truly matters, guiding our actions in daily life.",
+              "body": "Ми знаходимо радість і задоволення, коли живемо в узгодженості з нашими цінностями через намір. Це приносить легкість, фокус і ясність розуму, підтримуючи рівновагу і дозволяючи глибше дослідження себе, наших стосунків і світу, що веде до радості розуміння і мудрості.",
+              "insight": "Життя з наміром забезпечує ясність про те, що справді важливо, керуючи нашими діями в повсякденному житті.",
               "insight_image": "img/mag-head.png"
             },
             {
-              "body": "<em>To go deeper...</em><br/><br/><strong>Outlook &mdash; </strong>We can commit to some specific values that we want to guide our decisions. Sometimes writing them down can help.<br/><br/><strong>Practice &mdash; </strong>Try viewing each choice we make through the lens of our personal values."
+              "body": "<em>Щоб глибше зануритися...</em><br/><br/><strong>Перспектива &mdash; </strong>Ми можемо взяти на себе зобов'язання щодо деяких конкретних цінностей, які ми хочемо, щоб керували нашими рішеннями. Іноді їх запис може допомогти.<br/><br/><strong>Практика &mdash; </strong>Спробуйте розглядати кожен вибір, який ми робимо, через лінзу наших особистих цінностей."
             }
           ]
         }

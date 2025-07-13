@@ -59,12 +59,12 @@
   },
   "text": {
     "navigating": {
-      "header": "Strategies for Navigating Emotions",
-      "description": "To navigate a life filled with emotions, we need to create space for them, so they don’t throw us too far off course. There are two methods for us to create that space, and both are very important.",
+      "header": "Estrategias para navegar las emociones",
+      "description": "Para navegar una vida llena de emociones, necesitamos crear espacio para ellas, para que no nos desvíen demasiado del curso. Hay dos métodos para crear ese espacio, y ambos son muy importantes.",
       "image": "img/signpost.png",
-      "reflecting": "<strong>Reflecting</strong> –- we can take some time to reflect on our emotions, sort of like looking back on them, to get ready for next time.",
-      "in_the_moment": "<strong>In the moment</strong> –- we can learn to handle our emotions right when they happen, like tools to create space between us and our feelings right when we need it.",
-      "keep_reading": "Keep reading or browse the menu to learn more about these strategies..."
+      "reflecting": "<strong>Reflexionar</strong> –- podemos tomarnos un tiempo para reflexionar sobre nuestras emociones, algo así como mirar hacia atrás, para prepararnos para la próxima vez.",
+      "in_the_moment": "<strong>En el momento</strong> –- podemos aprender a manejar nuestras emociones justo cuando ocurren, como herramientas para crear espacio entre nosotros y nuestros sentimientos cuando lo necesitamos.",
+      "keep_reading": "Continúa leyendo o navega por el menú para aprender más sobre estas estrategias..."
     },
     "reflecting": {
       "header": "How to Reflect",
@@ -74,66 +74,66 @@
         {
           "header": "Labeling",
           "id": "labeling",
-          "description": "What is happening? Developing language to describe our emotions.",
+          "description": "¿Qué está pasando? Desarrollar un lenguaje para describir nuestras emociones.",
           "paragraphs": [
             {
-              "body": "<strong>How</strong> &mdash; In using the Atlas of Emotion site we can explore, with specificity, what emotion we are feeling. Instead of “I feel bad,” or “I feel stressed” we can identify what emotion we may be experiencing through the families of universal emotions listed or the non universal emotions found here.",
+              "body": "<strong>Cómo</strong> &mdash; Utilizando el sitio Atlas of Emotion podemos explorar, con especificidad, qué emoción estamos sintiendo. En lugar de \"me siento mal\" o \"me siento estresado\", podemos identificar qué emoción podríamos estar experimentando a través de las familias de emociones universales enumeradas o las emociones no universales que se encuentran aquí.",
               "image": "img/label.png",
               "image_width": "88px"
             },
             {
-              "body": "<strong>Why</strong> &mdash; Naming, or labeling our emotions creates a moment of “de-centering.” De-centering means we can re-focus on a bigger perspective by identifying our feelings instead of being caught up in the arousal of an emotion which can saturate our body and mind. Applying a word to identify our emotion supports an ‘emotion granularity.’ We practice our granularity by taking a moment to pause and consider our experience and then label, “Right now I am aware of feeling disappointed.” This simple label doesn’t have to carry any judgment or agenda, just naming can serve to help us see ourselves and the situation more clearly.",
-              "insight": "Naming an emotion can help us see ourselves and the situation more clearly.",
+              "body": "<strong>Por qué</strong> &mdash; Nombrar o etiquetar nuestras emociones crea un momento de \"descentramiento\". Descentrarse significa que podemos reenfocarnos en una perspectiva más amplia identificando nuestros sentimientos en lugar de quedar atrapados en la activación de una emoción que puede saturar nuestro cuerpo y mente. Aplicar una palabra para identificar nuestra emoción apoya una 'granularidad emocional'. Practicamos nuestra granularidad tomando un momento para pausar y considerar nuestra experiencia y luego etiquetar: \"Ahora mismo estoy consciente de sentir decepción\". Esta etiqueta simple no tiene que llevar ningún juicio o agenda, solo nombrar puede servir para ayudarnos a vernos a nosotros mismos y la situación más claramente.",
+              "insight": "Nombrar una emoción puede ayudarnos a vernos a nosotros mismos y la situación más claramente.",
               "insight_image": "img/puzzle-head.png"
             }
           ]
         },
         {
-          "header": "Understanding Triggers",
+          "header": "Entendiendo los desencadenantes",
           "id": "understanding-triggers",
-          "description": "What is making me feel this emotion? Learning about how triggers work.",
+          "description": "¿Qué me está haciendo sentir esta emoción? Aprendiendo sobre cómo funcionan los desencadenantes.",
           "paragraphs": [
             {
-              "body": "<strong>How</strong> &mdash; When we look at the timeline of emotion we learn that our trigger is comprised of both our immediate state and context, as well as older stories and perceptions. We can choose an emotion episode when we felt we reacted too strongly and then consider what was going on in our immediate experience, our pre-condition, of hunger, fatigue, stress, etc. which might influence how we become emotional. We then explore what might be in the database, the storehouse of past experiences that we may impose on to  this current experience.",
+              "body": "<strong>Cómo</strong> &mdash; Cuando miramos la línea de tiempo de la emoción aprendemos que nuestro desencadenante está compuesto tanto por nuestro estado inmediato y contexto, como por historias y percepciones más antiguas. Podemos elegir un episodio emocional cuando sentimos que reaccionamos demasiado fuerte y luego considerar qué estaba pasando en nuestra experiencia inmediata, nuestra pre-condición, de hambre, fatiga, estrés, etc. que podría influir en cómo nos volvemos emocionales. Luego exploramos lo que podría estar en la base de datos, el almacén de experiencias pasadas que podemos imponer a esta experiencia actual.",
               "image": "img/triggers.png",
               "image_width": "200px"
             },
             {
-              "body": "<strong>Why</strong> &mdash; We are triggered to an emotion in a 25th of a second and rarely can identify all the facts which contribute to that emotion. When we start exploring the pre-condition and database we develop greater insight about our role in our emotions, it isn’t just the outside world–it is our current state and past stories that create an emotional episode. This understanding can contribute to our reappraisal, to remember that when we become emotional it is often a complex process which needs space and reflection. We could say to ourselves, “I am feeling worried and there are many factors that are contributing to this worry, I am tired and have often had difficulty with transitions.”",
-              "insight": "It isn't just the outside world&mdash;it is our current state and past stories that create an emotional episode.",
+              "body": "<strong>Por qué</strong> &mdash; Somos desencadenados a una emoción en una veinticincoava parte de segundo y rara vez podemos identificar todos los hechos que contribuyen a esa emoción. Cuando comenzamos a explorar la pre-condición y la base de datos desarrollamos una mayor comprensión sobre nuestro papel en nuestras emociones, no es solo el mundo exterior - es nuestro estado actual y las historias pasadas las que crean un episodio emocional. Esta comprensión puede contribuir a nuestra reevaluación, recordar que cuando nos volvemos emocionales es a menudo un proceso complejo que necesita espacio y reflexión. Podríamos decirnos a nosotros mismos: \"Me siento preocupado y hay muchos factores que están contribuyendo a esta preocupación, estoy cansado y a menudo he tenido dificultades con las transiciones\".",
+              "insight": "No es solo el mundo exterior&mdash;es nuestro estado actual y las historias pasadas las que crean un episodio emocional.",
               "insight_image": "img/pop-head.png"
             }
           ]
         },
         {
-          "header": "The Body",
+          "header": "El cuerpo",
           "id": "the-body",
-          "description": "What does an emotion feel like? Learning to be an observer of emotions in the body.",
+          "description": "¿Cómo se siente una emoción? Aprender a ser un observador de las emociones en el cuerpo.",
           "paragraphs": [
             {
-              "body": "<strong>How</strong> &mdash; For some of us feeling emotion in the body is quite clear, we recognize areas in the face, chest, or belly where there is increased sensations, such has heavy heat in our face when angry, or a hollow feeling in the chest when lonely. For others access to sensations of emotion in the body is less available, or the focus is more caught up in thoughts. Just as we recognize and apply labels to the type of emotion we are feeling, we can identify the types of sensations in our body and where we are feeling them. Consider where in your body you feel worried, and what are the qualities of this sensation, light, heavy, tingling, throbbing, pointy etc.",
+              "body": "<strong>Cómo</strong> &mdash; Para algunos de nosotros, sentir la emoción en el cuerpo es bastante claro, reconocemos áreas en la cara, el pecho o el vientre donde hay sensaciones aumentadas, como calor pesado en nuestra cara cuando estamos enojados, o una sensación hueca en el pecho cuando estamos solos. Para otros, el acceso a las sensaciones de emoción en el cuerpo es menos disponible, o el enfoque está más atrapado en pensamientos. Así como reconocemos y aplicamos etiquetas al tipo de emoción que estamos sintiendo, podemos identificar los tipos de sensaciones en nuestro cuerpo y dónde las estamos sintiendo. Considera dónde en tu cuerpo sientes preocupación, y cuáles son las cualidades de esta sensación, ligera, pesada, hormigueante, pulsante, puntiaguda, etc.",
               "image": "img/body.png",
               "image_width": "160px"
             },
             {
-              "body": "<strong>Why</strong> &mdash; Our emotions are an embodied experience, they are not just a mental phenomenon. Our entire nervous system rallies in response to our emotion to help us prepare for the opportunities and challenges which the emotion is alerting us to. When we develop a closer relationship to our embodied experience of emotion we are developing 'interoception'. Interoception is a trainable skill, a way to recognize our experience of emotions in the body which can help with de-centering, self soothing and reappraisal . For example if we feel a lot of bright, intense, energy in the chest with annoyance we can say to ourselves \"I am noticing this bright, intense energy in my chest, this makes senes because I am feeling annoyed and my body is responding.\"",
-              "insight": "A closer relationship to our embodied experience can help with de-centering, self soothing and reappraisal",
+              "body": "<strong>Por qué</strong> &mdash; Nuestras emociones son una experiencia encarnada, no son solo un fenómeno mental. Todo nuestro sistema nervioso se moviliza en respuesta a nuestra emoción para ayudarnos a prepararnos para las oportunidades y desafíos que la emoción nos está alertando. Cuando desarrollamos una relación más cercana con nuestra experiencia encarnada de la emoción estamos desarrollando 'interocepción'. La interocepción es una habilidad entrenable, una forma de reconocer nuestra experiencia de las emociones en el cuerpo que puede ayudar con el descentramiento, el auto-calmado y la reevaluación. Por ejemplo, si sentimos mucha energía brillante e intensa en el pecho con molestia podemos decirnos a nosotros mismos: \"Estoy notando esta energía brillante e intensa en mi pecho, esto tiene sentido porque me siento molesto y mi cuerpo está respondiendo\".",
+              "insight": "Una relación más cercana con nuestra experiencia encarnada puede ayudar con el descentramiento, el auto-calmado y la reevaluación",
               "insight_image": "img/mag-head.png"
             }
           ]
         },
         {
-          "header": "Creating Choice",
+          "header": "Creando opciones",
           "id": "creating-choice",
-          "description": "Where did that reaction come from? Creating choice in our responses.",
+          "description": "¿De dónde vino esa reacción? Creando opciones en nuestras respuestas.",
           "paragraphs": [
             {
-              "body": "<strong>How</strong> &mdash; Many of us only become aware of our emotions during or right after we have behaved in a way we regret. The intensity, and rapidity of emotion can prevent us from recognizing the trigger and experience, but once we feel that urgency to respond or difficulty in suppressing we become aware we are emotional. Recognizing we are emotional is an incomparably valuable skill. Once we have recognized our emotions are acting through us, we can pause and get very curious about the momentum of our response, which can be ebullient joy or blinding anger.",
-              "insight": "Once we have recognized our emotions are acting through us, we can pause and get very curious about the momentum of our response",
+              "body": "<strong>Cómo</strong> &mdash; Muchos de nosotros solo nos damos cuenta de nuestras emociones durante o justo después de haber comportado de una manera que lamentamos. La intensidad y rapidez de la emoción puede impedirnos reconocer el desencadenante y la experiencia, pero una vez que sentimos esa urgencia de responder o dificultad para suprimir, nos damos cuenta de que estamos emocionales. Reconocer que estamos emocionales es una habilidad incomparablemente valiosa. Una vez que hemos reconocido que nuestras emociones están actuando a través de nosotros, podemos pausar y volvernos muy curiosos sobre el impulso de nuestra respuesta, que puede ser alegría exuberante o ira cegadora.",
+              "insight": "Una vez que hemos reconocido que nuestras emociones están actuando a través de nosotros, podemos pausar y volvernos muy curiosos sobre el impulso de nuestra respuesta",
               "insight_image": "img/double-head.png"
             },
             {
-              "body": "<strong>Why</strong> &mdash; Our emotions prepare us to respond to the threats and opportunities in our world, a surprise visit from a friend or an unforeseen loss of work. Our responses often occur before we have time to recognize we are emotional and are intended to help us. Responses can be very functional, but sometimes we react in ways that are challenging &mdash; usually because we misread the trigger &mdash; we project something from our past on to what is happening now and respond to that fabricated reality. Our responses include external such as raising our voice in frustration, slinking away in anxiety, and rejoicing in gratitude. Some of our responses are internal, trying to prevent the emotion from being seen or fully expressed such as avoidance and distraction.",
+              "body": "<strong>Por qué</strong> &mdash; Nuestras emociones nos preparan para responder a las amenazas y oportunidades en nuestro mundo, una visita sorpresa de un amigo o una pérdida imprevista del trabajo. Nuestras respuestas a menudo ocurren antes de que tengamos tiempo para reconocer que estamos emocionales y están destinadas a ayudarnos. Las respuestas pueden ser muy funcionales, pero a veces reaccionamos de maneras que son desafiantes - usualmente porque malinterpretamos el desencadenante - proyectamos algo de nuestro pasado en lo que está pasando ahora y respondemos a esa realidad fabricada. Nuestras respuestas incluyen externas como alzar la voz en frustración, alejarse sigilosamente en ansiedad, y regocijarse en gratitud. Algunas de nuestras respuestas son internas, tratando de evitar que la emoción sea vista o completamente expresada como evitación y distracción.",
               "image": "img/responses.png",
               "image_width": "200px"
             }
@@ -142,23 +142,23 @@
       ]
     },
     "in_the_moment": {
-      "header": "In the Moment",
+      "header": "En el momento",
       "id": "in-the-moment",
-      "description": "In-the-moment strategies use executive functioning to move from the embodied arousal of our emotion to clear understanding about what is happening, a calm mind that allows for choice.",
+      "description": "Las estrategias en el momento usan el funcionamiento ejecutivo para moverse desde la activación encarnada de nuestra emoción hacia una comprensión clara sobre lo que está sucediendo, una mente calmada que permite la elección.",
       "sub_sections": [
         {
-          "header": "Mindfulness and Intention Setting",
+          "header": "Atención plena y establecimiento de intenciones",
           "id": "mindfulness",
-          "description": "In each moment, we can stay aware of our thoughts and feelings and make decisions in the present about how we wish to behave in the future.",
+          "description": "En cada momento, podemos mantenernos conscientes de nuestros pensamientos y sentimientos y tomar decisiones en el presente sobre cómo deseamos comportarnos en el futuro.",
           "paragraphs": [
             {
-              "body": "<strong>Mindfulness</strong> &mdash; Mindfulness is the practice of paying full attention to the present moment, without judgment. Practicing mindfulness consistently helps us be more conscious of what is going on around us in the present and less caught in thoughts and projections from the past. When we are more mindful, we develop a higher level of self-awareness called “meta-awareness” that helps us understand and manage our reactions and behaviors better. We become naturally more aware of our thoughts, feelings, and surroundings, accepting them as they are, which can help reduce stress and improve overall well-being. Although mindfulness always happens in the present moment, there are daily practices that increase the amount of mindfulness we tend to bring to each moment, such as meditation.",
+              "body": "<strong>Atención plena</strong> &mdash; La atención plena es la práctica de prestar total atención al momento presente, sin juicio. Practicar la atención plena de manera consistente nos ayuda a estar más conscientes de lo que está sucediendo a nuestro alrededor en el presente y menos atrapados en pensamientos y proyecciones del pasado. Cuando somos más atentos, desarrollamos un nivel más alto de autoconciencia llamado \"meta-conciencia\" que nos ayuda a comprender y manejar mejor nuestras reacciones y comportamientos. Nos volvemos naturalmente más conscientes de nuestros pensamientos, sentimientos y entorno, aceptándolos como son, lo cual puede ayudar a reducir el estrés y mejorar el bienestar general. Aunque la atención plena siempre sucede en el momento presente, hay prácticas diarias que aumentan la cantidad de atención plena que tendemos a traer a cada momento, como la meditación.",
               "image": "img/mandala.png",
               "image_width": "200px"
             },
             {
-              "body": "<strong>Intention Setting</strong> &mdash; Much as a mediation practice can increase meta-awareness, a daily practice of setting clear intentions for peace of mind, kindness, clarity can create a supportive mindset for whatever we encounter. Intention setting is especially helpful before we go in to an anticipated ‘challenging’ experience. We prospectively, in the future, set an intention for kindness at the start of our day before we encounter a person, place, or experience.",
-              "insight": "Create a supportive mindset for whatever we encounter",
+              "body": "<strong>Establecimiento de intenciones</strong> &mdash; Así como una práctica de meditación puede aumentar la meta-conciencia, una práctica diaria de establecer intenciones claras para la paz mental, la bondad y la claridad puede crear una mentalidad de apoyo para cualquier cosa que encontremos. El establecimiento de intenciones es especialmente útil antes de entrar en una experiencia 'desafiante' anticipada. Prospectivamente, en el futuro, establecemos una intención de bondad al comienzo de nuestro día antes de encontrar a una persona, lugar o experiencia.",
+              "insight": "Crear una mentalidad de apoyo para cualquier cosa que encontremos",
               "insight_image": "img/puzzle-head.png"
             }
           ]
@@ -169,81 +169,81 @@
           "description": "Pausing to feel the body is a powerful strategy for keeping our mind open to all that happened before a trigger, and all that might follow&mdash;it can prevent a temporary emotional state from dominating how we interpret what just happened and the possible future.",
           "paragraphs": [
             {
-              "body": "<strong>Breath</strong> &mdash; A deep breath is one very helpful way to pause. It brings more oxygen to our nervous system and help us process the physical arousal in our body. A big part of our emotional state is the physical changes we experience, and our breath is a way to physically assist our body during the pause.",
+              "body": "<strong>Respiración</strong> &mdash; Una respiración profunda es una forma muy útil de hacer una pausa. Trae más oxígeno a nuestro sistema nervioso y nos ayuda a procesar la activación física en nuestro cuerpo. Una gran parte de nuestro estado emocional son los cambios físicos que experimentamos, y nuestra respiración es una forma de asistir físicamente a nuestro cuerpo durante la pausa.",
               "image": "img/breath.png",
               "image_width": "180px"
             },
             {
-              "body": "<strong>Sensations</strong> &mdash; Bringing attention and awareness to physical sensations in the body can prevent an emotion from escalating. While we are sensing the body, we think less about what seemed to cause the emotion, just feeling and sensing the experience in the body. It helps to be specific–what sensations are we feeling and where, how are they changing? When we focus on the physical reality of being in our body, emotions distort our perception less.",
-              "insight": "When we focus on the physical reality of being in our body, emotions distort our perception less.",
+              "body": "<strong>Sensaciones</strong> &mdash; Traer atención y conciencia a las sensaciones físicas en el cuerpo puede prevenir que una emoción se intensifique. Mientras estamos sintiendo el cuerpo, pensamos menos en lo que parecía causar la emoción, solo sintiendo y percibiendo la experiencia en el cuerpo. Ayuda ser específico: ¿qué sensaciones estamos sintiendo y dónde, cómo están cambiando? Cuando nos enfocamos en la realidad física de estar en nuestro cuerpo, las emociones distorsionan menos nuestra percepción.",
+              "insight": "Cuando nos enfocamos en la realidad física de estar en nuestro cuerpo, las emociones distorsionan menos nuestra percepción.",
               "insight_image": "img/heart-head.png"
             },
             {
-              "body": "Note that everyone's relationship with their body is unique, and sometimes a history of trauma can affect our ability to use the body and breath as effective strategies. For more information on alternative strategies for \"grounding\", see <a target=\"_blank\" rel=\"noopener\" href=\"https://psychcentral.com/health/trauma-informed-mindfulness#how-to-be-trauma-informed\">this article.</a>"
+              "body": "Tenga en cuenta que la relación de cada persona con su cuerpo es única, y a veces un historial de trauma puede afectar nuestra capacidad de usar el cuerpo y la respiración como estrategias efectivas. Para más información sobre estrategias alternativas para \"enraizarse\", vea <a target=\"_blank\" rel=\"noopener\" href=\"https://psychcentral.com/health/trauma-informed-mindfulness#how-to-be-trauma-informed\">este artículo.</a>"
             }
           ]
         }
       ]
     },
     "living_in_balance": {
-      "header": "Living in Balance",
+      "header": "Vivir en equilibrio",
       "id": "living-in-balance",
-      "description": "We often think of navigating emotions as reaction to one specific event after another throughout our lives, managing an out burst of anger or savoring a feeling of joy. But in order to reach our bigger goal of a calm mind we must also consider the big-picture, beyond the specific emotion episodes. While managing the momentary responses is essential to a balanced life we also need to step back and consider the bigger context of how we live our lives and why we want to cultivate a calm mind in which we experience balance. The purpose of emotion awareness isn’t to be ‘happy all the time’ but instead to help us learn from our emotions and develop an emotional flexibility that allows our deeper desires and aspirations to blossom. Two of the most influential ways to consistently maintain calm in our lives are outlook and practice.",
+      "description": "A menudo pensamos en navegar las emociones como reacción a un evento específico tras otro a lo largo de nuestras vidas, manejando un estallido de ira o saboreando un sentimiento de alegría. Pero para alcanzar nuestro objetivo mayor de una mente calmada, también debemos considerar el panorama general, más allá de los episodios emocionales específicos. Mientras que manejar las respuestas momentáneas es esencial para una vida equilibrada, también necesitamos dar un paso atrás y considerar el contexto más amplio de cómo vivimos nuestras vidas y por qué queremos cultivar una mente calmada en la que experimentemos equilibrio. El propósito de la conciencia emocional no es estar 'felices todo el tiempo' sino ayudarnos a aprender de nuestras emociones y desarrollar una flexibilidad emocional que permita que nuestros deseos y aspiraciones más profundos florezcan. Dos de las formas más influyentes de mantener consistentemente la calma en nuestras vidas son la perspectiva y la práctica.",
       "sub_sections": [
         {
-          "header": "Compassion",
+          "header": "Compasión",
           "id": "compassion",
-          "description": "Compassion can be both a practice and a way of relating to ourselves and others. By understanding the cultural and evolutionary influences on our emotions, we can more easily accept the challenges we face, making it easier to extend compassion to ourselves and others.",
+          "description": "La compasión puede ser tanto una práctica como una forma de relacionarnos con nosotros mismos y con otros. Al comprender las influencias culturales y evolutivas en nuestras emociones, podemos aceptar más fácilmente los desafíos que enfrentamos, haciendo más fácil extender compasión hacia nosotros mismos y otros.",
           "paragraphs": [
             {
-              "body": "Compassion is especially helpful when we set intentions to manage our emotions but fall into old patterns. In these moments, it protects us from hopelessness and burnout. Buddhist teachings define Compassion as the sincere wish for the self and others to be free from suffering and its causes. Similarly, science defines it as \"the feeling that arises in witnessing another's suffering, and that motivates a subsequent desire to help\" (Goetz et al., 2010). Key elements of compassion are recognizing suffering and responding to it.",
+              "body": "La compasión es especialmente útil cuando establecemos intenciones para manejar nuestras emociones pero caemos en patrones antiguos. En estos momentos, nos protege de la desesperanza y el agotamiento. Las enseñanzas budistas definen la Compasión como el deseo sincero para que el yo y otros estén libres del sufrimiento y sus causas. De manera similar, la ciencia la define como \"el sentimiento que surge al presenciar el sufrimiento de otro, y que motiva un deseo posterior de ayudar\" (Goetz et al., 2010). Los elementos clave de la compasión son reconocer el sufrimiento y responder a él.",
               "image": "img/compassion.jpg",
               "image_width": "200px"
             },
             {
-              "body": "We can apply this to our own struggles by practicing self-compassion. This means acknowledging our difficulties instead of avoiding them, recognizing that such struggles are universal, and extending kindness toward ourselves, as a caring friend would.",
-              "insight": "Compassion means recognizing that everyone struggles and extending kindness to oneself and others",
+              "body": "Podemos aplicar esto a nuestras propias luchas practicando la autocompasión. Esto significa reconocer nuestras dificultades en lugar de evitarlas, reconocer que tales luchas son universales, y extender bondad hacia nosotros mismos, como lo haría un amigo cariñoso.",
+              "insight": "La compasión significa reconocer que todos luchan y extender bondad hacia uno mismo y otros",
               "insight_image": "img/heart-head.png"
             },
             {
-              "body": "<em>To go deeper...</em><br/><br/><strong>Outlook &mdash; </strong>Consider cultivating an ongoing stance of compassion, not only a response to immediate difficulty but a way of seeing the world.<br/><br/><strong>Practice &mdash; </strong>Make a daily practice of remembering the unifying truth that everyone, everywhere, wants to struggle less with difficult emotions and we all need compassion for our difficulties."
+              "body": "<em>Para profundizar...</em><br/><br/><strong>Perspectiva &mdash; </strong>Considera cultivar una postura continua de compasión, no solo una respuesta a la dificultad inmediata sino una forma de ver el mundo.<br/><br/><strong>Práctica &mdash; </strong>Haz una práctica diaria de recordar la verdad unificadora de que todos, en todas partes, quieren luchar menos con emociones difíciles y todos necesitamos compasión por nuestras dificultades."
             }
           ]
         },
         {
-          "header": "Lifestyle for Calm",
+          "header": "Estilo de vida para la calma",
           "id": "lifestyle-for-calm",
-          "description": "Our emotions are deeply connected to our physical experiences. Sleep, diet, stress, substance use, and even the weather affect how we feel. Poor sleep, for instance, can intensify emotions, while intense emotions can disrupt sleep, creating a cycle of overwhelm. Similarly, being too hungry or too full can lead to physical discomfort and emotional challenges.",
+          "description": "Nuestras emociones están profundamente conectadas con nuestras experiencias físicas. El sueño, la dieta, el estrés, el uso de sustancias, e incluso el clima afectan cómo nos sentimos. La falta de sueño, por ejemplo, puede intensificar las emociones, mientras que las emociones intensas pueden interrumpir el sueño, creando un ciclo de abrumamiento. De manera similar, tener demasiada hambre o estar demasiado lleno puede llevar a incomodidad física y desafíos emocionales.",
           "paragraphs": [
             {
-              "body": "By looking at our overall lifestyle, we can better understand our emotions and make changes that support balance and well-being.",
-              "insight": "Each decision we make will impact our future state of mind.",
+              "body": "Al observar nuestro estilo de vida general, podemos comprender mejor nuestras emociones y hacer cambios que apoyen el equilibrio y el bienestar.",
+              "insight": "Cada decisión que tomamos impactará nuestro estado mental futuro.",
               "insight_image": "img/pop-head.png"
             },
             {
-              "body": "<em>To go deeper...</em><br/><br/><strong>Outlook &mdash; </strong>Rather than considering our choices in isolation, we consider how each decision we make will impact our future state of mind.<br/><br/><strong>Practice &mdash; </strong>Start to recognize patterns which interfere with a calm mind such as disruptions to our sleep, excess distractions, and the resultant experience of dysregulation. In this way, we may start to develop a preference and desire for the simplicity that affords us a calm mind.",
+              "body": "<em>Para profundizar...</em><br/><br/><strong>Perspectiva &mdash; </strong>En lugar de considerar nuestras elecciones en aislamiento, consideramos cómo cada decisión que tomamos impactará nuestro estado mental futuro.<br/><br/><strong>Práctica &mdash; </strong>Comienza a reconocer patrones que interfieren con una mente calmada como interrupciones en nuestro sueño, distracciones excesivas, y la experiencia resultante de desregulación. De esta manera, podemos comenzar a desarrollar una preferencia y deseo por la simplicidad que nos proporciona una mente calmada.",
               "image": "img/salad.png",
               "image_width": "200px"
             }
           ]
         },
         {
-          "header": "Living with Intention",
+          "header": "Vivir con intención",
           "id": "living-with-intention",
-          "description": "When we live with intention, we decide in each moment ‘how’ we want to direct our attention and behaviors.  Intention  can transform not only our daily interactions, but our overarching motivations and direction. An intention could be general such as \"I want to cultivate a calm mind\" or more specific \"I want to bring more kindness in to my interactions today.\"",
+          "description": "Cuando vivimos con intención, decidimos en cada momento 'cómo' queremos dirigir nuestra atención y comportamientos. La intención puede transformar no solo nuestras interacciones diarias, sino nuestras motivaciones y dirección generales. Una intención podría ser general como \"Quiero cultivar una mente calmada\" o más específica \"Quiero traer más bondad a mis interacciones hoy.\"",
           "paragraphs": [
             {
-              "body": "Connecting with intention anchors our sense of purpose and meaning. It provides clarity about what truly matters, guiding our actions in daily life. Whether improving relationships, changing behaviors, or deepening self-awareness, intention acts as a compass, fostering growth and creating a more meaningful, connected life.",
+              "body": "Conectar con la intención ancla nuestro sentido de propósito y significado. Proporciona claridad sobre lo que realmente importa, guiando nuestras acciones en la vida diaria. Ya sea mejorando relaciones, cambiando comportamientos, o profundizando la autoconciencia, la intención actúa como una brújula, fomentando el crecimiento y creando una vida más significativa y conectada.",
               "image": "img/compass.png",
               "image_width": "180px"
             },
             {
-              "body": "We find joy and fulfillment when living in alignment with our values through intention. This brings ease, focus, and clarity to the mind, supporting balance and enabling deeper exploration of ourselves, our relationships, and the world, leading to the joy of understanding and wisdom.",
-              "insight": "Living with intention provides clarity about what truly matters, guiding our actions in daily life.",
+              "body": "Encontramos alegría y plenitud cuando vivimos en alineación con nuestros valores a través de la intención. Esto trae facilidad, enfoque y claridad a la mente, apoyando el equilibrio y permitiendo una exploración más profunda de nosotros mismos, nuestras relaciones y el mundo, llevando a la alegría del entendimiento y la sabiduría.",
+              "insight": "Vivir con intención proporciona claridad sobre lo que realmente importa, guiando nuestras acciones en la vida diaria.",
               "insight_image": "img/mag-head.png"
             },
             {
-              "body": "<em>To go deeper...</em><br/><br/><strong>Outlook &mdash; </strong>We can commit to some specific values that we want to guide our decisions. Sometimes writing them down can help.<br/><br/><strong>Practice &mdash; </strong>Try viewing each choice we make through the lens of our personal values."
+              "body": "<em>Para profundizar...</em><br/><br/><strong>Perspectiva &mdash; </strong>Podemos comprometernos con algunos valores específicos que queremos que guíen nuestras decisiones. A veces escribirlos puede ayudar.<br/><br/><strong>Práctica &mdash; </strong>Trata de ver cada elección que hacemos a través de la lente de nuestros valores personales."
             }
           ]
         }
