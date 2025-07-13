@@ -464,7 +464,7 @@ collections:
             fields:
               - { label: "Header", name: "header", widget: "string", i18n: true }
               - { label: "Description", name: "description", widget: "markdown", i18n: true }
-              - { label: "Image", name: "image", widget: "image", i18n: true }
+              - { label: "Image", name: "image", widget: "image", i18n: false }
               - { label: "Reflecting Text", name: "reflecting", widget: "markdown", i18n: true }
               - { label: "In The Moment Text", name: "in_the_moment", widget: "markdown", i18n: true }
               - { label: "Keep Reading Text", name: "keep_reading", widget: "markdown", i18n: true }
@@ -490,10 +490,10 @@ collections:
                     i18n: true
                     fields:
                       - { label: "Body", name: "body", widget: "markdown", i18n: true }
-                      - { label: "Image", name: "image", widget: "image", required: false, i18n: true }
+                      - { label: "Image", name: "image", widget: "image", required: false, i18n: false }
                       - { label: "Image Width", name: "image_width", widget: "string", required: false, i18n: true }
                       - { label: "Insight", name: "insight", widget: "string", required: false, i18n: true }
-                      - { label: "Insight Image", name: "insight_image", widget: "image", required: false, i18n: true }
+                      - { label: "Insight Image", name: "insight_image", widget: "image", required: false, i18n: false }
           - label: "In the Moment Section"
             name: "in_the_moment"
             widget: "object"
@@ -516,10 +516,10 @@ collections:
                     i18n: true
                     fields:
                       - { label: "Body", name: "body", widget: "markdown", i18n: true }
-                      - { label: "Image", name: "image", widget: "image", required: false, i18n: true }
+                      - { label: "Image", name: "image", widget: "image", required: false, i18n: false }
                       - { label: "Image Width", name: "image_width", widget: "string", required: false, i18n: true }
                       - { label: "Insight", name: "insight", widget: "string", required: false, i18n: true }
-                      - { label: "Insight Image", name: "insight_image", widget: "image", required: false, i18n: true }
+                      - { label: "Insight Image", name: "insight_image", widget: "image", required: false, i18n: false }
           - label: "Living in Balance Section"
             name: "living_in_balance"
             widget: "object"
@@ -542,10 +542,10 @@ collections:
                     i18n: true
                     fields:
                       - { label: "Body", name: "body", widget: "markdown", i18n: true }
-                      - { label: "Image", name: "image", widget: "image", required: false, i18n: true }
+                      - { label: "Image", name: "image", widget: "image", required: false, i18n: false }
                       - { label: "Image Width", name: "image_width", widget: "string", required: false, i18n: true }
                       - { label: "Insight", name: "insight", widget: "string", required: false, i18n: true }
-                      - { label: "Insight Image", name: "insight_image", widget: "image", required: false, i18n: true }
+                      - { label: "Insight Image", name: "insight_image", widget: "image", required: false, i18n: false }
 
 # All other GitHub related backend settings have been removed or are ensured to be commented out.
 # Ensure there are no other 'backend:' sections. 
