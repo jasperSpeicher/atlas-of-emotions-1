@@ -10,6 +10,7 @@ import {
 } from "./scrollerDataHelpers.js";
 import { configureTweens, getTweenComponentSelector } from "./tweenHelpers.js";
 import { sharedStyle } from "./config.js";
+import appStrings from "../appStrings.js";
 
 /**
  * Main entry point to create and initialize the ImmersiveScroll structure.
@@ -66,30 +67,13 @@ export function createImmersiveScrollDOM(scrollerSections) {
 
 	pageContainer.appendChild(emotionColorField);
 
-	// Example emotion labels
-	const labels = [
-		{
-			id: "waking-up__emotion-label-fear",
-			text: "FEAR",
-			extraClass: "waking-up__emotion-label--with-circle",
-		},
-		{
-			id: "waking-up__emotion-label-sadness",
-			text: "SADNESS",
-			extraClass: "waking-up__emotion-label--with-circle",
-		},
-		{ id: "waking-up__emotion-label-anger", text: "ANGER" },
-		{
-			id: "waking-up__emotion-label-disgust",
-			text: "DISGUST",
-			extraClass: "waking-up__emotion-label--with-circle",
-		},
-		{
-			id: "waking-up__emotion-label-enjoyment",
-			text: "ENJOYMENT",
-			extraClass: "waking-up__emotion-label--with-circle",
-		},
-	];
+	// Get emotion labels from the translation system
+	const emotions = ['fear', 'sadness', 'anger', 'disgust', 'enjoyment'];
+	const labels = emotions.map(emotion => ({
+		id: `waking-up__emotion-label-${emotion}`,
+		text: appStrings().getStr(`emotionsData.emotions.${emotion}.continent.name`).toUpperCase(),
+		extraClass: emotion !== 'anger' ? "waking-up__emotion-label--with-circle" : "",
+	}));
 
 	const emotionContainerInner = document.createElement("div");
 	emotionContainer.appendChild(emotionContainerInner);
