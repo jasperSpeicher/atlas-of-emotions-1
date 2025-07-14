@@ -1,0 +1,254 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "How to Reflect",
+        "id": "how-to-reflect",
+        "sub_sections": [
+          {
+            "title": "Labeling",
+            "id": "labeling"
+          },
+          {
+            "title": "Understanding Triggers",
+            "id": "understanding-triggers"
+          },
+          {
+            "title": "Embodying Emotion",
+            "id": "the-body"
+          },
+          {
+            "title": "Creating Choice",
+            "id": "creating-choice"
+          }
+        ]
+      },
+      {
+        "title": "In the Moment",
+        "id": "in-the-moment",
+        "sub_sections": [
+          {
+            "title": "Mindfulness & Intentions",
+            "id": "mindfulness"
+          },
+          {
+            "title": "Pausing & Feeling",
+            "id": "pausing"
+          }
+        ]
+      },
+      {
+        "title": "Living in Balance",
+        "id": "living-in-balance",
+        "sub_sections": [
+          {
+            "title": "Compassion",
+            "id": "compassion"
+          },
+          {
+            "title": "Lifestyle for Calm",
+            "id": "lifestyle-for-calm"
+          },
+          {
+            "title": "Living with Intention",
+            "id": "living-with-intention"
+          }
+        ]
+      }
+    ]
+  },
+  "text": {
+    "navigating": {
+      "header": "Strategies for Navigating Emotions",
+      "description": "To navigate a life filled with emotions, we need to create space for them, so they don’t throw us too far off course. There are two methods for us to create that space, and both are very important.",
+      "image": "/assets/uploads/signpost.png",
+      "reflecting": "<strong>Reflecting</strong> –- we can take some time to reflect on our emotions, sort of like looking back on them, to get ready for next time.",
+      "in_the_moment": "<strong>In the moment</strong> –- we can learn to handle our emotions right when they happen, like tools to create space between us and our feelings right when we need it.",
+      "keep_reading": "Keep reading or browse the menu to learn more about these strategies..."
+    },
+    "reflecting": {
+      "header": "How to Reflect",
+      "id": "how-to-reflect",
+      "description": "Reflecting is an essential aspect of developing emotion awareness. Through the strategies listed below you can both learn more about your emotions and the important messages they have to share with you and practice ways to find a ‘pause’ and slow down reactivity.",
+      "sub_sections": [
+        {
+          "header": "Labeling",
+          "id": "labeling",
+          "description": "What is happening? Developing language to describe our emotions.",
+          "paragraphs": [
+            {
+              "body": "<strong>How</strong> &mdash; In using the Atlas of Emotion site we can explore, with specificity, what emotion we are feeling. Instead of “I feel bad,” or “I feel stressed” we can identify what emotion we may be experiencing through the families of universal emotions listed or the non universal emotions found here.",
+              "image": "assets/uploads/label.png",
+              "image_width": "88px"
+            },
+            {
+              "body": "<strong>Why</strong> &mdash; Naming, or labeling our emotions creates a moment of “de-centering.” De-centering means we can re-focus on a bigger perspective by identifying our feelings instead of being caught up in the arousal of an emotion which can saturate our body and mind. Applying a word to identify our emotion supports an ‘emotion granularity.’ We practice our granularity by taking a moment to pause and consider our experience and then label, “Right now I am aware of feeling disappointed.” This simple label doesn’t have to carry any judgment or agenda, just naming can serve to help us see ourselves and the situation more clearly.",
+              "insight": "Naming an emotion can help us see ourselves and the situation more clearly.",
+              "insight_image": "assets/uploads/puzzle-head.png"
+            }
+          ]
+        },
+        {
+          "header": "Understanding Triggers",
+          "id": "understanding-triggers",
+          "description": "What is making me feel this emotion? Learning about how triggers work.",
+          "paragraphs": [
+            {
+              "body": "<strong>How</strong> &mdash; When we look at the timeline of emotion we learn that our trigger is comprised of both our immediate state and context, as well as older stories and perceptions. We can choose an emotion episode when we felt we reacted too strongly and then consider what was going on in our immediate experience, our pre-condition, of hunger, fatigue, stress, etc. which might influence how we become emotional. We then explore what might be in the database, the storehouse of past experiences that we may impose on to  this current experience.",
+              "image": "assets/uploads/triggers.png",
+              "image_width": "200px"
+            },
+            {
+              "body": "<strong>Why</strong> &mdash; We are triggered to an emotion in a 25th of a second and rarely can identify all the facts which contribute to that emotion. When we start exploring the pre-condition and database we develop greater insight about our role in our emotions, it isn’t just the outside world–it is our current state and past stories that create an emotional episode. This understanding can contribute to our reappraisal, to remember that when we become emotional it is often a complex process which needs space and reflection. We could say to ourselves, “I am feeling worried and there are many factors that are contributing to this worry, I am tired and have often had difficulty with transitions.”",
+              "insight": "It isn't just the outside world&mdash;it is our current state and past stories that create an emotional episode.",
+              "insight_image": "assets/uploads/pop-head.png"
+            }
+          ]
+        },
+        {
+          "header": "The Body",
+          "id": "the-body",
+          "description": "What does an emotion feel like? Learning to be an observer of emotions in the body.",
+          "paragraphs": [
+            {
+              "body": "<strong>How</strong> &mdash; For some of us feeling emotion in the body is quite clear, we recognize areas in the face, chest, or belly where there is increased sensations, such has heavy heat in our face when angry, or a hollow feeling in the chest when lonely. For others access to sensations of emotion in the body is less available, or the focus is more caught up in thoughts. Just as we recognize and apply labels to the type of emotion we are feeling, we can identify the types of sensations in our body and where we are feeling them. Consider where in your body you feel worried, and what are the qualities of this sensation, light, heavy, tingling, throbbing, pointy etc.",
+              "image": "assets/uploads/body.png",
+              "image_width": "160px"
+            },
+            {
+              "body": "<strong>Why</strong> &mdash; Our emotions are an embodied experience, they are not just a mental phenomenon. Our entire nervous system rallies in response to our emotion to help us prepare for the opportunities and challenges which the emotion is alerting us to. When we develop a closer relationship to our embodied experience of emotion we are developing 'interoception'. Interoception is a trainable skill, a way to recognize our experience of emotions in the body which can help with de-centering, self soothing and reappraisal . For example if we feel a lot of bright, intense, energy in the chest with annoyance we can say to ourselves \"I am noticing this bright, intense energy in my chest, this makes senes because I am feeling annoyed and my body is responding.\"",
+              "insight": "A closer relationship to our embodied experience can help with de-centering, self soothing and reappraisal",
+              "insight_image": "assets/uploads/mag-head.png"
+            }
+          ]
+        },
+        {
+          "header": "Creating Choice",
+          "id": "creating-choice",
+          "description": "Where did that reaction come from? Creating choice in our responses.",
+          "paragraphs": [
+            {
+              "body": "<strong>How</strong> &mdash; Many of us only become aware of our emotions during or right after we have behaved in a way we regret. The intensity, and rapidity of emotion can prevent us from recognizing the trigger and experience, but once we feel that urgency to respond or difficulty in suppressing we become aware we are emotional. Recognizing we are emotional is an incomparably valuable skill. Once we have recognized our emotions are acting through us, we can pause and get very curious about the momentum of our response, which can be ebullient joy or blinding anger.",
+              "insight": "Once we have recognized our emotions are acting through us, we can pause and get very curious about the momentum of our response",
+              "insight_image": "assets/uploads/double-head.png"
+            },
+            {
+              "body": "<strong>Why</strong> &mdash; Our emotions prepare us to respond to the threats and opportunities in our world, a surprise visit from a friend or an unforeseen loss of work. Our responses often occur before we have time to recognize we are emotional and are intended to help us. Responses can be very functional, but sometimes we react in ways that are challenging &mdash; usually because we misread the trigger &mdash; we project something from our past on to what is happening now and respond to that fabricated reality. Our responses include external such as raising our voice in frustration, slinking away in anxiety, and rejoicing in gratitude. Some of our responses are internal, trying to prevent the emotion from being seen or fully expressed such as avoidance and distraction.",
+              "image": "assets/uploads/responses.png",
+              "image_width": "200px"
+            }
+          ]
+        }
+      ]
+    },
+    "in_the_moment": {
+      "header": "In the Moment",
+      "id": "in-the-moment",
+      "description": "In-the-moment strategies use executive functioning to move from the embodied arousal of our emotion to clear understanding about what is happening, a calm mind that allows for choice.",
+      "sub_sections": [
+        {
+          "header": "Mindfulness and Intention Setting",
+          "id": "mindfulness",
+          "description": "In each moment, we can stay aware of our thoughts and feelings and make decisions in the present about how we wish to behave in the future.",
+          "paragraphs": [
+            {
+              "body": "<strong>Mindfulness</strong> &mdash; Mindfulness is the practice of paying full attention to the present moment, without judgment. Practicing mindfulness consistently helps us be more conscious of what is going on around us in the present and less caught in thoughts and projections from the past. When we are more mindful, we develop a higher level of self-awareness called “meta-awareness” that helps us understand and manage our reactions and behaviors better. We become naturally more aware of our thoughts, feelings, and surroundings, accepting them as they are, which can help reduce stress and improve overall well-being. Although mindfulness always happens in the present moment, there are daily practices that increase the amount of mindfulness we tend to bring to each moment, such as meditation.",
+              "image": "assets/uploads/mandala.png",
+              "image_width": "200px"
+            },
+            {
+              "body": "<strong>Intention Setting</strong> &mdash; Much as a mediation practice can increase meta-awareness, a daily practice of setting clear intentions for peace of mind, kindness, clarity can create a supportive mindset for whatever we encounter. Intention setting is especially helpful before we go in to an anticipated ‘challenging’ experience. We prospectively, in the future, set an intention for kindness at the start of our day before we encounter a person, place, or experience.",
+              "insight": "Create a supportive mindset for whatever we encounter",
+              "insight_image": "assets/uploads/puzzle-head.png"
+            }
+          ]
+        },
+        {
+          "header": "Pausing and feeling",
+          "id": "pausing",
+          "description": "Pausing to feel the body is a powerful strategy for keeping our mind open to all that happened before a trigger, and all that might follow&mdash;it can prevent a temporary emotional state from dominating how we interpret what just happened and the possible future.",
+          "paragraphs": [
+            {
+              "body": "<strong>Breath</strong> &mdash; A deep breath is one very helpful way to pause. It brings more oxygen to our nervous system and help us process the physical arousal in our body. A big part of our emotional state is the physical changes we experience, and our breath is a way to physically assist our body during the pause.",
+              "image": "assets/uploads/breath.png",
+              "image_width": "180px"
+            },
+            {
+              "body": "<strong>Sensations</strong> &mdash; Bringing attention and awareness to physical sensations in the body can prevent an emotion from escalating. While we are sensing the body, we think less about what seemed to cause the emotion, just feeling and sensing the experience in the body. It helps to be specific–what sensations are we feeling and where, how are they changing? When we focus on the physical reality of being in our body, emotions distort our perception less.",
+              "insight": "When we focus on the physical reality of being in our body, emotions distort our perception less.",
+              "insight_image": "assets/uploads/heart-head.png"
+            },
+            {
+              "body": "Note that everyone's relationship with their body is unique, and sometimes a history of trauma can affect our ability to use the body and breath as effective strategies. For more information on alternative strategies for \"grounding\", see <a target=\"_blank\" rel=\"noopener\" href=\"https://psychcentral.com/health/trauma-informed-mindfulness#how-to-be-trauma-informed\">this article.</a>"
+            }
+          ]
+        }
+      ]
+    },
+    "living_in_balance": {
+      "header": "Living in Balance",
+      "id": "living-in-balance",
+      "description": "We often think of navigating emotions as reaction to one specific event after another throughout our lives, managing an out burst of anger or savoring a feeling of joy. But in order to reach our bigger goal of a calm mind we must also consider the big-picture, beyond the specific emotion episodes. While managing the momentary responses is essential to a balanced life we also need to step back and consider the bigger context of how we live our lives and why we want to cultivate a calm mind in which we experience balance. The purpose of emotion awareness isn’t to be ‘happy all the time’ but instead to help us learn from our emotions and develop an emotional flexibility that allows our deeper desires and aspirations to blossom. Two of the most influential ways to consistently maintain calm in our lives are outlook and practice.",
+      "sub_sections": [
+        {
+          "header": "Compassion",
+          "id": "compassion",
+          "description": "Compassion can be both a practice and a way of relating to ourselves and others. By understanding the cultural and evolutionary influences on our emotions, we can more easily accept the challenges we face, making it easier to extend compassion to ourselves and others.",
+          "paragraphs": [
+            {
+              "body": "Compassion is especially helpful when we set intentions to manage our emotions but fall into old patterns. In these moments, it protects us from hopelessness and burnout. Buddhist teachings define Compassion as the sincere wish for the self and others to be free from suffering and its causes. Similarly, science defines it as \"the feeling that arises in witnessing another's suffering, and that motivates a subsequent desire to help\" (Goetz et al., 2010). Key elements of compassion are recognizing suffering and responding to it.",
+              "image": "assets/uploads/compassion.jpg",
+              "image_width": "200px"
+            },
+            {
+              "body": "We can apply this to our own struggles by practicing self-compassion. This means acknowledging our difficulties instead of avoiding them, recognizing that such struggles are universal, and extending kindness toward ourselves, as a caring friend would.",
+              "insight": "Compassion means recognizing that everyone struggles and extending kindness to oneself and others",
+              "insight_image": "assets/uploads/heart-head.png"
+            },
+            {
+              "body": "<em>To go deeper...</em><br/><br/><strong>Outlook &mdash; </strong>Consider cultivating an ongoing stance of compassion, not only a response to immediate difficulty but a way of seeing the world.<br/><br/><strong>Practice &mdash; </strong>Make a daily practice of remembering the unifying truth that everyone, everywhere, wants to struggle less with difficult emotions and we all need compassion for our difficulties."
+            }
+          ]
+        },
+        {
+          "header": "Lifestyle for Calm",
+          "id": "lifestyle-for-calm",
+          "description": "Our emotions are deeply connected to our physical experiences. Sleep, diet, stress, substance use, and even the weather affect how we feel. Poor sleep, for instance, can intensify emotions, while intense emotions can disrupt sleep, creating a cycle of overwhelm. Similarly, being too hungry or too full can lead to physical discomfort and emotional challenges.",
+          "paragraphs": [
+            {
+              "body": "By looking at our overall lifestyle, we can better understand our emotions and make changes that support balance and well-being.",
+              "insight": "Each decision we make will impact our future state of mind.",
+              "insight_image": "assets/uploads/pop-head.png"
+            },
+            {
+              "body": "<em>To go deeper...</em><br/><br/><strong>Outlook &mdash; </strong>Rather than considering our choices in isolation, we consider how each decision we make will impact our future state of mind.<br/><br/><strong>Practice &mdash; </strong>Start to recognize patterns which interfere with a calm mind such as disruptions to our sleep, excess distractions, and the resultant experience of dysregulation. In this way, we may start to develop a preference and desire for the simplicity that affords us a calm mind.",
+              "image": "assets/uploads/salad.png",
+              "image_width": "200px"
+            }
+          ]
+        },
+        {
+          "header": "Living with Intention",
+          "id": "living-with-intention",
+          "description": "When we live with intention, we decide in each moment ‘how’ we want to direct our attention and behaviors.  Intention  can transform not only our daily interactions, but our overarching motivations and direction. An intention could be general such as \"I want to cultivate a calm mind\" or more specific \"I want to bring more kindness in to my interactions today.\"",
+          "paragraphs": [
+            {
+              "body": "Connecting with intention anchors our sense of purpose and meaning. It provides clarity about what truly matters, guiding our actions in daily life. Whether improving relationships, changing behaviors, or deepening self-awareness, intention acts as a compass, fostering growth and creating a more meaningful, connected life.",
+              "image": "assets/uploads/compass.png",
+              "image_width": "180px"
+            },
+            {
+              "body": "We find joy and fulfillment when living in alignment with our values through intention. This brings ease, focus, and clarity to the mind, supporting balance and enabling deeper exploration of ourselves, our relationships, and the world, leading to the joy of understanding and wisdom.",
+              "insight": "Living with intention provides clarity about what truly matters, guiding our actions in daily life.",
+              "insight_image": "assets/uploads/mag-head.png"
+            },
+            {
+              "body": "<em>To go deeper...</em><br/><br/><strong>Outlook &mdash; </strong>We can commit to some specific values that we want to guide our decisions. Sometimes writing them down can help.<br/><br/><strong>Practice &mdash; </strong>Try viewing each choice we make through the lens of our personal values."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "slug": "strategies"
+}

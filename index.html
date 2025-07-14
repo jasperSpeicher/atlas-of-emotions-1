@@ -127,6 +127,19 @@
         ga('send', 'pageview');
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    <!-- Hotjar Tracking Code for http://atlasofemotions.org/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 825603, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
 </head>
 
 <body>
@@ -172,8 +185,8 @@
                         relation
                         to facial expressions. He has gained a reputation as "the best human lie detector in the world".
                         Eve
-                        Ekman is currently a Post Doctoral Scholar at UCSF’s Osher Center for Integrative Medicine.
-                        Ekman’s
+                        Ekman is currently a Post Doctoral Scholar at UCSF's Osher Center for Integrative Medicine.
+                        Ekman's
                         research interests were inspired by her experience as a medical social worker in the emergency
                         department of San Francisco General Hospital coupled with her training in the applied emotion
                         regulation and mindfulness intervention: Cultivating Emotional Balance, CEB.</p>
@@ -242,7 +255,7 @@
 
         <div class="page-body">
 
-            <div class="section introduction-hero" id="introduction-fp-section" data-template="metadata.hero">
+            <div class="section introduction-hero" id="introduction-fp-section" data-template="emotionsData.metadata.hero">
 
                 <div class="slides">
                     <div class="slidesContainer">
@@ -266,7 +279,7 @@
                 </div>
 
                 <div class="cta">
-                    <a href="#triggers">
+                    <a href="#waking_up">
                         {{ cta }}
                     </a>
                 </div>
@@ -305,7 +318,7 @@
 
             <div class="section" id="timeline-fp-section" data-has-emotion-state="true">
                 <div class="section-graphics">
-                    <div id="timeline-graphics" data-template="metadata.timeline.secondary.blocks.captions">
+                    <div id="timeline-graphics" data-template="emoationsData.metadata.timeline.secondary.blocks.captions">
                         <div class="diagram-caption" id="constructive-response-caption">
                             {{ constructive_response }}
                         </div>
@@ -337,7 +350,7 @@
                 </div>
                 <div class="section-text">
 
-                    <div data-template="metadata">
+                    <div data-template="emotionsData.metadata">
                         <h2 class="section-heading">
                             {{ navigation.timeline.heading }}
                             <a class="restart-button">
@@ -348,7 +361,7 @@
 
                     <div class="section-text__scroller">
                         <div>
-                            <div data-template="metadata.timeline">
+                            <div data-template="emotionsData.metadata.timeline">
                                 <!--intro-->
                                 {{# body.forEach( function(paragraph){ }}
                                 <p class="body-intro">
@@ -359,7 +372,7 @@
                                     {{ intro_button }}
                                 </p>
                             </div>
-                            <div data-template="metadata.timeline.secondary">
+                            <div data-template="emotionsData.metadata.timeline.secondary">
                                 <button id="begin-awareness" class="body-intro mdc-button mdc-button--raised">
                                     <span class="mdc-button__ripple"></span>
                                     <span class="mdc-button__label">
@@ -368,7 +381,7 @@
                                 </button>
                             </div>
 
-                            <div data-template="metadata.timeline.secondary">
+                            <div data-template="emotionsData.metadata.timeline.secondary">
 
                                 <!--event-->
                                 <div class="body-awareness" data-stage="trigger">
@@ -460,7 +473,7 @@
                 <div class="section-graphics">
                 </div>
                 <div class="section-text">
-                    <h2 class="section-heading" data-template="metadata.navigation">{{ experience.heading }}</h2>
+                    <h2 class="section-heading" data-template="emotionsData.metadata.navigation">{{ experience.heading }}</h2>
                     <div class="section-text__scroller">
                         <div>
                             <p class="headline">
@@ -476,7 +489,7 @@
                 <div class="section-graphics">
                 </div>
                 <div class="section-text">
-                    <h2 class="section-heading" data-template="metadata.navigation">{{ response.heading }}</h2>
+                    <h2 class="section-heading" data-template="emotionsData.metadata.navigation">{{ response.heading }}</h2>
                     <div class="section-text__scroller">
                         <div>
                             <p class="headline">
@@ -512,12 +525,12 @@
                         </div>
 
                         <div class="strategy-details">
-                            {{# for(let subSection of reflecting.sub_sections) { }}
+                            {{# if(reflecting.sub_sections) { reflecting.sub_sections.forEach(function(subSection) { }}
                             <div class="details-subsection">
                                 <!-- start details-subsection -->
                                 <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
                                 <p>{{ subSection.description }}</p>
-                                {{# for(let paragraph of subSection.paragraphs) { }}
+                                {{# if(subSection.paragraphs) { subSection.paragraphs.forEach(function(paragraph) { }}
                                 <div class="strategy-details__columns">
                                     <div class="strategy-details__left">
                                         <p>{{# print(paragraph.body.replace("--", "–")) }}</p>
@@ -539,10 +552,10 @@
                                     </div>
                                     {{# } }}
                                 </div>
-                                {{# } }}
+                                {{# }); } }}
                                 <!-- end details-subsection -->
                             </div>
-                            {{# } }}
+                            {{# }); } }}
                             <!-- end strategy-details -->
                         </div>
 
@@ -552,12 +565,12 @@
                         </div>
 
                         <div class="strategy-details">
-                            {{# for(let subSection of in_the_moment.sub_sections) { }}
+                            {{# if(in_the_moment.sub_sections) { in_the_moment.sub_sections.forEach(function(subSection) { }}
                             <div class="details-subsection">
                                 <!-- start details-subsection -->
                                 <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
                                 <p>{{ subSection.description }}</p>
-                                {{# for(let paragraph of subSection.paragraphs) { }}
+                                {{# if(subSection.paragraphs) { subSection.paragraphs.forEach(function(paragraph) { }}
                                 <div class="strategy-details__columns">
                                     <div class="strategy-details__left">
                                         <p>{{# print(paragraph.body.replace("--", "–")) }}</p>
@@ -579,10 +592,10 @@
                                     </div>
                                     {{# } }}
                                 </div>
-                                {{# } }}
+                                {{# }); } }}
                                 <!-- end details-subsection -->
                             </div>
-                            {{# } }}
+                            {{# }); } }}
                             <!-- end strategy-details -->
                         </div>
 
@@ -592,12 +605,12 @@
                         </div>
 
                         <div class="strategy-details">
-                            {{# for(let subSection of living_in_balance.sub_sections) { }}
+                            {{# if(living_in_balance.sub_sections) { living_in_balance.sub_sections.forEach(function(subSection) { }}
                             <div class="details-subsection">
                                 <!-- start details-subsection -->
                                 <h2 id="{{ subSection.id }}">{{ subSection.header }}</h2>
                                 <p>{{ subSection.description }}</p>
-                                {{# for(let paragraph of subSection.paragraphs) { }}
+                                {{# if(subSection.paragraphs) { subSection.paragraphs.forEach(function(paragraph) { }}
                                 <div class="strategy-details__columns">
                                     <div class="strategy-details__left">
                                         <p>{{# print(paragraph.body.replace("--", "–")) }}</p>
@@ -619,10 +632,10 @@
                                     </div>
                                     {{# } }}
                                 </div>
-                                {{# } }}
+                                {{# }); } }}
                                 <!-- end details-subsection -->
                             </div>
-                            {{# } }}
+                            {{# }); } }}
                             <!-- end strategy-details -->
                         </div>
 
@@ -631,20 +644,22 @@
                     </div>
                 </div>
                 <div class="section-text">
-                    <h2 class="section-heading" data-template="metadata.navigation">{{ strategies.heading }}</h2>
+                    <h2 class="section-heading" data-template="emotionsData.metadata.navigation">{{ strategies.heading }}</h2>
                     <div class="section-text__scroller">
                         <div id="strategies-toc">
                             <ul data-template="strategiesData.toc">
-                                {{# for(let section of sections) { if(Array.isArray(section)) { }}
-                                <ul>
-                                    {{# for(let subSection of section) { }}
-                                    <li><a href="#strategies/{{ subSection.id }}">{{ subSection.title }}</a></li>
-                                    {{# } }}
-                                </ul>
-                                {{# } else { }}
-                                <li><a href="#strategies/{{ section.id }}">{{ section.title }}</a></li>
-                                {{# } }}
-                                {{# } }}
+                                {{# if(sections) { sections.forEach(function(section) { }}
+                                 <li>
+                                     <a href="#strategies/{{ section.id }}">{{ section.title }}</a>
+                                     {{# if(section.sub_sections) { }}
+                                     <ul>
+                                         {{# section.sub_sections.forEach(function(subSection) { }}
+                                         <li><a href="#strategies/{{ subSection.id }}">{{ subSection.title }}</a></li>
+                                         {{# }); }}
+                                     </ul>
+                                     {{# } }}
+                                 </li>
+                                 {{# }); } }}
                             </ul>
                             <div data-template="secondaryData">
                                 <a href="#strategies/impediment-antidote">{{ annex["impediment-antidote"].title
@@ -661,7 +676,7 @@
                     </div>
                 </div>
                 <div class="section-text">
-                    <h2 class="section-heading" data-template="metadata.navigation">{{ learn_more.heading }}</h2>
+                    <h2 class="section-heading" data-template="emotionsData.metadata.navigation">{{ learn_more.heading }}</h2>
                     <div class="section-text__scroller">
                         <div id="learn_more-toc">
                             <ul data-template="secondaryData">
@@ -678,7 +693,7 @@
 
         <div class="emotion-nav">
             <ul>
-                <li data-template="metadata.navigation.emotions" class="all"><a href="#continents">{{ all }}</a>
+                <li data-template="emotionsData.metadata.navigation.emotions" class="all"><a href="#continents">{{ all }}</a>
                 </li>
                 <li data-template="derived.emotions"><a href="#" data-emotion="anger">{{ anger }}</a></li>
                 <li data-template="derived.emotions"><a href="#" data-emotion="fear">{{ fear }}</a></li>
@@ -690,16 +705,18 @@
 
         <div class="top-nav hidden-for-intro">
             <div class="menu">
-                <ul id="menu-list" data-template="metadata.navigation">
+                <ul id="menu-list" data-template="emotionsData.metadata.navigation">
 
                     <li><a href="#introduction/" id="introduction-menu-link">{{ introduction.menu }}</a>
                     </li>
                     <li><a href="#triggers/" id="timeline-menu-link">{{ timeline.menu }}</a>
                     </li>
-                    <li><a href="#continents/" id="experience-menu-link">{{ experience.menu }}</a>
+                    <li><a href="#continents/" id="experience-menu-link">Emotions</a>
                     </li>
-                    <li><a href="#actions/" id="response-menu-link">{{ response.menu }}</a>
+                    <li><a href="#actions/" id="response-menu-link">Responses</a>
                     </li>
+                    <li><a href="#learn_more/" id="learn_more-menu-link">Background</a></li>
+                    <li><a href="#strategies/" id="strategies-menu-link">Strategies</a></li>
                     <li>
                         <a id="opt-in-link" class="opt-in-button" data-src="mail">
                             <!-- App.js will add mail icon here -->

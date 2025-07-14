@@ -1,0 +1,254 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "Como refletir",
+        "id": "how-to-reflect",
+        "sub_sections": [
+          {
+            "title": "Rotular",
+            "id": "labeling"
+          },
+          {
+            "title": "Compreender gatilhos",
+            "id": "understanding-triggers"
+          },
+          {
+            "title": "Incorporar emoção",
+            "id": "the-body"
+          },
+          {
+            "title": "Criar escolhas",
+            "id": "creating-choice"
+          }
+        ]
+      },
+      {
+        "title": "No momento",
+        "id": "in-the-moment",
+        "sub_sections": [
+          {
+            "title": "Atenção plena e intenções",
+            "id": "mindfulness"
+          },
+          {
+            "title": "Pausar e sentir",
+            "id": "pausing"
+          }
+        ]
+      },
+      {
+        "title": "Viver em equilíbrio",
+        "id": "living-in-balance",
+        "sub_sections": [
+          {
+            "title": "Compaixão",
+            "id": "compassion"
+          },
+          {
+            "title": "Estilo de vida para calma",
+            "id": "lifestyle-for-calm"
+          },
+          {
+            "title": "Viver com intenção",
+            "id": "living-with-intention"
+          }
+        ]
+      }
+    ]
+  },
+  "text": {
+    "navigating": {
+      "header": "Estratégias para navegar emoções",
+      "description": "Para navegar uma vida cheia de emoções, precisamos criar espaço para elas, para que não nos desviem muito do nosso curso. Há dois métodos para criar esse espaço, e ambos são muito importantes.",
+      "image": "assets/uploads/signpost.png",
+      "reflecting": "<strong>Refletir</strong> –- podemos dedicar algum tempo para refletir sobre nossas emoções, meio que olhando para trás, para nos prepararmos para a próxima vez.",
+      "in_the_moment": "<strong>No momento</strong> –- podemos aprender a lidar com nossas emoções exatamente quando elas acontecem, como ferramentas para criar espaço entre nós e nossos sentimentos quando precisamos.",
+      "keep_reading": "Continue lendo ou navegue pelo menu para saber mais sobre essas estratégias..."
+    },
+    "reflecting": {
+      "header": "Como refletir",
+      "id": "how-to-reflect",
+      "description": "Refletir é um aspecto essencial do desenvolvimento da consciência emocional. Através das estratégias listadas abaixo, você pode aprender mais sobre suas emoções e as mensagens importantes que elas têm para compartilhar com você, e praticar maneiras de encontrar uma 'pausa' e desacelerar a reatividade.",
+      "sub_sections": [
+        {
+          "header": "Rotular",
+          "id": "labeling",
+          "description": "O que está acontecendo? Desenvolver linguagem para descrever nossas emoções.",
+          "paragraphs": [
+            {
+              "body": "<strong>Como</strong> &mdash; Ao usar o site Atlas of Emotion, podemos explorar, com especificidade, qual emoção estamos sentindo. Em vez de \"me sinto mal\" ou \"me sinto estressado\", podemos identificar qual emoção podemos estar experimentando através das famílias de emoções universais listadas ou as emoções não universais encontradas aqui.",
+              "image": "assets/uploads/label.png",
+              "image_width": "88px"
+            },
+            {
+              "body": "<strong>Por que</strong> &mdash; Nomear ou rotular nossas emoções cria um momento de \"descentramento\". Descentramento significa que podemos refocar em uma perspectiva maior identificando nossos sentimentos em vez de ficar presos na excitação de uma emoção que pode saturar nosso corpo e mente. Aplicar uma palavra para identificar nossa emoção suporta uma 'granularidade emocional'. Praticamos nossa granularidade tomando um momento para pausar e considerar nossa experiência e então rotular: \"Agora mesmo estou ciente de sentir decepção\". Esta etiqueta simples não precisa carregar nenhum julgamento ou agenda, apenas nomear pode servir para nos ajudar a ver a nós mesmos e a situação mais claramente.",
+              "insight": "Nomear uma emoção pode nos ajudar a ver a nós mesmos e a situação mais claramente.",
+              "insight_image": "assets/uploads/puzzle-head.png"
+            }
+          ]
+        },
+        {
+          "header": "Compreender gatilhos",
+          "id": "understanding-triggers",
+          "description": "O que me faz sentir essa emoção? Aprender como os gatilhos funcionam.",
+          "paragraphs": [
+            {
+              "body": "<strong>Como</strong> &mdash; Quando olhamos para a linha do tempo da emoção aprendemos que nosso gatilho é composto tanto pelo nosso estado imediato e contexto, quanto por histórias e percepções mais antigas. Podemos escolher um episódio emocional quando sentimos que reagimos muito fortemente e então considerar o que estava acontecendo em nossa experiência imediata, nossa pré-condição, de fome, fadiga, estresse, etc. que pode influenciar como nos tornamos emocionais. Então exploramos o que pode estar no banco de dados, o depósito de experiências passadas que podemos impor a esta experiência atual.",
+              "image": "assets/uploads/triggers.png",
+              "image_width": "200px"
+            },
+            {
+              "body": "<strong>Por que</strong> &mdash; Somos desencadeados para uma emoção em um vinte e cinco avos de segundo e raramente podemos identificar todos os fatos que contribuem para essa emoção. Quando começamos a explorar a pré-condição e o banco de dados desenvolvemos maior insight sobre nosso papel em nossas emoções, não é apenas o mundo exterior - é nosso estado atual e histórias passadas que criam um episódio emocional. Esta compreensão pode contribuir para nossa reavaliação, para lembrar que quando nos tornamos emocionais é frequentemente um processo complexo que precisa de espaço e reflexão. Poderíamos dizer a nós mesmos: \"Estou me sentindo preocupado e há muitos fatores que estão contribuindo para esta preocupação, estou cansado e frequentemente tive dificuldades com transições\".",
+              "insight": "Não é apenas o mundo exterior&mdash;é nosso estado atual e histórias passadas que criam um episódio emocional.",
+              "insight_image": "assets/uploads/pop-head.png"
+            }
+          ]
+        },
+        {
+          "header": "O corpo",
+          "id": "the-body",
+          "description": "Como uma emoção se sente? Aprender a ser um observador das emoções no corpo.",
+          "paragraphs": [
+            {
+              "body": "<strong>Como</strong> &mdash; Para alguns de nós, sentir a emoção no corpo é bastante claro, reconhecemos áreas no rosto, peito ou barriga onde há sensações aumentadas, como calor pesado em nosso rosto quando estamos com raiva, ou uma sensação vazia no peito quando estamos solitários. Para outros, o acesso às sensações da emoção no corpo é menos disponível, ou o foco está mais preso em pensamentos. Assim como reconhecemos e aplicamos rótulos ao tipo de emoção que estamos sentindo, podemos identificar os tipos de sensações em nosso corpo e onde as estamos sentindo. Considere onde em seu corpo você se sente preocupado, e quais são as qualidades desta sensação, leve, pesada, formigante, pulsante, pontuda, etc.",
+              "image": "assets/uploads/body.png",
+              "image_width": "160px"
+            },
+            {
+              "body": "<strong>Por que</strong> &mdash; Nossas emoções são uma experiência encarnada, não são apenas um fenômeno mental. Todo o nosso sistema nervoso se mobiliza em resposta à nossa emoção para nos ajudar a nos preparar para as oportunidades e desafios que a emoção está nos alertando. Quando desenvolvemos uma relação mais próxima com nossa experiência encarnada da emoção, estamos desenvolvendo a 'interocepção'. A interocepção é uma habilidade treinável, uma forma de reconhecer nossa experiência das emoções no corpo que pode ajudar com o descentramento, auto-calmante e reavaliação. Por exemplo, se sentimos muita energia brilhante e intensa no peito com irritação, podemos dizer a nós mesmos: \"Estou notando essa energia brilhante e intensa no meu peito, isso faz sentido porque estou me sentindo irritado e meu corpo está respondendo\".",
+              "insight": "Uma relação mais próxima com nossa experiência encarnada pode ajudar com o descentramento, auto-calmante e reavaliação",
+              "insight_image": "assets/uploads/mag-head.png"
+            }
+          ]
+        },
+        {
+          "header": "Criar escolhas",
+          "id": "creating-choice",
+          "description": "De onde veio essa reação? Criar escolhas em nossas respostas.",
+          "paragraphs": [
+            {
+              "body": "<strong>How</strong> &mdash; Many of us only become aware of our emotions during or right after we have behaved in a way we regret. The intensity, and rapidity of emotion can prevent us from recognizing the trigger and experience, but once we feel that urgency to respond or difficulty in suppressing we become aware we are emotional. Recognizing we are emotional is an incomparably valuable skill. Once we have recognized our emotions are acting through us, we can pause and get very curious about the momentum of our response, which can be ebullient joy or blinding anger.",
+              "insight": "Once we have recognized our emotions are acting through us, we can pause and get very curious about the momentum of our response",
+              "insight_image": "assets/uploads/double-head.png"
+            },
+            {
+              "body": "<strong>Why</strong> &mdash; Our emotions prepare us to respond to the threats and opportunities in our world, a surprise visit from a friend or an unforeseen loss of work. Our responses often occur before we have time to recognize we are emotional and are intended to help us. Responses can be very functional, but sometimes we react in ways that are challenging &mdash; usually because we misread the trigger &mdash; we project something from our past on to what is happening now and respond to that fabricated reality. Our responses include external such as raising our voice in frustration, slinking away in anxiety, and rejoicing in gratitude. Some of our responses are internal, trying to prevent the emotion from being seen or fully expressed such as avoidance and distraction.",
+              "image": "assets/uploads/responses.png",
+              "image_width": "200px"
+            }
+          ]
+        }
+      ]
+    },
+    "in_the_moment": {
+      "header": "No momento",
+      "id": "in-the-moment",
+      "description": "Estratégias do momento usam funcionamento executivo para passar da excitação corporificada de nossa emoção para uma compreensão clara do que está acontecendo, uma mente calma que permite escolha.",
+      "sub_sections": [
+        {
+          "header": "Atenção plena e definição de intenções",
+          "id": "mindfulness",
+          "description": "A cada momento, podemos permanecer conscientes de nossos pensamentos e sentimentos e tomar decisões no presente sobre como desejamos nos comportar no futuro.",
+          "paragraphs": [
+            {
+              "body": "<strong>Atenção plena</strong> &mdash; A atenção plena é a prática de prestar total atenção ao momento presente, sem julgamento. Praticar a atenção plena consistentemente nos ajuda a estar mais conscientes do que está acontecendo ao nosso redor no presente e menos presos em pensamentos e projeções do passado. Quando somos mais atentos, desenvolvemos um nível mais alto de autoconsciência chamado \"meta-consciência\" que nos ajuda a entender e gerenciar melhor nossas reações e comportamentos. Nos tornamos naturalmente mais conscientes de nossos pensamentos, sentimentos e ambiente, aceitando-os como são, o que pode ajudar a reduzir o estresse e melhorar o bem-estar geral. Embora a atenção plena sempre aconteça no momento presente, existem práticas diárias que aumentam a quantidade de atenção plena que tendemos a trazer para cada momento, como a meditação.",
+              "image": "assets/uploads/mandala.png",
+              "image_width": "200px"
+            },
+            {
+              "body": "<strong>Definição de intenções</strong> &mdash; Assim como uma prática de meditação pode aumentar a meta-consciência, uma prática diária de definir intenções claras para a paz de espírito, bondade e clareza pode criar uma mentalidade de apoio para qualquer coisa que encontremos. A definição de intenções é especialmente útil antes de entrarmos em uma experiência 'desafiadora' antecipada. Prospectivamente, no futuro, estabelecemos uma intenção de bondade no início do nosso dia antes de encontrar uma pessoa, lugar ou experiência.",
+              "insight": "Criar uma mentalidade de apoio para qualquer coisa que encontremos",
+              "insight_image": "assets/uploads/puzzle-head.png"
+            }
+          ]
+        },
+        {
+          "header": "Pausar e sentir",
+          "id": "pausing",
+          "description": "Pausar para sentir o corpo é uma estratégia poderosa para manter nossa mente aberta a tudo que aconteceu antes de um gatilho, e tudo que pode seguir - pode impedir que um estado emocional temporário domine como interpretamos o que acabou de acontecer e o possível futuro.",
+          "paragraphs": [
+            {
+              "body": "<strong>Respiração</strong> &mdash; Uma respiração profunda é uma forma muito útil de fazer uma pausa. Traz mais oxigênio para nosso sistema nervoso e nos ajuda a processar a excitação física em nosso corpo. Uma grande parte de nosso estado emocional são as mudanças físicas que experimentamos, e nossa respiração é uma forma de ajudar fisicamente nosso corpo durante a pausa.",
+              "image": "assets/uploads/breath.png",
+              "image_width": "180px"
+            },
+            {
+              "body": "<strong>Sensações</strong> &mdash; Trazer atenção e consciência para as sensações físicas no corpo pode impedir que uma emoção se intensifique. Enquanto estamos sentindo o corpo, pensamos menos no que parecia causar a emoção, apenas sentindo e percebendo a experiência no corpo. Ajuda ser específico: que sensações estamos sentindo e onde, como estão mudando? Quando nos focamos na realidade física de estar em nosso corpo, as emoções distorcem menos nossa percepção.",
+              "insight": "Quando nos focamos na realidade física de estar em nosso corpo, as emoções distorcem menos nossa percepção.",
+              "insight_image": "assets/uploads/heart-head.png"
+            },
+            {
+              "body": "Note que a relação de cada pessoa com seu corpo é única, e às vezes um histórico de trauma pode afetar nossa capacidade de usar o corpo e a respiração como estratégias eficazes. Para mais informações sobre estratégias alternativas para \"ancoragem\", veja <a target=\"_blank\" rel=\"noopener\" href=\"https://psychcentral.com/health/trauma-informed-mindfulness#how-to-be-trauma-informed\">este artigo.</a>"
+            }
+          ]
+        }
+      ]
+    },
+    "living_in_balance": {
+      "header": "Viver em equilíbrio",
+      "id": "living-in-balance",
+      "description": "Frequentemente pensamos em navegar as emoções como reação a um evento específico após outro ao longo de nossas vidas, administrando um surto de raiva ou saboreando um sentimento de alegria. Mas para alcançar nosso objetivo maior de uma mente calma, também devemos considerar o panorama geral, além dos episódios emocionais específicos. Embora administrar as respostas momentâneas seja essencial para uma vida equilibrada, também precisamos dar um passo atrás e considerar o contexto mais amplo de como vivemos nossas vidas e por que queremos cultivar uma mente calma na qual experimentamos equilíbrio. O propósito da consciência emocional não é estar 'feliz o tempo todo' mas sim nos ajudar a aprender com nossas emoções e desenvolver uma flexibilidade emocional que permite que nossos desejos e aspirações mais profundos floresçam. Duas das maneiras mais influentes de manter consistentemente calma em nossas vidas são perspectiva e prática.",
+      "sub_sections": [
+        {
+          "header": "Compaixão",
+          "id": "compassion",
+          "description": "A compaixão pode ser tanto uma prática quanto uma forma de se relacionar conosco e com outros. Ao compreender as influências culturais e evolutivas em nossas emoções, podemos mais facilmente aceitar os desafios que enfrentamos, tornando mais fácil estender compaixão a nós mesmos e outros.",
+          "paragraphs": [
+            {
+              "body": "A compaixão é especialmente útil quando estabelecemos intenções para gerenciar nossas emoções mas caímos em padrões antigos. Nesses momentos, nos protege da desesperança e esgotamento. Os ensinamentos budistas definem Compaixão como o desejo sincero para o eu e outros estarem livres do sofrimento e suas causas. Similarmente, a ciência a define como \"o sentimento que surge ao testemunhar o sofrimento de outro, e que motiva um desejo subsequente de ajudar\" (Goetz et al., 2010). Elementos-chave da compaixão são reconhecer o sofrimento e responder a ele.",
+              "image": "assets/uploads/compassion.jpg",
+              "image_width": "200px"
+            },
+            {
+              "body": "Podemos aplicar isso às nossas próprias lutas praticando auto-compaixão. Isso significa reconhecer nossas dificuldades em vez de evitá-las, reconhecer que tais lutas são universais, e estender bondade para nós mesmos, como um amigo carinhoso faria.",
+              "insight": "Compaixão significa reconhecer que todos lutam e estender bondade a si mesmo e outros",
+              "insight_image": "assets/uploads/heart-head.png"
+            },
+            {
+              "body": "<em>Para ir mais fundo...</em><br/><br/><strong>Perspectiva &mdash; </strong>Considere cultivar uma postura contínua de compaixão, não apenas uma resposta à dificuldade imediata mas uma forma de ver o mundo.<br/><br/><strong>Prática &mdash; </strong>Faça uma prática diária de lembrar a verdade unificadora de que todos, em todo lugar, querem lutar menos com emoções difíceis e todos precisamos de compaixão por nossas dificuldades."
+            }
+          ]
+        },
+        {
+          "header": "Estilo de vida para calma",
+          "id": "lifestyle-for-calm",
+          "description": "Nossas emoções estão profundamente conectadas às nossas experiências físicas. Sono, dieta, estresse, uso de substâncias, e até mesmo o clima afetam como nos sentimos. Sono ruim, por exemplo, pode intensificar emoções, enquanto emoções intensas podem interromper o sono, criando um ciclo de sobrecarga. Similarmente, estar com muita fome ou muito cheio pode levar a desconforto físico e desafios emocionais.",
+          "paragraphs": [
+            {
+              "body": "Ao observar nosso estilo de vida geral, podemos entender melhor nossas emoções e fazer mudanças que apoiam equilíbrio e bem-estar.",
+              "insight": "Cada decisão que tomamos impactará nosso estado mental futuro.",
+              "insight_image": "assets/uploads/pop-head.png"
+            },
+            {
+              "body": "<em>Para ir mais fundo...</em><br/><br/><strong>Perspectiva &mdash; </strong>Em vez de considerar nossas escolhas em isolamento, consideramos como cada decisão que tomamos impactará nosso estado mental futuro.<br/><br/><strong>Prática &mdash; </strong>Comece a reconhecer padrões que interferem com uma mente calma como interrupções ao nosso sono, distrações excessivas, e a experiência resultante de desregulação. Desta forma, podemos começar a desenvolver uma preferência e desejo pela simplicidade que nos oferece uma mente calma.",
+              "image": "assets/uploads/salad.png",
+              "image_width": "200px"
+            }
+          ]
+        },
+        {
+          "header": "Viver com intenção",
+          "id": "living-with-intention",
+          "description": "Quando vivemos com intenção, decidimos a cada momento 'como' queremos direcionar nossa atenção e comportamentos. A intenção pode transformar não apenas nossas interações diárias, mas nossas motivações e direção abrangentes. Uma intenção poderia ser geral como \"Quero cultivar uma mente calma\" ou mais específica \"Quero trazer mais bondade para minhas interações hoje.\"",
+          "paragraphs": [
+            {
+              "body": "Conectar-se com intenção ancora nosso senso de propósito e significado. Fornece clareza sobre o que realmente importa, guiando nossas ações na vida diária. Seja melhorando relacionamentos, mudando comportamentos, ou aprofundando autoconsciência, a intenção atua como uma bússola, fomentando crescimento e criando uma vida mais significativa e conectada.",
+              "image": "assets/uploads/compass.png",
+              "image_width": "180px"
+            },
+            {
+              "body": "Encontramos alegria e realização quando vivemos em alinhamento com nossos valores através da intenção. Isso traz facilidade, foco e clareza à mente, apoiando equilíbrio e permitindo exploração mais profunda de nós mesmos, nossos relacionamentos, e o mundo, levando à alegria do entendimento e sabedoria.",
+              "insight": "Viver com intenção fornece clareza sobre o que realmente importa, guiando nossas ações na vida diária.",
+              "insight_image": "assets/uploads/mag-head.png"
+            },
+            {
+              "body": "<em>Para ir mais fundo...</em><br/><br/><strong>Perspectiva &mdash; </strong>Podemos nos comprometer com alguns valores específicos que queremos que guiem nossas decisões. Às vezes escrevê-los pode ajudar.<br/><br/><strong>Prática &mdash; </strong>Tente ver cada escolha que fazemos através da lente de nossos valores pessoais."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "slug": "strategies"
+}

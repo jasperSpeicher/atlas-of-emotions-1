@@ -1,0 +1,551 @@
+# backend:
+#   name: test-repo
+#   local_backend: true
+
+# The GitHub backend settings are commented out for local testing
+backend:
+  name: github
+  repo: jasperSpeicher/atlas-of-emotions-1 # IMPORTANT: Replace with your repo path
+  branch: full-translation # Or whichever branch you want to commit to
+  # site_domain: your-site-domain.com # Optional: if you have GitHub gateway configured
+
+media_folder: "static/assets/uploads"
+public_folder: "/assets/uploads"
+
+i18n:
+  structure: multiple_files
+  locales: [en, es, fr, de, it, pt, uk]
+  default_locale: en
+
+collections:
+  - name: "strings"
+    label: "Primary Content"
+    summary: "Primary Content"
+    label_singular: "Content File"
+    description: "JSON files containing the translations for different languages."
+    folder: "static/strings/langs" # Path relative to repo root
+    filter: {field: "slug", value: "strings"}
+    identifier_field: "slug"
+    extension: "json"
+    format: "json" # Expects a root object in the JSON file
+    create: false # Allow creating new language groups (slugs)
+    i18n: true # Enables i18n for this collection
+    editor:
+      preview: false
+    fields:
+      - { label: "Identifier", name: "slug", widget: "hidden", default: "strings", i18n: true }
+      - label: "String Groups"
+        name: "string_groups" # Matches the root key in your JSON
+        widget: "list"
+        i18n: true # The content within groups is translatable
+        fields:
+          - label: "Group Name (Optional)"
+            name: "group_name"
+            widget: "string"
+            required: false
+            i18n: true
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            i18n: true
+            fields:
+              - label: "Key"
+                name: "key"
+                widget: "string"
+                i18n: true
+              - label: "Value"
+                name: "value"
+                widget: "text"
+                i18n: true
+                required: false
+
+  - name: "secondary_content"
+    label: "Secondary Page Content"
+    summary: "Secondary Page Content"
+    label_singular: "Secondary Page Content Item"
+    description: "Content for various secondary pages like About, Annex, Donate, etc."
+    folder: "static/strings/langs"
+    filter: {field: "slug", value: "secondaryData"}
+    identifier_field: "slug"
+    extension: "json"
+    format: "json"
+    create: false
+    i18n: true
+    fields:
+      - { label: "Identifier", name: "slug", widget: "hidden", default: "secondaryData", i18n: true }
+      - label: "Annex Pages"
+        name: "annex"
+        widget: "object"
+        i18n: true
+        required: true
+        fields:
+          - label: "Scientific Basis"
+            name: "scientific-basis"
+            widget: "object"
+            i18n: true
+            required: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", i18n: true, required: true }
+              - { label: "Introduction", name: "desc", widget: "markdown", i18n: true, required: true }
+              - { label: "Content Introduction", name: "contentIntro", widget: "markdown", i18n: true, required: true }
+              - label: "Content Items"
+                name: "content"
+                widget: "list"
+                i18n: true
+                required: true
+                fields:
+                  - { label: "Name/Percentage", name: "name", widget: "string", i18n: true, required: true }
+                  - { label: "Description", name: "desc", widget: "string", i18n: true, required: true }
+                  - { label: "Formatting Hint", name: "formatting", widget: "string", i18n: true, required: false }
+              - label: "Footer Paragraphs"
+                name: "footer"
+                widget: "list"
+                i18n: true
+                required: true
+                field: { label: "Paragraph", name: "paragraph", widget: "markdown", i18n: true }
+          - label: "Triggers Timeline"
+            name: "triggers-timeline"
+            widget: "object"
+            i18n: true
+            required: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", i18n: true, required: true }
+              - { label: "Description", name: "desc", widget: "markdown", i18n: true, required: false }
+              - label: "Content Items"
+                name: "content"
+                widget: "list"
+                i18n: true
+                required: true
+                fields:
+                  - { label: "Name", name: "name", widget: "string", i18n: true, required: true }
+                  - { label: "Description", name: "desc", widget: "markdown", i18n: true, required: true }
+              - label: "Footer Paragraphs"
+                name: "footer"
+                widget: "list"
+                i18n: true
+                required: true
+                field: { label: "Paragraph", name: "paragraph", widget: "markdown", i18n: true }
+          - label: "Intrinsic or Intentional Actions"
+            name: "intrinsic-or-intentional"
+            widget: "object"
+            i18n: true
+            required: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", i18n: true, required: true }
+              - { label: "Description", name: "desc", widget: "markdown", i18n: true, required: true }
+              - label: "Emotions"
+                name: "emotions"
+                widget: "list"
+                i18n: true
+                required: true
+                fields:
+                  - { label: "Emotion Name", name: "name", widget: "string", i18n: true, required: true }
+                  - label: "Action Types (Children)"
+                    name: "children"
+                    widget: "list"
+                    i18n: true
+                    required: true
+                    fields:
+                      - { label: "Type Name (e.g., Intrinsic)", name: "name", widget: "string", i18n: true, required: true }
+                      - { label: "Type Description", name: "desc", widget: "markdown", i18n: true, required: true }
+          - label: "Partially Charted Emotions"
+            name: "partially-charted"
+            widget: "object"
+            i18n: true
+            required: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", i18n: true, required: true }
+              - { label: "Description", name: "desc", widget: "markdown", i18n: true, required: true }
+              - label: "Emotions"
+                name: "emotions"
+                widget: "list"
+                i18n: true
+                required: true
+                fields:
+                  - { label: "Emotion Name", name: "name", widget: "string", i18n: true, required: true }
+                  - { label: "Emotion Description", name: "desc", widget: "markdown", i18n: true, required: true }
+          - label: "Personality Traits"
+            name: "personality-trait"
+            widget: "object"
+            i18n: true
+            required: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", i18n: true, required: true }
+              - { label: "Description", name: "desc", widget: "markdown", i18n: true, required: true }
+              - label: "Emotions"
+                name: "emotions"
+                widget: "list"
+                i18n: true
+                required: true
+                fields:
+                  - { label: "Emotion Name", name: "name", widget: "string", i18n: true, required: true }
+                  - { label: "Trait Description", name: "desc", widget: "markdown", i18n: true, required: true }
+          - label: "Moods"
+            name: "moods"
+            widget: "object"
+            i18n: true
+            required: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", i18n: true, required: true }
+              - { label: "Description", name: "desc", widget: "markdown", i18n: true, required: true }
+              - label: "Moods List"
+                name: "emotions"
+                widget: "list"
+                i18n: true
+                required: true
+                fields:
+                  - { label: "Mood Name", name: "name", widget: "string", i18n: true, required: true }
+                  - { label: "Mood Description", name: "desc", widget: "markdown", i18n: true, required: true }
+          - label: "Psychopathology"
+            name: "psychopathology"
+            widget: "object"
+            i18n: true
+            required: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", i18n: true, required: true }
+              - { label: "Overall Description", name: "desc", widget: "markdown", i18n: true, required: true }
+              - label: "Emotion-Specific Pathologies"
+                name: "emotions"
+                widget: "list"
+                i18n: true
+                required: true
+                fields:
+                  - { label: "Emotion Name", name: "name", widget: "string", i18n: true, required: true }
+                  - { label: "Emotion Pathology Description", name: "desc", widget: "markdown", i18n: true, required: true }
+                  - label: "Specific Disorders (Children)"
+                    name: "children"
+                    widget: "list"
+                    i18n: true
+                    required: true
+                    fields:
+                      - { label: "Disorder Name", name: "name", widget: "string", i18n: true, required: true }
+                      - { label: "Disorder Description", name: "desc", widget: "markdown", i18n: true, required: true }
+          - label: "Signals and Messages"
+            name: "signals"
+            widget: "object"
+            i18n: true
+            required: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", i18n: true, required: true }
+              - { label: "Overall Description", name: "desc", widget: "markdown", i18n: true, required: true }
+              - label: "Emotion-Specific Signals"
+                name: "emotions"
+                widget: "list"
+                i18n: true
+                required: true
+                fields:
+                  - { label: "Emotion Name", name: "name", widget: "string", i18n: true, required: true }
+                  - { label: "Top Level Emotion Desc (Optional)", name: "desc", widget: "string", i18n: true, required: false }
+                  - label: "Signal/Message Pair (Children)"
+                    name: "children"
+                    widget: "list"
+                    i18n: true
+                    required: true
+                    fields:
+                      - { label: "Type (Signal/Message)", name: "name", widget: "string", i18n: true, required: true }
+                      - { label: "Description", name: "desc", widget: "markdown", i18n: true, required: true }
+          - label: "Impediments and Antidotes"
+            name: "impediment-antidote"
+            widget: "object"
+            i18n: true
+            required: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", i18n: true, required: true }
+              - { label: "Overall Description", name: "desc", widget: "markdown", i18n: true, required: true }
+              - label: "Emotion Groups"
+                name: "emotions"
+                widget: "list"
+                i18n: true
+                required: true
+                fields:
+                  - { label: "Group Name (e.g., Anger Antidotes)", name: "name", widget: "string", i18n: true, required: true }
+                  - label: "Items (Children)"
+                    name: "children"
+                    widget: "list"
+                    i18n: true
+                    required: false
+                    default: []
+                    fields:
+                      - { label: "Item Name", name: "name", widget: "string", i18n: true, required: false }
+                      - { label: "Item Description", name: "desc", widget: "markdown", i18n: true, required: false }
+      - label: "About This Atlas Page"
+        name: "about"
+        widget: "object"
+        i18n: true
+        required: true
+        fields:
+          - { label: "Page Title", name: "title", widget: "string", i18n: true, required: true }
+          - { label: "Page Description", name: "desc", widget: "markdown", i18n: true, required: true }
+          - label: "Subsections"
+            name: "subsections"
+            widget: "list"
+            i18n: true
+            required: true
+            fields:
+              - { label: "Subsection Title", name: "title", widget: "string", i18n: true, required: true }
+              - { label: "Subsection Description", name: "desc", widget: "markdown", i18n: true, required: true }
+      - label: "Donate Page Content"
+        name: "donate"
+        widget: "object"
+        i18n: true
+        required: true
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true, required: true }
+          - { label: "Description", name: "desc", widget: "markdown", i18n: true, required: true }
+          - { label: "Link URL", name: "link", widget: "string", i18n: true, required: true }
+          - label: "Images (URLs)"
+            name: "imgs"
+            widget: "list"
+            i18n: true
+            required: false
+            field: { label: "Image URL", name: "url", widget: "string", i18n: true }
+      - label: "Further Reading Page Content"
+        name: "further-reading"
+        widget: "object"
+        i18n: true
+        required: true
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true, required: true }
+          - { label: "Description", name: "desc", widget: "markdown", i18n: true, required: true }
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            i18n: true
+            required: true
+            fields:
+              - { label: "Link URL", name: "link", widget: "string", i18n: true, required: true }
+              - { label: "Link Description", name: "desc", widget: "string", i18n: true, required: true }
+      - label: "EmoTrak Page Content"
+        name: "emotrak"
+        widget: "object"
+        i18n: true
+        required: true
+        fields:
+          - { label: "Page Title", name: "title", widget: "string", i18n: true, required: false }
+          - { label: "Page Description", name: "desc", widget: "markdown", i18n: true, required: true }
+          - label: "Subsections"
+            name: "subsections"
+            widget: "list"
+            i18n: true
+            required: true
+            fields:
+              - { label: "Subsection Title", name: "title", widget: "string", i18n: true, required: false }
+              - { label: "Subsection Description", name: "desc", widget: "markdown", i18n: true, required: true }
+              - { label: "Image Key (Optional)", name: "image", widget: "string", i18n: true, required: false }
+              - { label: "Include Mail Link (Optional)", name: "mail", widget: "boolean", i18n: true, required: false, default: false }
+
+  - name: "waking-up"
+    label: "Waking Up Experience"
+    summary: "Waking Up Experience"
+    label_singular: "Waking Up Experience"
+    description: "Content for the waking up scroller experience."
+    folder: "static/strings/langs"
+    filter: {field: "slug", value: "waking-up"}
+    identifier_field: "slug"
+    extension: "json"
+    format: "json"
+    create: false
+    i18n: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Identifier", name: "slug", widget: "hidden", default: "waking-up", i18n: true }
+      - label: "Phrases"
+        name: "phrases"
+        widget: "list"
+        i18n: true
+        fields:
+          - { label: "Phrase", name: "phrase", widget: "string", i18n: true }
+          - { label: "Emotion", name: "emotion", widget: "select", options: ["enjoyment", "fear", "anger", "disgust", "sadness"], i18n: false }
+      - label: "Scroller Content"
+        name: "scroller"
+        widget: "object"
+        i18n: true
+        fields:
+          - { label: "Introduction", name: "introduction", widget: "string", i18n: true }
+          - { label: "Experiences Title", name: "experiencesTitle", widget: "string", i18n: true }
+          - label: "Experiences"
+            name: "experiences"
+            widget: "list"
+            i18n: true
+            field: { label: "Experience", name: "experience", widget: "string", i18n: true }
+          - { label: "Less Important Title", name: "lessImportantTitle", widget: "string", i18n: true }
+          - label: "Less Important Experiences"
+            name: "lessImportantExperiences"
+            widget: "list"
+            i18n: true
+            field: { label: "Experience", name: "experience", widget: "string", i18n: true }
+          - { label: "Very Important Title", name: "veryImportantTitle", widget: "string", i18n: true }
+          - label: "Very Important Experiences"
+            name: "veryImportantExperiences"
+            widget: "list"
+            i18n: true
+            field: { label: "Experience", name: "experience", widget: "string", i18n: true }
+          - { label: "Trigger Emotions", name: "triggerEmotions", widget: "string", i18n: true }
+          - { label: "Trigger Emotion Experience", name: "triggerEmotionExperience", widget: "string", i18n: true }
+          - { label: "Emotions Color Perception", name: "emotionsColorPerception", widget: "string", i18n: true }
+          - { label: "Stories From Inner World", name: "storiesFromInnerWorld", widget: "string", i18n: true }
+          - { label: "Emotions Come and Go", name: "emotionsComeAndGo", widget: "string", i18n: true }
+          - { label: "Pile Up", name: "pileUp", widget: "string", i18n: true }
+          - { label: "One Big Experience", name: "oneBigExperience", widget: "string", i18n: true }
+          - { label: "Arguing", name: "arguing", widget: "string", i18n: true }
+          - { label: "Hard to Separate", name: "hardToSeparate", widget: "string", i18n: true }
+          - { label: "Respond Without Thinking", name: "respondWithoutThinking", widget: "string", i18n: true }
+          - { label: "Without Clear Understanding", name: "withoutClearUnderstanding", widget: "string", i18n: true }
+          - { label: "Act in Ways We Regret", name: "actInWaysWeRegret", widget: "string", i18n: true }
+          - label: "Regret Actions"
+            name: "regretActions"
+            widget: "list"
+            i18n: true
+            field: { label: "Action", name: "action", widget: "string", i18n: true }
+          - { label: "What Can We Do", name: "whatCanWeDo", widget: "string", i18n: true }
+          - { label: "We Can Pause", name: "weCanPause", widget: "string", i18n: true }
+          - { label: "Connect to Breath", name: "connectToBreath", widget: "string", i18n: true }
+          - { label: "Ride Wave of Emotion", name: "rideWaveOfEmotion", widget: "string", i18n: true }
+          - { label: "Recognize Emotional State", name: "recognizeEmotionalState", widget: "string", i18n: true }
+          - { label: "Become Curious", name: "becomeCurious", widget: "string", i18n: true }
+          - { label: "What Causes Feeling", name: "whatCausesFeeling", widget: "string", i18n: true }
+          - label: "Trigger Questions"
+            name: "triggerQuestions"
+            widget: "list"
+            i18n: true
+            field: { label: "Question", name: "question", widget: "string", i18n: true }
+          - { label: "How Do I Respond", name: "howDoIRespond", widget: "string", i18n: true }
+          - label: "Response Questions"
+            name: "responseQuestions"
+            widget: "list"
+            i18n: true
+            field: { label: "Question", name: "question", widget: "string", i18n: true }
+          - { label: "Explore Timeline", name: "exploreTimeline", widget: "string", i18n: true }
+
+  - name: "strategies"
+    label: "Strategies"
+    summary: "Strategies"
+    label_singular: "Strategy"
+    description: "Content for the strategies page."
+    folder: "static/strings/langs"
+    filter: {field: "slug", value: "strategies"}
+    identifier_field: "slug"
+    extension: "json"
+    format: "json"
+    create: false
+    i18n: true
+    fields:
+      - { label: "Identifier", name: "slug", widget: "hidden", default: "strategies", i18n: true }
+      - label: "Table of Contents"
+        name: "toc"
+        widget: "object"
+        i18n: true
+        fields:
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            i18n: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", i18n: true }
+              - { label: "ID", name: "id", widget: "string", i18n: true }
+              - label: "Sub Sections"
+                name: "sub_sections"
+                widget: "list"
+                required: false
+                i18n: true
+                fields:
+                  - { label: "Title", name: "title", widget: "string", i18n: true }
+                  - { label: "ID", name: "id", widget: "string", i18n: true }
+      - label: "Text Content"
+        name: "text"
+        widget: "object"
+        i18n: true
+        fields:
+          - label: "Navigating"
+            name: "navigating"
+            widget: "object"
+            i18n: true
+            fields:
+              - { label: "Header", name: "header", widget: "string", i18n: true }
+              - { label: "Description", name: "description", widget: "markdown", i18n: true }
+              - { label: "Image", name: "image", widget: "image", i18n: false }
+              - { label: "Reflecting Text", name: "reflecting", widget: "markdown", i18n: true }
+              - { label: "In The Moment Text", name: "in_the_moment", widget: "markdown", i18n: true }
+              - { label: "Keep Reading Text", name: "keep_reading", widget: "markdown", i18n: true }
+          - label: "Reflecting Section"
+            name: "reflecting"
+            widget: "object"
+            i18n: true
+            fields:
+              - { label: "Header", name: "header", widget: "string", i18n: true }
+              - { label: "ID", name: "id", widget: "string", i18n: true }
+              - { label: "Description", name: "description", widget: "markdown", i18n: true }
+              - label: "Sub Sections"
+                name: "sub_sections"
+                widget: "list"
+                i18n: true
+                fields:
+                  - { label: "Header", name: "header", widget: "string", i18n: true }
+                  - { label: "ID", name: "id", widget: "string", i18n: true }
+                  - { label: "Description", name: "description", widget: "markdown", i18n: true }
+                  - label: "Paragraphs"
+                    name: "paragraphs"
+                    widget: "list"
+                    i18n: true
+                    fields:
+                      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+                      - { label: "Image", name: "image", widget: "image", required: false, i18n: false }
+                      - { label: "Image Width", name: "image_width", widget: "string", required: false, i18n: true }
+                      - { label: "Insight", name: "insight", widget: "string", required: false, i18n: true }
+                      - { label: "Insight Image", name: "insight_image", widget: "image", required: false, i18n: false }
+          - label: "In the Moment Section"
+            name: "in_the_moment"
+            widget: "object"
+            i18n: true
+            fields:
+              - { label: "Header", name: "header", widget: "string", i18n: true }
+              - { label: "ID", name: "id", widget: "string", i18n: true }
+              - { label: "Description", name: "description", widget: "markdown", i18n: true }
+              - label: "Sub Sections"
+                name: "sub_sections"
+                widget: "list"
+                i18n: true
+                fields:
+                  - { label: "Header", name: "header", widget: "string", i18n: true }
+                  - { label: "ID", name: "id", widget: "string", i18n: true }
+                  - { label: "Description", name: "description", widget: "markdown", i18n: true }
+                  - label: "Paragraphs"
+                    name: "paragraphs"
+                    widget: "list"
+                    i18n: true
+                    fields:
+                      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+                      - { label: "Image", name: "image", widget: "image", required: false, i18n: false }
+                      - { label: "Image Width", name: "image_width", widget: "string", required: false, i18n: true }
+                      - { label: "Insight", name: "insight", widget: "string", required: false, i18n: true }
+                      - { label: "Insight Image", name: "insight_image", widget: "image", required: false, i18n: false }
+          - label: "Living in Balance Section"
+            name: "living_in_balance"
+            widget: "object"
+            i18n: true
+            fields:
+              - { label: "Header", name: "header", widget: "string", i18n: true }
+              - { label: "ID", name: "id", widget: "string", i18n: true }
+              - { label: "Description", name: "description", widget: "markdown", i18n: true }
+              - label: "Sub Sections"
+                name: "sub_sections"
+                widget: "list"
+                i18n: true
+                fields:
+                  - { label: "Header", name: "header", widget: "string", i18n: true }
+                  - { label: "ID", name: "id", widget: "string", i18n: true }
+                  - { label: "Description", name: "description", widget: "markdown", i18n: true }
+                  - label: "Paragraphs"
+                    name: "paragraphs"
+                    widget: "list"
+                    i18n: true
+                    fields:
+                      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+                      - { label: "Image", name: "image", widget: "image", required: false, i18n: false }
+                      - { label: "Image Width", name: "image_width", widget: "string", required: false, i18n: true }
+                      - { label: "Insight", name: "insight", widget: "string", required: false, i18n: true }
+                      - { label: "Insight Image", name: "insight_image", widget: "image", required: false, i18n: false }
+
+# All other GitHub related backend settings have been removed or are ensured to be commented out.
+# Ensure there are no other 'backend:' sections. 

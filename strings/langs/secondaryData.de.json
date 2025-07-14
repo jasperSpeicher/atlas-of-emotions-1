@@ -1,0 +1,786 @@
+{
+  "slug": "secondaryData",
+  "annex": {
+    "psychopathology": {
+      "emotions": [
+        {
+          "name": "Wut",
+          "desc": "Eine Tendenz, körperlichen oder verbalen Schaden in unangemessenen Kontexten zu verursachen. Wut kann außer Kontrolle geraten oder passiv, aber hartnäckig beschäftigend sein.",
+          "children": [
+            {
+              "name": "Intermittierende Explosible Störung",
+              "desc": "Impulsiv aggressives und gewalttätiges Verhalten, das in keinem Verhältnis zu den Auslösern steht."
+            },
+            {
+              "name": "Oppositionelle Trotzstörung",
+              "desc": "Ein Muster von trotzigem, ungehorsamen und feindseligen Verhalten bei Kindern oder Jugendlichen gegenüber Eltern und Autoritätspersonen, das über normales altersgemäßes Fehlverhalten hinausgeht."
+            },
+            {
+              "name": "Antisoziale Persönlichkeitsstörung",
+              "desc": "Gekennzeichnet durch ein durchgängiges Muster der Missachtung der Rechte anderer Menschen, das sich oft als Feindseligkeit und/oder Aggression manifestiert. Betrug und Manipulation sind ebenfalls zentrale Merkmale."
+            },
+            {
+              "name": "Disruptive Stimmungsdysregulationsstörung",
+              "desc": "Schwere wiederkehrende Wutausbrüche, die sich verbal (z.B. verbale Raserei) und/oder verhaltensbedingt (z.B. körperliche Aggression gegen Personen oder Eigentum) manifestieren und in Intensität oder Dauer völlig unverhältnismäßig zur Situation oder Provokation sind."
+            }
+          ]
+        },
+        {
+          "name": "Angst",
+          "desc": "Angstzustände beinhalten anhaltende Angst ohne Kenntnis der Quelle der Bedrohung und Panikzustände (episodische Attacken schwerer Angst).",
+          "children": [
+            {
+              "name": "Soziale Angststörung",
+              "desc": "Eine anhaltende Angst vor einer oder mehreren sozialen oder Leistungssituationen, in denen die Person unvertrauten Personen oder möglicher Beobachtung durch andere ausgesetzt ist. Die Person befürchtet, dass sie sich auf eine Weise verhalten wird (oder Angstsymptome zeigen wird), die peinlich und demütigend sein wird."
+            },
+            {
+              "name": "Posttraumatische Belastungsstörung (PTBS)",
+              "desc": "Ein psychischer Zustand, der durch ein oft überwältigend erschreckendes Ereignis ausgelöst wird — entweder durch das Erleben oder das Miterleben davon. Symptome können Flashbacks, Albträume und schwere Angstzustände sowie unkontrollierbare Gedanken über das Ereignis umfassen."
+            },
+            {
+              "name": "Vermeidende Persönlichkeitsstörung",
+              "desc": "Gekennzeichnet durch ein durchgängiges Muster sozialer Hemmung, Gefühle der Unzulänglichkeit und einer Überempfindlichkeit gegenüber negativer Bewertung. Menschen mit dieser Störung haben intensive Angst davor, dass andere sie lächerlich machen, ablehnen oder kritisieren werden."
+            },
+            {
+              "name": "Generalisierte Angststörung",
+              "desc": "Eine Angststörung, die durch übermäßige, unkontrollierbare und oft irrationale Sorgen und ängstliche Erwartungen bezüglich Ereignissen oder Aktivitäten gekennzeichnet ist."
+            },
+            {
+              "name": "Zwangsstörung (ZS)",
+              "desc": "Eine Angststörung, die durch aufdringliche Gedanken gekennzeichnet ist, die Unruhe, Besorgnis, Angst oder Sorge hervorrufen (Zwangsgedanken); wiederholte Verhaltensweisen, die darauf abzielen, die damit verbundene Angst zu reduzieren (Zwangshandlungen); oder eine Kombination aus beiden Zwangsgedanken und -handlungen."
+            }
+          ]
+        },
+        {
+          "name": "Ekel",
+          "desc": "Die Psychopathologie des Ekels umfasst Gefühle, die alltägliche Interaktionen mit der Welt, sich selbst oder anderen verhindern. Ekel kann ein lähmendes Gefühl sein, das einfache Interaktionen (wie Essen) extrem schmerzhaft, wenn nicht unmöglich macht. Ekel und Angst tragen beide zu verschiedenen Phobien bei, wie der Angst vor kleinen Tieren.",
+          "children": [
+            {
+              "name": "Anorexia Nervosa",
+              "desc": "Ein verzerrtes Selbstbild, das durch verschiedene kognitive Verzerrungen aufrechterhalten werden kann, die verändern, wie die betroffene Person ihren Körper, Nahrung und Essen bewertet und darüber denkt. Menschen mit Anorexia nervosa sehen sich oft als ekelhaft, übergewichtig oder 'groß' an, auch wenn sie untergewichtig sind."
+            },
+            {
+              "name": "Körperdysmorphe Störung",
+              "desc": "Eine Körperbildstörung, die durch anhaltende und aufdringliche Beschäftigung mit einem eingebildeten oder geringfügigen Makel im eigenen Aussehen oder einem Ekelgefühl gegenüber dem eigenen Aussehen gekennzeichnet ist."
+            },
+            {
+              "name": "Bulimie",
+              "desc": "Eine Störung, die durch wiederholte Essanfälle mit großen Nahrungsmengen gekennzeichnet ist, gefolgt von selbst herbeigeführtem Erbrechen; sowohl die Essanfälle als auch das Erbrechen können von Selbstekelbefindungen begleitet sein."
+            },
+            {
+              "name": "Sexuelle Aversion",
+              "desc": "Gekennzeichnet durch Ekel, Angst, Abscheu oder mangelnde Begierde in einvernehmlichen Beziehungen mit genitalem Kontakt."
+            }
+          ]
+        },
+        {
+          "name": "Traurigkeit",
+          "desc": "Depression ist eine bekannte Form der Psychopathologie, die Berichten zufolge über 25% der Bevölkerung betrifft. Depression beeinträchtigt das tägliche Leben und verursacht Leid sowohl für die Betroffenen als auch für diejenigen, die sich um sie sorgen. Depression ist eine häufige, aber ernste Erkrankung.\n",
+          "children": [
+            {
+              "name": "Major Depression",
+              "desc": "Auch als klinische Depression, Major Depression oder unipolare Depression bekannt, ist dies eine psychische Störung, die durch eine durchdringende und anhaltende gedrückte Stimmung gekennzeichnet ist, die von geringem Selbstwertgefühl und einem Verlust des Interesses oder der Freude an normalerweise angenehmen Aktivitäten begleitet wird."
+            },
+            {
+              "name": "Dysthymie",
+              "desc": "Manchmal auch als neurotische Depression, dysthyme Störung oder chronische Depression bezeichnet, ist dies eine Stimmungsstörung, die aus denselben kognitiven und körperlichen Problemen wie Depression besteht, aber mit weniger schweren, jedoch länger anhaltenden Symptomen."
+            },
+            {
+              "name": "Bipolare Störung",
+              "desc": "Auch als bipolare affektive Störung bekannt (ursprünglich manisch-depressive Erkrankung genannt), ist dies eine psychische Störung, die durch Phasen erhöhter Stimmung und Phasen der Depression gekennzeichnet ist."
+            }
+          ]
+        },
+        {
+          "name": "Freude",
+          "desc": "Anders als bei anderen Gefühlen ist es schwer, sich vorstellen, dass erfreuliche Gefühle zu Herausforderungen bei der Gestaltung unserer täglichen Beziehungen, Arbeit und Fähigkeit, unsere grundlegenden Bedürfnisse zu erfüllen, beitragen. Dennoch ist pathologische Freude sehr ernst; hyper-erhöhte Zustände der Freude können Delusionen verursachen, zusätzlich zum Gefühl gut zu sein, was zu destruktiven Verhaltensweisen führen kann.\n",
+          "children": [
+            {
+              "name": "Manie/Manischer Episode",
+              "desc": "Manie am Extrem ist häufig durch hektische, unkontrollierbare Exzelsiorität gekennzeichnet — im Grunde Elation, die nicht auf Realität gründet. Häufig sind Selbstbewusstsein und Selbstachtung übermäßig vergrößert, und große, extravaganten Ideen werden ausgedrückt; dies wird als “Grandiosität” bezeichnet. Manie ist oft Teil der bipolaren Störung."
+            },
+            {
+              "name": "Cyclothemia",
+              "desc": "Dies ist gekennzeichnet durch Stimmungen, die deutlich hin und her schwanken. Der Mensch kann für eine Zeit auf dem Höhepunkt sein, gefolgt von einem niedrigen Zeitraum, in dem sein Gefühl etwas blau ist. Zwischen diesen cyclothymischen Höhen und Tiefen kann der Mensch stabil und in Ordnung sein."
+            }
+          ]
+        }
+      ],
+      "title": "Psychopathologie",
+      "desc": "Jedes Gefühl steht in Verbindung mit verschiedenen psychopathologischen Störungen, die persistente Verhaltensweisen beschreiben, die das Funktionieren beeinträchtigen."
+    },
+    "signals": {
+      "emotions": [
+        {
+          "name": "Wut",
+          "desc": null,
+          "children": [
+            {
+              "name": "Signal",
+              "desc": "In der Stimme, Wut erzeugt ein Geräusch, wenn sie nicht kontrolliert wird; wenn Wut kontrolliert wird, kann die Stimme einen scharfen Klang haben, der sehr erkennbar ist. Im Gesicht, das Signal umfasst aufgerichtete Augen, abgesenkte Augenbrauen und zusammengezogene, zusammengezogene Wangen. Wenn Menschen ein Wut-Signal hören oder sehen, sind sie in der Regel nur durch die Wahrnehmung des Signals verletzt und können mit wütendem Verhalten reagieren."
+            },
+            {
+              "name": "Nachricht",
+              "desc": "Die Nachricht von Wut ist “hol mich raus.” Wut kann eine Nachricht tragen, die von Unzufriedenheit bis Bedrohung reicht."
+            }
+          ]
+        },
+        {
+          "name": "Angst",
+          "desc": null,
+          "children": [
+            {
+              "name": "Signal",
+              "desc": "Häufige Signale sind sehr weit aufgerichtete Augen, horizontal gestreckte Wangen und angehobene, zusammengezogene Augenbrauen. Es kann Bewegung vom Ziel weg geben. Schreie können mit intensiver Angst begleitet sein. Weniger erregende Angstsignale können schwere Atmung, eine leicht zurückgezogene Kopfposition und horizontal gestreckte Wangen mit zusammengezogenen Nackenmuskeln umfassen."
+            },
+            {
+              "name": "Nachricht",
+              "desc": "Die Nachricht von Angst ist “hilf mir.” Sie kann eine niedrige Ebene von Sorge oder Panik signalisieren."
+            }
+          ]
+        },
+        {
+          "name": "Ekel",
+          "desc": null,
+          "children": [
+            {
+              "name": "Signal",
+              "desc": "Es gibt drei Gesichtsausdrücke, die mit Ekel verbunden sind. Der erste ist, den Zungen herauszuhalten, als ob die Person etwas aus ihrem Mund herauszieht. Der zweite ist das Anheben der Oberlippe, aber es ist entspannt und nicht gestresst, was Zähne und Zähne anzeigen kann, abhängig vom Mundbild. Der dritte ist das Zucken des Nasenrückens und das Anheben der Nässe. Diese Ausdrücke können getrennt oder gleichzeitig auftreten."
+            },
+            {
+              "name": "Nachricht",
+              "desc": "Die Nachricht von Ekel ist “hol mich weg von diesem.” Sie kann anderen signalisieren, dass das Ziel der Ekel weggehalten oder das Ziel unrein, schmutzig oder sozial/moralisch verwerflich ist."
+            }
+          ]
+        },
+        {
+          "name": "Traurigkeit",
+          "desc": null,
+          "children": [
+            {
+              "name": "Signal",
+              "desc": "Die Signale von Traurigkeit umfassen eine Verärgerung (untere Lippe leicht nach oben gedrückt und Lippenränder leicht nach unten gezogen), die inneren Augenbrauen zusammengezogen im Zentrum des Stirnbeins, erhobene Wangen und Tränen. Die Stimmbildung von Traurigkeit kann Sobs und Heben und Zucken der Stimme umfassen."
+            },
+            {
+              "name": "Nachricht",
+              "desc": "Die Nachricht von Traurigkeit ist “tröste mich.” Sie ermutigt, oder soll ermutigen, Empathie von anderen."
+            }
+          ]
+        },
+        {
+          "name": "Freude",
+          "desc": null,
+          "children": [
+            {
+              "name": "Signal",
+              "desc": "Freudensignale umfassen das Duchenne (authentische) Lächeln, Aktivierung eines Lächeln (Lippenränder leicht nach oben gezogen), und Aktivierung der Orbitalmuskeln, die das Unterauge zusammenziehen und Falten um die äußeren Augenwinkel (besonders mit Alter) erzeugen. Freude umfasst auch stimmliche Signale wie das Geräusch von Erleichterung (eine Seufzer oder Exhalation) und das Geräusch von Vergnügen (Lachen oder Gelächter)."
+            },
+            {
+              "name": "Nachricht",
+              "desc": "Die Nachricht von Freude ist “das fühlt sich gut.” Sie ermutigt, sich in soziale Interaktionen zu engagieren."
+            }
+          ]
+        }
+      ],
+      "title": "Signal und Nachricht",
+      "desc": "Das Signal eines Gefühls beschreibt die universellen Weisen, wie ein Gefühl in Gesicht und/oder Stimme angezeigt wird. Es können auch andere stimmliche Tonänderungen und Körperspracheindikatoren auftreten, aber diese sind in der Regel kulturabhängig und gelernt, anstatt universell.<br><br>Die Nachricht ist, was das Gefühl uns mitteilt. Alle Gefühle haben eine Nachricht, die eine Reaktion auf die Umwelt um uns herum ist."
+    },
+    "personality-trait": {
+      "emotions": [
+        {
+          "name": "Wut",
+          "desc": "Ein gemeinbarer Mensch ist oft wütend und bekannt für die Häufigkeit seiner Wutreaktionen auf die Welt. Häufig tritt Wut mit jeder Frustration auf; der Schwellenwert für Frustration ist niedrig. Gemeinbarer Menschen erleben später oft Bedauern und entschuldigen sich für ihre Wut, aber dennoch reagieren sie wütend. Manchmal drücken gemeinbarer Menschen ihre Wut in einer schlechten Art, indem sie Worte verwenden, um psychische Qual sein zu lassen und anderen Menschen Schmerzen zuzufügen."
+        },
+        {
+          "name": "Angst",
+          "desc": "Ein schüchterner oder ängstlicher Mensch. Dieser Persönlichkeitstyp ist wahrscheinlich geneigt, Risiken und unangenehme Situationen zu vermeiden. Schüchterne Menschen könnten die Welt als voll von schwierigen Situationen wahrnehmen."
+        },
+        {
+          "name": "Ekel",
+          "desc": "Ein Mensch, der oft mit Ekel anderer Menschen umgeht, könnte einen aufgeblähten Sinn von Selbstwert und eine Hyper-Abneigung gegenüber anderen haben. Jemand, der mit allem unzufrieden ist, kann unangenehm umzugehen sein."
+        },
+        {
+          "name": "Traurigkeit",
+          "desc": "Ein trübes Mensch, der oft niedrig ist, könnte klinische Depression oder einfach mehr häufige Sorgen haben. Dieser Mensch könnte die Perspektive verfolgen, dass das Leben schwer und schwierig ist."
+        },
+        {
+          "name": "Freude",
+          "desc": "Ein fröhlicher Mensch könnte auch als optimistisch gedacht werden. Dieser Mensch sieht die Welt in einer positiven Weise und kann leicht zum Lachen gebracht und Freude erzeugen."
+        }
+      ],
+      "title": "Persönlichkeitseigenschaft",
+      "desc": "Bestimmte Persönlichkeitseigenschaften sind mit bestimmten Gefühlen verknüpft."
+    },
+    "impediment-antidote": {
+      "emotions": [
+        {
+          "name": "Wut-Antidoten",
+          "children": [
+            {
+              "name": "Verärgerung",
+              "desc": "Geduld, offenherzige Haltung, Sorge für andere."
+            },
+            {
+              "name": "Frustration",
+              "desc": "Lassen, lassen von Greifen, Dinge in eine größere Perspektive stellen."
+            },
+            {
+              "name": "Argumentativität",
+              "desc": "Machendes Bemühen, die andere Perspektive zu verstehen, kognitive Empathie, Barmherzigkeit, Wunsch, das Problem durch eine einvernehmliche Lösung zu lösen."
+            },
+            {
+              "name": "Verzweiflung",
+              "desc": "Lassen von Greifen. Geduld, innere Ruhe. Versuche, die Ursachen und Bedingungen zu verstehen, die zur unerwünschten Situation geführt haben."
+            },
+            {
+              "name": "Vengewichtigkeit",
+              "desc": "Bedenken der negativen Auswirkungen von Rache, in kurzer und langjähriger Sicht; Vergebung nicht als Verzeihung für schädliche Verhaltensweisen, sondern als Brechen des Zykels von Ekel und Hass."
+            },
+            {
+              "name": "Wut",
+              "desc": "Einen Moment langen, physisch und mental, von den Umständen, die zur Wut geführt haben. Die Wut selbst mit dem Auge der Erkenntnis betrachten, als ob man einen brennenden Feuer betrachtet und langsam es auskühlen lässt."
+            }
+          ]
+        },
+        {
+          "name": "Wut-Hemmungen",
+          "children": []
+        },
+        {
+          "name": "Angst-Antidoten",
+          "children": [
+            {
+              "name": "Treppenwitz",
+              "desc": "Versuche, zu überlegen, was man tun könnte. Entspannen des Geistes gibt die beste Chance, die richtige Lösung für das zu finden, was die Treppenwitz verursacht hat."
+            },
+            {
+              "name": "Nervosität",
+              "desc": "Versuche, zu überlegen, was man tun könnte. Entspannen des Geistes gibt die beste Chance, die richtige Lösung für das zu finden, was die Nervosität verursacht hat."
+            },
+            {
+              "name": "Ängstlichkeit",
+              "desc": "Machendes Bemühen, Rückblicke über das Vergangene und Erwartungen für das Zukünftige loszuwerden."
+            },
+            {
+              "name": "Furcht",
+              "desc": "So lange wie möglich ruhig bleiben. Sehen, was man für sich und für andere tun kann."
+            },
+            {
+              "name": "Panik",
+              "desc": "Machendes Bemühen, zu sehen, ob etwas als Abhilfe dienen könnte (abhängig von den involvierten Ursachen)."
+            },
+            {
+              "name": "Horror",
+              "desc": "Versuche, zu sehen, ob etwas sofort möglich ist. Wenn das nicht der Fall ist, erstellen Sie eine Entfernung, um zu sehen, ob etwas von weit entfernt möglich ist. Mit Festigkeit und Mitgefühl, nie mit Hass. "
+            },
+            {
+              "name": "Terror",
+              "desc": "Einige Ruhe im Geiste bringen, um die am besten geeignete Entscheidung zu treffen."
+            }
+          ]
+        },
+        {
+          "name": "Angst-Hemmungen",
+          "children": []
+        },
+        {
+          "name": "Ekel-Antidoten",
+          "children": [
+            {
+              "name": "Abneigung",
+              "desc": "Unparteiisch die Schädlichkeit einschätzen, angemessene Maßnahmen ergreifen und dann Abneigung in einem Raum der achtsamen Erkenntnis auflösen."
+            },
+            {
+              "name": "Missfallen",
+              "desc": "Während unparteiischer ethischer Fragen, Kompassionsbildung, um die beste Lösung für die Ursachen und Bedingungen zu finden, die Missfallen ausgelöst haben."
+            },
+            {
+              "name": "Abstossung",
+              "desc": "Unparteiisch die Schädlichkeit einschätzen, angemessene Maßnahmen ergreifen und dann Abstossung in einem Raum der achtsamen Erkenntnis auflösen."
+            },
+            {
+              "name": "Abstossung",
+              "desc": "Unparteiisch die Schädlichkeit einschätzen, angemessene Maßnahmen ergreifen und dann Abstossung in einem Raum der achtsamen Erkenntnis auflösen."
+            },
+            {
+              "name": "Ekel—Selbst",
+              "desc": "Mit gesundem Bedauern die Entschlossenheit erzeugen, sich selbst zu verbessern; wann immer möglich, die Schäden reparieren, die an andere verursacht wurden. Nicht in pessimistische Schuld verfallen, denken, dass man grundlegend schlecht ist und dass das so sein muss. Nicht das Potenzial für Veränderung unterschätzen."
+            },
+            {
+              "name": "Ekel—Andere",
+              "desc": "Den Blickwinkel eines sorgenden Arztes anpflanzen, der möglicherweise bestimmte Verhaltensweisen ablehnt, aber alle Möglichkeiten in Anspruch nimmt, einen Menschen von seinen Leiden zu heilen."
+            },
+            {
+              "name": "Abstossung",
+              "desc": "Den Blickwinkel eines sorgenden Arztes anpflanzen, der möglicherweise bestimmte Verhaltensweisen ablehnt, aber alle Möglichkeiten in Anspruch nimmt, einen Menschen von seinen Leiden zu heilen."
+            },
+            {
+              "name": "Abstossung",
+              "desc": "In Fällen toxischer Substanzen oder Situationen, die bestehende Möglichkeiten, sie ruhig zu vermeiden, zu nutzen. In Fällen von Handlungen, den Blickwinkel eines sorgenden Arztes anpflanzen, der möglicherweise bestimmte Verhaltensweisen ablehnt, aber alle Möglichkeiten in Anspruch nimmt, einen Menschen von seinen Leiden zu heilen."
+            }
+          ]
+        },
+        {
+          "name": "Ekel-Hemmungen",
+          "children": []
+        },
+        {
+          "name": "Traurigkeit-Antidoten",
+          "children": [
+            {
+              "name": "Enttäuschung",
+              "desc": "Verstehen, dass Traurigkeit in angemessenen Umständen natürlich ist, aber auch, dass das Erleben von Verlust ein Teil des Lebens ist und dass man sich nicht überwältigen sollte. Versuche, einen Frieden in sich selbst zu finden und zu denken, was man als konstruktive Dinge tun könnte, anstatt zu tun."
+            },
+            {
+              "name": "Verzweiflung",
+              "desc": "Verstehen, dass ein dauerhafter Zustand der Traurigkeit keine wirklichen Vorteile bringt. Im Falle eines verstorbenen Menschen, in den längeren Zustand der Traurigkeit und Verzweiflung, sollte man nicht als Ehre ansehen, die man für diesen Menschen bezahlt hat. Es ist besser, Ehre durch bedeutende und selbstlose Taten zu bezahlen."
+            },
+            {
+              "name": "Enttäuschung",
+              "desc": "Verstehen, dass ein dauerhafter Zustand der Traurigkeit keine wirklichen Vorteile bringt. Im Falle eines verstorbenen Menschen, in den längeren Zustand der Traurigkeit und Verzweiflung, sollte man nicht als Ehre ansehen, die man für diesen Menschen bezahlt hat. Es ist besser, Ehre durch bedeutende und selbstlose Taten zu bezahlen."
+            },
+            {
+              "name": "Hilflosigkeit",
+              "desc": "Verstehen, dass ein dauerhafter Zustand der Traurigkeit keine wirklichen Vorteile bringt. Im Falle eines verstorbenen Menschen, in den längeren Zustand der Traurigkeit und Verzweiflung, sollte man nicht als Ehre ansehen, die man für diesen Menschen bezahlt hat. Es ist besser, Ehre durch bedeutende und selbstlose Taten zu bezahlen."
+            },
+            {
+              "name": "Elend",
+              "desc": "Verstehen, dass ein dauerhafter Zustand der Traurigkeit keine wirklichen Vorteile bringt. Im Falle eines verstorbenen Menschen, in den längeren Zustand der Traurigkeit und Verzweiflung, sollte man nicht als Ehre ansehen, die man für diesen Menschen bezahlt hat. Es ist besser, Ehre durch bedeutende und selbstlose Taten zu bezahlen."
+            },
+            {
+              "name": "Trauer",
+              "desc": "Verstehen, dass ein dauerhafter Zustand der Traurigkeit keine wirklichen Vorteile bringt. Im Falle eines verstorbenen Menschen, in den längeren Zustand der Traurigkeit und Verzweiflung, sollte man nicht als Ehre ansehen, die man für diesen Menschen bezahlt hat. Es ist besser, Ehre durch bedeutende und selbstlose Taten zu bezahlen."
+            },
+            {
+              "name": "Enttäuschung",
+              "desc": "Verstehen, dass ein dauerhafter Zustand der Traurigkeit keine wirklichen Vorteile bringt. Im Falle eines verstorbenen Menschen, in den längeren Zustand der Traurigkeit und Verzweiflung, sollte man nicht als Ehre ansehen, die man für diesen Menschen bezahlt hat. Es ist besser, Ehre durch bedeutende und selbstlose Taten zu bezahlen."
+            },
+            {
+              "name": "Verzweiflung",
+              "desc": "Verstehen, dass ein dauerhafter Zustand der Traurigkeit keine wirklichen Vorteile bringt. Im Falle eines verstorbenen Menschen, in den längeren Zustand der Traurigkeit und Verzweiflung, sollte man nicht als Ehre ansehen, die man für diesen Menschen bezahlt hat. Es ist besser, Ehre durch bedeutende und selbstlose Taten zu bezahlen."
+            },
+            {
+              "name": "Kompassions/Freude",
+              "desc": "Bedauern, dass man etwas Gutes getan hat, das mit einigen persönlichen Anstrengungen erkauft wurde. Schmalzugkeit, wenn man nur für eine begrenzte Anzahl von Menschen, die nahe stehen, sorgt."
+            }
+          ]
+        },
+        {
+          "name": "Traurigkeit-Hemmungen",
+          "children": []
+        },
+        {
+          "name": "Freude-Antidoten",
+          "children": [
+            {
+              "name": "Schadenfreude",
+              "desc": "Den zerstörerischen Aspekt erkennen und versuchen, Barmherzigkeit gegenüber dem Menschen zu erzeugen."
+            },
+            {
+              "name": "Stolz",
+              "desc": "Humilität. Dinge in eine Perspektive stellen und verstehen, dass es viele andere Menschen gibt, die ähnlich oder sogar bessere Qualitäten als die eigene haben. Verstehen, dass man etwas nicht nur deshalb tun kann, weil man so besonders ist, sondern weil viele interabhängige Ursachen und Bedingungen in denen andere mitgewirkt haben."
+            }
+          ]
+        },
+        {
+          "name": "Freude-Hemmungen",
+          "children": [
+            {
+              "name": "Sinnliche Genüsse",
+              "desc": "Unfähig, die Qualität der Gegenwart zu schätzen."
+            },
+            {
+              "name": "Erleichterung",
+              "desc": "Wiederholtes Sorgen umsonst."
+            },
+            {
+              "name": "Lust",
+              "desc": "Tendenz, Dinge negativ zu sehen."
+            },
+            {
+              "name": "Erregung",
+              "desc": "Pessimismus."
+            },
+            {
+              "name": "Ekstase",
+              "desc": "Greifen, Anhängen und jede andere affektive mentale Zustand (Neid, Ekel, Arroganz, etc.)."
+            },
+            {
+              "name": "Fiero",
+              "desc": "Vanität, Narzissmus, Nicht-Anerkennung mit Dankbarkeit all jenen, die zum Erfolg beigetragen haben."
+            },
+            {
+              "name": "Naches",
+              "desc": "Stolz gemischt mit Arroganz und mit partieller Haltung, die einen Gefühl von Verachtung gegenüber den Erfolgen anderer erzeugt."
+            },
+            {
+              "name": "Verwunderung",
+              "desc": "Greifen. Unbehagen."
+            },
+            {
+              "name": "Freude",
+              "desc": "Neid, Ekel, Stolz."
+            },
+            {
+              "name": "Kompassions/Freude",
+              "desc": "Bedauern, dass man etwas Gutes getan hat, das mit einigen persönlichen Anstrengungen erkauft wurde. Schmalzugkeit, wenn man nur für eine begrenzte Anzahl von Menschen, die nahe stehen, sorgt."
+            }
+          ]
+        }
+      ],
+      "title": "Hemmungen und Antidoten",
+      "desc": "Das Diagramm unten wurde von Mathieu Ricard erstellt und bietet eine tibetische Buddhistische Perspektive auf das Verständnis und das Arbeiten mit Gefühlen. Es zeigt, wie schwierige Gefühle durch das Bewältigen positiver mentaler Zustände, bekannt als “Antidoten”, entgegengewirkt werden können. Es hilft auch, “Hemmungen” zu identifizieren, die das Erleben erfreulicher Gefühle blockieren und erfreuliche Gefühle, die schwer zu bewältigen sein können. Sie können mehr über Mathieu Ricard <a href=\"https://www.matthieuricard.org/en/articles/buddhist-and-psychological-perspectives-on-emotions-and-well-being-by-paul-ekman-richard-j-davidson-matthieu-ricard-and-b-alan-wallace-current-directions-in-psychological-science-2005-14-2/\" target=\"blank\">hier</a>."
+    },
+    "triggers-timeline": {
+      "content": [
+        {
+          "desc": "Dies beschreibt die Kontext oder Situationen, die das Eintreten eines Gefühls beeinflussen können. Zum Beispiel könnte unser Vorbedingung physiologisch sein: Hunger, Müdigkeit oder emotional: eine sehr erfreuliche oder stressige Tage oder aus einem vorherigen emotionalen Episoden herausgekommen sein.",
+          "name": "Vorbedingung"
+        },
+        {
+          "desc": "Dies beschreibt eine Person, ein Ort, eine Situation, ein Bild, eine Gedanken, eine Erinnerung, ein Geruch, ein Geräusch, ein Geschmack oder eine Idee, die wir aus der Außenwelt oder unserem eigenen Geist erfassen. Wir bewerten ständig, oder bewerten, unsere innere und äußere Welt automatisch. Zum Beispiel, wenn wir eine neue Melodie hören, überlagern wir unsere Kenntnisse von Instrumenten und Kategorien von Musik, während wir siehst, ohne zu denken, das ist automatische Bewertung. ",
+          "name": "Ereignis"
+        },
+        {
+          "desc": "Dies beschreibt die Kombination der automatischen Bewertung mit einem universellen/hartgespielten oder erworbenen Skript in unserer Datenbank. ",
+          "name": "Auslöser"
+        },
+        {
+          "desc": "Dies beschreibt unsere universellen/hartgespielten Reaktionen und unsere individuell erworbenen emotionalen Erinnerungen. Zum Beispiel, wenn das Ereignis ein Geruch ist und in der Datenbank ist die gespeicherte Erinnerung des Shampoos, das unsere Mutter in unseiner Kindheit verwendet hat, und wir werden durch einen Auslöser ausgelöst, der eine emotionale Erfahrung von warmem Nostalgie für ein glückliches Kindesalter erzeugt. Wenn das apprazierte Ereignis etwas in unserer Datenbank ähnelt, kann es sehr genau oder eine verzerrte Wahrnehmung des Auslösers sein. Zum Beispiel, wenn wir eine erschreckende Erfahrung mit einem Polizisten als Kind hatten und wir als Erwachsener überprüft werden, könnten wir die Situation mit einer verzerrten Angstwahrnehmung wahrnehmen."
+        },
+        {
+          "desc": "Dies beschreibt die autonomen Veränderungen in unserem Körper, die während des Eintretens eines Gefühls auftreten. Wir können diese Veränderungen als Gefühle in unserem Körper spüren, wie Hitze in unserem Gesicht, Spannung in unseinen Schultern oder Kiefer, etc.",
+          "name": "Körperliche Veränderungen"
+        },
+        {
+          "desc": "Dies beschreibt das Gefühl selbst, einschließlich physischer und psychologischer Veränderungen.",
+          "name": "Zustand"
+        },
+        {
+          "desc": "Dies beschreibt die qualitative Erfahrung eines Gefühls, wie Traurigkeit traurig ist, oder Wut wütend ist.",
+          "name": "Psychologische Veränderungen"
+        },
+        {
+          "desc": "Dies beschreibt unsere emotionalen Reaktionen. Dies könnte ein äußeres Verhalten wie ein Jammern in Wut sein, oder ein internes, wie das Zurückhalten von Wut. Jedes Gefühl im Atlas zeigt einen Bereich von sofortigen Handlungen, sowohl als konstruktiv als auch als destruktiv. Führt zu weiterer Zusammenarbeit mit anderen oder zu Schwierigkeiten bei der Zusammenarbeit.",
+          "name": "Handlung"
+        },
+        {
+          "desc": "Dies beschreibt das Ergebnis oder den Einfluss unserer emotionalen Handlungen. Dies könnte äußerlich sein: wenn wir jemanden angefleht haben, könnten sie zurück anflehen; oder intern: wenn wir uns zurückgehalten haben, könnten wir einige fortlaufende Verärgerung empfinden. Die Postbedingung könnte zu unserem nächsten emotionalen Episoden führen, wenn jemand zurück anfleht, uns entweder Wut oder Angst oder Traurigkeit/Bedauern für unsere Handlungen. Unsere Postbedingung ist eine Gelegenheit für uns, unsere emotionale Erkenntnis durch Reflexion auf unser Gefühl zu erhöhen, um den Auslöser zu verstehen, die gefühlte Erfahrung zu identifizieren und zu berücksichtigen, wie sie einen Einfluss auf sie hatte.",
+          "name": "Postbedingung"
+        },
+        {
+          "desc": "Die Selektive Filterung wird mit dem Eintreten von Handlungen und Signalen gestartet — die Wahrnehmung wird eingeengt und verzerrt, Informationen relevant für und konsistent mit dem vorherrschenden Gefühl gefiltert und interpretiert. Zum Beispiel, wenn Angst erregt wird, besteht eine erhöhte Empfindlichkeit für wirkliche und gedachte Bedrohungen. ",
+          "name": "Selektive Filterperiode"
+        }
+      ],
+      "footer": [
+        "Gelernte Anzeigeregeln (um Signale zu regulieren) und gelernte Gefühlsregeln (um subjektive Gefühle zu modifizieren, zu verstärken oder zurückzuhaltend) entstehen. Wir wissen nicht, wie schnell sie auftreten. Treten sie vor den Signalen und Handlungen oder sofort während des Eintretens der Signale und Handlungen? Impulse werden in Handlungen und Signale übersetzt. ",
+        "Der Unterschied zwischen Schritt 2 (Impulse) und Schritt 4 (Handlungen/Signale) ist variabel, abhängig von den individuellen Merkmalen jedes Menschen und dem emotionalen Profil des Menschen, der Intensität des apprazierte Auslösers, und der momentanen psychologischen Zustand des Individuums, wenn der Auslöser appraziiert wird (wie viel Schlaf der Mensch gestern hatte; was, falls vorhanden, das letzte Gefühl des Menschen oder welches Gefühl er momentan erlebt oder erlebt, etc.)."
+      ],
+      "title": "Emotionales Episoden-Zeitachse",
+      "desc": ""
+    },
+    "intrinsic-or-intentional": {
+      "emotions": [
+        {
+          "name": "Wut",
+          "children": [
+            {
+              "name": "Intrinsisch",
+              "desc": "Streit, Belästigung, Untergraben, Streit, Schreien/jammern, Körperkraft, Zwischenrufen, Passiv aggressiv"
+            },
+            {
+              "name": "Absichtlich",
+              "desc": "Grenzen setzen, Fest, Zurückziehen, Zeit aus, Atmen, Geduld, Umgestalten, Ablenken, Vermeiden, Entfernen der Störung"
+            }
+          ]
+        },
+        {
+          "name": "Angst",
+          "children": [
+            {
+              "name": "Intrinsisch",
+              "desc": "Zurückziehen, Vermeiden, Zögern, Einfrieren, Schreien/jammern, Rückblick, Sorgen"
+            },
+            {
+              "name": "Absichtlich",
+              "desc": "Umgestalten, Bewusstsein, Atmen, Ablenken"
+            }
+          ]
+        },
+        {
+          "name": "Ekel",
+          "children": [
+            {
+              "name": "Intrinsisch",
+              "desc": "Zurückziehen, Vermeiden, Erbrechen, Entmenschlichen"
+            },
+            {
+              "name": "Absichtlich",
+              "desc": "Zurückziehen, Vermeiden"
+            }
+          ]
+        },
+        {
+          "name": "Traurigkeit",
+          "children": [
+            {
+              "name": "Intrinsisch",
+              "desc": "Komfort suchen, Zurückziehen, Trösten, Protest, Scham empfinden"
+            },
+            {
+              "name": "Absichtlich",
+              "desc": "Zurückziehen, Ablenken"
+            }
+          ]
+        },
+        {
+          "name": "Freude",
+          "children": [
+            {
+              "name": "Intrinsisch",
+              "desc": "Mehr suchen, Aufrechterhalten, Jubeln, Engagieren/verbinden, Genießen, Indulgieren"
+            },
+            {
+              "name": "Absichtlich",
+              "desc": "Keine"
+            }
+          ]
+        }
+      ],
+      "title": "Intrinsisch oder Absichtlich",
+      "desc": "Handlungen können intrinsisch (ohne bewusste Absicht) oder absichtlich (aktives Bemühen, Veränderung einzuleiten), oder beides sein."
+    },
+    "scientific-basis": {
+      "content": [
+        {
+          "desc": "Es gibt universelle Gefühle",
+          "name": "88%",
+          "formatting": "beforebreak"
+        },
+        {
+          "desc": "Es gibt universelle Gesichtssignale zu Gefühlen",
+          "name": "80%",
+          "formatting": "break"
+        },
+        {
+          "desc": "Wut ist ein universelles Gefühl",
+          "name": "91%",
+          "formatting": ""
+        },
+        {
+          "desc": "Angst ist ein universelles Gefühl",
+          "name": "90%",
+          "formatting": ""
+        },
+        {
+          "desc": "Ekel ist ein universelles Gefühl",
+          "name": "86%",
+          "formatting": ""
+        },
+        {
+          "desc": "Traurigkeit ist ein universelles Gefühl",
+          "name": "80%",
+          "formatting": ""
+        },
+        {
+          "desc": "Freude ist ein universelles Gefühl",
+          "name": "76%",
+          "formatting": "break"
+        },
+        {
+          "desc": "Es gibt universelle Auslöser zu Gefühlen",
+          "name": "66%",
+          "formatting": ""
+        },
+        {
+          "desc": "Es gibt universelle Gefühlsphysiologie",
+          "name": "51%",
+          "formatting": ""
+        },
+        {
+          "desc": "Es gibt biologisch diskrete, getrennte Gefühle",
+          "name": "49%",
+          "formatting": ""
+        },
+        {
+          "desc": "Gefühle werden durch soziale Faktoren konstruiert",
+          "name": "11%",
+          "formatting": ""
+        },
+        {
+          "desc": "Gefühle sind sowohl biologisch getrennt als auch sozial konstruiert",
+          "name": "3%",
+          "formatting": ""
+        }
+      ],
+      "footer": [
+        "Die Existenz von “erdrückenden Beweisen für Universale in jeder Aspekt von Gefühl” wurde von 88% der Befragten gebilligt. Die Beweise für universelle Signale (Gesicht oder Stimme) wurden von 80% gebilligt. Es gab weniger Einigkeit darüber, ob es erdrückende Beweise für Universale in den Ereignissen gibt, die einen Auslöser auslösen (66%), Physiologie (51%) oder Apprazierungsmechanismen (44%). Somit wurde Darwin's Behauptung von 1872 und die neuere Arbeit von Ekman und Friesen (1969) und Izard (1971) bezüglich der Universalität einiger Gesichtsausdrücke unterstützt. In der Frage “Welche der folgenden bestimmt am besten Ihre Orientierung zu Gefühlen in Ihrer Forschung?”, 49% wählten “Diskrete Gefühle (Wut, Angst usw.) kombinieren beide biologische und soziale Einflüsse”, 11% wählten “Gefühle als konstruiert, entweder sozial oder psychologisch, um die aktuellen Bedingungen anzupassen” und 30% zeigten an, dass sie beide Ansätze verwendeten. \n",
+        "Die Befragten wurden gebeten, ob die Beweise für jedes Gefühl erdrückend waren. Es gab hohe Einigkeit über fünf Gefühle (alle von Darwin und Wundt beschrieben): Wut (91%), Angst (90%), Ekel (86%), Traurigkeit (80%) und Freude (76%). Scham, Überraschung und Scham wurden von 40% bis 50% aufgeführt. Andere Gefühle, die derzeit von verschiedenen Forschern untersucht werden, zogen weniger Unterstützung: Schuld (37%), Verachtung (34%), Liebe (32%), Ehrfurcht (31%), Schmerz (28%), Neid (28%), Mitgefühl (20%), Stolz (9%) und Dankbarkeit (6%)."
+      ],
+      "title": "Der wissenschaftliche Grund für diese Arbeit",
+      "desc": "Der Atlas der Gefühle basiert auf einer Konsens zwischen Wissenschaftlern als durch eine Umfrage bestimmt (in der Wahl der fünf Emotionskontinente und der Beziehung von Gefühlen zu Stimmungen, Persönlichkeit und Psychopathologie), die Arbeit einiger Wissenschaftler, die sich auf die Benennung von Zuständen innerhalb von Gefühlen konzentriert haben, Wörterbucheinträge, Theorie und die besten Vermutungen über die Handlungen für jeden Zustand und ob sie konstruktiv, zerstörend oder unbestimmt sind. Weitere Informationen finden Sie unter <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">“Was Wissenschaftler, die sich mit Gefühlen beschäftigen, einig sind”</a>, von Paul Ekman (Perspectives on Psychological Science, 2015).",
+      "contentIntro": "Die Umfrage wurde im Juni 2014 an 248 Wissenschaftler geschickt, die häufig quantitative Forschung auf dem Gebiet der Gefühlsforschung durchgeführt haben."
+    },
+    "moods": {
+      "emotions": [
+        {
+          "name": "Ärgerlich",
+          "desc": "Prädisponiert dafür, wütend zu werden, leicht provozierbar."
+        },
+        {
+          "name": "Besorgt",
+          "desc": "Ängstlich, dass etwas Schlimmes passieren wird, nervös."
+        },
+        {
+          "name": "Missmutig",
+          "desc": "Allgemein angewidert."
+        },
+        {
+          "name": "Dysphorisch (oder melancholisch)",
+          "desc": "Ein anhaltendes Gefühl der Entmutigung oder Enttäuschung."
+        },
+        {
+          "name": "Euphorisch",
+          "desc": "Ein lang anhaltendes, allgemeines Wohlgefühl."
+        }
+      ],
+      "title": "Stimmungen",
+      "desc": "Stimmungen sind länger anhaltende Verwandte einer Emotion, die uns dazu bringen, das zugehörige Gefühl wiederholt zu empfinden, ohne dass ein klarer Auslöser vorhanden ist."
+    },
+    "partially-charted": {
+      "emotions": [
+        {
+          "name": "Liebe",
+          "desc": "Eine starke Bindung zu einer anderen Person, typischerweise zwischen Eltern und Kind, aber auch zwischen romantisch verbundenen Personen. Innerhalb liebevoller Beziehungen können Wut, Angst, Traurigkeit, Ekel und Freude alle erlebt werden."
+        },
+        {
+          "name": "Überraschung",
+          "desc": "Die kürzeste Emotion, Überraschung wird durch das plötzliche Auftreten eines unerwarteten Ereignisses ausgelöst. Sie ist oft eine Zwischenstation, die nach weiterer Bewertung zu jeder anderen Emotion führt."
+        },
+        {
+          "name": "Eifersucht",
+          "desc": "Ein emotionales Szenario mit drei Personen: der begehrten Person, der Person, die Angst hat, die Bindung der begehrten Person zu verlieren, und dem Rivalen. Während der Eifersucht können Wut, Angst, Ekel, Traurigkeit oder Überraschung von jeder der drei Personen empfunden werden."
+        },
+        {
+          "name": "Neid",
+          "desc": "Obwohl oft fälschlicherweise als Synonym für Eifersucht verwendet, beinhaltet Neid das Ärgern über und Begehren dessen, was eine andere Person besitzt. Wenn eine Person Neid empfindet, können auch Wut, Verachtung oder Traurigkeit empfunden werden."
+        },
+        {
+          "name": "Hass",
+          "desc": "Anhaltende, auf eine bestimmte Person oder Personengruppe gerichtete Wut. Mit der Zeit kann Hass die Persönlichkeitseigenschaft der Feindseligkeit hervorbringen."
+        },
+        {
+          "name": "Verlegenheit",
+          "desc": "Selbstbewusste Not oder Unbeholfenheit. Oft aktiviert durch Lob von anderen oder durch einen Fauxpas. Sie hat kein stimmliches Signal, kann aber ein Erröten verursachen, das nur bei hellhäutigen Menschen sichtbar ist."
+        },
+        {
+          "name": "Scham",
+          "desc": "Eine Erwartung, dass andere angeekelt wären, wenn sie wüssten, was die Person dachte oder getan hat. Sie motiviert einen starken Wunsch, zu verhindern, dass andere erfahren, was die Person getan oder gedacht hat."
+        },
+        {
+          "name": "Verachtung",
+          "desc": "Die letzte Emotion, die in der Kindesentwicklung auftritt, ist ein Gefühl moralischer Überlegenheit gegenüber dem Ziel. Oft gemischt mit Vergnügen."
+        },
+        {
+          "name": "Schuld",
+          "desc": "Bedauern über eine vergangene Handlung, das den Wunsch motiviert, die falsche Handlung zu bekennen, in der Hoffnung auf Vergebung."
+        }
+      ],
+      "title": "Teilweise kartierte Emotionen",
+      "desc": "Die Hälfte oder weniger als die Hälfte der Emotionswissenschaftler glauben, dass es überzeugende Beweise dafür gibt, dass jede der folgenden eine Emotion ist."
+    }
+  },
+  "about": {
+    "subsections": [
+      {
+        "title": "Über die Ekmans",
+        "desc": "Paul Ekman ist ein renommierter amerikanischer Psychologe, der das Gebiet der Emotionsforschung durch den Nachweis der Universalität von Gesichtsausdrücken für Emotionen und die Kartierung aller 43 Muskelgruppen im Gesichtsausdruck vorangetrieben hat. Seine weithin zugängliche Forschung hat ihm den einzigartigen Status eingebracht, sowohl mit Strafverfolgungsbehörden (um Menschen in der Erkennung von Täuschung zu schulen) als auch mit dem Dalai Lama (um die philosophischen Grundlagen östlicher und westlicher Ansätze zu Emotionen zu erkunden) zu arbeiten. Nach 40 Jahren an der Fakultät der Universität von Kalifornien, San Francisco, führt er seit 2001 ein privates Trainingsunternehmen, die Paul Ekman Group.<br><br>Eve Ekman ist eine Post-Doktorandin am Osher Center for Integrative Medicine der UCSF. Eves Forschung konzentriert sich auf die Reduzierung von Stress zur Aufrechterhaltung von Empathie und Sinnhaftigkeit in der Arbeit. Sie ist eine Lehrerausbilderin für Cultivating Emotional Balance (CEB), eine Emotionsregulations- und Meditationsintervention, die auf westlicher Wissenschaft und kontemplativen Emotionspraktiken basiert und von Paul Ekman und dem buddhistischen Gelehrten B. Alan Wallace entwickelt wurde. Eve passt CEB an, um Betreuer in Medizin, Bildung und Strafjustiz zu schulen."
+      },
+      {
+        "title": "Über Stamen Design",
+        "desc": "<a href=\"http://www.stamen.com/\">Stamen</a> wurde 2001 von Eric Rodenbeck gegründet, um die Möglichkeiten in den aufkommenden digitalen Medien im Nachklang des Dot-Com-Crashes zu nutzen. Das Studio ist seitdem auf zwölf Mitarbeiter angewachsen und hat sich einen Ruf für seine Expertise in der Erstellung überzeugender interaktiver Design- und Datenvisualisierungsprojekte erworben. Sein Portfolio ist nicht leicht zu klassifizieren, ist aber charakterisiert durch eine liebevolle Beschäftigung mit Medien und eine tiefe Beteiligung mit seinen Kollaborateuren. Es ist weder ein Forschungs- und Entwicklungslabor noch eine reine Designfirma, sondern etwas dazwischen: ein Ort, wo Arbeit geschätzt wird, gute Ideen von überall kommen können und Ergebnisse von höchster Wichtigkeit sind. Die enge Beschäftigung mit Technologie führt zu zahlreichen Forschungsprojekten, die einen Weg finden, Anwendungen in der realen Welt zu finden."
+      },
+      {
+        "title": "Wie kam dieser Atlas zustande?",
+        "desc": "Emotionen treten automatisch auf, sie scheinen uns zu geschehen, nicht aus Wahl, sondern ohne bewusste Gedanken. Wir merken oft nicht, dass wir im Griff einer Emotion sind, bis jemand es uns aufzeigt oder bis die emotionale Episode vorüber ist. Eine Wahl darüber zu haben, wann man eine Emotion erlebt und wie man sie erlebt, erfordert die Einführung eines fremden Elements in den Beginn einer Emotion – Bewusstsein. Fähigkeiten müssen entwickelt werden, wenn dieses Bewusstsein möglich werden soll, wenn wir eine Wahl darüber haben sollen, wann wir welche Emotion erleben und wie wir sie erleben. Der Atlas der Emotionen wurde geschaffen, um dies zu beleuchten.<br><br>\n\nDer Dalai Lama bat Paul Ekman, eine Karte der Emotionen zu erstellen, in der Hoffnung, dass eine solche Karte Menschen ermöglichen würde, konstruktivere emotionale Erfahrungen zu haben. Als wir in die neue Welt gelangen wollten, sagte er, brauchten wir eine Karte, um dorthin zu gelangen. Wenn wir zu einem ruhigen Geisteszustand gelangen wollen, brauchen wir eine Karte der Emotionen. Er bat Ekman, die emotionale Karte auf dem wissenschaftlichen Konsens darüber zu basieren, was Emotionen sind."
+      },
+      {
+        "title": "Warum diesen Atlas verwenden?",
+        "desc": "Wir müssen unsere Emotionen verstehen und Fähigkeiten entwickeln, um eine Wahl zu haben über (1) wann wir emotional werden oder was eine emotionale Reaktion hervorruft, und (2) wie wir reagieren und was wir sagen und tun, wenn wir emotional sind. Diese Fähigkeiten werden uns nicht von der Natur gegeben, aber wir können sie erlernen. Die Erkundung des Atlas der Emotionen wird Ihr Verständnis dafür erhöhen, was Emotionen sind und welche Auswirkungen sie auf uns haben, wodurch Sie ein erhöhtes Bewusstsein dafür erhalten, was mit Ihnen geschieht, wenn Sie Emotionen erleben."
+      },
+      {
+        "title": "Was ist emotionales Bewusstsein?",
+        "desc": "Warum hilft uns emotionales Bewusstsein dabei, unser emotionales Leben zu verwalten? Die einfache Antwort ist, dass wir die meisten unserer Tage völlig unbewusst davon leben, welche Emotionen wir fühlen und welche Worte und Handlungen sie motivieren. Normalerweise sind wir uns unserer Emotionen nur nach einer emotionalen Episode bewusst, besonders wenn wir dann bereuen, wie wir gehandelt haben. Das Ziel des Atlas der Emotionen ist es, Menschen dabei zu helfen, sich des Impulses zu handeln bewusst zu werden, bevor sie handeln, und dann zu wählen, ob sie sich einlassen, und wenn ja, wie sie sich einlassen. Das bedeutet zu verstehen, was Emotionen auslöst, welche Auslöser die meisten Menschen teilen, für welche Auslöser wir besonders empfindlich sind und welche Auslöser gewöhnlich zu einer bedauerlichen emotionalen Episode führen. Das ist nicht leicht zu erreichen, aber die Erkundung des Atlas der Emotionen stellt den wichtigen, notwendigen ersten Schritt dar. Im Anhang des Atlas finden Sie Vorschläge zu anderen Praktiken, die Sie möglicherweise übernehmen möchten, um Ihr Bewusstsein für Ihre eigenen Emotionen zu erhöhen."
+      },
+      {
+        "title": "Was ist die Verbindung zwischen Emotion und Stress?",
+        "desc": "Unsere unkontrollierten Emotionen machen uns anfällig für Stress. Tatsächlich ist Stress definiert als eine emotionale Übererregung (eine emotionale Erfahrung, die zu stark ist und zu lange anhält und den Rest unseres Lebens beeinträchtigt). Die Folgen von Stress, besonders anhaltender Stress, umfassen schlechten Schlaf, negative Stimmungen, verminderte kognitive Funktionen (einschließlich Gedächtnis und Konzentration), Belastung persönlicher und beruflicher Beziehungen und eine Vielzahl schlechter körperlicher Gesundheitsergebnisse."
+      },
+      {
+        "title": "Was ist eine Emotion?",
+        "desc": "Eine Emotionsepisode ist eine kurze, prägnante Erfahrung, die nicht immer unseren Erwartungen entspricht. Die meisten Emotionen entstehen in weniger als einem Fünfundzwanzigstel einer Sekunde und dauern nicht länger als ein paar Minuten. Wir fühlen uns oft so, als würden unsere Emotionen viel länger anhalten; was wir jedoch erinnern, ist wahrscheinlich eine Reihe von Emotionsepisoden. Die Definition von Emotion lautet wie folgt: \n<br><br>\nEmotion ist ein Prozess, eine besondere Art sehr schneller, automatischer Bewertung, die von unserer evolutionären und persönlichen Vergangenheit beeinflusst wird, in der wir spüren, dass etwas Wichtiges für unser Wohlbefinden geschieht, und eine Reihe physiologischer Veränderungen und Verhaltensweisen beginnen, um mit der Situation umzugehen. Insbesondere koordinieren Emotionen effizient verschiedene Reaktionssysteme und helfen uns dadurch, auf wichtige Herausforderungen oder Möglichkeiten zu reagieren.\n<br><br>\nLassen Sie uns diese Definition aufschlüsseln. Emotion ist ein Prozess, was bedeutet, dass es eine Reihe kleiner Stadien gibt, die eine Emotionsepisode ausmachen. Dies beginnt mit unserer automatischen Bewertung oder Perspektive der Welt, beeinflusst von unserer persönlichen Vergangenheit (unseren erlernten Reaktionen aus Lebenserfahrungen) und unserer evolutionären Vergangenheit (unseren fest verdrahteten Reaktionen, die genetisch weitergegeben wurden). Diese Bewertung hilft uns zu filtern, was 'wichtig für unser Wohlbefinden' ist. Typischerweise ist die Bewertung so schnell, dass wir völlig unbewusst davon sind. Da unsere Bewertung von unserer persönlichen Vergangenheit beeinflusst wird, können wir ganz unterschiedliche Reaktionen auf die Welt haben. Betrachten Sie dieses Beispiel: Sie gehen mit einem engen Freund die Straße entlang und ein herannahendes Auto mit heruntergelassenen Fenstern spielt laut ein Lied. Für Sie löst dieses Lied ein Gefühl großer Traurigkeit aus; es ist das Lieblingslied eines Freundes, der an Krebs starb und bei seiner Beerdigung gespielt wurde. Für Ihren Freund jedoch, der diese Person nicht kannte und keine Verbindung zu dem Lied hat, gibt es keine emotionale Reaktion oder vielleicht Verärgerung über den lauten Lärm. Sie und Ihr Freund sind auf derselben Straße und hören dasselbe Lied, aber Ihre Reaktion ist erlernt und persönlich. Aber wenn dasselbe Auto einer Katze ausweichen musste, die über die Straße lief, und plötzlich auf den Gehweg schwenkte, würden sowohl Sie als auch Ihr Freund, unabhängig von persönlichen Vergangenheiten, aus Angst zurückspringen. Dies ist eine universelle Reaktion auf eine unmittelbare Bedrohung. Emotionen helfen uns zu reagieren, bevor wir überhaupt Zeit haben zu denken: 'Was macht das Auto?' Das ist die Brillanz und Last der Emotionen: Sie können unsere physiologischen Reaktionen mobilisieren, um sofortige Verhaltensweisen zu verursachen, die unser Leben retten, aber sie entstehen ohne unsere Wahl und können sich ziemlich außerhalb unserer Kontrolle anfühlen. Wir werden beginnen, unsere eigenen Emotionsepisoden als Entdecker zu kartieren, die in diesen Atlas eingetaucht sind."
+      }
+    ],
+    "title": "Über diesen Atlas",
+    "desc": "Das Ziel dieses Atlas ist es, ein visuelles Werkzeug bereitzustellen, um einige unserer primären Emotionen zu erkunden und zu identifizieren. Die Website lädt Sie ein, die Kontinente der 5 Grundemotionen und ihrer verwandten Gefühlszustände zu erkunden, wie wir mit Handlungen auf diese Emotionen reagieren, was unsere Emotionen auslöst und die Erfahrung von Stimmungen. Während Emotionen zentral für unser Leben sind – sie bieten Freude, warnen uns vor Bedrohungen, sind eine Kraft für Veränderung, eine Warnung vor Giftigem und rufen andere um Hilfe – wählen wir nicht, was wir fühlen oder wann wir es fühlen. Der Atlas der Emotionen wurde geschaffen, um emotionales Bewusstsein und manchmal sogar eine Wahl darüber aufzubauen, wie wir auf das reagieren, was wir fühlen, durch besseres Verständnis dafür, wie Emotionen funktionieren."
+  },
+  "donate": {
+    "title": "Unterstützen Sie unsere Sache",
+    "desc": "Spenden Sie an die Atlas of Emotions Society und unterstützen Sie unsere Sache. Ihre Großzügigkeit wird uns helfen, einen weltweiten Weg zu einem ruhigen Geist durch den Atlas der Emotionen zu verbreiten.",
+    "link": "http://www.paulekman.com/atlas-emotions-society/",
+    "imgs": []
+  },
+  "further-reading": {
+    "links": [
+      {
+        "link": "/#more:emotrak",
+        "desc": "Eve Ekman hat EmoTrak entwickelt, eine App zur Verbesserung Ihres Wohlbefindens mit täglichem emotionalen Ausgleichstraining. >"
+      },
+      {
+        "link": "http://greatergood.berkeley.edu/",
+        "desc": "Lesen Sie über die neueste Forschung zur Wissenschaft eines sinnvollen Lebens. >"
+      },
+      {
+        "link": "http://www.paulekman.com/",
+        "desc": "Erfahren Sie mehr über die Arbeit von Paul Ekman. >"
+      },
+      {
+        "link": "http://eveekman.com/",
+        "desc": "Erfahren Sie mehr über die Arbeit von Eve Ekman. >"
+      },
+      {
+        "link": "http://stamen.com/",
+        "desc": "Erfahren Sie mehr über die Informationsvisualisierungsarbeit von Stamen. >"
+      },
+      {
+        "link": "mailto:info@atlasofemotions.org",
+        "desc": "Senden Sie Feedback zum Atlas der Emotionen >"
+      }
+    ],
+    "title": " ",
+    "desc": "Erfahren Sie mehr über Ihre Emotionen, die Arbeit der Atlas of Emotions-Schöpfer Paul und Eve Ekman und Stamen, das Designunternehmen, das diese Website erstellt hat."
+  },
+  "emotrak": {
+    "subsections": [
+      {
+        "title": "",
+        "desc": "Eine brandneue App, EmoTrak, wird von Dr. Eve Ekman und Kollegen entwickelt. Melden Sie sich unten an, um als Erster über die Veröffentlichung dieser wissenschaftlich basierten emotionalen Trainings-App zu erfahren.",
+        "image": "emotrak",
+        "mail": null
+      },
+      {
+        "title": "",
+        "desc": "true in der Mail-Spalte zeigt an, dass es einen fest kodierten Abonnement-Link enthalten wird",
+        "image": null,
+        "mail": true
+      },
+      {
+        "title": "",
+        "desc": "Dr. Eve Ekman ist eine Post-Doktorandin an der University of California San Francisco, die Burnout und emotionales Wohlbefinden erforscht. Dr. Ekman hat EmoTrak entwickelt und evaluiert, um Gesundheitsdienstleister zu unterstützen. Die App ist ein Selbstbewertungstool zur Untersuchung von Emotionsauslösern, -erfahrungen und -reaktionen. Sie bietet auch kurze emotionsfokussierte Meditationen und Feedback zu Ihrem emotionalen Profil."
+      }
+    ],
+    "title": "",
+    "desc": "Verbessern Sie Ihr Wohlbefinden mit täglichem emotionalen Ausgleichstraining."
+  }
+}

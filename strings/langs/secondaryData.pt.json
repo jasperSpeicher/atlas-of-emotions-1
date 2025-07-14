@@ -1,0 +1,786 @@
+{
+  "slug": "secondaryData",
+  "annex": {
+    "psychopathology": {
+      "emotions": [
+        {
+          "name": "Raiva",
+          "desc": "Uma tendência a causar danos físicos ou verbais em contextos inadequados. A raiva pode estar fora de controle, ou passiva mas persistentemente preocupante.",
+          "children": [
+            {
+              "name": "Transtorno Explosivo Intermitente",
+              "desc": "Comportamentos impulsivamente agressivos e violentos desproporcionais aos gatilhos."
+            },
+            {
+              "name": "Transtorno Opositivo Desafiador",
+              "desc": "Um padrão de comportamento desafiador, desobediente e hostil em crianças ou adolescentes em relação aos pais e pessoas em autoridade, além do mau comportamento normal apropriado para a idade."
+            },
+            {
+              "name": "Transtorno de Personalidade Antissocial",
+              "desc": "Caracterizado por um padrão pervasivo de desrespeito pelos direitos de outras pessoas que frequentemente se manifesta como hostilidade e/ou agressão. Engano e manipulação também são características centrais."
+            },
+            {
+              "name": "Transtorno Disruptivo de Desregulação do Humor",
+              "desc": "Explosões severas recorrentes de temperamento manifestadas verbalmente (ex. raivas verbais) e/ou comportamentalmente (ex. agressão física contra pessoas ou propriedade) que são grosseiramente desproporcionais em intensidade ou duração à situação ou provocação."
+            }
+          ]
+        },
+        {
+          "name": "Medo",
+          "desc": "Estados de ansiedade envolvem medo prolongado sem conhecimento da fonte da ameaça, e incidentes de pânico (ataques episódicos de ansiedade severa).",
+          "children": [
+            {
+              "name": "Transtorno de Ansiedade Social",
+              "desc": "Um medo persistente de uma ou mais situações sociais ou de performance nas quais a pessoa é exposta a pessoas desconhecidas ou ao possível escrutínio de outros. O indivíduo teme que irá agir (ou mostrar sintomas de ansiedade) de uma forma que será embaraçosa e humilhante."
+            },
+            {
+              "name": "Transtorno de Estresse Pós-Traumático (TEPT)",
+              "desc": "Uma condição de saúde mental desencadeada por um evento frequentemente extremamente aterrorizante — seja vivenciando-o ou testemunhando-o. Os sintomas podem incluir flashbacks, pesadelos e ansiedade severa, bem como pensamentos incontroláveis sobre o evento."
+            },
+            {
+              "name": "Transtorno de Personalidade Evitativa",
+              "desc": "Caracterizado por um padrão pervasivo de inibição social, sentimentos de inadequação e hipersensibilidade à avaliação negativa. Pessoas com este transtorno têm intenso medo de que outros as ridicularizem, rejeitem ou critiquem."
+            },
+            {
+              "name": "Transtorno de Ansiedade Generalizada",
+              "desc": "Um transtorno de ansiedade caracterizado por preocupações excessivas, incontroláveis e frequentemente irracionais e expectativa apreensiva sobre eventos ou atividades."
+            },
+            {
+              "name": "Transtorno Obsessivo-Compulsivo (TOC)",
+              "desc": "Um transtorno de ansiedade caracterizado por pensamentos intrusivos que produzem inquietação, apreensão, medo ou preocupação (obsessões); comportamentos repetitivos destinados a reduzir a ansiedade associada (compulsões); ou uma combinação de ambas obsessões e compulsões."
+            }
+          ]
+        },
+        {
+          "name": "Nojo",
+          "desc": "A psicopatologia do nojo inclui sentimentos que impedem a interação cotidiana com o mundo, consigo mesmo ou com outros. O nojo pode ser um sentimento paralisante que torna interações simples (como comer) extremamente dolorosas, se não impossíveis. O nojo e o medo são ambos considerados contribuintes para várias fobias, como o medo de pequenos animais.",
+          "children": [
+            {
+              "name": "Anorexia Nervosa",
+              "desc": "Uma autoimagem distorcida que pode ser mantida por vários vieses cognitivos que alteram como o indivíduo afetado avalia e pensa sobre seu corpo, comida e alimentação. Pessoas com anorexia nervosa frequentemente se veem como nojentas, acima do peso ou 'gordas' mesmo quando estão abaixo do peso."
+            },
+            {
+              "name": "Transtorno Dismórfico Corporal",
+              "desc": "Um transtorno da imagem corporal caracterizado por preocupações persistentes e intrusivas com um defeito imaginário ou leve na aparência ou um sentimento de nojo com a própria aparência."
+            },
+            {
+              "name": "Bulimia",
+              "desc": "Um transtorno caracterizado por episódios repetidos de compulsão alimentar em grandes quantidades de comida seguidos por vômito induzido; tanto a compulsão quanto a purgação podem ser acompanhadas por sentimentos de auto-nojo."
+            },
+            {
+              "name": "Transtorno de Aversão Sexual",
+              "desc": "Caracterizado por nojo, medo, repulsa ou falta de desejo em relacionamentos consensuais envolvendo contato genital."
+            }
+          ]
+        },
+        {
+          "name": "Tristeza",
+          "desc": "A depressão é um tipo bem conhecido de psicopatologia que é reportado afetar mais de 25% da população. A depressão interfere com a vida diária e causa dor tanto aos sofredores quanto àqueles que se importam com eles. A depressão é uma doença comum mas séria.\n",
+          "children": [
+            {
+              "name": "Transtorno Depressivo Maior",
+              "desc": "Também conhecido como depressão clínica, depressão maior ou depressão unipolar, este é um transtorno mental caracterizado por um humor baixo pervasivo e persistente acompanhado por baixa autoestima e por uma perda de interesse ou prazer em atividades normalmente prazerosas."
+            },
+            {
+              "name": "Distimia",
+              "desc": "Às vezes também chamada de depressão neurótica, transtorno distímico ou depressão crônica, este é um transtorno do humor consistindo dos mesmos problemas cognitivos e físicos da depressão, com sintomas menos severos mas mais duradouros."
+            },
+            {
+              "name": "Transtorno Bipolar",
+              "desc": "Também conhecido como transtorno afetivo bipolar (e originalmente chamado de doença maníaco-depressiva), este é um transtorno mental caracterizado por períodos de humor elevado e períodos de depressão."
+            }
+          ]
+        },
+        {
+          "name": "Prazer",
+          "desc": "Diferentemente de outras emoções, é difícil imaginar que emoções prazerosas contribuam para desafios no gerenciamento de nossos relacionamentos diários, trabalho e capacidade de atender nossas necessidades básicas. No entanto, prazer patológico é bastante sério; estados hiper-elevados de prazer podem causar delírios além de se sentir bem, o que pode levar a comportamentos destrutivos.\n",
+          "children": [
+            {
+              "name": "Mania/Episódio Maníaco",
+              "desc": "Mania em seu extremo é comumente caracterizada por exuberância frenética e ingovernável — essencialmente euforia não baseada na realidade. Frequentemente, confiança e autoestima são excessivamente ampliadas, e ideias grandiosas e extravagantes são expressas; isso é chamado de 'grandiosidade'. A mania é frequentemente parte do transtorno bipolar."
+            },
+            {
+              "name": "Ciclotimia",
+              "desc": "Isso é caracterizado por humores que mudam notavelmente para cima e para baixo da linha de base de uma pessoa. A pessoa pode se sentir no topo do mundo por um tempo, seguida por um período baixo quando seu sentimento é um tanto melancólico. Entre esses altos e baixos ciclotímicos, a pessoa pode se sentir estável e bem."
+            }
+          ]
+        }
+      ],
+      "title": "Psicopatologia",
+      "desc": "Cada emoção se relaciona com psicopatologias distintas, que descrevem comportamentos persistentes que interferem com a capacidade de funcionamento."
+    },
+    "signals": {
+      "emotions": [
+        {
+          "name": "Raiva",
+          "desc": null,
+          "children": [
+            {
+              "name": "Sinal",
+              "desc": "Na voz, a raiva gera um rugido se não controlada; quando a raiva é controlada, a voz pode ter um tom cortante muito detectável. No rosto, o sinal inclui olhos penetrantes, sobrancelhas abaixadas e lábios estreitados e tensos. Quando as pessoas ouvem ou veem um sinal de raiva, elas são tipicamente feridas apenas pela percepção do sinal, e podem retaliar com ações raivosas."
+            },
+            {
+              "name": "Mensagem",
+              "desc": "A mensagem da raiva é 'saia do meu caminho'. A raiva pode carregar uma mensagem que vai da insatisfação à ameaça."
+            }
+          ]
+        },
+        {
+          "name": "Medo",
+          "desc": null,
+          "children": [
+            {
+              "name": "Sinal",
+              "desc": "Sinais comuns são olhos muito abertos, lábios esticados horizontalmente e sobrancelhas levantadas e aproximadas. Pode haver movimento para longe do alvo. Gritos podem acompanhar medo intenso. Sinais de medo menor podem incluir respiração pesada, uma posição da cabeça ligeiramente para trás e afastada, e lábios esticados horizontalmente acompanhados por músculos do pescoço tensos."
+            },
+            {
+              "name": "Mensagem",
+              "desc": "A mensagem do medo é 'me ajude'; pode ir desde mostrar preocupação de baixo nível até transmitir pânico."
+            }
+          ]
+        },
+        {
+          "name": "Nojo",
+          "desc": null,
+          "children": [
+            {
+              "name": "Sinal",
+              "desc": "Há três expressões faciais associadas ao nojo. A primeira é colocar a língua para fora como se a pessoa estivesse tirando algo da boca. A segunda é levantar o lábio superior, mas ele está relaxado e não tenso, o que pode mostrar gengivas e dentes dependendo da forma da boca. A terceira é enrugar o nariz e levantar as narinas. Essas expressões podem ocorrer separadamente ou em uníssono."
+            },
+            {
+              "name": "Mensagem",
+              "desc": "A mensagem do nojo é 'fique longe disso'. Pode mostrar aos outros que o alvo do nojo deve ser evitado ou que o alvo é impuro, sujo ou socialmente/moralmente repreensível."
+            }
+          ]
+        },
+        {
+          "name": "Tristeza",
+          "desc": null,
+          "children": [
+            {
+              "name": "Sinal",
+              "desc": "Os sinais de tristeza incluem uma careta (lábio inferior empurrado ligeiramente para cima e cantos dos lábios puxados ligeiramente para baixo), os cantos internos das sobrancelhas puxados para cima e juntos no centro da testa, bochechas levantadas e lágrimas. A vocalização da tristeza pode incluir soluços e suspiros e tremores da voz."
+            },
+            {
+              "name": "Mensagem",
+              "desc": "A mensagem da tristeza é 'me console'. Encoraja, ou pretende encorajar, empatia dos outros."
+            }
+          ]
+        },
+        {
+          "name": "Prazer",
+          "desc": null,
+          "children": [
+            {
+              "name": "Sinal",
+              "desc": "Os sinais de prazer incluem o sorriso de Duchenne (autêntico), ativação de um sorriso (cantos dos lábios puxados obliquamente para cima), e ativação dos músculos orbitais dos olhos que apertam a pálpebra inferior e criam rugas ao redor dos cantos externos dos olhos (especialmente com a idade). O prazer também inclui sinais vocais como o som do alívio (um suspiro ou expiração) e o som da diversão (riso ou risadinhas)."
+            },
+            {
+              "name": "Mensagem",
+              "desc": "A mensagem do prazer é 'isso é bom'. Encoraja o envolvimento na interação social."
+            }
+          ]
+        }
+      ],
+      "title": "Sinal e Mensagem",
+      "desc": "O sinal de uma emoção descreve as maneiras universais pelas quais aquela emoção é exibida no rosto e/ou voz. Também pode haver outras mudanças de tom vocal e indicadores de linguagem corporal, mas estes não são incluídos aqui porque são frequentemente culturalmente informados e aprendidos em oposição a universais.<br><br>A mensagem é o que a emoção está nos dizendo. Todas as emoções têm uma mensagem que é uma resposta ao mundo ao nosso redor."
+    },
+    "personality-trait": {
+      "emotions": [
+        {
+          "name": "Raiva",
+          "desc": "Uma pessoa hostil é frequentemente raivosa e é conhecida pelos outros pela frequência de respostas de raiva ao mundo. Frequentemente a raiva ocorre com qualquer frustração; o limiar para frustração é baixo. Pessoas hostis podem experimentar arrependimento depois e se desculpar por sua raiva, mas mesmo assim continuam a responder com raiva. Às vezes pessoas hostis expressam sua raiva de maneira desagradável, usando palavras para diminuir e causar dor psicológica aos outros."
+        },
+        {
+          "name": "Medo",
+          "desc": "Uma pessoa tímida ou medrosa. Este tipo de personalidade é provável que evite riscos e situações desconfortáveis. Pessoas tímidas podem perceber o mundo como cheio de situações difíceis."
+        },
+        {
+          "name": "Nojo",
+          "desc": "Uma pessoa que frequentemente se sente enojada pelos outros pode ter um senso inflado de autoestima e uma hiper-aversão em relação aos outros. Alguém que está enojado ou insatisfeito com tudo pode ser desagradável de conviver."
+        },
+        {
+          "name": "Tristeza",
+          "desc": "Uma pessoa sombria. Este tipo de personalidade pode tender a estar abatida e ver o lado escuro da vida. Pessoas sombrias podem ser propensas a focar nos aspectos negativos das situações e podem ter dificuldade em encontrar alegria ou otimismo."
+        },
+        {
+          "name": "Prazer",
+          "desc": "Uma pessoa alegre. Este tipo de personalidade pode tender a ser otimista e ver o lado positivo das coisas. Pessoas alegres podem ser propensas a buscar experiências positivas e podem ter uma visão geralmente positiva da vida e das pessoas."
+        }
+      ],
+      "title": "Traços de Personalidade",
+      "desc": "Quando uma emoção particular domina na personalidade de alguém, podemos ver como essa emoção colore sua maneira de estar no mundo."
+    },
+    "impediment-antidote": {
+      "emotions": [
+        {
+          "name": "Raiva Antidotes",
+          "children": [
+            {
+              "name": "Frustração",
+              "desc": "Paciência, aberto ao pensamento, preocupação com os outros."
+            },
+            {
+              "name": "Frustração",
+              "desc": "Soltar, soltar a arrependimento, colocar coisas em uma perspectiva maior."
+            },
+            {
+              "name": "Argumentatividade",
+              "desc": "Fazendo esforço para entender a perspectiva do outro, empatia cognitiva, benevolência, desejando resolver o problema através de uma solução mutuamente aceitável."
+            },
+            {
+              "name": "Exaspereza",
+              "desc": "Soltar a arrependimento. Paciência, calma interna. Tentando entender as causas e condições que levaram a uma situação indesejável."
+            },
+            {
+              "name": "Vingança",
+              "desc": "Contemplando os efeitos negativos de tomar vingança, no curto e longo prazo; perdão não como condenar o comportamento prejudicial, mas como quebrar o ciclo de ressentimento e ódio."
+            },
+            {
+              "name": "Fúria",
+              "desc": "Tirando um tempo, fisicamente e mentalmente, das circunstâncias que levaram a fúria. Olhando a fúria em si com os olhos da consciência, como se estivesse observando um fogo em chamas e lentamente deixando-o esfriar."
+            }
+          ]
+        },
+        {
+          "name": "Raiva Impedimentos",
+          "children": []
+        },
+        {
+          "name": "Medo Antidotes",
+          "children": [
+            {
+              "name": "Trepidante",
+              "desc": "Tentando ponderar o que pode ser feito. Calmar a mente dá a melhor chance de encontrar a solução apropriada para o que causou a trepidação no primeiro lugar."
+            },
+            {
+              "name": "Nervosismo",
+              "desc": "Tentando ponderar o que pode ser feito. Calmar a mente dá a melhor chance de encontrar a solução apropriada para o que causou o nervosismo no primeiro lugar."
+            },
+            {
+              "name": "Ansiedade",
+              "desc": "Fazendo um esforço especial de soltar ruminações sobre o passado e antecipações do futuro."
+            },
+            {
+              "name": "Medo",
+              "desc": "Ficando o mais calmo possível. Vendo o que pode ser feito por si mesmo e por outros também."
+            },
+            {
+              "name": "Pânico",
+              "desc": "Fazendo um esforço para ver se algo pode atuar como um fator mitigador (dependendo das causas envolvidas). "
+            },
+            {
+              "name": "Horror",
+              "desc": "Tentando ver se algo pode ser feito imediatamente. Se não for o caso, criando distância para ver se algo pode ser feito de longe. Respondendo com firmeza e compaixão, nunca com ódio. "
+            },
+            {
+              "name": "Terror",
+              "desc": "Instilando um pouco de calma na mente para tomar a decisão mais apropriada."
+            }
+          ]
+        },
+        {
+          "name": "Medo Impedimentos",
+          "children": []
+        },
+        {
+          "name": "Nojo Antidotes",
+          "children": [
+            {
+              "name": "Aversão",
+              "desc": "Avaliando imparcialmente o grau de periculosidade, tomando medidas apropriadas, e então deixando a aversão se dissipar em um espaço de consciência consciente."
+            },
+            {
+              "name": "Desgosto",
+              "desc": "Avaliando imparcialmente questões éticas, gerando compaixão para encontrar a melhor maneira de remediar as causas e condições que desencadearam o desgosto."
+            },
+            {
+              "name": "Desgosto",
+              "desc": "Avaliando imparcialmente o grau de periculosidade, tomando medidas apropriadas, e então deixando o desgosto se dissipar em um espaço de consciência consciente."
+            },
+            {
+              "name": "Repugnância",
+              "desc": "Avaliando imparcialmente o grau de periculosidade, tomando medidas apropriadas, e então deixando a repugnância se dissipar em um espaço de consciência consciente."
+            },
+            {
+              "name": "Loathing—Self",
+              "desc": "Usando arrependimento saudável para gerar a determinação de melhorar-se; sempre que possível, reparando o dano causado aos outros. Não caindo no culpa pessimista, pensando que uma pessoa é fundamentalmente ruim e que é assim que ela está presa. Não subestimando o potencial de mudança."
+            },
+            {
+              "name": "Loathing—Others",
+              "desc": "Adotando a visão de um médico de cuidado, que poderia profundamente desaprovar certos comportamentos, mas se concentrará em fazer todo o possível para curar as aflições de uma pessoa."
+            },
+            {
+              "name": "Revulsão",
+              "desc": "Adotando a visão de um médico de cuidado, que poderia profundamente desaprovar certos comportamentos, mas se concentrará em fazer todo o possível para curar as aflições de uma pessoa."
+            },
+            {
+              "name": "Aborrecimento",
+              "desc": "No caso de substâncias tóxicas ou situações, fazendo o melhor que pode para calar-se imediatamente. No caso de ações, adotando a visão de um médico de cuidado, que poderia profundamente desaprovar certos comportamentos, mas se concentrará em fazer todo o possível para curar as aflições de uma pessoa."
+            }
+          ]
+        },
+        {
+          "name": "Nojo Impedimentos",
+          "children": []
+        },
+        {
+          "name": "Tristeza Antidotes",
+          "children": [
+            {
+              "name": "Desapontamento",
+              "desc": "Entendendo que a tristeza é natural em circunstâncias apropriadas, mas também que a experiência de perda faz parte da vida e que uma pessoa não deve se deixar abalar. Tentando encontrar um lugar de paz dentro de si mesmo e pensando em coisas construtivas que poderiam ser feitas em vez disso."
+            },
+            {
+              "name": "Desperto",
+              "desc": "Entendendo que um estado permanente de tristeza não trará nenhum benefício real. No caso de lamentar alguém, cair em longa tristeza e desespero deve não ser visto como um homenagem paga a essa pessoa. É melhor pagar homenagem fazendo atos significativos e altruístas."
+            },
+            {
+              "name": "Desânimo",
+              "desc": "Entendendo que um estado permanente de tristeza não trará nenhum benefício real. No caso de lamentar alguém, cair em longa tristeza e desespero deve não ser visto como um homenagem paga a essa pessoa. É melhor pagar homenagem fazendo atos significativos e altruístas."
+            },
+            {
+              "name": "Impotência",
+              "desc": "Entendendo que um estado permanente de tristeza não trará nenhum benefício real. No caso de lamentar alguém, cair em longa tristeza e desespero deve não ser visto como um homenagem paga a essa pessoa. É melhor pagar homenagem fazendo atos significativos e altruístas."
+            },
+            {
+              "name": "Miséria",
+              "desc": "Entendendo que um estado permanente de tristeza não trará nenhum benefício real. No caso de lamentar alguém, cair em longa tristeza e desespero deve não ser visto como um homenagem paga a essa pessoa. É melhor pagar homenagem fazendo atos significativos e altruístas."
+            },
+            {
+              "name": "Luto",
+              "desc": "Entendendo que um estado permanente de tristeza não trará nenhum benefício real. No caso de lamentar alguém, cair em longa tristeza e desespero deve não ser visto como um homenagem paga a essa pessoa. É melhor pagar homenagem fazendo atos significativos e altruístas."
+            },
+            {
+              "name": "Desespero",
+              "desc": "Entendendo que um estado permanente de tristeza não trará nenhum benefício real. No caso de lamentar alguém, cair em longa tristeza e desespero deve não ser visto como um homenagem paga a essa pessoa. É melhor pagar homenagem fazendo atos significativos e altruístas."
+            },
+            {
+              "name": "Anguístia",
+              "desc": "Reconhecendo que as coisas e as pessoas são impermanentes por natureza. Revolvendo-se contra isso não leva a uma vida plena."
+            }
+          ]
+        },
+        {
+          "name": "Tristeza Impedimentos",
+          "children": []
+        },
+        {
+          "name": "Prazer Antidotes",
+          "children": [
+            {
+              "name": "Schadenfreude",
+              "desc": "Percebendo o aspecto destrutivo dele e tentando gerar benevolência para a pessoa."
+            },
+            {
+              "name": "Orgulho",
+              "desc": "Humildade. Colocando coisas em perspectiva e reconhecendo que há muitas outras pessoas com qualidades similares ou até melhores do que a própria. Entendendo que uma pessoa poderia fazer algo não apenas porque é tão especial, mas por muitas causas e condições interdependentes em que outras tomaram parte."
+            }
+          ]
+        },
+        {
+          "name": "Prazer Impedimentos",
+          "children": [
+            {
+              "name": "Prazeres Sensoriais",
+              "desc": "Não ser capaz de apreciar a qualidade do momento presente."
+            },
+            {
+              "name": "Alívio",
+              "desc": "Persistindo em se preocupar desnecessariamente."
+            },
+            {
+              "name": "Diversão",
+              "desc": "Tendendo a ver as coisas de forma negativa."
+            },
+            {
+              "name": "Excitamento",
+              "desc": "Sentindo pessimismo."
+            },
+            {
+              "name": "Ecstático",
+              "desc": "Grasgando, apego e qualquer outro estado mental afetivo (animosidade, inveja, arrogância, etc.)."
+            },
+            {
+              "name": "Fiero",
+              "desc": "Vanidade, narcisismo, não reconhecendo com gratidão todos aqueles que contribuíram para que um feito fosse possível."
+            },
+            {
+              "name": "Naches",
+              "desc": "Orgulho misturado com arrogância e parcialidade que faz uma pessoa sentir-se desprezante sobre as conquistas de outras pessoas."
+            },
+            {
+              "name": "Curiosidade",
+              "desc": "Grasgando. Insegurança."
+            },
+            {
+              "name": "Rejubilação",
+              "desc": "Inveja, ciúme, orgulho."
+            },
+            {
+              "name": "Compaixão/Alegria",
+              "desc": "Regret em ter feito algo bom ao custo de algum esforço pessoal. Narrow-mindedness ao cuidar apenas de um número limitado de pessoas que estão próximas."
+            }
+          ]
+        }
+      ],
+      "title": "Impedimentos e Antídotos",
+      "desc": "O gráfico abaixo foi criado por Matthieu Ricard e oferece uma perspectiva budista tibetana sobre o entendimento e trabalho com emoções. Mostra como contrariar emoções difíceis cultivando estados mentais positivos, conhecidos como \"antídotos\". Também ajuda a identificar \"impedimentos\" que bloqueiam o sentir de emoções prazerosas e destaca emoções prazerosas que podem ser difíceis. Você pode aprender mais sobre Matthieu Ricard <a href=\"https://www.matthieuricard.org/en/articles/buddhist-and-psychological-perspectives-on-emotions-and-well-being-by-paul-ekman-richard-j-davidson-matthieu-ricard-and-b-alan-wallace-current-directions-in-psychological-science-2005-14-2/\" target=\"blank\">aqui</a>."
+    },
+    "triggers-timeline": {
+      "content": [
+        {
+          "desc": "Isso descreve o contexto ou situações que podem influenciar a maneira como entramos na emoção. Por exemplo, nossa pré-condição poderia ser fisiológica: estar com fome, cansado ou emocional: ter tido um dia muito agradável ou estressante ou sair de um episódio emocional anterior.",
+          "name": "pré-condição"
+        },
+        {
+          "desc": "Isso descreve uma pessoa, lugar, situação, imagem, pensamento, memória, cheiro, som, sabor ou ideia que encontramos do mundo exterior ou de nossa própria mente. Estamos constantemente, automaticamente avaliando, ou assessorando nosso mundo interno e externo. Por exemplo, quando ouvimos uma nova música, estamos instantaneamente sobrepondo nosso conhecimento de instrumentos e categorias de música enquanto escutamos sem nem pensar, essa é avaliação automática.",
+          "name": "evento"
+        },
+        {
+          "desc": "Isso descreve a combinação da avaliação automática correspondendo a algum script universal/inato ou adquirido em nosso banco de dados.",
+          "name": "gatilho"
+        },
+        {
+          "desc": "Isso descreve nossas respostas universais/inatas e nossas memórias emocionais adquiridas individualmente. Por exemplo, se o evento é um cheiro e no banco de dados está armazenada a memória do xampu que nossa mãe usava em nossa infância, e somos desencadeados a experimentar uma emoção de nostalgia calorosa de uma infância feliz. Quando o evento avaliado se assemelha a algo em nosso banco de dados, pode ser altamente preciso ou poderia criar uma percepção distorcida do gatilho. Por exemplo, se tivemos uma experiência intimidadora com um policial quando éramos jovens e somos parados quando adultos, poderíamos perceber erroneamente a situação com um senso distorcido de medo.",
+          "name": "banco de dados de percepção"
+        },
+        {
+          "desc": "Isso descreve as mudanças autonômicas em nosso corpo que ocorrem quando nossa emoção surge. Podemos experimentar essas mudanças como sensações em nosso corpo, sentindo calor em nosso rosto, tensão em nossa mandíbula ou ombros, etc.",
+          "name": "mudanças físicas"
+        },
+        {
+          "desc": "Isso descreve a emoção em si, incluindo mudanças físicas e psicológicas.",
+          "name": "estado"
+        },
+        {
+          "desc": "Isso descreve a experiência qualitativa da emoção, como a tristeza se sente triste, ou a raiva se sente raivosa.",
+          "name": "mudanças psicológicas"
+        },
+        {
+          "desc": "Isso descreve nossas respostas emocionais. Isso poderia ser um comportamento externo como gritar de raiva, ou poderia ser interno, como suprimir raiva. Cada emoção no atlas mostra uma gama de ações imediatas, bem como ações intrínsecas ou intencionais. A ação pode ser construtiva ou destrutiva. Levando a maior colaboração com outros ou a dificuldade em colaborar.",
+          "name": "ação"
+        },
+        {
+          "desc": "Isso descreve o resultado ou impacto de nossas ações emocionais. Isso poderia ser externo: se gritamos com alguém eles podem então gritar de volta; ou interno: se suprimimos poderíamos estar sentindo alguma irritação contínua. A pós-condição poderia levar ao nosso próximo episódio de emoção, se alguém está gritando de volta conosco somos desencadeados mais uma vez para raiva, medo ou tristeza/arrependimento por nossas ações. Nossa pós-condição é uma oportunidade para construirmos consciência emocional através da reflexão sobre nossa emoção, para entender o gatilho, identificar a experiência sentida e considerar o impacto que teve.",
+          "name": "pós-condição"
+        },
+        {
+          "desc": "O Período de Filtragem Seletiva é iniciado com o início de ações e sinais — a percepção é estreitada e distorcida, filtrando e interpretando informações relevantes e consistentes com a emoção predominante. Por exemplo, quando o medo é despertado, há uma sensibilidade aumentada a ameaças reais e imaginárias.",
+          "name": "período de filtro seletivo"
+        }
+      ],
+      "footer": [
+        "Regras de exibição aprendidas (para regular sinais) e regras de sentimento aprendidas (para modificar, amplificar ou suprimir sentimentos subjetivos) surgem. Não sabemos quão rapidamente isso ocorre. Elas ocorrem antes de sinais e ações, ou imediatamente durante o início de sinais e ações? Impulsos são traduzidos em ações e sinais.",
+        "A lacuna entre o Passo 2 (impulsos) e o Passo 4 (ações/sinais) é variável, dependendo das características individuais de cada pessoa e do perfil emocional da pessoa, da intensidade do gatilho avaliado, e do estado psicológico momentâneo do indivíduo quando o gatilho é avaliado (quanto sono a pessoa teve na noite passada; qual, se alguma, emoção a pessoa experimentou por último ou está atualmente experimentando, etc.)."
+      ],
+      "title": "Cronologia do Episódio Emocional",
+      "desc": ""
+    },
+    "intrinsic-or-intentional": {
+      "emotions": [
+        {
+          "name": "Raiva",
+          "children": [
+            {
+              "name": "Intrínseco",
+              "desc": "Brigar, Insultar, Minar, Disputar, Gritar/berrar, Usar força física, Ferver/ruminar, Ser passivo-agressivo"
+            },
+            {
+              "name": "Intencional",
+              "desc": "Estabelecer limites, Ser firme, Se retirar, Dar um tempo, Respirar, Praticar paciência, Reenquadrar, Distrair, Evitar, Remover a interferência"
+            }
+          ]
+        },
+        {
+          "name": "Medo",
+          "children": [
+            {
+              "name": "Intrínseco",
+              "desc": "Se retirar, Evitar, Hesitar, Congelar, Gritar/berrar, Ruminar, Se preocupar"
+            },
+            {
+              "name": "Intencional",
+              "desc": "Reenquadrar, Ser consciente, Respirar, Distrair"
+            }
+          ]
+        },
+        {
+          "name": "Nojo",
+          "children": [
+            {
+              "name": "Intrínseco",
+              "desc": "Se retirar, Evitar, Vomitar, Desumanizar"
+            },
+            {
+              "name": "Intencional",
+              "desc": "Se retirar, Evitar"
+            }
+          ]
+        },
+        {
+          "name": "Tristeza",
+          "children": [
+            {
+              "name": "Intrínseco",
+              "desc": "Buscar conforto, Se retirar, Lamentar, Protestar, Se sentir envergonhado"
+            },
+            {
+              "name": "Intencional",
+              "desc": "Se retirar, Distrair"
+            }
+          ]
+        },
+        {
+          "name": "Prazer",
+          "children": [
+            {
+              "name": "Intrínseco",
+              "desc": "Buscar mais, Manter, Exclamar, Engajar/conectar, Saborear, Indulgir"
+            },
+            {
+              "name": "Intencional",
+              "desc": "Nenhum"
+            }
+          ]
+        }
+      ],
+      "title": "Ações Intrínsecas ou Intencionais",
+      "desc": "Ações podem ser intrínsecas (sem intenção consciente) ou intencionais (uma tentativa ativa de promover mudança), ou ambas."
+    },
+    "scientific-basis": {
+      "content": [
+        {
+          "desc": "Existem emoções universais",
+          "name": "88%",
+          "formatting": "beforebreak"
+        },
+        {
+          "desc": "Existem sinais faciais universais para emoção",
+          "name": "80%",
+          "formatting": "break"
+        },
+        {
+          "desc": "Raiva é uma emoção universal",
+          "name": "91%",
+          "formatting": ""
+        },
+        {
+          "desc": "Medo é uma emoção universal",
+          "name": "90%",
+          "formatting": ""
+        },
+        {
+          "desc": "Nojo é uma emoção universal",
+          "name": "86%",
+          "formatting": ""
+        },
+        {
+          "desc": "Tristeza é uma emoção universal",
+          "name": "80%",
+          "formatting": ""
+        },
+        {
+          "desc": "Felicidade é uma emoção universal",
+          "name": "76%",
+          "formatting": "break"
+        },
+        {
+          "desc": "Existem gatilhos universais para emoção",
+          "name": "66%",
+          "formatting": ""
+        },
+        {
+          "desc": "Existe fisiologia universal da emoção",
+          "name": "51%",
+          "formatting": ""
+        },
+        {
+          "desc": "Existem emoções biologicamente discretas e separadas",
+          "name": "49%",
+          "formatting": ""
+        },
+        {
+          "desc": "Emoções são construídas por fatores sociais",
+          "name": "11%",
+          "formatting": ""
+        },
+        {
+          "desc": "Emoções são tanto biologicamente separadas quanto socialmente construídas",
+          "name": "3%",
+          "formatting": ""
+        }
+      ],
+      "footer": [
+        "A existência de \"evidência convincente para universais em qualquer aspecto da emoção\" foi endossada por 88% dos respondentes. A evidência apoiando sinais universais (rosto ou voz) foi endossada por 80%. Houve menos acordo sobre se existe evidência convincente para universais nos eventos que desencadeiam uma emoção (66%), fisiologia (51%), ou mecanismos de avaliação (44%). Assim, a afirmação de Darwin em 1872 e o trabalho mais recente de Ekman e Friesen (1969) e Izard (1971) sobre a universalidade de algumas expressões faciais foram apoiados. Em resposta à pergunta \"Qual das seguintes melhor captura sua orientação em relação à emoção em sua pesquisa?\", 49% escolheram \"Emoções discretas (raiva, medo, etc.) combinando influências biológicas e sociais\", 11% escolheram \"Emoções como construídas, seja socialmente ou psicologicamente, para se adequar às condições atuais\", e 30% indicaram que usavam ambas as abordagens. \n",
+        "Os respondentes foram perguntados se a evidência para cada emoção era convincente. Houve alto acordo sobre cinco emoções (todas descritas tanto por Darwin quanto por Wundt): raiva (91%), medo (90%), nojo (86%), tristeza (80%) e felicidade (76%). Vergonha, surpresa e constrangimento foram listados por 40% a 50%. Outras emoções, atualmente sob estudo por vários investigadores, receberam substancialmente menos apoio: culpa (37%), desprezo (34%), amor (32%), admiração (31%), dor (28%), inveja (28%), compaixão (20%), orgulho (9%) e gratidão (6%)."
+      ],
+      "title": "A Base Científica para Este Trabalho",
+      "desc": "O Atlas de Emoções é baseado em um consenso entre cientistas determinado por uma pesquisa (na escolha dos cinco continentes emocionais e a relação das emoções com humores, personalidade e psicopatologia), o trabalho de alguns cientistas que se concentraram na nomeação de estados dentro das emoções, definições de dicionário, teoria e melhores suposições sobre as ações para cada estado e se são construtivas, destrutivas ou ambíguas. Para mais informações, veja <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">\"Sobre o que cientistas que estudam emoção concordam,\"</a> por Paul Ekman (Perspectives on Psychological Science, 2015).",
+      "contentIntro": "A pesquisa foi enviada por email em meados de junho de 2014 para 248 cientistas que haviam frequentemente publicado pesquisa quantitativa sobre emoção."
+    },
+    "moods": {
+      "emotions": [
+        {
+          "name": "Irritável",
+          "desc": "Predisposto a ficar raivoso, facilmente provocado. "
+        },
+        {
+          "name": "Apreensivo",
+          "desc": "Ansioso de que algo ruim vai acontecer, nervoso."
+        },
+        {
+          "name": "Azedo",
+          "desc": "Geralmente repugnado."
+        },
+        {
+          "name": "Disfórico (ou sentindo-se triste)",
+          "desc": "Um sentimento duradouro de desencorajamento ou decepção."
+        },
+        {
+          "name": "Eufórico",
+          "desc": "Um sentimento bom generalizado e duradouro. "
+        }
+      ],
+      "title": "Humores",
+      "desc": "Humores são primos mais duradouros de uma emoção que nos fazem sentir a emoção relacionada repetidamente sem qualquer gatilho claro."
+    },
+    "partially-charted": {
+      "emotions": [
+        {
+          "name": "Amor",
+          "desc": "Um forte apego a outra pessoa, tipicamente pai para filho e filho para pai, mas também entre aqueles romanticamente comprometidos. Dentro de relacionamentos amorosos, raiva, medo, tristeza, nojo e prazer podem todos ser experimentados."
+        },
+        {
+          "name": "Surpresa",
+          "desc": "A emoção mais breve, a surpresa é desencadeada pela ocorrência súbita de um evento inesperado. É frequentemente uma estação intermediária que leva, após mais avaliação, a qualquer uma das outras emoções."
+        },
+        {
+          "name": "Ciúme",
+          "desc": "Uma história emocional envolvendo três pessoas: a pessoa desejada, a pessoa com medo de perder o compromisso da pessoa desejada, e o rival. Durante o ciúme, raiva, medo, nojo, tristeza ou surpresa podem ser sentidos por qualquer uma das três pessoas."
+        },
+        {
+          "name": "Inveja",
+          "desc": "Embora frequentemente mal utilizada como sinônimo de ciúme, inveja envolve ressentir e querer o que outra pessoa possui. Quando uma pessoa sente inveja, raiva, desprezo ou tristeza também podem ser sentidos."
+        },
+        {
+          "name": "Ódio",
+          "desc": "Raiva duradoura focada em uma pessoa particular ou grupo de pessoas. Com o tempo o ódio pode gerar o traço de personalidade de hostilidade."
+        },
+        {
+          "name": "Constrangimento",
+          "desc": "Angústia autoconsciente ou desconforto. Frequentemente ativado por elogio de outro, ou por um erro social. Não tem sinal vocal, mas pode causar um rubor visível apenas em pessoas de pele clara."
+        },
+        {
+          "name": "Vergonha",
+          "desc": "Uma expectativa de que outros ficariam enojados se soubessem no que a pessoa estava pensando ou tinha feito. Motiva um forte desejo de impedir outros de descobrir o que a pessoa fez ou pensou."
+        },
+        {
+          "name": "Desprezo",
+          "desc": "A última emoção a aparecer no desenvolvimento infantil, é um sentimento de superioridade moral em relação ao alvo. Frequentemente misturado com prazer."
+        },
+        {
+          "name": "Culpa",
+          "desc": "Arrependimento sobre uma ação passada, que motiva o desejo de confessar a ação errada, esperando perdão."
+        }
+      ],
+      "title": "Emoções Parcialmente Mapeadas",
+      "desc": "Metade ou menos da metade dos cientistas de emoção acreditam que há evidência convincente de que cada uma das seguintes é uma emoção."
+    }
+  },
+  "about": {
+    "subsections": [
+      {
+        "title": "Sobre os Ekmans",
+        "desc": "Paul Ekman é um psicólogo americano renomado que pioneou o campo da pesquisa de expressões faciais de emoção, demonstrando a universalidade de expressões faciais de emoção e mapeando todos os 43 músculos faciais usados em expressões faciais. Seu trabalho amplamente acessível ganhou-lhe o status único de trabalhar com ambas a polícia (para treinar pessoas em identificar enganos) e o Dalai Lama (para explorar o fundamento filosófico das abordagens oriental e ocidental ao emoção). Após 40 anos na faculdade da Universidade da Califórnia, em São Francisco, ele tem sido responsável pela criação de uma empresa de treinamento privada, Paul Ekman Group, desde 2001.<br><br>Eve Ekman é uma pesquisadora pós-doutoranda no Centro de Medicina Integrativa da Universidade da Califórnia, em São Francisco. Eve se concentra em reduzir o estresse para sustentar empatia e significado no trabalho. Ela é formadora de professores para Cultivating Emotional Balance (CEB), uma intervenção de regulação emocional e meditação baseada em ciência ocidental e práticas contemplativas de emoção, desenvolvida por Paul Ekman e o filósofo budista B. Alan Wallace."
+      },
+      {
+        "title": "Sobre Stamen Design",
+        "desc": "<a href=\"http://www.stamen.com/\">Stamen</a> foi fundada por Eric Rodenbeck em 2001 para explorar oportunidades em mídia digital em meio à crise do .com. A estúdio cresceu para uma equipe de doze e estabeleceu uma reputação por sua expertise em criar projetos interativos e visualizações de dados de design atraente. Seu portfólio não é facilmente classificado, mas é caracterizado por um envolvimento amoroso com mídia e uma profunda envolvência com seus colaboradores. Não é nem um laboratório de pesquisa e desenvolvimento nem uma firma de design direto, mas algo no meio: um lugar onde o trabalho é valorizado, boas ideias podem vir de qualquer lugar, e os resultados são primordiais. Seu envolvimento com tecnologia leva a vários projetos de pesquisa que têm uma maneira de encontrar aplicações no mundo real."
+      },
+      {
+        "title": "Como Este Atlas Veio a Ser?",
+        "desc": "As emoções ocorrem automaticamente, parecem acontecer com nós, não por escolha, mas sem pensar consciente. Não sempre percebemos que estamos em um mergulho de emoção até que alguém nos aponte. Ter escolha sobre quando experimentar uma emoção, e como experimentá-la, requer introduzir um elemento estranho na ocorrência de uma emoção – consciência. Habilidades devem ser desenvolvidas para que essa consciência se torne possível, se quisermos exercer escolha sobre quando experimentamos qual emoção, e como a experimentamos. O Atlas das Emoções foi criado para iluminá-lo.<br><br>\n\nO Dalai Lama pediu a Paul Ekman para criar um mapa das emoções, esperando que tal mapa pudesse permitir que as pessoas tivessem experiências emocionais mais construtivas. Quando queríamos chegar ao novo mundo, ele disse, precisávamos de um mapa para chegar lá. Se queremos chegar a um estado de calma mental, precisamos de um mapa das emoções. Ele pediu a Ekman para basear o mapa emocional no consenso científico sobre o que são as emoções."
+      },
+      {
+        "title": "Por que Usar Este Atlas?",
+        "desc": "Precisamos entender nossas emoções e desenvolver habilidades para ter escolha sobre (1) quando nos tornamos emocionais ou o que as traz, e (2) como respondemos e o que dizemos e fazemos quando estamos emocionais. Essas habilidades não são dadas por nós, mas podemos aprender. Explorar o Atlas das Emoções aumentará sua compreensão sobre o que são as emoções e seus efeitos sobre nós, dando-lhe uma consciência aumentada do que está acontecendo com você quando experimenta emoções. "
+      },
+      {
+        "title": "O Que É a Ligação Entre Emoção e Estresse?",
+        "desc": "Nossas emoções descontroladas nos tornam susceptíveis ao estresse. De fato, o estresse é definido como uma sobre-excitação emocional (uma experiência emocional que é muito forte e dura muito tempo, e interfira com o resto de nossa vida). Os efeitos do estresse, especialmente o estresse prolongado, incluem mau sono, humor negativo, funcionamento cognitivo diminuído (incluindo memória e foco), estresse nas relações pessoais e profissionais e uma variedade de resultados de saúde física ruim."
+      },
+      {
+        "title": "O Que É Uma Emoção?",
+        "title": "What Is the Link Between Emotion and Stress?",
+        "desc": "Our uncontrolled emotions make us susceptible to stress. In fact, stress is defined as an emotional over-arousal (an emotional experience that is too strong and lasts too long, and interferes with the rest of our life). The consequences of stress, especially prolonged stress, include poor sleep, negative moods, diminished cognitive functioning (including memory and focus), strain on personal and professional relationships and a variety of poor physical health outcomes."
+      },
+      {
+        "title": "What Is an Emotion?",
+        "desc": "An episode of emotion is a brief, succinct experience, one which does not always fit our expectations. Most emotions arise in under a twenty-fifth of a second and last no longer than a few minutes. We often feel as though our emotions last much longer; however, what we are remembering is likely a series of emotion episodes. The definition of emotion is as follows: \n<br><br>\nEmotion is a process, a particular kind of very fast, automatic appraisal influenced by our evolutionary and personal pasts, in which we sense that something important to our welfare is occurring and a set of physiological changes and behaviors begin to deal with the situation. In particular, emotions efficiently coordinate diverse response systems, thereby helping us respond to important challenges or opportunities.\n<br><br>\nLet’s unpack this definition. Emotion is a process, meaning there are a series of small stages that make up an emotion episode. This begins with our automatic appraisal or perspective of the world as influenced by our personal past (our learned responses arising from life experiences) and our evolutionary past (our hardwired responses that have been passed down genetically). This appraisal helps us filter what is “important to our welfare.” Typically appraisal is so fast that we are totally unaware of it. Because our appraisal is influenced by our personal pasts, we can have quite distinct responses to the world. Consider this example: You are walking down the street with a close friend and an approaching car with its windows down is loudly playing a song. For you this song elicits a feeling of great sadness; it is the favorite song of a friend who died from cancer and was played at her or his eulogy. However, for your friend, who did not know this person and has no association with the song, there is no emotional response, or perhaps there is annoyance about the loud noise. You and your friend are on the same street hearing the same song, but your response is learned and personal. But if that same car had to avoid a cat running across the road and suddenly veered onto the sidewalk, both you and your friend, irrespective of personal pasts, would jump backwards in fear. This is a universal response to an imminent threat. Emotions help us respond before we even have time to think, “What is that car doing?” This is the brilliance and burden of emotions: They can rally our physiological responses to cause immediate behaviors to save our lives, but they arise without our choosing them and can feel quite out of our control. We will begin mapping our own emotion episodes as explorers immersed in this Atlas.\n<br><br>\nThe end of this definition points to the evolutionary perspective of emotions. This means looking at emotions the way we look at our thumbs or eyelashes for their functional properties. While emotions do not serve the critical functions of allowing us to grasp or keeping dust from our eyes, they were just as critical for our survival in the environment in which we evolved. In addition to helping us respond to immediate threats (running from a saber-tooth tiger in fear or standing up to a less-threatening beast with anger), they also helped us form the social cohesion of a tribe through shared enjoyment. Importantly for our early survival, our emotion system includes our rapid internal response as well as nonverbal signaling through our face."
+      }
+    ],
+    "title": "About This Atlas",
+    "desc": "The goal of this Atlas is provide a visual tool to explore and identify some of our primary emotions. The site invites your exploration in to the continents of 5 basic emotions and their related states of feelings, how we respond with actions to these emotions, what triggers our emotions and the experience of moods. While emotions are central to our lives – providing the joy, alerting us to threats, a force for change, a warning against what is toxic, and calling to others for help – we don’t choose what to feel or when to feel it. The Atlas of Emotions was created to build emotional awareness and sometimes even some choice about how we respond to what we are feeling, through better understanding of how emotions work.\n"
+  },
+  "donate": {
+    "title": "Support Our Cause",
+    "desc": "Donate to the Atlas of Emotions Society and support our cause. Your generosity will help us to spread a worldwide pathway to a calm mind through the Atlas of Emotions. ",
+    "link": "http://www.paulekman.com/atlas-emotions-society/",
+    "imgs": []
+  },
+  "further-reading": {
+    "links": [
+      {
+        "link": "/#more:emotrak",
+        "desc": "Eve Ekman has developed EmoTrak, an app to improve your well being with daily emotional balance training. >"
+      },
+      {
+        "link": "http://greatergood.berkeley.edu/",
+        "desc": "Read about the latest research on the science of living a meaningful life. >"
+      },
+      {
+        "link": "http://www.paulekman.com/",
+        "desc": "Learn more about the work of Paul Ekman. >"
+      },
+      {
+        "link": "http://eveekman.com/",
+        "desc": "Learn more about the work of Eve Ekman. >"
+      },
+      {
+        "link": "http://stamen.com/",
+        "desc": "Learn more about the information visualization work of Stamen. >"
+      },
+      {
+        "link": "mailto:info@atlasofemotions.org",
+        "desc": "Send feedback on the Atlas of Emotions >"
+      }
+    ],
+    "title": " ",
+    "desc": "Learn more about your emotions, the work of Atlas of Emotions creators Paul and Eve Ekman, and Stamen, the design company that built this website."
+  },
+  "emotrak": {
+    "subsections": [
+      {
+        "title": "",
+        "desc": "A brand new app, EmoTrak, is under development by Dr. Eve Ekman and collaborators. Sign up below to be the first to find out about the release of this science based emotional training app.",
+        "image": "emotrak",
+        "mail": null
+      },
+      {
+        "title": "",
+        "desc": "true in mail column indicates that it will include hardcoded subscribe link",
+        "image": null,
+        "mail": true
+      },
+      {
+        "title": "",
+        "desc": "Dr. Eve Ekman is a University of California San Francisco postdoctoral fellow studying burnout and emotional well being. Dr. Ekman has been developing and evaluating EmoTrak to support health care providers. The app is a self assessment tool to investigate emotion triggers, experiences and responses. It also provides brief emotion focused meditations and feedback on your emotional profile.",
+        "image": null,
+        "mail": null
+      }
+    ],
+    "title": "",
+    "desc": "Improve your well being with daily emotional balance training."
+  }
+}

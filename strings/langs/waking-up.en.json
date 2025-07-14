@@ -1,0 +1,144 @@
+{
+  "slug": "waking-up",
+  "phrases": [
+    {
+      "phrase": "Successful interview",
+      "emotion": "enjoyment"
+    },
+    {
+      "phrase": "Forgetting phone password",
+      "emotion": "fear"
+    },
+    {
+      "phrase": "Enjoyed a vacation",
+      "emotion": "enjoyment"
+    },
+    {
+      "phrase": "Stuck in an elevator",
+      "emotion": "fear"
+    },
+    {
+      "phrase": "Slow internet speed",
+      "emotion": "anger"
+    },
+    {
+      "phrase": "Dirty dishes everywhere",
+      "emotion": "disgust"
+    },
+    {
+      "phrase": "Hear a strange noise",
+      "emotion": "fear"
+    },
+    {
+      "phrase": "Hear a good joke",
+      "emotion": "enjoyment"
+    },
+    {
+      "phrase": "Laid off",
+      "emotion": "sadness"
+    },
+    {
+      "phrase": "Spilled coffee on shirt",
+      "emotion": "anger"
+    },
+    {
+      "phrase": "Got a promotion",
+      "emotion": "enjoyment"
+    },
+    {
+      "phrase": "Moldy shower grout",
+      "emotion": "disgust"
+    },
+    {
+      "phrase": "Construction noise nearby",
+      "emotion": "anger"
+    },
+    {
+      "phrase": "Lost phone charger",
+      "emotion": "fear"
+    },
+    {
+      "phrase": "Helped a stranger",
+      "emotion": "enjoyment"
+    },
+    {
+      "phrase": "Rotten food in fridge",
+      "emotion": "disgust"
+    },
+    {
+      "phrase": "Plane turbulence",
+      "emotion": "fear"
+    }
+  ],
+  "scroller": {
+    "lessImportantExperiences": [
+      "Hear a good joke",
+      "Houseplant wilting",
+      "Lost phone charger",
+      "Out of laundry detergent"
+    ],
+    "respondWithoutThinking": "And we may respond without thinking.",
+    "arguing": "Arguing with a loved one",
+    "emotionsComeAndGo": "Emotions come and go",
+    "oneBigExperience": "...or one experience feels really big.",
+    "whatCanWeDo": "So what can we do?",
+    "connectToBreath": "Connect to our breath...",
+    "howDoIRespond": "How do I respond?",
+    "experiences": [
+      "late to an appointment",
+      "surprise gift",
+      "spilled water on computer",
+      "foul smell",
+      "great first date",
+      "feel unseen"
+    ],
+    "hardToSeparate": "In&nbsp;these&nbsp;moments, it&nbsp;is&nbsp;hard&nbsp;to&nbsp;separate what&nbsp;we&nbsp;feel&nbsp;inside from&nbsp;what&nbsp;is&nbsp;actually happening&nbsp;around&nbsp;us.",
+    "responseQuestions": [
+      "what is my goal?",
+      "what are my options right now?",
+      "are there other ways to see it?",
+      "how am I affecting others?",
+      "what is a good result for us?",
+      "what can I learn from this?"
+    ],
+    "veryImportantTitle": "While others feel very important...",
+    "triggerEmotionExperience": "relationship falls apart",
+    "pileUp": "Sometimes many experiences pile up<br/>and we feel a lot...",
+    "whatCausesFeeling": "What causes this feeling?",
+    "lessImportantTitle": "Some might feel less important.",
+    "experiencesTitle": "...we have experiences.",
+    "regretActions": [
+      "Shout at them",
+      "Mock them",
+      "Ignore them",
+      "Hide our feelings"
+    ],
+    "triggerEmotions": "and they trigger our emotions.",
+    "emotionsColorPerception": "Emotions color our perception of the outer world",
+    "rideWaveOfEmotion": "Ride the wave of emotion...",
+    "weCanPause": "We can pause...",
+    "exploreTimeline": "Explore the emotional episode timeline >",
+    "triggerQuestions": [
+      "what just happened?",
+      "what was I expecting?",
+      "what's the big picture?",
+      "how is my past involved?",
+      "how was my day?",
+      "am I well rested?"
+    ],
+    "actInWaysWeRegret": "we might act in ways we regret later.",
+    "storiesFromInnerWorld": "with stories and messages from our inner world.",
+    "recognizeEmotionalState": "...recognize that we are in an emotional&nbsp;state,",
+    "introduction": "As we live our lives...",
+    "becomeCurious": "and become curious and kind about our emotion.&nbsp;&nbsp;",
+    "veryImportantExperiences": [
+      "Car accident",
+      "Falling in love",
+      "Bad doctor visit",
+      "Laid off",
+      "Overflowing toilet",
+      "Losing a loved one"
+    ],
+    "withoutClearUnderstanding": "Without clear understanding or intention..."
+  }
+}

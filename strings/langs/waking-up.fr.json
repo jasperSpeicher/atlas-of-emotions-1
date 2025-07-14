@@ -1,0 +1,144 @@
+{
+  "slug": "waking-up",
+  "phrases": [
+    {
+      "phrase": "Entretien réussi",
+      "emotion": "enjoyment"
+    },
+    {
+      "phrase": "Oubli du mot de passe du téléphone",
+      "emotion": "fear"
+    },
+    {
+      "phrase": "Profité de vacances",
+      "emotion": "enjoyment"
+    },
+    {
+      "phrase": "Coincé dans un ascenseur",
+      "emotion": "fear"
+    },
+    {
+      "phrase": "Vitesse internet lente",
+      "emotion": "anger"
+    },
+    {
+      "phrase": "Vaisselle sale partout",
+      "emotion": "disgust"
+    },
+    {
+      "phrase": "Entendre un bruit étrange",
+      "emotion": "fear"
+    },
+    {
+      "phrase": "Entendre une bonne blague",
+      "emotion": "enjoyment"
+    },
+    {
+      "phrase": "Licencié",
+      "emotion": "sadness"
+    },
+    {
+      "phrase": "Renversé du café sur sa chemise",
+      "emotion": "anger"
+    },
+    {
+      "phrase": "Obtenu une promotion",
+      "emotion": "enjoyment"
+    },
+    {
+      "phrase": "Joints de douche moisis",
+      "emotion": "disgust"
+    },
+    {
+      "phrase": "Bruit de construction à proximité",
+      "emotion": "anger"
+    },
+    {
+      "phrase": "Perdu le chargeur de téléphone",
+      "emotion": "fear"
+    },
+    {
+      "phrase": "Aidé un inconnu",
+      "emotion": "enjoyment"
+    },
+    {
+      "phrase": "Nourriture pourrie dans le frigo",
+      "emotion": "disgust"
+    },
+    {
+      "phrase": "Turbulences en avion",
+      "emotion": "fear"
+    }
+  ],
+  "scroller": {
+    "lessImportantExperiences": [
+      "Entendre une bonne blague",
+      "Plante d'intérieur qui se fane",
+      "Perdu le chargeur de téléphone",
+      "Plus de lessive"
+    ],
+    "respondWithoutThinking": "Et nous pouvons réagir sans réfléchir.",
+    "arguing": "Se disputer avec un être cher",
+    "emotionsComeAndGo": "Les émotions vont et viennent",
+    "oneBigExperience": "...ou une expérience semble vraiment grande.",
+    "whatCanWeDo": "Alors que pouvons-nous faire ?",
+    "connectToBreath": "Se connecter à notre respiration...",
+    "howDoIRespond": "Comment est-ce que je réponds ?",
+    "experiences": [
+      "en retard à un rendez-vous",
+      "cadeau surprise",
+      "renversé de l'eau sur l'ordinateur",
+      "mauvaise odeur",
+      "excellent premier rendez-vous",
+      "se sentir invisible"
+    ],
+    "hardToSeparate": "Dans&nbsp;ces&nbsp;moments, il&nbsp;est&nbsp;difficile&nbsp;de&nbsp;séparer ce&nbsp;que&nbsp;nous&nbsp;ressentons&nbsp;à&nbsp;l'intérieur de&nbsp;ce&nbsp;qui&nbsp;se&nbsp;passe réellement&nbsp;autour&nbsp;de&nbsp;nous.",
+    "responseQuestions": [
+      "quel est mon objectif ?",
+      "quelles sont mes options maintenant ?",
+      "y a-t-il d'autres façons de voir cela ?",
+      "comment j'affecte les autres ?",
+      "quel est un bon résultat pour nous ?",
+      "que puis-je apprendre de cela ?"
+    ],
+    "veryImportantTitle": "Tandis que d'autres semblent très importantes...",
+    "triggerEmotionExperience": "relation qui s'effondre",
+    "pileUp": "Parfois de nombreuses expériences s'accumulent<br/>et nous ressentons beaucoup...",
+    "whatCausesFeeling": "Qu'est-ce qui cause ce sentiment ?",
+    "lessImportantTitle": "Certaines peuvent sembler moins importantes.",
+    "experiencesTitle": "...nous avons des expériences.",
+    "regretActions": [
+      "Leur crier dessus",
+      "Se moquer d'eux",
+      "Les ignorer",
+      "Cacher nos sentiments"
+    ],
+    "triggerEmotions": "et elles déclenchent nos émotions.",
+    "emotionsColorPerception": "Les émotions colorent notre perception du monde extérieur",
+    "rideWaveOfEmotion": "Surfer sur la vague d'émotion...",
+    "weCanPause": "Nous pouvons faire une pause...",
+    "exploreTimeline": "Explorer la chronologie de l'épisode émotionnel >",
+    "triggerQuestions": [
+      "que s'est-il passé ?",
+      "qu'est-ce que j'attendais ?",
+      "quelle est la vue d'ensemble ?",
+      "comment mon passé est-il impliqué ?",
+      "comment s'est passée ma journée ?",
+      "suis-je bien reposé ?"
+    ],
+    "actInWaysWeRegret": "nous pourrions agir de manière que nous regretterons plus tard.",
+    "storiesFromInnerWorld": "avec des histoires et des messages de notre monde intérieur.",
+    "recognizeEmotionalState": "...reconnaître que nous sommes dans un état&nbsp;émotionnel,",
+    "introduction": "Alors que nous vivons nos vies...",
+    "becomeCurious": "et devenir curieux et bienveillant envers notre émotion.&nbsp;&nbsp;",
+    "veryImportantExperiences": [
+      "Accident de voiture",
+      "Tomber amoureux",
+      "Mauvaise visite chez le médecin",
+      "Licencié",
+      "Toilettes qui débordent",
+      "Perdre un être cher"
+    ],
+    "withoutClearUnderstanding": "Sans compréhension claire ou intention..."
+  }
+}
