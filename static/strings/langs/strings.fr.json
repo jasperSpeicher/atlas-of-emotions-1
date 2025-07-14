@@ -2539,7 +2539,7 @@
           "header": "timeline_common_header",
           "body": [],
           "phrases": {
-            "you_feel": "vous ressentez de la"
+            "you_feel": "vous ressentez"
           },
           "body_mobile": [],
           "header_mobile": "timeline_common_header"
