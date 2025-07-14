@@ -1,106 +1,72 @@
 {
   "slug": "waking-up",
-  "phrasePairs": [
+  "phrases": [
     {
-      "pair": {
-        "event": "Erfolgreiches Vorstellungsgespräch"
-      },
+      "phrase": "Erfolgreiches Vorstellungsgespräch",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Telefon-Passwort vergessen"
-      },
+      "phrase": "Telefon-Passwort vergessen",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Einen Urlaub genossen"
-      },
+      "phrase": "Einen Urlaub genossen",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Im Aufzug stecken geblieben"
-      },
+      "phrase": "Im Aufzug stecken geblieben",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Langsame Internetgeschwindigkeit"
-      },
+      "phrase": "Langsame Internetgeschwindigkeit",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Schmutziges Geschirr überall"
-      },
+      "phrase": "Schmutziges Geschirr überall",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Seltsames Geräusch hören"
-      },
+      "phrase": "Seltsames Geräusch hören",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Guten Witz hören"
-      },
+      "phrase": "Guten Witz hören",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Entlassen"
-      },
+      "phrase": "Entlassen",
       "emotion": "sadness"
     },
     {
-      "pair": {
-        "event": "Kaffee auf das Hemd verschüttet"
-      },
+      "phrase": "Kaffee auf das Hemd verschüttet",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Beförderung erhalten"
-      },
+      "phrase": "Beförderung erhalten",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Schimmelige Duschfugen"
-      },
+      "phrase": "Schimmelige Duschfugen",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Baulärm in der Nähe"
-      },
+      "phrase": "Baulärm in der Nähe",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Handy-Ladegerät verloren"
-      },
+      "phrase": "Handy-Ladegerät verloren",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Einem Fremden geholfen"
-      },
+      "phrase": "Einem Fremden geholfen",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Verdorbenes Essen im Kühlschrank"
-      },
+      "phrase": "Verdorbenes Essen im Kühlschrank",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Turbulenzen im Flugzeug"
-      },
+      "phrase": "Turbulenzen im Flugzeug",
       "emotion": "fear"
     }
   ],

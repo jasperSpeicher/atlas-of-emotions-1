@@ -1,106 +1,72 @@
 {
   "slug": "waking-up",
-  "phrasePairs": [
+  "phrases": [
     {
-      "pair": {
-        "event": "Colloquio di successo"
-      },
+      "phrase": "Colloquio di successo",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Dimenticare la password del telefono"
-      },
+      "phrase": "Dimenticare la password del telefono",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Godersi una vacanza"
-      },
+      "phrase": "Godersi una vacanza",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Bloccato in un ascensore"
-      },
+      "phrase": "Bloccato in un ascensore",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Velocità internet lenta"
-      },
+      "phrase": "Velocità internet lenta",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Piatti sporchi ovunque"
-      },
+      "phrase": "Piatti sporchi ovunque",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Sentire un rumore strano"
-      },
+      "phrase": "Sentire un rumore strano",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Sentire una buona barzelletta"
-      },
+      "phrase": "Sentire una buona barzelletta",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Licenziato"
-      },
+      "phrase": "Licenziato",
       "emotion": "sadness"
     },
     {
-      "pair": {
-        "event": "Versato caffè sulla camicia"
-      },
+      "phrase": "Versato caffè sulla camicia",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Ottenuto una promozione"
-      },
+      "phrase": "Ottenuto una promozione",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Fughe della doccia ammuffite"
-      },
+      "phrase": "Fughe della doccia ammuffite",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Rumore di cantiere nelle vicinanze"
-      },
+      "phrase": "Rumore di cantiere nelle vicinanze",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Perso il caricatore del telefono"
-      },
+      "phrase": "Perso il caricatore del telefono",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Aiutato uno sconosciuto"
-      },
+      "phrase": "Aiutato uno sconosciuto",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Cibo marcio nel frigo"
-      },
+      "phrase": "Cibo marcio nel frigo",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Turbolenza in aereo"
-      },
+      "phrase": "Turbolenza in aereo",
       "emotion": "fear"
     }
   ],

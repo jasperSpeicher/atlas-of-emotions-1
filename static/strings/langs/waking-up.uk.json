@@ -1,106 +1,72 @@
 {
   "slug": "waking-up",
-  "phrasePairs": [
+  "phrases": [
     {
-      "pair": {
-        "event": "Успішна співбесіда"
-      },
+      "phrase": "Успішна співбесіда",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Забув пароль телефону"
-      },
+      "phrase": "Забув пароль телефону",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Насолодився відпусткою"
-      },
+      "phrase": "Насолодився відпусткою",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Застряг у ліфті"
-      },
+      "phrase": "Застряг у ліфті",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Повільна швидкість інтернету"
-      },
+      "phrase": "Повільна швидкість інтернету",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Брудний посуд всюди"
-      },
+      "phrase": "Брудний посуд всюди",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Почути дивний звук"
-      },
+      "phrase": "Почути дивний звук",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Почути хороший жарт"
-      },
+      "phrase": "Почути хороший жарт",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Звільнений"
-      },
+      "phrase": "Звільнений",
       "emotion": "sadness"
     },
     {
-      "pair": {
-        "event": "Пролив каву на сорочку"
-      },
+      "phrase": "Пролив каву на сорочку",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Отримав підвищення"
-      },
+      "phrase": "Отримав підвищення",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Заплісневілі шви душу"
-      },
+      "phrase": "Заплісневілі шви душу",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Шум будівництва поблизу"
-      },
+      "phrase": "Шум будівництва поблизу",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Загубив зарядний пристрій телефону"
-      },
+      "phrase": "Загубив зарядний пристрій телефону",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Допоміг незнайомцю"
-      },
+      "phrase": "Допоміг незнайомцю",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Гнила їжа в холодильнику"
-      },
+      "phrase": "Гнила їжа в холодильнику",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Турбулентність в літаку"
-      },
+      "phrase": "Турбулентність в літаку",
       "emotion": "fear"
     }
   ],

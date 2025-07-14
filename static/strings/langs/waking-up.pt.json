@@ -1,106 +1,72 @@
 {
   "slug": "waking-up",
-  "phrasePairs": [
+  "phrases": [
     {
-      "pair": {
-        "event": "Entrevista bem-sucedida"
-      },
+      "phrase": "Entrevista bem-sucedida",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Esquecer a senha do telefone"
-      },
+      "phrase": "Esquecer a senha do telefone",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Aproveitou as férias"
-      },
+      "phrase": "Aproveitou as férias",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Preso no elevador"
-      },
+      "phrase": "Preso no elevador",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Velocidade da internet lenta"
-      },
+      "phrase": "Velocidade da internet lenta",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Pratos sujos por toda parte"
-      },
+      "phrase": "Pratos sujos por toda parte",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Ouvir um ruído estranho"
-      },
+      "phrase": "Ouvir um ruído estranho",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Ouvir uma boa piada"
-      },
+      "phrase": "Ouvir uma boa piada",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Demitido"
-      },
+      "phrase": "Demitido",
       "emotion": "sadness"
     },
     {
-      "pair": {
-        "event": "Derramou café na camisa"
-      },
+      "phrase": "Derramou café na camisa",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Conseguiu uma promoção"
-      },
+      "phrase": "Conseguiu uma promoção",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Rejunte do chuveiro mofado"
-      },
+      "phrase": "Rejunte do chuveiro mofado",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Ruído de construção próximo"
-      },
+      "phrase": "Ruído de construção próximo",
       "emotion": "anger"
     },
     {
-      "pair": {
-        "event": "Perdeu o carregador do telefone"
-      },
+      "phrase": "Perdeu o carregador do telefone",
       "emotion": "fear"
     },
     {
-      "pair": {
-        "event": "Ajudou um desconhecido"
-      },
+      "phrase": "Ajudou um desconhecido",
       "emotion": "enjoyment"
     },
     {
-      "pair": {
-        "event": "Comida podre na geladeira"
-      },
+      "phrase": "Comida podre na geladeira",
       "emotion": "disgust"
     },
     {
-      "pair": {
-        "event": "Turbulência no avião"
-      },
+      "phrase": "Turbulência no avião",
       "emotion": "fear"
     }
   ],
