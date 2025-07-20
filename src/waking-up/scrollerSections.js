@@ -1027,7 +1027,7 @@ export const createScrollerSections = () => {
 			content: `
         <div class="waking-up__timeline-questions" id="waking-up__trigger-timeline">
           <span class="${sharedStyle.triggerQuestion}">${scrollerStrings.whatCausesFeeling}</span>
-          <img class="${sharedStyle.triggerArrow}" src="/img/right-arrow.svg" />
+          <img class="${sharedStyle.triggerArrow}" src="img/right-arrow.svg" />
         </div>
       `,
 			scrollTriggerComponent: "heading",
@@ -1072,13 +1072,13 @@ export const createScrollerSections = () => {
 			// Originally:
 			// content: (
 			//   <div class="timeline-questions" id="response-timeline">
-			//     <img className={sharedStyle.responseArrow} src="/img/right-arrow.svg" />
+			//     <img className={sharedStyle.responseArrow} src="img/right-arrow.svg" />
 			//     <span className={sharedStyle.responseQuestion}>How do I respond?</span>
 			//   </div>
 			// ),
 			content: `
         <div class="waking-up__timeline-questions" id="waking-up__response-timeline">
-          <img class="${sharedStyle.responseArrow}" src="/img/right-arrow.svg" />
+          <img class="${sharedStyle.responseArrow}" src="img/right-arrow.svg" />
           <span class="${sharedStyle.responseQuestion}">${scrollerStrings.howDoIRespond}</span>
 		  <a href="#triggers" class="waking-up__timeline-link">${scrollerStrings.exploreTimeline}</a>
         </div>

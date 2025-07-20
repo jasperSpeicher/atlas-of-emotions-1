@@ -137,7 +137,7 @@ export default function (...initArgs) {
 			}
 			if ($(imageElement).is("div")) {
 				const src = $(imageElement).data("src");
-				imageElement.innerHTML = svgs[src];
+				imageElement.innerHTML = svgs[src].replace(/^\//,"");
 			}
 		});
 	}

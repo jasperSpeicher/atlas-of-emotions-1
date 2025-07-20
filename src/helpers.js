@@ -14,7 +14,7 @@ export const initializeTables = (subSections, sectionContainer) => {
 		const annexData = subSectionData.annex[subSectionAnnexKey];
 		titleElement.innerHTML = annexData.title;
 		const imageElement = document.createElement("img");
-		imageElement.src = "/img/atlas-logo.svg";
+		imageElement.src = "img/atlas-logo.svg";
 		imageElement.className = "print-header-logo";
 		titleElement.prepend(imageElement);
 		subSectionWrapper.prepend(titleElement);
