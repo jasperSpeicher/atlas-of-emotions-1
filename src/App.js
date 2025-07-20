@@ -137,7 +137,7 @@ export default function (...initArgs) {
 			}
 			if ($(imageElement).is("div")) {
 				const src = $(imageElement).data("src");
-				imageElement.innerHTML = svgs[src].replace(/^\//,"");
+				imageElement.innerHTML = svgs[src];
 			}
 		});
 	}
@@ -169,7 +169,7 @@ export default function (...initArgs) {
 					return;
 				}
 				const src = imageSrcElement.dataset.src;
-				imageSrcElement.src = src;
+				imageSrcElement.src = src.replace(/^\//,"");
 			});
 		});
 
