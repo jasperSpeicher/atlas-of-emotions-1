@@ -98,7 +98,7 @@ function browserifyTask(options) {
 		appBundler.on("update", createBundle);
 	}
 
-	createBundle();
+	let bundlePromise = createBundle();
 
 	// We create a separate bundle for our dependencies as they
 	// should not rebundle on file changes. This only happens when
@@ -129,10 +129,16 @@ function browserifyTask(options) {
 				})
 			);
 	} else {
-		browserify({ require: dependencies })
-			.bundle()
-			.pipe(source("vendors.js"))
-			.pipe(gulp.dest(options.dest));
+		let vendorsPromise = new Promise((resolve, reject) => {
+			browserify({ require: dependencies })
+				.bundle()
+				.on("error", reject)
+				.pipe(source("vendors.js"))
+				.pipe(gulp.dest(options.dest))
+				.on("end", resolve);
+		});
+		
+		return Promise.all([bundlePromise, vendorsPromise]);
 	}
 }
 
@@ -147,11 +153,12 @@ function sassVariablesTask(options) {
 			.pipe(gulp.dest(options.dest))
 			.pipe(gulpif(options.reload, connect.reload()));
 	};
-	run();
-
+	
 	if (options.development && options.watchfiles) {
 		gulp.watch(options.watchfiles, run);
 	}
+	
+	return run();
 }
 
 function cssTask(options) {
@@ -181,9 +188,9 @@ function cssTask(options) {
 				);
 		};
 		gulp.watch(options.watchfiles, run);
-		run();
+		return run();
 	} else {
-		gulp.src(options.src)
+		return gulp.src(options.src)
 			.pipe(
 				sass.sync({
 					includePaths: ["node_modules"],
@@ -306,41 +313,47 @@ gulp.task("default", async () => {
  * Build package for deployment
  */
 gulp.task("dist", async () => {
-	rimraf("./dist/**", () => {
-		const dest = "./dist";
-
-		// Copy static html files
-		copyTask({
-			src: "./src/*.html",
-			dest: dest,
+	const dest = "./dist";
+	
+	// Clean dist directory
+	await new Promise((resolve, reject) => {
+		rimraf("./dist/**", (err) => {
+			if (err) reject(err);
+			else resolve();
 		});
+	});
 
-		// Copy static assets
-		copyTask({
-			src: "./static/**",
-			dest: dest,
-		});
+	// Copy static html files
+	await copyTask({
+		src: "./src/*.html",
+		dest: dest,
+	});
 
-		// Bundle
-		browserifyTask({
-			development: true,
-			src: "./src/main.js",
-			dest: dest,
-		});
+	// Copy static assets
+	await copyTask({
+		src: "./static/**",
+		dest: dest,
+	});
 
-		// transpile variables.json into .scss
-		sassVariablesTask({
-			development: false,
-			src: "./scss/*.json",
-			dest: "./scss/",
-		});
+	// Bundle
+	await browserifyTask({
+		development: false,
+		src: "./src/main.js",
+		dest: dest,
+	});
 
-		// Compile Sass
-		cssTask({
-			development: false,
-			src: "./scss/*.scss",
-			dest: dest,
-		});
+	// transpile variables.json into .scss
+	await sassVariablesTask({
+		development: false,
+		src: "./scss/*.json",
+		dest: "./scss/",
+	});
+
+	// Compile Sass
+	await cssTask({
+		development: false,
+		src: "./scss/*.scss",
+		dest: dest,
 	});
 });
 

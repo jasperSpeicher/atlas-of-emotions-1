@@ -11,7 +11,7 @@
 		"lint": "eslint ./src",
 		"start-heroku": "serve -p ${PORT:-3000} dist/ -a ${AUTH_USERNAME}:${AUTH_PASSWORD}",
 		"postinstall": "npm run dist",
-		"gh-deploy": "git-directory-deploy --directory dist/"
+		"gh-deploy": "gulp dist && git-directory-deploy --directory dist/"
 	},
 	"repository": {
 		"type": "git",
