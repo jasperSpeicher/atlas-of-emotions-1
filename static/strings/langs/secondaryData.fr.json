@@ -430,49 +430,49 @@
     "triggers-timeline": {
       "content": [
         {
-          "desc": "This describes the context or situations which may influence the way we enter the emotion. For example our pre-condition could be physiological: being hungry, tired or emotional: having had a very enjoyable or stressful day or coming out of a prior emotional episode.",
+          "desc": "Ceci décrit le contexte ou les situations qui peuvent influencer la façon dont nous entrons dans l'émotion. Par exemple, notre pré-condition pourrait être physiologique : avoir faim, être fatigué ou émotionnelle : avoir eu une journée très agréable ou stressante ou sortir d'un épisode émotionnel antérieur.",
           "name": "pre-condition"
         },
         {
-          "desc": "This describes a person, place, situation, image, thought, memory, smell, sound, taste or idea that we encounter from the outside world or from our own mind. We are constantly, automatically appraising, or assessing our inner and outer world. For example, when we hear a new song, we are instantly overlaying our knowledge of instruments and categories of music as we listen without even thinking, this is automatic appraisal. ",
+          "desc": "Ceci décrit une personne, un lieu, une situation, une image, une pensée, un souvenir, une odeur, un son, un goût ou une idée que nous rencontrons du monde extérieur ou de notre propre esprit. Nous évaluons constamment et automatiquement, ou évaluons notre monde intérieur et extérieur. Par exemple, quand nous entendons une nouvelle chanson, nous superposons instantanément notre connaissance des instruments et des catégories de musique pendant que nous écoutons sans même y penser, c'est l'évaluation automatique.",
           "name": "event"
         },
         {
-          "desc": "This describes the combination of the automatic appraisal matching to some universal/hardwired or acquired script in our database. ",
+          "desc": "Ceci décrit la combinaison de l'évaluation automatique correspondant à un script universel/câblé ou acquis dans notre base de données.",
           "name": "trigger"
         },
         {
-          "desc": "This describes our universal/hardwired responses and our individually acquired emotional memories. For example, if the event is a smell and in the database is the stored memory of the shampoo our mother used in our childhood, and we are triggered to experience an emotion of warm nostalgia of a happy childhood. When the appraised event resembles something in our database, it may be a highly accurate or could create a distorted perception of the trigger. For example if we had an intimidating experience with a police officer when we were young and we are pulled over as an adult we could misperceive the situation with a distorted sense of fear.",
+          "desc": "Ceci décrit nos réponses universelles/câblées et nos souvenirs émotionnels individuellement acquis. Par exemple, si l'événement est une odeur et que dans la base de données se trouve le souvenir stocké du shampooing que notre mère utilisait dans notre enfance, nous sommes déclenchés pour éprouver une émotion de nostalgie chaleureuse d'une enfance heureuse. Quand l'événement évalué ressemble à quelque chose dans notre base de données, cela peut être très précis ou créer une perception déformée du déclencheur. Par exemple, si nous avons eu une expérience intimidante avec un policier quand nous étions jeunes et que nous sommes arrêtés à l'âge adulte, nous pourrions mal percevoir la situation avec un sentiment déformé de peur.",
           "name": "perception database"
         },
         {
-          "desc": "This describes the autonomic changes in our body which occur as our emotion arises. We can experience these changes as sensations in our body, feeling heat in our face, tightness in our jaw or shoulders, etc.",
+          "desc": "Ceci décrit les changements autonomes dans notre corps qui se produisent quand notre émotion surgit. Nous pouvons éprouver ces changements comme des sensations dans notre corps, ressentir de la chaleur dans notre visage, de la tension dans notre mâchoire ou nos épaules, etc.",
           "name": "physical changes"
         },
         {
-          "desc": "This describes the emotion itself, inclusive of physical and psychological changes.",
+          "desc": "Ceci décrit l'émotion elle-même, incluant les changements physiques et psychologiques.",
           "name": "state"
         },
         {
-          "desc": "This describes the qualitative experience of the emotion, how sadness feels sad, or anger feels angry.",
+          "desc": "Ceci décrit l'expérience qualitative de l'émotion, comment la tristesse se sent triste, ou la colère se sent en colère.",
           "name": "psychological changes"
         },
         {
-          "desc": "This describes our emotional responses. This could be an external behavior such as yelling in anger, or could be internal, such as suppressing anger. Each emotion in the atlas shows a range of immediate actions, as well as intrinsic or intention actions.  The action can be either constructive or destructive. Leading to further collaboration with others or to difficulty in collaborating.",
+          "desc": "Ceci décrit nos réponses émotionnelles. Cela pourrait être un comportement externe comme crier de colère, ou pourrait être interne, comme supprimer la colère. Chaque émotion dans l'atlas montre une gamme d'actions immédiates, ainsi que des actions intrinsèques ou intentionnelles. L'action peut être soit constructive soit destructive. Menant à une collaboration accrue avec les autres ou à des difficultés dans la collaboration.",
           "name": "action"
         },
         {
-          "desc": "This describes the result or impact of our emotional actions. This could be external: if we have yelled at someone they may then yell back; or internal: if we have suppressed we could be feeling some ongoing irritation. The post condition could lead to our next episode of emotion, if someone is yelling back at us we are triggered once again to either anger, fear or sadness/ regret for our actions. Our post condition is an opportunity for us to build emotional awareness through reflection on our emotion, to understand the trigger, identify the felt experience and consider its impact it has had.",
+          "desc": "Ceci décrit le résultat ou l'impact de nos actions émotionnelles. Cela pourrait être externe : si nous avons crié sur quelqu'un, ils pourraient alors crier en retour ; ou interne : si nous avons supprimé, nous pourrions ressentir une irritation continue. La post-condition pourrait mener à notre prochain épisode d'émotion, si quelqu'un nous crie dessus, nous sommes déclenchés une fois de plus vers soit la colère, la peur ou la tristesse/le regret pour nos actions. Notre post-condition est une opportunité pour nous de construire la conscience émotionnelle à travers la réflexion sur notre émotion, de comprendre le déclencheur, identifier l'expérience ressentie et considérer l'impact qu'elle a eu.",
           "name": "post-condition"
         },
         {
-          "desc": "The Selective Filtering Period is initiated with the onset of actions and signals — perception is narrowed and distorted, filtering and interpreting information relevant to and consistent with the prevailing emotion. For example, when fear is aroused, there is a heightened sensitivity to real and imagined threats. ",
-          "name": "selective filter period"
+          "desc": "La Période de Saturation Émotionnelle est initiée avec l'apparition des actions et signaux — la perception est rétrécie et déformée, filtrant et interprétant l'information pertinente et cohérente avec l'émotion prédominante. Par exemple, quand la peur est éveillée, il y a une sensibilité accrue aux menaces réelles et imaginaires.",
+          "name": "emotion saturation period"
         }
       ],
       "footer": [
-        "Learned display rules (to regulate signals) and learned feeling rules (to modify, amplify or suppress subjective feelings) arise. We don’t know how quickly these occur. Do they occur before signals and actions, or immediately during the onset of signals and actions? Impulses are translated into actions and signals. ",
-        "The gap between Step 2 (impulses) and Step 4 (actions/signals) is variable, depending on the individual characteristics of each person and the person’s emotional profile, the intensity of the appraised trigger, and the momentary psychological state of the individual when the trigger is appraised (how much sleep the person had last night; what, if any, emotion the person last experienced or is currently experiencing, etc.)."
+        "Les règles d'affichage apprises (pour réguler les signaux) et les règles de sentiment apprises (pour modifier, amplifier ou supprimer les sentiments subjectifs) surgissent. Nous ne savons pas à quelle vitesse elles se produisent. Se produisent-elles avant les signaux et actions, ou immédiatement pendant l'apparition des signaux et actions ? Les impulsions sont traduites en actions et signaux.",
+        "L'écart entre l'Étape 2 (impulsions) et l'Étape 4 (actions/signaux) est variable, selon les caractéristiques individuelles de chaque personne et le profil émotionnel de la personne, l'intensité du déclencheur évalué, et l'état psychologique momentané de l'individu quand le déclencheur est évalué (combien de sommeil la personne a eu la nuit dernière ; quelle émotion, le cas échéant, la personne a éprouvée en dernier ou éprouve actuellement, etc.)."
       ],
       "title": "Chronologie d'un épisode émotionnel",
       "desc": ""
