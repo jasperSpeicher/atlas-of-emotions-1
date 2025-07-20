@@ -431,43 +431,43 @@
       "content": [
         {
           "desc": "Ceci décrit le contexte ou les situations qui peuvent influencer la façon dont nous entrons dans l'émotion. Par exemple, notre pré-condition pourrait être physiologique : avoir faim, être fatigué ou émotionnelle : avoir eu une journée très agréable ou stressante ou sortir d'un épisode émotionnel antérieur.",
-          "name": "pre-condition"
+          "name": "pré-condition"
         },
         {
           "desc": "Ceci décrit une personne, un lieu, une situation, une image, une pensée, un souvenir, une odeur, un son, un goût ou une idée que nous rencontrons du monde extérieur ou de notre propre esprit. Nous évaluons constamment et automatiquement, ou évaluons notre monde intérieur et extérieur. Par exemple, quand nous entendons une nouvelle chanson, nous superposons instantanément notre connaissance des instruments et des catégories de musique pendant que nous écoutons sans même y penser, c'est l'évaluation automatique.",
-          "name": "event"
+          "name": "événement"
         },
         {
           "desc": "Ceci décrit la combinaison de l'évaluation automatique correspondant à un script universel/câblé ou acquis dans notre base de données.",
-          "name": "trigger"
+          "name": "déclencheur"
         },
         {
           "desc": "Ceci décrit nos réponses universelles/câblées et nos souvenirs émotionnels individuellement acquis. Par exemple, si l'événement est une odeur et que dans la base de données se trouve le souvenir stocké du shampooing que notre mère utilisait dans notre enfance, nous sommes déclenchés pour éprouver une émotion de nostalgie chaleureuse d'une enfance heureuse. Quand l'événement évalué ressemble à quelque chose dans notre base de données, cela peut être très précis ou créer une perception déformée du déclencheur. Par exemple, si nous avons eu une expérience intimidante avec un policier quand nous étions jeunes et que nous sommes arrêtés à l'âge adulte, nous pourrions mal percevoir la situation avec un sentiment déformé de peur.",
-          "name": "perception database"
+          "name": "base de données de perception"
         },
         {
           "desc": "Ceci décrit les changements autonomes dans notre corps qui se produisent quand notre émotion surgit. Nous pouvons éprouver ces changements comme des sensations dans notre corps, ressentir de la chaleur dans notre visage, de la tension dans notre mâchoire ou nos épaules, etc.",
-          "name": "physical changes"
+          "name": "changements physiques"
         },
         {
           "desc": "Ceci décrit l'émotion elle-même, incluant les changements physiques et psychologiques.",
-          "name": "state"
+          "name": "état"
         },
         {
           "desc": "Ceci décrit l'expérience qualitative de l'émotion, comment la tristesse se sent triste, ou la colère se sent en colère.",
-          "name": "psychological changes"
+          "name": "changements psychologiques"
         },
         {
           "desc": "Ceci décrit nos réponses émotionnelles. Cela pourrait être un comportement externe comme crier de colère, ou pourrait être interne, comme supprimer la colère. Chaque émotion dans l'atlas montre une gamme d'actions immédiates, ainsi que des actions intrinsèques ou intentionnelles. L'action peut être soit constructive soit destructive. Menant à une collaboration accrue avec les autres ou à des difficultés dans la collaboration.",
           "name": "action"
         },
         {
-          "desc": "Ceci décrit le résultat ou l'impact de nos actions émotionnelles. Cela pourrait être externe : si nous avons crié sur quelqu'un, ils pourraient alors crier en retour ; ou interne : si nous avons supprimé, nous pourrions ressentir une irritation continue. La post-condition pourrait mener à notre prochain épisode d'émotion, si quelqu'un nous crie dessus, nous sommes déclenchés une fois de plus vers soit la colère, la peur ou la tristesse/le regret pour nos actions. Notre post-condition est une opportunité pour nous de construire la conscience émotionnelle à travers la réflexion sur notre émotion, de comprendre le déclencheur, identifier l'expérience ressentie et considérer l'impact qu'elle a eu.",
-          "name": "post-condition"
+          "desc": "Ceci décrit le résultat ou l'impact de nos actions émotionnelles. Cela pourrait être externe : si nous avons crié sur quelqu'un, ils pourraient alors crier en retour ; ou interne : si nous avons supprimé, nous pourrions ressentir une irritation continue. La état post-émotionnel pourrait mener à notre prochain épisode d'émotion, si quelqu'un nous crie dessus, nous sommes déclenchés une fois de plus vers soit la colère, la peur ou la tristesse/le regret pour nos actions. Notre état post-émotionnel est une opportunité pour nous de construire la conscience émotionnelle à travers la réflexion sur notre émotion, de comprendre le déclencheur, identifier l'expérience ressentie et considérer l'impact qu'elle a eu.",
+          "name": "état post-émotionnel"
         },
         {
           "desc": "La Période de Saturation Émotionnelle est initiée avec l'apparition des actions et signaux — la perception est rétrécie et déformée, filtrant et interprétant l'information pertinente et cohérente avec l'émotion prédominante. Par exemple, quand la peur est éveillée, il y a une sensibilité accrue aux menaces réelles et imaginaires.",
-          "name": "emotion saturation period"
+          "name": "période de saturation émotionnelle"
         }
       ],
       "footer": [

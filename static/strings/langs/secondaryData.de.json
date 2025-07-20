@@ -446,7 +446,8 @@
           "name": "Auslöser"
         },
         {
-          "desc": "Dies beschreibt unsere universellen/hartgespielten Reaktionen und unsere individuell erworbenen emotionalen Erinnerungen. Zum Beispiel, wenn das Ereignis ein Geruch ist und in der Datenbank ist die gespeicherte Erinnerung des Shampoos, das unsere Mutter in unseiner Kindheit verwendet hat, und wir werden durch einen Auslöser ausgelöst, der eine emotionale Erfahrung von warmem Nostalgie für ein glückliches Kindesalter erzeugt. Wenn das apprazierte Ereignis etwas in unserer Datenbank ähnelt, kann es sehr genau oder eine verzerrte Wahrnehmung des Auslösers sein. Zum Beispiel, wenn wir eine erschreckende Erfahrung mit einem Polizisten als Kind hatten und wir als Erwachsener überprüft werden, könnten wir die Situation mit einer verzerrten Angstwahrnehmung wahrnehmen."
+          "desc": "Dies beschreibt unsere universellen/hartgespielten Reaktionen und unsere individuell erworbenen emotionalen Erinnerungen. Zum Beispiel, wenn das Ereignis ein Geruch ist und in der Datenbank ist die gespeicherte Erinnerung des Shampoos, das unsere Mutter in unseiner Kindheit verwendet hat, und wir werden durch einen Auslöser ausgelöst, der eine emotionale Erfahrung von warmem Nostalgie für ein glückliches Kindesalter erzeugt. Wenn das apprazierte Ereignis etwas in unserer Datenbank ähnelt, kann es sehr genau oder eine verzerrte Wahrnehmung des Auslösers sein. Zum Beispiel, wenn wir eine erschreckende Erfahrung mit einem Polizisten als Kind hatten und wir als Erwachsener überprüft werden, könnten wir die Situation mit einer verzerrten Angstwahrnehmung wahrnehmen.",
+          "name": "Wahrnehmungsdatenbank"
         },
         {
           "desc": "Dies beschreibt die autonomen Veränderungen in unserem Körper, die während des Eintretens eines Gefühls auftreten. Wir können diese Veränderungen als Gefühle in unserem Körper spüren, wie Hitze in unserem Gesicht, Spannung in unseinen Schultern oder Kiefer, etc.",
@@ -469,8 +470,8 @@
           "name": "Postbedingung"
         },
         {
-          "desc": "Die Selektive Filterung wird mit dem Eintreten von Handlungen und Signalen gestartet — die Wahrnehmung wird eingeengt und verzerrt, Informationen relevant für und konsistent mit dem vorherrschenden Gefühl gefiltert und interpretiert. Zum Beispiel, wenn Angst erregt wird, besteht eine erhöhte Empfindlichkeit für wirkliche und gedachte Bedrohungen. ",
-          "name": "Selektive Filterperiode"
+          "desc": "Die Emotionssättigungsperiode wird mit dem Eintreten von Handlungen und Signalen gestartet — die Wahrnehmung wird eingeengt und verzerrt, Informationen relevant für und konsistent mit dem vorherrschenden Gefühl gefiltert und interpretiert. Zum Beispiel, wenn Angst erregt wird, besteht eine erhöhte Empfindlichkeit für wirkliche und gedachte Bedrohungen. ",
+          "name": "Emotionssättigungsperiode"
         }
       ],
       "footer": [

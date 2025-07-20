@@ -463,31 +463,31 @@
       "content": [
         {
           "desc": "Esto describe el contexto o situaciones que pueden influir en la forma en que entramos en la emoción. Por ejemplo, nuestra condición previa podría ser fisiológica: estar hambriento, cansado o emocional: haber tenido un día muy placentero o estresante o salir de un episodio emocional previo.",
-          "name": "pre-condition"
+          "name": "pre-condición"
         },
         {
           "desc": "Esto describe a una persona, lugar, situación, imagen, pensamiento, memoria, olor, sonido, sabor o idea que encontramos del mundo exterior o de nuestra propia mente. Estamos constantemente, automáticamente evaluando, o valorando nuestro mundo interior y exterior. Por ejemplo, cuando escuchamos una nueva canción, estamos instantáneamente superponiendo nuestro conocimiento de instrumentos y categorías de música mientras escuchamos sin siquiera pensar, esto es evaluación automática.",
-          "name": "event"
+          "name": "evento"
         },
         {
           "desc": "Esto describe la combinación de la evaluación automática que coincide con algún guión universal/cableado o adquirido en nuestra base de datos.",
-          "name": "trigger"
+          "name": "desencadenante"
         },
         {
           "desc": "Esto describe nuestras respuestas universales/cableadas y nuestras memorias emocionales adquiridas individualmente. Por ejemplo, si el evento es un olor y en la base de datos está almacenada la memoria del champú que usaba nuestra madre en nuestra infancia, y somos desencadenados a experimentar una emoción de nostalgia cálida de una infancia feliz. Cuando el evento evaluado se asemeja a algo en nuestra base de datos, puede ser muy preciso o podría crear una percepción distorsionada del desencadenante. Por ejemplo, si tuvimos una experiencia intimidante con un oficial de policía cuando éramos jóvenes y somos detenidos como adultos, podríamos malinterpretar la situación con un sentido distorsionado de miedo.",
-          "name": "perception database"
+          "name": "base de datos de percepción"
         },
         {
           "desc": "Esto describe los cambios autonómicos en nuestro cuerpo que ocurren cuando surge nuestra emoción. Podemos experimentar estos cambios como sensaciones en nuestro cuerpo, sintiendo calor en nuestro rostro, tensión en nuestra mandíbula o hombros, etc.",
-          "name": "physical changes"
+          "name": "cambios físicos"
         },
         {
           "desc": "Esto describe la emoción misma, incluyendo cambios físicos y psicológicos.",
-          "name": "state"
+          "name": "estado"
         },
         {
           "desc": "Esto describe la experiencia cualitativa de la emoción, cómo la tristeza se siente triste, o la ira se siente enojada.",
-          "name": "psychological changes"
+          "name": "cambios psicológicos"
         },
         {
           "desc": "Esto describe nuestras respuestas emocionales. Esto podría ser un comportamiento externo como gritar en ira, o podría ser interno, como suprimir la ira. Cada emoción en el atlas muestra un rango de acciones inmediatas, así como acciones intrínsecas o intencionales. La acción puede ser constructiva o destructiva. Llevando a mayor colaboración con otros o a dificultad en colaborar.",
@@ -495,11 +495,11 @@
         },
         {
           "desc": "Esto describe el resultado o impacto de nuestras acciones emocionales. Esto podría ser externo: si le hemos gritado a alguien, entonces pueden gritarnos de vuelta; o interno: si hemos suprimido, podríamos estar sintiendo alguna irritación continua. La condición posterior podría llevarnos a nuestro próximo episodio de emoción, si alguien nos está gritando de vuelta, somos desencadenados una vez más a ira, miedo o tristeza/arrepentimiento por nuestras acciones. Nuestra condición posterior es una oportunidad para que construyamos consciencia emocional a través de la reflexión sobre nuestra emoción, para entender el desencadenante, identificar la experiencia sentida y considerar el impacto que ha tenido.",
-          "name": "post-condition"
+          "name": "condición posterior"
         },
         {
-          "desc": "El Período de Filtrado Selectivo se inicia con el inicio de acciones y señales - la percepción se estrecha y distorsiona, filtrando e interpretando información relevante y consistente con la emoción prevalente. Por ejemplo, cuando el miedo se despierta, hay una sensibilidad elevada a amenazas reales e imaginarias.",
-          "name": "emotion saturation period"
+          "desc": "El Período de Saturación Emocional se inicia con el inicio de acciones y señales - la percepción se estrecha y distorsiona, filtrando e interpretando información relevante y consistente con la emoción prevalente. Por ejemplo, cuando el miedo se despierta, hay una sensibilidad elevada a amenazas reales e imaginarias.",
+          "name": "período de saturación emocional"
         }
       ],
       "footer": [

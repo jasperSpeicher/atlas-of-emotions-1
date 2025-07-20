@@ -439,7 +439,7 @@
         },
         {
           "desc": "Questo descrive la combinazione della valutazione automatica che corrisponde a qualche script universale/innato o acquisito nel nostro database.",
-          "name": "trigger"
+          "name": "innesco"
         },
         {
           "desc": "Questo descrive le nostre risposte universali/innate e le nostre memorie emotive acquisite individualmente. Ad esempio, se l'evento è un odore e nel database è memorizzata la memoria dello shampoo che nostra madre usava nella nostra infanzia, e siamo scatenati a sperimentare un'emozione di calda nostalgia di un'infanzia felice. Quando l'evento valutato assomiglia a qualcosa nel nostro database, può essere molto accurato o potrebbe creare una percezione distorta del trigger. Ad esempio, se abbiamo avuto un'esperienza intimidatoria con un agente di polizia quando eravamo giovani e veniamo fermati da adulti, potremmo percepire erroneamente la situazione con un senso distorto di paura.",
@@ -466,8 +466,8 @@
           "name": "post-condizione"
         },
         {
-          "desc": "Il Periodo di Filtraggio Selettivo è iniziato con l'inizio di azioni e segnali — la percezione è ristretta e distorta, filtrando e interpretando informazioni rilevanti e coerenti con l'emozione prevalente. Ad esempio, quando la paura è suscitata, c'è una sensibilità aumentata alle minacce reali e immaginarie.",
-          "name": "periodo di filtro selettivo"
+          "desc": "Il Periodo di Saturazione Emotiva è iniziato con l'inizio di azioni e segnali — la percezione è ristretta e distorta, filtrando e interpretando informazioni rilevanti e coerenti con l'emozione prevalente. Ad esempio, quando la paura è suscitata, c'è una sensibilità aumentata alle minacce reali e immaginarie.",
+          "name": "periodo di saturazione emotiva"
         }
       ],
       "footer": [
