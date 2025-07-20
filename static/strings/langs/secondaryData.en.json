@@ -466,8 +466,8 @@
           "name": "post-condition"
         },
         {
-          "desc": "The Selective Filtering Period is initiated with the onset of actions and signals — perception is narrowed and distorted, filtering and interpreting information relevant to and consistent with the prevailing emotion. For example, when fear is aroused, there is a heightened sensitivity to real and imagined threats. ",
-          "name": "selective filter period"
+          "desc": "The Emotion Saturation Period is initiated with the onset of actions and signals — perception is narrowed and distorted, filtering and interpreting information relevant to and consistent with the prevailing emotion. For example, when fear is aroused, there is a heightened sensitivity to real and imagined threats. ",
+          "name": "emotion saturation period"
         }
       ],
       "footer": [
