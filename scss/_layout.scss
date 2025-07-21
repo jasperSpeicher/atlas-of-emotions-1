@@ -262,7 +262,7 @@ svg {
 	top: 0;
 	left: 0;
 	background: transparent;
-	padding: 25px;
+	padding: 20px 25px 25px 25px;
 	width: 19em;
 	pointer-events: none;
 	color: #000;
@@ -366,8 +366,8 @@ svg {
 	background-color: $top-nav-background;
 	.menu {
 		position: absolute;
-		font-size: 16px;
-		left: 1em;
+		font-size: 18px;
+		left: 25px;
 		right: 1em;
 		height: 40px;
 		font-weight: 500;
@@ -378,13 +378,22 @@ svg {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
-			max-width: 900px;
 			li {
 				a:focus,
 				a.active {
 					outline: none;
 					border: none;
+					color: #000;
+					padding-bottom: 5px;;
+					border-bottom: 4px solid #000;
+					font-weight: 500;
 				}
+				margin-right: 50px;
+			}
+			li:last-of-type {
+				justify-self: end;
+				margin-left: auto;
+				margin-right: 10px;
 			}
 		}
 	}
@@ -401,6 +410,17 @@ svg {
 		color: rgba(#fff, 0.7);
 		&:hover {
 			color: #fff;
+		}
+	}
+	.menu {
+		> ul {
+			li {
+				a:focus,
+				a.active {
+					color: #fff;
+					border-color: #fff;
+				}
+			}
 		}
 	}
 }

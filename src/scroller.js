@@ -171,6 +171,31 @@ const scroller = {
 			let emoAttr = element.getAttribute("data-emotion");
 			d3.select(element).classed("active", emoAttr == emotion);
 		}
+		
+		//update top navigation menu active states
+		this.updateTopNavActiveState(section);
+	},
+
+	updateTopNavActiveState: function (section) {
+		// Ensure menu links are available
+		if (!this.$topNavLinks || this.$topNavLinks.length === 0) {
+			this.$topNavLinks = this.$topNav.find("#menu-list>li>a");
+		}
+		
+		this.$topNavLinks.removeClass("active");
+		const defaultSection = "introduction";
+		let currentHash = section || defaultSection;
+		let activeMenuLink = this.$topNavLinks.filter(`[href="#${currentHash}/"]`);
+		
+		if (activeMenuLink.length > 0) {
+			activeMenuLink.addClass("active");
+		} else {
+			// If no exact match, use default section
+			activeMenuLink = this.$topNavLinks.filter(`[href="#${defaultSection}/"]`);
+			if (activeMenuLink.length > 0) {
+				activeMenuLink.addClass("active");
+			}
+		}
 	},
 
 	getLoadedSection: function (anchorLink) {
@@ -272,19 +297,14 @@ const scroller = {
 		}
 
 		//update topnav
-		this.$topNavLinks.each((index, element) => {
-			let $element = $(element);
-			let id = $element.attr("id");
-			if (id.indexOf(anchorLink) >= 0) {
-				$element.addClass("active");
-			} else {
-				$element.removeClass("active");
-			}
-			if (this.screenIsSmall) {
-				this.$topNav.removeClass("open");
-			}
-		});
+		// Map fullpage anchor to atlas section name and update nav active state
+		const section = this.FULLPAGE_TO_ATLAS_SECTIONS[anchorLink] || "introduction";
+		this.updateTopNavActiveState(section);
 
+		if (this.screenIsSmall) {
+			this.$topNav.removeClass("open");
+		}
+		
 		if (this.screenIsSmall && anchorLink == "response-fp") {
 			setTimeout(() => {
 				this.resizeActions();
@@ -638,10 +658,21 @@ const scroller = {
 		this.$topNav = $(".top-nav");
 		this.$topNavLinks = this.$topNav.find("#menu-list>li>a");
 		this.$hiddenForIntro = $(".hidden-for-intro");
-		if (this.screenIsSmall) {
-			this.$topNavLinks.click(() => {
+		
+		// Add click handler to set active class on menu links
+		this.$topNavLinks.click((e) => {
+			// Remove active class from all menu links
+			this.$topNavLinks.removeClass("active");
+			// Add active class to clicked link
+			$(e.currentTarget).addClass("active");
+			
+			// Close mobile menu if on small screen
+			if (this.screenIsSmall) {
 				this.$topNav.removeClass("open");
-			});
+			}
+		});
+		
+		if (this.screenIsSmall) {
 			$(".menu-toggle").click(() => {
 				this.$topNav.toggleClass("open");
 			});
@@ -661,6 +692,21 @@ const scroller = {
 		});
 	},
 
+	setInitialMenuActiveState: function() {
+		// Get current hash and set active state
+		let currentHash = window.location.hash;
+		let section = "introduction"; // default
+		
+		if (currentHash) {
+			let hashParts = currentHash.substring(1).split('/');
+			if (hashParts[0]) {
+				section = hashParts[0];
+			}
+		}
+		
+		this.updateTopNavActiveState(section);
+	},
+
 	init: function (screenIsSmall) {
 		this.screenIsSmall = screenIsSmall;
 
@@ -673,6 +719,9 @@ const scroller = {
 		this.initOptInModal();
 		this.initIntroAboutBackButton();
 		this.showApp();
+		
+		// Set initial active state after all DOM elements are initialized
+		this.setInitialMenuActiveState();
 	},
 };
 
