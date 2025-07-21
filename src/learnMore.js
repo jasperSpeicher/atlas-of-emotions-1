@@ -1,4 +1,5 @@
 import _ from "lodash";
+import { setupScrollSpy } from "./helpers.js";
 
 // Pages
 import AnnexEpisodeTimeline from "./more-pages/annex-episode-timeline.js";
@@ -30,6 +31,16 @@ export default {
 		this.scrollParent = $(containerNode);
 
 		this.initializePages();
+
+		// Setup scroll spy for TOC highlighting using shared helper
+		const navHeight = $(".top-nav").outerHeight() || 0;
+		setupScrollSpy({
+			scrollParent: this.scrollParent,
+			tocSelector: "#learn_more-toc",
+			contentContainerSelector: ".learn_more-text",
+			linkPrefix: "learn_more",
+			extraOffset: navHeight * 2
+		});
 
 		this.isInited = true;
 	},

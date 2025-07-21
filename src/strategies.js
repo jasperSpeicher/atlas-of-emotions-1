@@ -1,4 +1,5 @@
 import { initializeTables, scrollToSelector } from "./helpers.js";
+import { setupScrollSpy } from "./helpers.js";
 import AnnexImpedimentAntidote from "./more-pages/annex-impediment-antidote.js";
 
 class StrategiesSection {
@@ -17,6 +18,17 @@ class StrategiesSection {
 			"#strategies-impediment-container"
 		)[0];
 		initializeTables(subSections, sectionContainer);
+
+		// Setup shared scroll spy helper; account for top-nav height
+		const navHeight = $(".top-nav").outerHeight() || 0;
+		setupScrollSpy({
+			scrollParent: this.scrollParent,
+			tocSelector: "#strategies-toc",
+			contentContainerSelector: ".strategies-text",
+			linkPrefix: "strategies",
+			extraOffset: navHeight * 2
+		});
+
 		this.isInited = true;
 	}
 

@@ -1125,6 +1125,15 @@ svg {
 			margin: 0;
 			line-height: 2;
 			cursor: pointer;
+
+			/* Reserve space for active indicator without shifting text */
+			border-left: 4px solid transparent;
+			padding-left: 8px;
+
+			&.active {
+				border-left-color: #000;
+			}
+
 			&:hover {
 				font-weight: 400;
 			}
