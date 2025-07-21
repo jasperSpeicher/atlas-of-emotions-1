@@ -1,6 +1,292 @@
 {
   "slug": "secondaryData",
   "annex": {
+    "scientific-basis": {
+      "content": [
+        {
+          "desc": "Esistono emozioni universali",
+          "name": "88%",
+          "formatting": "beforebreak"
+        },
+        {
+          "desc": "Esistono segnali facciali universali alle emozioni",
+          "name": "80%",
+          "formatting": "break"
+        },
+        {
+          "desc": "La rabbia è un'emozione universale",
+          "name": "91%",
+          "formatting": ""
+        },
+        {
+          "desc": "La paura è un'emozione universale",
+          "name": "90%",
+          "formatting": ""
+        },
+        {
+          "desc": "Il disgusto è un'emozione universale",
+          "name": "86%",
+          "formatting": ""
+        },
+        {
+          "desc": "La tristezza è un'emozione universale",
+          "name": "80%",
+          "formatting": ""
+        },
+        {
+          "desc": "La felicità è un'emozione universale",
+          "name": "76%",
+          "formatting": "break"
+        },
+        {
+          "desc": "Esistono trigger universali alle emozioni",
+          "name": "66%",
+          "formatting": ""
+        },
+        {
+          "desc": "Esiste una fisiologia universale delle emozioni",
+          "name": "51%",
+          "formatting": ""
+        },
+        {
+          "desc": "Esistono emozioni biologicamente discrete e separate",
+          "name": "49%",
+          "formatting": ""
+        },
+        {
+          "desc": "Le emozioni sono costruite da fattori sociali",
+          "name": "11%",
+          "formatting": ""
+        },
+        {
+          "desc": "Le emozioni sono sia biologicamente separate che socialmente costruite",
+          "name": "3%",
+          "formatting": ""
+        }
+      ],
+      "footer": [
+        "L'esistenza di \"prove convincenti per universali in qualsiasi aspetto dell'emozione\" è stata appoggiata dall'88% dei rispondenti. Le prove che supportano segnali universali (viso o voce) sono state appoggiate dall'80%. C'era meno accordo sull'esistenza di prove convincenti per universali negli eventi che scatenano un'emozione (66%), fisiologia (51%), o meccanismi di valutazione (44%). Così, l'affermazione di Darwin nel 1872 e il lavoro più recente di Ekman e Friesen (1969) e Izard (1971) riguardante l'universalità di alcune espressioni facciali sono stati supportati. In risposta alla domanda \"Quale delle seguenti cattura meglio il tuo orientamento verso l'emozione nella tua ricerca?\", il 49% ha scelto \"Emozioni discrete (rabbia, paura, ecc.) che combinano influenze biologiche e sociali\", l'11% ha scelto \"Emozioni come costruite, sia socialmente che psicologicamente, per adattarsi alle condizioni attuali\", e il 30% ha indicato che usavano entrambi gli approcci. \n",
+        "Ai rispondenti è stato chiesto se le prove per ogni emozione fossero convincenti. C'era alto accordo su cinque emozioni (tutte descritte sia da Darwin che da Wundt): rabbia (91%), paura (90%), disgusto (86%), tristezza (80%) e felicità (76%). Vergogna, sorpresa e imbarazzo sono stati elencati dal 40% al 50%. Altre emozioni, attualmente in studio da vari ricercatori, hanno ricevuto sostanzialmente meno supporto: colpa (37%), disprezzo (34%), amore (32%), meraviglia (31%), dolore (28%), invidia (28%), compassione (20%), orgoglio (9%) e gratitudine (6%)."
+      ],
+      "title": "La Base Scientifica per Questo Lavoro",
+      "desc": "L'Atlante delle Emozioni è basato su un consenso tra scienziati determinato da un sondaggio (nella scelta dei cinque continenti emotivi e la relazione delle emozioni con umori, personalità e psicopatologia), il lavoro di alcuni scienziati che si sono concentrati sulla denominazione degli stati dentro le emozioni, definizioni di dizionario, teoria e migliori supposizioni sulle azioni per ogni stato e se sono costruttive, distruttive o ambigue. Per maggiori informazioni, vedi <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">\"Su cosa concordano gli scienziati che studiano le emozioni,\"</a> di Paul Ekman (Perspectives on Psychological Science, 2015).",
+      "contentIntro": "Il sondaggio è stato inviato via email a metà giugno 2014 a 248 scienziati che avevano frequentemente pubblicato ricerche quantitative sull'emozione."
+    },
+    "triggers-timeline": {
+      "content": [
+        {
+          "desc": "Questo descrive il contesto o le situazioni che possono influenzare il modo in cui entriamo nell'emozione. Ad esempio, la nostra precondizione potrebbe essere fisiologica: essere affamati, stanchi o emotivi: aver avuto una giornata molto piacevole o stressante o uscire da un episodio emotivo precedente.",
+          "name": "pre-condizione"
+        },
+        {
+          "desc": "Questo descrive una persona, posto, situazione, immagine, pensiero, memoria, odore, suono, gusto o idea che incontriamo dal mondo esterno o dalla nostra mente. Stiamo costantemente, automaticamente valutando, o valutando il nostro mondo interno ed esterno. Ad esempio, quando sentiamo una nuova canzone, stiamo istantaneamente sovrapponendo la nostra conoscenza di strumenti e categorie musicali mentre ascoltiamo senza nemmeno pensarci, questa è valutazione automatica.",
+          "name": "evento"
+        },
+        {
+          "desc": "Questo descrive la combinazione della valutazione automatica che corrisponde a qualche script universale/innato o acquisito nel nostro database.",
+          "name": "innesco"
+        },
+        {
+          "desc": "Questo descrive le nostre risposte universali/innate e le nostre memorie emotive acquisite individualmente. Ad esempio, se l'evento è un odore e nel database è memorizzata la memoria dello shampoo che nostra madre usava nella nostra infanzia, e siamo scatenati a sperimentare un'emozione di calda nostalgia di un'infanzia felice. Quando l'evento valutato assomiglia a qualcosa nel nostro database, può essere molto accurato o potrebbe creare una percezione distorta del trigger. Ad esempio, se abbiamo avuto un'esperienza intimidatoria con un agente di polizia quando eravamo giovani e veniamo fermati da adulti, potremmo percepire erroneamente la situazione con un senso distorto di paura.",
+          "name": "database di percezione"
+        },
+        {
+          "desc": "Questo descrive i cambiamenti autonomi nel nostro corpo che si verificano quando la nostra emozione sorge. Possiamo sperimentare questi cambiamenti come sensazioni nel nostro corpo, sentendo calore nel nostro viso, tensione nella nostra mascella o spalle, ecc.",
+          "name": "cambiamenti fisici"
+        },
+        {
+          "desc": "Questo descrive l'emozione stessa, inclusiva di cambiamenti fisici e psicologici.",
+          "name": "stato"
+        },
+        {
+          "desc": "Questo descrive l'esperienza qualitativa dell'emozione, come la tristezza si sente triste, o la rabbia si sente arrabbiata.",
+          "name": "cambiamenti psicologici"
+        },
+        {
+          "desc": "Questo descrive le nostre risposte emotive. Questo potrebbe essere un comportamento esterno come urlare per rabbia, o potrebbe essere interno, come sopprimere la rabbia. Ogni emozione nell'atlante mostra una gamma di azioni immediate, così come azioni intrinseche o intenzionali. L'azione può essere costruttiva o distruttiva. Portando a ulteriore collaborazione con gli altri o a difficoltà nel collaborare.",
+          "name": "azione"
+        },
+        {
+          "desc": "Questo descrive il risultato o l'impatto delle nostre azioni emotive. Questo potrebbe essere esterno: se abbiamo urlato a qualcuno potrebbero poi urlarci dietro; o interno: se abbiamo soppresso potremmo provare una certa irritazione continua. La post-condizione potrebbe portare al nostro prossimo episodio di emozione, se qualcuno ci sta urlando dietro siamo scatenati ancora una volta alla rabbia, paura o tristezza/rimorso per le nostre azioni. La nostra post-condizione è un'opportunità per noi di costruire consapevolezza emotiva attraverso la riflessione sulla nostra emozione, per capire il trigger, identificare l'esperienza sentita e considerare l'impatto che ha avuto.",
+          "name": "post-condizione"
+        },
+        {
+          "desc": "Il Periodo di Saturazione Emotiva è iniziato con l'inizio di azioni e segnali — la percezione è ristretta e distorta, filtrando e interpretando informazioni rilevanti e coerenti con l'emozione prevalente. Ad esempio, quando la paura è suscitata, c'è una sensibilità aumentata alle minacce reali e immaginarie.",
+          "name": "periodo di saturazione emotiva"
+        }
+      ],
+      "footer": [
+        "Sorgono regole di display apprese (per regolare i segnali) e regole di sentimento apprese (per modificare, amplificare o sopprimere sentimenti soggettivi). Non sappiamo quanto velocemente si verifichino. Si verificano prima di segnali e azioni, o immediatamente durante l'inizio di segnali e azioni? Gli impulsi sono tradotti in azioni e segnali.",
+        "Il gap tra il Passo 2 (impulsi) e il Passo 4 (azioni/segnali) è variabile, dipendendo dalle caratteristiche individuali di ogni persona e dal profilo emotivo della persona, dall'intensità del trigger valutato, e dallo stato psicologico momentaneo dell'individuo quando il trigger è valutato (quanto sonno la persona ha avuto la notte scorsa; quale, se presente, emozione la persona ha sperimentato per ultima o sta attualmente sperimentando, ecc.)."
+      ],
+      "title": "Cronologia dell'Episodio Emotivo",
+      "desc": ""
+    },
+    "intrinsic-or-intentional": {
+      "emotions": [
+        {
+          "name": "Rabbia",
+          "children": [
+            {
+              "name": "Intrinseco",
+              "desc": "Litigare, Insultare, Minare, Disputare, Urlare/gridare, Usare forza fisica, Covare/rimuginare, Essere passivo-aggressivo"
+            },
+            {
+              "name": "Intenzionale",
+              "desc": "Porre limiti, Essere fermo, Ritirarsi, Prendersi una pausa, Respirare, Praticare pazienza, Riformulare, Distrarre, Evitare, Rimuovere l'interferenza"
+            }
+          ]
+        },
+        {
+          "name": "Paura",
+          "children": [
+            {
+              "name": "Intrinseco",
+              "desc": "Ritirarsi, Evitare, Esitare, Bloccarsi, Urlare/gridare, Rimuginare, Preoccuparsi"
+            },
+            {
+              "name": "Intenzionale",
+              "desc": "Riformulare, Essere consapevole, Respirare, Distrarre"
+            }
+          ]
+        },
+        {
+          "name": "Disgusto",
+          "children": [
+            {
+              "name": "Intrinseco",
+              "desc": "Ritirarsi, Evitare, Vomitare, Disumanizzare"
+            },
+            {
+              "name": "Intenzionale",
+              "desc": "Ritirarsi, Evitare"
+            }
+          ]
+        },
+        {
+          "name": "Tristezza",
+          "children": [
+            {
+              "name": "Intrinseco",
+              "desc": "Cercare conforto, Ritirarsi, Lamentarsi, Protestare, Sentirsi in colpa"
+            },
+            {
+              "name": "Intenzionale",
+              "desc": "Ritirarsi, Distrarre"
+            }
+          ]
+        },
+        {
+          "name": "Gioia",
+          "children": [
+            {
+              "name": "Intrinseco",
+              "desc": "Cercare di più, Mantenere, Esclamare, Impegnarsi/connettersi, Assaporare, Indulgere"
+            },
+            {
+              "name": "Intenzionale",
+              "desc": "Nessuno"
+            }
+          ]
+        }
+      ],
+      "title": "Azioni Intrinseche o Intenzionali",
+      "desc": "Le azioni possono essere intrinseche (senza intento consapevole) o intenzionali (un tentativo attivo di apportare cambiamento), o entrambe."
+    },
+    "partially-charted": {
+      "emotions": [
+        {
+          "name": "Amore",
+          "desc": "Un forte attaccamento a un'altra persona, tipicamente genitore verso bambino e bambino verso genitore, ma anche tra quelli romanticamente impegnati. Nelle relazioni d'amore, rabbia, paura, tristezza, disgusto e gioia possono tutti essere sperimentati."
+        },
+        {
+          "name": "Sorpresa",
+          "desc": "L'emozione più breve, la sorpresa è scatenata dall'occorrenza improvvisa di un evento inaspettato. È spesso una stazione intermedia che porta, dopo più valutazione, a qualsiasi delle altre emozioni."
+        },
+        {
+          "name": "Gelosia",
+          "desc": "Una storia emotiva che coinvolge tre persone: la persona desiderata, la persona che ha paura di perdere l'impegno della persona desiderata, e il rivale. Durante la gelosia, rabbia, paura, disgusto, tristezza o sorpresa possono essere sentiti da qualsiasi delle tre persone."
+        },
+        {
+          "name": "Invidia",
+          "desc": "Anche se spesso usata erroneamente come sinonimo di gelosia, l'invidia coinvolge risentimento e desiderio di quello che un'altra persona possiede. Quando una persona prova invidia, rabbia, disprezzo o tristezza possono anche essere sentiti."
+        },
+        {
+          "name": "Odio",
+          "desc": "Rabbia duratura focalizzata su una persona particolare o gruppo di persone. Nel tempo l'odio può generare il tratto di personalità di ostilità."
+        },
+        {
+          "name": "Imbarazzo",
+          "desc": "Disagio auto-conscio o goffaggine. Spesso attivato da lodi da un altro, o da un faux pas. Non ha segnale vocale, ma può causare un rossore visibile solo nelle persone dalla pelle chiara."
+        },
+        {
+          "name": "Vergogna",
+          "desc": "Un'aspettativa che altri sarebbero disgustati se sapessero a cosa la persona stava pensando o aveva fatto. Motiva un forte desiderio di impedire agli altri di apprendere quello che la persona ha fatto o pensato."
+        },
+        {
+          "name": "Disprezzo",
+          "desc": "L'ultima emozione ad apparire nello sviluppo del bambino, è un sentimento di superiorità morale verso il bersaglio. Spesso mescolato con gioia."
+        },
+        {
+          "name": "Colpa",
+          "desc": "Rimorso per un'azione passata, che motiva il desiderio di confessare l'azione sbagliata, sperando il perdono."
+        }
+      ],
+      "title": "Emozioni Parzialmente Mappate",
+      "desc": "La metà o meno della metà degli scienziati delle emozioni crede che ci siano prove convincenti che ciascuna delle seguenti sia un'emozione."
+    },
+    "personality-trait": {
+      "emotions": [
+        {
+          "name": "Rabbia",
+          "desc": "Una persona ostile è spesso arrabbiata ed è conosciuta dagli altri per la frequenza delle risposte di rabbia al mondo. Spesso la rabbia si verifica con qualsiasi frustrazione; la soglia per la frustrazione è bassa. Le persone ostili possono provare rimorso dopo e scusarsi per la loro rabbia, ma continuano comunque a rispondere con rabbia. A volte le persone ostili esprimono la loro rabbia in modo cattivo, usando parole per sminuire e causare dolore psicologico agli altri."
+        },
+        {
+          "name": "Paura",
+          "desc": "Una persona timida o paurosa. Questo tipo di personalità è probabile che eviti rischi e situazioni scomode. Le persone timide possono percepire il mondo come pieno di situazioni difficili."
+        },
+        {
+          "name": "Disgusto",
+          "desc": "Una persona che spesso si sente disgustata dagli altri può avere un senso gonfiato del proprio valore e un'iper-avversione verso gli altri. Qualcuno che è disgustato o insoddisfatto di tutto può essere sgradevole da frequentare."
+        },
+        {
+          "name": "Tristezza",
+          "desc": "Una persona cupa. Questo tipo di personalità può tendere ad essere abbattuta e vedere il lato oscuro della vita. Le persone cupe possono essere inclini a concentrarsi sugli aspetti negativi delle situazioni e possono avere difficoltà a trovare gioia o ottimismo."
+        },
+        {
+          "name": "Gioia",
+          "desc": "Una persona allegra. Questo tipo di personalità può tendere ad essere ottimista e vedere il lato positivo delle cose. Le persone allegre possono essere inclini a cercare esperienze positive e possono avere una visione generalmente positiva della vita e delle persone."
+        }
+      ],
+      "title": "Tratto della Personalità",
+      "desc": "Quando una particolare emozione domina nella personalità di qualcuno, possiamo vedere come quell'emozione colora il loro modo di essere nel mondo."
+    },
+    "moods": {
+      "emotions": [
+        {
+          "name": "Irritabile",
+          "desc": "Predisposto a diventare arrabbiato, facilmente provocato. "
+        },
+        {
+          "name": "Apprensivo",
+          "desc": "Ansioso che accada qualcosa di brutto, nervoso."
+        },
+        {
+          "name": "Agro",
+          "desc": "Generalmente ripugnato."
+        },
+        {
+          "name": "Disforico (o sentirsi giù)",
+          "desc": "Un sentimento duraturo di scoraggiamento o delusione."
+        },
+        {
+          "name": "Euforico",
+          "desc": "Un sentimento di benessere generalizzato e duraturo. "
+        }
+      ],
+      "title": "Umori",
+      "desc": "Gli umori sono cugini più duraturi di un'emozione che ci fanno sentire l'emozione correlata ripetutamente senza alcun trigger chiaro."
+    },
     "psychopathology": {
       "emotions": [
         {
@@ -184,32 +470,6 @@
       ],
       "title": "Segnale e Messaggio",
       "desc": "Il segnale di un'emozione descrive i modi universali in cui quell'emozione viene mostrata nel viso e/o nella voce. Ci possono essere anche altri cambiamenti del tono vocale e indicatori del linguaggio corporeo, ma questi non sono inclusi qui perché sono spesso culturalmente informati e appresi rispetto all'essere universali.<br><br>Il messaggio è quello che l'emozione ci sta dicendo. Tutte le emozioni hanno un messaggio che è una risposta al mondo che ci circonda."
-    },
-    "personality-trait": {
-      "emotions": [
-        {
-          "name": "Rabbia",
-          "desc": "Una persona ostile è spesso arrabbiata ed è conosciuta dagli altri per la frequenza delle risposte di rabbia al mondo. Spesso la rabbia si verifica con qualsiasi frustrazione; la soglia per la frustrazione è bassa. Le persone ostili possono provare rimorso dopo e scusarsi per la loro rabbia, ma continuano comunque a rispondere con rabbia. A volte le persone ostili esprimono la loro rabbia in modo cattivo, usando parole per sminuire e causare dolore psicologico agli altri."
-        },
-        {
-          "name": "Paura",
-          "desc": "Una persona timida o paurosa. Questo tipo di personalità è probabile che eviti rischi e situazioni scomode. Le persone timide possono percepire il mondo come pieno di situazioni difficili."
-        },
-        {
-          "name": "Disgusto",
-          "desc": "Una persona che spesso si sente disgustata dagli altri può avere un senso gonfiato del proprio valore e un'iper-avversione verso gli altri. Qualcuno che è disgustato o insoddisfatto di tutto può essere sgradevole da frequentare."
-        },
-        {
-          "name": "Tristezza",
-          "desc": "Una persona cupa. Questo tipo di personalità può tendere ad essere abbattuta e vedere il lato oscuro della vita. Le persone cupe possono essere inclini a concentrarsi sugli aspetti negativi delle situazioni e possono avere difficoltà a trovare gioia o ottimismo."
-        },
-        {
-          "name": "Gioia",
-          "desc": "Una persona allegra. Questo tipo di personalità può tendere ad essere ottimista e vedere il lato positivo delle cose. Le persone allegre possono essere inclini a cercare esperienze positive e possono avere una visione generalmente positiva della vita e delle persone."
-        }
-      ],
-      "title": "Tratto della Personalità",
-      "desc": "Quando una particolare emozione domina nella personalità di qualcuno, possiamo vedere come quell'emozione colora il loro modo di essere nel mondo."
     },
     "impediment-antidote": {
       "emotions": [
@@ -426,266 +686,6 @@
       ],
       "title": "Impedimenti e Antidoti",
       "desc": "Il grafico sottostante è stato creato da Matthieu Ricard e offre una prospettiva buddhista tibetana sulla comprensione e il lavoro con le emozioni. Mostra come contrastare le emozioni difficili coltivando stati mentali positivi, conosciuti come \"antidoti\". Aiuta anche a identificare gli \"impedimenti\" che bloccano il sentire emozioni piacevoli e mette in evidenza le emozioni piacevoli che possono essere difficili. Puoi imparare di più su Matthieu Ricard <a href=\"https://www.matthieuricard.org/en/articles/buddhist-and-psychological-perspectives-on-emotions-and-well-being-by-paul-ekman-richard-j-davidson-matthieu-ricard-and-b-alan-wallace-current-directions-in-psychological-science-2005-14-2/\" target=\"blank\">qui</a>."
-    },
-    "triggers-timeline": {
-      "content": [
-        {
-          "desc": "Questo descrive il contesto o le situazioni che possono influenzare il modo in cui entriamo nell'emozione. Ad esempio, la nostra precondizione potrebbe essere fisiologica: essere affamati, stanchi o emotivi: aver avuto una giornata molto piacevole o stressante o uscire da un episodio emotivo precedente.",
-          "name": "pre-condizione"
-        },
-        {
-          "desc": "Questo descrive una persona, posto, situazione, immagine, pensiero, memoria, odore, suono, gusto o idea che incontriamo dal mondo esterno o dalla nostra mente. Stiamo costantemente, automaticamente valutando, o valutando il nostro mondo interno ed esterno. Ad esempio, quando sentiamo una nuova canzone, stiamo istantaneamente sovrapponendo la nostra conoscenza di strumenti e categorie musicali mentre ascoltiamo senza nemmeno pensarci, questa è valutazione automatica.",
-          "name": "evento"
-        },
-        {
-          "desc": "Questo descrive la combinazione della valutazione automatica che corrisponde a qualche script universale/innato o acquisito nel nostro database.",
-          "name": "innesco"
-        },
-        {
-          "desc": "Questo descrive le nostre risposte universali/innate e le nostre memorie emotive acquisite individualmente. Ad esempio, se l'evento è un odore e nel database è memorizzata la memoria dello shampoo che nostra madre usava nella nostra infanzia, e siamo scatenati a sperimentare un'emozione di calda nostalgia di un'infanzia felice. Quando l'evento valutato assomiglia a qualcosa nel nostro database, può essere molto accurato o potrebbe creare una percezione distorta del trigger. Ad esempio, se abbiamo avuto un'esperienza intimidatoria con un agente di polizia quando eravamo giovani e veniamo fermati da adulti, potremmo percepire erroneamente la situazione con un senso distorto di paura.",
-          "name": "database di percezione"
-        },
-        {
-          "desc": "Questo descrive i cambiamenti autonomi nel nostro corpo che si verificano quando la nostra emozione sorge. Possiamo sperimentare questi cambiamenti come sensazioni nel nostro corpo, sentendo calore nel nostro viso, tensione nella nostra mascella o spalle, ecc.",
-          "name": "cambiamenti fisici"
-        },
-        {
-          "desc": "Questo descrive l'emozione stessa, inclusiva di cambiamenti fisici e psicologici.",
-          "name": "stato"
-        },
-        {
-          "desc": "Questo descrive l'esperienza qualitativa dell'emozione, come la tristezza si sente triste, o la rabbia si sente arrabbiata.",
-          "name": "cambiamenti psicologici"
-        },
-        {
-          "desc": "Questo descrive le nostre risposte emotive. Questo potrebbe essere un comportamento esterno come urlare per rabbia, o potrebbe essere interno, come sopprimere la rabbia. Ogni emozione nell'atlante mostra una gamma di azioni immediate, così come azioni intrinseche o intenzionali. L'azione può essere costruttiva o distruttiva. Portando a ulteriore collaborazione con gli altri o a difficoltà nel collaborare.",
-          "name": "azione"
-        },
-        {
-          "desc": "Questo descrive il risultato o l'impatto delle nostre azioni emotive. Questo potrebbe essere esterno: se abbiamo urlato a qualcuno potrebbero poi urlarci dietro; o interno: se abbiamo soppresso potremmo provare una certa irritazione continua. La post-condizione potrebbe portare al nostro prossimo episodio di emozione, se qualcuno ci sta urlando dietro siamo scatenati ancora una volta alla rabbia, paura o tristezza/rimorso per le nostre azioni. La nostra post-condizione è un'opportunità per noi di costruire consapevolezza emotiva attraverso la riflessione sulla nostra emozione, per capire il trigger, identificare l'esperienza sentita e considerare l'impatto che ha avuto.",
-          "name": "post-condizione"
-        },
-        {
-          "desc": "Il Periodo di Saturazione Emotiva è iniziato con l'inizio di azioni e segnali — la percezione è ristretta e distorta, filtrando e interpretando informazioni rilevanti e coerenti con l'emozione prevalente. Ad esempio, quando la paura è suscitata, c'è una sensibilità aumentata alle minacce reali e immaginarie.",
-          "name": "periodo di saturazione emotiva"
-        }
-      ],
-      "footer": [
-        "Sorgono regole di display apprese (per regolare i segnali) e regole di sentimento apprese (per modificare, amplificare o sopprimere sentimenti soggettivi). Non sappiamo quanto velocemente si verifichino. Si verificano prima di segnali e azioni, o immediatamente durante l'inizio di segnali e azioni? Gli impulsi sono tradotti in azioni e segnali.",
-        "Il gap tra il Passo 2 (impulsi) e il Passo 4 (azioni/segnali) è variabile, dipendendo dalle caratteristiche individuali di ogni persona e dal profilo emotivo della persona, dall'intensità del trigger valutato, e dallo stato psicologico momentaneo dell'individuo quando il trigger è valutato (quanto sonno la persona ha avuto la notte scorsa; quale, se presente, emozione la persona ha sperimentato per ultima o sta attualmente sperimentando, ecc.)."
-      ],
-      "title": "Cronologia dell'Episodio Emotivo",
-      "desc": ""
-    },
-    "intrinsic-or-intentional": {
-      "emotions": [
-        {
-          "name": "Rabbia",
-          "children": [
-            {
-              "name": "Intrinseco",
-              "desc": "Litigare, Insultare, Minare, Disputare, Urlare/gridare, Usare forza fisica, Covare/rimuginare, Essere passivo-aggressivo"
-            },
-            {
-              "name": "Intenzionale",
-              "desc": "Porre limiti, Essere fermo, Ritirarsi, Prendersi una pausa, Respirare, Praticare pazienza, Riformulare, Distrarre, Evitare, Rimuovere l'interferenza"
-            }
-          ]
-        },
-        {
-          "name": "Paura",
-          "children": [
-            {
-              "name": "Intrinseco",
-              "desc": "Ritirarsi, Evitare, Esitare, Bloccarsi, Urlare/gridare, Rimuginare, Preoccuparsi"
-            },
-            {
-              "name": "Intenzionale",
-              "desc": "Riformulare, Essere consapevole, Respirare, Distrarre"
-            }
-          ]
-        },
-        {
-          "name": "Disgusto",
-          "children": [
-            {
-              "name": "Intrinseco",
-              "desc": "Ritirarsi, Evitare, Vomitare, Disumanizzare"
-            },
-            {
-              "name": "Intenzionale",
-              "desc": "Ritirarsi, Evitare"
-            }
-          ]
-        },
-        {
-          "name": "Tristezza",
-          "children": [
-            {
-              "name": "Intrinseco",
-              "desc": "Cercare conforto, Ritirarsi, Lamentarsi, Protestare, Sentirsi in colpa"
-            },
-            {
-              "name": "Intenzionale",
-              "desc": "Ritirarsi, Distrarre"
-            }
-          ]
-        },
-        {
-          "name": "Gioia",
-          "children": [
-            {
-              "name": "Intrinseco",
-              "desc": "Cercare di più, Mantenere, Esclamare, Impegnarsi/connettersi, Assaporare, Indulgere"
-            },
-            {
-              "name": "Intenzionale",
-              "desc": "Nessuno"
-            }
-          ]
-        }
-      ],
-      "title": "Azioni Intrinseche o Intenzionali",
-      "desc": "Le azioni possono essere intrinseche (senza intento consapevole) o intenzionali (un tentativo attivo di apportare cambiamento), o entrambe."
-    },
-    "scientific-basis": {
-      "content": [
-        {
-          "desc": "Esistono emozioni universali",
-          "name": "88%",
-          "formatting": "beforebreak"
-        },
-        {
-          "desc": "Esistono segnali facciali universali alle emozioni",
-          "name": "80%",
-          "formatting": "break"
-        },
-        {
-          "desc": "La rabbia è un'emozione universale",
-          "name": "91%",
-          "formatting": ""
-        },
-        {
-          "desc": "La paura è un'emozione universale",
-          "name": "90%",
-          "formatting": ""
-        },
-        {
-          "desc": "Il disgusto è un'emozione universale",
-          "name": "86%",
-          "formatting": ""
-        },
-        {
-          "desc": "La tristezza è un'emozione universale",
-          "name": "80%",
-          "formatting": ""
-        },
-        {
-          "desc": "La felicità è un'emozione universale",
-          "name": "76%",
-          "formatting": "break"
-        },
-        {
-          "desc": "Esistono trigger universali alle emozioni",
-          "name": "66%",
-          "formatting": ""
-        },
-        {
-          "desc": "Esiste una fisiologia universale delle emozioni",
-          "name": "51%",
-          "formatting": ""
-        },
-        {
-          "desc": "Esistono emozioni biologicamente discrete e separate",
-          "name": "49%",
-          "formatting": ""
-        },
-        {
-          "desc": "Le emozioni sono costruite da fattori sociali",
-          "name": "11%",
-          "formatting": ""
-        },
-        {
-          "desc": "Le emozioni sono sia biologicamente separate che socialmente costruite",
-          "name": "3%",
-          "formatting": ""
-        }
-      ],
-      "footer": [
-        "L'esistenza di \"prove convincenti per universali in qualsiasi aspetto dell'emozione\" è stata appoggiata dall'88% dei rispondenti. Le prove che supportano segnali universali (viso o voce) sono state appoggiate dall'80%. C'era meno accordo sull'esistenza di prove convincenti per universali negli eventi che scatenano un'emozione (66%), fisiologia (51%), o meccanismi di valutazione (44%). Così, l'affermazione di Darwin nel 1872 e il lavoro più recente di Ekman e Friesen (1969) e Izard (1971) riguardante l'universalità di alcune espressioni facciali sono stati supportati. In risposta alla domanda \"Quale delle seguenti cattura meglio il tuo orientamento verso l'emozione nella tua ricerca?\", il 49% ha scelto \"Emozioni discrete (rabbia, paura, ecc.) che combinano influenze biologiche e sociali\", l'11% ha scelto \"Emozioni come costruite, sia socialmente che psicologicamente, per adattarsi alle condizioni attuali\", e il 30% ha indicato che usavano entrambi gli approcci. \n",
-        "Ai rispondenti è stato chiesto se le prove per ogni emozione fossero convincenti. C'era alto accordo su cinque emozioni (tutte descritte sia da Darwin che da Wundt): rabbia (91%), paura (90%), disgusto (86%), tristezza (80%) e felicità (76%). Vergogna, sorpresa e imbarazzo sono stati elencati dal 40% al 50%. Altre emozioni, attualmente in studio da vari ricercatori, hanno ricevuto sostanzialmente meno supporto: colpa (37%), disprezzo (34%), amore (32%), meraviglia (31%), dolore (28%), invidia (28%), compassione (20%), orgoglio (9%) e gratitudine (6%)."
-      ],
-      "title": "La Base Scientifica per Questo Lavoro",
-      "desc": "L'Atlante delle Emozioni è basato su un consenso tra scienziati determinato da un sondaggio (nella scelta dei cinque continenti emotivi e la relazione delle emozioni con umori, personalità e psicopatologia), il lavoro di alcuni scienziati che si sono concentrati sulla denominazione degli stati dentro le emozioni, definizioni di dizionario, teoria e migliori supposizioni sulle azioni per ogni stato e se sono costruttive, distruttive o ambigue. Per maggiori informazioni, vedi <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">\"Su cosa concordano gli scienziati che studiano le emozioni,\"</a> di Paul Ekman (Perspectives on Psychological Science, 2015).",
-      "contentIntro": "Il sondaggio è stato inviato via email a metà giugno 2014 a 248 scienziati che avevano frequentemente pubblicato ricerche quantitative sull'emozione."
-    },
-    "moods": {
-      "emotions": [
-        {
-          "name": "Irritabile",
-          "desc": "Predisposto a diventare arrabbiato, facilmente provocato. "
-        },
-        {
-          "name": "Apprensivo",
-          "desc": "Ansioso che accada qualcosa di brutto, nervoso."
-        },
-        {
-          "name": "Agro",
-          "desc": "Generalmente ripugnato."
-        },
-        {
-          "name": "Disforico (o sentirsi giù)",
-          "desc": "Un sentimento duraturo di scoraggiamento o delusione."
-        },
-        {
-          "name": "Euforico",
-          "desc": "Un sentimento di benessere generalizzato e duraturo. "
-        }
-      ],
-      "title": "Umori",
-      "desc": "Gli umori sono cugini più duraturi di un'emozione che ci fanno sentire l'emozione correlata ripetutamente senza alcun trigger chiaro."
-    },
-    "partially-charted": {
-      "emotions": [
-        {
-          "name": "Amore",
-          "desc": "Un forte attaccamento a un'altra persona, tipicamente genitore verso bambino e bambino verso genitore, ma anche tra quelli romanticamente impegnati. Nelle relazioni d'amore, rabbia, paura, tristezza, disgusto e gioia possono tutti essere sperimentati."
-        },
-        {
-          "name": "Sorpresa",
-          "desc": "L'emozione più breve, la sorpresa è scatenata dall'occorrenza improvvisa di un evento inaspettato. È spesso una stazione intermedia che porta, dopo più valutazione, a qualsiasi delle altre emozioni."
-        },
-        {
-          "name": "Gelosia",
-          "desc": "Una storia emotiva che coinvolge tre persone: la persona desiderata, la persona che ha paura di perdere l'impegno della persona desiderata, e il rivale. Durante la gelosia, rabbia, paura, disgusto, tristezza o sorpresa possono essere sentiti da qualsiasi delle tre persone."
-        },
-        {
-          "name": "Invidia",
-          "desc": "Anche se spesso usata erroneamente come sinonimo di gelosia, l'invidia coinvolge risentimento e desiderio di quello che un'altra persona possiede. Quando una persona prova invidia, rabbia, disprezzo o tristezza possono anche essere sentiti."
-        },
-        {
-          "name": "Odio",
-          "desc": "Rabbia duratura focalizzata su una persona particolare o gruppo di persone. Nel tempo l'odio può generare il tratto di personalità di ostilità."
-        },
-        {
-          "name": "Imbarazzo",
-          "desc": "Disagio auto-conscio o goffaggine. Spesso attivato da lodi da un altro, o da un faux pas. Non ha segnale vocale, ma può causare un rossore visibile solo nelle persone dalla pelle chiara."
-        },
-        {
-          "name": "Vergogna",
-          "desc": "Un'aspettativa che altri sarebbero disgustati se sapessero a cosa la persona stava pensando o aveva fatto. Motiva un forte desiderio di impedire agli altri di apprendere quello che la persona ha fatto o pensato."
-        },
-        {
-          "name": "Disprezzo",
-          "desc": "L'ultima emozione ad apparire nello sviluppo del bambino, è un sentimento di superiorità morale verso il bersaglio. Spesso mescolato con gioia."
-        },
-        {
-          "name": "Colpa",
-          "desc": "Rimorso per un'azione passata, che motiva il desiderio di confessare l'azione sbagliata, sperando il perdono."
-        }
-      ],
-      "title": "Emozioni Parzialmente Mappate",
-      "desc": "La metà o meno della metà degli scienziati delle emozioni crede che ci siano prove convincenti che ciascuna delle seguenti sia un'emozione."
     }
   },
   "further-reading": {

@@ -1,6 +1,292 @@
 {
   "slug": "secondaryData",
   "annex": {
+    "scientific-basis": {
+      "content": [
+        {
+          "desc": "Es gibt universelle Gefühle",
+          "name": "88%",
+          "formatting": "beforebreak"
+        },
+        {
+          "desc": "Es gibt universelle Gesichtssignale zu Gefühlen",
+          "name": "80%",
+          "formatting": "break"
+        },
+        {
+          "desc": "Wut ist ein universelles Gefühl",
+          "name": "91%",
+          "formatting": ""
+        },
+        {
+          "desc": "Angst ist ein universelles Gefühl",
+          "name": "90%",
+          "formatting": ""
+        },
+        {
+          "desc": "Ekel ist ein universelles Gefühl",
+          "name": "86%",
+          "formatting": ""
+        },
+        {
+          "desc": "Traurigkeit ist ein universelles Gefühl",
+          "name": "80%",
+          "formatting": ""
+        },
+        {
+          "desc": "Freude ist ein universelles Gefühl",
+          "name": "76%",
+          "formatting": "break"
+        },
+        {
+          "desc": "Es gibt universelle Auslöser zu Gefühlen",
+          "name": "66%",
+          "formatting": ""
+        },
+        {
+          "desc": "Es gibt universelle Gefühlsphysiologie",
+          "name": "51%",
+          "formatting": ""
+        },
+        {
+          "desc": "Es gibt biologisch diskrete, getrennte Gefühle",
+          "name": "49%",
+          "formatting": ""
+        },
+        {
+          "desc": "Gefühle werden durch soziale Faktoren konstruiert",
+          "name": "11%",
+          "formatting": ""
+        },
+        {
+          "desc": "Gefühle sind sowohl biologisch getrennt als auch sozial konstruiert",
+          "name": "3%",
+          "formatting": ""
+        }
+      ],
+      "footer": [
+        "Die Existenz von “erdrückenden Beweisen für Universale in jeder Aspekt von Gefühl” wurde von 88% der Befragten gebilligt. Die Beweise für universelle Signale (Gesicht oder Stimme) wurden von 80% gebilligt. Es gab weniger Einigkeit darüber, ob es erdrückende Beweise für Universale in den Ereignissen gibt, die einen Auslöser auslösen (66%), Physiologie (51%) oder Apprazierungsmechanismen (44%). Somit wurde Darwin's Behauptung von 1872 und die neuere Arbeit von Ekman und Friesen (1969) und Izard (1971) bezüglich der Universalität einiger Gesichtsausdrücke unterstützt. In der Frage “Welche der folgenden bestimmt am besten Ihre Orientierung zu Gefühlen in Ihrer Forschung?”, 49% wählten “Diskrete Gefühle (Wut, Angst usw.) kombinieren beide biologische und soziale Einflüsse”, 11% wählten “Gefühle als konstruiert, entweder sozial oder psychologisch, um die aktuellen Bedingungen anzupassen” und 30% zeigten an, dass sie beide Ansätze verwendeten. \n",
+        "Die Befragten wurden gebeten, ob die Beweise für jedes Gefühl erdrückend waren. Es gab hohe Einigkeit über fünf Gefühle (alle von Darwin und Wundt beschrieben): Wut (91%), Angst (90%), Ekel (86%), Traurigkeit (80%) und Freude (76%). Scham, Überraschung und Scham wurden von 40% bis 50% aufgeführt. Andere Gefühle, die derzeit von verschiedenen Forschern untersucht werden, zogen weniger Unterstützung: Schuld (37%), Verachtung (34%), Liebe (32%), Ehrfurcht (31%), Schmerz (28%), Neid (28%), Mitgefühl (20%), Stolz (9%) und Dankbarkeit (6%)."
+      ],
+      "title": "Der wissenschaftliche Grund für diese Arbeit",
+      "desc": "Der Atlas der Gefühle basiert auf einer Konsens zwischen Wissenschaftlern als durch eine Umfrage bestimmt (in der Wahl der fünf Emotionskontinente und der Beziehung von Gefühlen zu Stimmungen, Persönlichkeit und Psychopathologie), die Arbeit einiger Wissenschaftler, die sich auf die Benennung von Zuständen innerhalb von Gefühlen konzentriert haben, Wörterbucheinträge, Theorie und die besten Vermutungen über die Handlungen für jeden Zustand und ob sie konstruktiv, zerstörend oder unbestimmt sind. Weitere Informationen finden Sie unter <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">“Was Wissenschaftler, die sich mit Gefühlen beschäftigen, einig sind”</a>, von Paul Ekman (Perspectives on Psychological Science, 2015).",
+      "contentIntro": "Die Umfrage wurde im Juni 2014 an 248 Wissenschaftler geschickt, die häufig quantitative Forschung auf dem Gebiet der Gefühlsforschung durchgeführt haben."
+    },
+    "triggers-timeline": {
+      "content": [
+        {
+          "desc": "Dies beschreibt die Kontext oder Situationen, die das Eintreten eines Gefühls beeinflussen können. Zum Beispiel könnte unser Vorbedingung physiologisch sein: Hunger, Müdigkeit oder emotional: eine sehr erfreuliche oder stressige Tage oder aus einem vorherigen emotionalen Episoden herausgekommen sein.",
+          "name": "Vorbedingung"
+        },
+        {
+          "desc": "Dies beschreibt eine Person, ein Ort, eine Situation, ein Bild, eine Gedanken, eine Erinnerung, ein Geruch, ein Geräusch, ein Geschmack oder eine Idee, die wir aus der Außenwelt oder unserem eigenen Geist erfassen. Wir bewerten ständig, oder bewerten, unsere innere und äußere Welt automatisch. Zum Beispiel, wenn wir eine neue Melodie hören, überlagern wir unsere Kenntnisse von Instrumenten und Kategorien von Musik, während wir siehst, ohne zu denken, das ist automatische Bewertung. ",
+          "name": "Ereignis"
+        },
+        {
+          "desc": "Dies beschreibt die Kombination der automatischen Bewertung mit einem universellen/hartgespielten oder erworbenen Skript in unserer Datenbank. ",
+          "name": "Auslöser"
+        },
+        {
+          "desc": "Dies beschreibt unsere universellen/hartgespielten Reaktionen und unsere individuell erworbenen emotionalen Erinnerungen. Zum Beispiel, wenn das Ereignis ein Geruch ist und in der Datenbank ist die gespeicherte Erinnerung des Shampoos, das unsere Mutter in unseiner Kindheit verwendet hat, und wir werden durch einen Auslöser ausgelöst, der eine emotionale Erfahrung von warmem Nostalgie für ein glückliches Kindesalter erzeugt. Wenn das apprazierte Ereignis etwas in unserer Datenbank ähnelt, kann es sehr genau oder eine verzerrte Wahrnehmung des Auslösers sein. Zum Beispiel, wenn wir eine erschreckende Erfahrung mit einem Polizisten als Kind hatten und wir als Erwachsener überprüft werden, könnten wir die Situation mit einer verzerrten Angstwahrnehmung wahrnehmen.",
+          "name": "Wahrnehmungsdatenbank"
+        },
+        {
+          "desc": "Dies beschreibt die autonomen Veränderungen in unserem Körper, die während des Eintretens eines Gefühls auftreten. Wir können diese Veränderungen als Gefühle in unserem Körper spüren, wie Hitze in unserem Gesicht, Spannung in unseinen Schultern oder Kiefer, etc.",
+          "name": "Körperliche Veränderungen"
+        },
+        {
+          "desc": "Dies beschreibt das Gefühl selbst, einschließlich physischer und psychologischer Veränderungen.",
+          "name": "Zustand"
+        },
+        {
+          "desc": "Dies beschreibt die qualitative Erfahrung eines Gefühls, wie Traurigkeit traurig ist, oder Wut wütend ist.",
+          "name": "Psychologische Veränderungen"
+        },
+        {
+          "desc": "Dies beschreibt unsere emotionalen Reaktionen. Dies könnte ein äußeres Verhalten wie ein Jammern in Wut sein, oder ein internes, wie das Zurückhalten von Wut. Jedes Gefühl im Atlas zeigt einen Bereich von sofortigen Handlungen, sowohl als konstruktiv als auch als destruktiv. Führt zu weiterer Zusammenarbeit mit anderen oder zu Schwierigkeiten bei der Zusammenarbeit.",
+          "name": "Handlung"
+        },
+        {
+          "desc": "Dies beschreibt das Ergebnis oder den Einfluss unserer emotionalen Handlungen. Dies könnte äußerlich sein: wenn wir jemanden angefleht haben, könnten sie zurück anflehen; oder intern: wenn wir uns zurückgehalten haben, könnten wir einige fortlaufende Verärgerung empfinden. Die Postbedingung könnte zu unserem nächsten emotionalen Episoden führen, wenn jemand zurück anfleht, uns entweder Wut oder Angst oder Traurigkeit/Bedauern für unsere Handlungen. Unsere Postbedingung ist eine Gelegenheit für uns, unsere emotionale Erkenntnis durch Reflexion auf unser Gefühl zu erhöhen, um den Auslöser zu verstehen, die gefühlte Erfahrung zu identifizieren und zu berücksichtigen, wie sie einen Einfluss auf sie hatte.",
+          "name": "Postbedingung"
+        },
+        {
+          "desc": "Die Emotionssättigungsperiode wird mit dem Eintreten von Handlungen und Signalen gestartet — die Wahrnehmung wird eingeengt und verzerrt, Informationen relevant für und konsistent mit dem vorherrschenden Gefühl gefiltert und interpretiert. Zum Beispiel, wenn Angst erregt wird, besteht eine erhöhte Empfindlichkeit für wirkliche und gedachte Bedrohungen. ",
+          "name": "Emotionssättigungsperiode"
+        }
+      ],
+      "footer": [
+        "Gelernte Anzeigeregeln (um Signale zu regulieren) und gelernte Gefühlsregeln (um subjektive Gefühle zu modifizieren, zu verstärken oder zurückzuhaltend) entstehen. Wir wissen nicht, wie schnell sie auftreten. Treten sie vor den Signalen und Handlungen oder sofort während des Eintretens der Signale und Handlungen? Impulse werden in Handlungen und Signale übersetzt. ",
+        "Der Unterschied zwischen Schritt 2 (Impulse) und Schritt 4 (Handlungen/Signale) ist variabel, abhängig von den individuellen Merkmalen jedes Menschen und dem emotionalen Profil des Menschen, der Intensität des apprazierte Auslösers, und der momentanen psychologischen Zustand des Individuums, wenn der Auslöser appraziiert wird (wie viel Schlaf der Mensch gestern hatte; was, falls vorhanden, das letzte Gefühl des Menschen oder welches Gefühl er momentan erlebt oder erlebt, etc.)."
+      ],
+      "title": "Emotionales Episoden-Zeitachse",
+      "desc": ""
+    },
+    "intrinsic-or-intentional": {
+      "emotions": [
+        {
+          "name": "Wut",
+          "children": [
+            {
+              "name": "Intrinsisch",
+              "desc": "Streit, Belästigung, Untergraben, Streit, Schreien/jammern, Körperkraft, Zwischenrufen, Passiv aggressiv"
+            },
+            {
+              "name": "Absichtlich",
+              "desc": "Grenzen setzen, Fest, Zurückziehen, Zeit aus, Atmen, Geduld, Umgestalten, Ablenken, Vermeiden, Entfernen der Störung"
+            }
+          ]
+        },
+        {
+          "name": "Angst",
+          "children": [
+            {
+              "name": "Intrinsisch",
+              "desc": "Zurückziehen, Vermeiden, Zögern, Einfrieren, Schreien/jammern, Rückblick, Sorgen"
+            },
+            {
+              "name": "Absichtlich",
+              "desc": "Umgestalten, Bewusstsein, Atmen, Ablenken"
+            }
+          ]
+        },
+        {
+          "name": "Ekel",
+          "children": [
+            {
+              "name": "Intrinsisch",
+              "desc": "Zurückziehen, Vermeiden, Erbrechen, Entmenschlichen"
+            },
+            {
+              "name": "Absichtlich",
+              "desc": "Zurückziehen, Vermeiden"
+            }
+          ]
+        },
+        {
+          "name": "Traurigkeit",
+          "children": [
+            {
+              "name": "Intrinsisch",
+              "desc": "Komfort suchen, Zurückziehen, Trösten, Protest, Scham empfinden"
+            },
+            {
+              "name": "Absichtlich",
+              "desc": "Zurückziehen, Ablenken"
+            }
+          ]
+        },
+        {
+          "name": "Freude",
+          "children": [
+            {
+              "name": "Intrinsisch",
+              "desc": "Mehr suchen, Aufrechterhalten, Jubeln, Engagieren/verbinden, Genießen, Indulgieren"
+            },
+            {
+              "name": "Absichtlich",
+              "desc": "Keine"
+            }
+          ]
+        }
+      ],
+      "title": "Intrinsisch oder Absichtlich",
+      "desc": "Handlungen können intrinsisch (ohne bewusste Absicht) oder absichtlich (aktives Bemühen, Veränderung einzuleiten), oder beides sein."
+    },
+    "partially-charted": {
+      "emotions": [
+        {
+          "name": "Liebe",
+          "desc": "Eine starke Bindung zu einer anderen Person, typischerweise zwischen Eltern und Kind, aber auch zwischen romantisch verbundenen Personen. Innerhalb liebevoller Beziehungen können Wut, Angst, Traurigkeit, Ekel und Freude alle erlebt werden."
+        },
+        {
+          "name": "Überraschung",
+          "desc": "Die kürzeste Emotion, Überraschung wird durch das plötzliche Auftreten eines unerwarteten Ereignisses ausgelöst. Sie ist oft eine Zwischenstation, die nach weiterer Bewertung zu jeder anderen Emotion führt."
+        },
+        {
+          "name": "Eifersucht",
+          "desc": "Ein emotionales Szenario mit drei Personen: der begehrten Person, der Person, die Angst hat, die Bindung der begehrten Person zu verlieren, und dem Rivalen. Während der Eifersucht können Wut, Angst, Ekel, Traurigkeit oder Überraschung von jeder der drei Personen empfunden werden."
+        },
+        {
+          "name": "Neid",
+          "desc": "Obwohl oft fälschlicherweise als Synonym für Eifersucht verwendet, beinhaltet Neid das Ärgern über und Begehren dessen, was eine andere Person besitzt. Wenn eine Person Neid empfindet, können auch Wut, Verachtung oder Traurigkeit empfunden werden."
+        },
+        {
+          "name": "Hass",
+          "desc": "Anhaltende, auf eine bestimmte Person oder Personengruppe gerichtete Wut. Mit der Zeit kann Hass die Persönlichkeitseigenschaft der Feindseligkeit hervorbringen."
+        },
+        {
+          "name": "Verlegenheit",
+          "desc": "Selbstbewusste Not oder Unbeholfenheit. Oft aktiviert durch Lob von anderen oder durch einen Fauxpas. Sie hat kein stimmliches Signal, kann aber ein Erröten verursachen, das nur bei hellhäutigen Menschen sichtbar ist."
+        },
+        {
+          "name": "Scham",
+          "desc": "Eine Erwartung, dass andere angeekelt wären, wenn sie wüssten, was die Person dachte oder getan hat. Sie motiviert einen starken Wunsch, zu verhindern, dass andere erfahren, was die Person getan oder gedacht hat."
+        },
+        {
+          "name": "Verachtung",
+          "desc": "Die letzte Emotion, die in der Kindesentwicklung auftritt, ist ein Gefühl moralischer Überlegenheit gegenüber dem Ziel. Oft gemischt mit Vergnügen."
+        },
+        {
+          "name": "Schuld",
+          "desc": "Bedauern über eine vergangene Handlung, das den Wunsch motiviert, die falsche Handlung zu bekennen, in der Hoffnung auf Vergebung."
+        }
+      ],
+      "title": "Teilweise kartierte Emotionen",
+      "desc": "Die Hälfte oder weniger als die Hälfte der Emotionswissenschaftler glauben, dass es überzeugende Beweise dafür gibt, dass jede der folgenden eine Emotion ist."
+    },
+    "personality-trait": {
+      "emotions": [
+        {
+          "name": "Wut",
+          "desc": "Ein gemeinbarer Mensch ist oft wütend und bekannt für die Häufigkeit seiner Wutreaktionen auf die Welt. Häufig tritt Wut mit jeder Frustration auf; der Schwellenwert für Frustration ist niedrig. Gemeinbarer Menschen erleben später oft Bedauern und entschuldigen sich für ihre Wut, aber dennoch reagieren sie wütend. Manchmal drücken gemeinbarer Menschen ihre Wut in einer schlechten Art, indem sie Worte verwenden, um psychische Qual sein zu lassen und anderen Menschen Schmerzen zuzufügen."
+        },
+        {
+          "name": "Angst",
+          "desc": "Ein schüchterner oder ängstlicher Mensch. Dieser Persönlichkeitstyp ist wahrscheinlich geneigt, Risiken und unangenehme Situationen zu vermeiden. Schüchterne Menschen könnten die Welt als voll von schwierigen Situationen wahrnehmen."
+        },
+        {
+          "name": "Ekel",
+          "desc": "Ein Mensch, der oft mit Ekel anderer Menschen umgeht, könnte einen aufgeblähten Sinn von Selbstwert und eine Hyper-Abneigung gegenüber anderen haben. Jemand, der mit allem unzufrieden ist, kann unangenehm umzugehen sein."
+        },
+        {
+          "name": "Traurigkeit",
+          "desc": "Ein trübes Mensch, der oft niedrig ist, könnte klinische Depression oder einfach mehr häufige Sorgen haben. Dieser Mensch könnte die Perspektive verfolgen, dass das Leben schwer und schwierig ist."
+        },
+        {
+          "name": "Freude",
+          "desc": "Ein fröhlicher Mensch könnte auch als optimistisch gedacht werden. Dieser Mensch sieht die Welt in einer positiven Weise und kann leicht zum Lachen gebracht und Freude erzeugen."
+        }
+      ],
+      "title": "Persönlichkeitseigenschaft",
+      "desc": "Bestimmte Persönlichkeitseigenschaften sind mit bestimmten Gefühlen verknüpft."
+    },
+    "moods": {
+      "emotions": [
+        {
+          "name": "Ärgerlich",
+          "desc": "Prädisponiert dafür, wütend zu werden, leicht provozierbar."
+        },
+        {
+          "name": "Besorgt",
+          "desc": "Ängstlich, dass etwas Schlimmes passieren wird, nervös."
+        },
+        {
+          "name": "Missmutig",
+          "desc": "Allgemein angewidert."
+        },
+        {
+          "name": "Dysphorisch (oder melancholisch)",
+          "desc": "Ein anhaltendes Gefühl der Entmutigung oder Enttäuschung."
+        },
+        {
+          "name": "Euphorisch",
+          "desc": "Ein lang anhaltendes, allgemeines Wohlgefühl."
+        }
+      ],
+      "title": "Stimmungen",
+      "desc": "Stimmungen sind länger anhaltende Verwandte einer Emotion, die uns dazu bringen, das zugehörige Gefühl wiederholt zu empfinden, ohne dass ein klarer Auslöser vorhanden ist."
+    },
     "psychopathology": {
       "emotions": [
         {
@@ -184,32 +470,6 @@
       ],
       "title": "Signal und Nachricht",
       "desc": "Das Signal eines Gefühls beschreibt die universellen Weisen, wie ein Gefühl in Gesicht und/oder Stimme angezeigt wird. Es können auch andere stimmliche Tonänderungen und Körperspracheindikatoren auftreten, aber diese sind in der Regel kulturabhängig und gelernt, anstatt universell.<br><br>Die Nachricht ist, was das Gefühl uns mitteilt. Alle Gefühle haben eine Nachricht, die eine Reaktion auf die Umwelt um uns herum ist."
-    },
-    "personality-trait": {
-      "emotions": [
-        {
-          "name": "Wut",
-          "desc": "Ein gemeinbarer Mensch ist oft wütend und bekannt für die Häufigkeit seiner Wutreaktionen auf die Welt. Häufig tritt Wut mit jeder Frustration auf; der Schwellenwert für Frustration ist niedrig. Gemeinbarer Menschen erleben später oft Bedauern und entschuldigen sich für ihre Wut, aber dennoch reagieren sie wütend. Manchmal drücken gemeinbarer Menschen ihre Wut in einer schlechten Art, indem sie Worte verwenden, um psychische Qual sein zu lassen und anderen Menschen Schmerzen zuzufügen."
-        },
-        {
-          "name": "Angst",
-          "desc": "Ein schüchterner oder ängstlicher Mensch. Dieser Persönlichkeitstyp ist wahrscheinlich geneigt, Risiken und unangenehme Situationen zu vermeiden. Schüchterne Menschen könnten die Welt als voll von schwierigen Situationen wahrnehmen."
-        },
-        {
-          "name": "Ekel",
-          "desc": "Ein Mensch, der oft mit Ekel anderer Menschen umgeht, könnte einen aufgeblähten Sinn von Selbstwert und eine Hyper-Abneigung gegenüber anderen haben. Jemand, der mit allem unzufrieden ist, kann unangenehm umzugehen sein."
-        },
-        {
-          "name": "Traurigkeit",
-          "desc": "Ein trübes Mensch, der oft niedrig ist, könnte klinische Depression oder einfach mehr häufige Sorgen haben. Dieser Mensch könnte die Perspektive verfolgen, dass das Leben schwer und schwierig ist."
-        },
-        {
-          "name": "Freude",
-          "desc": "Ein fröhlicher Mensch könnte auch als optimistisch gedacht werden. Dieser Mensch sieht die Welt in einer positiven Weise und kann leicht zum Lachen gebracht und Freude erzeugen."
-        }
-      ],
-      "title": "Persönlichkeitseigenschaft",
-      "desc": "Bestimmte Persönlichkeitseigenschaften sind mit bestimmten Gefühlen verknüpft."
     },
     "impediment-antidote": {
       "emotions": [
@@ -430,266 +690,6 @@
       ],
       "title": "Hemmungen und Antidoten",
       "desc": "Das Diagramm unten wurde von Mathieu Ricard erstellt und bietet eine tibetische Buddhistische Perspektive auf das Verständnis und das Arbeiten mit Gefühlen. Es zeigt, wie schwierige Gefühle durch das Bewältigen positiver mentaler Zustände, bekannt als “Antidoten”, entgegengewirkt werden können. Es hilft auch, “Hemmungen” zu identifizieren, die das Erleben erfreulicher Gefühle blockieren und erfreuliche Gefühle, die schwer zu bewältigen sein können. Sie können mehr über Mathieu Ricard <a href=\"https://www.matthieuricard.org/en/articles/buddhist-and-psychological-perspectives-on-emotions-and-well-being-by-paul-ekman-richard-j-davidson-matthieu-ricard-and-b-alan-wallace-current-directions-in-psychological-science-2005-14-2/\" target=\"blank\">hier</a>."
-    },
-    "triggers-timeline": {
-      "content": [
-        {
-          "desc": "Dies beschreibt die Kontext oder Situationen, die das Eintreten eines Gefühls beeinflussen können. Zum Beispiel könnte unser Vorbedingung physiologisch sein: Hunger, Müdigkeit oder emotional: eine sehr erfreuliche oder stressige Tage oder aus einem vorherigen emotionalen Episoden herausgekommen sein.",
-          "name": "Vorbedingung"
-        },
-        {
-          "desc": "Dies beschreibt eine Person, ein Ort, eine Situation, ein Bild, eine Gedanken, eine Erinnerung, ein Geruch, ein Geräusch, ein Geschmack oder eine Idee, die wir aus der Außenwelt oder unserem eigenen Geist erfassen. Wir bewerten ständig, oder bewerten, unsere innere und äußere Welt automatisch. Zum Beispiel, wenn wir eine neue Melodie hören, überlagern wir unsere Kenntnisse von Instrumenten und Kategorien von Musik, während wir siehst, ohne zu denken, das ist automatische Bewertung. ",
-          "name": "Ereignis"
-        },
-        {
-          "desc": "Dies beschreibt die Kombination der automatischen Bewertung mit einem universellen/hartgespielten oder erworbenen Skript in unserer Datenbank. ",
-          "name": "Auslöser"
-        },
-        {
-          "desc": "Dies beschreibt unsere universellen/hartgespielten Reaktionen und unsere individuell erworbenen emotionalen Erinnerungen. Zum Beispiel, wenn das Ereignis ein Geruch ist und in der Datenbank ist die gespeicherte Erinnerung des Shampoos, das unsere Mutter in unseiner Kindheit verwendet hat, und wir werden durch einen Auslöser ausgelöst, der eine emotionale Erfahrung von warmem Nostalgie für ein glückliches Kindesalter erzeugt. Wenn das apprazierte Ereignis etwas in unserer Datenbank ähnelt, kann es sehr genau oder eine verzerrte Wahrnehmung des Auslösers sein. Zum Beispiel, wenn wir eine erschreckende Erfahrung mit einem Polizisten als Kind hatten und wir als Erwachsener überprüft werden, könnten wir die Situation mit einer verzerrten Angstwahrnehmung wahrnehmen.",
-          "name": "Wahrnehmungsdatenbank"
-        },
-        {
-          "desc": "Dies beschreibt die autonomen Veränderungen in unserem Körper, die während des Eintretens eines Gefühls auftreten. Wir können diese Veränderungen als Gefühle in unserem Körper spüren, wie Hitze in unserem Gesicht, Spannung in unseinen Schultern oder Kiefer, etc.",
-          "name": "Körperliche Veränderungen"
-        },
-        {
-          "desc": "Dies beschreibt das Gefühl selbst, einschließlich physischer und psychologischer Veränderungen.",
-          "name": "Zustand"
-        },
-        {
-          "desc": "Dies beschreibt die qualitative Erfahrung eines Gefühls, wie Traurigkeit traurig ist, oder Wut wütend ist.",
-          "name": "Psychologische Veränderungen"
-        },
-        {
-          "desc": "Dies beschreibt unsere emotionalen Reaktionen. Dies könnte ein äußeres Verhalten wie ein Jammern in Wut sein, oder ein internes, wie das Zurückhalten von Wut. Jedes Gefühl im Atlas zeigt einen Bereich von sofortigen Handlungen, sowohl als konstruktiv als auch als destruktiv. Führt zu weiterer Zusammenarbeit mit anderen oder zu Schwierigkeiten bei der Zusammenarbeit.",
-          "name": "Handlung"
-        },
-        {
-          "desc": "Dies beschreibt das Ergebnis oder den Einfluss unserer emotionalen Handlungen. Dies könnte äußerlich sein: wenn wir jemanden angefleht haben, könnten sie zurück anflehen; oder intern: wenn wir uns zurückgehalten haben, könnten wir einige fortlaufende Verärgerung empfinden. Die Postbedingung könnte zu unserem nächsten emotionalen Episoden führen, wenn jemand zurück anfleht, uns entweder Wut oder Angst oder Traurigkeit/Bedauern für unsere Handlungen. Unsere Postbedingung ist eine Gelegenheit für uns, unsere emotionale Erkenntnis durch Reflexion auf unser Gefühl zu erhöhen, um den Auslöser zu verstehen, die gefühlte Erfahrung zu identifizieren und zu berücksichtigen, wie sie einen Einfluss auf sie hatte.",
-          "name": "Postbedingung"
-        },
-        {
-          "desc": "Die Emotionssättigungsperiode wird mit dem Eintreten von Handlungen und Signalen gestartet — die Wahrnehmung wird eingeengt und verzerrt, Informationen relevant für und konsistent mit dem vorherrschenden Gefühl gefiltert und interpretiert. Zum Beispiel, wenn Angst erregt wird, besteht eine erhöhte Empfindlichkeit für wirkliche und gedachte Bedrohungen. ",
-          "name": "Emotionssättigungsperiode"
-        }
-      ],
-      "footer": [
-        "Gelernte Anzeigeregeln (um Signale zu regulieren) und gelernte Gefühlsregeln (um subjektive Gefühle zu modifizieren, zu verstärken oder zurückzuhaltend) entstehen. Wir wissen nicht, wie schnell sie auftreten. Treten sie vor den Signalen und Handlungen oder sofort während des Eintretens der Signale und Handlungen? Impulse werden in Handlungen und Signale übersetzt. ",
-        "Der Unterschied zwischen Schritt 2 (Impulse) und Schritt 4 (Handlungen/Signale) ist variabel, abhängig von den individuellen Merkmalen jedes Menschen und dem emotionalen Profil des Menschen, der Intensität des apprazierte Auslösers, und der momentanen psychologischen Zustand des Individuums, wenn der Auslöser appraziiert wird (wie viel Schlaf der Mensch gestern hatte; was, falls vorhanden, das letzte Gefühl des Menschen oder welches Gefühl er momentan erlebt oder erlebt, etc.)."
-      ],
-      "title": "Emotionales Episoden-Zeitachse",
-      "desc": ""
-    },
-    "intrinsic-or-intentional": {
-      "emotions": [
-        {
-          "name": "Wut",
-          "children": [
-            {
-              "name": "Intrinsisch",
-              "desc": "Streit, Belästigung, Untergraben, Streit, Schreien/jammern, Körperkraft, Zwischenrufen, Passiv aggressiv"
-            },
-            {
-              "name": "Absichtlich",
-              "desc": "Grenzen setzen, Fest, Zurückziehen, Zeit aus, Atmen, Geduld, Umgestalten, Ablenken, Vermeiden, Entfernen der Störung"
-            }
-          ]
-        },
-        {
-          "name": "Angst",
-          "children": [
-            {
-              "name": "Intrinsisch",
-              "desc": "Zurückziehen, Vermeiden, Zögern, Einfrieren, Schreien/jammern, Rückblick, Sorgen"
-            },
-            {
-              "name": "Absichtlich",
-              "desc": "Umgestalten, Bewusstsein, Atmen, Ablenken"
-            }
-          ]
-        },
-        {
-          "name": "Ekel",
-          "children": [
-            {
-              "name": "Intrinsisch",
-              "desc": "Zurückziehen, Vermeiden, Erbrechen, Entmenschlichen"
-            },
-            {
-              "name": "Absichtlich",
-              "desc": "Zurückziehen, Vermeiden"
-            }
-          ]
-        },
-        {
-          "name": "Traurigkeit",
-          "children": [
-            {
-              "name": "Intrinsisch",
-              "desc": "Komfort suchen, Zurückziehen, Trösten, Protest, Scham empfinden"
-            },
-            {
-              "name": "Absichtlich",
-              "desc": "Zurückziehen, Ablenken"
-            }
-          ]
-        },
-        {
-          "name": "Freude",
-          "children": [
-            {
-              "name": "Intrinsisch",
-              "desc": "Mehr suchen, Aufrechterhalten, Jubeln, Engagieren/verbinden, Genießen, Indulgieren"
-            },
-            {
-              "name": "Absichtlich",
-              "desc": "Keine"
-            }
-          ]
-        }
-      ],
-      "title": "Intrinsisch oder Absichtlich",
-      "desc": "Handlungen können intrinsisch (ohne bewusste Absicht) oder absichtlich (aktives Bemühen, Veränderung einzuleiten), oder beides sein."
-    },
-    "scientific-basis": {
-      "content": [
-        {
-          "desc": "Es gibt universelle Gefühle",
-          "name": "88%",
-          "formatting": "beforebreak"
-        },
-        {
-          "desc": "Es gibt universelle Gesichtssignale zu Gefühlen",
-          "name": "80%",
-          "formatting": "break"
-        },
-        {
-          "desc": "Wut ist ein universelles Gefühl",
-          "name": "91%",
-          "formatting": ""
-        },
-        {
-          "desc": "Angst ist ein universelles Gefühl",
-          "name": "90%",
-          "formatting": ""
-        },
-        {
-          "desc": "Ekel ist ein universelles Gefühl",
-          "name": "86%",
-          "formatting": ""
-        },
-        {
-          "desc": "Traurigkeit ist ein universelles Gefühl",
-          "name": "80%",
-          "formatting": ""
-        },
-        {
-          "desc": "Freude ist ein universelles Gefühl",
-          "name": "76%",
-          "formatting": "break"
-        },
-        {
-          "desc": "Es gibt universelle Auslöser zu Gefühlen",
-          "name": "66%",
-          "formatting": ""
-        },
-        {
-          "desc": "Es gibt universelle Gefühlsphysiologie",
-          "name": "51%",
-          "formatting": ""
-        },
-        {
-          "desc": "Es gibt biologisch diskrete, getrennte Gefühle",
-          "name": "49%",
-          "formatting": ""
-        },
-        {
-          "desc": "Gefühle werden durch soziale Faktoren konstruiert",
-          "name": "11%",
-          "formatting": ""
-        },
-        {
-          "desc": "Gefühle sind sowohl biologisch getrennt als auch sozial konstruiert",
-          "name": "3%",
-          "formatting": ""
-        }
-      ],
-      "footer": [
-        "Die Existenz von “erdrückenden Beweisen für Universale in jeder Aspekt von Gefühl” wurde von 88% der Befragten gebilligt. Die Beweise für universelle Signale (Gesicht oder Stimme) wurden von 80% gebilligt. Es gab weniger Einigkeit darüber, ob es erdrückende Beweise für Universale in den Ereignissen gibt, die einen Auslöser auslösen (66%), Physiologie (51%) oder Apprazierungsmechanismen (44%). Somit wurde Darwin's Behauptung von 1872 und die neuere Arbeit von Ekman und Friesen (1969) und Izard (1971) bezüglich der Universalität einiger Gesichtsausdrücke unterstützt. In der Frage “Welche der folgenden bestimmt am besten Ihre Orientierung zu Gefühlen in Ihrer Forschung?”, 49% wählten “Diskrete Gefühle (Wut, Angst usw.) kombinieren beide biologische und soziale Einflüsse”, 11% wählten “Gefühle als konstruiert, entweder sozial oder psychologisch, um die aktuellen Bedingungen anzupassen” und 30% zeigten an, dass sie beide Ansätze verwendeten. \n",
-        "Die Befragten wurden gebeten, ob die Beweise für jedes Gefühl erdrückend waren. Es gab hohe Einigkeit über fünf Gefühle (alle von Darwin und Wundt beschrieben): Wut (91%), Angst (90%), Ekel (86%), Traurigkeit (80%) und Freude (76%). Scham, Überraschung und Scham wurden von 40% bis 50% aufgeführt. Andere Gefühle, die derzeit von verschiedenen Forschern untersucht werden, zogen weniger Unterstützung: Schuld (37%), Verachtung (34%), Liebe (32%), Ehrfurcht (31%), Schmerz (28%), Neid (28%), Mitgefühl (20%), Stolz (9%) und Dankbarkeit (6%)."
-      ],
-      "title": "Der wissenschaftliche Grund für diese Arbeit",
-      "desc": "Der Atlas der Gefühle basiert auf einer Konsens zwischen Wissenschaftlern als durch eine Umfrage bestimmt (in der Wahl der fünf Emotionskontinente und der Beziehung von Gefühlen zu Stimmungen, Persönlichkeit und Psychopathologie), die Arbeit einiger Wissenschaftler, die sich auf die Benennung von Zuständen innerhalb von Gefühlen konzentriert haben, Wörterbucheinträge, Theorie und die besten Vermutungen über die Handlungen für jeden Zustand und ob sie konstruktiv, zerstörend oder unbestimmt sind. Weitere Informationen finden Sie unter <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">“Was Wissenschaftler, die sich mit Gefühlen beschäftigen, einig sind”</a>, von Paul Ekman (Perspectives on Psychological Science, 2015).",
-      "contentIntro": "Die Umfrage wurde im Juni 2014 an 248 Wissenschaftler geschickt, die häufig quantitative Forschung auf dem Gebiet der Gefühlsforschung durchgeführt haben."
-    },
-    "moods": {
-      "emotions": [
-        {
-          "name": "Ärgerlich",
-          "desc": "Prädisponiert dafür, wütend zu werden, leicht provozierbar."
-        },
-        {
-          "name": "Besorgt",
-          "desc": "Ängstlich, dass etwas Schlimmes passieren wird, nervös."
-        },
-        {
-          "name": "Missmutig",
-          "desc": "Allgemein angewidert."
-        },
-        {
-          "name": "Dysphorisch (oder melancholisch)",
-          "desc": "Ein anhaltendes Gefühl der Entmutigung oder Enttäuschung."
-        },
-        {
-          "name": "Euphorisch",
-          "desc": "Ein lang anhaltendes, allgemeines Wohlgefühl."
-        }
-      ],
-      "title": "Stimmungen",
-      "desc": "Stimmungen sind länger anhaltende Verwandte einer Emotion, die uns dazu bringen, das zugehörige Gefühl wiederholt zu empfinden, ohne dass ein klarer Auslöser vorhanden ist."
-    },
-    "partially-charted": {
-      "emotions": [
-        {
-          "name": "Liebe",
-          "desc": "Eine starke Bindung zu einer anderen Person, typischerweise zwischen Eltern und Kind, aber auch zwischen romantisch verbundenen Personen. Innerhalb liebevoller Beziehungen können Wut, Angst, Traurigkeit, Ekel und Freude alle erlebt werden."
-        },
-        {
-          "name": "Überraschung",
-          "desc": "Die kürzeste Emotion, Überraschung wird durch das plötzliche Auftreten eines unerwarteten Ereignisses ausgelöst. Sie ist oft eine Zwischenstation, die nach weiterer Bewertung zu jeder anderen Emotion führt."
-        },
-        {
-          "name": "Eifersucht",
-          "desc": "Ein emotionales Szenario mit drei Personen: der begehrten Person, der Person, die Angst hat, die Bindung der begehrten Person zu verlieren, und dem Rivalen. Während der Eifersucht können Wut, Angst, Ekel, Traurigkeit oder Überraschung von jeder der drei Personen empfunden werden."
-        },
-        {
-          "name": "Neid",
-          "desc": "Obwohl oft fälschlicherweise als Synonym für Eifersucht verwendet, beinhaltet Neid das Ärgern über und Begehren dessen, was eine andere Person besitzt. Wenn eine Person Neid empfindet, können auch Wut, Verachtung oder Traurigkeit empfunden werden."
-        },
-        {
-          "name": "Hass",
-          "desc": "Anhaltende, auf eine bestimmte Person oder Personengruppe gerichtete Wut. Mit der Zeit kann Hass die Persönlichkeitseigenschaft der Feindseligkeit hervorbringen."
-        },
-        {
-          "name": "Verlegenheit",
-          "desc": "Selbstbewusste Not oder Unbeholfenheit. Oft aktiviert durch Lob von anderen oder durch einen Fauxpas. Sie hat kein stimmliches Signal, kann aber ein Erröten verursachen, das nur bei hellhäutigen Menschen sichtbar ist."
-        },
-        {
-          "name": "Scham",
-          "desc": "Eine Erwartung, dass andere angeekelt wären, wenn sie wüssten, was die Person dachte oder getan hat. Sie motiviert einen starken Wunsch, zu verhindern, dass andere erfahren, was die Person getan oder gedacht hat."
-        },
-        {
-          "name": "Verachtung",
-          "desc": "Die letzte Emotion, die in der Kindesentwicklung auftritt, ist ein Gefühl moralischer Überlegenheit gegenüber dem Ziel. Oft gemischt mit Vergnügen."
-        },
-        {
-          "name": "Schuld",
-          "desc": "Bedauern über eine vergangene Handlung, das den Wunsch motiviert, die falsche Handlung zu bekennen, in der Hoffnung auf Vergebung."
-        }
-      ],
-      "title": "Teilweise kartierte Emotionen",
-      "desc": "Die Hälfte oder weniger als die Hälfte der Emotionswissenschaftler glauben, dass es überzeugende Beweise dafür gibt, dass jede der folgenden eine Emotion ist."
     }
   },
   "further-reading": {

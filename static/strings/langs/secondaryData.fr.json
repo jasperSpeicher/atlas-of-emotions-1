@@ -1,6 +1,292 @@
 {
   "slug": "secondaryData",
   "annex": {
+    "scientific-basis": {
+      "content": [
+        {
+          "desc": "Il existe des émotions universelles",
+          "name": "88%",
+          "formatting": "beforebreak"
+        },
+        {
+          "desc": "Il existe des signaux faciaux universels aux émotions",
+          "name": "80%",
+          "formatting": "break"
+        },
+        {
+          "desc": "La colère est une émotion universelle",
+          "name": "91%",
+          "formatting": ""
+        },
+        {
+          "desc": "La peur est une émotion universelle",
+          "name": "90%",
+          "formatting": ""
+        },
+        {
+          "desc": "Le dégoût est une émotion universelle",
+          "name": "86%",
+          "formatting": ""
+        },
+        {
+          "desc": "La tristesse est une émotion universelle",
+          "name": "80%",
+          "formatting": ""
+        },
+        {
+          "desc": "Le bonheur est une émotion universelle",
+          "name": "76%",
+          "formatting": "break"
+        },
+        {
+          "desc": "Il existe des déclencheurs universels aux émotions",
+          "name": "66%",
+          "formatting": ""
+        },
+        {
+          "desc": "Il existe une physiologie universelle des émotions",
+          "name": "51%",
+          "formatting": ""
+        },
+        {
+          "desc": "Il existe des émotions biologiquement distinctes et séparées",
+          "name": "49%",
+          "formatting": ""
+        },
+        {
+          "desc": "Les émotions sont construites par des facteurs sociaux",
+          "name": "11%",
+          "formatting": ""
+        },
+        {
+          "desc": "Les émotions sont à la fois biologiquement séparées et socialement construites",
+          "name": "3%",
+          "formatting": ""
+        }
+      ],
+      "footer": [
+        "L'existence de \"preuves convaincantes d'universaux dans tout aspect de l'émotion\" a été approuvée par 88% des répondants. Les preuves soutenant des signaux universels (visage ou voix) ont été approuvées par 80%. Il y avait moins d'accord sur l'existence de preuves convaincantes d'universaux dans les événements qui déclenchent une émotion (66%), la physiologie (51%), ou les mécanismes d'évaluation (44%). Ainsi, l'affirmation de Darwin en 1872 et le travail plus récent d'Ekman et Friesen (1969) et Izard (1971) concernant l'universalité de certaines expressions faciales ont été soutenus. En réponse à la question \"Laquelle des suivantes capture le mieux votre orientation vers l'émotion dans votre recherche?\", 49% ont choisi \"Émotions discrètes (colère, peur, etc.) combinant des influences biologiques et sociales\", 11% ont choisi \"Émotions comme construites, soit socialement ou psychologiquement, pour s'adapter aux conditions actuelles\", et 30% ont indiqué qu'ils utilisaient les deux approches. \n",
+        "Les répondants ont été demandés si les preuves pour chaque émotion étaient convaincantes. Il y avait un accord élevé sur cinq émotions (toutes décrites par Darwin et Wundt) : colère (91%), peur (90%), dégoût (86%), tristesse (80%) et bonheur (76%). Honte, surprise et embarras ont été listés par 40% à 50%. D'autres émotions, actuellement étudiées par divers chercheurs, ont reçu substantiellement moins de soutien : culpabilité (37%), mépris (34%), amour (32%), émerveillement (31%), douleur (28%), envie (28%), compassion (20%), fierté (9%) et gratitude (6%)."
+      ],
+      "title": "La base scientifique de ce travail",
+      "desc": "L'Atlas des Émotions est basé sur un consensus parmi les scientifiques déterminé par une enquête (dans le choix des cinq continents d'émotions et la relation des émotions aux humeurs, à la personnalité et à la psychopathologie), le travail de quelques scientifiques qui se sont concentrés sur la nomination des états dans les émotions, les définitions de dictionnaire, la théorie et les meilleures suppositions sur les actions pour chaque état et si elles sont constructives, destructives ou ambiguës. Pour plus d'informations, voir <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">\"Ce sur quoi les scientifiques qui étudient les émotions s'accordent,\"</a> par Paul Ekman (Perspectives on Psychological Science, 2015).",
+      "contentIntro": "L'enquête a été envoyée par email à la mi-juin 2014 à 248 scientifiques qui avaient fréquemment publié des recherches quantitatives sur l'émotion."
+    },
+    "triggers-timeline": {
+      "content": [
+        {
+          "desc": "Ceci décrit le contexte ou les situations qui peuvent influencer la façon dont nous entrons dans l'émotion. Par exemple, notre pré-condition pourrait être physiologique : avoir faim, être fatigué ou émotionnelle : avoir eu une journée très agréable ou stressante ou sortir d'un épisode émotionnel antérieur.",
+          "name": "pré-condition"
+        },
+        {
+          "desc": "Ceci décrit une personne, un lieu, une situation, une image, une pensée, un souvenir, une odeur, un son, un goût ou une idée que nous rencontrons du monde extérieur ou de notre propre esprit. Nous évaluons constamment et automatiquement, ou évaluons notre monde intérieur et extérieur. Par exemple, quand nous entendons une nouvelle chanson, nous superposons instantanément notre connaissance des instruments et des catégories de musique pendant que nous écoutons sans même y penser, c'est l'évaluation automatique.",
+          "name": "événement"
+        },
+        {
+          "desc": "Ceci décrit la combinaison de l'évaluation automatique correspondant à un script universel/câblé ou acquis dans notre base de données.",
+          "name": "déclencheur"
+        },
+        {
+          "desc": "Ceci décrit nos réponses universelles/câblées et nos souvenirs émotionnels individuellement acquis. Par exemple, si l'événement est une odeur et que dans la base de données se trouve le souvenir stocké du shampooing que notre mère utilisait dans notre enfance, nous sommes déclenchés pour éprouver une émotion de nostalgie chaleureuse d'une enfance heureuse. Quand l'événement évalué ressemble à quelque chose dans notre base de données, cela peut être très précis ou créer une perception déformée du déclencheur. Par exemple, si nous avons eu une expérience intimidante avec un policier quand nous étions jeunes et que nous sommes arrêtés à l'âge adulte, nous pourrions mal percevoir la situation avec un sentiment déformé de peur.",
+          "name": "base de données de perception"
+        },
+        {
+          "desc": "Ceci décrit les changements autonomes dans notre corps qui se produisent quand notre émotion surgit. Nous pouvons éprouver ces changements comme des sensations dans notre corps, ressentir de la chaleur dans notre visage, de la tension dans notre mâchoire ou nos épaules, etc.",
+          "name": "changements physiques"
+        },
+        {
+          "desc": "Ceci décrit l'émotion elle-même, incluant les changements physiques et psychologiques.",
+          "name": "état"
+        },
+        {
+          "desc": "Ceci décrit l'expérience qualitative de l'émotion, comment la tristesse se sent triste, ou la colère se sent en colère.",
+          "name": "changements psychologiques"
+        },
+        {
+          "desc": "Ceci décrit nos réponses émotionnelles. Cela pourrait être un comportement externe comme crier de colère, ou pourrait être interne, comme supprimer la colère. Chaque émotion dans l'atlas montre une gamme d'actions immédiates, ainsi que des actions intrinsèques ou intentionnelles. L'action peut être soit constructive soit destructive. Menant à une collaboration accrue avec les autres ou à des difficultés dans la collaboration.",
+          "name": "action"
+        },
+        {
+          "desc": "Ceci décrit le résultat ou l'impact de nos actions émotionnelles. Cela pourrait être externe : si nous avons crié sur quelqu'un, ils pourraient alors crier en retour ; ou interne : si nous avons supprimé, nous pourrions ressentir une irritation continue. La état post-émotionnel pourrait mener à notre prochain épisode d'émotion, si quelqu'un nous crie dessus, nous sommes déclenchés une fois de plus vers soit la colère, la peur ou la tristesse/le regret pour nos actions. Notre état post-émotionnel est une opportunité pour nous de construire la conscience émotionnelle à travers la réflexion sur notre émotion, de comprendre le déclencheur, identifier l'expérience ressentie et considérer l'impact qu'elle a eu.",
+          "name": "état post-émotionnel"
+        },
+        {
+          "desc": "La Période de Saturation Émotionnelle est initiée avec l'apparition des actions et signaux — la perception est rétrécie et déformée, filtrant et interprétant l'information pertinente et cohérente avec l'émotion prédominante. Par exemple, quand la peur est éveillée, il y a une sensibilité accrue aux menaces réelles et imaginaires.",
+          "name": "période de saturation émotionnelle"
+        }
+      ],
+      "footer": [
+        "Les règles d'affichage apprises (pour réguler les signaux) et les règles de sentiment apprises (pour modifier, amplifier ou supprimer les sentiments subjectifs) surgissent. Nous ne savons pas à quelle vitesse elles se produisent. Se produisent-elles avant les signaux et actions, ou immédiatement pendant l'apparition des signaux et actions ? Les impulsions sont traduites en actions et signaux.",
+        "L'écart entre l'Étape 2 (impulsions) et l'Étape 4 (actions/signaux) est variable, selon les caractéristiques individuelles de chaque personne et le profil émotionnel de la personne, l'intensité du déclencheur évalué, et l'état psychologique momentané de l'individu quand le déclencheur est évalué (combien de sommeil la personne a eu la nuit dernière ; quelle émotion, le cas échéant, la personne a éprouvée en dernier ou éprouve actuellement, etc.)."
+      ],
+      "title": "Chronologie d'un épisode émotionnel",
+      "desc": ""
+    },
+    "intrinsic-or-intentional": {
+      "emotions": [
+        {
+          "name": "Colère",
+          "children": [
+            {
+              "name": "Intrinsèque",
+              "desc": "Se disputer, Insulter, Saper, Contester, Crier/hurler, Utiliser la force physique, Mijoter/ruminer, Être passif-agressif"
+            },
+            {
+              "name": "Intentionnel",
+              "desc": "Poser des limites, Être ferme, Se retirer, Prendre une pause, Respirer, Pratiquer la patience, Recadrer, Distraire, Éviter, Enlever l'interférence"
+            }
+          ]
+        },
+        {
+          "name": "Peur",
+          "children": [
+            {
+              "name": "Intrinsèque",
+              "desc": "Se retirer, Éviter, Hésiter, Se figer, Crier/hurler, Ruminer, S'inquiéter"
+            },
+            {
+              "name": "Intentionnel",
+              "desc": "Recadrer, Être conscient, Respirer, Distraire"
+            }
+          ]
+        },
+        {
+          "name": "Dégoût",
+          "children": [
+            {
+              "name": "Intrinsèque",
+              "desc": "Se retirer, Éviter, Vomir, Déshumaniser"
+            },
+            {
+              "name": "Intentionnel",
+              "desc": "Se retirer, Éviter"
+            }
+          ]
+        },
+        {
+          "name": "Tristesse",
+          "children": [
+            {
+              "name": "Intrinsèque",
+              "desc": "Chercher du réconfort, Se retirer, Pleurer, Protester, Se sentir honteux"
+            },
+            {
+              "name": "Intentionnel",
+              "desc": "Se retirer, Distraire"
+            }
+          ]
+        },
+        {
+          "name": "Plaisir",
+          "children": [
+            {
+              "name": "Intrinsèque",
+              "desc": "Chercher plus, Maintenir, S'exclamer, S'engager/connecter, Savourer, Se livrer"
+            },
+            {
+              "name": "Intentionnel",
+              "desc": "Aucun"
+            }
+          ]
+        }
+      ],
+      "title": "Actions intrinsèques ou intentionnelles",
+      "desc": "Les actions peuvent être intrinsèques (sans intention consciente) ou intentionnelles (une tentative active d'apporter un changement), ou les deux."
+    },
+    "partially-charted": {
+      "emotions": [
+        {
+          "name": "Amour",
+          "desc": "Un fort attachement à une autre personne, typiquement parent vers enfant et enfant vers parent, mais aussi entre ceux romantiquement engagés. Dans les relations amoureuses, colère, peur, tristesse, dégoût et plaisir peuvent tous être ressentis."
+        },
+        {
+          "name": "Surprise",
+          "desc": "L'émotion la plus brève, la surprise est déclenchée par l'occurrence soudaine d'un événement inattendu. C'est souvent une station d'arrêt qui mène, après plus d'évaluation, à n'importe laquelle des autres émotions."
+        },
+        {
+          "name": "Jalousie",
+          "desc": "Une histoire émotionnelle impliquant trois personnes : la personne désirée, la personne qui a peur de perdre l'engagement de la personne désirée, et le rival. Pendant la jalousie, colère, peur, dégoût, tristesse ou surprise peuvent être ressentis par n'importe laquelle des trois personnes."
+        },
+        {
+          "name": "Envie",
+          "desc": "Bien que souvent utilisée à tort comme synonyme de jalousie, l'envie implique de ressentir du ressentiment et de vouloir ce qu'une autre personne possède. Quand une personne ressent de l'envie, colère, mépris ou tristesse peuvent aussi être ressentis."
+        },
+        {
+          "name": "Haine",
+          "desc": "Colère durable focalisée sur une personne particulière ou un groupe de personnes. Avec le temps, la haine peut générer le trait de personnalité d'hostilité."
+        },
+        {
+          "name": "Embarras",
+          "desc": "Détresse ou gêne consciente de soi. Souvent activé par les louanges d'un autre, ou par un faux pas. Il n'a pas de signal vocal, mais peut causer une rougeur visible seulement chez les personnes à peau claire."
+        },
+        {
+          "name": "Honte",
+          "desc": "Une attente que d'autres seraient dégoûtés s'ils savaient ce à quoi la personne pensait ou avait fait. Cela motive un fort désir d'empêcher les autres d'apprendre ce que la personne a fait ou pensé."
+        },
+        {
+          "name": "Mépris",
+          "desc": "La dernière émotion à apparaître dans le développement de l'enfant, c'est un sentiment de supériorité morale envers la cible. Souvent mélangé avec le plaisir."
+        },
+        {
+          "name": "Culpabilité",
+          "desc": "Regret d'une action passée, qui motive le désir d'avouer l'action répréhensible, espérant le pardon."
+        }
+      ],
+      "title": "Émotions partiellement cartographiées",
+      "desc": "La moitié ou moins de la moitié des scientifiques des émotions croient qu'il existe des preuves convaincantes que chacune des suivantes est une émotion."
+    },
+    "personality-trait": {
+      "emotions": [
+        {
+          "name": "Colère",
+          "desc": "Une personne hostile est souvent en colère et est connue des autres pour la fréquence de ses réponses de colère au monde. Souvent la colère survient avec toute frustration ; le seuil de frustration est bas. Les personnes hostiles peuvent ressentir des regrets par la suite et s'excuser pour leur colère, mais continuent néanmoins à répondre avec colère. Parfois les personnes hostiles expriment leur colère de manière méchante, utilisant des mots pour rabaisser et causer une douleur psychologique aux autres."
+        },
+        {
+          "name": "Peur",
+          "desc": "Une personne timide ou craintive. Ce type de personnalité est susceptible d'éviter les risques et les situations inconfortables. Les personnes timides peuvent percevoir le monde comme plein de situations difficiles."
+        },
+        {
+          "name": "Dégoût",
+          "desc": "Une personne qui ressent souvent du dégoût envers les autres peut avoir un sentiment gonflé de sa propre valeur et une hyper-aversion envers les autres. Quelqu'un qui est dégoûté ou insatisfait de tout peut être désagréable à côtoyer."
+        },
+        {
+          "name": "Tristesse",
+          "desc": "Une personne morose. Ce type de personnalité peut avoir tendance à être abattu et voir le côté sombre de la vie. Les personnes moroses peuvent être enclines à se concentrer sur les aspects négatifs des situations et peuvent avoir du mal à trouver de la joie ou de l'optimisme."
+        },
+        {
+          "name": "Plaisir",
+          "desc": "Une personne joyeuse. Ce type de personnalité peut avoir tendance à être optimiste et à voir le bon côté des choses. Les personnes joyeuses peuvent être enclines à rechercher des expériences positives et peuvent avoir une vision généralement positive de la vie et des gens."
+        }
+      ],
+      "title": "Traits de personnalité",
+      "desc": "Quand une émotion particulière domine dans la personnalité de quelqu'un, nous pouvons voir comment cette émotion colore leur façon d'être dans le monde."
+    },
+    "moods": {
+      "emotions": [
+        {
+          "name": "Irritable",
+          "desc": "Prédisposé à devenir en colère, facilement provoqué. "
+        },
+        {
+          "name": "Appréhensif",
+          "desc": "Anxieux que quelque chose de mal arrive, sur les nerfs."
+        },
+        {
+          "name": "Aigre",
+          "desc": "Généralement répugné."
+        },
+        {
+          "name": "Dysphorique (ou avoir le cafard)",
+          "desc": "Un sentiment durable de découragement ou de déception."
+        },
+        {
+          "name": "Exalté",
+          "desc": "Un sentiment de bien-être généralisé et durable. "
+        }
+      ],
+      "title": "Humeurs",
+      "desc": "Les humeurs sont des cousines plus durables d'une émotion qui nous font ressentir l'émotion liée de manière répétée sans déclencheur clair."
+    },
     "psychopathology": {
       "emotions": [
         {
@@ -184,32 +470,6 @@
       ],
       "title": "Signal et Message",
       "desc": "Le signal d'une émotion décrit les façons universelles dont cette émotion est affichée dans le visage et/ou la voix. Il peut aussi y avoir d'autres changements de ton vocal et indicateurs de langage corporel, mais ceux-ci ne sont pas inclus ici car ils sont souvent culturellement informés et appris par opposition à universels.<br><br>Le message est ce que l'émotion nous dit. Toutes les émotions ont un message qui est une réponse au monde qui nous entoure."
-    },
-    "personality-trait": {
-      "emotions": [
-        {
-          "name": "Colère",
-          "desc": "Une personne hostile est souvent en colère et est connue des autres pour la fréquence de ses réponses de colère au monde. Souvent la colère survient avec toute frustration ; le seuil de frustration est bas. Les personnes hostiles peuvent ressentir des regrets par la suite et s'excuser pour leur colère, mais continuent néanmoins à répondre avec colère. Parfois les personnes hostiles expriment leur colère de manière méchante, utilisant des mots pour rabaisser et causer une douleur psychologique aux autres."
-        },
-        {
-          "name": "Peur",
-          "desc": "Une personne timide ou craintive. Ce type de personnalité est susceptible d'éviter les risques et les situations inconfortables. Les personnes timides peuvent percevoir le monde comme plein de situations difficiles."
-        },
-        {
-          "name": "Dégoût",
-          "desc": "Une personne qui ressent souvent du dégoût envers les autres peut avoir un sentiment gonflé de sa propre valeur et une hyper-aversion envers les autres. Quelqu'un qui est dégoûté ou insatisfait de tout peut être désagréable à côtoyer."
-        },
-        {
-          "name": "Tristesse",
-          "desc": "Une personne morose. Ce type de personnalité peut avoir tendance à être abattu et voir le côté sombre de la vie. Les personnes moroses peuvent être enclines à se concentrer sur les aspects négatifs des situations et peuvent avoir du mal à trouver de la joie ou de l'optimisme."
-        },
-        {
-          "name": "Plaisir",
-          "desc": "Une personne joyeuse. Ce type de personnalité peut avoir tendance à être optimiste et à voir le bon côté des choses. Les personnes joyeuses peuvent être enclines à rechercher des expériences positives et peuvent avoir une vision généralement positive de la vie et des gens."
-        }
-      ],
-      "title": "Traits de personnalité",
-      "desc": "Quand une émotion particulière domine dans la personnalité de quelqu'un, nous pouvons voir comment cette émotion colore leur façon d'être dans le monde."
     },
     "impediment-antidote": {
       "emotions": [
@@ -426,266 +686,6 @@
       ],
       "title": "Obstacles et Antidotes",
       "desc": "Le tableau ci-dessous a été créé par Matthieu Ricard et offre une perspective bouddhiste tibétaine sur la compréhension et le travail avec les émotions. Il montre comment contrer les émotions difficiles en cultivant des états mentaux positifs, connus sous le nom d'\"antidotes\". Il aide aussi à identifier les \"obstacles\" qui bloquent le ressenti d'émotions agréables et met en évidence les émotions agréables qui peuvent être difficiles. Vous pouvez en apprendre plus sur Matthieu Ricard <a href=\"https://www.matthieuricard.org/en/articles/buddhist-and-psychological-perspectives-on-emotions-and-well-being-by-paul-ekman-richard-j-davidson-matthieu-ricard-and-b-alan-wallace-current-directions-in-psychological-science-2005-14-2/\" target=\"blank\">ici</a>."
-    },
-    "triggers-timeline": {
-      "content": [
-        {
-          "desc": "Ceci décrit le contexte ou les situations qui peuvent influencer la façon dont nous entrons dans l'émotion. Par exemple, notre pré-condition pourrait être physiologique : avoir faim, être fatigué ou émotionnelle : avoir eu une journée très agréable ou stressante ou sortir d'un épisode émotionnel antérieur.",
-          "name": "pré-condition"
-        },
-        {
-          "desc": "Ceci décrit une personne, un lieu, une situation, une image, une pensée, un souvenir, une odeur, un son, un goût ou une idée que nous rencontrons du monde extérieur ou de notre propre esprit. Nous évaluons constamment et automatiquement, ou évaluons notre monde intérieur et extérieur. Par exemple, quand nous entendons une nouvelle chanson, nous superposons instantanément notre connaissance des instruments et des catégories de musique pendant que nous écoutons sans même y penser, c'est l'évaluation automatique.",
-          "name": "événement"
-        },
-        {
-          "desc": "Ceci décrit la combinaison de l'évaluation automatique correspondant à un script universel/câblé ou acquis dans notre base de données.",
-          "name": "déclencheur"
-        },
-        {
-          "desc": "Ceci décrit nos réponses universelles/câblées et nos souvenirs émotionnels individuellement acquis. Par exemple, si l'événement est une odeur et que dans la base de données se trouve le souvenir stocké du shampooing que notre mère utilisait dans notre enfance, nous sommes déclenchés pour éprouver une émotion de nostalgie chaleureuse d'une enfance heureuse. Quand l'événement évalué ressemble à quelque chose dans notre base de données, cela peut être très précis ou créer une perception déformée du déclencheur. Par exemple, si nous avons eu une expérience intimidante avec un policier quand nous étions jeunes et que nous sommes arrêtés à l'âge adulte, nous pourrions mal percevoir la situation avec un sentiment déformé de peur.",
-          "name": "base de données de perception"
-        },
-        {
-          "desc": "Ceci décrit les changements autonomes dans notre corps qui se produisent quand notre émotion surgit. Nous pouvons éprouver ces changements comme des sensations dans notre corps, ressentir de la chaleur dans notre visage, de la tension dans notre mâchoire ou nos épaules, etc.",
-          "name": "changements physiques"
-        },
-        {
-          "desc": "Ceci décrit l'émotion elle-même, incluant les changements physiques et psychologiques.",
-          "name": "état"
-        },
-        {
-          "desc": "Ceci décrit l'expérience qualitative de l'émotion, comment la tristesse se sent triste, ou la colère se sent en colère.",
-          "name": "changements psychologiques"
-        },
-        {
-          "desc": "Ceci décrit nos réponses émotionnelles. Cela pourrait être un comportement externe comme crier de colère, ou pourrait être interne, comme supprimer la colère. Chaque émotion dans l'atlas montre une gamme d'actions immédiates, ainsi que des actions intrinsèques ou intentionnelles. L'action peut être soit constructive soit destructive. Menant à une collaboration accrue avec les autres ou à des difficultés dans la collaboration.",
-          "name": "action"
-        },
-        {
-          "desc": "Ceci décrit le résultat ou l'impact de nos actions émotionnelles. Cela pourrait être externe : si nous avons crié sur quelqu'un, ils pourraient alors crier en retour ; ou interne : si nous avons supprimé, nous pourrions ressentir une irritation continue. La état post-émotionnel pourrait mener à notre prochain épisode d'émotion, si quelqu'un nous crie dessus, nous sommes déclenchés une fois de plus vers soit la colère, la peur ou la tristesse/le regret pour nos actions. Notre état post-émotionnel est une opportunité pour nous de construire la conscience émotionnelle à travers la réflexion sur notre émotion, de comprendre le déclencheur, identifier l'expérience ressentie et considérer l'impact qu'elle a eu.",
-          "name": "état post-émotionnel"
-        },
-        {
-          "desc": "La Période de Saturation Émotionnelle est initiée avec l'apparition des actions et signaux — la perception est rétrécie et déformée, filtrant et interprétant l'information pertinente et cohérente avec l'émotion prédominante. Par exemple, quand la peur est éveillée, il y a une sensibilité accrue aux menaces réelles et imaginaires.",
-          "name": "période de saturation émotionnelle"
-        }
-      ],
-      "footer": [
-        "Les règles d'affichage apprises (pour réguler les signaux) et les règles de sentiment apprises (pour modifier, amplifier ou supprimer les sentiments subjectifs) surgissent. Nous ne savons pas à quelle vitesse elles se produisent. Se produisent-elles avant les signaux et actions, ou immédiatement pendant l'apparition des signaux et actions ? Les impulsions sont traduites en actions et signaux.",
-        "L'écart entre l'Étape 2 (impulsions) et l'Étape 4 (actions/signaux) est variable, selon les caractéristiques individuelles de chaque personne et le profil émotionnel de la personne, l'intensité du déclencheur évalué, et l'état psychologique momentané de l'individu quand le déclencheur est évalué (combien de sommeil la personne a eu la nuit dernière ; quelle émotion, le cas échéant, la personne a éprouvée en dernier ou éprouve actuellement, etc.)."
-      ],
-      "title": "Chronologie d'un épisode émotionnel",
-      "desc": ""
-    },
-    "intrinsic-or-intentional": {
-      "emotions": [
-        {
-          "name": "Colère",
-          "children": [
-            {
-              "name": "Intrinsèque",
-              "desc": "Se disputer, Insulter, Saper, Contester, Crier/hurler, Utiliser la force physique, Mijoter/ruminer, Être passif-agressif"
-            },
-            {
-              "name": "Intentionnel",
-              "desc": "Poser des limites, Être ferme, Se retirer, Prendre une pause, Respirer, Pratiquer la patience, Recadrer, Distraire, Éviter, Enlever l'interférence"
-            }
-          ]
-        },
-        {
-          "name": "Peur",
-          "children": [
-            {
-              "name": "Intrinsèque",
-              "desc": "Se retirer, Éviter, Hésiter, Se figer, Crier/hurler, Ruminer, S'inquiéter"
-            },
-            {
-              "name": "Intentionnel",
-              "desc": "Recadrer, Être conscient, Respirer, Distraire"
-            }
-          ]
-        },
-        {
-          "name": "Dégoût",
-          "children": [
-            {
-              "name": "Intrinsèque",
-              "desc": "Se retirer, Éviter, Vomir, Déshumaniser"
-            },
-            {
-              "name": "Intentionnel",
-              "desc": "Se retirer, Éviter"
-            }
-          ]
-        },
-        {
-          "name": "Tristesse",
-          "children": [
-            {
-              "name": "Intrinsèque",
-              "desc": "Chercher du réconfort, Se retirer, Pleurer, Protester, Se sentir honteux"
-            },
-            {
-              "name": "Intentionnel",
-              "desc": "Se retirer, Distraire"
-            }
-          ]
-        },
-        {
-          "name": "Plaisir",
-          "children": [
-            {
-              "name": "Intrinsèque",
-              "desc": "Chercher plus, Maintenir, S'exclamer, S'engager/connecter, Savourer, Se livrer"
-            },
-            {
-              "name": "Intentionnel",
-              "desc": "Aucun"
-            }
-          ]
-        }
-      ],
-      "title": "Actions intrinsèques ou intentionnelles",
-      "desc": "Les actions peuvent être intrinsèques (sans intention consciente) ou intentionnelles (une tentative active d'apporter un changement), ou les deux."
-    },
-    "scientific-basis": {
-      "content": [
-        {
-          "desc": "Il existe des émotions universelles",
-          "name": "88%",
-          "formatting": "beforebreak"
-        },
-        {
-          "desc": "Il existe des signaux faciaux universels aux émotions",
-          "name": "80%",
-          "formatting": "break"
-        },
-        {
-          "desc": "La colère est une émotion universelle",
-          "name": "91%",
-          "formatting": ""
-        },
-        {
-          "desc": "La peur est une émotion universelle",
-          "name": "90%",
-          "formatting": ""
-        },
-        {
-          "desc": "Le dégoût est une émotion universelle",
-          "name": "86%",
-          "formatting": ""
-        },
-        {
-          "desc": "La tristesse est une émotion universelle",
-          "name": "80%",
-          "formatting": ""
-        },
-        {
-          "desc": "Le bonheur est une émotion universelle",
-          "name": "76%",
-          "formatting": "break"
-        },
-        {
-          "desc": "Il existe des déclencheurs universels aux émotions",
-          "name": "66%",
-          "formatting": ""
-        },
-        {
-          "desc": "Il existe une physiologie universelle des émotions",
-          "name": "51%",
-          "formatting": ""
-        },
-        {
-          "desc": "Il existe des émotions biologiquement distinctes et séparées",
-          "name": "49%",
-          "formatting": ""
-        },
-        {
-          "desc": "Les émotions sont construites par des facteurs sociaux",
-          "name": "11%",
-          "formatting": ""
-        },
-        {
-          "desc": "Les émotions sont à la fois biologiquement séparées et socialement construites",
-          "name": "3%",
-          "formatting": ""
-        }
-      ],
-      "footer": [
-        "L'existence de \"preuves convaincantes d'universaux dans tout aspect de l'émotion\" a été approuvée par 88% des répondants. Les preuves soutenant des signaux universels (visage ou voix) ont été approuvées par 80%. Il y avait moins d'accord sur l'existence de preuves convaincantes d'universaux dans les événements qui déclenchent une émotion (66%), la physiologie (51%), ou les mécanismes d'évaluation (44%). Ainsi, l'affirmation de Darwin en 1872 et le travail plus récent d'Ekman et Friesen (1969) et Izard (1971) concernant l'universalité de certaines expressions faciales ont été soutenus. En réponse à la question \"Laquelle des suivantes capture le mieux votre orientation vers l'émotion dans votre recherche?\", 49% ont choisi \"Émotions discrètes (colère, peur, etc.) combinant des influences biologiques et sociales\", 11% ont choisi \"Émotions comme construites, soit socialement ou psychologiquement, pour s'adapter aux conditions actuelles\", et 30% ont indiqué qu'ils utilisaient les deux approches. \n",
-        "Les répondants ont été demandés si les preuves pour chaque émotion étaient convaincantes. Il y avait un accord élevé sur cinq émotions (toutes décrites par Darwin et Wundt) : colère (91%), peur (90%), dégoût (86%), tristesse (80%) et bonheur (76%). Honte, surprise et embarras ont été listés par 40% à 50%. D'autres émotions, actuellement étudiées par divers chercheurs, ont reçu substantiellement moins de soutien : culpabilité (37%), mépris (34%), amour (32%), émerveillement (31%), douleur (28%), envie (28%), compassion (20%), fierté (9%) et gratitude (6%)."
-      ],
-      "title": "La base scientifique de ce travail",
-      "desc": "L'Atlas des Émotions est basé sur un consensus parmi les scientifiques déterminé par une enquête (dans le choix des cinq continents d'émotions et la relation des émotions aux humeurs, à la personnalité et à la psychopathologie), le travail de quelques scientifiques qui se sont concentrés sur la nomination des états dans les émotions, les définitions de dictionnaire, la théorie et les meilleures suppositions sur les actions pour chaque état et si elles sont constructives, destructives ou ambiguës. Pour plus d'informations, voir <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">\"Ce sur quoi les scientifiques qui étudient les émotions s'accordent,\"</a> par Paul Ekman (Perspectives on Psychological Science, 2015).",
-      "contentIntro": "L'enquête a été envoyée par email à la mi-juin 2014 à 248 scientifiques qui avaient fréquemment publié des recherches quantitatives sur l'émotion."
-    },
-    "moods": {
-      "emotions": [
-        {
-          "name": "Irritable",
-          "desc": "Prédisposé à devenir en colère, facilement provoqué. "
-        },
-        {
-          "name": "Appréhensif",
-          "desc": "Anxieux que quelque chose de mal arrive, sur les nerfs."
-        },
-        {
-          "name": "Aigre",
-          "desc": "Généralement répugné."
-        },
-        {
-          "name": "Dysphorique (ou avoir le cafard)",
-          "desc": "Un sentiment durable de découragement ou de déception."
-        },
-        {
-          "name": "Exalté",
-          "desc": "Un sentiment de bien-être généralisé et durable. "
-        }
-      ],
-      "title": "Humeurs",
-      "desc": "Les humeurs sont des cousines plus durables d'une émotion qui nous font ressentir l'émotion liée de manière répétée sans déclencheur clair."
-    },
-    "partially-charted": {
-      "emotions": [
-        {
-          "name": "Amour",
-          "desc": "Un fort attachement à une autre personne, typiquement parent vers enfant et enfant vers parent, mais aussi entre ceux romantiquement engagés. Dans les relations amoureuses, colère, peur, tristesse, dégoût et plaisir peuvent tous être ressentis."
-        },
-        {
-          "name": "Surprise",
-          "desc": "L'émotion la plus brève, la surprise est déclenchée par l'occurrence soudaine d'un événement inattendu. C'est souvent une station d'arrêt qui mène, après plus d'évaluation, à n'importe laquelle des autres émotions."
-        },
-        {
-          "name": "Jalousie",
-          "desc": "Une histoire émotionnelle impliquant trois personnes : la personne désirée, la personne qui a peur de perdre l'engagement de la personne désirée, et le rival. Pendant la jalousie, colère, peur, dégoût, tristesse ou surprise peuvent être ressentis par n'importe laquelle des trois personnes."
-        },
-        {
-          "name": "Envie",
-          "desc": "Bien que souvent utilisée à tort comme synonyme de jalousie, l'envie implique de ressentir du ressentiment et de vouloir ce qu'une autre personne possède. Quand une personne ressent de l'envie, colère, mépris ou tristesse peuvent aussi être ressentis."
-        },
-        {
-          "name": "Haine",
-          "desc": "Colère durable focalisée sur une personne particulière ou un groupe de personnes. Avec le temps, la haine peut générer le trait de personnalité d'hostilité."
-        },
-        {
-          "name": "Embarras",
-          "desc": "Détresse ou gêne consciente de soi. Souvent activé par les louanges d'un autre, ou par un faux pas. Il n'a pas de signal vocal, mais peut causer une rougeur visible seulement chez les personnes à peau claire."
-        },
-        {
-          "name": "Honte",
-          "desc": "Une attente que d'autres seraient dégoûtés s'ils savaient ce à quoi la personne pensait ou avait fait. Cela motive un fort désir d'empêcher les autres d'apprendre ce que la personne a fait ou pensé."
-        },
-        {
-          "name": "Mépris",
-          "desc": "La dernière émotion à apparaître dans le développement de l'enfant, c'est un sentiment de supériorité morale envers la cible. Souvent mélangé avec le plaisir."
-        },
-        {
-          "name": "Culpabilité",
-          "desc": "Regret d'une action passée, qui motive le désir d'avouer l'action répréhensible, espérant le pardon."
-        }
-      ],
-      "title": "Émotions partiellement cartographiées",
-      "desc": "La moitié ou moins de la moitié des scientifiques des émotions croient qu'il existe des preuves convaincantes que chacune des suivantes est une émotion."
     }
   },
   "further-reading": {
