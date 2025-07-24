@@ -384,7 +384,7 @@ svg {
 					outline: none;
 					border: none;
 					color: #000;
-					padding-bottom: 5px;;
+					padding-bottom: 5px;
 					border-bottom: 4px solid #000;
 					font-weight: 500;
 				}
@@ -1126,12 +1126,19 @@ svg {
 			line-height: 2;
 			cursor: pointer;
 
-			/* Reserve space for active indicator without shifting text */
-			border-left: 4px solid transparent;
-			padding-left: 8px;
-
-			&.active {
-				border-left-color: #000;
+			ul {
+				li {
+					a {
+						/* Reserve space for active indicator without shifting text */
+						border-left: 4px solid transparent;
+						padding-left: 8px;
+					}
+					&.active {
+						a {
+							border-left-color: #000;
+						}
+					}
+				}
 			}
 
 			&:hover {
@@ -1149,9 +1156,24 @@ svg {
 	}
 	a:focus {
 		outline: none !important;
-		border: 0;
 		text-decoration: none;
-		font-weight: 500;
+	}
+}
+
+#learn_more-toc {
+	ul {
+		li {
+			a {
+				/* Reserve space for active indicator without shifting text */
+				border-left: 4px solid transparent;
+				padding-left: 8px;
+			}
+			&.active {
+				a {
+					border-left-color: #000;
+				}
+			}
+		}
 	}
 }
 
