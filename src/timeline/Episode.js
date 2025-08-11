@@ -112,19 +112,18 @@ export default class Episode {
 	}
 
 	replaceContent(emotion, animate = false) {
-		let colors = this.configsByEmotion[emotion].colorPalette;
+		let color = this.configsByEmotion[emotion].colorPalette[1];
 		this.stateCircles.forEach((circle, i) => {
-			let color =
-				colors[
-					Math.round(
-						(i * (colors.length - 1)) /
-							(this.stateCircles.length - 1)
-					)
-				];
 			circle.setAttribute(
 				"fill",
 				"rgb(" + color[0] + "," + color[1] + "," + color[2] + ")"
 			);
+			circle.setAttribute("fill-opacity", "0.65");
+			if (i == this.stateCircles.length - 1) {
+				gsap.set(circle, {
+					filter: `drop-shadow(0 0 30px rgba(${color[0]}, ${color[1]}, ${color[2]}, 0.65))`,
+				});
+			}
 		});
 
 		this.statePhraseText.forEach(
@@ -153,8 +152,6 @@ export default class Episode {
 			timeline.select("#c2", this.parent),
 			timeline.select("#c3", this.parent),
 			timeline.select("#c4", this.parent),
-			timeline.select("#c5", this.parent),
-			timeline.select("#c6", this.parent),
 		];
 		this.initialRadii = this.stateCircles.map(
 			(c) => c.getBoundingClientRect().width / 2
@@ -169,14 +166,16 @@ export default class Episode {
 				(this.stateCircles.length -
 					(Math.round(i + this.stateCircles.length / 2) %
 						this.stateCircles.length)) *
-				4;
+				this.stateCircles.length;
 			// reduce the effect for the large ones
 			radiusDelta *= 1 - i / (this.stateCircles.length - 1);
 			// don't pass in a float
 			radiusDelta = Math.round(radiusDelta);
 			timeline.to(
 				circle,
-				6 - (3 * i) / (this.stateCircles.length - 1),
+				this.stateCircles.length -
+					(this.stateCircles.length * i) /
+						(this.stateCircles.length - 1),
 				{
 					attr: {
 						rx: "-=" + radiusDelta,

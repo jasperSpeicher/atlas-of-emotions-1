@@ -21,7 +21,7 @@ $more-content-transition: transform 700ms ease;
 		color: #a00;
 	}
 	&[data-emotion="sadness"] {
-		color: #05f;
+		color: rgb(8, 98, 215);
 	}
 	&[data-emotion="fear"] {
 		color: #a0a;
@@ -115,7 +115,7 @@ body {
 	}
 
 	&[class*="viewing-timeline-fp"] {
-		background-color: #454545;
+		background-color: #333333;
 		.original-content {
 			opacity: 0;
 			z-index: 0;
@@ -549,6 +549,7 @@ svg {
 			a.active,
 			a:hover {
 				@include emotion-nav-colors;
+				outline: none;
 			}
 		}
 	}

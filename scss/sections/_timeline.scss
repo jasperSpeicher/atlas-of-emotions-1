@@ -50,7 +50,7 @@
 			li:last-of-type {
 				margin-bottom: 0;
 			}
-			p:first-of-type{
+			p:first-of-type {
 				margin-bottom: 1em;
 			}
 
@@ -94,7 +94,7 @@
 				transition: opacity 0.3s;
 				margin-bottom: 1em;
 			}
-			&.closed {	
+			&.closed {
 				padding-bottom: 10px;
 				min-height: 53px;
 				& > * {
