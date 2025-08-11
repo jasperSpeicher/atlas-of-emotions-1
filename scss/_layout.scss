@@ -201,7 +201,7 @@ svg {
 
 .original-content {
 	position: absolute;
-	left: $section-text-width;
+    left: $section-text-width;
 	right: 0;
 	top: 0;
 	bottom: 0;
@@ -361,7 +361,7 @@ svg {
 	padding-top: $top-nav-padding-top;
 	background-color: transparent;
 	z-index: 200;
-	left: $section-text-width;
+    left: $section-text-width - 1px;
 	right: 0;
 	background-color: $top-nav-background;
 	.menu {
@@ -520,7 +520,7 @@ svg {
 .emotion-nav {
 	position: fixed;
 	bottom: 0;
-	left: $section-text-width;
+    left: $section-text-width;
 	right: 0;
 	height: auto;
 	z-index: 200;
@@ -560,7 +560,7 @@ svg {
 	transition: margin-left 1s ease, opacity 1s ease;
 
 	&.more-visible {
-		margin-left: $section-text-width;
+        margin-left: $section-text-width;
 	}
 
 	a {
@@ -695,7 +695,7 @@ svg {
 .section-text {
 	position: absolute;
 	top: 0;
-	width: $section-text-width;
+    width: $section-text-width;
 	bottom: 0;
 	background-color: $section-text-background-color;
 	font-size: 20px;
@@ -922,7 +922,7 @@ svg {
 	&:after {
 		top: 0;
 		bottom: 0;
-		left: $section-text-width;
+        left: $section-text-width;
 		right: 0;
 		content: "";
 		display: block;
@@ -1084,7 +1084,7 @@ svg {
 	left: 0;
 	overflow: hidden;
 	background-color: transparent;
-	padding-left: $section-text-width;
+    padding-left: $section-text-width;
 	img {
 		width: 100%;
 		height: auto;
