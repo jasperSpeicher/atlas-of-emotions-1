@@ -1127,19 +1127,17 @@ svg {
 			line-height: 2;
 			cursor: pointer;
 
-			ul {
-				li {
-					a {
-						/* Reserve space for active indicator without shifting text */
-						border-left: 3px solid transparent;
-						padding-left: 8px;
-					}
-					&.active {
-						a {
-							border-left-color: #000;
-						}
-					}
-				}
+			/* Reserve space for active indicator for both top-level and child items */
+			> a {
+				border-left: 3px solid transparent;
+				padding-left: 8px;
+				display: inline-block;
+				line-height: 1;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			&.active > a {
+				border-left-color: #000;
 			}
 
 			&:hover {
@@ -1148,11 +1146,11 @@ svg {
 		}
 		margin-bottom: 0;
 	}
-  	a,
-  	a:visited,
-  	a:active,
-  	a:hover,
-  	a:focus {
+	a,
+	a:visited,
+	a:active,
+	a:hover,
+	a:focus {
   		color: rgba(#000, 0.5);
   		text-decoration: none;
   		transition: color 0.2s ease;
