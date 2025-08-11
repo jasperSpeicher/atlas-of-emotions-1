@@ -8,6 +8,36 @@
   <link href="config.yml?v=2" type="text/yaml" rel="cms-config-url">
 </head>
 <body>
+  <script>
+    // Handle OAuth callback from hash
+    (function() {
+      const hash = window.location.hash;
+      if (hash && hash.includes('access_token=')) {
+        console.log('Processing OAuth callback from hash:', hash);
+        
+        // Extract token from hash (handle both #access_token= and #/access_token= formats)
+        const hashParams = new URLSearchParams(hash.replace(/^#\/?/, ''));
+        const token = hashParams.get('access_token');
+        
+        if (token) {
+          console.log('Found token, storing and clearing hash');
+          
+          // Store in localStorage with the key Decap CMS expects
+          localStorage.setItem('netlify-cms-user', JSON.stringify({
+            token: token,
+            provider: 'github',
+            login: 'github-user',
+            name: 'GitHub User'
+          }));
+          
+          // Clear the hash and reload to let CMS initialize normally
+          window.location.hash = '';
+          window.location.reload();
+          return;
+        }
+      }
+    })();
+  </script>
   <script src="https://unpkg.com/decap-cms@3.1.2/dist/decap-cms.js"></script>
 </body>
 </html> 
