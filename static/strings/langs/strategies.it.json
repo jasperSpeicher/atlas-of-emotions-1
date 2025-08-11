@@ -78,12 +78,12 @@
           "paragraphs": [
             {
               "body": "<strong>Come</strong> &mdash; Utilizzando il sito Atlas of Emotion possiamo esplorare, con specificità, quale emozione stiamo provando. Invece di \"mi sento male\" o \"mi sento stressato\", possiamo identificare quale emozione potremmo star sperimentando attraverso le famiglie di emozioni universali elencate o le emozioni non universali trovate qui.",
-              "image": "/assets/uploads/labelling.png"
+              "insight": "Denominare un'emozione può aiutarci a vedere noi stessi e la situazione più chiaramente.",
+              "insight_image": "assets/uploads/puzzle-head.png"
             },
             {
               "body": "<strong>Perché</strong> &mdash; Denominare o etichettare le nostre emozioni crea un momento di \"decentramento\". Il decentramento significa che possiamo rifocalizzarci su una prospettiva più ampia identificando i nostri sentimenti invece di essere coinvolti nell'eccitazione di un'emozione che può saturare il nostro corpo e la nostra mente. Applicare una parola per identificare la nostra emozione supporta una 'granularità emotiva'. Pratichiamo la nostra granularità prendendoci un momento per fare una pausa e considerare la nostra esperienza e poi etichettare: \"In questo momento sono consapevole di provare delusione\". Questa semplice etichetta non deve portare alcun giudizio o agenda, solo denominare può servire ad aiutarci a vedere noi stessi e la situazione più chiaramente.",
-              "insight": "Denominare un'emozione può aiutarci a vedere noi stessi e la situazione più chiaramente.",
-              "insight_image": "assets/uploads/puzzle-head.png"
+              "image": "/assets/uploads/labelling.png"
             }
           ]
         },
@@ -165,12 +165,12 @@
           "paragraphs": [
             {
               "body": "<strong>Respiro</strong> &mdash; Un respiro profondo è un modo molto utile per fare una pausa. Porta più ossigeno al nostro sistema nervoso e ci aiuta a processare l'eccitazione fisica nel nostro corpo. Una grande parte del nostro stato emotivo sono i cambiamenti fisici che sperimentiamo, e il nostro respiro è un modo per assistere fisicamente il nostro corpo durante la pausa.",
-              "image": "/assets/uploads/pausing.png"
+              "insight": "Quando ci concentriamo sulla realtà fisica di essere nel nostro corpo, le emozioni distorcono meno la nostra percezione.",
+              "insight_image": "assets/uploads/heart-head.png"
             },
             {
               "body": "<strong>Sensazioni</strong> &mdash; Portare attenzione e consapevolezza alle sensazioni fisiche nel corpo può impedire a un'emozione di intensificarsi. Mentre sentiamo il corpo, pensiamo meno a quello che sembrava causare l'emozione, solo sentendo e percependo l'esperienza nel corpo. Aiuta essere specifici: che sensazioni stiamo provando e dove, come stanno cambiando? Quando ci concentriamo sulla realtà fisica di essere nel nostro corpo, le emozioni distorcono meno la nostra percezione.",
-              "insight": "Quando ci concentriamo sulla realtà fisica di essere nel nostro corpo, le emozioni distorcono meno la nostra percezione.",
-              "insight_image": "assets/uploads/heart-head.png"
+              "image": "/assets/uploads/pausing.png"
             },
             {
               "body": "Nota che la relazione di ognuno con il proprio corpo è unica, e talvolta una storia di trauma può influenzare la nostra capacità di usare il corpo e il respiro come strategie efficaci. Per maggiori informazioni su strategie alternative per \"l'ancoraggio\", vedi <a target=\"_blank\" rel=\"noopener\" href=\"https://psychcentral.com/health/trauma-informed-mindfulness#how-to-be-trauma-informed\">questo articolo.</a>"

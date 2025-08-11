@@ -78,12 +78,12 @@
           "paragraphs": [
             {
               "body": "<strong>How</strong> &mdash; In using the Atlas of Emotion site we can explore, with specificity, what emotion we are feeling. Instead of “I feel bad,” or “I feel stressed” we can identify what emotion we may be experiencing through the families of universal emotions listed or the non universal emotions found here.",
-              "image": "/assets/uploads/labelling.png"
+              "insight": "Naming an emotion can help us see ourselves and the situation more clearly.",
+              "insight_image": "assets/uploads/puzzle-head.png"
             },
             {
               "body": "<strong>Why</strong> &mdash; Naming, or labeling our emotions creates a moment of “de-centering.” De-centering means we can re-focus on a bigger perspective by identifying our feelings instead of being caught up in the arousal of an emotion which can saturate our body and mind. Applying a word to identify our emotion supports an ‘emotion granularity.’ We practice our granularity by taking a moment to pause and consider our experience and then label, “Right now I am aware of feeling disappointed.” This simple label doesn’t have to carry any judgment or agenda, just naming can serve to help us see ourselves and the situation more clearly.",
-              "insight": "Naming an emotion can help us see ourselves and the situation more clearly.",
-              "insight_image": "assets/uploads/puzzle-head.png"
+              "image": "/assets/uploads/labelling.png"
             }
           ]
         },
@@ -165,12 +165,12 @@
           "paragraphs": [
             {
               "body": "<strong>Breath</strong> &mdash; A deep breath is one very helpful way to pause. It brings more oxygen to our nervous system and help us process the physical arousal in our body. A big part of our emotional state is the physical changes we experience, and our breath is a way to physically assist our body during the pause.",
-              "image": "/assets/uploads/pausing.png"
+              "insight": "When we focus on the physical reality of being in our body, emotions distort our perception less.",
+              "insight_image": "assets/uploads/heart-head.png"
             },
             {
               "body": "<strong>Sensations</strong> &mdash; Bringing attention and awareness to physical sensations in the body can prevent an emotion from escalating. While we are sensing the body, we think less about what seemed to cause the emotion, just feeling and sensing the experience in the body. It helps to be specific–what sensations are we feeling and where, how are they changing? When we focus on the physical reality of being in our body, emotions distort our perception less.",
-              "insight": "When we focus on the physical reality of being in our body, emotions distort our perception less.",
-              "insight_image": "assets/uploads/heart-head.png"
+              "image": "/assets/uploads/pausing.png"
             },
             {
               "body": "Note that everyone's relationship with their body is unique, and sometimes a history of trauma can affect our ability to use the body and breath as effective strategies. For more information on alternative strategies for \"grounding\", see <a target=\"_blank\" rel=\"noopener\" href=\"https://psychcentral.com/health/trauma-informed-mindfulness#how-to-be-trauma-informed\">this article.</a>"

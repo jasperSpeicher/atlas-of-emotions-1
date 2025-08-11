@@ -78,12 +78,12 @@
           "paragraphs": [
             {
               "body": "<strong>Wie</strong> &mdash; Bei der Nutzung der Atlas of Emotion-Website können wir mit Genauigkeit erkunden, welche Emotion wir fühlen. Anstatt \"mir geht es schlecht\" oder \"ich fühle mich gestresst\" können wir identifizieren, welche Emotion wir möglicherweise durch die hier aufgelisteten Familien universeller Emotionen oder die hier gefundenen nicht-universellen Emotionen erleben.",
-              "image": "/assets/uploads/labelling.png"
+              "insight": "Das Benennen einer Emotion kann uns helfen, uns selbst und die Situation klarer zu sehen.",
+              "insight_image": "assets/uploads/puzzle-head.png"
             },
             {
               "body": "<strong>Warum</strong> &mdash; Das Benennen oder Etikettieren unserer Emotionen schafft einen Moment der \"Entzentrierung\". Entzentrierung bedeutet, dass wir uns auf eine größere Perspektive refokussieren können, indem wir unsere Gefühle identifizieren, anstatt in der Erregung einer Emotion gefangen zu sein, die unseren Körper und Geist sättigen kann. Ein Wort anzuwenden, um unsere Emotion zu identifizieren, unterstützt eine 'Emotionsgenauigkeit'. Wir üben unsere Genauigkeit, indem wir einen Moment innehalten und unsere Erfahrung betrachten und dann etikettieren: \"Gerade jetzt bin ich mir bewusst, dass ich Enttäuschung fühle\". Diese einfache Etikettierung muss kein Urteil oder keine Agenda tragen, nur das Benennen kann dazu dienen, uns selbst und die Situation klarer zu sehen.",
-              "insight": "Das Benennen einer Emotion kann uns helfen, uns selbst und die Situation klarer zu sehen.",
-              "insight_image": "assets/uploads/puzzle-head.png"
+              "image": "/assets/uploads/labelling.png"
             }
           ]
         },
@@ -165,12 +165,12 @@
           "paragraphs": [
             {
               "body": "<strong>Atmung</strong> &mdash; Ein tiefer Atemzug ist eine sehr hilfreiche Art, innezuhalten. Er bringt mehr Sauerstoff in unser Nervensystem und hilft uns, die körperliche Erregung in unserem Körper zu verarbeiten. Ein großer Teil unseres emotionalen Zustands sind die körperlichen Veränderungen, die wir erleben, und unsere Atmung ist eine Möglichkeit, unserem Körper während der Pause physisch zu helfen.",
-              "image": "/assets/uploads/pausing.png"
+              "insight": "Wenn wir uns auf die physische Realität des Seins in unserem Körper konzentrieren, verzerren Emotionen unsere Wahrnehmung weniger.",
+              "insight_image": "assets/uploads/heart-head.png"
             },
             {
               "body": "<strong>Empfindungen</strong> &mdash; Aufmerksamkeit und Bewusstsein für körperliche Empfindungen im Körper zu bringen, kann verhindern, dass eine Emotion eskaliert. Während wir den Körper spüren, denken wir weniger über das nach, was die Emotion verursacht zu haben schien, und fühlen und spüren nur die Erfahrung im Körper. Es hilft, spezifisch zu sein: Welche Empfindungen fühlen wir und wo, wie verändern sie sich? Wenn wir uns auf die physische Realität des Seins in unserem Körper konzentrieren, verzerren Emotionen unsere Wahrnehmung weniger.",
-              "insight": "Wenn wir uns auf die physische Realität des Seins in unserem Körper konzentrieren, verzerren Emotionen unsere Wahrnehmung weniger.",
-              "insight_image": "assets/uploads/heart-head.png"
+              "image": "/assets/uploads/pausing.png"
             },
             {
               "body": "Beachten Sie, dass die Beziehung jeder Person zu ihrem Körper einzigartig ist, und manchmal kann eine Geschichte von Trauma unsere Fähigkeit beeinträchtigen, den Körper und die Atmung als wirksame Strategien zu nutzen. Für weitere Informationen über alternative Strategien für \"Erdung\", siehe <a target=\"_blank\" rel=\"noopener\" href=\"https://psychcentral.com/health/trauma-informed-mindfulness#how-to-be-trauma-informed\">diesen Artikel.</a>"

@@ -78,12 +78,12 @@
           "paragraphs": [
             {
               "body": "<strong>Comment</strong> &mdash; En utilisant le site Atlas of Emotion, nous pouvons explorer, avec spécificité, quelle émotion nous ressentons. Au lieu de \"je me sens mal\" ou \"je me sens stressé\", nous pouvons identifier quelle émotion nous pourrions éprouver à travers les familles d'émotions universelles listées ou les émotions non universelles trouvées ici.",
-              "image": "/assets/uploads/labelling.png"
+              "insight": "Nommer une émotion peut nous aider à nous voir et à voir la situation plus clairement.",
+              "insight_image": "assets/uploads/puzzle-head.png"
             },
             {
               "body": "<strong>Pourquoi</strong> &mdash; Nommer ou étiqueter nos émotions crée un moment de \"décentrement\". Le décentrement signifie que nous pouvons nous recentrer sur une perspective plus large en identifiant nos sentiments au lieu d'être pris dans l'excitation d'une émotion qui peut saturer notre corps et notre esprit. Appliquer un mot pour identifier notre émotion soutient une 'granularité émotionnelle'. Nous pratiquons notre granularité en prenant un moment pour faire une pause et considérer notre expérience, puis étiqueter : \"En ce moment, je suis conscient de ressentir de la déception\". Cette étiquette simple n'a pas besoin de porter de jugement ou d'agenda, simplement nommer peut servir à nous aider à nous voir et à voir la situation plus clairement.",
-              "insight": "Nommer une émotion peut nous aider à nous voir et à voir la situation plus clairement.",
-              "insight_image": "assets/uploads/puzzle-head.png"
+              "image": "/assets/uploads/labelling.png"
             }
           ]
         },
@@ -165,12 +165,12 @@
           "paragraphs": [
             {
               "body": "<strong>Respiration</strong> &mdash; Une respiration profonde est une façon très utile de faire une pause. Elle apporte plus d'oxygène à notre système nerveux et nous aide à traiter l'éveil physique dans notre corps. Une grande partie de notre état émotionnel sont les changements physiques que nous vivons, et notre respiration est un moyen d'aider physiquement notre corps pendant la pause.",
-              "image": "/assets/uploads/pausing.png"
+              "insight": "Quand nous nous concentrons sur la réalité physique d'être dans notre corps, les émotions déforment moins notre perception.",
+              "insight_image": "assets/uploads/heart-head.png"
             },
             {
               "body": "<strong>Sensations</strong> &mdash; Apporter attention et conscience aux sensations physiques dans le corps peut empêcher une émotion de s'intensifier. Pendant que nous ressentons le corps, nous pensons moins à ce qui semblait causer l'émotion, juste ressentir et percevoir l'expérience dans le corps. Il aide d'être spécifique : quelles sensations ressentons-nous et où, comment changent-elles ? Quand nous nous concentrons sur la réalité physique d'être dans notre corps, les émotions déforment moins notre perception.",
-              "insight": "Quand nous nous concentrons sur la réalité physique d'être dans notre corps, les émotions déforment moins notre perception.",
-              "insight_image": "assets/uploads/heart-head.png"
+              "image": "/assets/uploads/pausing.png"
             },
             {
               "body": "Notez que la relation de chaque personne avec son corps est unique, et parfois un historique de trauma peut affecter notre capacité à utiliser le corps et la respiration comme stratégies efficaces. Pour plus d'informations sur les stratégies alternatives pour \"l'ancrage\", voir <a target=\"_blank\" rel=\"noopener\" href=\"https://psychcentral.com/health/trauma-informed-mindfulness#how-to-be-trauma-informed\">cet article.</a>"

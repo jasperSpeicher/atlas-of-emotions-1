@@ -78,12 +78,12 @@
           "paragraphs": [
             {
               "body": "<strong>Cómo</strong> &mdash; Utilizando el sitio Atlas of Emotion podemos explorar, con especificidad, qué emoción estamos sintiendo. En lugar de \"me siento mal\" o \"me siento estresado\", podemos identificar qué emoción podríamos estar experimentando a través de las familias de emociones universales enumeradas o las emociones no universales que se encuentran aquí.",
-              "image": "/assets/uploads/labelling.png"
+              "insight": "Nombrar una emoción puede ayudarnos a vernos a nosotros mismos y la situación más claramente.",
+              "insight_image": "assets/uploads/puzzle-head.png"
             },
             {
               "body": "<strong>Por qué</strong> &mdash; Nombrar o etiquetar nuestras emociones crea un momento de \"descentramiento\". Descentrarse significa que podemos reenfocarnos en una perspectiva más amplia identificando nuestros sentimientos en lugar de quedar atrapados en la activación de una emoción que puede saturar nuestro cuerpo y mente. Aplicar una palabra para identificar nuestra emoción apoya una 'granularidad emocional'. Practicamos nuestra granularidad tomando un momento para pausar y considerar nuestra experiencia y luego etiquetar: \"Ahora mismo estoy consciente de sentir decepción\". Esta etiqueta simple no tiene que llevar ningún juicio o agenda, solo nombrar puede servir para ayudarnos a vernos a nosotros mismos y la situación más claramente.",
-              "insight": "Nombrar una emoción puede ayudarnos a vernos a nosotros mismos y la situación más claramente.",
-              "insight_image": "assets/uploads/puzzle-head.png"
+              "image": "/assets/uploads/labelling.png"
             }
           ]
         },
@@ -165,12 +165,12 @@
           "paragraphs": [
             {
               "body": "<strong>Respiración</strong> &mdash; Una respiración profunda es una forma muy útil de hacer una pausa. Trae más oxígeno a nuestro sistema nervioso y nos ayuda a procesar la activación física en nuestro cuerpo. Una gran parte de nuestro estado emocional son los cambios físicos que experimentamos, y nuestra respiración es una forma de asistir físicamente a nuestro cuerpo durante la pausa.",
-              "image": "/assets/uploads/pausing.png"
+              "insight": "Cuando nos enfocamos en la realidad física de estar en nuestro cuerpo, las emociones distorsionan menos nuestra percepción.",
+              "insight_image": "assets/uploads/heart-head.png"
             },
             {
               "body": "<strong>Sensaciones</strong> &mdash; Traer atención y conciencia a las sensaciones físicas en el cuerpo puede prevenir que una emoción se intensifique. Mientras estamos sintiendo el cuerpo, pensamos menos en lo que parecía causar la emoción, solo sintiendo y percibiendo la experiencia en el cuerpo. Ayuda ser específico: ¿qué sensaciones estamos sintiendo y dónde, cómo están cambiando? Cuando nos enfocamos en la realidad física de estar en nuestro cuerpo, las emociones distorsionan menos nuestra percepción.",
-              "insight": "Cuando nos enfocamos en la realidad física de estar en nuestro cuerpo, las emociones distorsionan menos nuestra percepción.",
-              "insight_image": "assets/uploads/heart-head.png"
+              "image": "/assets/uploads/pausing.png"
             },
             {
               "body": "Tenga en cuenta que la relación de cada persona con su cuerpo es única, y a veces un historial de trauma puede afectar nuestra capacidad de usar el cuerpo y la respiración como estrategias efectivas. Para más información sobre estrategias alternativas para \"enraizarse\", vea <a target=\"_blank\" rel=\"noopener\" href=\"https://psychcentral.com/health/trauma-informed-mindfulness#how-to-be-trauma-informed\">este artículo.</a>"
