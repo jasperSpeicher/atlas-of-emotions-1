@@ -442,7 +442,6 @@ collections:
                     fields:
                       - { label: "Body", name: "body", widget: "markdown", i18n: true }
                       - { label: "Image", name: "image", widget: "image", required: false, i18n: false }
-                      - { label: "Image Width", name: "image_width", widget: "string", required: false, i18n: true }
                       - { label: "Insight", name: "insight", widget: "string", required: false, i18n: true }
                       - { label: "Insight Image", name: "insight_image", widget: "image", required: false, i18n: false }
           - label: "In the Moment Section"
@@ -468,7 +467,6 @@ collections:
                     fields:
                       - { label: "Body", name: "body", widget: "markdown", i18n: true }
                       - { label: "Image", name: "image", widget: "image", required: false, i18n: false }
-                      - { label: "Image Width", name: "image_width", widget: "string", required: false, i18n: true }
                       - { label: "Insight", name: "insight", widget: "string", required: false, i18n: true }
                       - { label: "Insight Image", name: "insight_image", widget: "image", required: false, i18n: false }
           - label: "Living in Balance Section"
@@ -494,7 +492,6 @@ collections:
                     fields:
                       - { label: "Body", name: "body", widget: "markdown", i18n: true }
                       - { label: "Image", name: "image", widget: "image", required: false, i18n: false }
-                      - { label: "Image Width", name: "image_width", widget: "string", required: false, i18n: true }
                       - { label: "Insight", name: "insight", widget: "string", required: false, i18n: true }
                       - { label: "Insight Image", name: "insight_image", widget: "image", required: false, i18n: false }
 
