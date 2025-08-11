@@ -25,7 +25,7 @@ export default {
 		const intro = document.createElement("div");
 		intro.classList.add("intro");
 		const image = document.createElement("img");
-		image.src = "img/journal.png";
+		image.src = "img/science.png";
 		intro.appendChild(utils.makeTable(this.data.desc, []));
 		intro.appendChild(image);
 		this.wrapper.appendChild(intro);
