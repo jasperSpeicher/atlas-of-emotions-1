@@ -8,6 +8,155 @@
   <link href="config.yml?v=2" type="text/yaml" rel="cms-config-url">
 </head>
 <body>
+  <script>
+    // Handle OAuth callback from hash
+    (function() {
+      const hash = window.location.hash;
+      console.log('Current hash:', hash);
+
+      if (hash && hash.includes('access_token=')) {
+        console.log('Processing OAuth callback from hash:', hash);
+
+        // Extract token from hash (handle both #access_token= and #/access_token= formats)
+        let hashParams;
+        if (hash.startsWith('#/')) {
+          // Handle #/access_token= format
+          hashParams = new URLSearchParams(hash.substring(2));
+        } else {
+          // Handle #access_token= format
+          hashParams = new URLSearchParams(hash.substring(1));
+        }
+        const token = hashParams.get('access_token');
+        
+        if (token) {
+          console.log('Found token, storing and clearing hash');
+
+          // Fetch user info from GitHub API
+          fetch('https://api.github.com/user', {
+            headers: {
+              'Authorization': `token ${token}`,
+              'Accept': 'application/vnd.github.v3+json'
+            }
+          })
+          .then(response => response.json())
+          .then(user => {
+            console.log('GitHub user info:', user);
+
+            // Store in localStorage with the key Decap CMS expects
+            localStorage.setItem('netlify-cms-user', JSON.stringify({
+              token: token,
+              provider: 'github',
+              login: user.login || 'github-user',
+              name: user.name || user.login || 'GitHub User',
+              avatar_url: user.avatar_url,
+              id: user.id
+            }));
+
+            // Also try the decap-cms-user key
+            localStorage.setItem('decap-cms-user', JSON.stringify({
+              token: token,
+              provider: 'github',
+              login: user.login || 'github-user',
+              name: user.name || user.login || 'GitHub User',
+              avatar_url: user.avatar_url,
+              id: user.id
+            }));
+
+            console.log('Token and user info stored, reloading...');
+
+            // Clear the hash and reload to let CMS initialize normally
+            window.location.hash = '';
+            window.location.reload();
+          })
+          .catch(error => {
+            console.error('Failed to fetch user info:', error);
+
+            // Fallback: store token with minimal user info
+            localStorage.setItem('netlify-cms-user', JSON.stringify({
+              token: token,
+              provider: 'github',
+              login: 'github-user',
+              name: 'GitHub User'
+            }));
+
+            window.location.hash = '';
+            window.location.reload();
+          });
+
+          return;
+        }
+      }
+    })();
+
+    // Also listen for hashchange events
+    window.addEventListener('hashchange', function() {
+      const hash = window.location.hash;
+      console.log('Hash changed:', hash);
+
+      if (hash && hash.includes('access_token=')) {
+        console.log('Processing OAuth callback from hashchange:', hash);
+
+        // Extract token from hash
+        let hashParams;
+        if (hash.startsWith('#/')) {
+          hashParams = new URLSearchParams(hash.substring(2));
+        } else {
+          hashParams = new URLSearchParams(hash.substring(1));
+        }
+        const token = hashParams.get('access_token');
+
+        if (token) {
+          console.log('Found token from hashchange, processing...');
+
+          // Fetch user info from GitHub API
+          fetch('https://api.github.com/user', {
+            headers: {
+              'Authorization': `token ${token}`,
+              'Accept': 'application/vnd.github.v3+json'
+            }
+          })
+          .then(response => response.json())
+          .then(user => {
+            console.log('GitHub user info from hashchange:', user);
+
+            // Store in localStorage
+            localStorage.setItem('netlify-cms-user', JSON.stringify({
+              token: token,
+              provider: 'github',
+              login: user.login || 'github-user',
+              name: user.name || user.login || 'GitHub User',
+              avatar_url: user.avatar_url,
+              id: user.id
+            }));
+
+            localStorage.setItem('decap-cms-user', JSON.stringify({
+              token: token,
+              provider: 'github',
+              login: user.login || 'github-user',
+              name: user.name || user.login || 'GitHub User',
+              avatar_url: user.avatar_url,
+              id: user.id
+            }));
+
+            console.log('Token stored from hashchange, reloading...');
+            window.location.hash = '';
+            window.location.reload();
+          })
+          .catch(error => {
+            console.error('Failed to fetch user info from hashchange:', error);
+            localStorage.setItem('netlify-cms-user', JSON.stringify({
+              token: token,
+              provider: 'github',
+              login: 'github-user',
+              name: 'GitHub User'
+            }));
+            window.location.hash = '';
+            window.location.reload();
+          });
+        }
+      }
+    });
+  </script>
   <script src="https://unpkg.com/decap-cms@3.1.2/dist/decap-cms.js"></script>
 </body>
 </html> 
