@@ -2165,8 +2165,8 @@
         "all": "Tout"
       },
       "learn_more": {
-        "menu": "navigation_learn_more_menu_item",
-        "heading": "navigation_learn_more_section_header"
+        "menu": "En savoir plus",
+        "heading": "En savoir plus"
       }
     },
     "intro": {
@@ -2546,91 +2546,5 @@
         }
       }
     }
-  },
-  "about": {
-    "subsections": [
-      {
-        "title": "A propos des Ekmans",
-        "desc": "Paul Ekman est un psychologue américain reconnu, pionnier dans la recherche sur les émotions. Après avoir enseignée dans la UCSF durant 40 ans et collaboré avec des organismes chargés de faire respecter les lois mais aussi avec le Dalai Lama. Il dirge actuellement une entreprise privée de formation. Eve Ekman est une universitaire post-doctortat dans le Centre Osher pour les médecines complémentaires de la UCSF. Comme formatrice d'enseignants à la culture de l'équilibre émotionnel (CEB en anglais), une formation autour de la régulation des émotions et de la méditation, Eve adapta le CEB pour l'enseigner aux donneurs de soins de divers domaines.",
-        "title_mobile": "A propos des Ekmans",
-        "desc_mobile": "Paul Ekman est un psychologue américain reconnu, pionnier dans la recherche sur les émotions. Après avoir enseignée dans la UCSF durant 40 ans et collaboré avec des organismes chargés de faire respecter les lois mais aussi avec le Dalai Lama. Il dirge actuellement une entreprise privée de formation. Eve Ekman est une universitaire post-doctortat dans le Centre Osher pour les médecines complémentaires de la UCSF. Comme formatrice d'enseignants à la culture de l'équilibre émotionnel (CEB en anglais), une formation autour de la régulation des émotions et de la méditation, Eve adapta le CEB pour l'enseigner aux donneurs de soins de divers domaines."
-      },
-      {
-        "title": "A propos du Design",
-        "desc": "a été fondé par Eric Rodenbeck en 2001. Depuis, l'étude s'est développé et compte aujourd'hui 12 individus, et a établis une réputation d'experts dans la création de projets convaincants de dessin interactifs et de visualisation de données. Stamen n'est pas unlaboratoire d'investigation ni une société de dessin traditionnelle, mais quelque chose d'intermédiaire : un lieu où l'on valorise la collaboration, où les bonnes idées peuvent venir de nimporte quel partie et les résultats ont une place prépondérantes.",
-        "title_mobile": "A propos du Design",
-        "desc_mobile": "a été fondé par Eric Rodenbeck en 2001. Depuis, l'étude s'est développé et compte aujourd'hui 12 individus, et a établis une réputation d'experts dans la création de projets convaincants de dessin interactifs et de visualisation de données. Stamen n'est pas unlaboratoire d'investigation ni une société de dessin traditionnelle, mais quelque chose d'intermédiaire : un lieu où l'on valorise la collaboration, où les bonnes idées peuvent venir de nimporte quel partie et les résultats ont une place prépondérantes."
-      },
-      {
-        "title": "about_header_3",
-        "desc": "about_body_3",
-        "title_mobile": "about_header_3",
-        "desc_mobile": "about_body_3"
-      },
-      {
-        "title": "about_header_4",
-        "desc": "about_body_4",
-        "title_mobile": "about_header_4",
-        "desc_mobile": "about_body_4"
-      },
-      {
-        "title": "about_header_5",
-        "desc": "about_body_5",
-        "title_mobile": "about_header_5",
-        "desc_mobile": "about_body_5"
-      },
-      {
-        "title": "about_header_6",
-        "desc": "about_body_6",
-        "title_mobile": "about_header_6",
-        "desc_mobile": "about_body_6"
-      },
-      {
-        "title": "about_header_7",
-        "desc": "about_body_7",
-        "title_mobile": "about_header_7",
-        "desc_mobile": "about_body_7"
-      }
-    ],
-    "title": "A propos de cet Atlas",
-    "desc": "L'atlas des émotions est un outil intéractif dont le but est de cutliver la conscience des émotions. Ce site invite à visualiser, identifier et explorer 5 émotions primaires (et ses états sentimentaux, les actions, les déclencheurs et les humeurs) afin d'établir une meilleure compréhension de leur influence sur nos vies. Même si nous ne pouvons pas toujours choisir quelle émotions ressentir  et quand les ressentir, en cultivant la conscience émotionnelle nous pouvons choisir la manière de répondre à ce que nous ressentons. L'atlas est né lorsque le Dalaï-Lama demanda à un spécialiste des émotions Paul Ekman de créer une carte des émotions qui puisse aider les personnes à apprendre à avoir des expériences constructives sur leurs émotions. Ekman, expert sur le sujet, a été commandité par le passé de différents projets en lien avec les émotions, entre autres le film de Pixar Inside Out (Vice-versa). Conjointement avec sa fille, Eve Ekman, il créa l'Atlas des Emotions en réponse à cette demande du Dalai Lama.",
-    "title_mobile": "A propos de cet Atlas",
-    "desc_mobile": "L'atlas des émotions est un outil intéractif dont le but est de cutliver la conscience des émotions. Ce site invite à visualiser, identifier et explorer 5 émotions primaires (et ses états sentimentaux, les actions, les déclencheurs et les humeurs) afin d'établir une meilleure compréhension de leur influence sur nos vies. Même si nous ne pouvons pas toujours choisir quelle émotions ressentir  et quand les ressentir, en cultivant la conscience émotionnelle nous pouvons choisir la manière de répondre à ce que nous ressentons. L'atlas est né lorsque le Dalaï-Lama demanda à un spécialiste des émotions Paul Ekman de créer une carte des émotions qui puisse aider les personnes à apprendre à avoir des expériences constructives sur leurs émotions. Ekman, expert sur le sujet, a été commandité par le passé de différents projets en lien avec les émotions, entre autres le film de Pixar Inside Out (Vice-versa). Conjointement avec sa fille, Eve Ekman, il créa l'Atlas des Emotions en réponse à cette demande du Dalai Lama.",
-    "sectionName": "A propos",
-    "sectionName_mobile": "A propos"
-  },
-  "emotrak": {
-    "subsections": [
-      {
-        "title": "",
-        "desc": "La Docteur Eve Ekman et ses collaborateurs ont développés une application nouvelle, EmoTrack. Inscrit toi pour être le premier ou la première à être au courant de la sorte de cette application d'entrainement émotionnel sur une base scientifique.",
-        "title_mobile": "",
-        "desc_mobile": "La Docteur Eve Ekman et ses collaborateurs ont développés une application nouvelle, EmoTrack. Inscrit toi pour être le premier ou la première à être au courant de la sorte de cette application d'entrainement émotionnel sur une base scientifique.",
-        "image": "emotrak",
-        "mail": null
-      },
-      {
-        "title": "",
-        "desc": "emotrak_section_2",
-        "title_mobile": "",
-        "desc_mobile": "emotrak_section_2",
-        "image": null,
-        "mail": true
-      },
-      {
-        "title": "",
-        "desc": "La Docteur Eve Ekman est une académique post-doctorat de l'université de San Francisco en Californie qui étudie l'épuisement et le bien-être émotionnel. La Docteur Ekman s'est dédiée à développer et à évaluer EmoTrak pour soutenir les donneurs de soins. L'application est un outil d'autoévaluation pour étudier les déclencheurs d'émotions et les expérience et réponses émotionelles, qui apportent à l'usager de courtes méditations centrées sur les émotions et aussi un retour d'expérience sur son profil émotionnel.",
-        "title_mobile": "",
-        "desc_mobile": "La Docteur Eve Ekman est une académique post-doctorat de l'université de San Francisco en Californie qui étudie l'épuisement et le bien-être émotionnel. La Docteur Ekman s'est dédiée à développer et à évaluer EmoTrak pour soutenir les donneurs de soins. L'application est un outil d'autoévaluation pour étudier les déclencheurs d'émotions et les expérience et réponses émotionelles, qui apportent à l'usager de courtes méditations centrées sur les émotions et aussi un retour d'expérience sur son profil émotionnel.",
-        "image": null,
-        "mail": null
-      }
-    ],
-    "title": "EmoTrak",
-    "desc": "Améliore ton bien-être avec l'entrainement quotidien d'équilibre émotionnel",
-    "header_mobile": "EmoTrak",
-    "body_mobile": "Améliore ton bien-être avec l'entrainement quotidien d'équilibre émotionnel<br> \"<!-- Begin MailChimp Signup Form -->\n<link href=\"\"//cdn-images.mailchimp.com/embedcode/slim-10_7.css\"\" rel=\"\"stylesheet\"\" type=\"\"text/css\"\">\n<style type=\"\"text/css\"\">\n        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.\n           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n</style>\n<div id=\"\"mc_embed_signup\"\">\n<form action=\"\"//eveekman.us12.list-manage.com/subscribe/post?u=a8f41488aed929208e96dcf44&amp;id=76c8861d7d\"\" method=\"\"post\"\" id=\"\"mc-embedded-subscribe-form\"\" name=\"\"mc-embedded-subscribe-form\"\" class=\"\"validate\"\" target=\"\"_blank\"\" novalidate>\n    <div id=\"\"mc_embed_signup_scroll\"\">\n        <label for=\"\"mce-EMAIL\"\">Subscribe for EmoTrak Release Updates</label>\n        <input type=\"\"email\"\" value=\"\"\"\" name=\"\"EMAIL\"\" class=\"\"email\"\" id=\"\"mce-EMAIL\"\" placeholder=\"\"email address\"\" required>\n    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n    <div style=\"\"position: absolute; left: -5000px;\"\" aria-hidden=\"\"true\"\"><input type=\"\"text\"\" name=\"\"b_a8f41488aed929208e96dcf44_76c8861d7d\"\" tabindex=\"\"-1\"\" value=\"\"\"\"></div>\n    <div class=\"\"clear\"\"><input type=\"\"submit\"\" value=\"\"Subscribe\"\" name=\"\"subscribe\"\" id=\"\"mc-embedded-subscribe\"\" class=\"\"button\"\"></div>\n    </div>\n</form>\n</div>\n\n<!--End mc_embed_signup-->\"",
-    "sectionName": "EmoTrak",
-    "sectionName_mobile": "EmoTrak"
   }
 }

@@ -2165,8 +2165,8 @@
         "all": "todo"
       },
       "learn_more": {
-        "menu": "navigation_learn_more_menu_item",
-        "heading": "navigation_learn_more_section_header"
+        "menu": "Saber más",
+        "heading": "Saber más"
       }
     },
     "intro": {
@@ -2546,91 +2546,5 @@
         }
       }
     }
-  },
-  "about": {
-    "subsections": [
-      {
-        "title": "Acerca de los Ekman",
-        "desc": "Paul Ekman es un renombrado psicólogo estadounidense, pionero en el campo de la investigación de las emociones. Luego de impartir enseñanzas en la UCSF durante 40 años y de colaborar con asociados tan diversos como organismos encargados de vigilar el cumplimiento de la ley y el Dalai Lama, actualmente dirige una compañía privada de capacitación. \n \nEve Ekman es académica posdoctoral en el Osher Center for Integrative Medicine de la UCSF. Como capacitadora de maestros para el Cultivo del Equilibrio Emocional (CEB, por sus siglas en inglés), una intervención de regulación de las emociones y meditación, Eve adapta el CEB para capacitar a proveedores de cuidados en diversos campos.",
-        "title_mobile": "Acerca de los Ekman",
-        "desc_mobile": "Paul Ekman es un renombrado psicólogo estadounidense, pionero en el campo de la investigación de las emociones. Luego de impartir enseñanzas en la UCSF durante 40 años y de colaborar con asociados tan diversos como organismos encargados de vigilar el cumplimiento de la ley y el Dalai Lama, actualmente dirige una compañía privada de capacitación. \n \nEve Ekman es académica posdoctoral en el Osher Center for Integrative Medicine de la UCSF. Como capacitadora de maestros para el Cultivo del Equilibrio Emocional (CEB, por sus siglas en inglés), una intervención de regulación de las emociones y meditación, Eve adapta el CEB para capacitar a proveedores de cuidados en diversos campos."
-      },
-      {
-        "title": "Acerca de Design",
-        "desc": "ñ<a href=\"http://www.stamen.com/\">Stamen Design</a> fue fundada por Eric Rodenbeck en 2001. De entonces a la fecha el estudio ha crecido hasta contar con un personal de 12 individuos, y ha establecido su reputación como experta en la creación de convincentes proyectos de diseño interactivo y visualización de datos. Stamen no es ni un laboratorio de investigación ni una firma tradicional de diseño, sino algo intermedio: un lugar donde se valora la colaboración, las buenas ideas pueden venir de cualquier parte y los resultados tienen un lugar preponderante. ",
-        "title_mobile": "Acerca de Design",
-        "desc_mobile": "ñ<a href=\"http://www.stamen.com/\">Stamen Design</a> fue fundada por Eric Rodenbeck en 2001. De entonces a la fecha el estudio ha crecido hasta contar con un personal de 12 individuos, y ha establecido su reputación como experta en la creación de convincentes proyectos de diseño interactivo y visualización de datos. Stamen no es ni un laboratorio de investigación ni una firma tradicional de diseño, sino algo intermedio: un lugar donde se valora la colaboración, las buenas ideas pueden venir de cualquier parte y los resultados tienen un lugar preponderante. "
-      },
-      {
-        "title": "about_header_3",
-        "desc": "about_body_3",
-        "title_mobile": "about_header_3",
-        "desc_mobile": "about_body_3"
-      },
-      {
-        "title": "about_header_4",
-        "desc": "about_body_4",
-        "title_mobile": "about_header_4",
-        "desc_mobile": "about_body_4"
-      },
-      {
-        "title": "about_header_5",
-        "desc": "about_body_5",
-        "title_mobile": "about_header_5",
-        "desc_mobile": "about_body_5"
-      },
-      {
-        "title": "about_header_6",
-        "desc": "about_body_6",
-        "title_mobile": "about_header_6",
-        "desc_mobile": "about_body_6"
-      },
-      {
-        "title": "about_header_7",
-        "desc": "about_body_7",
-        "title_mobile": "about_header_7",
-        "desc_mobile": "about_body_7"
-      }
-    ],
-    "title": "Acerca de este Atlas",
-    "desc": "El Atlas de las Emociones es una herramienta interactiva cuyo propósito es cultivar la conciencia de las emociones. El sitio te invita a visualizar, identificar y explorar cinco emociones primarias (así como sus estados de sentimiento, acciones, desencadenantes y humores afines) a fin de alcanzar una mejor comprensión de cómo influyen en nuestra vida. Si bien no siempre podemos elegir qué emociones sentir y cuándo sentirlas, mediante el cultivo de la conciencia emocional puede ser posible elegir el modo como respondemos a lo que estamos sintiendo. \n\nEl Atlas nació cuando el Dalai Lama pidió al prominente investigador de las emociones Paul Ekman crear un mapa de las emociones que pudiese ayudar a las personas a aprender a tener experiencias emocionales más constructivas. Ekman, experto en ese campo, en el pasado ya había fungido como asesor en una extensa variedad de proyectos relacionados con las emociones, entre ellos la popular película de Pixar Inside Out (Intensa-Mente o Del revés). Conjuntamente con su hija, la académica Eve Ekman, creó el Atlas de las Emociones en respuesta a la petición del Dalai Lama.",
-    "title_mobile": "Acerca de este Atlas",
-    "desc_mobile": "El Atlas de las Emociones es una herramienta interactiva cuyo propósito es cultivar la conciencia de las emociones. El sitio te invita a visualizar, identificar y explorar cinco emociones primarias (así como sus estados de sentimiento, acciones, desencadenantes y humores afines) a fin de alcanzar una mejor comprensión de cómo influyen en nuestra vida. Si bien no siempre podemos elegir qué emociones sentir y cuándo sentirlas, mediante el cultivo de la conciencia emocional puede ser posible elegir el modo como respondemos a lo que estamos sintiendo. \n\nEl Atlas nació cuando el Dalai Lama pidió al prominente investigador de las emociones Paul Ekman crear un mapa de las emociones que pudiese ayudar a las personas a aprender a tener experiencias emocionales más constructivas. Ekman, experto en ese campo, en el pasado ya había fungido como asesor en una extensa variedad de proyectos relacionados con las emociones, entre ellos la popular película de Pixar Inside Out (Intensa-Mente o Del revés). Conjuntamente con su hija, la académica Eve Ekman, creó el Atlas de las Emociones en respuesta a la petición del Dalai Lama.",
-    "sectionName": "ñAbout",
-    "sectionName_mobile": "ñAbout"
-  },
-  "emotrak": {
-    "subsections": [
-      {
-        "title": "",
-        "desc": "La Dra. Eve Ekman y colaboradores están desarrollando una novedosa app, EmoTrak. Inscríbase en seguida para ser el primero o primera en enterarse de la liberación de esta app de entrenamiento emocional con bases científicas.",
-        "title_mobile": "",
-        "desc_mobile": "La Dra. Eve Ekman y colaboradores están desarrollando una novedosa app, EmoTrak. Inscríbase en seguida para ser el primero o primera en enterarse de la liberación de esta app de entrenamiento emocional con bases científicas.",
-        "image": "emotrak",
-        "mail": null
-      },
-      {
-        "title": "",
-        "desc": "true in mail column indicates that it will include hardcoded subscribe link",
-        "title_mobile": "",
-        "desc_mobile": "true in mail column indicates that it will include hardcoded subscribe link",
-        "image": null,
-        "mail": true
-      },
-      {
-        "title": "",
-        "desc": "La Dra. Eve Ekman es una académica posdoctoral de la University of California San Francisco que estudia el agotamiento y el bienestar emocional. La Dra. Ekman se ha dedicado a desarrollar y evaluar EmoTrak para apoyar a los proveedores de cuidados de salud. La app es una herramienta de autoevaluación para investigar los disparadores de emociones y las experiencias y respuestas emocionales, que provee asimismo breves meditaciones enfocadas en las emociones, así como retroalimentación sobre el perfil emocional del usuario.",
-        "title_mobile": "",
-        "desc_mobile": "La Dra. Eve Ekman es una académica posdoctoral de la University of California San Francisco que estudia el agotamiento y el bienestar emocional. La Dra. Ekman se ha dedicado a desarrollar y evaluar EmoTrak para apoyar a los proveedores de cuidados de salud. La app es una herramienta de autoevaluación para investigar los disparadores de emociones y las experiencias y respuestas emocionales, que provee asimismo breves meditaciones enfocadas en las emociones, así como retroalimentación sobre el perfil emocional del usuario.",
-        "image": null,
-        "mail": null
-      }
-    ],
-    "title": "EmoTrak",
-    "desc": "Mejore su bienestar con el entrenamiento diario en el equilibrio emocional.",
-    "header_mobile": "EmoTrak",
-    "body_mobile": "Mejore su bienestar con el entrenamiento diario en el equilibrio emocional.<br> \"<!-- Begin MailChimp Signup Form -->\n<link href=\"\"//cdn-images.mailchimp.com/embedcode/slim-10_7.css\"\" rel=\"\"stylesheet\"\" type=\"\"text/css\"\">\n<style type=\"\"text/css\"\">\n        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.\n           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n</style>\n<div id=\"\"mc_embed_signup\"\">\n<form action=\"\"//eveekman.us12.list-manage.com/subscribe/post?u=a8f41488aed929208e96dcf44&amp;id=76c8861d7d\"\" method=\"\"post\"\" id=\"\"mc-embedded-subscribe-form\"\" name=\"\"mc-embedded-subscribe-form\"\" class=\"\"validate\"\" target=\"\"_blank\"\" novalidate>\n    <div id=\"\"mc_embed_signup_scroll\"\">\n        <label for=\"\"mce-EMAIL\"\">Subscribe for EmoTrak Release Updates</label>\n        <input type=\"\"email\"\" value=\"\"\"\" name=\"\"EMAIL\"\" class=\"\"email\"\" id=\"\"mce-EMAIL\"\" placeholder=\"\"email address\"\" required>\n    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n    <div style=\"\"position: absolute; left: -5000px;\"\" aria-hidden=\"\"true\"\"><input type=\"\"text\"\" name=\"\"b_a8f41488aed929208e96dcf44_76c8861d7d\"\" tabindex=\"\"-1\"\" value=\"\"\"\"></div>\n    <div class=\"\"clear\"\"><input type=\"\"submit\"\" value=\"\"Subscribe\"\" name=\"\"subscribe\"\" id=\"\"mc-embedded-subscribe\"\" class=\"\"button\"\"></div>\n    </div>\n</form>\n</div>\n\n<!--End mc_embed_signup-->\"",
-    "sectionName": "EmoTrak",
-    "sectionName_mobile": "EmoTrak"
   }
 }

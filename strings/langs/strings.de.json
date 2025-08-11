@@ -2165,8 +2165,8 @@
         "all": "Alles"
       },
       "learn_more": {
-        "menu": "navigation_learn_more_menu_item",
-        "heading": "navigation_learn_more_section_header"
+        "menu": "Mehr erfahren",
+        "heading": "Mehr erfahren"
       }
     },
     "intro": {
@@ -2546,91 +2546,5 @@
         }
       }
     }
-  },
-  "about": {
-    "subsections": [
-      {
-        "title": "Über Paul und Eve Ekman",
-        "desc": "Paul Ekman ist ein anerkannter US- amerikanischer Psychologe, der einer der ersten war, der auf dem Gebiet der Emotionen geforscht hat. Nach 40 Jahren Lehre an der UCSF, langer Zusammenarbet mit law enforcement agencies und dem Dalai Lama, hat er nun eine eigene Trainingsfirma. \nEve Ekman, post doctoral scholar am UCSF Osher Center für intergrative Medizin. Sie unterrichtet Cultivating Emotional Balance (CEB), eine Methode die Emotionsregulation und Meditation kombiniert. Eve nutzt CEB auch um Anbieter im Gesundheitssektor zu trainieren.",
-        "title_mobile": "Über Paul und Eve Ekman",
-        "desc_mobile": "Paul Ekman ist ein anerkannter US- amerikanischer Psychologe, der einer der ersten war, der auf dem Gebiet der Emotionen geforscht hat. Nach 40 Jahren Lehre an der UCSF, langer Zusammenarbet mit law enforcement agencies und dem Dalai Lama, hat er nun eine eigene Trainingsfirma. \nEve Ekman, post doctoral scholar am UCSF Osher Center für intergrative Medizin. Sie unterrichtet Cultivating Emotional Balance (CEB), eine Methode die Emotionsregulation und Meditation kombiniert. Eve nutzt CEB auch um Anbieter im Gesundheitssektor zu trainieren."
-      },
-      {
-        "title": "Über Stamen Design",
-        "desc": "Stamen Design wurde 2001 von Eric Rodenbeck gegründet. Inwzischen arbeiten dort 12 Personen. Stamen Design hat sich einen Namen gemacht für seine Kompetenz bei der Erstellung überzeugender interaktiver Design- und Datenvisualisierungsprojekte. Stamen ist weder ein Forschungslabor noch eine traditionelle Design Agentur aber ein Ort, an dem Zusammenarbeit geschätzt wird, gute Ideen von überall her kommen können und Ergebnisse im Vordergrund stehen. ",
-        "title_mobile": "Über Stamen Design",
-        "desc_mobile": "Stamen Design wurde 2001 von Eric Rodenbeck gegründet. Inwzischen arbeiten dort 12 Personen. Stamen Design hat sich einen Namen gemacht für seine Kompetenz bei der Erstellung überzeugender interaktiver Design- und Datenvisualisierungsprojekte. Stamen ist weder ein Forschungslabor noch eine traditionelle Design Agentur aber ein Ort, an dem Zusammenarbeit geschätzt wird, gute Ideen von überall her kommen können und Ergebnisse im Vordergrund stehen. "
-      },
-      {
-        "title": "about_header_3",
-        "desc": "about_body_3",
-        "title_mobile": "about_header_3",
-        "desc_mobile": "about_body_3"
-      },
-      {
-        "title": "about_header_4",
-        "desc": "about_body_4",
-        "title_mobile": "about_header_4",
-        "desc_mobile": "about_body_4"
-      },
-      {
-        "title": "about_header_5",
-        "desc": "about_body_5",
-        "title_mobile": "about_header_5",
-        "desc_mobile": "about_body_5"
-      },
-      {
-        "title": "about_header_6",
-        "desc": "about_body_6",
-        "title_mobile": "about_header_6",
-        "desc_mobile": "about_body_6"
-      },
-      {
-        "title": "about_header_7",
-        "desc": "about_body_7",
-        "title_mobile": "about_header_7",
-        "desc_mobile": "about_body_7"
-      }
-    ],
-    "title": "Über den Atlas",
-    "desc": "Der Atlas der Emotionen ist ein interaktives Tool, welches kreiert wurde, um emotionales Bewusstheit zu lernen. Diese Seite lädt dich ein, die 5 Grundemotionen (sowie ihre damit verbundenen Gefühle, Handlungen, Auslöser und Stimmungen) zu visualisieren, identifizieren und zu erkunden, wie diese unser Leben beeinflussen. Auch wenn wir uns nicht immer aussuchen können, wie wir uns fühlen oder wann wir was fühlen, so ist es mit emotionaler Bewusstheit vielleicht möglich, zu entscheiden, wie wir auf ein Gefühl reagieren. \nDie Geschichte des Atlas begann, als der Dalai Lama den berühmten Emotionsforscher Paul Ekman gebeten hat, eine Karte der Emotionen zu kreieren, mit der Menschen lernen können zielführender mit emotionalen Erfahrungen umzugehen. Ekman, ein Experte auf diesem Gebiet, hatte bereits vorher Projekte zum Thema Emotionen beraten, so z.B. den erfolgreichen Pixar FIlm \" Alles steht Kopf\". Zusammen mit seiner Tocher Eve Ekmam kreierte Ekman den Atlas der Emotionen als Antwort auf die Bitte des Dalai Lamas. ",
-    "title_mobile": "Über den Atlas",
-    "desc_mobile": "Der Atlas der Emotionen ist ein interaktives Tool, welches kreiert wurde, um emotionales Bewusstheit zu lernen. Diese Seite lädt dich ein, die 5 Grundemotionen (sowie ihre damit verbundenen Gefühle, Handlungen, Auslöser und Stimmungen) zu visualisieren, identifizieren und zu erkunden, wie diese unser Leben beeinflussen. Auch wenn wir uns nicht immer aussuchen können, wie wir uns fühlen oder wann wir was fühlen, so ist es mit emotionaler Bewusstheit vielleicht möglich, zu entscheiden, wie wir auf ein Gefühl reagieren. \nDie Geschichte des Atlas begann, als der Dalai Lama den berühmten Emotionsforscher Paul Ekman gebeten hat, eine Karte der Emotionen zu kreieren, mit der Menschen lernen können zielführender mit emotionalen Erfahrungen umzugehen. Ekman, ein Experte auf diesem Gebiet, hatte bereits vorher Projekte zum Thema Emotionen beraten, so z.B. den erfolgreichen Pixar FIlm \" Alles steht Kopf\". Zusammen mit seiner Tocher Eve Ekmam kreierte Ekman den Atlas der Emotionen als Antwort auf die Bitte des Dalai Lamas. ",
-    "sectionName": "Über den Atlas",
-    "sectionName_mobile": "Über den Atlas"
-  },
-  "emotrak": {
-    "subsections": [
-      {
-        "title": "",
-        "desc": "Eine brandneue App, EmoTrak, wird von Dr. Eve Ekman und Mitarbeitern entwickelt. Melden Sie sich hier an, um als Erster über die Veröffentlichung dieser wissenschaftsbasierten Emotionstrainingsapp informiert zu werden.",
-        "title_mobile": "",
-        "desc_mobile": "Eine brandneue App, EmoTrak, wird von Dr. Eve Ekman und Mitarbeitern entwickelt. Melden Sie sich hier an, um als Erster über die Veröffentlichung dieser wissenschaftsbasierten Emotionstrainingsapp informiert zu werden.",
-        "image": "emotrak",
-        "mail": null
-      },
-      {
-        "title": "",
-        "desc": "emotrak_section_2",
-        "title_mobile": "",
-        "desc_mobile": "emotrak_section_2",
-        "image": null,
-        "mail": true
-      },
-      {
-        "title": "",
-        "desc": "Dr. Eve Ekman ist an der UCSF eine Habilitationsstipendiatin, die über Bunrout und emotionale Gesundheit forscht. Emo Trak wurde von ihr entwickelt, um Gesundheitsdienstleister zu unterstützen. Die App ist ein Selbsteinschätzungstool, um emotionale Auslöser, das Erleben von Emotionen und die Reaktionen darauf einzuschätzen. Zusätzlich enthält die App kurze emotionsfokussierte Meditationseinheiten und gibt Feedback zu deinem emotionalen Profil. ",
-        "title_mobile": "",
-        "desc_mobile": "Dr. Eve Ekman ist an der UCSF eine Habilitationsstipendiatin, die über Bunrout und emotionale Gesundheit forscht. Emo Trak wurde von ihr entwickelt, um Gesundheitsdienstleister zu unterstützen. Die App ist ein Selbsteinschätzungstool, um emotionale Auslöser, das Erleben von Emotionen und die Reaktionen darauf einzuschätzen. Zusätzlich enthält die App kurze emotionsfokussierte Meditationseinheiten und gibt Feedback zu deinem emotionalen Profil. ",
-        "image": null,
-        "mail": null
-      }
-    ],
-    "title": "EmoTrak",
-    "desc": "Verbessern Sie Ihr Wohlbefinden durch tägliches emotionales Gleichgewichtstraining.",
-    "header_mobile": "EmoTrak",
-    "body_mobile": "Verbessern Sie Ihr Wohlbefinden durch tägliches emotionales Gleichgewichtstraining. Jetzt anmelden.<br> \"<!-- Begin MailChimp Signup Form -->\n<link href=\"\"//cdn-images.mailchimp.com/embedcode/slim-10_7.css\"\" rel=\"\"stylesheet\"\" type=\"\"text/css\"\">\n<style type=\"\"text/css\"\">\n        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.\n           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n</style>\n<div id=\"\"mc_embed_signup\"\">\n<form action=\"\"//eveekman.us12.list-manage.com/subscribe/post?u=a8f41488aed929208e96dcf44&amp;id=76c8861d7d\"\" method=\"\"post\"\" id=\"\"mc-embedded-subscribe-form\"\" name=\"\"mc-embedded-subscribe-form\"\" class=\"\"validate\"\" target=\"\"_blank\"\" novalidate>\n    <div id=\"\"mc_embed_signup_scroll\"\">\n        <label for=\"\"mce-EMAIL\"\">Subscribe for EmoTrak Release Updates</label>\n        <input type=\"\"email\"\" value=\"\"\"\" name=\"\"EMAIL\"\" class=\"\"email\"\" id=\"\"mce-EMAIL\"\" placeholder=\"\"email address\"\" required>\n    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n    <div style=\"\"position: absolute; left: -5000px;\"\" aria-hidden=\"\"true\"\"><input type=\"\"text\"\" name=\"\"b_a8f41488aed929208e96dcf44_76c8861d7d\"\" tabindex=\"\"-1\"\" value=\"\"\"\"></div>\n    <div class=\"\"clear\"\"><input type=\"\"submit\"\" value=\"\"Subscribe\"\" name=\"\"subscribe\"\" id=\"\"mc-embedded-subscribe\"\" class=\"\"button\"\"></div>\n    </div>\n</form>\n</div>\n\n<!--End mc_embed_signup-->\"",
-    "sectionName": "Emo Trak",
-    "sectionName_mobile": "Emo Trak"
   }
 }

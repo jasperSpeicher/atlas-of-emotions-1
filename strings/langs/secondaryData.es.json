@@ -1,6 +1,292 @@
 {
   "slug": "secondaryData",
   "annex": {
+    "scientific-basis": {
+      "content": [
+        {
+          "desc": "Hay emociones universales",
+          "name": "88%",
+          "formatting": "beforebreak"
+        },
+        {
+          "desc": "Hay señales faciales universales para la emoción",
+          "name": "80%",
+          "formatting": "break"
+        },
+        {
+          "desc": "La ira es una emoción universal",
+          "name": "91%",
+          "formatting": ""
+        },
+        {
+          "desc": "El miedo es una emoción universal",
+          "name": "90%",
+          "formatting": ""
+        },
+        {
+          "desc": "El asco es una emoción universal",
+          "name": "86%",
+          "formatting": ""
+        },
+        {
+          "desc": "La tristeza es una emoción universal",
+          "name": "80%",
+          "formatting": ""
+        },
+        {
+          "desc": "La felicidad es una emoción universal",
+          "name": "76%",
+          "formatting": "break"
+        },
+        {
+          "desc": "Hay desencadenantes universales para la emoción",
+          "name": "66%",
+          "formatting": ""
+        },
+        {
+          "desc": "Hay una fisiología universal de la emoción",
+          "name": "51%",
+          "formatting": ""
+        },
+        {
+          "desc": "Hay emociones biológicamente discretas y separadas",
+          "name": "49%",
+          "formatting": ""
+        },
+        {
+          "desc": "Las emociones están construidas por factores sociales",
+          "name": "11%",
+          "formatting": ""
+        },
+        {
+          "desc": "Las emociones son tanto biológicamente separadas como socialmente construidas",
+          "name": "3%",
+          "formatting": ""
+        }
+      ],
+      "footer": [
+        "La existencia de \"evidencia convincente para universales en cualquier aspecto de la emoción\" fue respaldada por el 88% de los encuestados. La evidencia que apoya señales universales (rostro o voz) fue respaldada por el 80%. Hubo menos acuerdo sobre si hay evidencia convincente para universales en los eventos que desencadenan una emoción (66%), fisiología (51%), o mecanismos de evaluación (44%). Así, la afirmación de Darwin en 1872 y el trabajo más reciente de Ekman y Friesen (1969) e Izard (1971) sobre la universalidad de algunas expresiones faciales fueron apoyados. En respuesta a la pregunta \"¿Cuál de las siguientes opciones mejor captura tu orientación hacia la emoción en tu investigación?\", el 49% eligió \"Emociones discretas (ira, miedo, etc.) combinando influencias tanto biológicas como sociales\", el 11% eligió \"Emociones como construidas, ya sea social o psicológicamente, para ajustarse a las condiciones actuales\", y el 30% indicó que usaron ambos enfoques.\n",
+        "Se preguntó a los encuestados si la evidencia para cada emoción era convincente. Hubo alto acuerdo sobre cinco emociones (todas las cuales fueron descritas tanto por Darwin como por Wundt): ira (91%), miedo (90%), asco (86%), tristeza (80%) y felicidad (76%). Vergüenza, sorpresa y bochorno fueron listadas por 40% a 50%. Otras emociones, actualmente bajo estudio por varios investigadores, obtuvieron sustancialmente menos apoyo: culpa (37%), desprecio (34%), amor (32%), asombro (31%), dolor (28%), envidia (28%), compasión (20%), orgullo (9%) y gratitud (6%)."
+      ],
+      "title": "La Base Científica de Este Trabajo",
+      "desc": "El Atlas de Emociones está basado en un consenso entre científicos determinado por una encuesta (en la elección de los cinco continentes emocionales y la relación de las emociones con estados de ánimo, personalidad y psicopatología), el trabajo de unos pocos científicos que se han enfocado en nombrar estados dentro de las emociones, definiciones de diccionario, teoría y mejores conjeturas sobre las acciones para cada estado y si son constructivas, destructivas o ambiguas. Para más información, ver <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">\"En Qué Concuerdan Los Científicos Que Estudian La Emoción\"</a>, por Paul Ekman (Perspectives on Psychological Science, 2015).",
+      "contentIntro": "La encuesta fue enviada por correo electrónico a mediados de junio de 2014 a 248 científicos que habían publicado frecuentemente investigación cuantitativa sobre emociones."
+    },
+    "triggers-timeline": {
+      "content": [
+        {
+          "desc": "Esto describe el contexto o situaciones que pueden influir en la forma en que entramos en la emoción. Por ejemplo, nuestra condición previa podría ser fisiológica: estar hambriento, cansado o emocional: haber tenido un día muy placentero o estresante o salir de un episodio emocional previo.",
+          "name": "pre-condición"
+        },
+        {
+          "desc": "Esto describe a una persona, lugar, situación, imagen, pensamiento, memoria, olor, sonido, sabor o idea que encontramos del mundo exterior o de nuestra propia mente. Estamos constantemente, automáticamente evaluando, o valorando nuestro mundo interior y exterior. Por ejemplo, cuando escuchamos una nueva canción, estamos instantáneamente superponiendo nuestro conocimiento de instrumentos y categorías de música mientras escuchamos sin siquiera pensar, esto es evaluación automática.",
+          "name": "evento"
+        },
+        {
+          "desc": "Esto describe la combinación de la evaluación automática que coincide con algún guión universal/cableado o adquirido en nuestra base de datos.",
+          "name": "desencadenante"
+        },
+        {
+          "desc": "Esto describe nuestras respuestas universales/cableadas y nuestras memorias emocionales adquiridas individualmente. Por ejemplo, si el evento es un olor y en la base de datos está almacenada la memoria del champú que usaba nuestra madre en nuestra infancia, y somos desencadenados a experimentar una emoción de nostalgia cálida de una infancia feliz. Cuando el evento evaluado se asemeja a algo en nuestra base de datos, puede ser muy preciso o podría crear una percepción distorsionada del desencadenante. Por ejemplo, si tuvimos una experiencia intimidante con un oficial de policía cuando éramos jóvenes y somos detenidos como adultos, podríamos malinterpretar la situación con un sentido distorsionado de miedo.",
+          "name": "base de datos de percepción"
+        },
+        {
+          "desc": "Esto describe los cambios autonómicos en nuestro cuerpo que ocurren cuando surge nuestra emoción. Podemos experimentar estos cambios como sensaciones en nuestro cuerpo, sintiendo calor en nuestro rostro, tensión en nuestra mandíbula o hombros, etc.",
+          "name": "cambios físicos"
+        },
+        {
+          "desc": "Esto describe la emoción misma, incluyendo cambios físicos y psicológicos.",
+          "name": "estado"
+        },
+        {
+          "desc": "Esto describe la experiencia cualitativa de la emoción, cómo la tristeza se siente triste, o la ira se siente enojada.",
+          "name": "cambios psicológicos"
+        },
+        {
+          "desc": "Esto describe nuestras respuestas emocionales. Esto podría ser un comportamiento externo como gritar en ira, o podría ser interno, como suprimir la ira. Cada emoción en el atlas muestra un rango de acciones inmediatas, así como acciones intrínsecas o intencionales. La acción puede ser constructiva o destructiva. Llevando a mayor colaboración con otros o a dificultad en colaborar.",
+          "name": "action"
+        },
+        {
+          "desc": "Esto describe el resultado o impacto de nuestras acciones emocionales. Esto podría ser externo: si le hemos gritado a alguien, entonces pueden gritarnos de vuelta; o interno: si hemos suprimido, podríamos estar sintiendo alguna irritación continua. La condición posterior podría llevarnos a nuestro próximo episodio de emoción, si alguien nos está gritando de vuelta, somos desencadenados una vez más a ira, miedo o tristeza/arrepentimiento por nuestras acciones. Nuestra condición posterior es una oportunidad para que construyamos consciencia emocional a través de la reflexión sobre nuestra emoción, para entender el desencadenante, identificar la experiencia sentida y considerar el impacto que ha tenido.",
+          "name": "condición posterior"
+        },
+        {
+          "desc": "El Período de Saturación Emocional se inicia con el inicio de acciones y señales - la percepción se estrecha y distorsiona, filtrando e interpretando información relevante y consistente con la emoción prevalente. Por ejemplo, cuando el miedo se despierta, hay una sensibilidad elevada a amenazas reales e imaginarias.",
+          "name": "período de saturación emocional"
+        }
+      ],
+      "footer": [
+        "Surgen reglas de exhibición aprendidas (para regular señales) y reglas de sentimiento aprendidas (para modificar, amplificar o suprimir sentimientos subjetivos). No sabemos qué tan rápido ocurren estos. ¿Ocurren antes de las señales y acciones, o inmediatamente durante el inicio de las señales y acciones? Los impulsos se traducen en acciones y señales.",
+        "La brecha entre el Paso 2 (impulsos) y el Paso 4 (acciones/señales) es variable, dependiendo de las características individuales de cada persona y el perfil emocional de la persona, la intensidad del desencadenante evaluado, y el estado psicológico momentáneo del individuo cuando el desencadenante es evaluado (cuánto sueño tuvo la persona la noche anterior; qué, si alguna, emoción experimentó la persona por última vez o está experimentando actualmente, etc.)."
+      ],
+      "title": "Cronología del Episodio Emocional",
+      "desc": ""
+    },
+    "intrinsic-or-intentional": {
+      "emotions": [
+        {
+          "name": "Ira",
+          "children": [
+            {
+              "name": "Intrínseca",
+              "desc": "Discutir, Insultar, Socavar, Disputar, Gritar/vociferar, Usar fuerza física, Refunfuñar/cavilar, Ser pasivo-agresivo"
+            },
+            {
+              "name": "Intencional",
+              "desc": "Establecer límites, Ser firme, Retirarse, Tomar un descanso, Respirar, Practicar paciencia, Reenfocar, Distraer, Evitar, Remover la interferencia"
+            }
+          ]
+        },
+        {
+          "name": "Miedo",
+          "children": [
+            {
+              "name": "Intrínseca",
+              "desc": "Retirarse, Evitar, Dudar, Congelarse, Gritar/vociferar, Rumiar, Preocuparse"
+            },
+            {
+              "name": "Intencional",
+              "desc": "Reenfocar, Ser consciente, Respirar, Distraer"
+            }
+          ]
+        },
+        {
+          "name": "Asco",
+          "children": [
+            {
+              "name": "Intrínseca",
+              "desc": "Retirarse, Evitar, Vomitar, Deshumanizar"
+            },
+            {
+              "name": "Intencional",
+              "desc": "Retirarse, Evitar"
+            }
+          ]
+        },
+        {
+          "name": "Tristeza",
+          "children": [
+            {
+              "name": "Intrínseca",
+              "desc": "Buscar consuelo, Retirarse, Llorar, Protestar, Sentir vergüenza"
+            },
+            {
+              "name": "Intencional",
+              "desc": "Retirarse, Distraer"
+            }
+          ]
+        },
+        {
+          "name": "Disfrute",
+          "children": [
+            {
+              "name": "Intrínseca",
+              "desc": "Buscar más, Mantener, Exclamar, Participar/conectar, Saborear, Complacer"
+            },
+            {
+              "name": "Intencional",
+              "desc": "Ninguna"
+            }
+          ]
+        }
+      ],
+      "title": "Acciones Intrínsecas o Intencionales",
+      "desc": "Las acciones pueden ser intrínsecas (sin intención consciente) o intencionales (un intento activo de generar cambio), o ambas."
+    },
+    "partially-charted": {
+      "emotions": [
+        {
+          "name": "Amor",
+          "desc": "Un fuerte apego a otra persona, típicamente de padre a hijo e hijo a padre, pero también entre aquellos románticamente comprometidos. Dentro de las relaciones amorosas, se pueden experimentar ira, miedo, tristeza, asco y disfrute."
+        },
+        {
+          "name": "Sorpresa",
+          "desc": "La emoción más breve, la sorpresa es desencadenada por la ocurrencia súbita de un evento inesperado. A menudo es una estación intermedia que lleva, después de más evaluación, a cualquiera de las otras emociones."
+        },
+        {
+          "name": "Celos",
+          "desc": "Una narrativa emocional que involucra tres personas: la persona deseada, la persona que teme perder el compromiso de la persona deseada, y el rival. Durante los celos, cualquiera de las tres personas puede sentir ira, miedo, asco, tristeza o sorpresa."
+        },
+        {
+          "name": "Envidia",
+          "desc": "Aunque a menudo se usa mal como sinónimo de celos, la envidia involucra resentir y querer lo que otra persona posee. Cuando una persona siente envidia, también puede sentir ira, desprecio o tristeza."
+        },
+        {
+          "name": "Odio",
+          "desc": "Ira duradera enfocada en una persona particular o grupo de personas. Con el tiempo, el odio puede generar el rasgo de personalidad de hostilidad."
+        },
+        {
+          "name": "Vergüenza",
+          "desc": "Angustia o incomodidad autoconciente. A menudo activada por el elogio de otro, o por una metida de pata. No tiene señal vocal, pero puede causar un rubor que es visible solo en personas de piel clara."
+        },
+        {
+          "name": "Pena",
+          "desc": "Una expectativa de que otros estarían disgustados si supieran lo que la persona estaba pensando o había hecho. Motiva un fuerte deseo de prevenir que otros se enteren de lo que la persona ha hecho o pensado."
+        },
+        {
+          "name": "Desprecio",
+          "desc": "La última emoción en aparecer en el desarrollo infantil, es un sentimiento de superioridad moral hacia el objetivo. A menudo mezclado con disfrute."
+        },
+        {
+          "name": "Culpa",
+          "desc": "Arrepentimiento sobre una acción pasada, que motiva el deseo de confesar la acción incorrecta, esperando perdón."
+        }
+      ],
+      "title": "Emociones Parcialmente Cartografiadas",
+      "desc": "La mitad o menos de la mitad de los científicos de emociones creen que hay evidencia convincente de que cada una de las siguientes es una emoción."
+    },
+    "personality-trait": {
+      "emotions": [
+        {
+          "name": "Ira",
+          "desc": "Una persona hostil a menudo está enojada y es conocida por otros por la frecuencia de las respuestas de ira al mundo. A menudo la ira ocurre con cualquier frustración; el umbral para la frustración es bajo. Las personas hostiles pueden experimentar arrepentimiento después y disculparse por su ira, pero sin embargo continúan respondiendo con ira. A veces las personas hostiles expresan su ira de manera desagradable, usando palabras para degradar y causar dolor psicológico a otros."
+        },
+        {
+          "name": "Miedo",
+          "desc": "Una persona tímida o miedosa. Este tipo de personalidad tiende a evitar riesgos y situaciones incómodas. Las personas tímidas pueden percibir el mundo como lleno de situaciones difíciles."
+        },
+        {
+          "name": "Asco",
+          "desc": "Una persona que a menudo se siente disgustada por otros puede tener un sentido inflado de autoestima y una hiper-aversión hacia otros. Alguien que está disgustado o insatisfecho con todo puede ser desagradable estar cerca."
+        },
+        {
+          "name": "Tristeza",
+          "desc": "Una persona sombría que a menudo se siente decaída puede tener depresión clínica o simplemente puede tener sentimientos de tristeza más frecuentes. Esta persona puede mantener la perspectiva de que la vida es dura y difícil."
+        },
+        {
+          "name": "Disfrute",
+          "desc": "Una persona alegre también puede ser considerada optimista. Esta persona ve el mundo de manera positiva y puede fácilmente ser hecha reír y sentir disfrute."
+        }
+      ],
+      "title": "Rasgo de Personalidad",
+      "desc": "Ciertos rasgos de personalidad están relacionados con emociones específicas."
+    },
+    "moods": {
+      "emotions": [
+        {
+          "name": "Irritable",
+          "desc": "Predispuesto a enojarse, fácilmente provocado."
+        },
+        {
+          "name": "Aprensivo",
+          "desc": "Ansioso de que algo malo suceda, nervioso."
+        },
+        {
+          "name": "Agrio",
+          "desc": "Generalmente repugnado."
+        },
+        {
+          "name": "Disfórico (o sintiendo melancolía)",
+          "desc": "Un sentimiento duradero de desaliento o decepción."
+        },
+        {
+          "name": "Eufórico",
+          "desc": "Un sentimiento bueno generalizado y duradero."
+        }
+      ],
+      "title": "Estados de Ánimo",
+      "desc": "Los estados de ánimo son primos de mayor duración de una emoción que nos hacen sentir la emoción relacionada repetidamente sin ningún desencadenante claro."
+    },
     "psychopathology": {
       "emotions": [
         {
@@ -184,32 +470,6 @@
       ],
       "title": "Señal y Mensaje",
       "desc": "La señal de una emoción describe las formas universales en que esa emoción se muestra en el rostro y/o la voz. También puede haber otros cambios en el tono vocal e indicadores de lenguaje corporal, pero estos no se incluyen aquí porque a menudo están culturalmente informados y aprendidos en oposición a ser universales.<br><br>El mensaje es lo que nos está diciendo la emoción. Todas las emociones tienen un mensaje que es una respuesta al mundo que nos rodea."
-    },
-    "personality-trait": {
-      "emotions": [
-        {
-          "name": "Ira",
-          "desc": "Una persona hostil a menudo está enojada y es conocida por otros por la frecuencia de las respuestas de ira al mundo. A menudo la ira ocurre con cualquier frustración; el umbral para la frustración es bajo. Las personas hostiles pueden experimentar arrepentimiento después y disculparse por su ira, pero sin embargo continúan respondiendo con ira. A veces las personas hostiles expresan su ira de manera desagradable, usando palabras para degradar y causar dolor psicológico a otros."
-        },
-        {
-          "name": "Miedo",
-          "desc": "Una persona tímida o miedosa. Este tipo de personalidad tiende a evitar riesgos y situaciones incómodas. Las personas tímidas pueden percibir el mundo como lleno de situaciones difíciles."
-        },
-        {
-          "name": "Asco",
-          "desc": "Una persona que a menudo se siente disgustada por otros puede tener un sentido inflado de autoestima y una hiper-aversión hacia otros. Alguien que está disgustado o insatisfecho con todo puede ser desagradable estar cerca."
-        },
-        {
-          "name": "Tristeza",
-          "desc": "Una persona sombría que a menudo se siente decaída puede tener depresión clínica o simplemente puede tener sentimientos de tristeza más frecuentes. Esta persona puede mantener la perspectiva de que la vida es dura y difícil."
-        },
-        {
-          "name": "Disfrute",
-          "desc": "Una persona alegre también puede ser considerada optimista. Esta persona ve el mundo de manera positiva y puede fácilmente ser hecha reír y sentir disfrute."
-        }
-      ],
-      "title": "Rasgo de Personalidad",
-      "desc": "Ciertos rasgos de personalidad están relacionados con emociones específicas."
     },
     "impediment-antidote": {
       "emotions": [
@@ -458,307 +718,7 @@
       ],
       "title": "Impedimentos y Antídotos",
       "desc": "El cuadro a continuación fue creado por Mathieu Ricard y ofrece una perspectiva budista tibetana sobre entender y trabajar con las emociones. Muestra cómo contrarrestar emociones difíciles cultivando estados mentales positivos, conocidos como \"antídotos\". También ayuda a identificar \"impedimentos\" que bloquean el sentir emociones agradables y resalta emociones agradables que pueden ser difíciles. Puedes aprender más sobre Mathieu Ricard <a href=\"https://www.matthieuricard.org/en/articles/buddhist-and-psychological-perspectives-on-emotions-and-well-being-by-paul-ekman-richard-j-davidson-matthieu-ricard-and-b-alan-wallace-current-directions-in-psychological-science-2005-14-2/\" target=\"blank\">aquí</a>."
-    },
-    "triggers-timeline": {
-      "content": [
-        {
-          "desc": "Esto describe el contexto o situaciones que pueden influir en la forma en que entramos en la emoción. Por ejemplo, nuestra condición previa podría ser fisiológica: estar hambriento, cansado o emocional: haber tenido un día muy placentero o estresante o salir de un episodio emocional previo.",
-          "name": "pre-condition"
-        },
-        {
-          "desc": "Esto describe a una persona, lugar, situación, imagen, pensamiento, memoria, olor, sonido, sabor o idea que encontramos del mundo exterior o de nuestra propia mente. Estamos constantemente, automáticamente evaluando, o valorando nuestro mundo interior y exterior. Por ejemplo, cuando escuchamos una nueva canción, estamos instantáneamente superponiendo nuestro conocimiento de instrumentos y categorías de música mientras escuchamos sin siquiera pensar, esto es evaluación automática.",
-          "name": "event"
-        },
-        {
-          "desc": "Esto describe la combinación de la evaluación automática que coincide con algún guión universal/cableado o adquirido en nuestra base de datos.",
-          "name": "trigger"
-        },
-        {
-          "desc": "Esto describe nuestras respuestas universales/cableadas y nuestras memorias emocionales adquiridas individualmente. Por ejemplo, si el evento es un olor y en la base de datos está almacenada la memoria del champú que usaba nuestra madre en nuestra infancia, y somos desencadenados a experimentar una emoción de nostalgia cálida de una infancia feliz. Cuando el evento evaluado se asemeja a algo en nuestra base de datos, puede ser muy preciso o podría crear una percepción distorsionada del desencadenante. Por ejemplo, si tuvimos una experiencia intimidante con un oficial de policía cuando éramos jóvenes y somos detenidos como adultos, podríamos malinterpretar la situación con un sentido distorsionado de miedo.",
-          "name": "perception database"
-        },
-        {
-          "desc": "Esto describe los cambios autonómicos en nuestro cuerpo que ocurren cuando surge nuestra emoción. Podemos experimentar estos cambios como sensaciones en nuestro cuerpo, sintiendo calor en nuestro rostro, tensión en nuestra mandíbula o hombros, etc.",
-          "name": "physical changes"
-        },
-        {
-          "desc": "Esto describe la emoción misma, incluyendo cambios físicos y psicológicos.",
-          "name": "state"
-        },
-        {
-          "desc": "Esto describe la experiencia cualitativa de la emoción, cómo la tristeza se siente triste, o la ira se siente enojada.",
-          "name": "psychological changes"
-        },
-        {
-          "desc": "Esto describe nuestras respuestas emocionales. Esto podría ser un comportamiento externo como gritar en ira, o podría ser interno, como suprimir la ira. Cada emoción en el atlas muestra un rango de acciones inmediatas, así como acciones intrínsecas o intencionales. La acción puede ser constructiva o destructiva. Llevando a mayor colaboración con otros o a dificultad en colaborar.",
-          "name": "action"
-        },
-        {
-          "desc": "Esto describe el resultado o impacto de nuestras acciones emocionales. Esto podría ser externo: si le hemos gritado a alguien, entonces pueden gritarnos de vuelta; o interno: si hemos suprimido, podríamos estar sintiendo alguna irritación continua. La condición posterior podría llevarnos a nuestro próximo episodio de emoción, si alguien nos está gritando de vuelta, somos desencadenados una vez más a ira, miedo o tristeza/arrepentimiento por nuestras acciones. Nuestra condición posterior es una oportunidad para que construyamos consciencia emocional a través de la reflexión sobre nuestra emoción, para entender el desencadenante, identificar la experiencia sentida y considerar el impacto que ha tenido.",
-          "name": "post-condition"
-        },
-        {
-          "desc": "El Período de Filtrado Selectivo se inicia con el inicio de acciones y señales - la percepción se estrecha y distorsiona, filtrando e interpretando información relevante y consistente con la emoción prevalente. Por ejemplo, cuando el miedo se despierta, hay una sensibilidad elevada a amenazas reales e imaginarias.",
-          "name": "selective filter period"
-        }
-      ],
-      "footer": [
-        "Surgen reglas de exhibición aprendidas (para regular señales) y reglas de sentimiento aprendidas (para modificar, amplificar o suprimir sentimientos subjetivos). No sabemos qué tan rápido ocurren estos. ¿Ocurren antes de las señales y acciones, o inmediatamente durante el inicio de las señales y acciones? Los impulsos se traducen en acciones y señales.",
-        "La brecha entre el Paso 2 (impulsos) y el Paso 4 (acciones/señales) es variable, dependiendo de las características individuales de cada persona y el perfil emocional de la persona, la intensidad del desencadenante evaluado, y el estado psicológico momentáneo del individuo cuando el desencadenante es evaluado (cuánto sueño tuvo la persona la noche anterior; qué, si alguna, emoción experimentó la persona por última vez o está experimentando actualmente, etc.)."
-      ],
-      "title": "Cronología del Episodio Emocional",
-      "desc": ""
-    },
-    "intrinsic-or-intentional": {
-      "emotions": [
-        {
-          "name": "Ira",
-          "children": [
-            {
-              "name": "Intrínseca",
-              "desc": "Discutir, Insultar, Socavar, Disputar, Gritar/vociferar, Usar fuerza física, Refunfuñar/cavilar, Ser pasivo-agresivo"
-            },
-            {
-              "name": "Intencional",
-              "desc": "Establecer límites, Ser firme, Retirarse, Tomar un descanso, Respirar, Practicar paciencia, Reenfocar, Distraer, Evitar, Remover la interferencia"
-            }
-          ]
-        },
-        {
-          "name": "Miedo",
-          "children": [
-            {
-              "name": "Intrínseca",
-              "desc": "Retirarse, Evitar, Dudar, Congelarse, Gritar/vociferar, Rumiar, Preocuparse"
-            },
-            {
-              "name": "Intencional",
-              "desc": "Reenfocar, Ser consciente, Respirar, Distraer"
-            }
-          ]
-        },
-        {
-          "name": "Asco",
-          "children": [
-            {
-              "name": "Intrínseca",
-              "desc": "Retirarse, Evitar, Vomitar, Deshumanizar"
-            },
-            {
-              "name": "Intencional",
-              "desc": "Retirarse, Evitar"
-            }
-          ]
-        },
-        {
-          "name": "Tristeza",
-          "children": [
-            {
-              "name": "Intrínseca",
-              "desc": "Buscar consuelo, Retirarse, Llorar, Protestar, Sentir vergüenza"
-            },
-            {
-              "name": "Intencional",
-              "desc": "Retirarse, Distraer"
-            }
-          ]
-        },
-        {
-          "name": "Disfrute",
-          "children": [
-            {
-              "name": "Intrínseca",
-              "desc": "Buscar más, Mantener, Exclamar, Participar/conectar, Saborear, Complacer"
-            },
-            {
-              "name": "Intencional",
-              "desc": "Ninguna"
-            }
-          ]
-        }
-      ],
-      "title": "Acciones Intrínsecas o Intencionales",
-      "desc": "Las acciones pueden ser intrínsecas (sin intención consciente) o intencionales (un intento activo de generar cambio), o ambas."
-    },
-    "scientific-basis": {
-      "content": [
-        {
-          "desc": "Hay emociones universales",
-          "name": "88%",
-          "formatting": "beforebreak"
-        },
-        {
-          "desc": "Hay señales faciales universales para la emoción",
-          "name": "80%",
-          "formatting": "break"
-        },
-        {
-          "desc": "La ira es una emoción universal",
-          "name": "91%",
-          "formatting": ""
-        },
-        {
-          "desc": "El miedo es una emoción universal",
-          "name": "90%",
-          "formatting": ""
-        },
-        {
-          "desc": "El asco es una emoción universal",
-          "name": "86%",
-          "formatting": ""
-        },
-        {
-          "desc": "La tristeza es una emoción universal",
-          "name": "80%",
-          "formatting": ""
-        },
-        {
-          "desc": "La felicidad es una emoción universal",
-          "name": "76%",
-          "formatting": "break"
-        },
-        {
-          "desc": "Hay desencadenantes universales para la emoción",
-          "name": "66%",
-          "formatting": ""
-        },
-        {
-          "desc": "Hay una fisiología universal de la emoción",
-          "name": "51%",
-          "formatting": ""
-        },
-        {
-          "desc": "Hay emociones biológicamente discretas y separadas",
-          "name": "49%",
-          "formatting": ""
-        },
-        {
-          "desc": "Las emociones están construidas por factores sociales",
-          "name": "11%",
-          "formatting": ""
-        },
-        {
-          "desc": "Las emociones son tanto biológicamente separadas como socialmente construidas",
-          "name": "3%",
-          "formatting": ""
-        }
-      ],
-      "footer": [
-        "La existencia de \"evidencia convincente para universales en cualquier aspecto de la emoción\" fue respaldada por el 88% de los encuestados. La evidencia que apoya señales universales (rostro o voz) fue respaldada por el 80%. Hubo menos acuerdo sobre si hay evidencia convincente para universales en los eventos que desencadenan una emoción (66%), fisiología (51%), o mecanismos de evaluación (44%). Así, la afirmación de Darwin en 1872 y el trabajo más reciente de Ekman y Friesen (1969) e Izard (1971) sobre la universalidad de algunas expresiones faciales fueron apoyados. En respuesta a la pregunta \"¿Cuál de las siguientes opciones mejor captura tu orientación hacia la emoción en tu investigación?\", el 49% eligió \"Emociones discretas (ira, miedo, etc.) combinando influencias tanto biológicas como sociales\", el 11% eligió \"Emociones como construidas, ya sea social o psicológicamente, para ajustarse a las condiciones actuales\", y el 30% indicó que usaron ambos enfoques.\n",
-        "Se preguntó a los encuestados si la evidencia para cada emoción era convincente. Hubo alto acuerdo sobre cinco emociones (todas las cuales fueron descritas tanto por Darwin como por Wundt): ira (91%), miedo (90%), asco (86%), tristeza (80%) y felicidad (76%). Vergüenza, sorpresa y bochorno fueron listadas por 40% a 50%. Otras emociones, actualmente bajo estudio por varios investigadores, obtuvieron sustancialmente menos apoyo: culpa (37%), desprecio (34%), amor (32%), asombro (31%), dolor (28%), envidia (28%), compasión (20%), orgullo (9%) y gratitud (6%)."
-      ],
-      "title": "La Base Científica de Este Trabajo",
-      "desc": "El Atlas de Emociones está basado en un consenso entre científicos determinado por una encuesta (en la elección de los cinco continentes emocionales y la relación de las emociones con estados de ánimo, personalidad y psicopatología), el trabajo de unos pocos científicos que se han enfocado en nombrar estados dentro de las emociones, definiciones de diccionario, teoría y mejores conjeturas sobre las acciones para cada estado y si son constructivas, destructivas o ambiguas. Para más información, ver <a href=\"http://pps.sagepub.com/content/11/1/31.full.pdf?ijkey=AMIJzv8J9Tn0VF1&keytype=finite\" target=\"_blank\">\"En Qué Concuerdan Los Científicos Que Estudian La Emoción\"</a>, por Paul Ekman (Perspectives on Psychological Science, 2015).",
-      "contentIntro": "La encuesta fue enviada por correo electrónico a mediados de junio de 2014 a 248 científicos que habían publicado frecuentemente investigación cuantitativa sobre emociones."
-    },
-    "moods": {
-      "emotions": [
-        {
-          "name": "Irritable",
-          "desc": "Predispuesto a enojarse, fácilmente provocado."
-        },
-        {
-          "name": "Aprensivo",
-          "desc": "Ansioso de que algo malo suceda, nervioso."
-        },
-        {
-          "name": "Agrio",
-          "desc": "Generalmente repugnado."
-        },
-        {
-          "name": "Disfórico (o sintiendo melancolía)",
-          "desc": "Un sentimiento duradero de desaliento o decepción."
-        },
-        {
-          "name": "Eufórico",
-          "desc": "Un sentimiento bueno generalizado y duradero."
-        }
-      ],
-      "title": "Estados de Ánimo",
-      "desc": "Los estados de ánimo son primos de mayor duración de una emoción que nos hacen sentir la emoción relacionada repetidamente sin ningún desencadenante claro."
-    },
-    "partially-charted": {
-      "emotions": [
-        {
-          "name": "Amor",
-          "desc": "Un fuerte apego a otra persona, típicamente de padre a hijo e hijo a padre, pero también entre aquellos románticamente comprometidos. Dentro de las relaciones amorosas, se pueden experimentar ira, miedo, tristeza, asco y disfrute."
-        },
-        {
-          "name": "Sorpresa",
-          "desc": "La emoción más breve, la sorpresa es desencadenada por la ocurrencia súbita de un evento inesperado. A menudo es una estación intermedia que lleva, después de más evaluación, a cualquiera de las otras emociones."
-        },
-        {
-          "name": "Celos",
-          "desc": "Una narrativa emocional que involucra tres personas: la persona deseada, la persona que teme perder el compromiso de la persona deseada, y el rival. Durante los celos, cualquiera de las tres personas puede sentir ira, miedo, asco, tristeza o sorpresa."
-        },
-        {
-          "name": "Envidia",
-          "desc": "Aunque a menudo se usa mal como sinónimo de celos, la envidia involucra resentir y querer lo que otra persona posee. Cuando una persona siente envidia, también puede sentir ira, desprecio o tristeza."
-        },
-        {
-          "name": "Odio",
-          "desc": "Ira duradera enfocada en una persona particular o grupo de personas. Con el tiempo, el odio puede generar el rasgo de personalidad de hostilidad."
-        },
-        {
-          "name": "Vergüenza",
-          "desc": "Angustia o incomodidad autoconciente. A menudo activada por el elogio de otro, o por una metida de pata. No tiene señal vocal, pero puede causar un rubor que es visible solo en personas de piel clara."
-        },
-        {
-          "name": "Pena",
-          "desc": "Una expectativa de que otros estarían disgustados si supieran lo que la persona estaba pensando o había hecho. Motiva un fuerte deseo de prevenir que otros se enteren de lo que la persona ha hecho o pensado."
-        },
-        {
-          "name": "Desprecio",
-          "desc": "La última emoción en aparecer en el desarrollo infantil, es un sentimiento de superioridad moral hacia el objetivo. A menudo mezclado con disfrute."
-        },
-        {
-          "name": "Culpa",
-          "desc": "Arrepentimiento sobre una acción pasada, que motiva el deseo de confesar la acción incorrecta, esperando perdón."
-        }
-      ],
-      "title": "Emociones Parcialmente Cartografiadas",
-      "desc": "La mitad o menos de la mitad de los científicos de emociones creen que hay evidencia convincente de que cada una de las siguientes es una emoción."
     }
-  },
-  "about": {
-    "subsections": [
-      {
-        "title": "Acerca de los Ekman",
-        "desc": "Paul Ekman es un psicólogo estadounidense reconocido que fue pionero en el campo de la investigación de emociones al demostrar la universalidad de la expresión facial de la emoción y mapear todos los 43 grupos musculares usados en la expresión facial. Su investigación ampliamente accesible le ha otorgado el estatus único de trabajar tanto con las fuerzas del orden (para entrenar a las personas en identificar el engaño) como con el Dalai Lama (para explorar los fundamentos filosóficos de los enfoques orientales y occidentales de las emociones). Después de 40 años en la facultad de la Universidad de California, San Francisco, ha estado dirigiendo una empresa de entrenamiento privada, Paul Ekman Group, desde 2001.<br><br>Eve Ekman es una académica postdoctoral en el Centro Osher de Medicina Integrativa de UCSF. La investigación de Eve se enfoca en reducir el estrés para sostener la empatía y el significado en el trabajo. Es entrenadora de instructores para Cultivando Equilibrio Emocional (CEB), una intervención de regulación emocional y meditación basada en la ciencia occidental y las prácticas contemplativas de la emoción diseñadas por Paul Ekman y el erudito budista B. Alan Wallace. Eve adapta CEB para entrenar a proveedores de atención médica, educación y justicia penal."
-      },
-      {
-        "title": "Acerca de Stamen Design",
-        "desc": "<a href=\"http://www.stamen.com/\">Stamen</a> fue fundado por Eric Rodenbeck en 2001 para aprovechar las oportunidades en medios digitales emergentes tras el colapso de las punto-com. El estudio ha crecido desde entonces a un personal de doce personas y ha establecido una reputación por su experiencia en crear proyectos de diseño interactivo y visualización de datos convincentes. Su portafolio no se clasifica fácilmente, pero se caracteriza por un compromiso amoroso con los medios y una profunda participación con sus colaboradores. No es ni un laboratorio de investigación y desarrollo ni una empresa de diseño pura, sino algo intermedio: un lugar donde el trabajo se valora, las buenas ideas pueden venir de cualquier lugar, y los resultados son primordiales. Su estrecho compromiso con la tecnología conduce a numerosos proyectos de investigación que tienen la manera de encontrar aplicaciones en el mundo real."
-      },
-      {
-        "title": "¿Cómo Llegó a Ser Este Atlas?",
-        "desc": "Las emociones ocurren automáticamente, parecen sucedernos, no por elección sino sin pensamiento consciente. No siempre nos damos cuenta de que estamos bajo el control de una emoción hasta que alguien nos lo señala, o hasta que el episodio emocional ha terminado. Tener elección sobre cuándo experimentar una emoción, y cómo experimentarla requiere introducir un elemento extraño en el inicio de una emoción: la consciencia. Las habilidades deben desarrollarse si esa consciencia va a ser posible, si vamos a ejercer elección sobre cuándo experimentamos qué emoción, y cómo la experimentamos. El Atlas de Emociones fue creado para iluminarlo.<br><br>\n\nEl Dalai Lama pidió a Paul Ekman que creara un mapa de las emociones, esperando que tal mapa permitiera a las personas tener experiencias emocionales más constructivas. Cuando quisimos llegar al nuevo mundo, dijo, necesitábamos un mapa para llegar allí. Si queremos llegar a un estado mental calmado, necesitamos un mapa de la emoción. Le pidió a Ekman que basara el mapa emocional en el consenso científico sobre qué son las emociones."
-      },
-      {
-        "title": "¿Por Qué Usar Este Atlas?",
-        "desc": "Necesitamos entender nuestras emociones y desarrollar habilidades para tener elección sobre (1) cuándo nos volvemos emocionales o qué provoca una respuesta emocional, y (2) cómo respondemos y qué decimos y hacemos cuando estamos emocionales. Estas habilidades no nos son dadas por la naturaleza, pero podemos aprenderlas. Explorar el Atlas de Emociones aumentará tu comprensión de qué son las emociones y sus efectos en nosotros, dándote una mayor consciencia de lo que te está sucediendo cuando experimentas emociones."
-      },
-      {
-        "title": "¿Qué Es la Consciencia Emocional?",
-        "desc": "¿Por qué la consciencia emocional nos ayuda a manejar nuestras vidas emocionales? La respuesta simple es que vivimos la mayoría de nuestros días completamente inconscientes de qué emociones estamos sintiendo y qué palabras y acciones motivan. Típicamente solo somos conscientes de nuestras emociones después de un episodio emocional, especialmente si luego lamentamos cómo actuamos. El objetivo del Atlas de Emociones es ayudar a las personas a volverse conscientes del impulso de actuar antes de actuar y luego elegir si participar, y si es así, cómo participar. Esto significa entender qué desencadena las emociones, qué desencadenantes comparte la mayoría de las personas, a qué desencadenantes somos especialmente sensibles y qué desencadenantes usualmente resultan en un episodio emocional lamentable. Esto no es fácil de lograr, pero explorar el Atlas de Emociones proporciona el primer paso vital y necesario. En el Anexo del Atlas, encontrarás sugerencias sobre otras prácticas que puedes querer adoptar para aumentar tu consciencia de tus propias emociones."
-      },
-      {
-        "title": "¿Cuál Es la Conexión Entre Emoción y Estrés?",
-        "desc": "Nuestras emociones descontroladas nos hacen susceptibles al estrés. De hecho, el estrés se define como una sobreactivación emocional (una experiencia emocional que es demasiado fuerte y dura demasiado tiempo, e interfiere con el resto de nuestra vida). Las consecuencias del estrés, especialmente el estrés prolongado, incluyen mal sueño, estados de ánimo negativos, funcionamiento cognitivo disminuido (incluyendo memoria y enfoque), tensión en las relaciones personales y profesionales y una variedad de resultados de salud física deficientes."
-      },
-      {
-        "title": "¿Qué Es una Emoción?",
-        "desc": "Un episodio de emoción es una experiencia breve y sucinta, una que no siempre encaja con nuestras expectativas. La mayoría de las emociones surgen en menos de una veinticincoava parte de segundo y duran no más que unos pocos minutos. A menudo sentimos como si nuestras emociones duraran mucho más tiempo; sin embargo, lo que estamos recordando es probablemente una serie de episodios emocionales. La definición de emoción es la siguiente:\n<br><br>\nLa emoción es un proceso, un tipo particular de evaluación automática muy rápida influenciada por nuestros pasados evolutivos y personales, en el cual percibimos que algo importante para nuestro bienestar está ocurriendo y un conjunto de cambios fisiológicos y comportamientos comienzan a lidiar con la situación. En particular, las emociones coordinan eficientemente diversos sistemas de respuesta, ayudándonos así a responder a desafíos u oportunidades importantes.\n<br><br>\nDesglosemos esta definición. La emoción es un proceso, lo que significa que hay una serie de pequeñas etapas que componen un episodio emocional. Esto comienza con nuestra evaluación automática o perspectiva del mundo influenciada por nuestro pasado personal (nuestras respuestas aprendidas surgidas de experiencias de vida) y nuestro pasado evolutivo (nuestras respuestas cableadas que han sido transmitidas genéticamente). Esta evaluación nos ayuda a filtrar lo que es \"importante para nuestro bienestar\". Típicamente la evaluación es tan rápida que somos totalmente inconscientes de ella. Debido a que nuestra evaluación está influenciada por nuestros pasados personales, podemos tener respuestas bastante distintas al mundo. Considera este ejemplo: Estás caminando por la calle con un amigo cercano y un auto que se acerca con las ventanas abajo está reproduciendo una canción a alto volumen. Para ti esta canción provoca un sentimiento de gran tristeza; es la canción favorita de un amigo que murió de cáncer y fue reproducida en su funeral. Sin embargo, para tu amigo, quien no conocía a esta persona y no tiene asociación con la canción, no hay respuesta emocional, o tal vez hay molestia por el ruido fuerte. Tú y tu amigo están en la misma calle escuchando la misma canción, pero tu respuesta es aprendida y personal. Pero si ese mismo auto tuviera que evitar un gato corriendo por la carretera y de repente se desvió hacia la acera, tanto tú como tu amigo, independientemente de los pasados personales, saltarían hacia atrás con miedo. Esta es una respuesta universal a una amenaza inminente. Las emociones nos ayudan a responder antes de que tengamos tiempo de pensar, \"¿Qué está haciendo ese auto?\" Esta es la brillantez y carga de las emociones: Pueden movilizar nuestras respuestas fisiológicas para causar comportamientos inmediatos para salvar nuestras vidas, pero surgen sin que las elijamos y pueden sentirse bastante fuera de nuestro control. Comenzaremos a mapear nuestros propios episodios emocionales como exploradores inmersos en este Atlas.\n<br><br>\nEl final de esta definición apunta a la perspectiva evolutiva de las emociones. Esto significa mirar las emociones de la manera que miramos nuestros pulgares o pestañas por sus propiedades funcionales. Mientras que las emociones no sirven las funciones críticas de permitirnos agarrar o mantener el polvo fuera de nuestros ojos, fueron igual de críticas para nuestra supervivencia en el ambiente en el que evolucionamos. Además de ayudarnos a responder a amenazas inmediatas (correr de un tigre dientes de sable con miedo o enfrentar a una bestia menos amenazante con ira), también nos ayudaron a formar la cohesión social de una tribu a través del disfrute compartido. Importante para nuestra supervivencia temprana, nuestro sistema emocional incluye nuestra respuesta interna rápida así como señalización no verbal a través de nuestro rostro."
-      }
-    ],
-    "title": "Acerca de Este Atlas",
-    "desc": "El objetivo de este Atlas es proporcionar una herramienta visual para explorar e identificar algunas de nuestras emociones primarias. El sitio invita tu exploración a los continentes de 5 emociones básicas y sus estados relacionados de sentimientos, cómo respondemos con acciones a estas emociones, qué desencadena nuestras emociones y la experiencia de estados de ánimo. Mientras que las emociones son centrales a nuestras vidas - proporcionando el gozo, alertándonos a amenazas, una fuerza para el cambio, una advertencia contra lo que es tóxico, y llamando a otros por ayuda - no elegimos qué sentir o cuándo sentirlo. El Atlas de Emociones fue creado para construir consciencia emocional y a veces incluso alguna elección sobre cómo respondemos a lo que estamos sintiendo, a través de una mejor comprensión de cómo funcionan las emociones.\n"
-  },
-  "donate": {
-    "title": "Apoya Nuestra Causa",
-    "desc": "Dona a la Sociedad Atlas de Emociones y apoya nuestra causa. Tu generosidad nos ayudará a difundir un camino mundial hacia una mente calmada a través del Atlas de Emociones.",
-    "link": "http://www.paulekman.com/atlas-emotions-society/",
-    "imgs": []
   },
   "further-reading": {
     "links": [
