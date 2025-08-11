@@ -1,0 +1,8 @@
+name = "atlas-oe-decap-oauth"
+main = "worker.js"
+compatibility_date = "2024-07-01"
+
+[observability]
+enabled = true
+
+
