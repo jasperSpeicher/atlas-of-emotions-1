@@ -61,7 +61,7 @@
     "navigating": {
       "header": "Estratégias para navegar emoções",
       "description": "Para navegar uma vida cheia de emoções, precisamos criar espaço para elas, para que não nos desviem muito do nosso curso. Há dois métodos para criar esse espaço, e ambos são muito importantes.",
-      "image": "assets/uploads/signpost.png",
+      "image": "/assets/uploads/strategies.png",
       "reflecting": "<strong>Refletir</strong> –- podemos dedicar algum tempo para refletir sobre nossas emoções, meio que olhando para trás, para nos prepararmos para a próxima vez.",
       "in_the_moment": "<strong>No momento</strong> –- podemos aprender a lidar com nossas emoções exatamente quando elas acontecem, como ferramentas para criar espaço entre nós e nossos sentimentos quando precisamos.",
       "keep_reading": "Continue lendo ou navegue pelo menu para saber mais sobre essas estratégias..."
@@ -78,8 +78,8 @@
           "paragraphs": [
             {
               "body": "<strong>Como</strong> &mdash; Ao usar o site Atlas of Emotion, podemos explorar, com especificidade, qual emoção estamos sentindo. Em vez de \"me sinto mal\" ou \"me sinto estressado\", podemos identificar qual emoção podemos estar experimentando através das famílias de emoções universais listadas ou as emoções não universais encontradas aqui.",
-              "image": "assets/uploads/label.png",
-              "image_width": "88px"
+              "image": "/assets/uploads/labelling.png",
+              "image_width": "230px"
             },
             {
               "body": "<strong>Por que</strong> &mdash; Nomear ou rotular nossas emoções cria um momento de \"descentramento\". Descentramento significa que podemos refocar em uma perspectiva maior identificando nossos sentimentos em vez de ficar presos na excitação de uma emoção que pode saturar nosso corpo e mente. Aplicar uma palavra para identificar nossa emoção suporta uma 'granularidade emocional'. Praticamos nossa granularidade tomando um momento para pausar e considerar nossa experiência e então rotular: \"Agora mesmo estou ciente de sentir decepção\". Esta etiqueta simples não precisa carregar nenhum julgamento ou agenda, apenas nomear pode servir para nos ajudar a ver a nós mesmos e a situação mais claramente.",
@@ -95,7 +95,7 @@
           "paragraphs": [
             {
               "body": "<strong>Como</strong> &mdash; Quando olhamos para a linha do tempo da emoção aprendemos que nosso gatilho é composto tanto pelo nosso estado imediato e contexto, quanto por histórias e percepções mais antigas. Podemos escolher um episódio emocional quando sentimos que reagimos muito fortemente e então considerar o que estava acontecendo em nossa experiência imediata, nossa pré-condição, de fome, fadiga, estresse, etc. que pode influenciar como nos tornamos emocionais. Então exploramos o que pode estar no banco de dados, o depósito de experiências passadas que podemos impor a esta experiência atual.",
-              "image": "assets/uploads/triggers.png",
+              "image": "/assets/uploads/triggers.png",
               "image_width": "200px"
             },
             {
@@ -112,8 +112,7 @@
           "paragraphs": [
             {
               "body": "<strong>Como</strong> &mdash; Para alguns de nós, sentir a emoção no corpo é bastante claro, reconhecemos áreas no rosto, peito ou barriga onde há sensações aumentadas, como calor pesado em nosso rosto quando estamos com raiva, ou uma sensação vazia no peito quando estamos solitários. Para outros, o acesso às sensações da emoção no corpo é menos disponível, ou o foco está mais preso em pensamentos. Assim como reconhecemos e aplicamos rótulos ao tipo de emoção que estamos sentindo, podemos identificar os tipos de sensações em nosso corpo e onde as estamos sentindo. Considere onde em seu corpo você se sente preocupado, e quais são as qualidades desta sensação, leve, pesada, formigante, pulsante, pontuda, etc.",
-              "image": "assets/uploads/body.png",
-              "image_width": "160px"
+              "image": "/assets/uploads/body.png"
             },
             {
               "body": "<strong>Por que</strong> &mdash; Nossas emoções são uma experiência encarnada, não são apenas um fenômeno mental. Todo o nosso sistema nervoso se mobiliza em resposta à nossa emoção para nos ajudar a nos preparar para as oportunidades e desafios que a emoção está nos alertando. Quando desenvolvemos uma relação mais próxima com nossa experiência encarnada da emoção, estamos desenvolvendo a 'interocepção'. A interocepção é uma habilidade treinável, uma forma de reconhecer nossa experiência das emoções no corpo que pode ajudar com o descentramento, auto-calmante e reavaliação. Por exemplo, se sentimos muita energia brilhante e intensa no peito com irritação, podemos dizer a nós mesmos: \"Estou notando essa energia brilhante e intensa no meu peito, isso faz sentido porque estou me sentindo irritado e meu corpo está respondendo\".",
@@ -134,7 +133,7 @@
             },
             {
               "body": "<strong>Why</strong> &mdash; Our emotions prepare us to respond to the threats and opportunities in our world, a surprise visit from a friend or an unforeseen loss of work. Our responses often occur before we have time to recognize we are emotional and are intended to help us. Responses can be very functional, but sometimes we react in ways that are challenging &mdash; usually because we misread the trigger &mdash; we project something from our past on to what is happening now and respond to that fabricated reality. Our responses include external such as raising our voice in frustration, slinking away in anxiety, and rejoicing in gratitude. Some of our responses are internal, trying to prevent the emotion from being seen or fully expressed such as avoidance and distraction.",
-              "image": "assets/uploads/responses.png",
+              "image": "/assets/uploads/choice.png",
               "image_width": "200px"
             }
           ]
@@ -153,7 +152,7 @@
           "paragraphs": [
             {
               "body": "<strong>Atenção plena</strong> &mdash; A atenção plena é a prática de prestar total atenção ao momento presente, sem julgamento. Praticar a atenção plena consistentemente nos ajuda a estar mais conscientes do que está acontecendo ao nosso redor no presente e menos presos em pensamentos e projeções do passado. Quando somos mais atentos, desenvolvemos um nível mais alto de autoconsciência chamado \"meta-consciência\" que nos ajuda a entender e gerenciar melhor nossas reações e comportamentos. Nos tornamos naturalmente mais conscientes de nossos pensamentos, sentimentos e ambiente, aceitando-os como são, o que pode ajudar a reduzir o estresse e melhorar o bem-estar geral. Embora a atenção plena sempre aconteça no momento presente, existem práticas diárias que aumentam a quantidade de atenção plena que tendemos a trazer para cada momento, como a meditação.",
-              "image": "assets/uploads/mandala.png",
+              "image": "/assets/uploads/mindfulness.png",
               "image_width": "200px"
             },
             {
@@ -170,7 +169,7 @@
           "paragraphs": [
             {
               "body": "<strong>Respiração</strong> &mdash; Uma respiração profunda é uma forma muito útil de fazer uma pausa. Traz mais oxigênio para nosso sistema nervoso e nos ajuda a processar a excitação física em nosso corpo. Uma grande parte de nosso estado emocional são as mudanças físicas que experimentamos, e nossa respiração é uma forma de ajudar fisicamente nosso corpo durante a pausa.",
-              "image": "assets/uploads/breath.png",
+              "image": "/assets/uploads/pausing.png",
               "image_width": "180px"
             },
             {
@@ -197,7 +196,7 @@
           "paragraphs": [
             {
               "body": "A compaixão é especialmente útil quando estabelecemos intenções para gerenciar nossas emoções mas caímos em padrões antigos. Nesses momentos, nos protege da desesperança e esgotamento. Os ensinamentos budistas definem Compaixão como o desejo sincero para o eu e outros estarem livres do sofrimento e suas causas. Similarmente, a ciência a define como \"o sentimento que surge ao testemunhar o sofrimento de outro, e que motiva um desejo subsequente de ajudar\" (Goetz et al., 2010). Elementos-chave da compaixão são reconhecer o sofrimento e responder a ele.",
-              "image": "assets/uploads/compassion.jpg",
+              "image": "/assets/uploads/compassion.jpg",
               "image_width": "200px"
             },
             {
@@ -222,7 +221,7 @@
             },
             {
               "body": "<em>Para ir mais fundo...</em><br/><br/><strong>Perspectiva &mdash; </strong>Em vez de considerar nossas escolhas em isolamento, consideramos como cada decisão que tomamos impactará nosso estado mental futuro.<br/><br/><strong>Prática &mdash; </strong>Comece a reconhecer padrões que interferem com uma mente calma como interrupções ao nosso sono, distrações excessivas, e a experiência resultante de desregulação. Desta forma, podemos começar a desenvolver uma preferência e desejo pela simplicidade que nos oferece uma mente calma.",
-              "image": "assets/uploads/salad.png",
+              "image": "/assets/uploads/salad.png",
               "image_width": "200px"
             }
           ]
@@ -234,7 +233,7 @@
           "paragraphs": [
             {
               "body": "Conectar-se com intenção ancora nosso senso de propósito e significado. Fornece clareza sobre o que realmente importa, guiando nossas ações na vida diária. Seja melhorando relacionamentos, mudando comportamentos, ou aprofundando autoconsciência, a intenção atua como uma bússola, fomentando crescimento e criando uma vida mais significativa e conectada.",
-              "image": "assets/uploads/compass.png",
+              "image": "/assets/uploads/compass.png",
               "image_width": "180px"
             },
             {

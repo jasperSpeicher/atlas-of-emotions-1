@@ -61,7 +61,7 @@
     "navigating": {
       "header": "Strategien für den Umgang mit Emotionen",
       "description": "Um ein Leben voller Emotionen zu bewältigen, müssen wir Raum für sie schaffen, damit sie uns nicht zu weit vom Kurs abbringen. Es gibt zwei Methoden, um diesen Raum zu schaffen, und beide sind sehr wichtig.",
-      "image": "assets/uploads/signpost.png",
+      "image": "/assets/uploads/strategies.png",
       "reflecting": "<strong>Reflektieren</strong> –- wir können uns Zeit nehmen, um über unsere Emotionen nachzudenken, sozusagen auf sie zurückzublicken, um uns auf das nächste Mal vorzubereiten.",
       "in_the_moment": "<strong>Im Moment</strong> –- wir können lernen, mit unseren Emotionen umzugehen, wenn sie auftreten, wie Werkzeuge, um Raum zwischen uns und unseren Gefühlen zu schaffen, wenn wir es brauchen.",
       "keep_reading": "Lesen Sie weiter oder durchstöbern Sie das Menü, um mehr über diese Strategien zu erfahren..."
@@ -78,8 +78,8 @@
           "paragraphs": [
             {
               "body": "<strong>Wie</strong> &mdash; Bei der Nutzung der Atlas of Emotion-Website können wir mit Genauigkeit erkunden, welche Emotion wir fühlen. Anstatt \"mir geht es schlecht\" oder \"ich fühle mich gestresst\" können wir identifizieren, welche Emotion wir möglicherweise durch die hier aufgelisteten Familien universeller Emotionen oder die hier gefundenen nicht-universellen Emotionen erleben.",
-              "image": "assets/uploads/label.png",
-              "image_width": "88px"
+              "image": "/assets/uploads/labelling.png",
+              "image_width": "230px"
             },
             {
               "body": "<strong>Warum</strong> &mdash; Das Benennen oder Etikettieren unserer Emotionen schafft einen Moment der \"Entzentrierung\". Entzentrierung bedeutet, dass wir uns auf eine größere Perspektive refokussieren können, indem wir unsere Gefühle identifizieren, anstatt in der Erregung einer Emotion gefangen zu sein, die unseren Körper und Geist sättigen kann. Ein Wort anzuwenden, um unsere Emotion zu identifizieren, unterstützt eine 'Emotionsgenauigkeit'. Wir üben unsere Genauigkeit, indem wir einen Moment innehalten und unsere Erfahrung betrachten und dann etikettieren: \"Gerade jetzt bin ich mir bewusst, dass ich Enttäuschung fühle\". Diese einfache Etikettierung muss kein Urteil oder keine Agenda tragen, nur das Benennen kann dazu dienen, uns selbst und die Situation klarer zu sehen.",
@@ -95,7 +95,7 @@
           "paragraphs": [
             {
               "body": "<strong>Wie</strong> &mdash; Wenn wir die Zeitlinie der Emotion betrachten, lernen wir, dass unser Auslöser sowohl aus unserem unmittelbaren Zustand und Kontext als auch aus älteren Geschichten und Wahrnehmungen besteht. Wir können eine Emotionsepisode wählen, bei der wir das Gefühl hatten, zu stark reagiert zu haben, und dann überlegen, was in unserer unmittelbaren Erfahrung vor sich ging, unsere Vorbedingung von Hunger, Müdigkeit, Stress usw., die beeinflussen könnte, wie wir emotional werden. Dann erkunden wir, was in der Datenbank sein könnte, dem Lagerhaus vergangener Erfahrungen, die wir auf diese aktuelle Erfahrung übertragen könnten.",
-              "image": "assets/uploads/triggers.png",
+              "image": "/assets/uploads/triggers.png",
               "image_width": "200px"
             },
             {
@@ -112,8 +112,7 @@
           "paragraphs": [
             {
               "body": "<strong>Wie</strong> &mdash; Für einige von uns ist das Fühlen von Emotionen im Körper ziemlich klar, wir erkennen Bereiche im Gesicht, in der Brust oder im Bauch, wo es erhöhte Empfindungen gibt, wie schwere Hitze in unserem Gesicht, wenn wir wütend sind, oder ein hohles Gefühl in der Brust, wenn wir einsam sind. Für andere ist der Zugang zu Empfindungen der Emotion im Körper weniger verfügbar, oder der Fokus ist mehr in Gedanken gefangen. Genau wie wir den Typ der Emotion erkennen und benennen, die wir fühlen, können wir die Arten von Empfindungen in unserem Körper identifizieren und wo wir sie fühlen. Überlegen Sie, wo in Ihrem Körper Sie sich Sorgen machen, und was sind die Qualitäten dieser Empfindung, leicht, schwer, prickelnd, pochend, spitz usw.",
-              "image": "assets/uploads/body.png",
-              "image_width": "160px"
+              "image": "/assets/uploads/body.png"
             },
             {
               "body": "<strong>Warum</strong> &mdash; Unsere Emotionen sind eine verkörperte Erfahrung, sie sind nicht nur ein geistiges Phänomen. Unser gesamtes Nervensystem mobilisiert sich als Reaktion auf unsere Emotion, um uns zu helfen, uns auf die Gelegenheiten und Herausforderungen vorzubereiten, auf die uns die Emotion aufmerksam macht. Wenn wir eine nähere Beziehung zu unserer verkörperten Erfahrung von Emotion entwickeln, entwickeln wir 'Interozeption'. Interozeption ist eine trainierbare Fähigkeit, eine Art, unsere Erfahrung von Emotionen im Körper zu erkennen, die bei Entzentrierung, Selbstberuhigung und Neubewertung helfen kann. Zum Beispiel, wenn wir viel helle, intensive Energie in der Brust mit Ärger spüren, können wir zu uns selbst sagen: \"Ich bemerke diese helle, intensive Energie in meiner Brust, das macht Sinn, weil ich mich verärgert fühle und mein Körper reagiert\".",
@@ -134,7 +133,7 @@
             },
             {
               "body": "<strong>Warum</strong> &mdash; Unsere Emotionen bereiten uns darauf vor, auf die Bedrohungen und Chancen in unserer Welt zu reagieren, einen überraschenden Besuch von einem Freund oder einen unvorhergesehenen Verlust der Arbeit. Unsere Reaktionen treten oft auf, bevor wir Zeit haben zu erkennen, dass wir emotional sind, und sind dazu bestimmt, uns zu helfen. Reaktionen können sehr funktional sein, aber manchmal reagieren wir auf herausfordernde Weise - normalerweise weil wir den Auslöser falsch interpretieren - wir projizieren etwas aus unserer Vergangenheit auf das, was jetzt passiert, und reagieren auf diese erfundene Realität. Unsere Reaktionen umfassen äußere wie das Erheben der Stimme in Frustration, das Wegschleichen in Angst und das Jubeln in Dankbarkeit. Einige unserer Reaktionen sind innerlich, der Versuch zu verhindern, dass die Emotion gesehen oder vollständig ausgedrückt wird, wie Vermeidung und Ablenkung.",
-              "image": "assets/uploads/responses.png",
+              "image": "/assets/uploads/choice.png",
               "image_width": "200px"
             }
           ]
@@ -153,7 +152,7 @@
           "paragraphs": [
             {
               "body": "<strong>Achtsamkeit</strong> &mdash; Achtsamkeit ist die Praxis, dem gegenwärtigen Moment volle Aufmerksamkeit zu schenken, ohne zu urteilen. Konsequentes Praktizieren von Achtsamkeit hilft uns, bewusster zu sein für das, was um uns herum in der Gegenwart geschieht, und weniger gefangen in Gedanken und Projektionen aus der Vergangenheit. Wenn wir achtsamer sind, entwickeln wir eine höhere Ebene der Selbstwahrnehmung namens \"Meta-Bewusstsein\", die uns hilft, unsere Reaktionen und Verhaltensweisen besser zu verstehen und zu steuern. Wir werden natürlich bewusster für unsere Gedanken, Gefühle und Umgebung und akzeptieren sie, wie sie sind, was dazu beitragen kann, Stress zu reduzieren und das allgemeine Wohlbefinden zu verbessern. Obwohl Achtsamkeit immer im gegenwärtigen Moment stattfindet, gibt es tägliche Praktiken, die die Menge an Achtsamkeit erhöhen, die wir dazu neigen, in jeden Moment zu bringen, wie etwa Meditation.",
-              "image": "assets/uploads/mandala.png",
+              "image": "/assets/uploads/mindfulness.png",
               "image_width": "200px"
             },
             {
@@ -170,7 +169,7 @@
           "paragraphs": [
             {
               "body": "<strong>Atmung</strong> &mdash; Ein tiefer Atemzug ist eine sehr hilfreiche Art, innezuhalten. Er bringt mehr Sauerstoff in unser Nervensystem und hilft uns, die körperliche Erregung in unserem Körper zu verarbeiten. Ein großer Teil unseres emotionalen Zustands sind die körperlichen Veränderungen, die wir erleben, und unsere Atmung ist eine Möglichkeit, unserem Körper während der Pause physisch zu helfen.",
-              "image": "assets/uploads/breath.png",
+              "image": "/assets/uploads/pausing.png",
               "image_width": "180px"
             },
             {
@@ -197,7 +196,7 @@
           "paragraphs": [
             {
               "body": "Mitgefühl ist besonders hilfreich, wenn wir Absichten setzen, unsere Emotionen zu bewältigen, aber in alte Muster zurückfallen. In diesen Momenten schützt es uns vor Hoffnungslosigkeit und Burnout. Buddhistische Lehren definieren Mitgefühl als den aufrichtigen Wunsch für das Selbst und andere, frei von Leiden und seinen Ursachen zu sein. Ähnlich definiert die Wissenschaft es als \"das Gefühl, das entsteht, wenn man das Leiden eines anderen miterlebt, und das einen nachfolgenden Wunsch zu helfen motiviert\" (Goetz et al., 2010). Schlüsselelemente des Mitgefühls sind das Erkennen von Leiden und darauf zu reagieren.",
-              "image": "assets/uploads/compassion.jpg",
+              "image": "/assets/uploads/compassion.jpg",
               "image_width": "200px"
             },
             {
@@ -222,7 +221,7 @@
             },
             {
               "body": "<em>Um tiefer zu gehen...</em><br/><br/><strong>Weltanschauung &mdash; </strong>Anstatt unsere Entscheidungen isoliert zu betrachten, betrachten wir, wie jede Entscheidung, die wir treffen, unseren zukünftigen Geisteszustand beeinflussen wird.<br/><br/><strong>Praxis &mdash; </strong>Beginnen Sie, Muster zu erkennen, die einen ruhigen Geist stören, wie Störungen unseres Schlafs, übermäßige Ablenkungen und die resultierende Erfahrung der Dysregulation. Auf diese Weise können wir beginnen, eine Präferenz und einen Wunsch für die Einfachheit zu entwickeln, die uns einen ruhigen Geist gewährt.",
-              "image": "assets/uploads/salad.png",
+              "image": "/assets/uploads/salad.png",
               "image_width": "200px"
             }
           ]
@@ -234,7 +233,7 @@
           "paragraphs": [
             {
               "body": "Die Verbindung mit Absicht verankert unser Gefühl von Zweck und Bedeutung. Sie bietet Klarheit darüber, was wirklich wichtig ist, und leitet unsere Handlungen im täglichen Leben. Ob es darum geht, Beziehungen zu verbessern, Verhaltensweisen zu ändern oder das Selbstbewusstsein zu vertiefen, Absicht wirkt wie ein Kompass, fördert Wachstum und schafft ein bedeutungsvolleres, verbundeneres Leben.",
-              "image": "assets/uploads/compass.png",
+              "image": "/assets/uploads/compass.png",
               "image_width": "180px"
             },
             {

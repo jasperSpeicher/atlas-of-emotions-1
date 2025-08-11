@@ -61,7 +61,7 @@
     "navigating": {
       "header": "Stratégies pour naviguer les émotions",
       "description": "Pour naviguer dans une vie remplie d'émotions, nous devons créer de l'espace pour elles, afin qu'elles ne nous fassent pas trop dévier de notre cap. Il existe deux méthodes pour créer cet espace, et toutes deux sont très importantes.",
-      "image": "assets/uploads/signpost.png",
+      "image": "/assets/uploads/strategies.png",
       "reflecting": "<strong>Réfléchir</strong> –- nous pouvons prendre du temps pour réfléchir à nos émotions, un peu comme regarder en arrière, pour nous préparer à la prochaine fois.",
       "in_the_moment": "<strong>Sur le moment</strong> –- nous pouvons apprendre à gérer nos émotions au moment où elles se produisent, comme des outils pour créer de l'espace entre nous et nos sentiments quand nous en avons besoin.",
       "keep_reading": "Continuez à lire ou parcourez le menu pour en savoir plus sur ces stratégies..."
@@ -78,8 +78,8 @@
           "paragraphs": [
             {
               "body": "<strong>Comment</strong> &mdash; En utilisant le site Atlas of Emotion, nous pouvons explorer, avec spécificité, quelle émotion nous ressentons. Au lieu de \"je me sens mal\" ou \"je me sens stressé\", nous pouvons identifier quelle émotion nous pourrions éprouver à travers les familles d'émotions universelles listées ou les émotions non universelles trouvées ici.",
-              "image": "assets/uploads/label.png",
-              "image_width": "88px"
+              "image": "/assets/uploads/labelling.png",
+              "image_width": "230px"
             },
             {
               "body": "<strong>Pourquoi</strong> &mdash; Nommer ou étiqueter nos émotions crée un moment de \"décentrement\". Le décentrement signifie que nous pouvons nous recentrer sur une perspective plus large en identifiant nos sentiments au lieu d'être pris dans l'excitation d'une émotion qui peut saturer notre corps et notre esprit. Appliquer un mot pour identifier notre émotion soutient une 'granularité émotionnelle'. Nous pratiquons notre granularité en prenant un moment pour faire une pause et considérer notre expérience, puis étiqueter : \"En ce moment, je suis conscient de ressentir de la déception\". Cette étiquette simple n'a pas besoin de porter de jugement ou d'agenda, simplement nommer peut servir à nous aider à nous voir et à voir la situation plus clairement.",
@@ -95,7 +95,7 @@
           "paragraphs": [
             {
               "body": "<strong>Comment</strong> &mdash; Quand nous regardons la chronologie de l'émotion, nous apprenons que notre déclencheur est composé à la fois de notre état immédiat et du contexte, ainsi que d'histoires et de perceptions plus anciennes. Nous pouvons choisir un épisode émotionnel où nous avons senti que nous avons réagi trop fortement, puis considérer ce qui se passait dans notre expérience immédiate, notre pré-condition, de faim, fatigue, stress, etc. qui pourrait influencer comment nous devenons émotionnels. Nous explorons ensuite ce qui pourrait être dans la base de données, l'entrepôt d'expériences passées que nous pourrions imposer à cette expérience actuelle.",
-              "image": "assets/uploads/triggers.png",
+              "image": "/assets/uploads/triggers.png",
               "image_width": "200px"
             },
             {
@@ -112,8 +112,7 @@
           "paragraphs": [
             {
               "body": "<strong>Comment</strong> &mdash; Pour certains d'entre nous, ressentir l'émotion dans le corps est assez clair, nous reconnaissons des zones dans le visage, la poitrine ou le ventre où il y a des sensations accrues, comme une chaleur lourde dans notre visage quand nous sommes en colère, ou un sentiment de vide dans la poitrine quand nous sommes seuls. Pour d'autres, l'accès aux sensations de l'émotion dans le corps est moins disponible, ou l'attention est plus prise dans les pensées. Tout comme nous reconnaissons et appliquons des étiquettes au type d'émotion que nous ressentons, nous pouvons identifier les types de sensations dans notre corps et où nous les ressentons. Considérez où dans votre corps vous vous sentez inquiet, et quelles sont les qualités de cette sensation, légère, lourde, picotante, pulsante, pointue, etc.",
-              "image": "assets/uploads/body.png",
-              "image_width": "160px"
+              "image": "/assets/uploads/body.png"
             },
             {
               "body": "<strong>Pourquoi</strong> &mdash; Nos émotions sont une expérience incarnée, elles ne sont pas seulement un phénomène mental. Notre système nerveux tout entier se mobilise en réponse à notre émotion pour nous aider à nous préparer aux opportunités et défis que l'émotion nous signale. Quand nous développons une relation plus étroite avec notre expérience incarnée de l'émotion, nous développons l'intéroception. L'intéroception est une compétence entraînable, une façon de reconnaître notre expérience des émotions dans le corps qui peut aider avec le décentrement, l'auto-apaisement et la réévaluation. Par exemple, si nous ressentons beaucoup d'énergie brillante et intense dans la poitrine avec l'agacement, nous pouvons nous dire : \"Je remarque cette énergie brillante et intense dans ma poitrine, cela a du sens parce que je me sens agacé et mon corps répond\".",
@@ -134,7 +133,7 @@
             },
             {
               "body": "<strong>Why</strong> &mdash; Our emotions prepare us to respond to the threats and opportunities in our world, a surprise visit from a friend or an unforeseen loss of work. Our responses often occur before we have time to recognize we are emotional and are intended to help us. Responses can be very functional, but sometimes we react in ways that are challenging &mdash; usually because we misread the trigger &mdash; we project something from our past on to what is happening now and respond to that fabricated reality. Our responses include external such as raising our voice in frustration, slinking away in anxiety, and rejoicing in gratitude. Some of our responses are internal, trying to prevent the emotion from being seen or fully expressed such as avoidance and distraction.",
-              "image": "assets/uploads/responses.png",
+              "image": "/assets/uploads/choice.png",
               "image_width": "200px"
             }
           ]
@@ -153,7 +152,7 @@
           "paragraphs": [
             {
               "body": "<strong>Pleine conscience</strong> &mdash; La pleine conscience est la pratique de porter une attention totale au moment présent, sans jugement. Pratiquer la pleine conscience de manière cohérente nous aide à être plus conscients de ce qui se passe autour de nous dans le présent et moins pris dans les pensées et projections du passé. Quand nous sommes plus conscients, nous développons un niveau plus élevé de conscience de soi appelé \"méta-conscience\" qui nous aide à mieux comprendre et gérer nos réactions et comportements. Nous devenons naturellement plus conscients de nos pensées, sentiments et environnement, les acceptant tels qu'ils sont, ce qui peut aider à réduire le stress et améliorer le bien-être général. Bien que la pleine conscience se produise toujours dans le moment présent, il existe des pratiques quotidiennes qui augmentent la quantité de pleine conscience que nous tendons à apporter à chaque moment, comme la méditation.",
-              "image": "assets/uploads/mandala.png",
+              "image": "/assets/uploads/mindfulness.png",
               "image_width": "200px"
             },
             {
@@ -170,7 +169,7 @@
           "paragraphs": [
             {
               "body": "<strong>Respiration</strong> &mdash; Une respiration profonde est une façon très utile de faire une pause. Elle apporte plus d'oxygène à notre système nerveux et nous aide à traiter l'éveil physique dans notre corps. Une grande partie de notre état émotionnel sont les changements physiques que nous vivons, et notre respiration est un moyen d'aider physiquement notre corps pendant la pause.",
-              "image": "assets/uploads/breath.png",
+              "image": "/assets/uploads/pausing.png",
               "image_width": "180px"
             },
             {
@@ -197,7 +196,7 @@
           "paragraphs": [
             {
               "body": "La compassion est particulièrement utile lorsque nous définissons des intentions pour gérer nos émotions mais retombons dans d'anciens schémas. Dans ces moments, elle nous protège du désespoir et de l'épuisement. Les enseignements bouddhistes définissent la Compassion comme le souhait sincère pour soi et les autres d'être libres de la souffrance et de ses causes. De même, la science la définit comme \"le sentiment qui survient en témoin de la souffrance d'autrui, et qui motive un désir subséquent d'aider\" (Goetz et al., 2010). Les éléments clés de la compassion sont de reconnaître la souffrance et d'y répondre.",
-              "image": "assets/uploads/compassion.jpg",
+              "image": "/assets/uploads/compassion.jpg",
               "image_width": "200px"
             },
             {
@@ -222,7 +221,7 @@
             },
             {
               "body": "<em>Pour aller plus loin...</em><br/><br/><strong>Perspective &mdash; </strong>Plutôt que de considérer nos choix en isolement, nous considérons comment chaque décision que nous prenons impactera notre état d'esprit futur.<br/><br/><strong>Pratique &mdash; </strong>Commencez à reconnaître les schémas qui interfèrent avec un esprit calme tels que les perturbations de notre sommeil, les distractions excessives, et l'expérience résultante de dysrégulation. De cette façon, nous pouvons commencer à développer une préférence et un désir pour la simplicité qui nous offre un esprit calme.",
-              "image": "assets/uploads/salad.png",
+              "image": "/assets/uploads/salad.png",
               "image_width": "200px"
             }
           ]
@@ -234,7 +233,7 @@
           "paragraphs": [
             {
               "body": "Se connecter avec l'intention ancre notre sens du but et du sens. Elle fournit de la clarté sur ce qui compte vraiment, guidant nos actions dans la vie quotidienne. Qu'il s'agisse d'améliorer les relations, changer les comportements, ou approfondir la conscience de soi, l'intention agit comme une boussole, favorisant la croissance et créant une vie plus significative et connectée.",
-              "image": "assets/uploads/compass.png",
+              "image": "/assets/uploads/compass.png",
               "image_width": "180px"
             },
             {
