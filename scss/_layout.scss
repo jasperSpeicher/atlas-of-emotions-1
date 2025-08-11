@@ -385,7 +385,7 @@ svg {
 					border: none;
 					color: #000;
 					padding-bottom: 5px;
-					border-bottom: 4px solid #000;
+					border-bottom: 3px solid #000;
 					font-weight: 500;
 				}
 				margin-right: 50px;
@@ -1131,7 +1131,7 @@ svg {
 				li {
 					a {
 						/* Reserve space for active indicator without shifting text */
-						border-left: 4px solid transparent;
+						border-left: 3px solid transparent;
 						padding-left: 8px;
 					}
 					&.active {
@@ -1148,13 +1148,22 @@ svg {
 		}
 		margin-bottom: 0;
 	}
-	a,
-	a:visited,
-	a:active,
-	a:hover,
-	a:focus {
-		color: #000;
-	}
+  	a,
+  	a:visited,
+  	a:active,
+  	a:hover,
+  	a:focus {
+  		color: rgba(#000, 0.5);
+  		text-decoration: none;
+  		transition: color 0.2s ease;
+  	}
+  	li.active > a {
+  		color: #000;
+  	}
+  	li:hover > a {
+  		color: #000;
+  		text-decoration: none;
+  	}
 	a:focus {
 		outline: none !important;
 		text-decoration: none;
@@ -1166,7 +1175,7 @@ svg {
 		li {
 			a {
 				/* Reserve space for active indicator without shifting text */
-				border-left: 4px solid transparent;
+				border-left: 3px solid transparent;
 				padding-left: 8px;
 			}
 			&.active {
