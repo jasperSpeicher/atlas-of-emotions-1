@@ -7,7 +7,7 @@ backend:
   name: github
   repo: jasperSpeicher/atlas-of-emotions-1 # IMPORTANT: Replace with your repo path
   branch: full-translation # Or whichever branch you want to commit to
-  # OAuth provider for Decap CMS when hosted on GitHub Pages
+  # OAuth provider for Decap CMS when hosted on GitHub Pages (updated)
   base_url: https://atlas-oe-decap-oauth.atlas-oe-decap-oauth.workers.dev
   auth_endpoint: /auth
   # site_domain: your-site-domain.com # Optional: if you have GitHub gateway configured
