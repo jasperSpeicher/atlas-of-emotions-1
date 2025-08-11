@@ -1643,6 +1643,12 @@ svg {
 						width: 100%;
 						padding: $v-padding $h-padding;
 						display: block;
+						&:focus,
+						&.active {
+							border-bottom: none;
+							padding-bottom: $v-padding;
+							padding-top: $v-padding;
+						}
 					}
 				}
 			}
